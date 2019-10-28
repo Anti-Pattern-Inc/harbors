@@ -1,0 +1,25 @@
+name: AWS S3 Sync
+
+on: 
+  push:
+    branches:
+      - master_for_aws
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+
+      - name: Publish to AWS S3
+        uses: opspresso/action-s3-sync@master
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: "us-east-1"
+          FROM_PATH: "./target/publish"
+          DEST_PATH: "s3://githubaction-test/"
+          OPTIONS: "--acl public-read"
