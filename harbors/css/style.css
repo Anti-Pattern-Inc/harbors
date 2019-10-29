@@ -70,6 +70,19 @@ h1.display-4 {
   margin: 5px;
 }
 
+.footer-menus a {
+  color: #ffffff;
+}
+
+.footer-menus p {
+  margin-bottom: 0.2rem;
+}
+
+.copyright {
+  margin-top: 50px;
+}
+
+
 /* 英字タイトルをWEBフォントに */
 header a,
 .display-4,
