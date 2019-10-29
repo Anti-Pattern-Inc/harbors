@@ -36,22 +36,6 @@
 
   gtag('config', 'AW-701518947');
 </script>
-<!-- Event snippet for コワーキング見学予約 conversion page
-In your html page, add the snippet and call gtag_report_conversion_cowork when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion_cowork(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-701518947/lWC1CNWfhbABEOOowc4C',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
 <!-- Event snippet for バーチャルオフィス見学 conversion page
 In your html page, add the snippet and call gtag_report_conversion_virtual when someone clicks on the chosen link or button. -->
 <script>
@@ -95,16 +79,18 @@ function gtag_report_conversion_virtual(url) {
 <div class="jumbotron-fluid position-relative top-image virtual-office p-0">
   <div class="filter"></div>
   <!-- トップ画像内文字 -->
-  <div class="text-white position-absolute main-txt">
-    <h3 class="display-4 nowrap">
-    「港区南青山」に コワーキングスペース併設の<wbr>バーチャルオフィスが<wbr>6,800円から利用できます。
+  <div class="text-white position-absolute main-txt" style="bottom:20%">
+    <h4 class="display-4 nowrap">
+    「港区南青山」に <wbr>コワーキングスペース<wbr>併設の<wbr>バーチャルオフィスが<wbr>6,800円から<wbr>利用できます。
     </h3>
     <p class="lead">ブランド力のある「港区南青山」の住所をビジネスシーンにおいてご利用いただけます。<br>
       法人登記も可能です。<br>
       〒107-0062 東京都港区南青山3丁目15-9 MINOWA表参道3F<br>
       03-6885-6140
     </p>
-    <button type="button" class="btn btn-info btn-lg mx-auto nowrap top-button text-white top-button" onclick="gtag_report_conversion_virtual('https://docs.google.com/forms/d/e/1FAIpQLScHQYRnV-pzHFwlIJCzS-KYGbabvHuPHbzzXU3GMZ6hUUzO0A/viewform?usp=sf_link');location.href='https://docs.google.com/forms/d/e/1FAIpQLScHQYRnV-pzHFwlIJCzS-KYGbabvHuPHbzzXU3GMZ6hUUzO0A/viewform?usp=sf_link'">バーチャルオフィス<wbr>見学予約</button>
+    <div class="fixed-bottom mb-5">
+      <button type="button" class="btn btn-info btn-lg mx-auto nowrap top-button text-white top-button d-block" onclick="gtag_report_conversion_virtual('https://docs.google.com/forms/d/e/1FAIpQLScHQYRnV-pzHFwlIJCzS-KYGbabvHuPHbzzXU3GMZ6hUUzO0A/viewform?usp=sf_link');location.href='https://docs.google.com/forms/d/e/1FAIpQLScHQYRnV-pzHFwlIJCzS-KYGbabvHuPHbzzXU3GMZ6hUUzO0A/viewform?usp=sf_link'">バーチャルオフィス<wbr>見学予約</button>
+    </div>
   </div>
 </div>
 
@@ -114,7 +100,7 @@ function gtag_report_conversion_virtual(url) {
 
     <div class="row">
       <div class="col-md-12">
-        <div class=card bg-light text-center>
+        <div class="card bg-light text-center">
           <h2 class="py-2 text-center">月額基本料金</h2>
           <p class="display-3 text-center">4,800円</p>
           <p class="mx-auto w-75 text-center">
@@ -128,56 +114,56 @@ function gtag_report_conversion_virtual(url) {
 
     <div class="row virtual-office-menus">
       <div class="col-md-3">
-        <div class="card mb-4 text-center">
+        <div class="card mb-4 text-center p-4">
           <h3 class="card-title">住所貸し</h3>
           <p class="card-text mb-lg-4">0円</p>
         </div>
       </div>
 
       <div class="col-md-3">
-        <div class="card mb-4 text-center">
+        <div class="card mb-4 text-center p-4">
           <h3 class="card-title">来客対応</h3>
           <p class="card-text mb-lg-4">0円</p>
         </div>
       </div>
 
       <div class="col-md-3">
-        <div class="card mb-4 text-center">
+        <div class="card mb-4 text-center p-4">
           <h3 class="card-title">法人登記</h3>
           <p class="card-text mb-lg-4">2,000円</p>
         </div>
       </div>
 
       <div class="col-md-3">
-        <div class="card mb-4 text-center">
+        <div class="card mb-4 text-center p-4">
           <h3 class="card-title">専用ポスト</h3>
           <p class="card-text mb-lg-4">2,000円</p>
         </div>
       </div>
 
       <div class="col-md-3">
-        <div class="card mb-4 text-center">
+        <div class="card mb-4 text-center p-4">
           <h3 class="card-title">カフェラウンジ利用</h3>
           <p class="card-text mb-lg-4">従量課金</p>
         </div>
       </div>
 
       <div class="col-md-3">
-        <div class="card mb-4 text-center">
+        <div class="card mb-4 text-center p-4">
           <h3 class="card-title">会議室利用</h3>
           <p class="card-text mb-lg-4">従量課金</p>
         </div>
       </div>
 
       <div class="col-md-3">
-        <div class="card mb-4 text-center">
+        <div class="card mb-4 text-center p-4">
           <h3 class="card-title">専用ロッカー</h3>
           <p class="card-text mb-lg-4">2,000円</p>
         </div>
       </div>
 
       <div class="col-md-3">
-        <div class="card mb-4 text-center">
+        <div class="card mb-4 text-center p-4">
           <h3 class="card-title">郵便物転送</h3>
           <p class="card-text mb-lg-4">3,000円~</p>
         </div>
@@ -196,8 +182,8 @@ function gtag_report_conversion_virtual(url) {
   <div class="container text-center">
     <h2 class="display-3 pb-3" id="access">ACCESS</h2>
     <div class="mb-3 text-center">
-      <p class="mb-0 nowrap">住所：東京都港区南青山3丁目15-9 MINOWA表参道3F</p><br>
-      <p class="mb-0 nowrap">アクセス：東京メトロ銀座線、半蔵門線「表参道」下車 <wbr>A4出口&ensp;徒歩3分</p><br>
+      <p class="mb-0 nowrap">住所：東京都港区南青山3丁目15-9<wbr> MINOWA表参道3F</p><br>
+      <p class="mb-0 nowrap">アクセス：東京メトロ銀座線、<wbr>半蔵門線「表参道」下車 <wbr>A4出口&ensp;徒歩3分</p><br>
       <p class="mb-0 nowrap">電話番号：03-6885-6140</p>
     </div>
   </div>
