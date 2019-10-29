@@ -90,6 +90,10 @@ header.term {
   box-shadow: 0px 0px 5px #00000044;
 }
 
+.virtual-office-menus {
+  margin-top: 30px;
+}
+
 /* 英字タイトルをWEBフォントに */
 header a,
 .display-4,
@@ -278,6 +282,12 @@ iframe.map {
   border-radius: 0;
 }
 
+.top-image > .filter {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-color: #000000;
+}
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 SAMPLEページ
