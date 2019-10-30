@@ -89,7 +89,7 @@ function gtag_report_conversion_virtual(url) {
       03-6885-6140
     </p>
     <div class="fixed-bottom mb-5">
-      <button type="button" class="btn btn-info btn-lg mx-auto nowrap top-button text-white top-button d-block" onclick="gtag_report_conversion_virtual('https://docs.google.com/forms/d/e/1FAIpQLScHQYRnV-pzHFwlIJCzS-KYGbabvHuPHbzzXU3GMZ6hUUzO0A/viewform?usp=sf_link');location.href='https://docs.google.com/forms/d/e/1FAIpQLScHQYRnV-pzHFwlIJCzS-KYGbabvHuPHbzzXU3GMZ6hUUzO0A/viewform?usp=sf_link'">バーチャルオフィス<wbr>見学予約</button>
+      <button type="button" class="btn btn-info btn-lg mx-auto nowrap top-button text-white top-button d-block" onclick="" data-toggle="modal" data-target="#contactModal">バーチャルオフィス<wbr>見学予約</button>
     </div>
   </div>
 </div>
@@ -211,6 +211,52 @@ function gtag_report_conversion_virtual(url) {
   <p class="text-center mb-0 copyright"><small class="text-white">2019 &copy; Anti-Pattern Inc.</small></p>
 
 </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalTitle">見学のご予約</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="">会社名・屋号</label><font style="color:red">※</font>
+            <input type="text" class="form-control" aria-describedby="" placeholder="" required>
+          </div>
+          <div class="form-group">
+            <label for="">代表者名</label><font style="color:red">※</font>
+            <input type="text" class="form-control" aria-describedby="" placeholder="" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">メールアドレス</label><font style="color:red">※</font>
+            <input type="email" class="form-control" id="" aria-describedby="" placeholder="" required>
+          </div>
+          <div class="form-group">
+            <label for="">電話番号</label>
+            <input type="tel" class="form-control" aria-describedby="" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="">見学ご希望日</label><font style="color:red">※</font>
+            <input type="date" class="form-control" aria-describedby="" placeholder="" required>
+          </div>
+          <div class="form-group">
+            <label for="">その他ご要望</label>
+            <textarea class="form-control" id="" rows="3"></textarea>
+          </div>
+          <div class="modal-footer">
+            <p><font style="color:red">※</font>は必須入力項目です。</p>
+            <button type="submit" class="btn btn-primary">送信</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- javascript はここから -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
