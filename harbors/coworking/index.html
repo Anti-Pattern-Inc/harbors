@@ -45,6 +45,11 @@ function gtag_report_conversion_cowork(url) {
       window.location = url;
     }
   };
+  gtag('event', 'click', {
+      'event_category': 'coworking',
+      'event_label': 'open_form',
+      'value': 1
+  });
   gtag('event', 'conversion', {
       'send_to': 'AW-701518947/lWC1CNWfhbABEOOowc4C',
       'event_callback': callback

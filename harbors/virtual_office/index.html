@@ -45,6 +45,11 @@ function gtag_report_conversion_virtual(url) {
       window.location = url;
     }
   };
+  gtag('event', 'click', {
+      'event_category': 'virtual_office',
+      'event_label': 'open_form',
+      'value': 1
+  });
   gtag('event', 'conversion', {
       'send_to': 'AW-701518947/UGAXCMLx1bABEOOowc4C',
       'event_callback': callback
