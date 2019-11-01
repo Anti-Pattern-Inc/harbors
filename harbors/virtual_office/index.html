@@ -223,30 +223,30 @@ function gtag_report_conversion_virtual(url) {
         </button>
       </div>
       <div class="modal-body">
-        <form>
+        <form action="https://script.google.com/macros/s/AKfycbwbcIIiHad2j7kq41e0IA1PYjCD6f3wK522sgUIQYPI1qUeZi5U/exec" method="post">
           <div class="form-group">
             <label for="">会社名・屋号</label><font style="color:red">※</font>
-            <input type="text" class="form-control" aria-describedby="" placeholder="" required>
+            <input type="text" class="form-control" name="company_name" aria-describedby="" placeholder="" required>
           </div>
           <div class="form-group">
             <label for="">代表者名</label><font style="color:red">※</font>
-            <input type="text" class="form-control" aria-describedby="" placeholder="" required>
+            <input type="text" class="form-control" name="name" aria-describedby="" placeholder="" required>
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">メールアドレス</label><font style="color:red">※</font>
-            <input type="email" class="form-control" id="" aria-describedby="" placeholder="" required>
+            <input type="email" class="form-control" name="mail" id="" aria-describedby="" placeholder="" required>
           </div>
           <div class="form-group">
             <label for="">電話番号</label>
-            <input type="tel" class="form-control" aria-describedby="" placeholder="">
+            <input type="tel" class="form-control" name="tel" aria-describedby="" placeholder="">
           </div>
           <div class="form-group">
             <label for="">見学ご希望日</label><font style="color:red">※</font>
-            <input type="date" class="form-control" aria-describedby="" placeholder="" required>
+            <input type="date" class="form-control" name="preferred_visit_date" aria-describedby="" placeholder="" required>
           </div>
           <div class="form-group">
             <label for="">その他ご要望</label>
-            <textarea class="form-control" id="" rows="3"></textarea>
+            <textarea class="form-control" name="remarks" id="" rows="3"></textarea>
           </div>
           <div class="modal-footer">
             <p><font style="color:red">※</font>は必須入力項目です。</p>
