@@ -33,74 +33,41 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-150157952-1');
-
   gtag('config', 'AW-701518947');
 </script>
 <!-- Event snippet for コワーキング見学予約 conversion page
 In your html page, add the snippet and call gtag_report_conversion_cowork when someone clicks on the chosen link or button. -->
 <script>
-function gtag_report_conversion_cowork(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-701518947/lWC1CNWfhbABEOOowc4C',
-      'event_callback': callback
-  });
-  return false;
+function countClickByGa() {
+  gtag('event', 'click', {
+    'event_category': 'coworking',
+    'event_label': 'open_form',
+    'value': 1
+  })
 }
 </script>
-<!-- Event snippet for バーチャルオフィス見学 conversion page
-In your html page, add the snippet and call gtag_report_conversion_virtual when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion_virtual(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-701518947/UGAXCMLx1bABEOOowc4C',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
+<!-- javascript はここから -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 <header class="container-fluid mb-3 mb-md-0">
-
-  <!-- <div class="d-md-flex justify-content-between"> -->
-    <!-- SNSアイコン -->
-    <!-- <div class="mt-2 ml-auto float-right float-md-none"> -->
-      <!-- Twitter -->
-      <!-- <a id="twitter" href="http://twitter.com/share?url=あなたのサイトURL&amp;text=エンコードした説明文" onclick="window.open(this.href, 'twitter_tweet', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1');
-					return false;"><img src="img/sns.svg" alt="" style="width: 35px; height: 35px;" class="bg-dark rounded">
-      </a> -->
-      <!-- Facebook -->
-      <!-- <a id="facebook" href="https://www.facebook.com/sharer/sharer.php?u=あなたのサイトURL" onclick="window.open(this.href, 'fb_window', 'width=450, height=300, menubar=no, toolbar=no, scrollbars=yes');
-					return false;" target="blank"><img src="img/sns.svg" alt="" style="width: 35px; height: 35px;">
-      </a> -->
-      <!-- instagram -->
-      <!-- <a id="instagram" href="https://www.instagram.com/◯◯◯◯◯" target="blank"><img src="img/sns.svg" alt="" style="width: 35px; height: 35px;"></a> -->
-    <!-- </div> -->
-  <!-- </div> -->
   <nav class="navbar navbar-expand-md navbar-light bg-white pr-0">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="ナビゲーションの切替">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="header-logo-area　col-6">
-      <img rel="img/logo_gray.png">
+      <img rel="/img/logo_gray.png">
     </div>
     <div class="collapse navbar-collapse" id="navbar-header">
       <a class="nav-link" href="/"><div class="logo"></div></a>
       <ul class="navbar-nav ml-auto">
 
-        <li class="nav-item"><a class="nav-link" href="#coworking">COWORKING</a></li>
-        <li class="nav-item"><a class="nav-link" href="#virtual_office">VIRTUAL-OFFICE</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">COWORKING</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://harbors.anti-pattern.co.jp/virtual_office/">VIRTUAL-OFFICE</a></li>
         <li class="nav-item"><a class="nav-link" href="#access">ACCESS</a></li>
         <li class="nav-item"><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/viewform?usp=sf_link">CONTACT</a></li>
       </ul>
@@ -108,52 +75,94 @@ function gtag_report_conversion_virtual(url) {
   </nav>
 </header>
 <!-- トップ画像 -->
-<div class="jumbotron-fluid position-relative top-image p-0">
+<div class="jumbotron-fluid position-relative top-image p-0 coworking-top">
+  <div class="filter"></div>
   <!-- トップ画像内文字 -->
-  <div class="text-white position-absolute main-txt">
-    <h1 class="display-4 nowrap">HarborS <wbr>表参道</h1>
-    <p class="lead">起業家、ソフトウェアエンジニアが集結しプロダクトを生み出す場所へ<br>
-      表参道駅徒歩3分、2019年11月オープンの会員制コワーキングスペースです。<br>
-      〒107-0062 東京都港区南青山3丁目15-9 MINOWA表参道3F<br>
-      03-6885-6140
-    </p>
-    <button type="button" class="btn btn-primary btn-lg mx-auto nowrap text-white top-button" onclick="gtag_report_conversion_cowork('https://docs.google.com/forms/d/e/1FAIpQLSccwPpesAHH2WRgglSKK46fnsQpKkA7icIf2ws0Lm7t6iyWoA/viewform?usp=sf_link');location.href='https://docs.google.com/forms/d/e/1FAIpQLSccwPpesAHH2WRgglSKK46fnsQpKkA7icIf2ws0Lm7t6iyWoA/viewform?usp=sf_link'">コワーキングスペース<wbr>見学予約</button>
-    <button type="button" class="btn btn-primary btn-lg mx-auto nowrap top-button text-white top-button" onclick="gtag_report_conversion_virtual('https://docs.google.com/forms/d/e/1FAIpQLScHQYRnV-pzHFwlIJCzS-KYGbabvHuPHbzzXU3GMZ6hUUzO0A/viewform?usp=sf_link');location.href='https://docs.google.com/forms/d/e/1FAIpQLScHQYRnV-pzHFwlIJCzS-KYGbabvHuPHbzzXU3GMZ6hUUzO0A/viewform?usp=sf_link'">バーチャルオフィス<wbr>見学予約</button>
-  </div>
-</div>
-
-<div class="zigzag text-white">
-  <div class="container py-5">
+  <div class="text-white position-absolute text-center top-text container-fluid">
     <div class="row py-5">
-      <div class="col-lg-6">
-        <h2 class="party-title mx-auto h3">コワーキングスペース会員募集</h2>
-        <p>
-          エンジニアやエンジニアと働く起業家向けのコワーキングスペースです。
-          落ち着いた雰囲気のコワーキングスペースや、会議室、併設されたイベントスペースもご利用いただけます。
-        </p>
-        <div class="d-flex flex-row mb-3">
-          <img src="img/seat.jpg" alt="" class="h-100 col-6 p-0 mr-lg-3">
-          <img src="img/coworking_space.png" alt="" class="h-100 col-6 p-0">
-        </div>
+      <div class="col-lg-12">
+        <h2 class="display-4 nowrap">HarborS <wbr>表参道</h2>
       </div>
-      <div class="col-lg-6">
-        <img src="img/office.jpg" alt="" class="w-100 mb-3">
-        <p class="mb-5">
-          11月オープン予定。ソフトウェアエンジニア、起業家が集結し、プロダクトを生み出すコワーキングが港区青山に誕生します。
-        </p>
-        <!-- ボタン -->
-    <button type="button" class="btn btn-primary btn-lg d-block mx-auto nowrap" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSccwPpesAHH2WRgglSKK46fnsQpKkA7icIf2ws0Lm7t6iyWoA/viewform?usp=sf_link'">コワーキングスペース<wbr>見学予約</button>
+      <div class="col-lg-12">
+        <h2 class="nowrap"><br>エンジニア＋<wbr>起業家向け<wbr>コワーキングスペース</h2>
       </div>
+      <div class="col-lg-12">
+        <p class="lead mt-5 nowrap">「HarborS」はエンジニア・起業家同士の<wbr>繋がりを創造できる場所です。<br>
+          働く環境が整っているうえに、<wbr>エンジニア向け勉強会や<wbr>イベントも開催予定です。<br>
+          HarborSのコミュニティマネージャが<wbr>会員同士の繋がり、<wbr>コミュニティ形成のお手伝いを<wbr>させていただきます。<br>
+        </p>
+      </div>
+    </div>
+    
+    <div class="fixed-bottom mb-5">
+      <button type="button" class="btn btn-primary btn-lg mx-auto nowrap text-white top-button d-block" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">コワーキングスペース<wbr>見学予約</button>
     </div>
   </div>
 </div>
-
+<div class="zigzag text-white">
+  <div class="container">
+    <h2 class="text-center mt-5">「HarborS」で新しい出会いを</h2>
+    <div class="row py-5">
+      <div class="col-12 col-lg-6 order-md-2 p-lg-0 mb-3">
+        <img src="img/engineer.png" alt="" class="w-100">
+      </div>
+      <div class="col-12 col-lg-5 order-md-1 ml-md-auto">
+        <p class="text-white text-right mt-5">
+          「アプリ開発のエンジニアを探していたんです」<br>
+          <br>
+          「どのようなプロダクトなんですか？」<br>
+          <br>
+        </p>
+      </div>
+    </div>
+    <div class="row py-5">
+        <div class="col-12 col-lg-6 p-lg-0 mb-3">
+          <img src="img/designer.png" alt="" class="w-100">
+        </div>
+        <div class="col-12 col-lg-5 ml-md-autob float-right">
+          <p class="text-white mt-5">
+            「サービスのデザインがなかなか決まらなくて」<br>
+            <br>
+            「来週またここで会いましょう」<br>
+            <br>
+          </p>
+        </div>
+      </div>  
+  </div>
+</div>
 <div class="py-5">
   <div class="container">
-    <h2 class="text-center display-3 py-2" id="coworking">COWORKING</h2>
-    <p class="mx-auto w-75">
-      様々な設備が整っており、あなたのビジネスをサポートします。
-    </p>
+    <h2 class="text-center py-4" id="coworking">OPEN</h2>
+      <dl class="row">
+        <dt class="col-sm-4 offset-md-2 py-2">営業日時</dt>
+        <dd class="col-sm-4 py-2">
+          <p class="mb-2">年中無休</p>
+          <p class="mb-0">8:00から24:00まで利用可能</p>
+        </dd>
+        <dt class="col-sm-4 offset-md-2 py-2">カフェ営業、受付対応時間</dt>
+        <dd class="col-sm-4 py-2">
+          <p class="mb-2">平日 10:00〜19:00</p>
+          <p class="mb-0">祝日を除く。</p>
+        </dd>
+      </dl>
+      <h2 class="text-center py-4" id="coworking">PRICE</h2>
+      <dl class="row">
+        <dt class="col-sm-4 offset-md-2 py-2">32時間／月</dt>
+        <dd class="col-sm-4 py-2">15,000円</dd>
+        <dt class="col-sm-4 offset-md-2 py-2">64時間／月</dt>
+        <dd class="col-sm-4 py-2">25,000円</dd>
+        <dt class="col-sm-4 offset-md-2 py-2">96時間／月</dt>
+        <dd class="col-sm-4 py-2">35,000円</dd>
+        <dt class="col-sm-4 offset-md-2 py-2">時間制限なし</dt>
+        <dd class="col-sm-4 py-2">60,000円</dd>
+        <dt class="col-sm-4 offset-md-2 py-2">時間制限なし プライベートデスク</dt>
+        <dd class="col-sm-4 py-2">85,000円</dd>
+      </dl>
+    </div>
+</div>
+<div class="py-5 zigzag">
+  <div class="container">
+    <h2 class="text-center mb-5 text-white">様々な設備が整っており、あなたのビジネスをサポートします。</h2>
     <div class="row">
       <div class="col-md-4">
         <div class="card mb-4 border border-0">
@@ -209,155 +218,9 @@ function gtag_report_conversion_virtual(url) {
           </div>
         </div>
       </div>
-    <button type="button" class="btn btn-primary btn-lg d-block mx-auto nowrap" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSccwPpesAHH2WRgglSKK46fnsQpKkA7icIf2ws0Lm7t6iyWoA/viewform?usp=sf_link'">コワーキングスペース<wbr>見学予約</button>
     </div>
   </div>
 </div><!-- /.album	-->
-
-<div class="zigzag py-5">
-  <div class="container-fluid">
-    <div class="row py-5">
-      <div class="col-12 col-lg-5 order-md-2 p-lg-0 mb-3">
-        <img src="img/kitchen.jpg" alt="" class="w-100">
-      </div>
-      <div class="col-12 col-lg-5 order-md-1 ml-md-auto">
-        <h3 class="mb-3 h2 text-white nowrap">コワーキングスペース<wbr>料金・営業時間</h3>
-        <p class="text-white">
-          入会費用：　10,000円（税別）<br>
-          月額費用：　15,000円~（税別）<br>
-          <br>
-          施設利用：　年中無休 8:00-24:00<br>
-          カフェ・受付：　平日10:00-19:00<br>
-          ※但し、イベントによる貸切で利用できない日程もございます。<br>
-          <br>
-        </p>
-      </div>
-    </div>
-
-    <div class="row py-5">
-      <div class="col-12 col-lg-5 order-1 p-lg-0 mb-3">
-        <img src="img/nightview.jpg" alt="" class="w-100">
-      </div>
-      <div class="col-12 col-lg-5 order-2 mr-md-auto">
-        <h3 class="mb-3 h2 text-white">テラス席</h3>
-        <p class="text-white">
-          HarborSにはテラスもあり、夜には六本木のビル群を望む夜景も楽しめます。
-        </p>
-      </div>
-    </div>
-
-    <div class="row py-5">
-      <div class="col-12 col-lg-5 order-md-2 p-lg-0 mb-3">
-        <img src="img/eventspace.jpg" alt="" class="w-100">
-      </div>
-      <div class="col-12 col-lg-5 order-md-1 ml-md-auto">
-        <h3 class="mb-3 h2 text-white">イベントスペース</h3>
-        <p class="text-white">
-          広々としたイベントスペースも完備。HarborS会員全員が参加可能なイベントであれば、無料でご利用いただけます。
-        </p>
-      </div>
-    </div>
-    <button type="button" class="btn btn-primary btn-lg d-block mx-auto nowrap" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSccwPpesAHH2WRgglSKK46fnsQpKkA7icIf2ws0Lm7t6iyWoA/viewform?usp=sf_link'">コワーキングスペース<wbr>見学予約</button>
-  </div>
-</div>
-
-<div class="py-5">
-  <div class="container">
-    <h2 class="text-center display-3 py-2" id="virtual_office">VIRTUAL OFFICE</h2>
-    <p class="mx-auto w-75">
-      あなたの会社の登記住所を、HarborSの南青山の住所で登録することができます。名刺に南青山の住所を入れられるだけでなく、郵便物の受け取りや転送サービス、ポストのご用意もあります。
-    </p>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card mb-4 border border-0">
-          <img src="img/address.png" alt="" class="border card-img-top">
-          <div class="card-body">
-            <h3 class="card-title">法人登記 住所利用</h3>
-            <p class="card-text mb-lg-4">名刺やホームページに利用でき、信用力・ブランド力を持つことができます。</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4 border border-0">
-          <img src="img/namecard.png" alt="" class="border card-img-top">
-          <div class="card-body">
-            <h3 class="card-title">貸し住所</h3>
-            <p class="card-text mb-lg-4">ご自身の名刺やWebサイトに南青山の住所をご利用いただけます。</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4 border border-0">
-          <img src="img/rocker2.jpg" alt="" class="border card-img-top">
-          <div class="card-body">
-            <h3 class="card-title">専用ポスト</h3>
-            <p class="card-text mb-lg-4">HarborS内の専用ポストにて、いつでも取り出すことができます。</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4 border border-0">
-          <img src="img/post.png" alt="" class="border card-img-top">
-          <div class="card-body">
-            <h3 class="card-title">郵便物転送</h3>
-            <p class="card-text mb-lg-4">お預かりしている郵便物を週1回指定の場所に転送するサービスです。</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4 border border-0">
-          <img src="img/minamiaoyama.png" alt="" class="border card-img-top">
-          <div class="card-body">
-            <h3 class="card-title">南青山の住所</h3>
-            <p class="card-text mb-lg-4">ブランドエリアである南青山の住所を登記に登録いただけます。</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4 border border-0">
-          <img src="img/wifi.jpg" alt="" class="border card-img-top">
-          <div class="card-body">
-            <h3 class="card-title">コスト削減</h3>
-            <p class="card-text mb-lg-4">実際のオフィスを借りる必要が無いので、コスト削減に繋がります。</p>
-          </div>
-        </div>
-      </div>
-
-      <button type="button" class="btn btn-primary btn-lg d-block mx-auto nowrap" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScHQYRnV-pzHFwlIJCzS-KYGbabvHuPHbzzXU3GMZ6hUUzO0A/viewform?usp=sf_link'">バーチャルオフィス<wbr>見学予約</button>
-    </div>
-  </div>
-</div><!-- /.album	-->
-
-<div class="zigzag py-5">
-  <div class="container">
-  </div>
-  <div class="container-fluid">
-    <div class="row py-5">
-      <div class="col-12 col-lg-5 order-md-2 p-lg-0 mb-3">
-        <img src="img/kitchen.jpg" alt="" class="w-100">
-      </div>
-      <div class="col-12 col-lg-5 order-md-1 ml-md-auto">
-        <h3 class="mb-3 h2 text-white">バーチャルオフィス料金</h3>
-        <p class="text-white">
-          ・登記：　6,800円／月（税別）<br>
-          ・貸住所：　4,800円／月（税別）<br>
-          <br>
-          <br>
-          郵便オプション（いずれか一つ必ずお選びいただきます）<br>
-          ・専用ポスト：　2,000円／月（税別）<br>
-          ・転送サービス(週1回5通まで)：　3,000円／月（税別）<br>
-          <br>
-        </p>
-      </div>
-    </div>
-
-    <button type="button" class="btn btn-primary btn-lg d-block mx-auto nowrap" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScHQYRnV-pzHFwlIJCzS-KYGbabvHuPHbzzXU3GMZ6hUUzO0A/viewform?usp=sf_link'">バーチャルオフィス<wbr>見学予約</button>
-
-
-
-  </div>
-</div>
-
 <!-- アクセス -->
 <div class="access pt-2">
   <div class="container text-center">
@@ -391,8 +254,93 @@ function gtag_report_conversion_virtual(url) {
 
 </footer>
 
-<!-- javascript はここから -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- Modal -->
+<div class="modal fade" id="inquiryFormModal" tabindex="-1" role="dialog" aria-labelledby="inquiryFormModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="inquiryFormModalTitle">見学のご予約</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="inquiryForm">
+          <div class="form-group">
+            <label for="">お名前</label><font style="color:red">※</font>
+            <input type="text" class="form-control" name="name" aria-describedby="" placeholder="" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">メールアドレス</label><font style="color:red">※</font>
+            <input type="email" class="form-control" name="mail" id="" aria-describedby="" placeholder="" required>
+          </div>
+          <div class="form-group">
+            <label for="">電話番号</label>
+            <input type="tel" class="form-control" name="tel" aria-describedby="" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="">見学ご希望日</label><font style="color:red">※</font>
+            <input type="date" class="form-control" name="preferred_visit_date" aria-describedby="" placeholder="" required>
+            <small class="text-muted">月〜金の10:00-18:00で見学可能となります。</small>
+          </div>
+          <div class="form-group">
+            <label for="">想定利用頻度</label><font style="color:red">※</font>
+            <select class="form-control" name="frequency" required>
+              <option></option>
+              <option value="月32時間程度(週2回4時間ペース)">月32時間程度(週2回4時間ペース)</option>
+              <option value="月64時間程度(週2回8時間ペース)">月64時間程度(週2回8時間ペース)</option>
+              <option value="月96時間程度(週3回8時間ペース)">月96時間程度(週3回8時間ペース)</option>
+              <option value="月128時間程度(週4回8時間ペース)">月128時間程度(週4回8時間ペース)</option>
+              <option value="それ以上(毎日ほぼ8時間ペース)">それ以上(毎日ほぼ8時間ペース)</option>
+            </select>
+            <small class="text-muted">プラン選択時の参考に利用しますが、現時点での想定で構いません。</small>
+          </div>
+          <div class="form-group">
+            <label for="">その他ご要望</label>
+            <textarea class="form-control" name="remarks" id="" rows="3"></textarea>
+          </div>
+          <div class="modal-footer">
+            <p><font style="color:red">※</font>は必須入力項目です。</p>
+            <button type="submit" class="btn btn-primary">送信</button>
+          </div>
+          <input type="hidden" name="sheetName" value="HarborSコワーキング会員">
+        </form>
+        <div id="thanksMessage" style="display: none;">
+          <p>お問い合わせありがとうございました。<br>担当からご連絡させていただきますのでお待ちください。</p>
+        </div>
+        <div id="errorMessage" style="display: none;">
+          <p style="color:red">予期せぬエラーが発生しました。<br>大変申し訳ございませんが、別途<a style="color:red; text-decoration-line: underline;" href="https://docs.google.com/forms/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/viewform?usp=sf_link">お問い合わせフォーム</a>か<a href="tel:0368856140" style="color:red; text-decoration-line: underline;">お電話(03-6885-6140)</a>へお問い合わせくださいませ。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$('#inquiryForm').submit(function(event) {
+  event.preventDefault();
+  var postUrl = "https://script.google.com/macros/s/AKfycbwbcIIiHad2j7kq41e0IA1PYjCD6f3wK522sgUIQYPI1qUeZi5U/exec";
+  var postData = $('#inquiryForm').serialize();
+  var posting = $.post(postUrl, postData)
+    .done(function() {
+      gtag('event', 'conversion', {
+        'event_category': 'coworking',
+        'event_label': 'inquiry',
+        'value': 1
+      });
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-701518947/lWC1CNWfhbABEOOowc4C',
+          'event_callback': callback
+      });
+      $('#inquiryForm').hide();
+      $('#thanksMessage').show();
+    }).fail(function() {
+      $('#errorMessage').show();
+  })
+})
+</script>
 </body>
