@@ -45,12 +45,15 @@ h6 {
   font-weight: bold !important;
 }
 
-h1.display-4 {
-  font-size: 6.5em;
+h1.display-4 ,.top-text h2{
   text-shadow: 0px 0px 5px #00000044,
   -0px 0px 5px #00000044,
   0px -0px 5px #00000044,
   -0px -0px 5px #00000044;
+}
+
+h1.display-4{
+  font-size: 6.5em;
 }
 
 .lead {
@@ -288,6 +291,14 @@ iframe.map {
   opacity: 0.6;
   background-color: #000000;
 }
+
+.coworking-top {
+  height: 850px;
+}
+
+.top-text {
+  top: 20%;
+}
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 SAMPLEページ
@@ -386,6 +397,14 @@ h2.top {
     font-size: 1rem;
   }
 
+  .coworking-top .top-text {
+    top: 10%;
+  }
+
+  .coworking-top {
+    height: 650px;
+  }
+  
   .circle-badges {
     top: -10px;
     width: 100px;
@@ -406,6 +425,10 @@ h2.top {
 
   h1.display-4 {
     font-size: 3rem;
+  }
+
+  .coworking-top .top-text {
+    top: 5%;
   }
 
   .logo-mark {
