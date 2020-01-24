@@ -5,4 +5,4 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./harbors:/usr/share/nginx/html
+      - ./docs:/usr/share/nginx/html
