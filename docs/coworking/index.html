@@ -3,25 +3,25 @@
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 <meta charset="UTF-8">
-<title>HarborS 表参道 | エンジニア向けコワーキングスペース</title>
-<meta name="description" content="「日本のソフトウェアエンジニアを憧れの職業へ」をMissionに掲げる、株式会社アンチパターンが運営するコワーキングスペース。見学予約受付。">
+<title>HarborS 表参道 | エンジニア・起業家向けコワーキングスペース</title>
+<meta name="description" content="エンジニアやエンジニアと働く起業家向けの会員制コワーキングスペース予約サイトです。">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" href="https://harbors.anti-pattern.co.jp">
 
+<!-- OGP設定 -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@harbors_sh" />
 <meta property="og:url" content="https://harbors.anti-pattern.co.jp/" />
 <meta property="og:title" content="HarborS表参道|ハーバーズ表参道" />
 <meta property="og:type" content="website" />
-<meta property="og:description" content="「日本のソフトウェアエンジニアを憧れの職業へ」をMissionに掲げる、株式会社アンチパターンが運営するコワーキングスペース。見学予約受付。" />
+<meta property="og:description" content="コワーキングスペース見学申込" />
 <meta property="og:image" content="https://harbors.anti-pattern.co.jp/img/ogimg.png" />
 <meta property="fb:app_id" content="621479295258516" />
 <!-- スタイルシートはここから -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="../css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:500" rel="stylesheet">
-<link rel="shortcut icon" href="img/logo.png" />
+<link rel="shortcut icon" href="../img/logo.png" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150157952-1">
 </script>
@@ -30,6 +30,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-150157952-1');
+
   gtag('config', 'AW-701518947');
 </script>
 <!-- Event snippet for コワーキング見学予約 conversion page
@@ -62,8 +63,10 @@ function countClickByGa() {
     <div class="collapse navbar-collapse" id="navbar-header">
       <a class="nav-link" href="/"><div class="logo"></div></a>
       <ul class="navbar-nav ml-auto">
+
         <li class="nav-item"><a class="nav-link" href="#">COWORKING</a></li>
         <li class="nav-item"><a class="nav-link" href="/virtual_office/">VIRTUAL-OFFICE</a></li>
+        <li class="nav-item"><a class="nav-link" href="/events/">EVENTS</a></li>
         <li class="nav-item"><a class="nav-link" href="/rooms/">ROOMS</a></li>
         <li class="nav-item"><a class="nav-link" href="#access">ACCESS</a></li>
         <li class="nav-item"><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/viewform?usp=sf_link">CONTACT</a></li>
@@ -72,98 +75,56 @@ function countClickByGa() {
   </nav>
 </header>
 <!-- トップ画像 -->
-<div class="jumbotron-fluid position-relative top-image p-0 coworking-top">
+<div class="jumbotron-fluid position-relative top-image p-0">
   <div class="filter"></div>
   <!-- トップ画像内文字 -->
-  <div class="text-white position-absolute text-center top-text container-fluid">
-    <div class="row py-5">
-      <div class="col-lg-12">
-        <h2 class="display-4 nowrap">HarborS <wbr>表参道</h2>
-      </div>
-      <div class="col-lg-12">
-        <h2 class="nowrap"><br>エンジニア向け<wbr>コワーキングスペース</h2>
-      </div>
-      <div class="col-lg-12">
-        <p class="lead mt-5 nowrap">「HarborS」はエンジニア同士の<wbr>繋がりを創造できる場所です。<br>
-          働く環境が整っているうえに、<wbr>エンジニア向け勉強会や<wbr>イベントも開催予定です。<br>
-          HarborSのコミュニティマネージャが<wbr>会員同士の繋がり、<wbr>コミュニティ形成のお手伝いを<wbr>させていただきます。<br>
-        </p>
-      </div>
-    </div>
-
+  <div class="text-white position-absolute main-txt">
+    <h1 class="display-4 nowrap">HarborS <wbr>表参道</h1>
+    <p class="lead">起業家、ソフトウェアエンジニアが集結しプロダクトを生み出す場所へ<br>
+      表参道駅徒歩3分、2019年11月オープンの会員制コワーキングスペースです。<br>
+      〒107-0062 東京都港区南青山3丁目15-9 MINOWA表参道3F<br>
+      03-6885-6140
+    </p>
     <div class="fixed-bottom mb-5">
       <button type="button" class="btn btn-primary btn-lg mx-auto nowrap text-white top-button d-block" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">コワーキングスペース<wbr>見学予約</button>
     </div>
   </div>
 </div>
+
 <div class="zigzag text-white">
-  <div class="container">
-    <h2 class="text-center mt-5">「HarborS」で新しい出会いを</h2>
+  <div class="container py-5">
     <div class="row py-5">
-      <div class="col-12 col-lg-6 order-md-2 p-lg-0 mb-3">
-        <img src="img/engineer.png" alt="" class="w-100">
+      <div class="col-lg-6">
+        <h2 class="party-title mx-auto h3">コワーキングスペース会員募集</h2>
+        <p>
+          エンジニアやエンジニアと働く起業家向けのコワーキングスペースです。
+          落ち着いた雰囲気のコワーキングスペースや、会議室、併設されたイベントスペースもご利用いただけます。
+        </p>
+        <div class="d-flex flex-row mb-3">
+          <img src="../img/seat.jpg" alt="" class="h-100 col-6 p-0 mr-lg-3">
+          <img src="../img/coworking_space.png" alt="" class="h-100 col-6 p-0">
+        </div>
       </div>
-      <div class="col-12 col-lg-5 order-md-1 ml-md-auto">
-        <p class="text-white text-right mt-5">
-          「アプリ開発のエンジニアを探していたんです」<br>
-          <br>
-          「どのようなプロダクトなんですか？」<br>
-          <br>
+      <div class="col-lg-6">
+        <img src="../img/office.jpg" alt="" class="w-100 mb-3">
+        <p class="mb-5">
+          11月オープン予定。ソフトウェアエンジニア、起業家が集結し、プロダクトを生み出すコワーキングが港区青山に誕生します。
         </p>
       </div>
     </div>
-    <div class="row py-5">
-        <div class="col-12 col-lg-6 p-lg-0 mb-3">
-          <img src="img/designer.png" alt="" class="w-100">
-        </div>
-        <div class="col-12 col-lg-5 ml-md-autob float-right">
-          <p class="text-white mt-5">
-            「サービスのデザインがなかなか決まらなくて」<br>
-            <br>
-            「来週またここで会いましょう」<br>
-            <br>
-          </p>
-        </div>
-      </div>
   </div>
 </div>
+
 <div class="py-5">
   <div class="container">
-    <h2 class="text-center py-4" id="coworking">OPEN</h2>
-      <dl class="row">
-        <dt class="col-sm-4 offset-md-2 py-2">営業日時</dt>
-        <dd class="col-sm-4 py-2">
-          <p class="mb-2">年中無休</p>
-          <p class="mb-0">8:00から24:00まで利用可能</p>
-        </dd>
-        <dt class="col-sm-4 offset-md-2 py-2">カフェ営業、受付対応時間</dt>
-        <dd class="col-sm-4 py-2">
-          <p class="mb-2">平日 10:00〜19:00</p>
-          <p class="mb-0">祝日を除く。</p>
-        </dd>
-      </dl>
-      <h2 class="text-center py-4" id="coworking">PRICE</h2>
-      <dl class="row">
-        <dt class="col-sm-4 offset-md-2 py-2">32時間／月</dt>
-        <dd class="col-sm-4 py-2">15,000円</dd>
-        <dt class="col-sm-4 offset-md-2 py-2">64時間／月</dt>
-        <dd class="col-sm-4 py-2">25,000円</dd>
-        <dt class="col-sm-4 offset-md-2 py-2">96時間／月</dt>
-        <dd class="col-sm-4 py-2">35,000円</dd>
-        <dt class="col-sm-4 offset-md-2 py-2">時間制限なし</dt>
-        <dd class="col-sm-4 py-2">60,000円</dd>
-        <dt class="col-sm-4 offset-md-2 py-2">時間制限なし プライベートデスク</dt>
-        <dd class="col-sm-4 py-2">85,000円</dd>
-      </dl>
-    </div>
-</div>
-<div class="py-5 zigzag">
-  <div class="container">
-    <h2 class="text-center mb-5 text-white">様々な設備が整っており、あなたのビジネスをサポートします。</h2>
+    <h2 class="text-center display-3 py-2" id="coworking">設備一覧</h2>
+    <p class="mx-auto w-75">
+      様々な設備が整っており、あなたのビジネスをサポートします。
+    </p>
     <div class="row">
       <div class="col-md-4">
         <div class="card mb-4 border border-0">
-          <img src="img/seminarroom.jpg" alt="" class="border card-img-top">
+          <img src="../img/seminarroom.jpg" alt="" class="border card-img-top">
           <div class="card-body">
             <h3 class="card-title">セミナールーム</h3>
             <p class="card-text mb-lg-4">イベントスペースなどにもご利用いただけるセミナールームがございます。</p>
@@ -172,7 +133,7 @@ function countClickByGa() {
       </div>
       <div class="col-md-4">
         <div class="card mb-4 border border-0">
-          <img src="img/cafe.jpg" alt="" class="border card-img-top">
+          <img src="../img/cafe.jpg" alt="" class="border card-img-top">
           <div class="card-body">
             <h3 class="card-title">カフェスペース</h3>
             <p class="card-text mb-lg-4">コワーキング内にカフェスペースもございます。ごゆっくりお過ごしいただけます。</p>
@@ -181,7 +142,7 @@ function countClickByGa() {
       </div>
       <div class="col-md-4">
         <div class="card mb-4 border border-0">
-          <img src="img/rocker.jpg" alt="" class="border card-img-top">
+          <img src="../img/rocker.jpg" alt="" class="border card-img-top">
           <div class="card-body">
             <h3 class="card-title">レンタルロッカー</h3>
             <p class="card-text mb-lg-4">レンタルロッカーもございます。</p>
@@ -190,7 +151,7 @@ function countClickByGa() {
       </div>
       <div class="col-md-4">
         <div class="card mb-4 border border-0">
-          <img src="img/printer.jpg" alt="" class="border card-img-top">
+          <img src="../img/printer.jpg" alt="" class="border card-img-top">
           <div class="card-body">
             <h3 class="card-title">複合機・シュレッダー</h3>
             <p class="card-text mb-lg-4">複合機、シュレッダーもございます。</p>
@@ -199,7 +160,7 @@ function countClickByGa() {
       </div>
       <div class="col-md-4">
         <div class="card mb-4 border border-0">
-          <img src="img/office.png" alt="" class="border card-img-top">
+          <img src="../img/office.png" alt="" class="border card-img-top">
           <div class="card-body">
             <h3 class="card-title">アクセスのいい立地</h3>
             <p class="card-text mb-lg-4">表参道駅から徒歩3分の好立地です。</p>
@@ -208,10 +169,10 @@ function countClickByGa() {
       </div>
       <div class="col-md-4">
         <div class="card mb-4 border border-0">
-          <img src="img/wifi.jpg" alt="" class="border card-img-top">
+          <img src="../img/wifi.jpg" alt="" class="border card-img-top">
           <div class="card-body">
             <h3 class="card-title">無料Wi-Fi</h3>
-            <p class="card-text mb-lg-4">通信量も十分なWi-Fiでお仕事していただけます。</p>
+            <p class="card-text mb-lg-4">通信量も十分なWi-Fiと落ち着いた環境のコワーキングスペースでお仕事していただけます。</p>
           </div>
         </div>
       </div>
@@ -219,26 +180,49 @@ function countClickByGa() {
   </div>
 </div><!-- /.album	-->
 
-<!-- 間取り -->
-<div class="container">
-  <h2 class="text-center mb-5">集中スペースやテラス席など、気分に応じて好きな場所で作業ができます。</h2>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card mb-4 border border-0">
-          <img src="img/3f.png" alt="" class="card-img-top">
-          <div class="card-body">
-            <h3 class="card-title text-center">オフィススペース</h3>
-          </div>
-        </div>
+<div class="zigzag py-5">
+  <div class="container-fluid">
+    <div class="row py-5">
+      <div class="col-12 col-lg-5 order-md-2 p-lg-0 mb-3">
+        <img src="../img/kitchen.jpg" alt="" class="w-100">
       </div>
-      <div class="col-md-6">
-          <div class="card mb-4 border border-0">
-            <img src="img/rf.png" alt="" class="card-img-top">
-            <div class="card-body">
-              <h3 class="card-title text-center">テラススペース</h3>
-            </div>
-          </div>
-        </div>
+      <div class="col-12 col-lg-5 order-md-1 ml-md-auto">
+        <h3 class="mb-3 h2 text-white nowrap">コワーキングスペース<wbr>料金・営業時間</h3>
+        <p class="text-white">
+          入会費用：　10,000円（税別）<br>
+          月額費用：　15,000円~（税別）<br>
+          <br>
+          施設利用：　年中無休 8:00-24:00<br>
+          カフェ・受付：　平日10:00-19:00<br>
+          ※但し、イベントによる貸切で利用できない日程もございます。<br>
+          <br>
+        </p>
+      </div>
+    </div>
+
+    <div class="row py-5">
+      <div class="col-12 col-lg-5 order-1 p-lg-0 mb-3">
+        <img src="../img/nightview.jpg" alt="" class="w-100">
+      </div>
+      <div class="col-12 col-lg-5 order-2 mr-md-auto">
+        <h3 class="mb-3 h2 text-white">テラス席</h3>
+        <p class="text-white">
+          HarborSにはテラスもあり、夜には六本木のビル群を望む夜景も楽しめます。
+        </p>
+      </div>
+    </div>
+
+    <div class="row py-5">
+      <div class="col-12 col-lg-5 order-md-2 p-lg-0 mb-3">
+        <img src="../img/eventspace.jpg" alt="" class="w-100">
+      </div>
+      <div class="col-12 col-lg-5 order-md-1 ml-md-auto">
+        <h3 class="mb-3 h2 text-white">イベントスペース</h3>
+        <p class="text-white">
+          広々としたイベントスペースも完備。HarborS会員全員が参加可能なイベントであれば、無料でご利用いただけます。
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 

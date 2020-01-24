@@ -159,12 +159,10 @@ $(function(){
             '</div>'+//
           '</div>';
       }
-      // $('#events').append(html);
-      $('#events').append('<div class="col-md-12"><p class="text-center">ページが取得できませんでした。時間をおいてご確認ください。</p></div>');
-
+      $('#events').append(html);
 		}
 	}).fail(function(){
-    $('#events').append('<p>ページが取得できませんでした。時間をおいてご確認ください。</p>');
+    $('#events').append('<div class="col-md-12"><p class="text-center">ページが取得できませんでした。時間をおいてご確認ください。</p></div>');
   });
 
 
