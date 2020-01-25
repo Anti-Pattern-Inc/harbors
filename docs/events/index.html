@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 <meta charset="UTF-8">
 <title>イベント一覧 | HarborS表参道</title>
 <meta name="description" content="「日本のソフトウェアエンジニアを憧れの職業へ」をMissionに掲げる、株式会社アンチパターンが運営するコワーキングスペース。随時イベント開催中。">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="canonical" href="https://harbors.anti-pattern.co.jp">
-
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@harbors_sh" />
 <meta property="og:url" content="https://harbors.anti-pattern.co.jp/" />
@@ -47,6 +45,41 @@ function countClickByGa() {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- イベント一覧情報を取得する -->
+<script>
+    $(document).ready(function(){
+      var events_html = '';
+      $.ajax({
+        type: 'GET',
+        url: 'https://script.google.com/macros/s/AKfycbwbHBUZYsGi0DlbRGVJGa9iQNKVoDqRgFxMVcNLZ6KeHZhmIYU/exec',
+        dataType: 'jsonp',
+        jsonpCallback: 'jsondata',
+        success: function(json){
+          for (var i in json){
+            events_html +=
+              '<div class="card mb-3">'+
+                '<div class="row no-gutters">'+
+                  '<div class="col-md-4 my-auto">'+
+                    '<img class="card-img" src="'+ json[i].img_url +'">'+
+                  '</div>'+
+                  '<div class="col-md-8">'+
+                    '<div class="card-body text-left">'+
+                      '<h5 class="card-title">'+ json[i].title +'</h5>'+
+                      '<h5 class="card-title">'+ json[i].date + '　' +json[i].start_time +'~</h5>'+
+                      '<p>' + json[i].overview + '</p>'+
+                      '<a class="btn btn-primary" href="' + json[i].detail_url + '">詳細ページへ</a>'+
+                    '</div>'+
+                  '</div>'+
+                '</div>'+
+              '</div>';
+          }
+          $('#events').append(events_html);
+        }
+      }).fail(function(){
+        $('#events').append('<div class="col-md-12"><p class="text-center">ページが取得できませんでした。時間をおいてご確認ください。</p></div>');
+      });
+    })
+    </script>
 </head>
 
 <body>
@@ -71,29 +104,27 @@ function countClickByGa() {
     </div>
   </nav>
 </header>
+
 <!-- トップ画像 -->
-<div class="jumbotron-fluid position-relative top-image p-0">
-  <div class="filter"></div>
-  <!-- トップ画像内文字 -->
-  <div class="text-white position-absolute text-center top-text container-fluid">
-    <div class="row py-5">
-      <div class="col-lg-12 mt-5">
-        <h2 class="nowrap">HarborS <wbr>表参道 <wbr>イベント一覧</h2>
-      </div>
-      <div class="col-lg-12">
-        <p class="lead mt-5 nowrap">
-          「HarborS」はエンジニア同士の<wbr>繋がりを創造できる場所です。<br>
-          エンジニア向け勉強会や<wbr>イベントも随時開催しています。<br>
-        </p>
+<div class="jumbotron-fluid position-relative events-top p-0">
+    <div class="filter"></div>
+    <!-- トップ画像内文字 -->
+    <div class="text-white position-absolute text-center top-text container-fluid">
+      <div class="row py-5">
+        <div class="col-lg-12 mt-5">
+          <h2 class="nowrap">HarborS <wbr>表参道 <wbr>イベント一覧</h2>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  
+
+
+
 
 <!-- イベント一覧 -->
 <div class="container">
-  <h2 class="text-center mb-5 mt-5">HarborS表参道で<wbr>開催のイベント</h2>
-  <div class="row text-center" id="events">
+  <div class="row text-center mt-5" id="events">
   </div>
 </div>
 
@@ -130,42 +161,4 @@ function countClickByGa() {
   <p class="text-center mb-0 copyright"><small class="text-white">2019 &copy; Anti-Pattern Inc.</small></p>
 
 </footer>
-<!-- イベント一覧情報を取得する -->
-<script>
-
-$(function(){
-	$.ajax({
-		type: 'GET',
-		url: 'https://script.google.com/macros/s/AKfycbwbHBUZYsGi0DlbRGVJGa9iQNKVoDqRgFxMVcNLZ6KeHZhmIYU/exec',
-		dataType: 'jsonp',
-		jsonpCallback: 'jsondata',
-		success: function(json){
-      var html = '';
-      for (var i in json){
-        html += //
-          '<div class="card mb-3">'+//
-            '<div class="row no-gutters">'+//
-              '<div class="col-md-4 my-auto">'+//
-                '<img class="card-img" src="'+ json[i].img_url +'">'+//
-              '</div>'+//
-              '<div class="col-md-8">'+//
-                '<div class="card-body text-left">'+//
-                  '<h5 class="card-title">'+ json[i].title +'</h5>'+//
-                  '<h5 class="card-title">'+ json[i].date + json[i].start_time +'</h5>'+//
-                  '<p>' + json[i].overview + '</p>'+//
-                  '<a class="btn btn-primary" href="' + json[i].detail_url + '">詳細ページへ</a>'+//
-                '</div>'+//
-              '</div>'+//
-            '</div>'+//
-          '</div>';
-      }
-      $('#events').append(html);
-		}
-	}).fail(function(){
-    $('#events').append('<div class="col-md-12"><p class="text-center">ページが取得できませんでした。時間をおいてご確認ください。</p></div>');
-  });
-
-
-})
-</script>
 </body>
