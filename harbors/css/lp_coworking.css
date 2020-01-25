@@ -11,7 +11,6 @@
      .top-image {
         height: 200px;
      }
-
 }
 
  .main-txt {
@@ -21,13 +20,6 @@
     background: #99c6d82e;
     padding: 10px 5% 1px 5%;
 }
-
-/* @media screen and (max-width: 991.98px) {
-    .main-txt {
-        padding: 10px 5% 1px 5%;
-        left: 0;
-    }   
-} */
 
 h1.head-text {
     font-size: 4em;
@@ -54,7 +46,6 @@ h1.head-text {
         font-size: 1rem;
     }
 }
-
 
 .lead {
     list-style: none;
