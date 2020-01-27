@@ -301,6 +301,19 @@ iframe.map {
   height: 850px;
 }
 
+.events-top {
+  background: linear-gradient(#1B406B, #172C59);;
+  /* background-position: center center; */
+  height: 270px;
+  box-shadow: 0px 5px 6px 0px #e2e2e2;
+  border-radius: 0;
+}
+.events-top .eventpage-title {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width:100%;
+}
+
 .top-text {
   top: 20%;
 }
