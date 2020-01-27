@@ -3,8 +3,7 @@
 ## サイトURL：https://harbors.anti-pattern.co.jp/
 
 ## 開発
-プロジェクトルートディレクトリで以下コマンド
-`docker-compose up`
+プロジェクトルートディレクトリで`docker-compose up`し、
 プラウザで`localhost`にアクセス
 
 ## デプロイ
