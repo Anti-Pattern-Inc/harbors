@@ -288,9 +288,11 @@ function countClickByGa() {
         </button>
       </div>
       <div class="modal-body">
+        <p class="small">スタッフより日程調整のご連絡をさせて頂きます。<br>
+          既にご希望の日時があれば『その他ご要望』まで。</p>
         <form id="inquiryForm">
           <div class="form-group">
-            <label for="">お名前</label><font style="color:red">※</font>
+            <label for="">名前 or Twitter ID(@xxxxx)</label><font style="color:red">※</font>
             <input type="text" class="form-control" name="name" aria-describedby="" placeholder="" required>
           </div>
           <div class="form-group">
@@ -305,9 +307,10 @@ function countClickByGa() {
             <label for="">その他ご要望</label>
             <textarea class="form-control" name="remarks" id="" rows="3"></textarea>
           </div>
+          <p><font style="color:red">※</font>は必須入力項目です。</p>
+          <button type="submit" class="btn btn-primary w-100 py-2">送信する</button>
           <div class="modal-footer">
-            <p><font style="color:red">※</font>は必須入力項目です。</p>
-            <button type="submit" class="btn btn-primary">送信</button>
+            <p class="small">HarborSは、株式会社アンチパターン が運営する、南青山のバーチャルオフィス兼エンジニア特化型コワーキングスペースです。</p>
           </div>
           <input type="hidden" name="sheetName" value="HarborSコワーキング会員">
         </form>
