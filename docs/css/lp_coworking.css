@@ -179,3 +179,7 @@ h1.head-text {
 .height100 {
     height: 100px;
 }
+
+.btn-lg {
+    padding: .5rem 7rem;
+}
