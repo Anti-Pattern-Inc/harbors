@@ -180,9 +180,9 @@
             var posting = $.post(postUrl, postData)
             .done(function() {
                 gtag('event', 'conversion', {
-                'event_category': 'easy_coworking',
-                'event_label': 'inquiry',
-                'value': 1
+                    'event_category': 'easy_coworking',
+                    'event_label': 'inquiry',
+                    'value': 1
                 });
                 var callback = function () {
                     if (typeof(url) != 'undefined') {
