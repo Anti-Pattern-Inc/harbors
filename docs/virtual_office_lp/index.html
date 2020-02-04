@@ -76,8 +76,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="mtb2">
-                <button type="button" class="btn btn-primary btn-lg mx-auto nowrap text-white top-button d-block" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">詳細請求</button>
+            <div class="height100"></div>
+            <div class="fixed-bottom mtb2">
+                <button type="button" class="btn btn-primary btn-lg mx-auto nowrap text-white top-button d-block" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">お問い合わせ</button>
             </div>
         </div>
     </div>
@@ -87,7 +88,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="inquiryFormModalTitle">詳細情報のご請求</h5>
+                    <h5 class="modal-title" id="inquiryFormModalTitle">お問い合わせ</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
@@ -95,7 +96,7 @@
                 <div class="modal-body">
                     <form id="inquiryForm">
                         <div class="form-group">
-                            <label for="">お名前</label><font style="color:red">※</font>
+                            <label for="">お名前 or Twitter ID(@xxxxx)</label><font style="color:red">※</font>
                             <input type="text" class="form-control" name="name" aria-describedby="" placeholder="" required>
                         </div>
                         <div class="form-group">
@@ -110,9 +111,10 @@
                             <label for="">その他ご要望</label>
                             <textarea class="form-control" name="remarks" id="" rows="3"></textarea>
                         </div>
+                        <p><font style="color:red">※</font>は必須入力項目です。</p>
+                        <button type="submit" class="btn btn-primary w-100 py-2">送信する</button>
                         <div class="modal-footer">
-                            <p><font style="color:red">※</font>は必須入力項目です。</p>
-                            <button type="submit" class="btn btn-primary">送信</button>
+                            <p class="small">HarborSは、株式会社アンチパターン が運営する、南青山のバーチャルオフィス兼エンジニア特化型コワーキングスペースです。</p>
                         </div>
                         <input type="hidden" name="sheetName" value="バーチャルLP">
                     </form>
@@ -135,14 +137,14 @@
             var posting = $.post(postUrl, postData)
             .done(function() {
                 gtag('event', 'conversion', {
-                'event_category': 'easy_virtual_office',
-                'event_label': 'inquiry',
-                'value': 1
+                    'event_category': 'easy_virtual_office',
+                    'event_label': 'inquiry',
+                    'value': 1
                 });
                 var callback = function () {
-                if (typeof(url) != 'undefined') {
-                    window.location = url;
-                }
+                    if (typeof(url) != 'undefined') {
+                        window.location = url;
+                    }
                 };
                 gtag('event', 'conversion', {
                     'send_to': 'AW-701518947/cwU8COqSyL8BEOOowc4C',
