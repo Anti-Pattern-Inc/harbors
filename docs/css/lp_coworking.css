@@ -107,9 +107,7 @@ h1.head-text {
     text-align: center;
     font-size: 1.5rem;
     color: #555;
-    /* background: #99c6d82e; */
     background: #fff;
-    /* border: #99c6d8 10px solid; */
     padding: 20px 0;
     font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
     font-weight: bold;
@@ -132,10 +130,23 @@ h1.head-text {
 .name {
     padding: 30px;
     width: 50%;
+    word-break: break-all;
 }
 
 .mtb2 {
-    margin: 2rem 0;;
+    margin: 20px 0;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.pl10 {
+    padding-left: 10px
+}
+
+.mb10 {
+    margin-bottom: 10px;
 }
 
 .border-stripe {
@@ -151,4 +162,20 @@ h1.head-text {
     background: repeating-linear-gradient(45deg, #99c6d8, #99c6d8 3px, white 3px, white 6px);
     content: '';
     z-index: -1;
+}
+
+.plan {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.plan_detail {
+    border: 1px solid #666;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.height100 {
+    height: 100px;
 }
