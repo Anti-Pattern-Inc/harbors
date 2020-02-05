@@ -140,22 +140,6 @@ header a,
   padding: 0;
 }
 
-/* ロゴマーク */
-.logo-mark {
-  left: 15%;
-  top: -50px;
-  z-index: 999;
-  border-radius: 50%;
-  height: 240px;
-  width: 240px;
-}
-
-/* ロゴマークの中身 */
-.logo-mark img {
-  top: 30%;
-  left: 30%;
-}
-
 .logo {
   width: 250px;
   height: 35px;
