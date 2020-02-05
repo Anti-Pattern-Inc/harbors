@@ -89,7 +89,7 @@ h1.display-4{
   padding: 10px;
 }
 
-header.term {
+header {
   box-shadow: 0px 0px 5px #00000044;
 }
 
@@ -138,22 +138,6 @@ header a,
 .top-stitch p {
   margin: 0;
   padding: 0;
-}
-
-/* ロゴマーク */
-.logo-mark {
-  left: 15%;
-  top: -50px;
-  z-index: 999;
-  border-radius: 50%;
-  height: 240px;
-  width: 240px;
-}
-
-/* ロゴマークの中身 */
-.logo-mark img {
-  top: 30%;
-  left: 30%;
 }
 
 .logo {
@@ -244,6 +228,11 @@ header a,
   top: -60px;
   background: linear-gradient(45deg, #a9a9a9 30px, transparent 0), linear-gradient(315deg, #a9a9a9 30px, transparent 0);
   background-size: 60px 60px;
+}
+
+/* コワーキング料金一覧テーブル */
+table.plan-list th, table.plan-list td{
+  vertical-align: middle;
 }
 
 /* ------------------------------
