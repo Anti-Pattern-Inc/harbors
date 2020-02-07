@@ -147,3 +147,12 @@ h1.head-text {
 .btn-lg {
     padding: .5rem 7rem;
 }
+
+.fixed-bottom {
+    text-align: center;
+}
+
+.top-button {
+    text-align: center;
+    padding: .5rem 2rem;
+}
