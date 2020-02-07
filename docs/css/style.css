@@ -235,6 +235,13 @@ table.plan-list th, table.plan-list td{
   vertical-align: middle;
 }
 
+/* twitter埋め込み */
+
+.twitter_area {
+  margin: 0 auto;
+  width: 320px;
+}
+
 /* ------------------------------
 地図サイズ
 --------------------------------- */
