@@ -73,6 +73,12 @@ h1.display-4{
   margin: 5px;
 }
 
+.btn-white {
+  background-color: var(--white);
+  color: #A9A9A9;
+  box-shadow: 0px 2px 5px rgb(17, 14, 9);
+}
+
 .footer-menus a {
   color: #ffffff;
 }
@@ -295,6 +301,19 @@ iframe.map {
 
 .coworking-top {
   height: 850px;
+}
+
+.card-event-title {
+  text-shadow: 0px 0px 5px #00000044, 0px 0px 5px #00000044, 0px 0px 5px #00000044, 0px 0px 5px #00000044;
+}
+
+.event-card-img {
+  object-fit: cover;
+}
+.event-card-title {
+  max-height: 84px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .events-top {
