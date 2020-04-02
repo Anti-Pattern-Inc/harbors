@@ -6,16 +6,17 @@ TOPページ、コロナ対策の注意喚起部分の設定
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 @media screen and (max-width: 767.98px) {
-  .top-text {
+  .coworking-top .top-text {
     margin-top: 100px;
   }
 }
 
 @media screen and (max-width: 575.98px) {
+
   .alert-danger  {
     font-size: 12px;
   }
-  .top-text h2 {
+  .coworking-top .top-text h2 {
     font-size: 24px;
   }
 }
