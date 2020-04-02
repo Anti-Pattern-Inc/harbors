@@ -4,7 +4,7 @@
 /* // Small devices (landscape phones, 576px and up) */
 /* @media (min-width: 375px) and (max-width: 575px) { */
 	/* @media (max-width: 575px) { */
-@media (min-width: 375px) and (max-width: 576px) { 
+@media (max-width: 576px) {
 
 .container {
     padding-left: 0%;
