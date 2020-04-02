@@ -26,6 +26,9 @@ header {
     background-color: #FA163F;
     font-size: 2rem;
 }
+.footer-button-area {
+    z-index: 5;
+}
 .btn p {
     background-color: #FA163F;
 }
