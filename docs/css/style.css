@@ -2,6 +2,27 @@
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+TOPページ、コロナ対策の注意喚起部分の設定
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+@media screen and (max-width: 767.98px) {
+  .coworking-top .top-text {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+
+  .alert-danger  {
+    font-size: 12px;
+  }
+  .coworking-top .top-text h2 {
+    font-size: 24px;
+  }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
 全体の設定
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
