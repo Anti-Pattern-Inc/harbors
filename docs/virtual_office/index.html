@@ -49,7 +49,7 @@
 </script>
 <script>
     $(function () {
-        $('#datetimepicker').datetimepicker({
+        $('#preferred_visit_date').datetimepicker({
           format: 'YYYY/MM/DD',
           dayViewHeaderFormat: 'YYYY年 MMMM',
             tooltips: {
@@ -75,7 +75,7 @@
                 showClose: true
             }
         });
-        $('#datetimepicker2').datetimepicker({
+        $('#preferred_visit_time').datetimepicker({
             tooltips: {
                 close: '閉じる',
                 pickHour: '時間を取得',
@@ -95,7 +95,7 @@
             buttons: {
                 showClose: true
             },
-            enabledHours: [10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+            enabledHours: [10, 11, 12, 13, 14, 15, 16, 17, 18],
             useCurrent: false
         });
     });
@@ -115,7 +115,7 @@
       <a class="nav-link" href="/"><div class="logo"></div></a>
       <ul class="navbar-nav ml-auto">
 
-        <li class="nav-item"><a class="nav-link" href="/coworking">COWORKING</a></li>
+        <li class="nav-item"><a class="nav-link" href="/">COWORKING</a></li>
         <li class="nav-item"><a class="nav-link" href="/events/">EVENTS</a></li>
         <li class="nav-item"><a class="nav-link" href="/virtual_office/">VIRTUAL-OFFICE</a></li>
         <li class="nav-item"><a class="nav-link" href="/rooms/">ROOMS</a></li>
@@ -291,19 +291,19 @@
             <input type="tel" class="form-control" name="tel" aria-describedby="" placeholder="">
           </div>
           <div class="form-group">
-            <label for="datetimepicker">見学ご希望日</label><font style="color:red">※</font>
-            <div class="input-group date" id="datetimepicker" data-target-input="nearest">
-                <input type="text" name="preferred_visit_date" class="form-control datetimepicker-input" data-target="#datetimepicker"required>
-                <div class="input-group-append" data-target="#datetimepicker" data-toggle="datetimepicker">
+            <label for="preferred_visit_date">見学ご希望日</label><font style="color:red">※</font>
+            <div class="input-group date" id="preferred_visit_date" data-target-input="nearest">
+                <input type="text" name="preferred_visit_date" class="form-control datetimepicker-input" data-target="#preferred_visit_date"required>
+                <div class="input-group-append" data-target="#preferred_visit_date" data-toggle="datetimepicker">
                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                 </div>
             </div>
           </div>
           <div class="form-group">
-            <label for="datetimepicker2">時間</label><font style="color:red">※</font>
-            <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
-                <input type="text" name="preferred_visit_time" class="form-control datetimepicker-input" data-target="#datetimepicker2" required>
-                <span class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+            <label for="preferred_visit_time">時間</label><font style="color:red">※</font>
+            <div class="input-group date" id="preferred_visit_time" data-target-input="nearest">
+                <input type="text" name="preferred_visit_time" class="form-control datetimepicker-input" data-target="#preferred_visit_time" required>
+                <span class="input-group-append" data-target="#preferred_visit_time" data-toggle="datetimepicker">
                     <span class="input-group-text"><i class="fa fa-clock"></i></span>
                 </span>
             </div>
