@@ -125,29 +125,6 @@ function countClickByGa() {
                 showClose: true
             }
         });
-        $('#preferred_visit_time').datetimepicker({
-            tooltips: {
-                close: '閉じる',
-                pickHour: '時間を取得',
-                incrementHour: '時間を増加',
-                decrementHour: '時間を減少',
-                pickMinute: '分を取得',
-                incrementMinute: '分を増加',
-                decrementMinute: '分を減少',
-                pickSecond: '秒を取得',
-                incrementSecond: '秒を増加',
-                decrementSecond: '秒を減少',
-                togglePeriod: '午前/午後切替',
-                selectTime: '時間を選択'
-            },
-            format: 'HH:00',
-            locale: 'ja',
-            buttons: {
-                showClose: true
-            },
-            enabledHours: [10, 11, 12, 13, 14, 15, 16, 17, 18],
-            useCurrent: false
-        });
     });
 </script>
 </head>
@@ -565,12 +542,20 @@ function countClickByGa() {
             </div>
           </div>
           <div class="form-group">
-            <label for="preferred_visit_time">時間</label><font style="color:red">※</font>
-            <div class="input-group date" id="preferred_visit_time" data-target-input="nearest">
-                <input type="text" name="preferred_visit_time" class="form-control datetimepicker-input" data-target="#preferred_visit_time" required>
-                <span class="input-group-append" data-target="#preferred_visit_time" data-toggle="datetimepicker">
-                    <span class="input-group-text"><i class="fa fa-clock"></i></span>
-                </span>
+            <label for="preferred_visit_time">見学開始時刻</label><font style="color:red">※</font>
+            <select class="form-control" name="frequency" required>
+              <option></option>
+              <option value="11:00">11:00~12:00</option>
+              <option value="12:00">12:00~13:00</option>
+              <option value="13:00">13:00~14:00</option>
+              <option value="14:00">14:00~15:00</option>
+              <option value="15:00">15:00~16:00</option>
+              <option value="16:00">16:00~17:00</option>
+              <option value="17:00">17:00~18:00</option>
+              <option value="18:00">18:00~19:00</option>
+            </select>
+            <div class="preferred__visit-note">
+              <p class="small">※見学は1時間程度になります</p>
             </div>
           </div>
           <div class="form-group">
