@@ -35,7 +35,7 @@ body {
 }
 
 a {
-  color: #555;
+  color: #A9A9A9;
   text-decoration: none;
 }
 
@@ -267,6 +267,18 @@ table.plan-list th, table.plan-list td{
 .twitter_area {
   margin: 0 auto;
   width: 320px;
+}
+
+/* ------------------------------
+NEWS
+--------------------------------- */
+#news a:hover {
+  color: #595959;
+}
+#news a {
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.3s;
 }
 
 /* ------------------------------
