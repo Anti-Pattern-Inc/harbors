@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<meta charset="UTF-8">
+<title>コワーキングプラン | HarborS 表参道</title>
+<meta name="description" content="「日本のソフトウェアエンジニアを憧れの職業へ」をMissionに掲げる、株式会社アンチパターンが運営するコワーキングスペース。多数プランをご用意しています。">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" href="https://harbors.anti-pattern.co.jp">
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@harbors_sh" />
+<meta property="og:url" content="https://harbors.anti-pattern.co.jp/" />
+<meta property="og:title" content="コワーキングプラン | HarborS 表参道" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="「日本のソフトウェアエンジニアを憧れの職業へ」をMissionに掲げる、株式会社アンチパターンが運営するコワーキングスペース。多数プランをご用意しています。" />
+<meta property="og:image" content="https://harbors.anti-pattern.co.jp/img/ogimg.png" />
+<meta property="fb:app_id" content="621479295258516" />
+<!-- スタイルシートはここから -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:500" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+<link rel="shortcut icon" href="/img/logo.png" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150157952-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-150157952-1');
+  gtag('config', 'AW-701518947');
+</script>
+<!-- Event snippet for コワーキング見学予約 conversion page
+In your html page, add the snippet and call gtag_report_conversion_cowork when someone clicks on the chosen link or button. -->
+<script>
+function countClickByGa() {
+  gtag('event', 'click', {
+    'event_category': 'coworking',
+    'event_label': 'open_form',
+    'value': 1
+  })
+}
+</script>
+<!-- javascript はここから -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/ja.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- イベント一覧情報を取得する -->
+<script>
+  // $(document).ready(function(){
+  //   var events_html = '';
+  //   $.ajax({
+  //     type: 'GET',
+  //     url: 'https://script.google.com/macros/s/AKfycbwbHBUZYsGi0DlbRGVJGa9iQNKVoDqRgFxMVcNLZ6KeHZhmIYU/exec',
+  //     dataType: 'jsonp',
+  //     jsonpCallback: 'jsondata',
+  //     success: function(json){
+  //       for (var i = 0; i < 3; i++){
+  //         events_html +=
+  //           '<div class="col-md-4 mb-4 event-card">'+
+  //             '<div class="card text-white">'+
+  //               '<img class="card-img event-card-img" src="'+ json[i].img_url +'">'+
+  //               '<div class="card-img-overlay card-event-title">'+
+  //                 '<h4 class="event-card-title card-title">'+ json[i].title +'</h4>'+
+  //                 '<p class="card-text">'+ json[i].date + '</p>'+
+  //               '</div>'+
+  //             '</div>'+
+  //           '</div>';
+  //       }
+  //       $('#events').append(events_html);
+  //       resizeImg();
+  //     }
+  //   }).fail(function(){
+  //     $('#events').append('<div class="col-md-12"><p class="text-center">ページが取得できませんでした。時間をおいてご確認ください。</p></div>');
+  //   });
+  // })
+  // $(function(){
+  //   resizeYoutube();
+  // })
+  // $(window).resize(function() {
+  //   resizeImg();
+  //   resizeYoutube();
+  // })
+  // function resizeImg() {
+  //   var width = $('.event-card')[0].clientWidth;
+  //   var height = (width * 2) / 3;
+  //   $('.event-card-img').css('height', height+ 'px');
+  // }
+  // function resizeYoutube() {
+  //   var width = $('.youtube-area')[0].clientWidth;
+  //   var height = (width * 9) / 16;
+  //   $('.youtube-area').css('height', height+ 'px');
+  // }
+
+  $(function () {
+        $('#preferred_visit_date').datetimepicker({
+          format: 'YYYY/MM/DD',
+          dayViewHeaderFormat: 'YYYY年 MMMM',
+            tooltips: {
+                close: '閉じる',
+                selectMonth: '月を選択',
+                prevMonth: '前月',
+                nextMonth: '次月',
+                selectYear: '年を選択',
+                prevYear: '前年',
+                nextYear: '次年',
+                selectTime: '時間を選択',
+                selectDate: '日付を選択',
+                prevDecade: '前期間',
+                nextDecade: '次期間',
+                selectDecade: '期間を選択',
+                prevCentury: '前世紀',
+                nextCentury: '次世紀'
+            },
+            locale: moment.locale('ja', {
+                week: { dow: 1 }
+            }),
+            buttons: {
+                showClose: true
+            }
+        });
+    });
+</script>
+</head>
+
+<body>
+<header class="container-fluid mb-3 mb-md-0 bg-white">
+  <nav class="navbar navbar-expand-md navbar-light bg-white pr-0">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="ナビゲーションの切替">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="header-logo-area　col-6">
+      <img rel="/img/logo_gray.png">
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-header">
+      <a class="nav-link" href="/"><div class="logo"></div></a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="/">COWORKING</a></li>
+        <li class="nav-item"><a class="nav-link" href="/events/">EVENTS</a></li>
+        <li class="nav-item"><a class="nav-link" href="/virtual_office/">VIRTUAL-OFFICE</a></li>
+        <li class="nav-item"><a class="nav-link" href="/rooms/">ROOMS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#access">ACCESS</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/viewform?usp=sf_link">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+<!-- <div class="alert alert-danger" role="alert">
+  コロナウィルスの感染防止のため、3/26(木)~5/6(水)に関しては、HarborSのコワーキングスペースは営業停止となります。
+  ご理解ご協力、よろしくお願いいたします。
+</div> -->
+</header>
+<!-- トップ画像 -->
+
+
+
+
+<div class="jumbotron-fluid position-relative events-top p-0">
+  <div class="filter"></div>
+  <!-- トップ画像内文字 -->
+  <div class="text-white position-absolute text-center top-text container-fluid">
+    <div class="row py-5">
+      <div class="col-lg-12 mt-5">
+        <h2 class="nowrap">HarborS <wbr>表参道 <wbr>サービスプラン一覧</h2>
+      </div>
+    </div>
+  </div>
+  <div class="fixed-bottom mb-5">
+    <button type="button" class="btn btn-primary btn-lg mx-auto text-white top-button d-block" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">コワーキングスペース見学予約</button>
+  </div>
+</div>
+
+
+
+
+
+<!-- <div class="jumbotron-fluid position-relative top-image p-0 coworking-top">
+  <div class="filter"></div>
+  <div class="text-white position-absolute text-center top-text container-fluid">
+    <div class="row py-5">
+      <div class="col-lg-12">
+        <h2 class="display-4 nowrap">HarborS <wbr>表参道</h2>
+      </div>
+      <div class="col-lg-12">
+        <h2 class="nowrap"><br>エンジニア特化型<wbr>コワーキング<wbr>スペース</h2>
+      </div>
+      <div class="col-lg-12">
+        <p class="lead mt-5 nowrap">「HarborS」はエンジニア同士の<wbr>繋がりを創造できる場所です。<br>
+          働く環境が整っているうえに、<wbr>エンジニア向け勉強会や<wbr>イベントも多数開催しています。<br>
+          HarborSのコミュニティマネージャが<wbr>会員同士の繋がり、<wbr>コミュニティ形成のお手伝いを<wbr>させていただきます。<br>
+        </p>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- 設備 -->
+<div class="py-5">
+  <div class="container">
+    <p class="text-center mb-5">多種多様なプランをご用意しており、ご利用者様のニーズに合わせてご利用できます</p>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-4 border">
+          <div class="card-body">
+            <h3 class="card-title">フリー32時間プラン</h3>
+            <p class="card-text mb-lg-4">1ヶ月に32時間まで利用できるプラン。</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">料金:15,000円／月</li>
+            <li class="list-group-item">利用可能時間帯：24時間365日</li>
+            <li class="list-group-item">超過料金：500円／時間</li>
+            <li class="list-group-item">入会金：10,000円</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-4 border">
+          <div class="card-body">
+            <h3 class="card-title">フリー64時間プラン</h3>
+            <p class="card-text mb-lg-4">1ヶ月に64時間まで利用できるプラン。</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">料金:25,000円／月</li>
+            <li class="list-group-item">利用可能時間帯：24時間365日</li>
+            <li class="list-group-item">超過料金：500円／時間</li>
+            <li class="list-group-item">入会金：10,000円</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-4 border">
+          <div class="card-body">
+            <h3 class="card-title">フリー96時間プラン</h3>
+            <p class="card-text mb-lg-4">1ヶ月に96時間まで利用できるプラン。</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">料金:35,000円／月</li>
+            <li class="list-group-item">利用可能時間帯：24時間365日</li>
+            <li class="list-group-item">超過料金：500円／時間</li>
+            <li class="list-group-item">入会金：10,000円</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card mb-4 border">
+          <div class="card-body">
+            <h3 class="card-title">無制限プラン</h3>
+            <p class="card-text mb-lg-4">好きな時間に好きなだけ！無制限に利用できるプラン。</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">料金:60,000円／月</li>
+            <li class="list-group-item">利用可能時間帯：24時間365日</li>
+            <li class="list-group-item">超過料金：なし</li>
+            <li class="list-group-item">入会金：10,000円</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card mb-4 border">
+          <div class="card-body">
+            <h3 class="card-title">ライトプラン</h3>
+            <p class="card-text mb-lg-4">1ヶ月に4時間まで利用できるプラン。</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">料金:2,000円／月</li>
+            <li class="list-group-item">利用可能時間帯：24時間365日</li>
+            <li class="list-group-item">超過料金：500円／時間</li>
+            <li class="list-group-item">入会金：10,000円</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card mb-4 border">
+          <div class="card-body">
+            <h3 class="card-title">プライベートデスク</h3>
+            <p class="card-text mb-lg-4">あなた専用のデスク1つ確保できるプラン。24時間365日利用可能</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">料金:85,000円／月</li>
+            <li class="list-group-item">利用可能時間帯：24時間365日</li>
+            <li class="list-group-item">超過料金：なし</li>
+            <li class="list-group-item">入会金：10,000円</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card mb-4 border">
+          <div class="card-body">
+            <h3 class="card-title">プライベートデスク(3席)</h3>
+            <p class="card-text mb-lg-4">専用のデスク3つ確保できるプラン。24時間365日利用可能</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">料金:220,000円／月</li>
+            <li class="list-group-item">利用可能時間帯：24時間365日</li>
+            <li class="list-group-item">超過料金：なし</li>
+            <li class="list-group-item">入会金：30,000円</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="card mb-4 border">
+          <div class="card-body">
+            <h3 class="card-title">平日32時間プラン</h3>
+            <p class="card-text mb-lg-4">月〜金曜日の平日8時〜24時に、月32時間利用できるプラン</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">料金:12,000円／月</li>
+            <li class="list-group-item">利用可能時間帯：平日8時〜24時</li>
+            <li class="list-group-item">超過料金：500円／時間</li>
+            <li class="list-group-item">入会金：10,000円</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-6">
+        <div class="card mb-4 border">
+          <div class="card-body">
+            <h3 class="card-title">平日ナイトプラン</h3>
+            <p class="card-text mb-lg-4">月〜金曜日の平日18時〜24時、何時間でも利用できるプラン</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">料金:8,800円／月</li>
+            <li class="list-group-item">利用可能時間帯：平日18時〜24時</li>
+            <li class="list-group-item">超過料金：利用可能時間外はご利用いただけません</li>
+            <li class="list-group-item">入会金：10,000円</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-6">
+        <div class="card mb-4 border">
+          <div class="card-body">
+            <h3 class="card-title">メンター付きプラン</h3>
+            <p class="card-text mb-lg-4">月〜金曜日の平日18時から24時まで、何時間でも利用できるプラン</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">料金:30,000円／月</li>
+            <li class="list-group-item">利用可能時間帯：平日18時〜24時</li>
+            <li class="list-group-item">超過料金：利用可能時間外はご利用いただけません</li>
+            <li class="list-group-item">入会金：10,000円</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="card mb-4 border">
+          <div class="card-body">
+            <h3 class="card-title">土日祝プラン</h3>
+            <p class="card-text mb-lg-4">土日祝日の朝8時から24時まで、何時間でも利用できるプラン</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">料金:10,000円／月</li>
+            <li class="list-group-item">利用可能時間帯：土日祝8時~24時</li>
+            <li class="list-group-item">超過料金：利用可能時間外はご利用いただけません</li>
+            <li class="list-group-item">入会金：10,000円</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="card mb-4 border">
+          <div class="card-body">
+            <h3 class="card-title">モーニングプラン</h3>
+            <p class="card-text mb-lg-4">毎日朝5時から11時まで、何時間でも利用できるプラン</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">料金:8,800円／月</li>
+            <li class="list-group-item">利用可能時間帯：5時〜11時</li>
+            <li class="list-group-item">超過料金：利用可能時間外はご利用いただけません</li>
+            <li class="list-group-item">入会金：10,000円</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card mb-4 border">
+          <div class="card-body">
+            <h3 class="card-title">深夜プラン</h3>
+            <p class="card-text mb-lg-4">毎日深夜23時から翌朝8時まで、何時間でも利用できるプラン</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">料金:10,000円／月</li>
+            <li class="list-group-item">利用可能時間帯：23時〜8時</li>
+            <li class="list-group-item">超過料金：利用可能時間外はご利用いただけません</li>
+            <li class="list-group-item">入会金：10,000円</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="card mb-4 border">
+          <div class="card-body">
+            <h3 class="card-title">ドロップイン</h3>
+            <p class="card-text mb-lg-4">毎日10時から20時、1時間600円でご利用いただけるプラン</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">料金:600円／時間</li>
+            <li class="list-group-item">利用可能時間帯：10時〜20時</li>
+            <li class="list-group-item">超過料金：利用可能時間外はご利用いただけません</li>
+            <li class="list-group-item">入会金：なし</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex">
+        <div class="card mb-4 border border-0">
+          <img src="/img/rocker.jpg" alt="" class="border card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">レンタルロッカー</h3>
+            <p class="card-text mb-lg-4">レンタルロッカーもございます。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="card mb-4 border border-0">
+          <img src="/img/printer.jpg" alt="" class="border card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">複合機・シュレッダー</h3>
+            <p class="card-text mb-lg-4">複合機、シュレッダーもございます。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="card mb-4 border border-0">
+          <img src="/img/office.png" alt="" class="border card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">アクセスのいい立地</h3>
+            <p class="card-text mb-lg-4">表参道駅から徒歩3分の好立地です。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="pt-2">
+  <div class="access pt-2 light-zigzag">
+    <div class="container text-center" id="news">
+    <!-- アクセス -->
+      <h2 class="display-3 pb-3" id="access">ACCESS</h2>
+      <div class="mb-3 text-center">
+        <p class="mb-0 nowrap">住所：東京都港区南青山3丁目15-9<wbr> MINOWA表参道3F</p><br>
+        <p class="mb-0 nowrap">アクセス：東京メトロ銀座線 <wbr>半蔵門線「表参道」下車 <wbr>A4出口 徒歩3分</p><br>
+        <p class="mb-0 nowrap">電話番号：03-6885-6140</p>
+      </div>
+    </div>
+    <!-- 地図 -->
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3241.498844026965!2d139.71311896562756!3d35.66471713019816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z44CSMTA3LTAwNjIg5p2x5Lqs6YO95riv5Yy65Y2X6Z2S5bGx77yT5LiB55uu77yR77yV4oiS77yZIE1JTk9XQeihqOWPgumBkzPpmo4!5e0!3m2!1sja!2sjp!4v1570693802983!5m2!1sja!2sjp" allowfullscreen=""></iframe>
+  </div>
+</div>
+
+<!-- フッター -->
+<footer class="py-3 m-0 zigzag-copy">
+  <div class="container small">
+    <div class="row">
+      <div class="col-md-6 footer-menus">
+        <p><a href="https://anti-pattern.co.jp">運営会社</a></p>
+        <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/viewform?usp=sf_link">お問い合わせ</a></p>
+        <p><a href="https://anti-pattern.co.jp/legal/privacy/">プライバシーポリシー</a></p>
+      </div>
+      <div class="col-md-6 footer-menus">
+        <p><a href="/terms/harbors/">コワーキングスペース利用規約</a></p>
+        <p><a href="/terms/virtual_office/">バーチャルオフィス利用規約</a></p>
+        <p><a href="/terms/rooms/">ミーティングルーム利用規約</a></p>
+      </div>
+    </div>
+  </div>
+  <p class="text-center mb-0 copyright"><small class="text-white">2019 &copy; Anti-Pattern Inc.</small></p>
+
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="inquiryFormModal" tabindex="-1" role="dialog" aria-labelledby="inquiryFormModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="inquiryFormModalTitle">見学のご予約</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="inquiryForm">
+          <p class="small">スタッフより日程調整のご連絡をさせて頂きます。<br>
+            既にご希望の日時があれば『その他ご要望』まで。
+          </p>
+          <div class="form-group">
+            <label for="">名前 or Twitter ID(@xxxxx)</label><font style="color:red">※</font>
+            <input type="text" class="form-control" name="name" aria-describedby="" placeholder="" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">メールアドレス</label><font style="color:red">※</font>
+            <input type="email" class="form-control" name="mail" id="" aria-describedby="" placeholder="" required>
+          </div>
+          <div class="form-group">
+            <label for="">電話番号</label>
+            <input type="tel" class="form-control" name="tel" aria-describedby="" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="preferred_visit_date">見学ご希望日</label><font style="color:red">※</font>
+            <div class="input-group date" id="preferred_visit_date" data-target-input="nearest">
+                <input type="text" name="preferred_visit_date" class="form-control datetimepicker-input" data-target="#preferred_visit_date"required>
+                <div class="input-group-append" data-target="#preferred_visit_date" data-toggle="datetimepicker">
+                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="preferred_visit_time">見学開始時刻</label><font style="color:red">※</font>
+            <select class="form-control" name="preferred_visit_time" required>
+              <option></option>
+              <option value="11:00">11:00~12:00</option>
+              <option value="12:00">12:00~13:00</option>
+              <option value="13:00">13:00~14:00</option>
+              <option value="14:00">14:00~15:00</option>
+              <option value="15:00">15:00~16:00</option>
+              <option value="16:00">16:00~17:00</option>
+              <option value="17:00">17:00~18:00</option>
+              <option value="18:00">18:00~19:00</option>
+            </select>
+            <div class="preferred__visit-note">
+              <p class="small">※見学は1時間程度になります</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">その他ご要望</label>
+            <textarea class="form-control" name="remarks" id="" rows="3"></textarea>
+          </div>
+          <p><font style="color:red">※</font>は必須入力項目です。</p>
+          <button type="submit" class="btn btn-primary w-100 py-2">送信する</button>
+          <div class="modal-footer">
+            <p class="small">HarborSは、株式会社アンチパターン が運営する、南青山のバーチャルオフィス兼エンジニア特化型コワーキングスペースです。</p>
+          </div>
+          <input type="hidden" name="sheetName" value="HarborSコワーキング会員">
+        </form>
+        <div id="thanksMessage" style="display: none;">
+          <p>お問い合わせありがとうございました。<br>担当からご連絡させていただきますのでお待ちください。</p>
+        </div>
+        <div id="errorMessage" style="display: none;">
+          <p style="color:red">予期せぬエラーが発生しました。<br>大変申し訳ございませんが、別途<a style="color:red; text-decoration-line: underline;" href="https://docs.google.com/forms/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/viewform?usp=sf_link">お問い合わせフォーム</a>か<a href="tel:0368856140" style="color:red; text-decoration-line: underline;">お電話(03-6885-6140)</a>へお問い合わせくださいませ。</p>
+        </div>
+        <div id="reservedErrorMessage" style="display: none;">
+          <p style="color:red">ご希望の日時でご予約が取れませんでした。<br>大変申し訳ございませんが、別の日時で再度予約をお願いいたします。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$('#inquiryForm').submit(function(event) {
+  event.preventDefault();
+  var postUrl = "https://script.google.com/macros/s/AKfycbwbcIIiHad2j7kq41e0IA1PYjCD6f3wK522sgUIQYPI1qUeZi5U/exec";
+  var postData = $('#inquiryForm').serialize();
+  var posting = $.post(postUrl, postData)
+    .done(function(data) {
+      if (data.message === "reserved") {
+        $('#reservedErrorMessage').show();
+      } else {
+          gtag('event', 'conversion', {
+          'event_category': 'coworking',
+          'event_label': 'inquiry',
+          'value': 1
+        });
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-701518947/lWC1CNWfhbABEOOowc4C',
+            'event_callback': callback
+        });
+        $('#reservedErrorMessage').hide();
+        $('#inquiryForm').hide();
+        $('#thanksMessage').show();
+      }
+    }).fail(function() {
+      $('#errorMessage').show();
+  })
+})
+</script>
+</body>
