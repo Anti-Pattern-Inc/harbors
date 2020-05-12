@@ -412,6 +412,7 @@ iframe.map {
     margin-top: 5px;
     width:100%;
     text-align: center;
+    transform: rotate(90deg);
   }
 }
 
