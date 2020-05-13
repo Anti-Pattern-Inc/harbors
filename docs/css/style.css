@@ -412,8 +412,11 @@ iframe.map {
     margin-top: 5px;
     width:100%;
     text-align: center;
+  }
+  .plan-category > .plans-open-icon > i{
     transform: rotate(90deg);
   }
+
 }
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
