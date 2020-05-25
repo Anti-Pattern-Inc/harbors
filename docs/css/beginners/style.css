@@ -5,10 +5,10 @@ body {
     max-width: 1200px;
 }
 ul,li{
-    padding: 0;  
+    padding: 0;
 }
 header {
-    background-color: #0FABBC;
+    background-color: #22B573;
     text-align: center;
 }
 .btn-header {
@@ -45,10 +45,10 @@ header {
     color: #ffffff;
 }
 .font-blue {
-    color: #0FABBC;
+    color: #22B573;
 }
 .bg-blue {
-    background-color: #0FABBC;
+    background-color: #22B573;
 }
   /* ↑ 共通css ↑ */
 
@@ -64,7 +64,7 @@ header {
 
 /* home */
 .home-text {
-    list-style-position: inside; 
+    list-style-position: inside;
 }
 .home-text_logo {
     display: flex;
@@ -75,7 +75,7 @@ header {
     margin-left: 15%;
 }
 .home-text_logo{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .home h1 {
     font-size: 6rem;
@@ -88,7 +88,7 @@ header {
 
 /* about */
 .about {
-    background-color: #0FABBC;
+    background-color: #22B573;
 }
 .about-list {
     background-color: #E4F9FF;
@@ -107,7 +107,7 @@ header {
     padding: 7px 10px;
     min-width: 120px;
     max-width: 100%;
-    background: #0FABBC;
+    background: #22B573;
 }
 .balloon:before {
     content: "";
@@ -116,14 +116,14 @@ header {
     left: 50%;
     transform: translateX(-50%);
     border: 55px solid transparent;
-    border-top: 35px solid #0FABBC;
+    border-top: 35px solid #22B573;
 }
 .balloon p {
     margin: 0;
     padding: 0;
 }
 .about h1 {
-    background-color: #0FABBC;
+    background-color: #22B573;
     font-size: 3rem;
 }
 .icon-red {
@@ -134,7 +134,7 @@ header {
 
 /* stay */
 .stay {
-    background-color: #0FABBC;
+    background-color: #22B573;
 }
 .stay-title {
     list-style-position: inside;
@@ -208,7 +208,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     border: 55px solid transparent;
-    border-top: 35px solid #0FABBC;
+    border-top: 35px solid #22B573;
 }
 .balloon-step1 {
     position: relative;
@@ -225,7 +225,7 @@ header {
     transform: translateX(-50%);
     border: 55px solid transparent;
     border-top: 35px solid #ffff;
-    color: #0FABBC;
+    color: #22B573;
 }
 .balloon-step2 {
     position: relative;
@@ -242,7 +242,7 @@ header {
     transform: translateX(-50%);
     border: 55px solid transparent;
     border-top: 35px solid #ffff;
-    color: #0FABBC;
+    color: #22B573;
 }
 .balloon-step3 {
     position: relative;
@@ -259,7 +259,7 @@ header {
     transform: translateX(-50%);
     border: 55px solid transparent;
     border-top: 35px solid #ffff;
-    color: #0FABBC;
+    color: #22B573;
 }
 .balloon-step4 {
     position: relative;
@@ -269,7 +269,7 @@ header {
     background: #ffff;
 }
 .balloon-step4 h1 {
-    color: #0FABBC;
+    color: #22B573;
 }
 .balloon-step4 p {
     margin: 0;
@@ -279,19 +279,19 @@ header {
     font-size: 1.3rem;
 }
 .access h2 {
-    color: #0FABBC;
+    color: #22B573;
 }
 .balloon-step1 h1 {
-    color: #0FABBC;
+    color: #22B573;
 }
 .balloon-step2 h1 {
-    color: #0FABBC;
+    color: #22B573;
 }
 .balloon-step2 h2 {
-    color: #0FABBC;
+    color: #22B573;
 }
 .balloon-step3 h1 {
-    color: #0FABBC;
+    color: #22B573;
 }
 .balloon1 p {
     margin: 0;
@@ -330,14 +330,8 @@ iframe {
 
 /* footer */
 footer {
-    background-color: #0FABBC;
+    background-color: #22B573;
     color: #E4F9FF;
     margin: 0 calc(50% - 50vw);
 }
 /* footer */
-
-
-
-
-
-
