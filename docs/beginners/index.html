@@ -2,17 +2,18 @@
 <html>
     <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
         <meta charset="UTF-8">
-        <title>HarborS for Beginners | HarborS 表参道</title>
-        <meta name="description" content="駆け出しエンジニア向けメンターサービスです。現役エンジニアによる技術相談とキャリア相談を提供します。">
+        <title>extends | HarborS 表参道</title>
+        <meta name="description" content="駆け出しエンジニア向けオンラインメンターサービスです。現役エンジニアによる技術相談とキャリア相談を提供します。">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="../img/extendsFavicon.ico" >
 
         <!-- OGP設定 -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@harbors_sh" />
         <meta property="og:url" content="https://harbors.anti-pattern.co.jp/beginners" />
-        <meta property="og:title" content="HarborS for Beginners | プログラミングのメンターサービス" />
+        <meta property="og:title" content="extends | プログラミングのオンラインメンターサービス" />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="プログラミング独学をサポートするメンターサービスです。コワーキング利用プラン、完全オンラインプランどちらも準備しております。年齢制限もございません。定期的にオンライン説明会実施中。お気軽にお申し込みください。" />
+        <meta property="og:description" content="プログラミング独学をサポートするオンラインメンターサービスです。コワーキング利用プラン、完全オンラインプランどちらも準備しております。年齢制限もございません。定期的にオンライン説明会実施中。お気軽にお申し込みください。" />
         <meta property="og:image" content="https://harbors.anti-pattern.co.jp/img/study_3.png" />
         <meta property="fb:app_id" content="621479295258516" />
 
@@ -25,6 +26,9 @@
         <link rel="stylesheet" href="../css/beginners/devices-xs.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/ja.js" type="text/javascript"></script>
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150157952-1">
         </script>
@@ -34,16 +38,54 @@
             gtag('js', new Date());
             gtag('config', 'UA-150157952-1');
             gtag('config', 'AW-701518947');
+            function countClickByGa() {
+              gtag('event', 'click', {
+                'event_category': 'extends',
+                'event_label': 'open_form',
+                'value': 1
+              })
+            }
         </script>
         <!-- javascript はここから -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+        <script>
+            $(function () {
+                $('#preferred_visit_date').datetimepicker({
+                  format: 'YYYY/MM/DD',
+                  dayViewHeaderFormat: 'YYYY年 MMMM',
+                    tooltips: {
+                        close: '閉じる',
+                        selectMonth: '月を選択',
+                        prevMonth: '前月',
+                        nextMonth: '次月',
+                        selectYear: '年を選択',
+                        prevYear: '前年',
+                        nextYear: '次年',
+                        selectTime: '時間を選択',
+                        selectDate: '日付を選択',
+                        prevDecade: '前期間',
+                        nextDecade: '次期間',
+                        selectDecade: '期間を選択',
+                        prevCentury: '前世紀',
+                        nextCentury: '次世紀'
+                    },
+                    locale: moment.locale('ja', {
+                        week: { dow: 1 }
+                    }),
+                    buttons: {
+                        showClose: true
+                    }
+                });
+            });
+        </script>
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand navbar-light pb-2 pt-2">
+            <!-- <nav class="navbar navbar-expand navbar-light pb-2 pt-2">
                 <a class="navbar-brand" href="/">
-                    <img src="../img/beginners-logo.png" alt="" class="header-photo">
+                    <img src="../img/extendsLogo_420.png" alt="" class="header-photo">
                 </a>
                 <a href="https://forms.gle/ox6CjjYHgZ9nUb8cA" style="margin: 0 0 0 auto;">
                     <button class="btn btn-header font-weight-bold font-write btn-outline-danger" type="button">
@@ -51,7 +93,7 @@
                         <span>申し込む</span>
                     </button>
                 </a>
-            </nav>
+            </nav> -->
         </header>
 
         <div class="home">
@@ -61,8 +103,9 @@
                         <img src="../img/start-1.png" alt="start" class="pr-5">
                         <img src="../img/now-1.png" alt="now" class="pl-5">
                     </div>
-                    <h1 class="font-blue font-weight-bold mb-lg-5">
-                        HarborS for Beginners<span class="font-weight-bold d-block">駆け出しエンジニア向けオンラインメンターサービス</span>
+                    <h1 class="font-blue font-weight-bold mb-lg-3">
+                      <img src="../img/extendsLogo_420.png" alt="extends" class="header-photo">
+                        <span class="font-weight-bold d-block">駆け出しエンジニア向けオンラインメンターサービス</span>
                     </h1>
                     <div class="home-text">
                         <div class="home-text_logo font-weight-bold">
@@ -74,11 +117,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <a href="https://forms.gle/ox6CjjYHgZ9nUb8cA">
-                            <button class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 " type="buton">
-                                話を聞いてみたい
-                            </button>
-                        </a>
+                        <button class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 " type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                            話を聞いてみたい
+                        </button>
                     </div>
                 </div>
             </div>
@@ -123,11 +164,9 @@
                                     <li>キャリア相談も可能です</li>
                                     <!-- <li>コワーキングスペースが利用できます</li> -->
                                 </ul>
-                                <a href="https://forms.gle/ox6CjjYHgZ9nUb8cA">
-                                    <button class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5" type="button">
-                                        話を聞いてみたい
-                                    </button>
-                                </a>
+                                <button class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 " type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                                    話を聞いてみたい
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -180,11 +219,9 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <a href="https://forms.gle/ox6CjjYHgZ9nUb8cA">
-                        <button class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write pr-5 pl-5 mt-5 mb-5" type="button">
-                            話を聞いてみたい
-                        </button>
-                    </a>
+                  <button class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 " type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                      話を聞いてみたい
+                  </button>
                 </div>
             </div>
         </div>
@@ -282,11 +319,9 @@
                 </div>
 
                 <div class="text-center">
-                    <a href="https://forms.gle/ox6CjjYHgZ9nUb8cA">
-                        <button class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write pr-5 pl-5 mt-5 mb-5" type="button">
-                            話を聞いてみたい
-                        </button>
-                    </a>
+                  <button class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 " type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                      話を聞いてみたい
+                  </button>
                 </div>
 
             </div>
@@ -311,11 +346,9 @@
                         </div>
 
                         <div class="footer-button-area text-lg-left col-lg-6 col-md-12 col-sm-12 col-12 order-3 mb-sm-5 mb-5">
-                            <a href="https://forms.gle/ox6CjjYHgZ9nUb8cA">
-                                <button class="btn btn-footer btn-lg btn-outline-danger font-weight-bold font-write font-weight-bold mb-5 mt-5 pr-5 pl-5" type="button">
-                                    話を聞いてみたい
-                                </button>
-                            </a>
+                          <button class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 " type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                              話を聞いてみたい
+                          </button>
                         </div>
 
                         <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-2" style="padding-left: 0; padding-right: 0;">
@@ -332,7 +365,113 @@
         </div>
 
         <footer>
-            <p class="text-center pt-4 pb-4 mb-0">©️ 2019 Anti-Pattern inc.</p>
+            <p class="text-center pt-4 pb-4 mb-0">©️ 2020 Anti-Pattern inc.</p>
         </footer>
+        <!-- Modal -->
+        <div class="modal fade" id="inquiryFormModal" tabindex="-1" role="dialog" aria-labelledby="inquiryFormModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="inquiryFormModalTitle">オンライン説明会のご予約</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form id="inquiryForm">
+                  <p class="small">スタッフより日程調整のご連絡をさせて頂きます。<br>
+                    既にご希望の日時があれば『その他ご要望』まで。
+                  </p>
+                  <div class="form-group">
+                    <label for="">お名前</label><font style="color:red">※</font>
+                    <input type="text" class="form-control" name="name" aria-describedby="" placeholder="" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">メールアドレス</label><font style="color:red">※</font>
+                    <input type="email" class="form-control" name="mail" id="" aria-describedby="" placeholder="" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="">電話番号</label><font style="color:red">※</font>
+                    <input type="tel" class="form-control" name="tel" aria-describedby="" placeholder="" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="preferred_visit_date">オンライン説明会ご希望日</label><font style="color:red">※</font>
+                    <div class="input-group date" id="preferred_visit_date" data-target-input="nearest">
+                        <input type="text" name="preferred_visit_date" class="form-control datetimepicker-input" data-target="#preferred_visit_date"required>
+                        <div class="input-group-append" data-target="#preferred_visit_date" data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="preferred_visit_time">オンライン説明会開始時刻</label><font style="color:red">※</font>
+                    <select class="form-control" name="preferred_visit_time" required>
+                      <option></option>
+                      <option value="11:00">11:00~12:00</option>
+                      <option value="12:00">12:00~13:00</option>
+                      <option value="13:00">13:00~14:00</option>
+                      <option value="14:00">14:00~15:00</option>
+                      <option value="15:00">15:00~16:00</option>
+                      <option value="16:00">16:00~17:00</option>
+                      <option value="17:00">17:00~18:00</option>
+                      <option value="18:00">18:00~19:00</option>
+                    </select>
+                    <div class="preferred__visit-note">
+                      <p class="small">※説明会は1時間程度になります</p>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="">その他ご要望</label>
+                    <textarea class="form-control" name="remarks" id="" rows="3"></textarea>
+                  </div>
+                  <p><font style="color:red">※</font>は必須入力項目です。</p>
+                  <button type="submit" class="btn btn-primary w-100 py-2">送信する</button>
+                  <div class="modal-footer">
+                    <p class="small">exntendsは、株式会社アンチパターンが運営する、エンジニア向けオンラインメンターサービスです。</p>
+                  </div>
+                  <input type="hidden" name="sheetName" value="extends">
+                </form>
+                <div id="thanksMessage" style="display: none;">
+                  <p>お問い合わせありがとうございました。<br>担当からご連絡させていただきますのでお待ちください。</p>
+                </div>
+                <div id="errorMessage" style="display: none;">
+                  <p style="color:red">予期せぬエラーが発生しました。<br>大変申し訳ございませんが、別途<a style="color:red; text-decoration-line: underline;" href="https://forms.gle/ox6CjjYHgZ9nUb8cA">お問い合わせフォーム</a>か<a href="tel:0368856140" style="color:red; text-decoration-line: underline;">お電話(03-6885-6140)</a>へお問い合わせくださいませ。</p>
+                </div>
+                <div id="reservedErrorMessage" style="display: none;">
+                  <p style="color:red">ご希望の日時でご予約が取れませんでした。<br>大変申し訳ございませんが、別の日時で再度予約をお願いいたします。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+        $('#inquiryForm').submit(function(event) {
+          event.preventDefault();
+          var postUrl = "https://script.google.com/macros/s/AKfycbwbcIIiHad2j7kq41e0IA1PYjCD6f3wK522sgUIQYPI1qUeZi5U/exec";
+          var postData = $('#inquiryForm').serialize();
+          var posting = $.post(postUrl, postData)
+          .done(function(data) {
+              if (data.message === "reserved") {
+                $('#reservedErrorMessage').show();
+              } else {
+                  gtag('event', 'conversion', {
+                  'event_category': 'extends',
+                  'event_label': 'inquiry',
+                  'value': 1
+                });
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                    window.location = url;
+                  }
+                };
+                $('#reservedErrorMessage').hide();
+                $('#inquiryForm').hide();
+                $('#thanksMessage').show();
+              }
+            }).fail(function() {
+              $('#errorMessage').show();
+          })
+        })
+        </script>
     </body>
 </html>
