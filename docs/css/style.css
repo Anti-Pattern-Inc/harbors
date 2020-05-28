@@ -421,6 +421,54 @@ iframe.map {
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+バーチャルオフィス契約ステップページ
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.step-card.step1 {
+  background-image: url(/img/seminarroom.jpg);
+}
+.step-card.step2 {
+  background-image: url(/img/cafe.jpg);
+}
+.step-card.step3 {
+  background-image: url(/img/pc.jpg);
+}
+.step-card.step4 {
+  background-image: url(/img/documents.jpg);
+}
+.step-card.step5 {
+  background-image: url(/img/interview.jpg);
+}
+.step-card.step6 {
+  background-image: url(/img/engineer.png);
+}
+.step-card.step7 {
+  background-image: url(/img/creditcard.jpg);
+}
+.step-card.step8 {
+  background-image: url(/img/virtual_office.jpg);
+}
+.step-card {
+  background-size:cover;
+  background-position: center center;
+  position: relative;
+}
+.step-card::before {
+  background-color: rgba(0,0,0,0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}
+.step-card > .card-body {
+  z-index: 10;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
 ROOMページ
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
