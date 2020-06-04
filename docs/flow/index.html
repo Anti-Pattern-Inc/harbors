@@ -38,7 +38,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
 <script>
 function countClickByGa() {
   gtag('event', 'click', {
-    'event_category': 'virtual_office_flow',
+    'event_category': 'virtual_office',
     'event_label': 'open_form',
     'value': 1
   })
@@ -316,7 +316,7 @@ $('#inquiryForm').submit(function(event) {
         $('#reservedErrorMessage').show();
       } else {
           gtag('event', 'conversion', {
-          'event_category': 'virtual_office_flow',
+          'event_category': 'virtual_office',
           'event_label': 'inquiry',
           'value': 1
         });
