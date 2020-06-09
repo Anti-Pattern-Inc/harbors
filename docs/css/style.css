@@ -416,7 +416,33 @@ iframe.map {
   .plan-category > .plans-open-icon > i{
     transform: rotate(90deg);
   }
+}
 
+.flow-button, .plan-button {
+  position:relative;
+  background-color: #18325F;
+  color: #ffffff;
+  border-radius: .25rem;
+  transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 575.98px) {
+  .flow-button h2, .plan-button h2{
+    font-size: 1.5em;
+  }
+}
+
+.flow-button > a, .plan-button > a{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.flow-button:hover, .plan-button:hover{
+  background-color: #58729F;
 }
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
