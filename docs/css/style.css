@@ -416,14 +416,14 @@ iframe.map {
   .plan-category > .plans-open-icon > i{
     transform: rotate(90deg);
   }
-
 }
 
 .flow-button, .plan-button {
   position:relative;
-  border: 1px solid #A9A9A9;
+  background-color: #18325F;
+  color: #ffffff;
   border-radius: .25rem;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 @media screen and (max-width: 575.98px) {
@@ -442,8 +442,7 @@ iframe.map {
 }
 
 .flow-button:hover, .plan-button:hover{
-  color: #ffffff;
-  background-color: #A9A9A9;
+  background-color: #58729F;
 }
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
