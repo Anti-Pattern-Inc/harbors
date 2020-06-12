@@ -495,6 +495,34 @@ iframe.map {
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+バーチャルオフィスとは
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.title-level1 {
+  border-top: 3px solid #9f166a;
+  box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.16);
+  padding: 7px;
+}
+
+.title-level2-solid {
+  border-bottom: 1px solid #426579;
+  border-left: 10px solid #426579;
+  padding: 7px;
+}
+
+.title-level2 {
+  border-bottom: 2px dotted #203744;
+  border-left: 10px solid #203744;
+  padding: 7px;
+}
+
+.image-size{
+  width: 75%;
+}
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
 ROOMページ
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
