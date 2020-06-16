@@ -162,7 +162,7 @@ function countClickByGa() {
     </div>
   </div>
   <div class="fixed-bottom mb-5">
-    <button type="button" class="btn btn-primary btn-lg mx-auto text-white top-button d-block" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">コワーキングスペース見学予約</button>
+    <button type="button" class="btn btn-primary btn-lg mx-auto text-white top-button d-block" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">もっと詳しく知りたい</button>
   </div>
 </div>
 
@@ -481,16 +481,13 @@ function countClickByGa() {
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="inquiryFormModalTitle">見学のご予約</h5>
+        <h5 class="modal-title" id="inquiryFormModalTitle"><nobr>コワーキングスペースに関する<wbr>お問い合わせ</nobr></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <form id="inquiryForm">
-          <p class="small">スタッフより日程調整のご連絡をさせて頂きます。<br>
-            既にご希望の日時があれば『その他ご要望』まで。
-          </p>
           <div class="form-group">
             <label for="">名前 or Twitter ID(@xxxxx)</label><font style="color:red">※</font>
             <input type="text" class="form-control" name="name" aria-describedby="" placeholder="" required>
@@ -504,7 +501,16 @@ function countClickByGa() {
             <input type="tel" class="form-control" name="tel" aria-describedby="" placeholder="">
           </div>
           <div class="form-group">
-            <label for="preferred_visit_date">見学ご希望日</label><font style="color:red">※</font>
+            <label for="">お問い合わせ目的</label><font style="color:red">※</font>
+            <select class="form-control" name="contact_type" required>
+              <option></option>
+              <option value="1">オンライン説明会を予約したい</option>
+              <option value="2">現地の見学説明会を予約したい</option>
+              <option value="3">資料を送付してほしい</option>
+            </select>
+          </div>
+          <div class="form-group" id="form_preferred_visit_date" style="display:none;">
+            <label for="preferred_visit_date">説明会ご希望日</label><font style="color:red">※</font>
             <div class="input-group date" id="preferred_visit_date" data-target-input="nearest">
                 <input type="text" name="preferred_visit_date" class="form-control datetimepicker-input" data-target="#preferred_visit_date"required>
                 <div class="input-group-append" data-target="#preferred_visit_date" data-toggle="datetimepicker">
@@ -512,8 +518,8 @@ function countClickByGa() {
                 </div>
             </div>
           </div>
-          <div class="form-group">
-            <label for="preferred_visit_time">見学開始時刻</label><font style="color:red">※</font>
+          <div class="form-group" id="form_preferred_visit_time" style="display:none;">
+            <label for="preferred_visit_time">説明会開始時刻</label><font style="color:red">※</font>
             <select class="form-control" name="preferred_visit_time" required>
               <option></option>
               <option value="11:00">11:00~12:00</option>
@@ -524,6 +530,7 @@ function countClickByGa() {
               <option value="16:00">16:00~17:00</option>
               <option value="17:00">17:00~18:00</option>
               <option value="18:00">18:00~19:00</option>
+              <option value="19:00">19:00~20:00</option>
             </select>
             <div class="preferred__visit-note">
               <p class="small">※見学は1時間程度になります</p>
@@ -553,6 +560,33 @@ function countClickByGa() {
     </div>
   </div>
 </div>
+<script>
+  $(function() {
+    $('[name="contact_type"]').change( function(){
+      var contactType = $('[name="contact_type"] option:selected').val();
+      if( contactType != '3' ){
+        $('#form_preferred_visit_date').show();
+        $('#form_preferred_visit_time').show();
+        $('[name="preferred_visit_date"]').attr("required", "true");
+        $('[name="preferred_visit_time"]').attr("required", "true");
+        if (contactType == '1'){
+          if($('[name="preferred_visit_time"]').children('option[value="20:00"]').length == 0){
+            $('[name="preferred_visit_time"]').append('<option value="20:00">20:00~21:00</option>');
+          }
+        }else{
+          if($('[name="preferred_visit_time"]').children('option[value="20:00"]').length == 1){
+            $('[name="preferred_visit_time"]').children('option[value="20:00"]').remove();
+          }
+        }
+      }else {
+        $('#form_preferred_visit_date').hide();
+        $('#form_preferred_visit_time').hide();
+        $('[name="preferred_visit_date"]').removeAttr("required");
+        $('[name="preferred_visit_time"]').removeAttr("required");
+      }
+    });
+  });
+</script>
 <script>
 $('#inquiryForm').submit(function(event) {
   event.preventDefault();
