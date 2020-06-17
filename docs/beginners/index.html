@@ -99,27 +99,31 @@
         <div class="home">
             <div class="container">
                 <div class="d-flex flex-column text-center">
-                    <div class="home-photo">
-                        <img src="../img/start-1.png" alt="start" class="pr-5">
-                        <img src="../img/now-1.png" alt="now" class="pl-5">
-                    </div>
-                    <h1 class="font-blue font-weight-bold mb-lg-3">
-                      <img src="../img/extendsLogo_420.png" alt="extends" class="header-photo">
-                        <span class="font-weight-bold d-block">駆け出しエンジニア向けオンラインメンターサービス</span>
-                    </h1>
-                    <div class="home-text">
-                        <div class="home-text_logo font-weight-bold">
-                            <div>
-                                現役エンジニアによる
-                                <ul>
-                                    <li>技術相談</li>
-                                    <li>キャリア相談</li>
-                                </ul>
+                    <div class="row">
+                        <div class="col-12 mx-auto">
+                            <div class="home-photo">
+                                <img src="../img/start-1.png" alt="start" class="pr-5">
+                                <img src="../img/now-1.png" alt="now" class="pl-5">
+                            </div>
+                            <h1 class="font-blue font-weight-bold mb-lg-3">
+                                <img src="../img/extendsLogo_420.png" alt="extends" class="header-photo">
+                                <span class="font-weight-bold d-block">駆け出しエンジニア向けオンラインメンターサービス</span>
+                            </h1>
+                            <div class="home-text">
+                                <div class="home-text_logo font-weight-bold">
+                                    <div>
+                                        現役エンジニアによる
+                                        <ul>
+                                            <li>技術相談</li>
+                                            <li>キャリア相談</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 col-md-6 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                                    <nobr>話を聞いてみる</nobr>
+                                </div>
                             </div>
                         </div>
-                        <button class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 " type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
-                            話を聞いてみたい
-                        </button>
                     </div>
                 </div>
             </div>
@@ -165,9 +169,9 @@
                                     <!-- <li>コワーキングスペースが利用できます</li> -->
                                 </ul>
                                 <img src="../img/study_3.png" style="width:75%">
-                                <button class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 " type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
-                                    話を聞いてみたい
-                                </button>
+                                <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 col-md-6 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                                    <nobr>話を聞いてみる</nobr>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -192,56 +196,60 @@
                     </div>
                 </div>
             </div> -->
-            <div class="space space-second">
-                <h1 class="space-font font-blue font-weight-bold pt-5 pb-3">メンター紹介</h1>
-                <div class="space-title d-flex flex-row pt-3 pb-3">
-                    <div class="text-center space-second_list">
-                        <img src="../img/bob.png" style="width:80%">
+            <div class="row">
+                <div class="col-12 mx-auto">
+                    <div class="space space-second">
+                        <h1 class="space-font font-blue font-weight-bold pt-5 pb-3">メンター紹介</h1>
+                        <div class="space-title d-flex flex-row pt-3 pb-3">
+                            <div class="text-center space-second_list">
+                                <img src="../img/bob.png" style="width:80%">
+                            </div>
+                            <div class="text-left space-second_list">
+                                <h2 class="pl-sm-3 pl-3">BOBさん</h2>
+                                <p class="px-5">新卒入社から3年目のエンジニア<br>アプリ開発からインフラ構築まで幅広くカバーするエンジニア非常に勉強熱心で、<br>わからないものはとことん勉強するタイプ</p>
+                            </div>
+                        </div>
+                        <div class="space-title d-flex flex-row pt-3 pb-3">
+                            <div class="text-center space-second_list">
+                                <img src="../img/tani.png" style="width:80%">
+                            </div>
+                            <div class="text-left space-second_list">
+                                <h2 class="pl-sm-3 pl-3">たにさん</h2>
+                                <p class="px-5">漁師からのキャリアチェンジエンジニア<br>エンジニア歴10年以上の経験豊富なエンジニア<br>アプリケーション開発からインフラ構築、要件定義から運用フェーズまで幅広い経験を保持している </p>
+                            </div>
+                        </div>
+                        <h1 class="space-font font-blue font-weight-bold pt-5 pb-3">メンターのスキルマップ</h1>
+                        <div class="space-title d-flex flex-row pt-3 pb-3">
+                            <div class="text-left space-second_list">
+                                <h2 class="text-left pl-lg-3 pl-sm-3 pl-3">プログラミング言語</h2>
+                                <ul class="space-title_logo text-lg-left d-flex flex-column flex-wrap mr-lg-4 mr-sm-4 ml-lg-4 pl-5">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>PHP</li>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>Ruby</li>
+                                    <li>SQL</li>
+                                </ul>
+                            </div>
+                            <div class="space-second_list">
+                                <h2 class="pl-sm-3 pl-3">インフラ</h2>
+                                <ul class="space-title_logo text-left ml-lg-5 pl-lg-3 pl-5">
+                                    <li>ネットワーク</li>
+                                    <li>Web/APサーバ</li>
+                                    <li>データベース</li>
+                                    <li>Docker</li>
+                                    <li>AWS</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 col-md-6 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                                <nobr>話を聞いてみる</nobr>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text-left space-second_list">
-                        <h2 class="pl-sm-3 pl-3">BOBさん</h2>
-                        <p class="px-5">新卒入社から3年目のエンジニア<br>アプリ開発からインフラ構築まで幅広くカバーするエンジニア非常に勉強熱心で、<br>わからないものはとことん勉強するタイプ</p>
-                    </div>
-                </div>
-                <div class="space-title d-flex flex-row pt-3 pb-3">
-                    <div class="text-center space-second_list">
-                        <img src="../img/tani.png" style="width:80%">
-                    </div>
-                    <div class="text-left space-second_list">
-                        <h2 class="pl-sm-3 pl-3">たにさん</h2>
-                        <p class="px-5">漁師からのキャリアチェンジエンジニア<br>エンジニア歴10年以上の経験豊富なエンジニア<br>アプリケーション開発からインフラ構築、要件定義から運用フェーズまで幅広い経験を保持している </p>
-                    </div>
-                </div>
-                <h1 class="space-font font-blue font-weight-bold pt-5 pb-3">メンターのスキルマップ</h1>
-                <div class="space-title d-flex flex-row pt-3 pb-3">
-                    <div class="text-left space-second_list">
-                        <h2 class="text-left pl-lg-3 pl-sm-3 pl-3">プログラミング言語</h2>
-                        <ul class="space-title_logo text-lg-left d-flex flex-column flex-wrap mr-lg-4 mr-sm-4 ml-lg-4 pl-5">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>PHP</li>
-                            <li>Java</li>
-                            <li>Python</li>
-                            <li>Ruby</li>
-                            <li>SQL</li>
-                        </ul>
-                    </div>
-                    <div class="space-second_list">
-                        <h2 class="pl-sm-3 pl-3">インフラ</h2>
-                        <ul class="space-title_logo text-left ml-lg-5 pl-lg-3 pl-5">
-                            <li>ネットワーク</li>
-                            <li>Web/APサーバ</li>
-                            <li>データベース</li>
-                            <li>Docker</li>
-                            <li>AWS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="text-center">
-                  <button class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 " type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
-                      話を聞いてみたい
-                  </button>
                 </div>
             </div>
         </div>
@@ -277,7 +285,7 @@
                             </h1>
                         </div>
                         <div class="w-75 text-left mt-lg-4 mt-md-3 mt-sm-3 mt-sm-4">
-                            <p>「話を聞いてみたい」ボタンからお問い合わせください</p>
+                            <p>「話を聞いてみる」ボタンからお問い合わせください</p>
                             <p>オンライン説明会の日程調整させていただきます</p>
                         </div>
                     </div>
@@ -296,7 +304,8 @@
                         </div>
                         <div class="w-75 text-left mt-lg-3 mt-md-3 mt-sm-3">
                             <p class="pb-2">本サービスの詳細なご説明をさせていただきます</p>
-                            <p>メンターとお話しいただき、ご自身の勉強スタイルにあっているかご確認ください</p>
+                            <p>また、メンターを紹介させて頂きます</p>
+                            <p>ご自身の勉強スタイルにあっているかをご確認ください</p>
                         </div>
                     </div>
                 </div>
@@ -338,10 +347,14 @@
                     </div>
                 </div>
 
-                <div class="text-center">
-                  <button class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 " type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
-                      話を聞いてみたい
-                  </button>
+                <div class="row">
+                    <div class="col-12 mx-auto">
+                        <div class="text-center">
+                            <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 col-md-6 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                                <nobr>話を聞いてみる</nobr>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -363,11 +376,10 @@
                             <p class="h3">電話番号</p>
                             <p class="h4 text-secondary pb-lg-3 pb-md-3">03-6885-6140</p>
                         </div>
-
-                        <div class="footer-button-area text-lg-left col-lg-6 col-md-12 col-sm-12 col-12 order-3 mb-sm-5 mb-5">
-                          <button class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 " type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
-                              話を聞いてみたい
-                          </button>
+                        <div class="footer-button-area text-lg-left col-lg-6 col-12 order-3 ">
+                          <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 col-md-8 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                            <nobr>話を聞いてみる</nobr>
+                          </div>
                         </div>
 
                         <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-2" style="padding-left: 0; padding-right: 0;">
@@ -391,16 +403,13 @@
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="inquiryFormModalTitle">オンライン説明会のご予約</h5>
+                <h5 class="modal-title" id="inquiryFormModalTitle">extendsに関する<wbr>お問い合わせ</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
                 <form id="inquiryForm">
-                  <p class="small">スタッフより日程調整のご連絡をさせて頂きます。<br>
-                    既にご希望の日時があれば『その他ご要望』まで。
-                  </p>
                   <div class="form-group">
                     <label for="">お名前</label><font style="color:red">※</font>
                     <input type="text" class="form-control" name="name" aria-describedby="" placeholder="" required>
@@ -414,6 +423,15 @@
                     <input type="tel" class="form-control" name="tel" aria-describedby="" placeholder="" required>
                   </div>
                   <div class="form-group">
+                    <label for="">お問い合わせ目的</label><font style="color:red">※</font>
+                    <select class="form-control" name="contact_type" required>
+                      <option></option>
+                      <option value="1">オンライン説明会を予約したい</option>
+                      <option value="2">現地の見学説明会を予約したい</option>
+                      <option value="3">資料を送付してほしい</option>
+                    </select>
+                  </div>
+                  <div class="form-group" id="form_preferred_visit_date" style="display:none;">
                     <label for="preferred_visit_date">オンライン説明会ご希望日</label><font style="color:red">※</font>
                     <div class="input-group date" id="preferred_visit_date" data-target-input="nearest">
                         <input type="text" name="preferred_visit_date" class="form-control datetimepicker-input" data-target="#preferred_visit_date"required>
@@ -422,7 +440,7 @@
                         </div>
                     </div>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group" id="form_preferred_visit_time" style="display:none;">
                     <label for="preferred_visit_time">オンライン説明会開始時刻</label><font style="color:red">※</font>
                     <select class="form-control" name="preferred_visit_time" required>
                       <option></option>
@@ -434,6 +452,7 @@
                       <option value="16:00">16:00~17:00</option>
                       <option value="17:00">17:00~18:00</option>
                       <option value="18:00">18:00~19:00</option>
+                      <option value="19:00">19:00~20:00</option>
                     </select>
                     <div class="preferred__visit-note">
                       <p class="small">※説明会は1時間程度になります</p>
@@ -463,6 +482,33 @@
             </div>
           </div>
         </div>
+        <script>
+            $(function() {
+              $('[name="contact_type"]').change( function(){
+                var contactType = $('[name="contact_type"] option:selected').val();
+                if( contactType == '1' || contactType == '2' ){
+                  $('#form_preferred_visit_date').show();
+                  $('#form_preferred_visit_time').show();
+                  $('[name="preferred_visit_date"]').attr("required", "true");
+                  $('[name="preferred_visit_time"]').attr("required", "true");
+                  if (contactType == '1'){
+                    if($('[name="preferred_visit_time"]').children('option[value="20:00"]').length == 0){
+                      $('[name="preferred_visit_time"]').append('<option value="20:00">20:00~21:00</option>');
+                    }
+                  }else{
+                    if($('[name="preferred_visit_time"]').children('option[value="20:00"]').length == 1){
+                      $('[name="preferred_visit_time"]').children('option[value="20:00"]').remove();
+                    }
+                  }
+                }else {
+                  $('#form_preferred_visit_date').hide();
+                  $('#form_preferred_visit_time').hide();
+                  $('[name="preferred_visit_date"]').removeAttr("required");
+                  $('[name="preferred_visit_time"]').removeAttr("required");
+                }
+              });
+            });
+        </script>
         <script>
         $('#inquiryForm').submit(function(event) {
           event.preventDefault();
