@@ -50,6 +50,9 @@ header {
 .bg-blue {
     background-color: #22B573;
 }
+.btn-shadow-extends {
+    box-shadow: 5px 5px 10px 0px #808080;
+}
   /* ↑ 共通css ↑ */
 
 
