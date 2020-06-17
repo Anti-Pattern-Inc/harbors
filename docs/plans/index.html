@@ -564,7 +564,7 @@ function countClickByGa() {
   $(function() {
     $('[name="contact_type"]').change( function(){
       var contactType = $('[name="contact_type"] option:selected').val();
-      if( contactType != '3' ){
+      if( contactType == '1' || contactType == '2' ){
         $('#form_preferred_visit_date').show();
         $('#form_preferred_visit_time').show();
         $('[name="preferred_visit_date"]').attr("required", "true");
