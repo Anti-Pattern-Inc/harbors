@@ -39,11 +39,11 @@
             gtag('config', 'UA-150157952-1');
             gtag('config', 'AW-701518947');
             function countClickByGa() {
-              gtag('event', 'click', {
-                'event_category': 'extends',
-                'event_label': 'open_form',
-                'value': 1
-              })
+                gtag('event', 'click', {
+                    'event_category': 'extends',
+                    'event_label': 'open_form',
+                    'value': 1
+                })
             }
         </script>
         <!-- javascript はここから -->
@@ -53,9 +53,9 @@
         <script>
             $(function () {
                 $('#preferred_visit_date').datetimepicker({
-                  format: 'YYYY/MM/DD',
-                  dayViewHeaderFormat: 'YYYY年 MMMM',
-                    tooltips: {
+                    format: 'YYYY/MM/DD',
+                    dayViewHeaderFormat: 'YYYY年 MMMM',
+                        tooltips: {
                         close: '閉じる',
                         selectMonth: '月を選択',
                         prevMonth: '前月',
@@ -377,9 +377,9 @@
                             <p class="h4 text-secondary pb-lg-3 pb-md-3">03-6885-6140</p>
                         </div>
                         <div class="footer-button-area text-lg-left col-lg-6 col-12 order-3 ">
-                          <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 col-md-8 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
-                            <nobr>お問い合わせ</nobr>
-                          </div>
+                            <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 col-md-8 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                                <nobr>お問い合わせ</nobr>
+                            </div>
                         </div>
 
                         <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-2" style="padding-left: 0; padding-right: 0;">
@@ -400,142 +400,142 @@
         </footer>
         <!-- Modal -->
         <div class="modal fade" id="inquiryFormModal" tabindex="-1" role="dialog" aria-labelledby="inquiryFormModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="inquiryFormModalTitle">extendsに関する<wbr>お問い合わせ</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <form id="inquiryForm">
-                  <div class="form-group">
-                    <label for="">お名前</label><font style="color:red">※</font>
-                    <input type="text" class="form-control" name="name" aria-describedby="" placeholder="" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">メールアドレス</label><font style="color:red">※</font>
-                    <input type="email" class="form-control" name="mail" id="" aria-describedby="" placeholder="" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="">電話番号</label><font style="color:red">※</font>
-                    <input type="tel" class="form-control" name="tel" aria-describedby="" placeholder="" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="">お問い合わせ目的</label><font style="color:red">※</font>
-                    <select class="form-control" name="contact_type" required>
-                      <option></option>
-                      <option value="1">オンライン説明会を予約したい</option>
-                      <option value="2">現地の見学説明会を予約したい</option>
-                      <option value="3">資料を送付してほしい</option>
-                    </select>
-                  </div>
-                  <div class="form-group" id="form_preferred_visit_date" style="display:none;">
-                    <label for="preferred_visit_date">オンライン説明会ご希望日</label><font style="color:red">※</font>
-                    <div class="input-group date" id="preferred_visit_date" data-target-input="nearest">
-                        <input type="text" name="preferred_visit_date" class="form-control datetimepicker-input" data-target="#preferred_visit_date"required>
-                        <div class="input-group-append" data-target="#preferred_visit_date" data-toggle="datetimepicker">
-                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="inquiryFormModalTitle">extendsに関する<wbr>お問い合わせ</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="inquiryForm">
+                            <div class="form-group">
+                                <label for="">お名前</label><font style="color:red">※</font>
+                                <input type="text" class="form-control" name="name" aria-describedby="" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">メールアドレス</label><font style="color:red">※</font>
+                                <input type="email" class="form-control" name="mail" id="" aria-describedby="" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">電話番号</label><font style="color:red">※</font>
+                                <input type="tel" class="form-control" name="tel" aria-describedby="" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">お問い合わせ目的</label><font style="color:red">※</font>
+                                <select class="form-control" name="contact_type" required>
+                                    <option></option>
+                                    <option value="1">オンライン説明会を予約したい</option>
+                                    <option value="2">現地の見学説明会を予約したい</option>
+                                    <option value="3">資料を送付してほしい</option>
+                                </select>
+                            </div>
+                            <div class="form-group" id="form_preferred_visit_date" style="display:none;">
+                                <label for="preferred_visit_date">オンライン説明会ご希望日</label><font style="color:red">※</font>
+                                <div class="input-group date" id="preferred_visit_date" data-target-input="nearest">
+                                    <input type="text" name="preferred_visit_date" class="form-control datetimepicker-input" data-target="#preferred_visit_date"required>
+                                    <div class="input-group-append" data-target="#preferred_visit_date" data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" id="form_preferred_visit_time" style="display:none;">
+                                <label for="preferred_visit_time">オンライン説明会開始時刻</label><font style="color:red">※</font>
+                                <select class="form-control" name="preferred_visit_time" required>
+                                    <option></option>
+                                    <option value="11:00">11:00~12:00</option>
+                                    <option value="12:00">12:00~13:00</option>
+                                    <option value="13:00">13:00~14:00</option>
+                                    <option value="14:00">14:00~15:00</option>
+                                    <option value="15:00">15:00~16:00</option>
+                                    <option value="16:00">16:00~17:00</option>
+                                    <option value="17:00">17:00~18:00</option>
+                                    <option value="18:00">18:00~19:00</option>
+                                    <option value="19:00">19:00~20:00</option>
+                                </select>
+                                <div class="preferred__visit-note">
+                                    <p class="small">※説明会は1時間程度になります</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">その他ご要望</label>
+                                <textarea class="form-control" name="remarks" id="" rows="3"></textarea>
+                            </div>
+                            <p><font style="color:red">※</font>は必須入力項目です。</p>
+                            <button type="submit" class="btn btn-primary w-100 py-2">送信する</button>
+                            <div class="modal-footer">
+                                <p class="small">exntendsは、株式会社アンチパターンが運営する、エンジニア向けオンラインメンターサービスです。</p>
+                            </div>
+                            <input type="hidden" name="sheetName" value="extends">
+                        </form>
+                        <div id="thanksMessage" style="display: none;">
+                            <p>お問い合わせありがとうございました。<br>担当からご連絡させていただきますのでお待ちください。</p>
+                        </div>
+                        <div id="errorMessage" style="display: none;">
+                            <p style="color:red">予期せぬエラーが発生しました。<br>大変申し訳ございませんが、別途<a style="color:red; text-decoration-line: underline;" href="https://forms.gle/ox6CjjYHgZ9nUb8cA">お問い合わせフォーム</a>か<a href="tel:0368856140" style="color:red; text-decoration-line: underline;">お電話(03-6885-6140)</a>へお問い合わせくださいませ。</p>
+                        </div>
+                        <div id="reservedErrorMessage" style="display: none;">
+                            <p style="color:red">ご希望の日時でご予約が取れませんでした。<br>大変申し訳ございませんが、別の日時で再度予約をお願いいたします。</p>
                         </div>
                     </div>
-                  </div>
-                  <div class="form-group" id="form_preferred_visit_time" style="display:none;">
-                    <label for="preferred_visit_time">オンライン説明会開始時刻</label><font style="color:red">※</font>
-                    <select class="form-control" name="preferred_visit_time" required>
-                      <option></option>
-                      <option value="11:00">11:00~12:00</option>
-                      <option value="12:00">12:00~13:00</option>
-                      <option value="13:00">13:00~14:00</option>
-                      <option value="14:00">14:00~15:00</option>
-                      <option value="15:00">15:00~16:00</option>
-                      <option value="16:00">16:00~17:00</option>
-                      <option value="17:00">17:00~18:00</option>
-                      <option value="18:00">18:00~19:00</option>
-                      <option value="19:00">19:00~20:00</option>
-                    </select>
-                    <div class="preferred__visit-note">
-                      <p class="small">※説明会は1時間程度になります</p>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="">その他ご要望</label>
-                    <textarea class="form-control" name="remarks" id="" rows="3"></textarea>
-                  </div>
-                  <p><font style="color:red">※</font>は必須入力項目です。</p>
-                  <button type="submit" class="btn btn-primary w-100 py-2">送信する</button>
-                  <div class="modal-footer">
-                    <p class="small">exntendsは、株式会社アンチパターンが運営する、エンジニア向けオンラインメンターサービスです。</p>
-                  </div>
-                  <input type="hidden" name="sheetName" value="extends">
-                </form>
-                <div id="thanksMessage" style="display: none;">
-                  <p>お問い合わせありがとうございました。<br>担当からご連絡させていただきますのでお待ちください。</p>
                 </div>
-                <div id="errorMessage" style="display: none;">
-                  <p style="color:red">予期せぬエラーが発生しました。<br>大変申し訳ございませんが、別途<a style="color:red; text-decoration-line: underline;" href="https://forms.gle/ox6CjjYHgZ9nUb8cA">お問い合わせフォーム</a>か<a href="tel:0368856140" style="color:red; text-decoration-line: underline;">お電話(03-6885-6140)</a>へお問い合わせくださいませ。</p>
-                </div>
-                <div id="reservedErrorMessage" style="display: none;">
-                  <p style="color:red">ご希望の日時でご予約が取れませんでした。<br>大変申し訳ございませんが、別の日時で再度予約をお願いいたします。</p>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
         <script>
-            $(function() {
-              $('[name="contact_type"]').change( function(){
+        $(function() {
+            $('[name="contact_type"]').change( function(){
                 var contactType = $('[name="contact_type"] option:selected').val();
                 if( contactType == '1' || contactType == '2' ){
-                  $('#form_preferred_visit_date').show();
-                  $('#form_preferred_visit_time').show();
-                  $('[name="preferred_visit_date"]').attr("required", "true");
-                  $('[name="preferred_visit_time"]').attr("required", "true");
-                  if (contactType == '1'){
-                    if($('[name="preferred_visit_time"]').children('option[value="20:00"]').length == 0){
-                      $('[name="preferred_visit_time"]').append('<option value="20:00">20:00~21:00</option>');
+                    $('#form_preferred_visit_date').show();
+                    $('#form_preferred_visit_time').show();
+                    $('[name="preferred_visit_date"]').attr("required", "true");
+                    $('[name="preferred_visit_time"]').attr("required", "true");
+                    if (contactType == '1'){
+                        if($('[name="preferred_visit_time"]').children('option[value="20:00"]').length == 0){
+                            $('[name="preferred_visit_time"]').append('<option value="20:00">20:00~21:00</option>');
+                        }
+                    }else{
+                        if($('[name="preferred_visit_time"]').children('option[value="20:00"]').length == 1){
+                            $('[name="preferred_visit_time"]').children('option[value="20:00"]').remove();
+                        }
                     }
-                  }else{
-                    if($('[name="preferred_visit_time"]').children('option[value="20:00"]').length == 1){
-                      $('[name="preferred_visit_time"]').children('option[value="20:00"]').remove();
-                    }
-                  }
                 }else {
-                  $('#form_preferred_visit_date').hide();
-                  $('#form_preferred_visit_time').hide();
-                  $('[name="preferred_visit_date"]').removeAttr("required");
-                  $('[name="preferred_visit_time"]').removeAttr("required");
+                    $('#form_preferred_visit_date').hide();
+                    $('#form_preferred_visit_time').hide();
+                    $('[name="preferred_visit_date"]').removeAttr("required");
+                    $('[name="preferred_visit_time"]').removeAttr("required");
                 }
-              });
             });
+        });
         </script>
         <script>
         $('#inquiryForm').submit(function(event) {
-          event.preventDefault();
-          var postUrl = "https://script.google.com/macros/s/AKfycbwbcIIiHad2j7kq41e0IA1PYjCD6f3wK522sgUIQYPI1qUeZi5U/exec";
-          var postData = $('#inquiryForm').serialize();
-          var posting = $.post(postUrl, postData)
-          .done(function(data) {
-              if (data.message === "reserved") {
-                $('#reservedErrorMessage').show();
-              } else {
-                  gtag('event', 'conversion', {
-                  'event_category': 'extends',
-                  'event_label': 'inquiry',
-                  'value': 1
-                });
-                var callback = function () {
-                  if (typeof(url) != 'undefined') {
+            event.preventDefault();
+            var postUrl = "https://script.google.com/macros/s/AKfycbwbcIIiHad2j7kq41e0IA1PYjCD6f3wK522sgUIQYPI1qUeZi5U/exec";
+            var postData = $('#inquiryForm').serialize();
+            var posting = $.post(postUrl, postData)
+            .done(function(data) {
+                if (data.message === "reserved") {
+                    $('#reservedErrorMessage').show();
+                } else {
+                    gtag('event', 'conversion', {
+                    'event_category': 'extends',
+                    'event_label': 'inquiry',
+                    'value': 1
+                    });
+                    var callback = function () {
+                    if (typeof(url) != 'undefined') {
                     window.location = url;
-                  }
-                };
-                $('#reservedErrorMessage').hide();
-                $('#inquiryForm').hide();
-                $('#thanksMessage').show();
-              }
+                    }
+                    };
+                    $('#reservedErrorMessage').hide();
+                    $('#inquiryForm').hide();
+                    $('#thanksMessage').show();
+                }
             }).fail(function() {
-              $('#errorMessage').show();
-          })
+                $('#errorMessage').show();
+            })
         })
         </script>
     </body>
