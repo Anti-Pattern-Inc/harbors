@@ -249,8 +249,8 @@ function countClickByGa() {
             <input type="email" class="form-control" name="mail" id="" aria-describedby="" placeholder="" required>
           </div>
           <div class="form-group">
-            <label for="">電話番号</label>
-            <input type="tel" class="form-control" name="tel" aria-describedby="" placeholder="">
+            <label for="">電話番号</label><font style="color:red">※</font>
+            <input type="tel" class="form-control" name="tel" aria-describedby="" placeholder="" required>
           </div>
           <div class="form-group">
             <label for="">お問い合わせ目的</label><font style="color:red">※</font>
@@ -293,7 +293,7 @@ function countClickByGa() {
             <textarea class="form-control" name="remarks" id="" rows="3"></textarea>
           </div>
           <p><font style="color:red">※</font>は必須入力項目です。</p>
-          <button type="submit" class="btn btn-primary w-100 py-2">送信する</button>
+          <button type="submit" class="btn btn-primary w-100 py-2" id="send_button">送信する</button>
           <div class="modal-footer">
             <p class="small">HarborSは、株式会社アンチパターンが運営する、南青山のバーチャルオフィスです。</p>
           </div>
@@ -342,12 +342,14 @@ function countClickByGa() {
 <script>
 $('#inquiryForm').submit(function(event) {
   event.preventDefault();
+  $("#send_button").prop("disabled", true);
   var postUrl = "https://script.google.com/macros/s/AKfycbwbcIIiHad2j7kq41e0IA1PYjCD6f3wK522sgUIQYPI1qUeZi5U/exec";
   var postData = $('#inquiryForm').serialize();
   var posting = $.post(postUrl, postData)
     .done(function(data) {
       if (data.message === "reserved") {
         $('#reservedErrorMessage').show();
+        $("#send_button").prop("disabled", false);
       } else {
           gtag('event', 'conversion', {
           'event_category': 'virtual_office',
@@ -365,6 +367,7 @@ $('#inquiryForm').submit(function(event) {
       }
     }).fail(function() {
       $('#errorMessage').show();
+      $("#send_button").prop("disabled", false);
   })
 })
 </script>
