@@ -3,7 +3,23 @@
 
 /* // Small devices (landscape phones, 576px and up) */
 /* @media (min-width: 375px) and (max-width: 575px) { */
-	/* @media (max-width: 575px) { */
+    /* @media (max-width: 575px) { */
+
+@media(max-width: 417px){
+    /* courses */
+    .course_btn_text{
+        height: 0;
+        width: 100%;
+        padding-top: 40%;
+        padding-bottom: 60%;
+        margin: 0;
+        font-size: 20px;
+        color: #fff;
+    }
+    /* courses */
+}
+
+
 @media (max-width: 576px) {
 
     .container {

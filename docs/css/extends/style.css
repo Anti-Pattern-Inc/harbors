@@ -11,8 +11,15 @@ p, li{
     font-size: 18px;
 }
 header {
+    height: 102px;
     text-align: center;
     background-color: #ffffff;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: #ccc 1px solid;
 }
 .btn-header {
     background-color: #FA163F;
@@ -32,9 +39,6 @@ header {
 .footer-button-area {
     z-index: 5;
 }
-/* .btn p {
-    background-color: #FA163F;
-} */
 .btn-top {
     background-color: #FA163F;
 }
@@ -66,10 +70,6 @@ header {
     margin:0 0 0 auto;
 }
 
-.header_hr{
-    background-color: #ccc;
-}
-
 .navbar-light .navbar-toggler {
     border-color: rgba(0,0,0,0);
     cursor: pointer;
@@ -86,6 +86,9 @@ header {
 
 
 /* home */
+.home{
+    padding-top: 110px;
+}
 .home-text {
     list-style-position: inside;
 }
@@ -208,7 +211,7 @@ header {
     padding-top: 40%;
     padding-bottom: 60%;
     margin: 0;
-    font-size: 32px;
+    font-size: 28px;
     color: #fff;
 }
 
@@ -244,6 +247,10 @@ ul{
 
 .course p{
     font-size: 20px;
+}
+
+.course{
+    padding-top: 110px;
 }
 /* courses */
 
