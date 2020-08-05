@@ -1,0 +1,183 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 375px) and (max-width: 575px) { */
+	/* @media (max-width: 575px) { */
+@media (max-width: 576px) {
+
+    .container {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .row {
+        padding: 0%;
+        margin: 0%;
+    }
+    .col {
+        padding: 0%;
+        margin: 0%;
+    }
+    .btn-center {
+        font-size: 1.5rem;
+    }
+    /* 共通css */
+
+
+    /* header */
+    .btn-header {
+        font-size: 0.5rem;
+        width: 100%;
+    }
+    .btn-header span {
+        font-size: 0.8rem;
+    }
+    .btn-footer {
+        font-size: 1.5rem;
+    }
+    .btn-top {
+        width: 100%;
+    }
+    .btn-top h3 {
+        font-size: 0.8rem;
+    }
+    .header-photo {
+        width: 100%;
+    }
+    .header-top {
+        width: 100%;
+    }
+    .navbar-brand {
+        width: 50%;
+    }
+    /* header */
+
+
+    /* home */
+    .home-photo img {
+        width: 49%;
+    }
+    .home-text_logo{
+        font-size: 1rem;
+    }
+    .home h1 {
+        font-size: 1.8rem;
+    }
+    .home h1 span {
+        font-size: 0.9rem;
+    }
+    .home ul {
+        font-size: 1rem;
+    }
+    .home p {
+        font-size: 0.8rem;
+    }
+    /* home */
+
+
+    /* about */
+    .about h1 {
+        font-size: 1.1rem;
+    }
+    .about-list li {
+        font-size: 1rem;
+    }
+    /* about */
+
+
+    /* stay */
+    .stay h1 {
+        font-size: 1.5rem;
+    }
+    .stay-title h2 {
+        font-size: 1.3rem;
+    }
+    .stay-title li {
+        font-size: 1rem;
+    }
+    /* stay */
+
+
+    /* space */
+    .space-title {
+        display: block !important;
+    }
+    .space-title_logo {
+        height: 8rem
+    }
+    .space-photo {
+        height: 100%;
+    }
+    .space-photo img {
+        height: 90%;
+        width: 90%;
+        padding-top: 10%;
+    }
+    .space-logo {
+        width: 45%;
+        padding: 10% 0;
+    }
+    .space-logo img {
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+    .space h1 {
+        font-size: 1.5rem;
+    }
+    .space-title h1 {
+        font-size: 2rem;
+    }
+    .space-title h3 {
+        font-size: 1.2rem;
+    }
+    .space-title li {
+        font-size: 0.5rem;
+        padding-right: 2%;
+    }
+    .space-second_list {
+        width: 100%;
+    }
+    .space-second_list h2 {
+        font-size: 1.5rem;
+    }
+    .space-second_list ul {
+        width: 70%;
+        font-size: 1rem;
+    }
+    .space-second_list li {
+        font-size: 1rem;
+    }
+    .space-right_logo {
+        margin-left: 0 !important;
+    }
+    /* space */
+
+
+    /* access */
+    .access h1 {
+        font-size: 1.2rem;
+    }
+    .access h2 {
+        font-size: 1rem;
+    }
+    .access p {
+        font-size: 0.8rem;
+    }
+    /* access */
+
+
+    /* foot */
+    .foot {
+        text-align: center;
+    }
+    .foot p {
+        font-size: 1rem;
+    }
+    .foot-main_logo {
+        text-align: center !important;
+    }
+    /* foot */
+    
+}
+                
+            

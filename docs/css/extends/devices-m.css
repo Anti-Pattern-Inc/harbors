@@ -17,8 +17,8 @@
 		font-size: 2rem;
 	}
 	/* 共通css */
-	
-	
+
+
 	/* header */
 	.btn-header {
 		font-size: 1rem;
@@ -36,8 +36,8 @@
 		width: 45%;
 	}
 		/* header */
-	
-	
+
+
 		/* home */
 	.home-text_logo {
 		font-size: 2rem;
@@ -49,8 +49,8 @@
 		font-size: 2.1rem;
 	}
 		/* home */
-	
-	
+
+
 		/* about */
 	.about h1 {
 		font-size: 2.2rem;
@@ -62,17 +62,17 @@
 		font-size: 2rem;
 	}
 		/* about */
-	
+
 		/* course */
 	.nav_btn{
 		display: flex;
 		justify-content: space-between;
 	}
-	
+
 	.course_btn{
 		width: 49%;
 	}
-	
+
 	.course_btn_text{
 		height: 0;
 		width: 100%;
@@ -83,15 +83,15 @@
 		color: #fff;
 	}
 		/* course */
-	
-	
+
+
 		/* stay */
 	.stay h1 {
 		font-size: 3.3rem;
 	}
 		/* stay */
-	
-	
+
+
 		/* space */
 	.space-photo {
 		width: 100%;
@@ -110,16 +110,16 @@
 	.space-title h3 {
 		font-size: 1.5rem;
 	}
-	
+
 		/* space */
-	
+
 		/* access */
 	.access p {
 		font-size: 1.2rem;
 	}
 		/* access */
-	
-	
+
+
 		/* foot */
 	.foot {
 		text-align: center;
@@ -128,10 +128,8 @@
 		font-size: 1rem;
 	}
 		/* foot */
-	
-	
-	
-	}
+
+}
 	
 	
 	
