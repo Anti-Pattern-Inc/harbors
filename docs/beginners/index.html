@@ -83,18 +83,27 @@
     </head>
     <body>
         <header>
-            <!-- <nav class="navbar navbar-expand navbar-light pb-2 pt-2">
-                <a class="navbar-brand" href="/">
-                    <img src="../img/extendsLogo_420.png" alt="" class="header-photo">
-                </a>
-                <a href="https://forms.gle/ox6CjjYHgZ9nUb8cA" style="margin: 0 0 0 auto;">
-                    <button class="btn btn-header font-weight-bold font-write btn-outline-danger" type="button">
-                        HarborS for Beginnersに<br>
-                        <span>申し込む</span>
-                    </button>
-                </a>
-            </nav> -->
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-md navbar-light container">
+                        <a href="#" class="mr-5"><img src="../img/extendsLogo_420.png" alt="" width="200px"></a>
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="menu" class="collapse navbar-collapse">
+                          <ul class="navbar-nav">
+                            <li class="nav-item my-2"><a href="" class="nav-link">資料請求</a></li>
+                            <li class="nav-item my-2"><a href="" class="nav-link">オンライン説明会</a></li>
+                          </ul>
+                          <button class="btn btn-danger mr-1 ml-auto nav-item my-2" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">話を聞いてみる</button>
+                        </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
         </header>
+
+        <hr class="mt-0 mb-5 header_hr">
 
         <div class="home">
             <div class="container">
@@ -107,20 +116,14 @@
                             </div>
                             <h1 class="font-blue font-weight-bold mb-lg-3">
                                 <img src="../img/extendsLogo_420.png" alt="extends" class="header-photo">
-                                <span class="font-weight-bold d-block">駆け出しエンジニア向けオンラインメンターサービス</span>
+                                <span class="font-weight-bold d-block">独学を加速させるメンターサービス</span>
                             </h1>
                             <div class="home-text">
-                                <div class="home-text_logo font-weight-bold">
-                                    <div>
-                                        現役エンジニアによる
-                                        <ul>
-                                            <li>技術相談</li>
-                                            <li>キャリア相談</li>
-                                        </ul>
-                                    </div>
+                                <div class="home-text_logo font-weight-bold mt-5">
+                                        <h3 class="text-center">3ヶ月では立派なエンジニアにはなれない。<br>独学を加速させ、”本当の”エンジニアへの道を切り開こう！</h3>
                                 </div>
-                                <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 col-md-6 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
-                                    <nobr>お問い合わせ</nobr>
+                                <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-5 mb-5 pr-5 pl-5 col-md-6 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                                    <nobr>話を聞いてみる</nobr>
                                 </div>
                             </div>
                         </div>
@@ -136,17 +139,17 @@
                         <div class="col-12 mx-auto">
                             <div class="balloon">
                                 <h1 class="font-write font-weight-bold pt-2 pb-2 mb-0">
-                                    質問が出来ずに困った事はありませんか？
+                                    プログラミング学習で<span class="">お困り</span>ではありませんか？
                                 </h1>
                             </div>
                             <div class="about-list pt-5 pb-4">
-                                <ul class="pt-3">
-                                    <li class="h1"><i class="fas fa-check fa-1x icon-red pr-3">
-                                        </i>このエラーの意味が分からない</li>
-                                    <li class="h1"><i class="fas fa-check fa-1x icon-red pr-3">
-                                        </i>環境構築が分からない</li>
-                                    <li class="h1"><i class="fas fa-check fa-1x icon-red pr-3">
-                                        </i>ネットワークの仕組みを教えて欲しい</li>
+                                <ul class="pt-3 mx-2">
+                                    <li class="h1 pb-2"><i class="fas fa-check fa-1x icon-red pr-3">
+                                        </i>技術力の高いメンターに教えてもらいたい</li>
+                                    <li class="h1 pb-2"><i class="fas fa-check fa-1x icon-red pr-3">
+                                        </i>3ヶ月スクールに通ったのに、実際の開発現場で通用しない...</li>
+                                    <li class="h1 pb-2"><i class="fas fa-check fa-1x icon-red pr-3">
+                                        </i>独学の効率の悪さにモヤモヤする</li>
                                     <li class="h2 text-right">など</li>
                                 </ul>
                             </div>
@@ -156,7 +159,7 @@
             </div>
         </div>
 
-        <div class="stay">
+        <!-- <div class="stay">
             <div class="container">
                 <div class="d-flex flex-column text-center">
                     <div class="row">
@@ -166,11 +169,59 @@
                                 <ul class="font-write h1">
                                     <li>現役エンジニアがオンラインで<br>技術相談に乗ります</li>
                                     <li>キャリア相談も可能です</li>
-                                    <!-- <li>コワーキングスペースが利用できます</li> -->
+                                    <li>コワーキングスペースが利用できます</li>
                                 </ul>
                                 <img src="../img/study_3.png" style="width:75%">
-                                <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 col-md-6 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
-                                    <nobr>お問い合わせ</nobr>
+                                <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-5 mb-5 pr-5 pl-5 col-md-6 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                                    <nobr>話を聞いてみる</nobr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="container">
+            <div class="merit">
+                <div class="row">
+                    <div class="col-12 mx-auto">
+                        <div class="mx-auto">
+                            <div class="mb-5">
+                                <h2 class="text-center merit_title font-weight-bold">extendsはあなたの<span class="text-danger font-weight-bold">独学</span>を<span class="text-danger font-weight-bold">加速</span>させるサービスです</h3>
+                            </div>
+                
+                            <div class="row merit_content">
+                                <div class="col-md-6">
+                                    <h3 class="text-center mb-4 border-bottom-danger">Point 1</h4>
+                                    <p class="text-center">技術力が高く、現役で活躍しているエンジニアが<br>あなたの独学をサポートします</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="../img/extends1.jpg" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="row merit_content">
+                                <div class="col-md-6 order-md-2">
+                                    <h3 class="text-center mb-4">Point 2</h4>
+                                    <p class="text-center">経験豊富なメンターが現場で活きるスキルの<br>”身に付け方”を教えます</p>
+                                </div>
+                                <div class="col-md-6 order-md-1">
+                                    <img src="../img/extends2.jpg" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="row merit_content">
+                                <div class="col-md-6">
+                                    <h3 class="text-center mb-4">Point 3</h4>
+                                    <p class="text-center">あなたの目標に合わせ、効率の良い<br>学習カリキュラムをご提案します</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="../img/extends3.jpg" alt="" width="100%">
+                                </div>
+                            </div>
+            
+                            <div class="text-center">
+                                <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-5 mb-5 pr-5 pl-5 col-md-6 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                                    <nobr>話を聞いてみる</nobr>
                                 </div>
                             </div>
                         </div>
@@ -178,6 +229,145 @@
                 </div>
             </div>
         </div>
+
+        <div class="about">
+            <div class="container">
+                <div class="d-flex flex-column text-center">
+                    <div class="row">
+                        <div class="col-12 mx-auto">
+                            <div class="balloon1">
+                                <h1 class="font-write font-weight-bold mb-0 pt-3 pb-3">
+                                    選べる二つのコース
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg pt-5 pb-5"></div>
+        
+        <div class="container">
+            <div class="courses">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="nav_btn">
+                            <div class="btn btn-success course_btn mb-5">
+                                <a href="#course1">
+                                    <p class="course_btn_text">
+                                        Web制作基礎コース<br>
+                                        20,000円〜30,000円<br>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="btn btn-primary course_btn mb-5">
+                                <a href="#course2">
+                                    <p class="course_btn_text">
+                                        Webアプリ・インフラコース<br>
+                                        30,000円〜40,000円<br>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="course1" class="course">
+                            <h2 class="font-blue font-weight-bold pt-5 pb-4">Web制作基礎コース</h2>
+                            <div class="mb-4">
+                                <h5 class="font-weight-bold pb-3">＜こんな方におすすめ＞</h5>
+                                <ul class="row list_style">
+                                    <li class="col-12">エンジニアになりたいけど何から始めてよいか分からない。</li>
+                                    <li class="col-12">ウェブサイトを作りたい。</li>
+                                    <li class="col-12">フロントの知識を身に付け、現職に活かしたい。</li>
+                                </ul>
+                            </div>
+                            <div class="mb-4">
+                                <h5 class="font-weight-bold pb-3">＜習得可能な言語＞</h5>
+                                <div class="row">
+                                    <p class="col-12">HTML / CSS / JavaScript</p>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <h5 class="font-weight-bold pb-3">＜料金＞</h5>
+                                <div class="row">
+                                    <p class="col-12">オンライン月額: 20,000円</p>
+                                    <p class="col-12">オフライン月額: 30,000円</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 col-md-6 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                                <nobr>話を聞いてみる</nobr>
+                            </div>
+                        </div>
+                        <div id="course2" class="course">
+                            <h2 class="font-blue font-weight-bold pt-5 pb-4">Webアプリ・インフラコース</h2>
+                            <div class="mb-4">
+                                <h5 class="font-weight-bold pb-3">＜こんな方におすすめ＞</h5>
+                                <ul class="row list_style">
+                                    <li class="col-12">開発経験はあるが、その他の特定の分野の知識がない。</li>
+                                    <li class="col-12">スクールを卒業し、メンターを探している。</li>
+                                    <li class="col-12">AWSやネットワークなど高度な知識、スキルを身に付けたい。</li>
+                                </ul>
+                            </div>
+                            <div class="mb-4">
+                                <h5 class="font-weight-bold">＜習得可能な言語＞</h5>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5><hr>プログラミング言語<hr></h5>
+                                        <ul>
+                                            <li>
+                                                <h6 class="d-inline">注力領域</h6>
+                                                <p class="pt-3 pl-4 pb-3">PHP / Java / SQL / Laravel / Vue.js / Nuxt.js</p>
+                                            </li>
+                                            <li>
+                                                <h6 class="d-inline">追加カバー領域</h6>
+                                                <p class="pt-3 pl-4 pb-3">Python / Ruby</p>
+                                            </li>
+                                        </ul>
+    
+                                        <h5><hr>インフラ<hr></h5>
+                                        <div class="row">
+                                            <p class="col-12">ネットワーク / Web/APサーバ / データベース / Docker / AWS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <h5 class="font-weight-bold pb-3">＜料金＞</h5>
+                                <div class="row">
+                                    <p class="col-12">オンライン月額: 20,000円</p>
+                                    <p class="col-12">オフライン月額: 30,000円</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 col-md-6 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                                <nobr>話を聞いてみる</nobr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="container">
+                <div class="d-flex flex-column text-center">
+                    <div class="row">
+                        <div class="col-12 mx-auto">
+                            <div class="balloon1">
+                                <h1 class="font-write font-weight-bold mb-0 pt-3 pb-3">
+                                    メンター紹介
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg pt-5 pb-5"></div>
+
 
         <div class="container">
             <!-- <div class="space">
@@ -196,16 +386,15 @@
                     </div>
                 </div>
             </div> -->
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-12 mx-auto">
                     <div class="space space-second">
-                        <h1 class="space-font font-blue font-weight-bold pt-5 pb-3">メンター紹介</h1>
                         <div class="space-title d-flex flex-row pt-3 pb-3">
                             <div class="text-center space-second_list">
                                 <img src="../img/bob.png" style="width:80%">
                             </div>
                             <div class="text-left space-second_list">
-                                <h2 class="pl-sm-3 pl-3">BOBさん</h2>
+                                <h2 class="pl-5">BOBさん</h2>
                                 <p class="px-5">新卒入社から3年目のエンジニア<br>アプリ開発からインフラ構築まで幅広くカバーするエンジニア非常に勉強熱心で、<br>わからないものはとことん勉強するタイプ</p>
                             </div>
                         </div>
@@ -214,11 +403,20 @@
                                 <img src="../img/tani.png" style="width:80%">
                             </div>
                             <div class="text-left space-second_list">
-                                <h2 class="pl-sm-3 pl-3">たにさん</h2>
+                                <h2 class="pl-5">たにさん</h2>
                                 <p class="px-5">漁師からのキャリアチェンジエンジニア<br>エンジニア歴10年以上の経験豊富なエンジニア<br>アプリケーション開発からインフラ構築、要件定義から運用フェーズまで幅広い経験を保持している </p>
                             </div>
                         </div>
-                        <h1 class="space-font font-blue font-weight-bold pt-5 pb-3">メンターのスキルマップ</h1>
+                        <div class="space-title d-flex flex-row pt-3 pb-3">
+                            <div class="text-center space-second_list">
+                                <img src="../img/tani.png" style="width:80%">
+                            </div>
+                            <div class="text-left space-second_list">
+                                <h2 class="pl-5">さん</h2>
+                                <p class="px-5">漁師からのキャリアチェンジエンジニア<br>エンジニア歴10年以上の経験豊富なエンジニア<br>アプリケーション開発からインフラ構築、要件定義から運用フェーズまで幅広い経験を保持している </p>
+                            </div>
+                        </div> -->
+                        <!-- <h1 class="space-font font-blue font-weight-bold pt-5 pb-3">メンターのスキルマップ</h1>
                         <div class="space-title d-flex flex-row pt-3 pb-3">
                             <div class="text-left space-second_list">
                                 <h2 class="text-left pl-lg-3 pl-sm-3 pl-3">プログラミング言語</h2>
@@ -243,15 +441,55 @@
                                     <li>AWS</li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="text-center">
-                            <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 col-md-6 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
-                                <nobr>お問い合わせ</nobr>
+                        </div> -->
+                        <div class="mentor">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="text-center col-md-4">
+                                            <img src="../img/bob.png" width="100%">
+                                        </div>
+                                        <div class="text-left col-md-8">
+                                            <h2 class="text-center">BOBさん</h2>
+                                            <p>新卒入社から3年目のエンジニア<br>アプリ開発からインフラ構築まで幅広くカバーするエンジニア非常に勉強熱心で、<br>わからないものはとことん勉強するタイプ</p>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="row">
+                                        <div class="text-center col-md-4 order-md-2">
+                                            <img src="../img/tani.png" width="100%">
+                                        </div>
+                                        <div class="text-left col-md-8 order-md-1">
+                                            <h2 class="text-center">たにさん</h2>
+                                            <p>漁師からのキャリアチェンジエンジニア<br>エンジニア歴10年以上の経験豊富なエンジニア<br>アプリケーション開発からインフラ構築、要件定義から運用フェーズまで幅広い経験を保持している </p>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="row">
+                                        <div class="text-center col-md-4">
+                                            <img src="../img/Iwamura.png" width="100%">
+                                        </div>
+                                        <div class="text-left col-md-8">
+                                            <h2 class="text-center">岩村さん</h2>
+                                            <p>漁師からのキャリアチェンジエンジニア<br>エンジニア歴10年以上の経験豊富なエンジニア<br>アプリケーション開発からインフラ構築、要件定義から運用フェーズまで幅広い経験を保持している </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="text-center">
+                            <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-5 mb-5 pr-5 pl-5 col-md-6 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                                <nobr>話を聞いてみる</nobr>
+                            </div>
+                        </div>
+                    <!-- </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div class="about">
@@ -285,7 +523,7 @@
                             </h1>
                         </div>
                         <div class="w-75 text-left mt-lg-4 mt-md-3 mt-sm-3 mt-sm-4">
-                            <p>「お問い合わせ」ボタンからお問い合わせください</p>
+                            <p>「話を聞いてみる」ボタンからお問い合わせください</p>
                             <p>資料送付または、オンライン説明会の日程調整させていただきます</p>
                         </div>
                     </div>
@@ -296,13 +534,13 @@
                 <div class="access-title balloon-step2 pt-3 pb-3">
                     <div class="d-flex flex-row">
                         <div class="w-50 text-center mt-lg-3 mt-md-3 mt-sm-2 mt-4">
-                            <h2 class="font-weight-bold mt-lg-4 mt-md-3 mt-sm-3">
+                            <h2 class="font-weight-bold mt-md-1 mt-sm-3">
                                 STEP2</h2>
                             <h1 class="font-write font-weight-bold">
                                 オンライン説明会の実施
                             </h1>
                         </div>
-                        <div class="w-75 text-left mt-lg-3 mt-md-3 mt-sm-3">
+                        <div class="w-75 text-left mt-lg-3 mt-md-1 mt-sm-1">
                             <p class="pb-2">本サービスの詳細なご説明をさせていただきます</p>
                             <p>また、メンターを紹介させて頂きます</p>
                             <p>ご自身の勉強スタイルにあっているかをご確認ください</p>
@@ -320,7 +558,7 @@
                             <h1 class="font-write font-weight-bold">
                                 申し込み</h1>
                         </div>
-                        <div class="w-75 text-left mt-lg-4 mt-md-4 mt-sm-4 mt-4">
+                        <div class="w-75 text-left mt-md-1 mt-sm-4 mt-4">
                             <p>説明会の内容を踏まえて、ご利用になる場合はお申し込みください</p>
                         </div>
                     </div>
@@ -331,7 +569,7 @@
                 <div class="access-title pt-3">
                     <div class="d-flex flex-row balloon-step4">
                         <div class="w-50 text-center mt-lg-1 mt-md-1 mt-sm-1 mt-1">
-                            <h2 class="font-weight-bold mt-lg-5 mt-md-3 mt-1 mb-2">
+                            <h2 class="font-weight-bold mt-md-1 mt-1 mb-2">
                                 STEP4
                             </h2>
                             <h1 class="font-write font-weight-bold ">
@@ -351,7 +589,7 @@
                     <div class="col-12 mx-auto">
                         <div class="text-center">
                             <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 col-md-6 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
-                                <nobr>お問い合わせ</nobr>
+                                <nobr>話を聞いてみる</nobr>
                             </div>
                         </div>
                     </div>
@@ -378,7 +616,7 @@
                         </div>
                         <div class="footer-button-area text-lg-left col-lg-6 col-12 order-3 ">
                             <div class="btn btn-center font-weight-bold btn-outline-danger btn-lg font-write mt-3 mb-5 pr-5 pl-5 col-md-8 btn-shadow-extends" type="buton" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
-                                <nobr>お問い合わせ</nobr>
+                                <nobr>話を聞いてみる</nobr>
                             </div>
                         </div>
 
