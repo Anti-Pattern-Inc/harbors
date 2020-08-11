@@ -1,0 +1,135 @@
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	
+	.container {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+	.row {
+		padding: 0%;
+		margin: 0%;
+	}
+	.col {
+		padding: 0%;
+		margin: 0%;
+	}
+	.btn-center {
+		font-size: 2rem;
+	}
+	/* 共通css */
+
+
+	/* header */
+	.btn-header {
+		font-size: 1rem;
+	}
+	.btn-header span {
+		font-size: 1.2rem;
+	}
+	.header-photo {
+		width: 100%;
+	}
+	.navbar-brand {
+		width: 50%;
+	}
+	.home-photo img {
+		width: 45%;
+	}
+		/* header */
+
+
+		/* home */
+	.home-text_logo {
+		font-size: 2rem;
+	}
+	.home h1 {
+		font-size: 4rem;
+	}
+	.home h1 span {
+		font-size: 2.1rem;
+	}
+		/* home */
+
+
+		/* about */
+	.about h1 {
+		font-size: 2.2rem;
+	}
+	.about-list li {
+		font-size: 2rem;
+	}
+	.stay-title li {
+		font-size: 2rem;
+	}
+		/* about */
+
+		/* course */
+	.nav_btn{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.course_btn{
+		width: 49%;
+	}
+
+	.course_btn_text{
+		height: 0;
+		width: 100%;
+		padding-top: 40%;
+		padding-bottom: 60%;
+		margin: 0;
+		font-size: 26px;
+		color: #fff;
+	}
+		/* course */
+
+
+		/* stay */
+	.stay h1 {
+		font-size: 3.3rem;
+	}
+		/* stay */
+
+
+		/* space */
+	.space-photo {
+		width: 100%;
+		height: 100%;
+	}
+	.space-photo img {
+		width: 100%;
+		height: 100%;
+	}
+	.space h1 {
+		font-size: 2.2rem;
+	}
+	.space-second_list h2 {
+		font-size: 1.8rem;
+	}
+	.space-title h3 {
+		font-size: 1.5rem;
+	}
+
+		/* space */
+
+		/* access */
+	.access p {
+		font-size: 1.2rem;
+	}
+		/* access */
+
+
+		/* foot */
+	.foot {
+		text-align: center;
+	}
+	.foot-main p {
+		font-size: 1rem;
+	}
+		/* foot */
+
+}
+	
+	
+	
