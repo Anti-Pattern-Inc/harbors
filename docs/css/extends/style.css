@@ -170,6 +170,12 @@ header {
 }
 /* stay */
 
+/* what_is_mentor */
+.what_is_mentor p{
+    font-size: 22px;
+}
+/* what_is_mentor */
+
 /* merit */
 .merit{
     list-style-position: inside;
