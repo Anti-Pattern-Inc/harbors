@@ -437,6 +437,45 @@ ul{
 }
 /* access */
 
+/* QandA */
+.QandA {
+    width: 100%;
+    font-size: 22px;
+}
+
+.QandA dl {
+    border: 2px solid #ccc;
+}
+
+.QandA dt {
+    font-weight: bold;
+    background: #fff;
+    padding: 12px;
+    border-bottom: 2px solid #ccc;
+}
+
+.QandA dt:before {
+    content: "Q.";
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.QandA dd {
+    padding: 20px;
+    margin: 0;
+    line-height: 140%;
+}
+.QandA dd{
+    font-weight: bold;
+    margin-left: 30px;
+}
+.QandA dd:before {
+    content: "A.";
+    font-weight: bold;
+    margin-right: 8px;
+    margin-left: -30px;
+}
+/* QandA */
 
 /* foot */
 .foot {
