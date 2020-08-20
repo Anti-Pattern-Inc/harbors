@@ -525,14 +525,22 @@ iframe.map {
 バーチャルオフィスの選び方
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-@media screen and (min-width: 767.98px) {
+.h2_title{
+  line-height: 140%;
+}
+
+.h2_title small{
+  font-size: 18px;
+}
+
+@media screen and (min-width: 575.98px) {
   .br-sp{
     display: none;
   }
-}
-
-.h2_title{
-  line-height: 130%;
+  
+  .h2_title small{
+    font-size: 22px;
+  }
 }
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
