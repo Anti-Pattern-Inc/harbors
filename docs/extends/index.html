@@ -130,32 +130,6 @@
             </div>
         </div>
 
-        <!-- <div class="about">
-            <div class="container">
-                <div class="d-flex flex-column text-center">
-                    <div class="row">
-                        <div class="col-12 mx-auto">
-                            <div class="balloon">
-                                <h1 class="font-write font-weight-bold pt-2 pb-2 mb-0">
-                                    メンターサービスとは？
-                                </h1>
-                            </div>
-                            <div class="about-list pt-5 pb-4">
-                                <div class="row">
-                                    <div class="col-12 mx-auto">
-                                        <p class="what_is_mentor">初めてのお仕事や勉強では、知識やスキル以外にも困ることがたくさんあります。</p>
-                                        <p class="what_is_mentor">勉強方法や、業務をする上での基本的な考え方やマナーなど、メンターは"技術指導"より広い範囲であなたをサポートします。</p>
-                                        <p class="what_is_mentor">また、エンジニアは技術の進化に伴って常日頃から勉強していて、一人で新たな技術や情報をキャッチアップしていく能力が求められます。</p>
-                                        <p class="what_is_mentor">メンターサービスは、現役で活躍しているエンジニアが初学者や実務未経験者が自立するまで、マンツーマンでサポートするサービスです。</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
         <div class="about">
             <div class="container">
                 <div class="d-flex flex-column text-center">
@@ -359,7 +333,7 @@
                             <div class="mb-4">
                                 <h5 class="font-weight-bold pb-3">＜習得可能なスキル＞</h5>
                                 <div class="row">
-                                    <p class="col-12">PHP / Laravel / SQL / Vue.js / React 等々</p>
+                                    <p class="col-12">HTML / CSS / JavaScript / <br>PHP / Laravel / SQL / Vue.js / React 等々</p>
                                 </div>
                             </div>
                             <div class="mb-4">
@@ -837,7 +811,7 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
         <script>
         $(function() {
             $('[name="contact_type"]').change( function(){
@@ -899,7 +873,7 @@
         </script>
         <script type="text/javascript">
             $(function(){
-                $('a[href^=#]').click(function(){
+                $('a[href^="#"]').click(function(){
                     var speed = 500;
                     var href= $(this).attr("href");
                     var target = $(href == "#" || href == "" ? 'html' : href);
