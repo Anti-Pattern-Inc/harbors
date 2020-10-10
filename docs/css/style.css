@@ -545,6 +545,25 @@ iframe.map {
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+features_of_harbors
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+@media screen and (max-width: 575.98px) {
+  .iframe-responsive iframe{
+    height: 250px;
+  }
+  
+  .title_responsive{
+    font-size: 26px;
+  }
+
+  .title_responsive small{
+    font-size: 20px;
+  }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
 ROOMページ
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
