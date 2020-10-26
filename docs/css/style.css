@@ -543,6 +543,12 @@ iframe.map {
   }
 }
 
+@media screen and (min-width: 991.98px) {
+  .br-tb{
+    display: none;
+  }
+}
+
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 features_of_harbors
@@ -603,6 +609,10 @@ h2.top {
 
   .light-zigzag {
     margin: 10% 0 0;
+  }
+
+  .column-span{
+    line-height: 0px;
   }
 }
 
