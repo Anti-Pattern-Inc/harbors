@@ -33,18 +33,18 @@
 </head>
 
 <body>
-<header class="container-fluid mb-3 mb-md-0 bg-white" id="header">
-  <nav class="navbar navbar-expand-md navbar-light bg-white pr-0">
+<header class="container-fluid mb-3 mb-md-0 bg-white px-0">
+  <nav class="navbar navbar-expand-md navbar-light bg-white px-0 px-lg-5 border-bottom">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="ナビゲーションの切替">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="header-logo-area　col-6">
-      <img rel="img/logo_gray.png">
+      <img rel="/img/logo_gray.png">
     </div>
     <div class="collapse navbar-collapse" id="navbar-header">
       <a class="nav-link" href="/"><div class="logo"></div></a>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="/">COWORKING</a></li>
+      <ul class="navbar-nav ml-auto pt-2">
+        <li class="nav-item align-bottom"><a class="nav-link" href="/">COWORKING</a></li>
         <li class="nav-item"><a class="nav-link" href="/events/">EVENTS</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarLearningDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -70,30 +70,26 @@
       </ul>
     </div>
   </nav>
-</header>
 
-<!-- パンくずリスト -->
-<div class="breadcrumb d-none d-md-block" id="breadcrumb">
-  <div class="container px-0">
-    <div class="col-md-12 px-0">
-      <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="pl-0 mb-0">
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a itemprop="item" href="/" class="text-muted">
-              <span itemprop="name">コワーキングスペースTOP</span>
-          </a>
-          <meta itemprop="position" content="1" />
-        </li>
-      
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-last">
-          <p itemprop="item" class="d-inline-block mb-0">
-              <span itemprop="name">会議室予約</span>
-          </p>
-          <meta itemprop="position" content="2" />
-        </li>
-      </ol>
-    </div>
+  <!-- パンくずリスト -->
+  <div class="breadcrumb d-none d-md-block bg-white px-2 px-lg-5">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="px-2 mb-0">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/" class="text-muted">
+            <span itemprop="name">コワーキングスペースTOP</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+    
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-last">
+        <p itemprop="item" class="d-inline-block mb-0">
+            <span itemprop="name">会議室予約</span>
+        </p>
+        <meta itemprop="position" content="2" />
+      </li>
+    </ol>
   </div>
-</div>
+</header>
 
 <!-- トップ画像 -->
 <div class="jumbotron-fluid position-relative room top-image p-0">
@@ -235,11 +231,4 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-<script>
-  let header_height = document.getElementById('header').clientHeight;
-  const breadcrumb = document.getElementById('breadcrumb');
-
-  breadcrumb.style.padding = header_height + 10 + 'px 0 10px';
-</script>
 </body>

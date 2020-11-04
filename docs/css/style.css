@@ -194,7 +194,7 @@ header a,
 }
 
 .logo {
-  width: 250px;
+  width: 73px;
   height: 35px;
   background: url("../img/logo_gray.png") center/contain;
   background-repeat: no-repeat;
@@ -378,7 +378,7 @@ iframe.map {
 .events-top {
   background: linear-gradient(#1B406B, #172C59);;
   /* background-position: center center; */
-  height: 200px;
+  height: 260px;
   box-shadow: 0px 5px 6px 0px #e2e2e2;
   border-radius: 0;
 }
@@ -388,8 +388,12 @@ iframe.map {
   width:100%;
 }
 
+.events-top .top-text{
+  top: 45%;
+}
+
 .top-text {
-  top: 20%;
+  top: 25%;
 }
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝

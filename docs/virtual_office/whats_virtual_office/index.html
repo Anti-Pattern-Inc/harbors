@@ -52,8 +52,8 @@ function countClickByGa() {
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
 </head>
 <body>
-<header class="container-fluid mb-3 mb-md-0 bg-white" id="header">
-  <nav class="navbar navbar-expand-md navbar-light bg-white pr-0">
+<header class="container-fluid mb-3 mb-md-0 bg-white px-0">
+  <nav class="navbar navbar-expand-md navbar-light bg-white px-0 px-lg-5 border-bottom">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="ナビゲーションの切替">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -62,8 +62,8 @@ function countClickByGa() {
     </div>
     <div class="collapse navbar-collapse" id="navbar-header">
       <a class="nav-link" href="/"><div class="logo"></div></a>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="/">COWORKING</a></li>
+      <ul class="navbar-nav ml-auto pt-2">
+        <li class="nav-item align-bottom"><a class="nav-link" href="/">COWORKING</a></li>
         <li class="nav-item"><a class="nav-link" href="/events/">EVENTS</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarLearningDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -89,44 +89,40 @@ function countClickByGa() {
       </ul>
     </div>
   </nav>
-</header>
 
-<!-- パンくずリスト -->
-<div class="breadcrumb d-none d-md-block" id="breadcrumb">
-  <div class="container px-0">
-    <div class="col-md-12 px-0">
-      <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="pl-0 mb-0">
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a itemprop="item" href="/virtual_office" class="text-muted">
-              <span itemprop="name">バーチャルオフィスTOP</span>
-          </a>
-          <meta itemprop="position" content="1" />
-        </li>
-      
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a itemprop="item" href="/virtual_office/#column" class="text-muted">
-              <span itemprop="name">コラム</span>
-          </a>
-          <meta itemprop="position" content="2" />
-        </li>
-      
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-last">
-          <p itemprop="item" class="d-inline-block mb-0">
-              <span itemprop="name">バーチャルオフィスとは</span>
-          </p>
-          <meta itemprop="position" content="3" />
-        </li>
-      </ol>
-    </div>
+  <!-- パンくずリスト -->
+  <div class="breadcrumb d-none d-md-block bg-white px-2 px-lg-5">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="px-2 mb-0">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/virtual_office" class="text-muted">
+            <span itemprop="name">バーチャルオフィスTOP</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+    
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/virtual_office/#column" class="text-muted">
+            <span itemprop="name">コラム</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </li>
+    
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-last">
+        <p itemprop="item" class="d-inline-block mb-0">
+            <span itemprop="name">バーチャルオフィスとは</span>
+        </p>
+        <meta itemprop="position" content="3" />
+      </li>
+    </ol>
   </div>
-</div>
+</header>
 
 <div class="jumbotron-fluid position-relative events-top p-0">
   <div class="filter"></div>
   <!-- トップ文字 -->
   <div class="text-white position-absolute text-center top-text container-fluid">
-    <div class="row py-4">
-      <div class="col-lg-12 mt-5 mt-md-3">
+    <div class="row">
+      <div class="col-lg-12 pt-4 pt-md-5">
         <h2 class="nowrap">バーチャルオフィスとは</h2>
       </div>
     </div>
@@ -388,10 +384,3 @@ function countClickByGa() {
   <p class="text-center mb-0 copyright"><small class="text-white">2020 &copy; Anti-Pattern Inc.</small></p>
 
 </footer>
-
-<script>
-  let header_height = document.getElementById('header').clientHeight;
-  const breadcrumb = document.getElementById('breadcrumb');
-
-  breadcrumb.style.padding = header_height + 10 + 'px 0 10px';
-</script>
