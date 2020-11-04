@@ -52,7 +52,7 @@ function countClickByGa() {
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
 </head>
 <body>
-<header class="container-fluid mb-3 mb-md-0 bg-white">
+<header class="container-fluid mb-3 mb-md-0 bg-white" id="header">
   <nav class="navbar navbar-expand-md navbar-light bg-white pr-0">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="ナビゲーションの切替">
       <span class="navbar-toggler-icon"></span>
@@ -91,12 +91,42 @@ function countClickByGa() {
   </nav>
 </header>
 
+<!-- パンくずリスト -->
+<div class="breadcrumb d-none d-md-block" id="breadcrumb">
+  <div class="container px-0">
+    <div class="col-md-12 px-0">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="pl-0 mb-0">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/virtual_office" class="text-muted">
+              <span itemprop="name">バーチャルオフィスTOP</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/virtual_office/#column" class="text-muted">
+              <span itemprop="name">コラム</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-last">
+          <p itemprop="item" class="d-inline-block mb-0">
+              <span itemprop="name">バーチャルオフィスの選び方</span>
+          </p>
+          <meta itemprop="position" content="3" />
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+
 <div class="jumbotron-fluid position-relative events-top p-0">
   <div class="filter"></div>
   <!-- トップ文字 -->
   <div class="text-white position-absolute text-center top-text container-fluid">
     <div class="row py-4">
-      <div class="col-lg-12 mt-3 mt-sm-5">
+      <div class="col-lg-12 mt-3 mt-sm-5 mt-md-3">
         <h2 class="nowrap">バーチャルオフィス<br class="br-sp">の選び方</h2>
       </div>
     </div>
@@ -105,7 +135,7 @@ function countClickByGa() {
 
 <div class="pt-2">
   <div class="container">
-      <div class="col-md-12">
+    <div class="col-md-12">
       <div class="pt-3">
         <div class="text-center pb-3 w-100">
           <img src="/img/choose_virtual_office1.jpg" alt="" class="card-img">
@@ -328,3 +358,10 @@ function countClickByGa() {
   <p class="text-center mb-0 copyright"><small class="text-white">2020 &copy; Anti-Pattern Inc.</small></p>
 
 </footer>
+
+<script>
+  let header_height = document.getElementById('header').clientHeight;
+  const breadcrumb = document.getElementById('breadcrumb');
+
+  breadcrumb.style.padding = header_height + 10 + 'px 0 10px';
+</script>

@@ -141,12 +141,37 @@ header a,
 
 /* パンくずリスト */
 .breadcrumb {
-  background: transparent;
+  margin: 0;
+  list-style: none;
 }
 
-.breadcrumb li + li:before {
-  content: '»' !important;
+.breadcrumb li {
+  display: inline;
+  list-style: none;
 }
+
+.breadcrumb li:after {
+  content: '>';
+  padding: 0 8px;
+  color: #333;
+}
+
+.breadcrumb li:last-child:after {
+  content: '';
+}
+
+.breadcrumb li a,
+.breadcrumb li p{
+  font-size: 14px;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-last p{
+  color: #000;
+} 
 
 /* ヘッダー営業時間 */
 .top-stitch {
