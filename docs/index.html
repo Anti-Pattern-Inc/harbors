@@ -136,18 +136,15 @@ function countClickByGa() {
 </head>
 
 <body>
-<header class="container-fluid mb-3 mb-md-0 bg-white">
-  <nav class="navbar navbar-expand-md navbar-light bg-white pr-0">
+<header class="container-fluid mb-3 mb-md-0 bg-white px-0">
+  <nav class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-0 px-lg-5 border-bottom">
+    <a class="nav-link" href="/"><div class="logo"></div></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="ナビゲーションの切替">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="header-logo-area　col-6">
-      <img rel="/img/logo_gray.png">
-    </div>
     <div class="collapse navbar-collapse" id="navbar-header">
-      <a class="nav-link" href="/"><div class="logo"></div></a>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="/">COWORKING</a></li>
+      <ul class="navbar-nav ml-auto pt-2">
+        <li class="nav-item align-bottom"><a class="nav-link" href="/">COWORKING</a></li>
         <li class="nav-item"><a class="nav-link" href="/events/">EVENTS</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarLearningDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -173,7 +170,20 @@ function countClickByGa() {
       </ul>
     </div>
   </nav>
+
+  <!-- パンくずリスト -->
+  <div class="breadcrumb d-none d-md-block bg-white px-2 px-lg-5">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="px-2 mb-0">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-last">
+        <p itemprop="item" class="d-inline-block mb-0">
+            <span itemprop="name">コワーキングスペースTOP</span>
+        </p>
+        <meta itemprop="position" content="1" />
+      </li>
+    </ol>
+  </div>
 </header>
+
 <!-- トップ画像 -->
 <div class="jumbotron-fluid position-relative top-image p-0 coworking-top">
   <div class="filter"></div>
@@ -362,7 +372,7 @@ function countClickByGa() {
       <div class="row">
         <div class="col-md-10 offset-md-1">
           <div class="text-center pt-4 pb-4 mt-4 plan-button">
-            <h2 class="py-2 text-center"><nobr>メンターサービス <wbr>extends詳細</nobr></h2>
+            <h2 class="mb-0 py-2 text-center"><nobr>メンターサービス <wbr>extends詳細</nobr></h2>
             <a href="/extends/" target="_blank"></a>
           </div>
         </div>
@@ -584,6 +594,7 @@ function countClickByGa() {
         <p><a href="/terms/harbors/">コワーキングスペース利用規約</a></p>
         <p><a href="/terms/virtual_office/">バーチャルオフィス利用規約</a></p>
         <p><a href="/terms/rooms/">ミーティングルーム利用規約</a></p>
+        <p><a href="/terms/posse/">POSSE利用規約</a></p>
       </div>
     </div>
   </div>

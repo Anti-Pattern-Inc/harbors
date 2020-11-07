@@ -52,18 +52,15 @@ function countClickByGa() {
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
 </head>
 <body>
-<header class="container-fluid mb-3 mb-md-0 bg-white">
-  <nav class="navbar navbar-expand-md navbar-light bg-white pr-0">
+<header class="container-fluid mb-3 mb-md-0 bg-white px-0">
+  <nav class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-0 px-lg-5 border-bottom">
+    <a class="nav-link" href="/"><div class="logo"></div></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="ナビゲーションの切替">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="header-logo-area　col-6">
-      <img rel="/img/logo_gray.png">
-    </div>
     <div class="collapse navbar-collapse" id="navbar-header">
-      <a class="nav-link" href="/"><div class="logo"></div></a>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="/">COWORKING</a></li>
+      <ul class="navbar-nav ml-auto pt-2">
+        <li class="nav-item align-bottom"><a class="nav-link" href="/">COWORKING</a></li>
         <li class="nav-item"><a class="nav-link" href="/events/">EVENTS</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarLearningDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -89,17 +86,39 @@ function countClickByGa() {
       </ul>
     </div>
   </nav>
+
+  <!-- パンくずリスト -->
+  <div class="breadcrumb d-none d-md-block bg-white px-2 px-lg-5">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="px-2 mb-0">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/virtual_office" class="text-muted">
+            <span itemprop="name">バーチャルオフィスTOP</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+    
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-last">
+        <p itemprop="item" class="d-inline-block mb-0">
+            <span itemprop="name">港区南青山のバーチャルオフィス HarborS表参道の特長</span>
+        </p>
+        <meta itemprop="position" content="2" />
+      </li>
+    </ol>
+  </div>
 </header>
 
 <div class="jumbotron-fluid position-relative events-top p-0">
   <div class="filter"></div>
   <!-- トップ文字 -->
   <div class="text-white position-absolute text-center top-text container-fluid">
-    <div class="row py-4">
-      <div class="col-lg-12 mt-3 mt-sm-4">
+    <div class="row">
+      <div class="col-lg-12 pt-sm-1 pt-md-4">
         <h2 class="nowrap title_responsive"><small class="mb-5">港区南青山のバーチャルオフィス</small><br>HarborS表参道の特長</h2>
       </div>
     </div>
+  </div>
+  <div class="fixed-bottom mb-2">
+    <button type="button" class="btn btn-warning btn-lg mx-auto nowrap top-button text-white d-block" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">もっと詳しく知りたい</button>
   </div>
 </div>
 
@@ -311,9 +330,162 @@ function countClickByGa() {
         <p><a href="/terms/harbors/">コワーキングスペース利用規約</a></p>
         <p><a href="/terms/virtual_office/">バーチャルオフィス利用規約</a></p>
         <p><a href="/terms/rooms/">ミーティングルーム利用規約</a></p>
+        <p><a href="/terms/posse/">POSSE利用規約</a></p>
       </div>
     </div>
   </div>
   <p class="text-center mb-0 copyright"><small class="text-white">2020 &copy; Anti-Pattern Inc.</small></p>
 
 </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="inquiryFormModal" tabindex="-1" role="dialog" aria-labelledby="inquiryFormModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="inquiryFormModalTitle">バーチャルオフィスに関する<wbr>お問い合わせ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="inquiryForm">
+          <div class="form-group">
+            <label for="">お名前</label><font style="color:red">※</font>
+            <input type="text" class="form-control" name="name" aria-describedby="" placeholder="" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">メールアドレス</label><font style="color:red">※</font>
+            <input type="email" class="form-control" name="mail" id="" aria-describedby="" placeholder="" required>
+          </div>
+          <div class="form-group">
+            <label for="">電話番号</label><font style="color:red">※</font>
+            <input type="tel" class="form-control" name="tel" aria-describedby="" placeholder="" required>
+          </div>
+          <div class="form-group">
+            <label for="">お問い合わせ目的</label><font style="color:red">※</font>
+            <select class="form-control" name="contact_type" required>
+              <option></option>
+              <option value="1">オンライン説明会を予約したい</option>
+              <option value="2">現地の見学説明会を予約したい</option>
+              <option value="3">資料を送付してほしい</option>
+            </select>
+          </div>
+          <div class="form-group" id="form_preferred_visit_date" style="display:none;">
+            <label for="preferred_visit_date">オンライン説明会ご希望日</label><font style="color:red">※</font>
+            <div class="input-group date" id="preferred_visit_date" data-target-input="nearest">
+                <input type="text" name="preferred_visit_date" class="form-control datetimepicker-input" data-target="#preferred_visit_date"required>
+                <div class="input-group-append" data-target="#preferred_visit_date" data-toggle="datetimepicker">
+                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                </div>
+            </div>
+          </div>
+          <div class="form-group" id="form_preferred_visit_time" style="display:none;">
+            <label for="preferred_visit_time">オンライン説明会開始時刻</label><font style="color:red">※</font>
+            <select class="form-control" name="preferred_visit_time" required>
+              <option></option>
+              <option value="11:00">11:00~12:00</option>
+              <option value="12:00">12:00~13:00</option>
+              <option value="13:00">13:00~14:00</option>
+              <option value="14:00">14:00~15:00</option>
+              <option value="15:00">15:00~16:00</option>
+              <option value="16:00">16:00~17:00</option>
+              <option value="17:00">17:00~18:00</option>
+              <option value="18:00">18:00~19:00</option>
+              <option value="19:00">19:00~20:00</option>
+            </select>
+            <div class="preferred__visit-note">
+              <p class="small">※説明会は1時間程度になります</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">その他ご要望</label>
+            <textarea class="form-control" name="remarks" id="" rows="3"></textarea>
+          </div>
+          <p><font style="color:red">※</font>は必須入力項目です。</p>
+          <button type="submit" class="btn btn-primary w-100 py-2" id="send_button">送信する</button>
+          <div class="modal-footer">
+            <p class="small">HarborSは、株式会社アンチパターンが運営する、南青山のバーチャルオフィスです。</p>
+          </div>
+          <input type="hidden" name="sheetName" value="バーチャルオフィス会員">
+        </form>
+        <div id="thanksMessage" style="display: none;">
+          <p>お問い合わせありがとうございました。<br>担当からご連絡させていただきますのでお待ちください。</p>
+          <p>
+            HarborSは、「LINE（ライン）」にて情報配信中！！<br>
+            友だち登録いただくと、お得なイベント情報や新しいサービス情報をお届けします♪<br>
+            また、説明会を予約していただいた方には、<br>
+            説明会開始時間のリマインドなどもさせていただきます。
+          </p>
+          <a href="https://lin.ee/uOuueAH"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0"></a>
+        </div>
+        <div id="errorMessage" style="display: none;">
+          <p style="color:red">予期せぬエラーが発生しました。<br>大変申し訳ございませんが、別途<a style="color:red; text-decoration-line: underline;" href="https://docs.google.com/forms/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/viewform?usp=sf_link">お問い合わせフォーム</a>か<a href="tel:0368856140" style="color:red; text-decoration-line: underline;">お電話(03-6885-6140)</a>へお問い合わせくださいませ。</p>
+        </div>
+        <div id="reservedErrorMessage" style="display: none;">
+          <p style="color:red">ご希望の日時でご予約が取れませんでした。<br>大変申し訳ございませんが、別の日時で再度予約をお願いいたします。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(function() {
+    $('[name="contact_type"]').change( function(){
+      var contactType = $('[name="contact_type"] option:selected').val();
+      if( contactType == '1' || contactType == '2' ){
+        $('#form_preferred_visit_date').show();
+        $('#form_preferred_visit_time').show();
+        $('[name="preferred_visit_date"]').attr("required", "true");
+        $('[name="preferred_visit_time"]').attr("required", "true");
+        if (contactType == '1'){
+          if($('[name="preferred_visit_time"]').children('option[value="20:00"]').length == 0){
+            $('[name="preferred_visit_time"]').append('<option value="20:00">20:00~21:00</option>');
+          }
+        }else{
+          if($('[name="preferred_visit_time"]').children('option[value="20:00"]').length == 1){
+            $('[name="preferred_visit_time"]').children('option[value="20:00"]').remove();
+          }
+        }
+      }else {
+        $('#form_preferred_visit_date').hide();
+        $('#form_preferred_visit_time').hide();
+        $('[name="preferred_visit_date"]').removeAttr("required");
+        $('[name="preferred_visit_time"]').removeAttr("required");
+      }
+    });
+  });
+</script>
+<script>
+$('#inquiryForm').submit(function(event) {
+  event.preventDefault();
+  $("#send_button").prop("disabled", true);
+  var postUrl = "https://script.google.com/macros/s/AKfycbwbcIIiHad2j7kq41e0IA1PYjCD6f3wK522sgUIQYPI1qUeZi5U/exec";
+  var postData = $('#inquiryForm').serialize();
+  var posting = $.post(postUrl, postData)
+    .done(function(data) {
+      if (data.message === "reserved") {
+        $('#reservedErrorMessage').show();
+        $("#send_button").prop("disabled", false);
+      } else {
+          gtag('event', 'conversion', {
+          'event_category': 'virtual_office',
+          'event_label': 'inquiry',
+          'value': 1
+        });
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        $('#reservedErrorMessage').hide();
+        $('#inquiryForm').hide();
+        $('#thanksMessage').show();
+      }
+    }).fail(function() {
+      $('#errorMessage').show();
+      $("#send_button").prop("disabled", false);
+  })
+})
+</script>
+</body>
