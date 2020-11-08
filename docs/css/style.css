@@ -169,9 +169,10 @@ header a,
   text-decoration: underline;
 }
 
-.breadcrumb-last p{
+a.disabled{
+  pointer-events: none;
   color: #000;
-} 
+}
 
 /* ヘッダー営業時間 */
 .top-stitch {
