@@ -52,7 +52,7 @@ function countClickByGa() {
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
 </head>
 <body>
-<header class="container-fluid mb-3 mb-md-0 bg-white px-0">
+<header class="container-fluid mb-3 mb-md-0 bg-white px-0" id="header">
   <nav class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-0 px-lg-5 border-bottom">
     <a class="nav-link" href="/"><div class="logo"></div></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="ナビゲーションの切替">
@@ -98,16 +98,16 @@ function countClickByGa() {
       </li>
     
       <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a itemprop="item" href="/virtual_office/#column" class="text-muted">
+        <a itemprop="item" href="#column" class="text-muted">
             <span itemprop="name">コラム</span>
         </a>
         <meta itemprop="position" content="2" />
       </li>
     
       <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-last">
-        <p itemprop="item" class="d-inline-block mb-0">
+        <a href="/" itemprop="item" class="d-inline-block mb-0 disabled" tabindex="-1">
             <span itemprop="name">バーチャルオフィスとは</span>
-        </p>
+        </a>
         <meta itemprop="position" content="3" />
       </li>
     </ol>
@@ -128,7 +128,7 @@ function countClickByGa() {
 
 <!-- バーチャルオフィスとは -->
 
-<div class="pt-2">
+<div class="py-2">
   <div class="container">
       <div class="col-md-12">
       <div class="pt-3">
@@ -345,20 +345,34 @@ function countClickByGa() {
   </div>
 </div>
 
-<div class="pt-2">
-  <div class="access pt-2 light-zigzag">
-    <div class="container text-center" id="news">
-    <!-- アクセス -->
-      <h2 class="display-3 pb-3" id="access">ACCESS</h2>
-      <div class="mb-3 text-center">
-        <p class="mb-0 nowrap">住所：東京都港区南青山3丁目15-9<wbr> MINOWA表参道3F</p><br>
-        <p class="mb-0 nowrap">アクセス：東京メトロ銀座線 <wbr>半蔵門線「表参道」下車 <wbr>A4出口 徒歩3分</p><br>
-        <p class="mb-0 nowrap">電話番号：03-6885-6140</p>
-      </div>
-    </div>
-    <!-- 地図 -->
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.99080382981!2d139.7061736147836!3d35.664745284378995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a9122f1cd%3A0xcfe4aad9a0735cb8!2zSGFyYm9yUyDooajlj4LpgZMo44OP44O844OQ44O844K66KGo5Y-C6YGTKQ!5e0!3m2!1sja!2sjp!4v1589869377967!5m2!1sja!2sjp" allowfullscreen=""></iframe>
+<!-- コラム -->
+<div class="pt-5 mb-5 light-zigzag">
+  <div class="container text-center pb-5" id="column">
+    <h2 class="display-3 pb-4">COLUMN</h2>
+    <a href="/virtual_office/features_of_harbors/" class="btn btn-outline-secondary py-3 mb-4 w-75" role="button">
+      港区南青山のバーチャルオフィス <br class="br-tb">HarborS表参道の特長<span class="float-right column-span">&gt;</span>
+    </a><br>
+    <a href="/virtual_office/whats_virtual_office/" class="btn btn-outline-secondary py-3 mb-4 w-75" role="button">
+      バーチャルオフィスとは<span class="float-right">&gt;</span>
+    </a><br>
+    <a href="/virtual_office/choose_virtual_office/" class="btn btn-outline-secondary py-3 w-75" role="button">
+      バーチャルオフィスの選び方<span class="float-right">&gt;</span>
+    </a><br>
   </div>
+</div>
+
+<div class="access pt-5">
+  <div class="container text-center" id="news">
+  <!-- アクセス -->
+    <h2 class="display-3 pb-3" id="access">ACCESS</h2>
+    <div class="mb-3 text-center">
+      <p class="mb-0 nowrap">住所：東京都港区南青山3丁目15-9<wbr> MINOWA表参道3F</p><br>
+      <p class="mb-0 nowrap">アクセス：東京メトロ銀座線 <wbr>半蔵門線「表参道」下車 <wbr>A4出口 徒歩3分</p><br>
+      <p class="mb-0 nowrap">電話番号：03-6885-6140</p>
+    </div>
+  </div>
+  <!-- 地図 -->
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.99080382981!2d139.7061736147836!3d35.664745284378995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a9122f1cd%3A0xcfe4aad9a0735cb8!2zSGFyYm9yUyDooajlj4LpgZMo44OP44O844OQ44O844K66KGo5Y-C6YGTKQ!5e0!3m2!1sja!2sjp!4v1589869377967!5m2!1sja!2sjp" allowfullscreen=""></iframe>
 </div>
 
 <!-- フッター -->
@@ -381,3 +395,16 @@ function countClickByGa() {
   <p class="text-center mb-0 copyright"><small class="text-white">2020 &copy; Anti-Pattern Inc.</small></p>
 
 </footer>
+
+<script>
+  $(function () {
+    var headerHeight = $("#header").height();
+    $('a[href^="#"]').click(function(){
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top - headerHeight - 40; 
+      $("html, body").animate({scrollTop:position}, 500, "swing");
+        return false;
+    });
+  });
+</script>
