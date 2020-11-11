@@ -132,16 +132,43 @@
 <div class="jumbotron-fluid position-relative top-image virtual-office p-0">
   <div class="filter"></div>
   <!-- トップ画像内文字 -->
-  <div class="text-white position-absolute main-txt" style="bottom:15%">
-    <h2 class="display-4 nowrap">
-    「港区南青山」の<wbr>バーチャルオフィス<br>「HarborS」
-    </h2>
-    <p class="lead">ブランド力のある「港区南青山」の住所を4,800円からご利用いただけます。<br>
-      法人登記も可能です。<br>
-      〒107-0062 東京都港区南青山3丁目15-9 MINOWA表参道3F<br>
-      03-6885-6140<br><br>
-    </p>
-    <div class="fixed-bottom mb-2">
+  <div class="text-white position-absolute top-text container-fluid">
+    <div class="row py-5">
+      <div class="col-lg-12">
+        <h2 class="display-4 nowrap">
+        「港区南青山」の<wbr>バーチャルオフィス<br>「HarborS」
+        </h2>
+      </div>
+      <div class="col-lg-12">
+        <p class="lead">
+          ブランド力のある「港区南青山」の住所を4,800円からご利用いただけます。<br>
+          法人登記も可能です。<br>
+          〒107-0062 東京都港区南青山3丁目15-9 MINOWA表参道3F<br>
+          03-6885-6140<br><br>
+        </p>
+      </div>
+      <div class="col-lg-12">
+        <div class="virtual-top-contents mx-auto">
+          <div class="d-flex justify-content-between d-block">
+            <div class="virtual_circle">
+              <p class="virtual_circle_text font-weight-bold text-center"><span class="font-weight-bold">見積もり</span><br>即日</p>
+            </div>
+            <div class="virtual_circle">
+              <p class="virtual_circle_text font-weight-bold text-center"><span class="font-weight-bold">施設見学</span><br>可能</p>
+            </div>
+            <div class="virtual_circle">
+              <p class="virtual_circle_text font-weight-bold text-center">最適な<br><span class="font-weight-bold">プラン提案</span></p>
+            </div>
+            <div class="virtual_circle">
+              <p class="virtual_circle_text font-weight-bold text-center"><span class="font-weight-bold">最短入居</span><br>アドバイス</p>
+            </div>
+          </div>
+          <button type="button" class="btn btn-sm-lg nowrap w-100 mt-5 text-white top-button d-block mx-0" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">説明会・見学予約はこちら</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-bottom mb-2 virtual-form-btn">
       <button type="button" class="btn btn-warning btn-lg mx-auto nowrap text-white top-button d-block" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">もっと詳しく知りたい</button>
     </div>
   </div>
@@ -530,5 +557,19 @@ $('#inquiryForm').submit(function(event) {
       $("#send_button").prop("disabled", false);
   })
 })
+</script>
+<script>
+  $(function(){
+    var formBtn = $('.virtual-form-btn');
+    formBtn.hide();
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 500) {
+        formBtn.fadeIn();
+      } else {
+        formBtn.fadeOut();
+      }
+    });
+  });
 </script>
 </body>
