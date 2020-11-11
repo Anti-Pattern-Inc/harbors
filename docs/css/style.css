@@ -430,6 +430,12 @@ iframe.map {
   top: 17%;
 }
 
+.mobile-footer button{
+  font-size: 10px;
+  border-radius: 0;
+  border-right: 1px solid #ddd;
+}
+
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 コワーキングプランページ
