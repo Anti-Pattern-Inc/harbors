@@ -79,8 +79,8 @@
 </script>
 </head>
 
-<body>
-<header class="container-fluid mb-3 mb-md-0 bg-white px-0">
+<body id="top">
+<header class="container-fluid mb-3 mb-md-0 bg-white px-0" id="header">
   <nav class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-0 px-lg-5 border-bottom">
     <a class="nav-link" href="/"><div class="logo"></div></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="ナビゲーションの切替">
@@ -175,22 +175,28 @@
     
     <div class="fixed-bottom mb-0 d-flex d-sm-none mobile-footer">
       <div class="w-25">
-        <button class="btn btn-light m-0 w-100 py-3 nowrap" onclick="countClickByGa();" onclick="">
+        <a href="#top" class="btn btn-light m-0 w-100 pb-1 pt-2 nowrap">
+          <img src="/img/home.svg" alt="トップ" width="25px" height="25px" class="d-block mb-1 mx-auto">
           トップ
-        </button>
+        </a>
       </div>
       <div class="w-25">
-        <button class="btn btn-light m-0 w-100 py-3 nowrap" onclick="countClickByGa();" onclick="">
+        <a href="flow/" class="btn btn-light m-0 w-100 pb-1 pt-2 nowrap">
+          <img src="/img/flow.svg" alt="契約の流れ" width="25px" height="25px" class="d-block mb-1 mx-auto">
           契約の流れ
-        </button>
+        </a>
       </div>
       <div class="w-25">
-        <button class="btn btn-light m-0 w-100 py-3 nowrap" onclick="countClickByGa();" onclick="">
+        <a href="#column" class="btn btn-light m-0 w-100 pb-1 pt-2 nowrap">
+          <img src="/img/column.svg" alt="コラム" width="25px" height="25px" class="d-block mb-1 mx-auto">
           コラム
-        </button>
+        </a>
       </div>
       <div class="w-25">
-        <button type="button" class="btn btn-warning m-0 w-100 nowrap text-white py-3" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">お問い合わせ</button>
+        <button type="button" class="btn btn-warning m-0 w-100 nowrap text-white pb-1 pt-2" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+          <img src="/img/contact.svg" alt="お問い合わせ" width="25px" height="25px" class="d-block mb-1 mx-auto">
+          お問い合わせ
+        </button>
       </div>
     </div>
   </div>
@@ -591,6 +597,19 @@ $('#inquiryForm').submit(function(event) {
       } else {
         formBtn.fadeOut();
       }
+    });
+  });
+</script>
+
+<script>
+  $(function () {
+    var headerHeight = $("#header").height();
+    $('a[href^="#"]').click(function(){
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top - headerHeight - 40; 
+      $("html, body").animate({scrollTop:position}, 500, "swing");
+        return false;
     });
   });
 </script>

@@ -433,7 +433,22 @@ iframe.map {
 .mobile-footer button{
   font-size: 10px;
   border-radius: 0;
-  border-right: 1px solid #ddd;
+  color: #999;
+}
+
+.mobile-footer a{
+  font-size: 10px;
+  border-radius: 0;
+  color: #999 !important;
+}
+
+.mobile-footer button:focus{
+  outline: none !important;
+}
+
+.mobile-footer a:focus{
+  outline: none !important;
+  opacity: 1;
 }
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
