@@ -601,6 +601,12 @@ iframe.map {
   padding: 7px;
 }
 
+.title-level3 {
+  border-bottom: 5px double #426579;
+  border-left: 10px solid #426579;
+  padding: 7px;
+}
+
 .image-size{
   width: 75%;
 }
