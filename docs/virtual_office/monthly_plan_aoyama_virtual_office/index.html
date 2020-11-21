@@ -121,29 +121,35 @@ function countClickByGa() {
   </div>
 
   <div class="fixed-bottom mb-0 d-flex d-sm-none mobile-footer">
-    <div class="w-25">
-      <a href="/virtual_office/" class="btn btn-light m-0 w-100 pb-1 pt-2 nowrap">
+    <div>
+      <a href="#top" class="btn btn-light m-0 w-100 pb-1 pt-2 nowrap">
         <img src="/img/home.svg" alt="トップ" width="25px" height="25px" class="d-block mb-1 mx-auto">
         トップ
       </a>
     </div>
-    <div class="w-25">
+    <div>
       <a href="/virtual_office/flow/" class="btn btn-light m-0 w-100 pb-1 pt-2 nowrap">
         <img src="/img/flow.svg" alt="契約の流れ" width="25px" height="25px" class="d-block mb-1 mx-auto">
         契約の流れ
       </a>
     </div>
-    <div class="w-25">
-      <a href="/virtual_office/column" class="btn btn-light m-0 w-100 pb-1 pt-2 nowrap">
+    <div>
+      <a href="/virtual_office/column/" class="btn btn-light m-0 w-100 pb-1 pt-2 nowrap">
         <img src="/img/column.svg" alt="コラム" width="25px" height="25px" class="d-block mb-1 mx-auto">
         コラム
       </a>
     </div>
-    <div class="w-25">
+    <div>
       <button type="button" class="btn btn-warning m-0 w-100 nowrap text-white pb-1 pt-2" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
         <img src="/img/contact.svg" alt="お問い合わせ" width="25px" height="25px" class="d-block mb-1 mx-auto">
         お問い合わせ
       </button>
+    </div>
+    <div>
+      <a href="tel:03-6885-6140" class="btn btn-warning m-0 w-100 pb-1 pt-2 text-white nowrap" onclick="ga('send', 'event', 'call', 1);">
+        <img src="/img/tel.svg" alt="電話" width="25px" height="25px" class="d-block mb-1 mx-auto">
+        電話
+      </a>
     </div>
   </div>
 </div>
