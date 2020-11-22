@@ -91,14 +91,14 @@ function countClickByGa() {
   <div class="breadcrumb d-none d-md-block bg-white px-2 px-lg-5">
     <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="px-2 mb-0">
       <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a itemprop="item" href="/virtual_office" class="text-muted">
+        <a itemprop="item" href="/virtual_office/" class="text-muted">
             <span itemprop="name">バーチャルオフィスTOP</span>
         </a>
         <meta itemprop="position" content="1" />
       </li>
     
       <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-last">
-        <a href="/" itemprop="item" class="d-inline-block mb-0 disabled" tabindex="-1">
+        <a href="/virtual_office/features_of_harbors/" itemprop="item" class="d-inline-block mb-0 disabled" tabindex="-1">
             <span itemprop="name">港区南青山のバーチャルオフィス HarborS表参道の特長</span>
         </a>
         <meta itemprop="position" content="2" />
@@ -123,29 +123,35 @@ function countClickByGa() {
 
 
   <div class="fixed-bottom mb-0 d-flex d-sm-none mobile-footer">
-    <div class="w-25">
-      <a href="../" class="btn btn-light m-0 w-100 pb-1 pt-2 nowrap">
+    <div>
+      <a href="/virtual_office/" class="btn btn-light m-0 w-100 pb-1 pt-2 nowrap">
         <img src="/img/home.svg" alt="トップ" width="25px" height="25px" class="d-block mb-1 mx-auto">
         トップ
       </a>
     </div>
-    <div class="w-25">
-      <a href="../flow/" class="btn btn-light m-0 w-100 pb-1 pt-2 nowrap">
+    <div>
+      <a href="/virtual_office/flow/" class="btn btn-light m-0 w-100 pb-1 pt-2 nowrap">
         <img src="/img/flow.svg" alt="契約の流れ" width="25px" height="25px" class="d-block mb-1 mx-auto">
         契約の流れ
       </a>
     </div>
-    <div class="w-25">
-      <a href="#column" class="btn btn-light m-0 w-100 pb-1 pt-2 nowrap">
+    <div>
+      <a href="/virtual_office/columns/" class="btn btn-light m-0 w-100 pb-1 pt-2 nowrap">
         <img src="/img/column.svg" alt="コラム" width="25px" height="25px" class="d-block mb-1 mx-auto">
         コラム
       </a>
     </div>
-    <div class="w-25">
+    <div>
       <button type="button" class="btn btn-warning m-0 w-100 nowrap text-white pb-1 pt-2" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
         <img src="/img/contact.svg" alt="お問い合わせ" width="25px" height="25px" class="d-block mb-1 mx-auto">
         お問い合わせ
       </button>
+    </div>
+    <div>
+      <a href="tel:03-6885-6140" class="btn btn-warning m-0 w-100 pb-1 pt-2 text-white nowrap" onclick="ga('send', 'event', 'call', 1);">
+        <img src="/img/tel.svg" alt="電話" width="25px" height="25px" class="d-block mb-1 mx-auto">
+        電話
+      </a>
     </div>
   </div>
 </div>
@@ -531,16 +537,4 @@ $('#inquiryForm').submit(function(event) {
 })
 </script>
 
-<script>
-  $(function () {
-    var headerHeight = $("#header").height();
-    $('a[href^="#"]').click(function(){
-      var href= $(this).attr("href");
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      var position = target.offset().top - headerHeight - 40; 
-      $("html, body").animate({scrollTop:position}, 500, "swing");
-        return false;
-    });
-  });
-</script>
 </body>

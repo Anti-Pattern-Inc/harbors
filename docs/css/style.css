@@ -439,7 +439,20 @@ iframe.map {
 .mobile-footer a{
   font-size: 10px;
   border-radius: 0;
-  color: #999 !important;
+  color: #999;
+}
+
+.mobile-footer-tel{
+  color: #fff;
+}
+
+.mobile-footer > div{
+  width: 20%;
+  border-right: #ddd 1px solid;
+}
+
+.mobile-footer > div:last-child{
+  border: none;
 }
 
 .mobile-footer button:focus{
