@@ -82,7 +82,7 @@ function countClickByGa() {
 </script>
 </head>
 <body>
-<header class="container-fluid mb-3 mb-md-0 bg-white px-0">
+<header class="container-fluid mb-3 mb-md-0 bg-white px-0" id="header">
   <nav class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-0 px-lg-5 border-bottom">
     <a class="nav-link" href="/"><div class="logo"></div></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="ナビゲーションの切替">
@@ -121,14 +121,14 @@ function countClickByGa() {
   <div class="breadcrumb d-none d-md-block bg-white px-2 px-lg-5">
     <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="px-2 mb-0">
       <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a itemprop="item" href="/virtual_office" class="text-muted">
+        <a itemprop="item" href="/virtual_office/" class="text-muted">
             <span itemprop="name">バーチャルオフィスTOP</span>
         </a>
         <meta itemprop="position" content="1" />
       </li>
     
       <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-last">
-        <a href="/" itemprop="item" class="d-inline-block mb-0 disabled" tabindex="-1">
+        <a href="/virtual_office/flow/" itemprop="item" class="d-inline-block mb-0 disabled" tabindex="-1">
             <span itemprop="name">ご契約までの流れ</span>
         </a>
         <meta itemprop="position" content="2" />
@@ -415,4 +415,5 @@ $('#inquiryForm').submit(function(event) {
   })
 })
 </script>
+
 </body>
