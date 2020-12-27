@@ -593,7 +593,7 @@ iframe.map {
 .harbors-button {
   border: #fff 1px solid;
   color: #fff;
-  box-shadow: 0 5px 10px 10px gray;
+  box-shadow: 0 0px 10px 10px gray;
   transition: all .7s;
 }
 
