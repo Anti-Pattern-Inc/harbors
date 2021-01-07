@@ -132,8 +132,12 @@ function countClickByGa() {
 
 <body>
 <header class="container-fluid mb-3 mb-md-0 bg-white px-0" id="header">
+  
+  <div class="emergency mx-1 mx-lg-5 my-1">
+    <p class="px-2 mb-0">新型コロナ感染症拡大、および緊急事態宣言に伴い、2/7までは休業致します。<br class="d-md-none d-block">(見学＆説明会については実施中)</p>
+  </div>
 
-  <h1 class="h-tit">HarborS 表参道 エンジニア特化型コワーキングスペース</h1>
+  <h1 class="h-tit mx-1 mx-lg-5 mt-2">HarborS 表参道 エンジニア特化型コワーキングスペース</h1>
 
   <nav class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-0 px-lg-5 border-bottom">
     <a class="nav-link" href="/"><div class="logo"></div></a>
@@ -584,14 +588,30 @@ function countClickByGa() {
     </div>
   </div>
 
-  <div class="access pt-2 light-zigzag">
+  <!-- コラム -->
+  <div class="pt-5 mb-5 light-zigzag">
+    <div class="container text-center pb-5" id="column">
+      <h2 class="display-3 pb-3">COLUMN</h2>
+      <a href="/coworking/specialized_coworking/" class="btn btn-outline-secondary py-3 mb-4 w-75" role="button">
+        ユニークでおすすめのコワーキングスペース特集<span class="float-right column-span">&gt;</span>
+      </a><br>
+      <a href="/coworking/engineer_mokumoku/" class="btn btn-outline-secondary py-3 mb-4 w-75" role="button">
+        おすすめのエンジニアもくもく会とは？<br>参加時のポイントと注意点を解説<span class="float-right">&gt;</span>
+      </a><br>
+    </div>
+  </div>
+
+  <div class="access pt-5">
     <div class="container text-center" id="news">
     <!-- アクセス -->
       <h2 class="display-3 pb-3" id="access">ACCESS</h2>
-      <div class="mb-3 text-center">
-        <p class="mb-0 nowrap">住所：東京都港区南青山3丁目15-9<wbr> MINOWA表参道3F</p><br>
-        <p class="mb-0 nowrap">アクセス：東京メトロ銀座線 <wbr>半蔵門線「表参道」下車 <wbr>A4出口 徒歩3分</p><br>
-        <p class="mb-0 nowrap">電話番号：03-6885-6140</p>
+      <div class="mb-3 text-left">
+        <p class="mb-0">HarborS表参道は、港区青山エリアに位置しており、表参道駅A4出口から徒歩3分という好立地です。 住所は「港区南青山」とブランド力抜群のこのエリアは、渋谷、原宿、麻布、赤坂、六本木エリアとも隣接しており、どこからのアクセスも抜群の立地という特徴があります。</p>
+        <p class="mt-2 mb-0">[周辺からのアクセス]</p>
+        <p class="mb-0">渋谷：銀座線で1分 (徒歩20分圏内)</p>
+        <p class="mb-0">原宿：千代田線で1分 (徒歩20分圏内)</p>
+        <p class="mb-0">六本木：千代田線(乃木坂駅利用)で2分 (徒歩25分圏内)</p>
+        <p class="mb-0">赤坂：千代田線で6分 (徒歩30分圏内)</p>
       </div>
     </div>
     <!-- 地図 -->
@@ -750,7 +770,7 @@ $('#inquiryForm').submit(function(event) {
         $('#reservedErrorMessage').show();
         $("#send_button").prop("disabled", false);
       } else {
-          gtag('event', 'conversion', {
+        gtag('event', 'conversion', {
           'event_category': 'coworking',
           'event_label': 'inquiry',
           'value': 1
