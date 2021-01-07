@@ -714,7 +714,6 @@ g-contents
   font-size: 11px;
   font-weight: normal !important;
   margin: 0;
-  padding: 5px 0 0 60px;
 }
 
 .contents-title-2{
@@ -1309,5 +1308,14 @@ g-contents
     font-size: 15px;
   }
 }
+
+.emergency{
+  background-color: #F5C9C6;
+  border-radius: 5px;
+  color: #ED1C24;
+  font-size: 16px;
+  font-weight: bold;
+}
+  
 
 /* END */

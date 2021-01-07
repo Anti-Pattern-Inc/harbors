@@ -132,8 +132,12 @@ function countClickByGa() {
 
 <body>
 <header class="container-fluid mb-3 mb-md-0 bg-white px-0" id="header">
+  
+  <div class="emergency mx-1 mx-lg-5 my-1">
+    <p class="px-2 mb-0">新型コロナ感染症拡大、および緊急事態宣言に伴い、2/7までは休業致します。<br class="d-md-none d-block">(見学＆説明会については実施中)</p>
+  </div>
 
-  <h1 class="h-tit">HarborS 表参道 エンジニア特化型コワーキングスペース</h1>
+  <h1 class="h-tit mx-1 mx-lg-5 mt-2">HarborS 表参道 エンジニア特化型コワーキングスペース</h1>
 
   <nav class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-0 px-lg-5 border-bottom">
     <a class="nav-link" href="/"><div class="logo"></div></a>
@@ -750,7 +754,7 @@ $('#inquiryForm').submit(function(event) {
         $('#reservedErrorMessage').show();
         $("#send_button").prop("disabled", false);
       } else {
-          gtag('event', 'conversion', {
+        gtag('event', 'conversion', {
           'event_category': 'coworking',
           'event_label': 'inquiry',
           'value': 1
