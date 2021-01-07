@@ -427,7 +427,7 @@ iframe.map {
 }
 
 .virtual-office .top-text{
-  top: 17%;
+  top: 21%;
 }
 
 .mobile-footer button{
@@ -545,6 +545,56 @@ iframe.map {
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+バーチャルオフィスTOP About us
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.about-us{
+  overflow: hidden;
+}
+
+.about-us-img{
+  position: relative;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.about-us-img img{
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+.about-us-img h3{
+  width: 100%;
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  color: #fff;
+}
+
+.about-us-img a:hover h3{
+  font-size: 34px;
+  transition: all 0.5s;
+}
+
+.about-us-detail{
+  width: 100%;
+  background-color: #fff;
+  color: #18325F;
+  border: 3px solid #18325F;
+  border-radius: 10px;
+}
+
+.about-us-detail:hover{
+  background-color: #18325F;
+  color: #fff;
+  transition: background 1s;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
 バーチャルオフィス契約ステップページ
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
@@ -589,6 +639,18 @@ iframe.map {
 }
 .step-card > .card-body {
   z-index: 10;
+}
+.harbors-button {
+  border: #fff 1px solid;
+  color: #fff;
+  box-shadow: 0 0px 10px 10px gray;
+  transition: all .7s;
+}
+
+.harbors-button:hover{
+  background-color: #fff;
+  color: #a9a9a9;
+  box-shadow: none;
 }
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -702,7 +764,6 @@ g-contents
   font-size: 11px;
   font-weight: normal !important;
   margin: 0;
-  padding: 5px 0 0 60px;
 }
 
 .contents-title-2{
@@ -1079,9 +1140,6 @@ g-contents
 .c-btn {
   text-align: center;
 }
-.c-btn a {
-
-}
 .c-btn-anchor {
   background: #1d2e88;
   border-radius: 5px;
@@ -1298,4 +1356,23 @@ g-contents
   }
 }
 
+.emergency{
+  background-color: #F5C9C6;
+  border-radius: 5px;
+  color: #ED1C24;
+  font-size: 16px;
+  font-weight: bold;
+}
+  
+
+
+.text-link{
+  border-bottom: #6c757d solid 2px;
+}
+
+.column-container{
+  background-color: hsl(193, 92%, 95%);
+  border-radius: 30px;
+  color: #384b50;
+}
 /* END */
