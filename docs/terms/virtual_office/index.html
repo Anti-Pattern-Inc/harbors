@@ -57,27 +57,62 @@ function gtag_report_conversion_virtual(url) {
 </head>
 
 <body>
-<header class="container-fluid mb-3 mb-md-0 term bg-white">
-
-  <h1 class="h-tit">バーチャルオフィス利用規約</h1>
-
-  <nav class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-0 px-lg-5">
+<header class="container-fluid mb-3 mb-md-0 bg-white px-0" id="header">
+  <h1 class="h-tit mx-1 mx-lg-5 mt-2">バーチャルオフィス利用規約</h1>
+  <nav class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-0 px-lg-5 border-bottom">
+    <a class="nav-link" href="/"><div class="logo"></div></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="ナビゲーションの切替">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="header-logo-area　col-6">
-      <img rel="img/logo_gray.png">
-    </div>
     <div class="collapse navbar-collapse" id="navbar-header">
-      <a class="nav-link" href="/"><div class="logo"></div></a>
-      <ul class="navbar-nav ml-auto">
-        <!-- <li class="nav-item"><a class="nav-link" href="#coworking">COWORKING</a></li>
-        <li class="nav-item"><a class="nav-link" href="#virtual_office">VIRTUAL-OFFICE</a></li> -->
+      <ul class="navbar-nav ml-auto pt-2">
+        <li class="nav-item align-bottom"><a class="nav-link" href="/">COWORKING</a></li>
+        <li class="nav-item"><a class="nav-link" href="/events/">EVENTS</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarLearningDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            LEARNING
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarLearningDropdownMenuLink">
+            <a class="dropdown-item text-secondary" href="/extends/" target="_blank">extends</a>
+            <a class="dropdown-item text-secondary" href="https://posse.anti-pattern.co.jp/" target="_blank">POSSE</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/virtual_office/">VIRTUAL-OFFICE</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarSpaceDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            SPACE
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarSpaceDropdownMenuLink">
+            <a class="dropdown-item text-secondary" href="/rooms/">MEETING ROOMS</a>
+            <a class="dropdown-item text-secondary" href="http://sky-terrace.anti-pattern.co.jp/" target="_blank">SKY TERRACE OMOTESANDO</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/virtual_office#access">ACCESS</a></li>
         <li class="nav-item"><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/viewform?usp=sf_link">CONTACT</a></li>
       </ul>
     </div>
   </nav>
+
+  <!-- パンくずリスト -->
+  <div class="breadcrumb d-none d-md-block bg-white px-2 px-lg-5">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="px-2 mb-0">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/" class="text-muted">
+            <span itemprop="name">バーチャルオフィスTOP</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+    
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-last">
+        <a href="/terms/virtual_office/" itemprop="item" class="d-inline-block mb-0 disabled" tabindex="-1">
+            <span itemprop="name">バーチャルオフィス利用規約</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </li>
+    </ol>
+  </div>
 </header>
+
 <!-- 利用規約 -->
 <div class="container term_main">
   <div class="row">
