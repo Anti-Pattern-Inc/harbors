@@ -801,7 +801,7 @@ g-contents
 }
 /** SEOテキスト **/
 .text_area {
-  margin: 60px auto 30px;
+  margin: 60px auto 80px;
   text-align: left;
 }
 .text_area h2,.c-nap h2 {
@@ -816,6 +816,10 @@ g-contents
   padding-bottom: 15px;
 }
 /** NAP **/
+.c-nap{
+  padding-bottom: 25px;
+}
+
 .text_area .c-nap {
   margin: 40px 0 0;
 }

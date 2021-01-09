@@ -52,51 +52,6 @@ function countClickByGa() {
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- イベント一覧情報を取得する -->
 <script>
-  // $(document).ready(function(){
-  //   var events_html = '';
-  //   $.ajax({
-  //     type: 'GET',
-  //     url: 'https://script.google.com/macros/s/AKfycbwbHBUZYsGi0DlbRGVJGa9iQNKVoDqRgFxMVcNLZ6KeHZhmIYU/exec',
-  //     dataType: 'jsonp',
-  //     jsonpCallback: 'jsondata',
-  //     success: function(json){
-  //       for (var i = 0; i < 3; i++){
-  //         events_html +=
-  //           '<div class="col-md-4 mb-4 event-card">'+
-  //             '<div class="card text-white">'+
-  //               '<img class="card-img event-card-img" src="'+ json[i].img_url +'">'+
-  //               '<div class="card-img-overlay card-event-title">'+
-  //                 '<h4 class="event-card-title card-title">'+ json[i].title +'</h4>'+
-  //                 '<p class="card-text">'+ json[i].date + '</p>'+
-  //               '</div>'+
-  //             '</div>'+
-  //           '</div>';
-  //       }
-  //       $('#events').append(events_html);
-  //       resizeImg();
-  //     }
-  //   }).fail(function(){
-  //     $('#events').append('<div class="col-md-12"><p class="text-center">ページが取得できませんでした。時間をおいてご確認ください。</p></div>');
-  //   });
-  // })
-  // $(function(){
-  //   resizeYoutube();
-  // })
-  // $(window).resize(function() {
-  //   resizeImg();
-  //   resizeYoutube();
-  // })
-  // function resizeImg() {
-  //   var width = $('.event-card')[0].clientWidth;
-  //   var height = (width * 2) / 3;
-  //   $('.event-card-img').css('height', height+ 'px');
-  // }
-  // function resizeYoutube() {
-  //   var width = $('.youtube-area')[0].clientWidth;
-  //   var height = (width * 9) / 16;
-  //   $('.youtube-area').css('height', height+ 'px');
-  // }
-
   $(function () {
         $('#preferred_visit_date').datetimepicker({
           format: 'YYYY/MM/DD',
@@ -126,6 +81,7 @@ function countClickByGa() {
         });
     });
 </script>
+<script src="/js/main.js"></script>
 </head>
 
 <body>
@@ -469,7 +425,7 @@ function countClickByGa() {
 </div>
 
 <div class="pt-2">
-  <div class="access pt-2 light-zigzag">
+  <div class="access pt-4 light-zigzag">
     <div class="container text-center" id="news">
     <!-- アクセス -->
       <h2 class="display-3 pb-3" id="access">ACCESS</h2>
