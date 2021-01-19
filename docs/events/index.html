@@ -1,200 +1,372 @@
 <!DOCTYPE html>
 <html>
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-<meta charset="UTF-8">
-<title>エンジニア向けIT勉強会・イベント情報一覧 | HarborS 表参道</title>
-<meta name="description" content="エンジニア向けのイベントやIT勉強会を多数開催しています。イベントパートナー様が多数いるため、種類豊富な勉強会を楽しんで頂けます。表参道駅徒歩3分で参加しやすく、プログラミング初学者、エンジニアのコミュニティに参加したい人、勤務地が渋谷付近なので仕事帰りに勉強したい人、多数のエンジニアの需要にお応えします。">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" href="https://harbors.anti-pattern.co.jp">
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@harbors_sh" />
-<meta property="og:url" content="https://harbors.anti-pattern.co.jp/events/" />
-<meta property="og:title" content="エンジニア向けIT勉強会・イベント情報一覧 | HarborS 表参道" />
-<meta property="og:type" content="website" />
-<meta property="og:description" content="エンジニア向けのイベントやIT勉強会を多数開催しています。イベントパートナー様が多数いるため、種類豊富な勉強会を楽しんで頂けます。表参道駅徒歩3分で参加しやすく、プログラミング初学者、エンジニアのコミュニティに参加したい人、勤務地が渋谷付近なので仕事帰りに勉強したい人、多数のエンジニアの需要にお応えします。" />
-<meta property="og:image" content="https://harbors.anti-pattern.co.jp/img/ogimg.png" />
-<meta property="fb:app_id" content="621479295258516" />
-<!-- スタイルシートはここから -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<link rel="stylesheet" href="../css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Comfortaa:500" rel="stylesheet">
-<link rel="shortcut icon" href="/img/logo.png" />
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150157952-1">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-150157952-1');
-  gtag('config', 'AW-701518947');
-</script>
-<!-- Event snippet for コワーキング見学予約 conversion page
-In your html page, add the snippet and call gtag_report_conversion_cowork when someone clicks on the chosen link or button. -->
-<script>
-function countClickByGa() {
-  gtag('event', 'click', {
-    'event_category': 'coworking',
-    'event_label': 'open_form',
-    'value': 1
-  })
-}
-</script>
-<!-- javascript はここから -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="/js/main.js"></script>
-<!-- イベント一覧情報を取得する -->
-<script>
-    $(document).ready(function(){
-      var events_html = '';
-      $.ajax({
-        type: 'GET',
-        url: 'https://script.google.com/macros/s/AKfycbwbHBUZYsGi0DlbRGVJGa9iQNKVoDqRgFxMVcNLZ6KeHZhmIYU/exec',
-        dataType: 'jsonp',
-        jsonpCallback: 'jsondata',
-        success: function(json){
-          for (var i in json){
-            events_html +=
-              '<div class="card mb-3">'+
-                '<div class="row no-gutters">'+
-                  '<div class="col-md-4 my-auto">'+
-                    '<img class="card-img" src="'+ json[i].img_url +'">'+
-                  '</div>'+
-                  '<div class="col-md-8">'+
-                    '<div class="card-body text-left">'+
-                      '<h5 class="card-title">'+ json[i].title +'</h5>'+
-                      '<h5 class="card-title">'+ json[i].date + '　' +json[i].start_time +'~</h5>'+
-                      '<p>' + json[i].overview.replace(/\n/g,'<br>') + '</p>'+
-                      '<a class="btn btn-primary" href="' + json[i].detail_url + '" target="_blank">詳細ページへ</a>'+
-                    '</div>'+
-                  '</div>'+
-                '</div>'+
-              '</div>';
-          }
-          $('#events').append(events_html);
-        }
-      }).fail(function(){
-        $('#events').append('<div class="col-md-12"><p class="text-center">ページが取得できませんでした。時間をおいてご確認ください。</p></div>');
-      });
-    })
+  <head
+    prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"
+  >
+    <meta charset="UTF-8" />
+    <title>エンジニア向けIT勉強会・イベント情報一覧 | HarborS 表参道</title>
+    <meta
+      name="description"
+      content="エンジニア向けのイベントやIT勉強会を多数開催しています。イベントパートナー様が多数いるため、種類豊富な勉強会を楽しんで頂けます。表参道駅徒歩3分で参加しやすく、プログラミング初学者、エンジニアのコミュニティに参加したい人、勤務地が渋谷付近なので仕事帰りに勉強したい人、多数のエンジニアの需要にお応えします。"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="canonical" href="https://harbors.anti-pattern.co.jp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@harbors_sh" />
+    <meta
+      property="og:url"
+      content="https://harbors.anti-pattern.co.jp/events/"
+    />
+    <meta
+      property="og:title"
+      content="エンジニア向けIT勉強会・イベント情報一覧 | HarborS 表参道"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="エンジニア向けのイベントやIT勉強会を多数開催しています。イベントパートナー様が多数いるため、種類豊富な勉強会を楽しんで頂けます。表参道駅徒歩3分で参加しやすく、プログラミング初学者、エンジニアのコミュニティに参加したい人、勤務地が渋谷付近なので仕事帰りに勉強したい人、多数のエンジニアの需要にお応えします。"
+    />
+    <meta
+      property="og:image"
+      content="https://harbors.anti-pattern.co.jp/img/ogimg.png"
+    />
+    <meta property="fb:app_id" content="621479295258516" />
+    <!-- スタイルシートはここから -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:500"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/img/logo.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-150157952-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-150157952-1");
+      gtag("config", "AW-701518947");
     </script>
-</head>
+    <!-- Event snippet for コワーキング見学予約 conversion page
+In your html page, add the snippet and call gtag_report_conversion_cowork when someone clicks on the chosen link or button. -->
+    <script>
+      function countClickByGa() {
+        gtag("event", "click", {
+          event_category: "coworking",
+          event_label: "open_form",
+          value: 1,
+        });
+      }
+    </script>
+    <!-- javascript はここから -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/main.js"></script>
+    <!-- イベント一覧情報を取得する -->
+    <script>
+      $(document).ready(function () {
+        var events_html = "";
+        $.ajax({
+          type: "GET",
+          url:
+            "https://script.google.com/macros/s/AKfycbwbHBUZYsGi0DlbRGVJGa9iQNKVoDqRgFxMVcNLZ6KeHZhmIYU/exec",
+          dataType: "jsonp",
+          jsonpCallback: "jsondata",
+          success: function (json) {
+            for (var i in json) {
+              events_html +=
+                '<div class="card mb-3">' +
+                '<div class="row no-gutters">' +
+                '<div class="col-md-4 my-auto">' +
+                '<img class="card-img" src="' +
+                json[i].img_url +
+                '">' +
+                "</div>" +
+                '<div class="col-md-8">' +
+                '<div class="card-body text-left">' +
+                '<h5 class="card-title">' +
+                json[i].title +
+                "</h5>" +
+                '<h5 class="card-title">' +
+                json[i].date +
+                "　" +
+                json[i].start_time +
+                "~</h5>" +
+                "<p>" +
+                json[i].overview.replace(/\n/g, "<br>") +
+                "</p>" +
+                '<a class="btn btn-primary" href="' +
+                json[i].detail_url +
+                '" target="_blank">詳細ページへ</a>' +
+                "</div>" +
+                "</div>" +
+                "</div>" +
+                "</div>";
+            }
+            $("#events").append(events_html);
+          },
+        }).fail(function () {
+          $("#events").append(
+            '<div class="col-md-12"><p class="text-center">ページが取得できませんでした。時間をおいてご確認ください。</p></div>'
+          );
+        });
+      });
+    </script>
+  </head>
 
-<body>
-<header class="container-fluid mb-3 mb-md-0 bg-white px-0">
+  <body>
+    <header class="container-fluid mb-3 mb-md-0 bg-white px-0">
+      <div class="emergency mx-1 mx-lg-5 my-1">
+        <p class="px-2 mb-0">
+          新型コロナ感染症拡大、および緊急事態宣言に伴い、2/7までは休業致します。<br
+            class="d-md-none d-block"
+          />(見学＆説明会については実施中)
+        </p>
+      </div>
 
-  <div class="emergency mx-1 mx-lg-5 my-1">
-    <p class="px-2 mb-0">新型コロナ感染症拡大、および緊急事態宣言に伴い、2/7までは休業致します。<br class="d-md-none d-block">(見学＆説明会については実施中)</p>
-  </div>
+      <nav
+        class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-0 px-lg-5 border-bottom"
+      >
+        <a class="nav-link" href="/"><div class="logo"></div></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-header"
+          aria-controls="navbar-header"
+          aria-expanded="false"
+          aria-label="ナビゲーションの切替"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-header">
+          <ul class="navbar-nav ml-auto pt-2">
+            <li class="nav-item align-bottom">
+              <a class="nav-link" href="/">コワーキング</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/events/">イベント</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href=""
+                id="navbarLearningDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                学習プログラム
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarLearningDropdownMenuLink"
+              >
+                <a
+                  class="dropdown-item text-secondary"
+                  href="/extends/"
+                  target="_blank"
+                  >extends</a
+                >
+                <a
+                  class="dropdown-item text-secondary"
+                  href="https://posse.anti-pattern.co.jp/"
+                  target="_blank"
+                  >POSSE</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/virtual_office/">バーチャルオフィス</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href=""
+                id="navbarSpaceDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                スペース
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarSpaceDropdownMenuLink"
+              >
+                <a class="dropdown-item text-secondary" href="/rooms/"
+                  >会議室</a
+                >
+                <a
+                  class="dropdown-item text-secondary"
+                  href="http://sky-terrace.anti-pattern.co.jp/"
+                  target="_blank"
+                  >スカイテラス表参道</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#access">アクセス</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/viewform?usp=sf_link"
+                >お問い合わせ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-  <nav class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-0 px-lg-5 border-bottom">
-    <a class="nav-link" href="/"><div class="logo"></div></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="ナビゲーションの切替">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-header">
-      <ul class="navbar-nav ml-auto pt-2">
-        <li class="nav-item align-bottom"><a class="nav-link" href="/">コワーキング</a></li>
-        <li class="nav-item"><a class="nav-link" href="/events/">イベント</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarLearningDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            学習プログラム
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarLearningDropdownMenuLink">
-            <a class="dropdown-item text-secondary" href="/extends/" target="_blank">extends</a>
-            <a class="dropdown-item text-secondary" href="https://posse.anti-pattern.co.jp/" target="_blank">POSSE</a>
+      <!-- パンくずリスト -->
+      <div class="breadcrumb d-none d-md-block bg-white px-2 px-lg-5">
+        <ol
+          itemscope
+          itemtype="https://schema.org/BreadcrumbList"
+          class="px-2 mb-0"
+        >
+          <li
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+          >
+            <a itemprop="item" href="/" class="text-muted">
+              <span itemprop="name">コワーキングスペースTOP</span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </li>
+
+          <li
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+            class="breadcrumb-last"
+          >
+            <a
+              href="/events/"
+              itemprop="item"
+              class="d-inline-block mb-0 disabled"
+              tabindex="-1"
+            >
+              <span itemprop="name"
+                >エンジニア向けIT勉強会・イベント情報一覧</span
+              >
+            </a>
+            <meta itemprop="position" content="2" />
+          </li>
+        </ol>
+      </div>
+    </header>
+
+    <!-- トップ画像 -->
+    <div class="jumbotron-fluid position-relative events-top">
+      <div class="filter"></div>
+      <!-- トップ画像内文字 -->
+      <div
+        class="text-white position-absolute text-center top-text container-fluid"
+      >
+        <div class="row">
+          <div class="col-lg-12 pt-2 mt-md-5">
+            <h1 class="contents-title-2">
+              エンジニア向けIT勉強会・イベント情報一覧
+            </h1>
           </div>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="/virtual_office/">バーチャルオフィス</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarSpaceDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            スペース
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarSpaceDropdownMenuLink">
-            <a class="dropdown-item text-secondary" href="/rooms/">会議室</a>
-            <a class="dropdown-item text-secondary" href="http://sky-terrace.anti-pattern.co.jp/" target="_blank">スカイテラス表参道</a>
-          </div>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#access">アクセス</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/viewform?usp=sf_link">お問い合わせ</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- パンくずリスト -->
-  <div class="breadcrumb d-none d-md-block bg-white px-2 px-lg-5">
-    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="px-2 mb-0">
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a itemprop="item" href="/" class="text-muted">
-          <span itemprop="name">コワーキングスペースTOP</span>
-        </a>
-        <meta itemprop="position" content="1" />
-      </li>
-    
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-last">
-        <a href="/events/" itemprop="item" class="d-inline-block mb-0 disabled" tabindex="-1">
-          <span itemprop="name">エンジニア向けIT勉強会・イベント情報一覧</span>
-        </a>
-        <meta itemprop="position" content="2" />
-      </li>
-    </ol>
-  </div>
-</header>
-
-
-<!-- トップ画像 -->
-<div class="jumbotron-fluid position-relative events-top">
-    <div class="filter"></div>
-    <!-- トップ画像内文字 -->
-    <div class="text-white position-absolute text-center top-text container-fluid">
-      <div class="row">
-        <div class="col-lg-12 pt-2 mt-md-5">
-          <h1 class="contents-title-2">エンジニア向けIT勉強会・イベント情報一覧</h1>
         </div>
       </div>
     </div>
-  </div>
-<!-- イベント一覧 -->
-<div class="container mt-5">
-  <div class="row text-center my-5" id="events">
-  </div>
-</div>
-
-<!-- アクセス -->
-<div class="access pt-4 light-zigzag mt-5">
-    <div class="container text-center">
-      <h2 class="display-3 pb-3" id="access">ACCESS</h2>
-      <div class="mb-3 text-center">
-        <p class="mb-0 nowrap">住所：東京都港区南青山3丁目15-9 MINOWA表参道3F</p><br>
-        <p class="mb-0 nowrap">アクセス：東京メトロ銀座線、半蔵門線「表参道」下車 <wbr>A4出口&ensp;徒歩3分</p><br>
-        <p class="mb-0 nowrap">電話番号：03-6885-6140</p>
-      </div>
+    <!-- イベント一覧 -->
+    <div class="container mt-5">
+      <div class="row text-center my-5" id="events"></div>
     </div>
-    <!-- 地図 -->
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.99080382981!2d139.7061736147836!3d35.664745284378995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a9122f1cd%3A0xcfe4aad9a0735cb8!2zSGFyYm9yUyDooajlj4LpgZMo44OP44O844OQ44O844K66KGo5Y-C6YGTKQ!5e0!3m2!1sja!2sjp!4v1589869377967!5m2!1sja!2sjp" allowfullscreen=""></iframe>
-  </div>
 
-<!-- フッター -->
-<footer class="py-3 m-0 zigzag-copy">
-  <div class="container small">
-    <div class="row">
-      <div class="col-md-6 footer-menus">
-        <p><a href="https://anti-pattern.co.jp">運営会社</a></p>
-        <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/viewform?usp=sf_link">お問い合わせ</a></p>
-        <p><a href="https://anti-pattern.co.jp/legal/privacy/">プライバシーポリシー</a></p>
+    <!-- アクセス -->
+    <div class="access pt-4 light-zigzag mt-5">
+      <div class="container text-center">
+        <h2 class="display-3 pb-3" id="access">ACCESS</h2>
+        <div class="mb-3 text-center">
+          <p class="mb-0 nowrap">
+            住所：東京都港区南青山3丁目15-9 MINOWA表参道3F
+          </p>
+          <br />
+          <p class="mb-0 nowrap">
+            アクセス：東京メトロ銀座線、半蔵門線「表参道」下車
+            <wbr />A4出口&ensp;徒歩3分
+          </p>
+          <br />
+          <p class="mb-0 nowrap">電話番号：03-6885-6140</p>
+        </div>
       </div>
-      <div class="col-md-6 footer-menus">
-        <p><a href="/terms/harbors/">コワーキングスペース利用規約</a></p>
-        <p><a href="/terms/virtual_office/">バーチャルオフィス利用規約</a></p>
-        <p><a href="/terms/rooms/">ミーティングルーム利用規約</a></p>
-        <p><a href="/terms/posse/">POSSE利用規約</a></p>
-      </div>
+      <!-- 地図 -->
+      <iframe
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.99080382981!2d139.7061736147836!3d35.664745284378995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a9122f1cd%3A0xcfe4aad9a0735cb8!2zSGFyYm9yUyDooajlj4LpgZMo44OP44O844OQ44O844K66KGo5Y-C6YGTKQ!5e0!3m2!1sja!2sjp!4v1589869377967!5m2!1sja!2sjp"
+        allowfullscreen=""
+      ></iframe>
     </div>
-  </div>
-  <p class="text-center mb-0 copyright"><small class="text-white">2019 &copy; Anti-Pattern Inc.</small></p>
 
-</footer>
-</body>
+    <!-- フッター -->
+    <footer class="py-3 m-0 zigzag-copy">
+      <div class="container small">
+        <div class="row">
+          <div class="col-md-6 footer-menus">
+            <p><a href="https://anti-pattern.co.jp">運営会社</a></p>
+            <p>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/viewform?usp=sf_link"
+                >お問い合わせ</a
+              >
+            </p>
+            <p>
+              <a href="https://anti-pattern.co.jp/legal/privacy/"
+                >プライバシーポリシー</a
+              >
+            </p>
+          </div>
+          <div class="col-md-6 footer-menus">
+            <p><a href="/terms/harbors/">コワーキングスペース利用規約</a></p>
+            <p>
+              <a href="/terms/virtual_office/">バーチャルオフィス利用規約</a>
+            </p>
+            <p><a href="/terms/rooms/">ミーティングルーム利用規約</a></p>
+            <p><a href="/terms/posse/">POSSE利用規約</a></p>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mb-0 copyright">
+        <small class="text-white">2019 &copy; Anti-Pattern Inc.</small>
+      </p>
+    </footer>
+  </body>
+</html>

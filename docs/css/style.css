@@ -656,6 +656,35 @@ iframe.map {
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+目次
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.table-of-contents {
+  background-color: #fafafa;
+  width: 60%;
+  margin: 0 auto;
+  border: dotted #18325F 2px;
+  box-shadow: 0 0 5px #999;
+  color: #18325F;
+  padding: 30px;
+}
+
+.table-of-contents li {
+  margin-top: 8px;
+}
+
+.table-of-contents a {
+  color: #18325F;
+}
+
+@media screen and (max-width: 768px) {
+  .table-of-contents {
+    width: 100%;
+  }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
 バーチャルオフィスとは
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
@@ -738,6 +767,57 @@ features_of_harbors
 @media screen and (min-width: 768px){
   .card-img{
     width: 50%;
+  }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+バーチャルオフィスFAQ
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.faq {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+}
+
+.faq-question {
+  color: #EE8585;
+  margin-left: 32px;
+  text-indent: -38px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.faq-question::before {
+  content: 'Q.';
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.faq-answer {
+  margin-bottom: 0px;
+  margin-left: 32px;
+  text-indent: -38px;
+}
+
+.faq-answer::before {
+  content: 'A.';
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.faq-button {
+  width: 50%;
+  padding: 16px 0;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .faq-button {
+    width: 100%;
   }
 }
 
