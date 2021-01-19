@@ -661,7 +661,7 @@ iframe.map {
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 .table-of-contents {
   background-color: #fafafa;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   border: dotted #18325F 2px;
   box-shadow: 0 0 5px #999;
@@ -784,7 +784,7 @@ features_of_harbors
 .faq-question {
   color: #EE8585;
   margin-left: 32px;
-  text-indent: -36px;
+  text-indent: -38px;
   font-weight: 500;
   font-size: 20px;
 }
@@ -799,7 +799,7 @@ features_of_harbors
 .faq-answer {
   margin-bottom: 0px;
   margin-left: 32px;
-  text-indent: -36px;
+  text-indent: -38px;
 }
 
 .faq-answer::before {
