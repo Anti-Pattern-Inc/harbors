@@ -2,8 +2,8 @@
 {
   // スムーススクロール
   $(function () {
-    var headerHeight = 175;
-    $('a[href^="#access"]').click(function(){
+    var headerHeight = 150;
+    $('a[href^="#"]').click(function(){
       var href= $(this).attr("href");
       var target = $(href == "#" || href == "" ? 'html' : href);
       var position = target.offset().top-headerHeight; 
