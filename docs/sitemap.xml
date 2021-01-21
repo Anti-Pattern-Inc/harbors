@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/virtual_office/</loc>
-    <lastmod>2021-01-10</lastmod>
+    <lastmod>2021-01-20</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/virtual_office/choose_virtual_office/</loc>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/virtual_office/features_of_harbors/</loc>
-    <lastmod>2021-01-10</lastmod>
+    <lastmod>2021-01-20</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/virtual_office/flow/</loc>
@@ -62,11 +62,11 @@
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/coworking/specialized_coworking/</loc>
-    <lastmod>2021-01-10</lastmod>
+    <lastmod>2021-01-20</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/coworking/engineer_mokumoku/</loc>
-    <lastmod>2021-01-10</lastmod>
+    <lastmod>2021-01-20</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/virtual_office/rental_in_tokyo_virtual_office/</loc>
@@ -111,5 +111,9 @@
   <url>
     <loc>https://harbors.anti-pattern.co.jp/virtual_office/columns/</loc>
     <lastmod>2020-12-22</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/virtual_office/faq/</loc>
+    <lastmod>2020-01-20</lastmod>
   </url>
 </urlset>
