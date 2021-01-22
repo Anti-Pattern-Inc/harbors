@@ -3,7 +3,7 @@
   // スムーススクロール
   $(function () {
     var headerHeight = 150;
-    $('a[href^="#"]').click(function(){
+    $('a[href^="#"]' + 'a:not(".collapse")').click(function(){
       var href= $(this).attr("href");
       var target = $(href == "#" || href == "" ? 'html' : href);
       var position = target.offset().top-headerHeight; 
