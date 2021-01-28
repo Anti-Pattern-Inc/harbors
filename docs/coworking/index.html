@@ -4,11 +4,10 @@
     prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"
   >
     <meta charset="UTF-8" />
-    <title>HarborS 表参道 | エンジニア特化型コワーキングスペース</title>
+    <title>エンジニア特化型コワーキングスペース | HarborS 表参道</title>
     <meta
       name="description"
-      content="「日本のソフトウェアエンジニアを憧れの職業へ」をVisionに掲げる、株式会社アンチパターンが運営するコワーキングスペース。エンジニア特化型のコミュニティ形成を支援している。コワーキング会員のみならず、ドロップインの利用も可能である。渋谷からも近い距離にあり、多くのエンジニアにとって、足を運びやすい場所に位置している。
-勉強会やイベントも多数開催しているため、会員以外の方もお気軽に参加頂きたい。現地見学やオンラインでも説明会を実施中。"
+      content="「日本のソフトウェアエンジニアを憧れの職業へ」をVisionに掲げる、株式会社アンチパターンが運営するコワーキングスペース。エンジニア特化型のコミュニティ形成を支援している。コワーキング会員のみならず、ドロップインの利用も可能である。渋谷からも近い距離にあり、多くのエンジニアにとって、足を運びやすい場所に位置している。勉強会やイベントも多数開催しているため、会員以外の方もお気軽に参加頂きたい。現地見学やオンラインでも説明会を実施中。"
     />
     <meta
       name="viewport"
@@ -18,10 +17,7 @@
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@harbors_sh" />
-    <meta
-      property="og:url"
-      content="https://harbors.anti-pattern.co.jp/coworking/"
-    />
+    <meta property="og:url" content="https://harbors.anti-pattern.co.jp/" />
     <meta
       property="og:title"
       content="HarborS 表参道 | エンジニア特化型コワーキングスペース"
@@ -108,6 +104,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"
     ></script>
+    <script src="/js/main.js"></script>
     <!-- イベント一覧情報を取得する -->
     <script>
       $(document).ready(function () {
@@ -123,7 +120,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               events_html +=
                 '<div class="col-md-4 mb-4 event-card">' +
                 '<div class="card text-white">' +
-                '<img class="card-img event-card-img" src="' +
+                '<img class="card-img event-card-img" loading="lazy" src="' +
                 json[i].img_url +
                 '">' +
                 '<div class="card-img-overlay card-event-title">' +
@@ -193,12 +190,21 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         });
       });
     </script>
-    <script src="/js/main.js"></script>
   </head>
 
   <body>
     <header class="container-fluid mb-3 mb-md-0 bg-white px-0" id="header">
-      <h1 class="h-tit">HarborS 表参道 エンジニア特化型コワーキングスペース</h1>
+      <div class="emergency mx-1 mx-lg-5 my-1">
+        <p class="px-2 mb-0">
+          新型コロナ感染症拡大、および緊急事態宣言に伴い、2/7までは休業致します。<br
+            class="d-md-none d-block"
+          />(見学＆説明会については実施中)
+        </p>
+      </div>
+
+      <h1 class="h-tit mx-1 mx-lg-5 mt-2">
+        HarborS 表参道 エンジニア特化型コワーキングスペース
+      </h1>
 
       <nav
         class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-0 px-lg-5 border-bottom"
@@ -366,7 +372,12 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         <h2 class="text-center mt-5">「HarborS」で新しい出会いを</h2>
         <div class="row py-5">
           <div class="col-12 col-lg-6 order-md-2 p-lg-0 mb-3">
-            <img src="/img/engineer.png" alt="握手する人" class="w-100" />
+            <img
+              src="/img/engineer.png"
+              alt="握手する人"
+              loading="lazy"
+              class="w-100"
+            />
           </div>
           <div class="col-12 col-lg-5 order-md-1 ml-md-auto">
             <p class="text-white text-right mt-5 nowrap">
@@ -379,7 +390,12 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         </div>
         <div class="row py-5">
           <div class="col-12 col-lg-6 p-lg-0 mb-3">
-            <img src="/img/designer.png" alt="相談する2人" class="w-100" />
+            <img
+              src="/img/designer.png"
+              alt="相談する2人"
+              loading="lazy"
+              class="w-100"
+            />
           </div>
           <div class="col-12 col-lg-5 ml-md-autob float-right">
             <p class="text-white mt-5 nowrap">
@@ -427,67 +443,42 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             <th>入会金</th>
           </tr>
           <tr>
+            <th>ライトプラン</th>
+            <td>2,000円</td>
+            <td rowspan="5">24H365日</td>
+            <td>4H</td>
+            <td rowspan="3">1時間500円</td>
+            <td rowspan="12">10,000円</td>
+          </tr>
+          <tr>
             <th>フリー32Hプラン</th>
             <td>15,000円</td>
-            <td rowspan="7">24H365日</td>
             <td>32H</td>
-            <td>1時間500円</td>
-            <td rowspan="6">10,000円</td>
           </tr>
           <tr>
             <th>フリー64Hプラン</th>
             <td>25,000円</td>
             <td>64H</td>
-            <td>1時間500円</td>
-          </tr>
-          <tr>
-            <th>フリー96Hプラン</th>
-            <td>35,000円</td>
-            <td>96H</td>
-            <td>1時間500円</td>
           </tr>
           <tr>
             <th>フリー無制限プラン</th>
-            <td>60,000円</td>
-            <td>なし</td>
-            <td>-</td>
+            <td>50,000円</td>
+            <td rowspan="7">なし</td>
+            <td rowspan="7">-</td>
           </tr>
-          <tr>
-            <th>ライトプラン</th>
-            <td>2000円</td>
-            <td>4H</td>
-            <td>1時間500円</td>
-          </tr>
-
           <tr>
             <th>プライベートデスク</th>
             <td>85,000円</td>
-            <td rowspan="2">なし</td>
-            <td rowspan="2">-</td>
           </tr>
           <tr>
-            <th>プライベートデスク（3人）</th>
-            <td>220,000円</td>
-            <td>30,000円</td>
-          </tr>
-          <tr>
-            <th>平日32Hプラン</th>
-            <td>12,000円</td>
-            <td>平日8:00-24:00</td>
-            <td>32H</td>
-            <td>1時間500円</td>
-            <td rowspan="6">10,000円</td>
+            <th>ビジネスプラン</th>
+            <td>32,000円</td>
+            <td>毎日9:00-21:00</td>
           </tr>
           <tr>
             <th>平日ナイトプラン</th>
             <td>8,800円</td>
-            <td rowspan="2">平日18:00-24:00</td>
-            <td rowspan="5">なし</td>
-            <td rowspan="5">-</td>
-          </tr>
-          <tr>
-            <th>メンター付きプラン</th>
-            <td>30,000円</td>
+            <td>平日18:00-24:00</td>
           </tr>
           <tr>
             <th>土日祝プラン</th>
@@ -503,6 +494,18 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             <th>深夜プラン</th>
             <td>10,000円</td>
             <td>毎日23:00-8:00</td>
+          </tr>
+          <tr>
+            <th rowspan="2">メンタープラン（オンライン）</th>
+            <td rowspan="2">29,800円〜</td>
+            <td>利用なし</td>
+            <td>なし</td>
+            <td>なし</td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              ※スペースを利用する場合、別途ドロップインの料金が必要となります。
+            </td>
           </tr>
         </table>
         <table class="plan-list table table-bordered table-sm text-center">
@@ -567,6 +570,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               <img
                 src="/img/seminarroom.jpg"
                 alt="HarborS 表参道のセミナールーム"
+                loading="lazy"
                 class="border card-img-top"
               />
               <div class="card-body">
@@ -582,6 +586,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               <img
                 src="/img/cafe.jpg"
                 alt="HarborS 表参道のカフェ"
+                loading="lazy"
                 class="border card-img-top"
               />
               <div class="card-body">
@@ -597,6 +602,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               <img
                 src="/img/rocker.jpg"
                 alt="HarborS 表参道のロッカー"
+                loading="lazy"
                 class="border card-img-top"
               />
               <div class="card-body">
@@ -610,6 +616,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               <img
                 src="/img/printer.jpg"
                 alt="HarborS 表参道の複合機とシュレッダー"
+                loading="lazy"
                 class="border card-img-top"
               />
               <div class="card-body">
@@ -625,6 +632,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               <img
                 src="/img/office.png"
                 alt="HarborS 表参道の外観"
+                loading="lazy"
                 class="border card-img-top"
               />
               <div class="card-body">
@@ -640,6 +648,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               <img
                 src="/img/wifi.jpg"
                 alt="パソコンを操作する人"
+                loading="lazy"
                 class="border card-img-top"
               />
               <div class="card-body">
@@ -655,6 +664,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               <img
                 src="/img/terrace.png"
                 alt="HarborS 表参道のテラス"
+                loading="lazy"
                 class="border card-img-top"
               />
               <div class="card-body">
@@ -670,6 +680,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               <img
                 src="/img/books.png"
                 alt="HarborS 表参道の技術書"
+                loading="lazy"
                 class="border card-img-top"
               />
               <div class="card-body">
@@ -685,6 +696,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               <img
                 src="/img/monitor.png"
                 alt="HarborS 表参道のディスプレイ"
+                loading="lazy"
                 class="border card-img-top"
               />
               <div class="card-body">
@@ -700,6 +712,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               <img
                 src="/img/whiteboard.png"
                 alt="HarborS 表参道のホワイトボード"
+                loading="lazy"
                 class="border card-img-top"
               />
               <div class="card-body">
@@ -715,6 +728,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               <img
                 src="/img/cashless.png"
                 alt="対応している決済方法"
+                loading="lazy"
                 class="border card-img-top"
               />
               <div class="card-body">
@@ -740,6 +754,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             <img
               src="/img/3f.png"
               alt="オフィススペースの間取り"
+              loading="lazy"
               class="card-img-top"
             />
             <div class="card-body">
@@ -752,6 +767,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             <img
               src="/img/rf.png"
               alt="テラススペースの間取り"
+              loading="lazy"
               class="card-img-top"
             />
             <div class="card-body">
@@ -829,6 +845,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               width="560"
               height="315"
               src="https://www.youtube.com/embed/wPpJ5ZabMeI"
+              loading="lazy"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -841,6 +858,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               width="560"
               height="315"
               src="https://www.youtube.com/embed/sJ9M9zPXEVs"
+              loading="lazy"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -891,27 +909,57 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         </div>
       </div>
 
-      <div class="access pt-4 light-zigzag">
+      <!-- コラム -->
+      <div class="pt-5 mb-5 light-zigzag">
+        <div class="container text-center pb-5" id="column">
+          <h2 class="display-3 pb-3">COLUMN</h2>
+          <a
+            href="/coworking/specialized_coworking/"
+            class="btn btn-outline-secondary py-3 mb-4 w-75"
+            role="button"
+          >
+            ユニークでおすすめのコワーキングスペース特集<span
+              class="float-right column-span"
+              >&gt;</span
+            > </a
+          ><br />
+          <a
+            href="/coworking/engineer_mokumoku/"
+            class="btn btn-outline-secondary py-3 mb-4 w-75"
+            role="button"
+          >
+            おすすめのエンジニアもくもく会とは？<br />参加時のポイントと注意点を解説<span
+              class="float-right"
+              >&gt;</span
+            > </a
+          ><br />
+        </div>
+      </div>
+
+      <div class="access pt-5">
         <div class="container text-center" id="news">
           <!-- アクセス -->
           <h2 class="display-3 pb-3" id="access">ACCESS</h2>
-          <div class="mb-3 text-center">
-            <p class="mb-0 nowrap">
-              住所：東京都港区南青山3丁目15-9<wbr /> MINOWA表参道3F
+          <div class="mb-3 text-left">
+            <p class="mb-0">
+              HarborS
+              表参道は、港区青山エリアに位置しており、表参道駅A4出口から徒歩3分という好立地です。
+              住所は「港区南青山」とブランド力抜群のこのエリアは、渋谷、原宿、麻布、赤坂、六本木エリアとも隣接しており、どこからのアクセスも抜群の立地という特徴があります。
             </p>
-            <br />
-            <p class="mb-0 nowrap">
-              アクセス：東京メトロ銀座線 <wbr />半蔵門線「表参道」下車
-              <wbr />A4出口 徒歩3分
+            <p class="mt-2 mb-0">[周辺からのアクセス]</p>
+            <p class="mb-0">渋谷：銀座線で1分 (徒歩20分圏内)</p>
+            <p class="mb-0">原宿：千代田線で1分 (徒歩20分圏内)</p>
+            <p class="mb-0">
+              六本木：千代田線(乃木坂駅利用)で2分 (徒歩25分圏内)
             </p>
-            <br />
-            <p class="mb-0 nowrap">電話番号：03-6885-6140</p>
+            <p class="mb-0">赤坂：千代田線で6分 (徒歩30分圏内)</p>
           </div>
         </div>
         <!-- 地図 -->
         <iframe
           class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.99080382981!2d139.7061736147836!3d35.664745284378995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a9122f1cd%3A0xcfe4aad9a0735cb8!2zSGFyYm9yUyDooajlj4LpgZMo44OP44O844OQ44O844K66KGo5Y-C6YGTKQ!5e0!3m2!1sja!2sjp!4v1589869377967!5m2!1sja!2sjp"
+          loading="lazy"
           allowfullscreen=""
         ></iframe>
       </div>
