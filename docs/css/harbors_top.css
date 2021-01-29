@@ -312,7 +312,7 @@ section {
     left: 100%;
     background-color: #000;
     overflow-y: scroll;
-    padding-top: 60px;
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
   }
