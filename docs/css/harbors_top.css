@@ -402,6 +402,17 @@ section {
   .header-right a {
     font-size: 16px;
     padding: 0;
+    background: none;
+    transition: none;
+  }
+
+  .header-disabled::before {
+    content: none;
+  }
+
+  .header-disabled.hovering::before {
+    display: none;
+    opacity: 1;
   }
 
   .speech-bubble {
@@ -428,8 +439,9 @@ section {
     font-weight: 300;
   }
 
-  .speech-bubble::after {
-    content: none;
+  .header-disabled:hover + .speech-bubble,
+  .speech-bubble:hover {
+    animation: none;
   }
 
   .nav-footer {
