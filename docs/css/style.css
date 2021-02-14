@@ -550,8 +550,13 @@ iframe.map {
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
+h2.color-gray {
+  color: #A9A9A9;
+}
+
 .about-us{
   overflow: hidden;
+  color: #A9A9A9;
 }
 
 .about-us-img{
