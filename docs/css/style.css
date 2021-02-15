@@ -690,6 +690,71 @@ h2.color-gray {
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+ボタンリンク
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.link-button {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #CCC;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #F7F7F7;
+}
+
+.link-button:hover {
+  opacity: .7;
+  text-decoration-color: #333;
+}
+
+.link-button-img {
+  width: 50%;
+}
+
+.link-button-img img {
+  width: 100%;
+}
+
+.link-button-text {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+@media screen and (max-width: 991.98px) {
+  .link-button {
+    width: 80%;
+  }
+  
+  .link-button-text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .link-button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .link-button-img {
+    width: 40%;
+  }
+
+  .link-button-text {
+    width: 60%;
+  }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
 バーチャルオフィスとは
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
