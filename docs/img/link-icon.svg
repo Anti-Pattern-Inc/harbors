@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667">
-  <g id="link-icon" transform="translate(-1154 -5516)">
-    <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
-      <rect width="10" height="11.667" stroke="none"/>
-      <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-    </g>
-    <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
-      <rect width="10" height="11.667" stroke="none"/>
-      <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-    </g>
-  </g>
-</svg>
+<svg height="13.667" viewBox="0 0 12 13.667" width="12" xmlns="http://www.w3.org/2000/svg"><g fill="#fff" stroke="#666"><g><path d="m0 0h10v11.667h-10z" stroke="none"/><path d="m.5.5h9v10.667h-9z" fill="none"/></g><g><path d="m2 2h10v11.667h-10z" stroke="none"/><path d="m2.5 2.5h9v10.667h-9z" fill="none"/></g></g></svg>
