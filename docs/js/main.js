@@ -43,6 +43,7 @@ $(function () {
   
   $('.header-disabled').hover(
     function () {
+      $('.transparent-area').remove();
       if ($('.hovered')) {
         $('.header-disabled').removeClass('hovered');
         $('.footer-disabled').removeClass('hovered');
@@ -52,30 +53,85 @@ $(function () {
       var speechBubble = $(this).next();
       $(this).addClass('hovered');
       speechBubble.addClass('hovered');
+
+      speechBubbleWidth = speechBubble.outerWidth();
+      speechBubbleHeight = speechBubble.outerHeight() + 35;
+
+      $(this).before('<div class="transparent-area"></div>');
+
+      $('.transparent-area').offset({
+        top: speechBubble.offset().top - 35,
+        left: speechBubble.offset().left
+      })
+      $('.transparent-area').width(speechBubbleWidth);
+      $('.transparent-area').height(speechBubbleHeight);
+    },
+    function () {
+      if ($('.transparent-area').is(':hover')) {
+        $('.transparent-area').mouseleave(
+          function () {
+            $('.transparent-area').remove();
+            $('.header-disabled').removeClass('hovered');
+            $('.footer-disabled').removeClass('hovered');
+            $('.speech-bubble').removeClass('hovered');
+            $('.footer-speech-bubble').removeClass('hovered');
+          }
+        )
+      } else {
+        $('.transparent-area').remove();
+        $('.header-disabled').removeClass('hovered');
+        $('.footer-disabled').removeClass('hovered');
+        $('.speech-bubble').removeClass('hovered');
+        $('.footer-speech-bubble').removeClass('hovered');
+      }
     }
-    );
+  );
     
   $('.footer-disabled').hover(
     function () {
+      $('.transparent-area').remove();
       if ($('.hovered')) {
         $('.header-disabled').removeClass('hovered');
         $('.footer-disabled').removeClass('hovered');
         $('.speech-bubble').removeClass('hovered');
         $('.footer-speech-bubble').removeClass('hovered');
       }
-        
-      var footerSpeechBubble = $(this).next();
+      var speechBubble = $(this).next();
       $(this).addClass('hovered');
-      footerSpeechBubble.addClass('hovered')
+      speechBubble.addClass('hovered');
+
+      speechBubbleWidth = speechBubble.outerWidth();
+      speechBubbleHeight = speechBubble.outerHeight() + 42;
+
+      $(this).before('<div class="transparent-area"></div>');
+
+      $('.transparent-area').offset({
+        top: speechBubble.offset().top,
+        left: speechBubble.offset().left
+      })
+      $('.transparent-area').width(speechBubbleWidth);
+      $('.transparent-area').height(speechBubbleHeight);
+    },
+    function () {
+      if ($('.transparent-area').is(':hover')) {
+        $('.transparent-area').mouseleave(
+          function () {
+            $('.transparent-area').remove();
+            $('.header-disabled').removeClass('hovered');
+            $('.footer-disabled').removeClass('hovered');
+            $('.speech-bubble').removeClass('hovered');
+            $('.footer-speech-bubble').removeClass('hovered');
+          }
+        )
+      } else {
+        $('.transparent-area').remove();
+        $('.header-disabled').removeClass('hovered');
+        $('.footer-disabled').removeClass('hovered');
+        $('.speech-bubble').removeClass('hovered');
+        $('.footer-speech-bubble').removeClass('hovered');
+      }
     }
   );
-      
-  $('body').not('.hovered').click(function () {
-    $('.header-disabled').removeClass('hovered');
-    $('.footer-disabled').removeClass('hovered');
-    $('.speech-bubble').removeClass('hovered');
-    $('.footer-speech-bubble').removeClass('hovered');
-  })
       
   // ハンバーガー
   $('.nav-toggle').click(function () {
@@ -102,12 +158,20 @@ $(function () {
     rtl: true,
     prevArrow:'<div class="prev"><img src="/img/slider-prev.svg" alt=""></div>',
     nextArrow: '<div class="next"><img src="/img/slider-next.svg" alt=""></div>',
-    
-    responsive: [{
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2.5,
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2.5,
+        }
+      },
+      {
+        breakpoint: 380,
+        settings: {
+          slidesToShow: 2,
+        }
       }
-    }]
+    ],
   });
 });

@@ -29,6 +29,7 @@ a {
   height: 62px;
   padding: 0 10px;
   margin: 0 auto;
+  position: relative;
 }
 
 .container {
@@ -73,11 +74,11 @@ section {
   }
 
   .container {
-    width: 354px;
+    max-width: 354px;
   }
 
   .right-container {
-    width: calc((100vw + 354px) / 2);
+    max-width: calc((100vw + 354px) / 2);
   }
 
   section {
@@ -193,7 +194,6 @@ section {
 }
 
 .header-disabled {
-  position: relative;
   cursor: pointer;
 }
 
@@ -201,8 +201,8 @@ section {
   display: none;
   opacity: 0;
   position: absolute;
-  top: 140px;
-  right: 10px;
+  top: 112px;
+  right: 0;
   padding: 32px;
   background-color: #FFF;
   border-radius: 20px;
@@ -233,23 +233,35 @@ section {
   background-size: 0 2px;
 }
 
-.header-disabled::before {
+.triangle-1::before {
   content: "";
   position: absolute;
   display: none;
   opacity: 0;
-  top: 50px;
-  left: 38px;
+  top: -20px;
+  right: 200px;
   border-right: 25px solid transparent;
   border-bottom: 25px solid #FFF;
   border-left: 25px solid transparent;
 }
 
-.header-disabled.hovered::before {
+.triangle-2::before {
+  content: "";
+  position: absolute;
+  display: none;
+  opacity: 0;
+  top: -20px;
+  right: 40px;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #FFF;
+  border-left: 25px solid transparent;
+}
+
+.speech-bubble.hovered::before {
   display: block;
   opacity: 1;
   animation-duration: .6s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease;
   animation-name: fade-in;
 }
 
@@ -385,13 +397,13 @@ section {
 
   .header-upper-right {
     order: 2;
-    width: 320px;
+    max-width: 320px;
     margin: 0 auto;
   }
 
   .header-lower-right {
     order: 1;
-    width: 320px;
+    max-width: 320px;
     margin: 0 auto 15px;
   }
 
@@ -457,7 +469,7 @@ section {
 
   .nav-footer {
     display: block;
-    width: 320px;
+    max-width: 320px;
     margin: 0 auto;
     order: 3;
     z-index: 10;
@@ -552,6 +564,12 @@ section {
     height: 550px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .top-image {
+    height: 500px;
+  }
+}
 /* first-view */
 
 /* second-view */
@@ -628,7 +646,8 @@ section {
 
 @media screen and (max-width: 767.8px) {
   .second-view-left {
-    width: 354px;
+    width: 100%;
+    max-width: 354px;
   }
 
   .second-view-title {
@@ -643,6 +662,17 @@ section {
 
   .second-view-right {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .second-view-left {
+    width: 300px;
+  }
+
+  .second-view-title {
+    font-size: 28px;
+    line-height: 50px;
   }
 }
 /* second-view */
@@ -1109,7 +1139,7 @@ section {
 /* footer */
 footer {
   margin-top: 120px;
-  padding: 50px 0 100px;
+  padding: 50px 0 0;
   background-color: #111;
   color: #FFF;
 }
@@ -1225,7 +1255,6 @@ footer a:hover {
 }
 
 .footer-disabled {
-  position: relative;
   cursor: pointer;
 }
 
@@ -1234,7 +1263,7 @@ footer a:hover {
   opacity: 0;
   position: absolute;
   width: 950px;
-  bottom: 180px;
+  bottom: 190px;
   right: 0;
   padding: 32px;
   background-color: #FFF;
@@ -1248,18 +1277,6 @@ footer a:hover {
   border-radius: 10px;
   margin-right: 16px;
   background-color: #F5F5F8;
-}
-
-.footer-disabled::before {
-  content: "";
-  position: absolute;
-  display: none;
-  opacity: 0;
-  top: -40px;
-  left: 26px;
-  border-right: 25px solid transparent;
-  border-top: 25px solid #FFF;
-  border-left: 25px solid transparent;
 }
 
 .footer-speech-bubble a {
@@ -1280,11 +1297,35 @@ footer a:hover {
   background-size: 0 2px;
 }
 
-.footer-disabled.hovered::before {
+.triangle-3::before {
+  content: "";
+  position: absolute;
+  display: none;
+  opacity: 0;
+  top: 255px;
+  right: 280px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #FFF;
+  border-left: 25px solid transparent;
+}
+
+.triangle-4::before {
+  content: "";
+  position: absolute;
+  display: none;
+  opacity: 0;
+  top: 255px;
+  right: 145px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #FFF;
+  border-left: 25px solid transparent;
+}
+
+.footer-speech-bubble.hovered::before {
   display: block;
   opacity: 1;
   animation-duration: .6s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease;
   animation-name: fade-in;
 }
 
@@ -1296,20 +1337,16 @@ footer a:hover {
   animation-name: fade-in;
 }
 
-.footer-disabled.hovered::before {
-  display: block;
-  opacity: 1;
-  animation-duration: .6s;
-  animation-timing-function: ease-in-out;
-  animation-name: fade-in;
-}
+@media screen and (max-width: 1070px) {
+  .triangle-3::before {
+    top: 255px;
+    right: 230px;
+  }
 
-.footer-speech-bubble.hovered {
-  display: block;
-  opacity: 1;
-  animation-duration: .6s;
-  animation-timing-function: ease;
-  animation-name: fade-in;
+  .triangle-4::before {
+    top: 255px;
+    right: 95px;
+  }
 }
 
 @media screen and (max-width: 991.8px) {
@@ -1348,9 +1385,35 @@ footer a:hover {
   .footer-speech-bubble {
     width: auto;
   }
+
+  .triangle-3::before {
+    top: 475px;
+    right: 300px;
+  }
+
+  .triangle-4::before {
+    top: 475px;
+    right: 170px;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .triangle-3::before {
+    top: 475px;
+    right: 220px;
+  }
+
+  .triangle-4::before {
+    top: 475px;
+    right: 90px;
+  }
 }
 
 @media screen and (max-width: 767.8px) {
+  footer {
+    padding-bottom: 40px;
+  }
+
   .footer-left, .footer-right {
     width: 100%;
   }
@@ -1478,3 +1541,9 @@ footer a:hover {
 /* footer */
 
 
+
+.transparent-area {
+  position: absolute;
+  z-index: 10000;
+  opacity: 0;
+}
