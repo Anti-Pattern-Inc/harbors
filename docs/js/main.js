@@ -40,98 +40,83 @@ $(function () {
     }
     startPos = scrollPos;
   })
-  
+
   $('.header-disabled').hover(
     function () {
       $('.transparent-area').remove();
       if ($('.hovered')) {
-        $('.header-disabled').removeClass('hovered');
-        $('.footer-disabled').removeClass('hovered');
-        $('.speech-bubble').removeClass('hovered');
-        $('.footer-speech-bubble').removeClass('hovered');
+        closeSpeechBubble()
       }
       var speechBubble = $(this).next();
       $(this).addClass('hovered');
       speechBubble.addClass('hovered');
-
-      speechBubbleWidth = speechBubble.outerWidth();
-      speechBubbleHeight = speechBubble.outerHeight() + 35;
-
-      $(this).before('<div class="transparent-area"></div>');
-
+      transparentAreaWidth = speechBubble.outerWidth();
+      transparentAreaHeight = 35;
+      $(this).before('<div class="transparent-area hovered"></div>');
       $('.transparent-area').offset({
         top: speechBubble.offset().top - 35,
         left: speechBubble.offset().left
       })
-      $('.transparent-area').width(speechBubbleWidth);
-      $('.transparent-area').height(speechBubbleHeight);
+      $('.transparent-area').width(transparentAreaWidth);
+      $('.transparent-area').height(transparentAreaHeight);
     },
     function () {
-      if ($('.transparent-area').is(':hover')) {
-        $('.transparent-area').mouseleave(
+      if (($('.transparent-area').is(':hover'))) {
+        $('.speech-bubble.hovered').mouseleave(
           function () {
             $('.transparent-area').remove();
-            $('.header-disabled').removeClass('hovered');
-            $('.footer-disabled').removeClass('hovered');
-            $('.speech-bubble').removeClass('hovered');
-            $('.footer-speech-bubble').removeClass('hovered');
+            closeSpeechBubble();
           }
         )
       } else {
         $('.transparent-area').remove();
-        $('.header-disabled').removeClass('hovered');
-        $('.footer-disabled').removeClass('hovered');
-        $('.speech-bubble').removeClass('hovered');
-        $('.footer-speech-bubble').removeClass('hovered');
+        closeSpeechBubble();
       }
     }
-  );
+  )
+
+
     
   $('.footer-disabled').hover(
     function () {
       $('.transparent-area').remove();
       if ($('.hovered')) {
-        $('.header-disabled').removeClass('hovered');
-        $('.footer-disabled').removeClass('hovered');
-        $('.speech-bubble').removeClass('hovered');
-        $('.footer-speech-bubble').removeClass('hovered');
+        closeSpeechBubble()
       }
       var speechBubble = $(this).next();
       $(this).addClass('hovered');
       speechBubble.addClass('hovered');
-
-      speechBubbleWidth = speechBubble.outerWidth();
-      speechBubbleHeight = speechBubble.outerHeight() + 42;
-
-      $(this).before('<div class="transparent-area"></div>');
-
+      transparentAreaWidth = speechBubble.outerWidth();
+      transparentAreaHeight = 42;
+      $(this).before('<div class="transparent-area hovered"></div>');
       $('.transparent-area').offset({
-        top: speechBubble.offset().top,
+        top: speechBubble.offset().top + speechBubble.outerHeight(),
         left: speechBubble.offset().left
       })
-      $('.transparent-area').width(speechBubbleWidth);
-      $('.transparent-area').height(speechBubbleHeight);
+      $('.transparent-area').width(transparentAreaWidth);
+      $('.transparent-area').height(transparentAreaHeight);
     },
     function () {
       if ($('.transparent-area').is(':hover')) {
-        $('.transparent-area').mouseleave(
+        $('.footer-speech-bubble.hovered').mouseleave(
           function () {
             $('.transparent-area').remove();
-            $('.header-disabled').removeClass('hovered');
-            $('.footer-disabled').removeClass('hovered');
-            $('.speech-bubble').removeClass('hovered');
-            $('.footer-speech-bubble').removeClass('hovered');
+            closeSpeechBubble()
           }
         )
       } else {
         $('.transparent-area').remove();
-        $('.header-disabled').removeClass('hovered');
-        $('.footer-disabled').removeClass('hovered');
-        $('.speech-bubble').removeClass('hovered');
-        $('.footer-speech-bubble').removeClass('hovered');
+        closeSpeechBubble()
       }
     }
   );
+
+  function closeSpeechBubble() {
+    $('.header-disabled').removeClass('hovered');
+    $('.footer-disabled').removeClass('hovered');
+    $('.speech-bubble').removeClass('hovered');
+    $('.footer-speech-bubble').removeClass('hovered');
+  }
       
   // ハンバーガー
   $('.nav-toggle').click(function () {

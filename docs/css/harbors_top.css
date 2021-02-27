@@ -1544,6 +1544,5 @@ footer a:hover {
 
 .transparent-area {
   position: absolute;
-  z-index: 10000;
   opacity: 0;
 }
