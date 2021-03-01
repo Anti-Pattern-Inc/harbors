@@ -2,63 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://harbors.anti-pattern.co.jp/</loc>
-    <lastmod>2021-01-10</lastmod>
+    <lastmod>2021-03-01</lastmod>
   </url>
   <url>
-    <loc>https://harbors.anti-pattern.co.jp/events/</loc>
-    <lastmod>2021-01-10</lastmod>
-  </url>
-  <url>
-    <loc>https://harbors.anti-pattern.co.jp/extends/</loc>
-    <lastmod>2020-12-22</lastmod>
-  </url>
-  <url>
-    <loc>https://harbors.anti-pattern.co.jp/plans/</loc>
-    <lastmod>2021-01-07</lastmod>
-  </url>
-  <url>
-    <loc>https://harbors.anti-pattern.co.jp/rooms/</loc>
-    <lastmod>2021-01-07</lastmod>
-  </url>
-  <url>
-    <loc>https://harbors.anti-pattern.co.jp/satellite_office/</loc>
-    <lastmod>2020-12-22</lastmod>
-  </url>
-  <url>
-    <loc>https://harbors.anti-pattern.co.jp/terms/harbors/</loc>
-    <lastmod>2021-01-10</lastmod>
-  </url>
-  <url>
-    <loc>https://harbors.anti-pattern.co.jp/terms/virtual_office/</loc>
-    <lastmod>2021-01-10</lastmod>
-  </url>
-  <url>
-    <loc>https://harbors.anti-pattern.co.jp/terms/rooms/</loc>
-    <lastmod>2021-01-10</lastmod>
-  </url>
-  <url>
-    <loc>https://harbors.anti-pattern.co.jp/terms/posse/</loc>
-    <lastmod>2021-01-10</lastmod>
-  </url>
-  <url>
-    <loc>https://harbors.anti-pattern.co.jp/virtual_office/</loc>
-    <lastmod>2021-01-30</lastmod>
-  </url>
-  <url>
-    <loc>https://harbors.anti-pattern.co.jp/virtual_office/choose_virtual_office/</loc>
-    <lastmod>2020-02-16</lastmod>
-  </url>
-  <url>
-    <loc>https://harbors.anti-pattern.co.jp/virtual_office/features_of_harbors/</loc>
-    <lastmod>2020-02-16</lastmod>
-  </url>
-  <url>
-    <loc>https://harbors.anti-pattern.co.jp/virtual_office/flow/</loc>
-    <lastmod>2020-12-22</lastmod>
-  </url>
-  <url>
-    <loc>https://harbors.anti-pattern.co.jp/virtual_office/whats_virtual_office/</loc>
-    <lastmod>2020-02-16</lastmod>
+    <loc>https://harbors.anti-pattern.co.jp/coworking/</loc>
+    <lastmod>2021-03-01</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/coworking/specialized_coworking/</loc>
@@ -67,6 +15,46 @@
   <url>
     <loc>https://harbors.anti-pattern.co.jp/coworking/engineer_mokumoku/</loc>
     <lastmod>2021-01-30</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/plans/</loc>
+    <lastmod>2021-01-07</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/satellite_office/</loc>
+    <lastmod>2020-12-22</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/events/</loc>
+    <lastmod>2021-01-10</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/virtual_office/</loc>
+    <lastmod>2021-01-30</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/virtual_office/flow/</loc>
+    <lastmod>2020-12-22</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/virtual_office/faq/</loc>
+    <lastmod>2020-02-16</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/virtual_office/features_of_harbors/</loc>
+    <lastmod>2020-02-16</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/virtual_office/columns/</loc>
+    <lastmod>2020-02-16</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/virtual_office/whats_virtual_office/</loc>
+    <lastmod>2020-02-16</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/virtual_office/choose_virtual_office/</loc>
+    <lastmod>2020-02-16</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/virtual_office/rental_in_tokyo_virtual_office/</loc>
@@ -93,6 +81,10 @@
     <lastmod>2020-02-16</lastmod>
   </url>
   <url>
+    <loc>https://harbors.anti-pattern.co.jp/virtual_office/specified_commercial_transactions/</loc>
+    <lastmod>2020-02-16</lastmod>
+  </url>
+  <url>
     <loc>https://harbors.anti-pattern.co.jp/virtual_office/expenses_virtual_office_address_only/</loc>
     <lastmod>2020-02-16</lastmod>
   </url>
@@ -109,15 +101,31 @@
     <lastmod>2020-02-16</lastmod>
   </url>
   <url>
-    <loc>https://harbors.anti-pattern.co.jp/virtual_office/columns/</loc>
-    <lastmod>2020-02-16</lastmod>
+    <loc>https://harbors.anti-pattern.co.jp/virtual_office/about_shared_office_and_rental_office/</loc>
+    <lastmod>2021-03-01</lastmod>
   </url>
   <url>
-    <loc>https://harbors.anti-pattern.co.jp/virtual_office/faq/</loc>
-    <lastmod>2020-02-16</lastmod>
+    <loc>https://harbors.anti-pattern.co.jp/extends/</loc>
+    <lastmod>2020-12-22</lastmod>
   </url>
   <url>
-    <loc>https://harbors.anti-pattern.co.jp/virtual_office/specified_commercial_transactions/</loc>
-    <lastmod>2020-02-16</lastmod>
+    <loc>https://harbors.anti-pattern.co.jp/rooms/</loc>
+    <lastmod>2021-01-07</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/terms/harbors/</loc>
+    <lastmod>2021-01-10</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/terms/virtual_office/</loc>
+    <lastmod>2021-01-10</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/terms/rooms/</loc>
+    <lastmod>2021-01-10</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/terms/posse/</loc>
+    <lastmod>2021-01-10</lastmod>
   </url>
 </urlset>
