@@ -90,6 +90,7 @@ h1.display-4{
   box-shadow: 0px 2px 5px rgb(17, 14, 9);
   padding: 15px 70px;
   margin: 5px;
+  width: 340px;
 }
 
 .btn-white {
@@ -163,6 +164,15 @@ header.container-fluid {
   background-color: #d85d45;
   border-radius: 100px;
   font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .top-button {
+    box-shadow: 0px 2px 5px rgb(17, 14, 9);
+    padding: 15px 15px;
+    margin: 5px;
+    width: 230px;
+  }
 }
 
 /* 英字タイトルをWEBフォントに */
