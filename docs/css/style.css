@@ -1551,4 +1551,9 @@ g-contents
   border-radius: 30px;
   color: #384b50;
 }
+
+.in-page-link {
+  color: #0F8FFA;
+  border-bottom: 1px solid #0F8FFA;
+}
 /* END */
