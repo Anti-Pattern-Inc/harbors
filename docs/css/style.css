@@ -475,6 +475,10 @@ iframe.map {
   opacity: 1;
 }
 
+.mobile-footer-special > div {
+  width: 50%;
+}
+
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 コワーキングプランページ
