@@ -1698,4 +1698,51 @@ g-contents
   color: #0F8FFA;
   border-bottom: 1px solid #0F8FFA;
 }
+
+.contact-main {
+  padding-top: 180px;
+}
+
+.contact-main h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #777;
+}
+
+.contact-form {
+  width: 350px;
+  margin: 40px auto 0;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contact-form label > p {
+  margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px #aaa solid;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.form-submit {
+  margin-top: 10px;
+}
+
+.contact-main .access {
+  margin-top: 120px;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .contact-main {
+    padding-top: 100px;
+  }
+}
 /* END */
