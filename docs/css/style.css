@@ -957,6 +957,10 @@ h2.top {
   padding-top: 100px;
 }
 
+.rooms-main section {
+  padding-top: 80px;
+}
+
 .rooms-title {
   margin: 35px 0 30px;
   color: #333;
@@ -1026,13 +1030,16 @@ h2.top {
   padding: 20px 0;
 } 
 
-.rooms-flow {
+.rooms-flow,
+.rooms-info {
   color: #555;
 }
 
-.rooms-flow a {
-
+.rooms-info {
+  margin-bottom: 100px;
 }
+
+
 
 @media screen and (max-width: 1224px) {
   .rooms-title {
