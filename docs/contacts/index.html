@@ -7,7 +7,7 @@
     <title>お問い合わせ | HarborS 表参道</title>
     <meta
       name="description"
-      content=""
+      content="このページはHarborS 表参道が提供するサービスに関するお問い合わせを受け付けています。フォームにご入力頂いた情報をもとに、弊社担当者からご返事をさせていただきます。"
     />
     <meta
       name="viewport"
@@ -27,7 +27,7 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content=""
+      content="このページはHarborS 表参道が提供するサービスに関するお問い合わせを受け付けています。フォームにご入力頂いた情報をもとに、弊社担当者からご返事をさせていただきます。"
     />
     <meta
       property="og:image"
@@ -256,37 +256,30 @@
           内容を確認次第、2営業日以内にスタッフよりご連絡させていただきます。
         </p>
         <form
-          action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/formResponse"
-          target="_self"
-          method="POST"
           class="contact-form"
-          id="mG61Hd"
+          id="googleForm"
         >
           <label>
             <p>氏名<span class="text-danger pl-1 small">(必須)</span></p>
-            <input type="text" name="entry.332125719" required />
+            <input type="text" name="entry.332125719" id="name" required />
           </label>
-          <!-- <label>
-            <p>会社名</p>
-            <input type="text">
-          </label> -->
           <label>
             <p>
               メールアドレス<span class="text-danger pl-1 small">(必須)</span>
             </p>
-            <input type="email" name="entry.1552946980" required />
+            <input type="email" name="entry.1552946980" id="email" required />
           </label>
           <label>
             <p>電話番号<span class="text-danger pl-1 small">(必須)</span></p>
-            <input type="tel" name="entry.1238113045" required />
+            <input type="tel" name="entry.1238113045" id="tel" required />
           </label>
           <label>
             <p>
               お問い合わせ内容<span class="text-danger pl-1 small">(必須)</span>
             </p>
-            <textarea name="entry.364792275" rows="6" required></textarea>
+            <textarea name="entry.364792275" rows="6" id="content" required></textarea>
           </label>
-          <input type="submit" class="mt-4 btn btn-outline-secondary" value="送信する" />
+          <input type="submit" class="mt-4 btn btn-outline-secondary" id="submitButton" value="送信する" />
         </form>
       </div>
 
@@ -347,6 +340,65 @@
         <small class="text-white">2020 &copy; Anti-Pattern Inc.</small>
       </p>
     </footer>
+
+    <div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <p class="mt-4">
+              お問い合わせありがとうございました。<br>
+              2営業日以内にスタッフよりご連絡させていただきますので、もうしばらくお待ちください。
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a href="/" class="btn btn-primary">TOPに戻る</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <p class="mt-4">
+              エラーが発生しました。<br>
+              大変申し訳ございませんが、しばらく時間を置いてから再度お問い合わせをお願い致します。
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a href="/" class="btn btn-primary">TOPに戻る</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $("#googleForm").submit(function(event) {
+        event.preventDefault();
+        $("#submitButton").prop("disabled", true);
+        var postUrl = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/formResponse";
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var tel = $("#tel").val();
+        var content = $("#content").val();
+        var postData = {"entry.332125719": name, "entry.1552946980": email, "entry.1238113045": tel, "entry.364792275": content};
+
+        $.post(postUrl, postData)
+          .done(function(data) {
+            $("#thanksModal").modal('show');
+          })
+          .fail(function() {
+            $("#errorModal").modal('show');
+          });
+      });
+    </script>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript
