@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://harbors.anti-pattern.co.jp/</loc>
-    <lastmod>2021-03-06</lastmod>
+    <lastmod>2021-03-29</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/coworking/</loc>
-    <lastmod>2021-03-01</lastmod>
+    <lastmod>2021-03-29</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/coworking/specialized_coworking/</loc>
@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/virtual_office/</loc>
-    <lastmod>2021-01-30</lastmod>
+    <lastmod>2021-03-29</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/virtual_office/flow/</loc>
@@ -114,7 +114,7 @@
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/rooms/</loc>
-    <lastmod>2021-01-07</lastmod>
+    <lastmod>2021-03-29</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/terms/harbors/</loc>
@@ -131,5 +131,9 @@
   <url>
     <loc>https://harbors.anti-pattern.co.jp/terms/posse/</loc>
     <lastmod>2021-01-10</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/contacts/</loc>
+    <lastmod>2021-03-29</lastmod>
   </url>
 </urlset>
