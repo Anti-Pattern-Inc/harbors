@@ -394,8 +394,12 @@
           .done(function(data) {
             $("#thanksModal").modal('show');
           })
-          .fail(function() {
-            $("#errorModal").modal('show');
+          .fail(function(jqXHR) {
+            if(jqXHR.status == 0) {
+              $("#thanksModal").modal('show');
+            } else {
+              $("#errorModal").modal('show');
+            }
           });
       });
     </script>
