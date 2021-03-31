@@ -394,7 +394,7 @@
           .done(function(data) {
             $("#thanksModal").modal('show');
           })
-          .fail(function(jqXHR, textStatus, errorThrown) {
+          .fail(function(jqXHR) {
             if(jqXHR.status == 0) {
               $("#thanksModal").modal('show');
             } else {
