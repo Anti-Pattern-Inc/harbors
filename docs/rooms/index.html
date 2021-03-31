@@ -26,7 +26,8 @@
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/css/harbors_top.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Comfortaa:500"
       rel="stylesheet"
@@ -177,11 +178,7 @@
               <a class="nav-link" href="#access">アクセス</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/viewform?usp=sf_link"
-                >お問い合わせ</a
-              >
+              <a class="nav-link" href="/contacts/">お問い合わせ</a>
             </li>
           </ul>
         </div>
@@ -199,8 +196,8 @@
             itemscope
             itemtype="https://schema.org/ListItem"
           >
-            <a itemprop="item" href="/coworking/" class="text-muted">
-              <span itemprop="name">コワーキングスペースTOP</span>
+            <a itemprop="item" href="/" class="text-muted">
+              <span itemprop="name">TOP</span>
             </a>
             <meta itemprop="position" content="1" />
           </li>
@@ -225,145 +222,199 @@
       </div>
     </header>
 
-    <!-- トップ画像 -->
-    <div class="jumbotron-fluid position-relative room top-image p-0"></div>
+    <main class="rooms-main">
+      <section class="second-view">
+        <div class="second-view-bg"></div>
+        <div class="right-container">
+          <div class="d-md-flex justify-content-between">
+            <div class="second-view-left">
+              <p class="golden-text">Aoyama &times; Space</p>
+              <h1 class="rooms-title ja">
+                表参道駅から徒歩3分の<br />貸し会議室
+              </h1>
+              <p class="rooms-description ja">
+                HarborS
+                表参道は港区青山に位置する貸し会議室です。表参道駅A4出口から徒歩3分という駅近で、ご利用しやすい好立地にあります。<br />
+                会議室内には無料Wi-Fiや大画面モニターも完備しており、イベントやセミナーなど幅広い用途でご利用いただけます。また、検温器をはじめアルコール消毒液、換気窓などコロナ対策も徹底しております。<br />
+                ご利用の際は会議室予約フォームよりご予約ください。
+              </p>
+            </div>
 
-    <div class="py-5 container">
-      <div class="row py-5">
-        <div class="col-12 col-lg-5 order-1 p-lg-0 mb-3">
-          <img src="../img/room-a.png" alt="" class="w-100" />
+            <div class="second-view-right">
+              <img
+                src="/img/features_of_harbors2.jpg"
+                alt="HarborS 表参道の会議室の外観"
+                width="100%"
+                height="auto"
+              />
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-lg-5 order-2 ml-md-auto">
-          <h3 class="mb-3 h2">Room-A</h3>
-          <p class="">
-            収容人数：　１０名まで<br />
-            利用用途：　会議・打合せ・研修・商談・面接・試験・デスクワーク<br />
-            設備：　長机（１５０cm×６０cm）４台・椅子１０脚・５５インチモニター<br />
-          </p>
-          <h3 class="mb-3 h2">料金</h3>
-          <p class="">3,000円/時間（税別）</p>
-          <br />
-          <button
-            type="button"
-            class="btn btn-warning text-light btn-lg d-block mx-auto nowrap"
-            onclick="location.href='#reservation'"
-          >
-            　　予約する　　
-          </button>
-        </div>
-      </div>
+      </section>
 
-      <div class="row py-5">
-        <div class="col-12 col-lg-5 order-md-2 p-lg-0 mb-3">
-          <img src="../img/room-b.png" alt="" class="w-100" />
+      <section class="rooms-list">
+        <div class="container">
+          <h2 class="rooms-h2 ja">貸し会議室の一覧</h2>
+          <div class="row">
+            <div class="col-md-4 mb-5 mb-md-0 position-relative">
+              <div class="text-center">
+                <h3 class="mb-3">Room A</h3>
+                <img src="/img/room-a.png" alt="会議室A" />
+              </div>
+              <div class="rooms-list-description ja">
+                <h4>収容人数</h4>
+                <p>10名まで</p>
+                <h4>設備</h4>
+                <p>
+                  長机（150cm × 60cm）4台 / 椅子10脚 / 55インチモニター<br class="d-none d-md-block"><br class="d-none d-md-block">
+                </p>
+                <h4>料金</h4>
+                <p>3,000円／時間 （税別）</p>
+              </div>
+              <div class="rooms-list-reservation">
+                <a
+                  href="#reservation"
+                  class="btn btn-warning text-light btn-lg d-block mx-auto nowrap"
+                  >予約する</a
+                >
+              </div>
+            </div>
+            <div class="col-md-4 rooms-list-center mb-5 mb-md-0">
+              <div class="text-center">
+                <h3 class="mb-3">Room B</h3>
+                <img src="/img/room-b.png" alt="会議室B" />
+              </div>
+              <div class="rooms-list-description ja">
+                <h4>収容人数</h4>
+                <p>8名まで</p>
+                <h4>設備</h4>
+                <p>
+                  長机（150cm × 60cm・120cm × 45cm）各2台 / 椅子8脚<br class="d-none d-md-block"><br class="d-none d-md-block">
+                </p>
+                <h4>料金</h4>
+                <p>3,000円／時間 （税別）</p>
+              </div>
+              <div class="rooms-list-reservation">
+                <a
+                  href="#reservation"
+                  class="btn btn-warning text-light btn-lg d-block mx-auto nowrap"
+                  >予約する</a
+                >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-center">
+                <h3 class="mb-3">Room A+B</h3>
+                <img src="/img/eventspace.jpg" alt="会議室A+B" />
+              </div>
+              <div class="rooms-list-description ja">
+                <h4>収容人数</h4>
+                <p>20名まで</p>
+                <h4>設備</h4>
+                <p>
+                  長机（150cm × 60cm）6台・（120cm × 45cm）4台 / 椅子20脚 /
+                  55インチモニター
+                </p>
+                <h4>料金</h4>
+                <p>6,000円／時間 （税別）</p>
+              </div>
+              <div class="rooms-list-reservation">
+                <a
+                  href="#reservation"
+                  class="btn btn-warning text-light btn-lg d-block mx-auto nowrap"
+                  >予約する</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-lg-5 order-md-1 mr-md-auto">
-          <h3 class="mb-3 h2">Room-B</h3>
-          <p class="">
-            収容人数：　8名まで<br />
-            利用用途：　会議・打合せ・研修・商談・面接・試験・デスクワーク<br />
-            設備：　長机（１５０cm×６０cm）２台・（１２０cm×４５cm）２台・椅子８脚
-          </p>
-          <h3 class="mb-3 h2">料金</h3>
-          <p class="">3,000円/時間（税別）</p>
-          <br />
-          <button
-            type="button"
-            class="btn btn-warning text-light btn-lg d-block mx-auto nowrap"
-            onclick="location.href='#reservation'"
-          >
-            　　予約する　　
-          </button>
-        </div>
-      </div>
-      <div class="row py-5">
-        <div class="col-12 col-lg-5 order-1 p-lg-0 mb-3">
-          <img src="../img/eventspace.jpg" alt="" class="w-100" />
-        </div>
-        <div class="col-12 col-lg-5 order-2 ml-md-auto">
-          <h3 class="mb-3 h2">Room-A+B</h3>
-          <p class="">
-            収容人数：　２０名まで<br />
-            利用用途：　セミナー・展示会・教室・習い事・ワークショップ・会議<br />
-            設備：　長机（１５０cm×６０cm）６台・（１２０cm×４５cm）４台・椅子２０脚・
-            ５５インチモニター
-          </p>
-          <h3 class="mb-3 h2">料金</h3>
-          <p class="">6,000円/時間（税別）</p>
-          <br />
-          <button
-            type="button"
-            class="btn btn-warning text-light btn-lg d-block mx-auto nowrap"
-            onclick="location.href='#reservation'"
-          >
-            　　予約する　　
-          </button>
-        </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="py-5 zigzag">
-      <div class="container">
-        <h2 class="text-center display-3 py-2 text-white" id="reservation">
-          RESERVATION
-        </h2>
-        <p class="mx-auto w-75 text-white text-center mb-4">
-          カレンダーから空いている日時をご確認の上、フォームからご予約ください。
-        </p>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="mb-4 border border-0">
-              <!-- カレンダー -->
-              <div class="mb-2">
+      <section class="rooms-purpose">
+        <div class="container">
+          <h2 class="rooms-h2 ja">目的・用途</h2>
+          <p>
+            HarborS表参道の貸し会議室は表参道駅の程近くにも関わらず静かな通りに位置しています。<br>
+            <span class="font-weight-bold">会議</span>や<span class="font-weight-bold">打合せ</span>、<span class="font-weight-bold">商談</span>はもちろん、企業の<span class="font-weight-bold">研修</span>や<span class="font-weight-bold">試験</span>、<span class="font-weight-bold">面接</span>などビジネスのあらゆるシーンでご活用いただけます。<br>
+            また、個人の方でも利用しやすい価格のため、<span class="font-weight-bold">セミナー会場</span>や<span class="font-weight-bold">勉強会</span>にもご使用いただいております。<br>
+            ご利用規模に合わせて収容人数も柔軟に対応可能ですので、ぜひご活用ください。
+          </p>
+        </div>
+      </section>
+
+      <section class="rooms-reservation" id="reservation">
+        <div class="container">
+          <h2 class="rooms-h2 ja">ご予約</h2>
+          <p>
+            カレンダーから空いている日時をご確認の上、フォームからご予約ください。
+          </p>
+
+          <div class="row">
+            <!-- カレンダー -->
+            <div class="col-md-8">
+              <div class="mb-4">
                 <iframe
                   src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23dddddd&amp;ctz=Asia%2FTokyo&amp;src=YW50aS1wYXR0ZXJuLmNvLmpwX2hxODFndmZwMzJtMWFpNmdtczZmcDRqaHE4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=YW50aS1wYXR0ZXJuLmNvLmpwX2ozN2JtNDM2bWJ0a205N2Y5anN0YnE1dmo0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23F4511E&amp;color=%23C0CA33&amp;color=%230B8043&amp;showTitle=0&amp;showDate=1&amp;showNav=1&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK"
                   style="border-width: 0"
-                  width="800"
+                  width="100%"
                   height="600"
                   frameborder="0"
                   scrolling="no"
                 ></iframe>
               </div>
               <div class="small">
-                <span class="small text-white">Room A・・・</span
+                <span class="small text-dark">Room A・・・</span
                 ><img
-                  src="../img/room-a-reserved.png"
-                  alt=""
+                  src="/img/room-a-reserved.png"
+                  alt="Room A"
                   class="img-fluid"
                 />
-                <span class="small text-white ml-3">Room B・・・</span
+                <span class="small text-dark ml-3">Room B・・・</span
                 ><img
-                  src="../img/room-b-reserved.png"
-                  alt=""
+                  src="/img/room-b-reserved.png"
+                  alt="Room B"
                   class="img-fluid"
                 />
-              </div>
-              <!-- フォーム -->
-              <div class="mb-3">
-                <iframe
-                  src="https://docs.google.com/forms/d/e/1FAIpQLScTo3jESpqoiexSpl8I67YRL1EqQ3uVqKIHM-PD8xDVmTQSBA/viewform?embedded=true"
-                  width="640"
-                  height="1475"
-                  frameborder="0"
-                  marginheight="0"
-                  marginwidth="0"
-                  >読み込んでいます…</iframe
-                >
               </div>
             </div>
+            <!-- フォーム -->
+            <div class="col-md-4">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLScTo3jESpqoiexSpl8I67YRL1EqQ3uVqKIHM-PD8xDVmTQSBA/viewform?embedded=true"
+                width="100%"
+                height="600"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                >読み込んでいます…</iframe
+              >
+            </div>
           </div>
-          <!-- <button type="button" class="btn btn-secondary btn-lg d-block mx-auto nowrap" onclick="location.href='https://docs.google.com/forms/d/1qcmHIW955v8UomU1NErAWnBsU7czpG5e4aaW4b2mY9E/edit'">バーチャルオフィス<wbr>訪問予約</button> -->
         </div>
-      </div>
-    </div>
-    <!-- /.album	-->
+      </section>
 
-    <div class="container">
-      <div class="l-container">
-        <div class="c-nap pt-5">
-          <h3 class="u-mb20">
-            エンジニアの方の作業場所・勉強場所・交流場所としてHarborS 表参道へ
-          </h3>
+      <section class="rooms-flow">
+        <div class="container">
+          <h2 class="rooms-h2 ja">ご利用までの流れ</h2>
+          <ol>
+            <li class="pb-1">カレンダーから空き状況を確認</li>
+            <li class="pb-1">フォームから予約</li>
+            <li class="pb-1">メールにて予約完了のお知らせ</li>
+            <li class="pb-1">請求書の到着</li>
+            <li class="pb-1">お支払い</li>
+            <li>ご利用当日</li>
+          </ol>
+          <p class="ml-3">
+            利用規約は<a href="/terms/rooms/" class="text-primary">こちら</a>
+          </p>
+        </div>
+      </section>
+
+
+      <section class="rooms-info">
+        <div class="container">
+          <h2 class="rooms-h2 ja">施設情報</h2>
+          
           <table class="c-table">
             <tr>
               <th class="u-p15">会社名(英文名)</th>
@@ -395,10 +446,27 @@
                 東京メトロ銀座線、半蔵門線「表参道」下車 A4出口 徒歩3分
               </td>
             </tr>
+            <tr>
+              <th class="u-p15">無料設備</th>
+              <td class="u-p15">
+                <div class="d-md-flex">
+                  <ul class="mb-0 mr-md-4">
+                    <li>高速Wi-Fi</li>
+                    <li>延長コード</li>
+                    <li>大型モニター</li>
+                  </ul>
+                  <ul class="mb-0">
+                    <li>エアコン</li>
+                    <li>ホワイトボード</li>
+                    <li>プロジェクター</li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
           </table>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <!-- アクセス -->
     <div class="access pt-4 light-zigzag">
@@ -432,10 +500,7 @@
           <div class="col-md-6 footer-menus">
             <p><a href="https://anti-pattern.co.jp">運営会社</a></p>
             <p>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/viewform?usp=sf_link"
-                >お問い合わせ</a
-              >
+              <a href="/contacts/">お問い合わせ</a>
             </p>
             <p>
               <a href="https://anti-pattern.co.jp/legal/privacy/"
