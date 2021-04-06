@@ -1104,10 +1104,26 @@ g-contents
 }
 
 @media (max-width: 768px) {
-.h-tit {
-  font-size: 10px;
-  padding: 5px 10px 0 ;
-}
+  .h-tit {
+    font-size: 10px;
+    padding: 5px 10px 0 ;
+  }
+
+  .contents-title-2{
+    font-size: 1.8rem;
+  }
+
+  .contents-title-3{
+    font-size: 1.5rem;
+  }
+
+  .contents-title-4{
+    font-size: 1.25rem;
+  }
+
+  .contents-title-5{
+    font-size: 1.1rem;
+  }
 }
 /** ファーストビュー **/
 .fv {
