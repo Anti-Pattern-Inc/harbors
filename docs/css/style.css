@@ -1,5 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&display=swap");
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -29,8 +31,8 @@ TOPページ、コロナ対策の注意喚起部分の設定
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 body {
   color: #a9a9a9;
-  font-family: 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo',
-    'Noto Sans Japanese', Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -151,7 +153,8 @@ header.container-fluid {
   height: 0;
   padding-top: 30%;
   line-height: 30px;
-  font-family: 'Noto Serif JP', sans-serif;
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
   font-size: 18px;
 }
 
@@ -181,7 +184,8 @@ header a,
 .display-3,
 .lead,
 .circle-badges {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
 }
 
 /* パンくずリスト */
@@ -756,7 +760,8 @@ h2.color-gray {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   color: #333;
