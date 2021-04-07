@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,600&display=swap');
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -179,8 +180,12 @@ header.container-fluid {
 }
 
 /* 英字タイトルをWEBフォントに */
+.display-4 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-style: normal;
+}
+
 header a,
-.display-4,
 .display-3,
 .lead,
 .circle-badges {
@@ -1088,6 +1093,7 @@ g-contents
 /** h1タグ **/
 .h-tit {
   font-size: 11px;
+  font-family: 'Montserrat Alternates', sans-serif;
   font-weight: normal !important;
   margin: 0;
 }

@@ -694,6 +694,20 @@ section {
   position: relative;
 }
 
+.service .service-img-link {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.service-img-link:hover {
+  opacity: .7;
+  transition: all 1s;
+}
+
+.service .service-img-link > img {
+  border-radius: 20px;
+}
+
 .service > img {
   border-radius: 20px;
   margin-bottom: 25px;
