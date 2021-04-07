@@ -583,8 +583,31 @@ iframe.map {
 }
 
 @media screen and (max-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+
+  .card-body > .card-title {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .card-body > .card-text {
+    font-size: 12px;
+  }
+
+  
   .card-img-top {
-    height: 220px;
+    width: 40%;
+    height: auto;
+  }
+
+  .card-container > div:nth-child(even) .card-img-top {
+    order: 1;
   }
 }
 
