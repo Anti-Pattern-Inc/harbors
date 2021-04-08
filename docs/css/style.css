@@ -1163,6 +1163,10 @@ g-contents
 .fv {
   margin: 20px 0 30px;
 }
+
+.monthly-fee {
+  border-radius: 30px;
+}
 /** SEOテキスト **/
 .text_area {
   margin: 60px auto 80px;
@@ -1682,6 +1686,10 @@ g-contents
   .display-3,
   .display-4 {
     font-size: 2rem;
+  }
+
+  .monthly-fee .display-3 {
+    font-size: 4rem;
   }
 
   h1.display-4 {
