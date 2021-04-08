@@ -396,7 +396,7 @@ iframe.map {
   background-image: url("../img/cafe-image.jpg");
   background-size: cover;
   background-position: center center;
-  height: 900px;
+  height: 800px;
   box-shadow: 0px 5px 6px 0px #e2e2e2;
   border-radius: 0;
 }
@@ -406,10 +406,6 @@ iframe.map {
   height: 100%;
   opacity: 0.6;
   background-color: #000000;
-}
-
-.coworking-top {
-  height: 850px;
 }
 
 .card-event-title {
@@ -426,8 +422,7 @@ iframe.map {
 }
 
 .events-top {
-  background: linear-gradient(#1B406B, #172C59);;
-  /* background-position: center center; */
+  background: linear-gradient(#1B406B, #172C59);
   height: 260px;
   box-shadow: 0px 5px 6px 0px #e2e2e2;
   border-radius: 0;
@@ -438,16 +433,18 @@ iframe.map {
   width:100%;
 }
 
-.events-top .top-text{
-  top: 45%;
+.top-text {
+  top: 50%;
+  transform: translateY(-40%);
 }
 
-.top-text {
-  top: 25%;
+.events-top .top-text{
+  top: 60%;
 }
 
 .virtual-office .top-text{
-  top: 21%;
+  top: 50%;
+  transform: translateY(-38%);
 }
 
 .mobile-footer button{
@@ -1641,7 +1638,8 @@ g-contents
   }
 
   .coworking-top .top-text {
-    top: 10%;
+    top: 50%;
+    transform: translateY(-70%);
   }
 
   .coworking-top {
@@ -1697,7 +1695,7 @@ g-contents
   }
 
   .coworking-top .top-text {
-    top: 5%;
+    top: 55%;
   }
 
   .logo-mark {

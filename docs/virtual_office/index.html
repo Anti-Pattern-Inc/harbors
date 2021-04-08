@@ -248,7 +248,7 @@
       <div class="filter"></div>
       <!-- トップ画像内文字 -->
       <div class="text-white position-absolute top-text container-fluid">
-        <div class="row py-5 text-center">
+        <div class="row text-center">
           <div class="col-lg-12 mb-2">
             <h2 class="display-4 nowrap">
               HarborS 表参道<br />
@@ -299,55 +299,55 @@
           </div>
         </div>
 
-        <div class="fixed-bottom mb-2 virtual-form-btn text-center">
+      </div>
+      <div class="fixed-bottom mb-2 virtual-form-btn text-center">
+        <button
+          type="button"
+          class="btn btn-warning btn-lg mx-auto nowrap text-white top-button d-none d-sm-inline-block"
+          onclick="countClickByGa();"
+          data-toggle="modal"
+          data-target="#inquiryFormModal"
+        >
+          もっと詳しく知りたい
+        </button>
+      </div>
+
+      <div
+        class="fixed-bottom mb-0 d-flex d-sm-none mobile-footer mobile-footer-special"
+      >
+        <div>
           <button
             type="button"
-            class="btn btn-warning btn-lg mx-auto nowrap text-white top-button d-none d-sm-inline-block"
+            class="btn btn-warning m-0 w-100 nowrap text-white pb-1 pt-2 px-0"
             onclick="countClickByGa();"
             data-toggle="modal"
             data-target="#inquiryFormModal"
           >
+            <img
+              src="/img/contact.svg"
+              alt="お問い合わせ"
+              width="25px"
+              height="25px"
+              class="d-block mb-1 mx-auto"
+            />
             もっと詳しく知りたい
           </button>
         </div>
-
-        <div
-          class="fixed-bottom mb-0 d-flex d-sm-none mobile-footer mobile-footer-special"
-        >
-          <div>
-            <button
-              type="button"
-              class="btn btn-warning m-0 w-100 nowrap text-white pb-1 pt-2 px-0"
-              onclick="countClickByGa();"
-              data-toggle="modal"
-              data-target="#inquiryFormModal"
-            >
-              <img
-                src="/img/contact.svg"
-                alt="お問い合わせ"
-                width="25px"
-                height="25px"
-                class="d-block mb-1 mx-auto"
-              />
-              もっと詳しく知りたい
-            </button>
-          </div>
-          <div>
-            <a
-              href="tel:03-6885-6140"
-              class="btn btn-warning m-0 w-100 pb-1 pt-2 px-0 text-white nowrap"
-              onclick="ga('send', 'event', 'call', 1);"
-            >
-              <img
-                src="/img/tel.svg"
-                alt="電話"
-                width="25px"
-                height="25px"
-                class="d-block mb-1 mx-auto"
-              />
-              電話で相談をする
-            </a>
-          </div>
+        <div>
+          <a
+            href="tel:03-6885-6140"
+            class="btn btn-warning m-0 w-100 pb-1 pt-2 px-0 text-white nowrap"
+            onclick="ga('send', 'event', 'call', 1);"
+          >
+            <img
+              src="/img/tel.svg"
+              alt="電話"
+              width="25px"
+              height="25px"
+              class="d-block mb-1 mx-auto"
+            />
+            電話で相談をする
+          </a>
         </div>
       </div>
     </div>
