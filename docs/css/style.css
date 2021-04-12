@@ -1,5 +1,8 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,600&display=swap');
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -29,8 +32,8 @@ TOPページ、コロナ対策の注意喚起部分の設定
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 body {
   color: #a9a9a9;
-  font-family: 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo',
-    'Noto Sans Japanese', Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -151,7 +154,8 @@ header.container-fluid {
   height: 0;
   padding-top: 30%;
   line-height: 30px;
-  font-family: 'Noto Serif JP', sans-serif;
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
   font-size: 18px;
 }
 
@@ -176,12 +180,17 @@ header.container-fluid {
 }
 
 /* 英字タイトルをWEBフォントに */
+.display-4 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-style: normal;
+}
+
 header a,
-.display-4,
 .display-3,
 .lead,
 .circle-badges {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
 }
 
 /* パンくずリスト */
@@ -387,7 +396,7 @@ iframe.map {
   background-image: url("../img/cafe-image.jpg");
   background-size: cover;
   background-position: center center;
-  height: 900px;
+  height: 800px;
   box-shadow: 0px 5px 6px 0px #e2e2e2;
   border-radius: 0;
 }
@@ -397,10 +406,6 @@ iframe.map {
   height: 100%;
   opacity: 0.6;
   background-color: #000000;
-}
-
-.coworking-top {
-  height: 850px;
 }
 
 .card-event-title {
@@ -417,8 +422,7 @@ iframe.map {
 }
 
 .events-top {
-  background: linear-gradient(#1B406B, #172C59);;
-  /* background-position: center center; */
+  background: linear-gradient(#1B406B, #172C59);
   height: 260px;
   box-shadow: 0px 5px 6px 0px #e2e2e2;
   border-radius: 0;
@@ -429,16 +433,18 @@ iframe.map {
   width:100%;
 }
 
-.events-top .top-text{
-  top: 45%;
+.top-text {
+  top: 50%;
+  transform: translateY(-40%);
 }
 
-.top-text {
-  top: 25%;
+.events-top .top-text{
+  top: 60%;
 }
 
 .virtual-office .top-text{
-  top: 21%;
+  top: 50%;
+  transform: translateY(-38%);
 }
 
 .mobile-footer button{
@@ -573,9 +579,32 @@ iframe.map {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+
+  .card-body > .card-title {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .card-body > .card-text {
+    font-size: 12px;
+  }
+
+  
   .card-img-top {
-    height: 220px;
+    width: 40%;
+    height: auto;
+  }
+
+  .card-container > div:nth-child(even) .card-img-top {
+    order: 1;
   }
 }
 
@@ -756,7 +785,8 @@ h2.color-gray {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   color: #333;
@@ -1083,6 +1113,7 @@ g-contents
 /** h1タグ **/
 .h-tit {
   font-size: 11px;
+  font-family: 'Montserrat Alternates', sans-serif;
   font-weight: normal !important;
   margin: 0;
 }
@@ -1128,6 +1159,10 @@ g-contents
 /** ファーストビュー **/
 .fv {
   margin: 20px 0 30px;
+}
+
+.monthly-fee {
+  border-radius: 30px;
 }
 /** SEOテキスト **/
 .text_area {
@@ -1603,7 +1638,8 @@ g-contents
   }
 
   .coworking-top .top-text {
-    top: 10%;
+    top: 50%;
+    transform: translateY(-70%);
   }
 
   .coworking-top {
@@ -1650,12 +1686,16 @@ g-contents
     font-size: 2rem;
   }
 
+  .monthly-fee .display-3 {
+    font-size: 4rem;
+  }
+
   h1.display-4 {
     font-size: 3rem;
   }
 
   .coworking-top .top-text {
-    top: 5%;
+    top: 55%;
   }
 
   .logo-mark {

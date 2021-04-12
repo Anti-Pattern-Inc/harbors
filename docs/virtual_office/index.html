@@ -248,7 +248,7 @@
       <div class="filter"></div>
       <!-- トップ画像内文字 -->
       <div class="text-white position-absolute top-text container-fluid">
-        <div class="row py-5 text-center">
+        <div class="row text-center">
           <div class="col-lg-12 mb-2">
             <h2 class="display-4 nowrap">
               HarborS 表参道<br />
@@ -299,60 +299,60 @@
           </div>
         </div>
 
-        <div class="fixed-bottom mb-2 virtual-form-btn text-center">
+      </div>
+      <div class="fixed-bottom mb-2 virtual-form-btn text-center">
+        <button
+          type="button"
+          class="btn btn-warning btn-lg mx-auto nowrap text-white top-button d-none d-sm-inline-block"
+          onclick="countClickByGa();"
+          data-toggle="modal"
+          data-target="#inquiryFormModal"
+        >
+          もっと詳しく知りたい
+        </button>
+      </div>
+
+      <div
+        class="fixed-bottom mb-0 d-flex d-sm-none mobile-footer mobile-footer-special"
+      >
+        <div>
           <button
             type="button"
-            class="btn btn-warning btn-lg mx-auto nowrap text-white top-button d-none d-sm-inline-block"
+            class="btn btn-warning m-0 w-100 nowrap text-white pb-1 pt-2 px-0"
             onclick="countClickByGa();"
             data-toggle="modal"
             data-target="#inquiryFormModal"
           >
+            <img
+              src="/img/contact.svg"
+              alt="お問い合わせ"
+              width="25px"
+              height="25px"
+              class="d-block mb-1 mx-auto"
+            />
             もっと詳しく知りたい
           </button>
         </div>
-
-        <div
-          class="fixed-bottom mb-0 d-flex d-sm-none mobile-footer mobile-footer-special"
-        >
-          <div>
-            <button
-              type="button"
-              class="btn btn-warning m-0 w-100 nowrap text-white pb-1 pt-2 px-0"
-              onclick="countClickByGa();"
-              data-toggle="modal"
-              data-target="#inquiryFormModal"
-            >
-              <img
-                src="/img/contact.svg"
-                alt="お問い合わせ"
-                width="25px"
-                height="25px"
-                class="d-block mb-1 mx-auto"
-              />
-              もっと詳しく知りたい
-            </button>
-          </div>
-          <div>
-            <a
-              href="tel:03-6885-6140"
-              class="btn btn-warning m-0 w-100 pb-1 pt-2 px-0 text-white nowrap"
-              onclick="ga('send', 'event', 'call', 1);"
-            >
-              <img
-                src="/img/tel.svg"
-                alt="電話"
-                width="25px"
-                height="25px"
-                class="d-block mb-1 mx-auto"
-              />
-              電話で相談をする
-            </a>
-          </div>
+        <div>
+          <a
+            href="tel:03-6885-6140"
+            class="btn btn-warning m-0 w-100 pb-1 pt-2 px-0 text-white nowrap"
+            onclick="ga('send', 'event', 'call', 1);"
+          >
+            <img
+              src="/img/tel.svg"
+              alt="電話"
+              width="25px"
+              height="25px"
+              class="d-block mb-1 mx-auto"
+            />
+            電話で相談をする
+          </a>
         </div>
       </div>
     </div>
 
-    <div class="py-5">
+    <div class="py-3">
       <div class="container">
         <div class="fv">
           <p>
@@ -361,10 +361,10 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div class="card bg-light text-center">
-              <h2 class="py-2 text-center">月額基本料金 <small>(税込)</small></h2>
-              <p class="display-3 text-center">5,280円</p>
-              <p class="mx-auto w-75 text-center">
+            <div class="py-4 bg-light text-center monthly-fee">
+              <h2 class="mb-0 text-center">月額基本料金 <small>(税込)</small></h2>
+              <p class="mt-2 display-3 text-center">5,280円</p>
+              <p class="mb-0 mx-auto w-75 text-center">
                 ※住所貸し、来客対応の料金が含まれます
               </p>
             </div>
@@ -456,8 +456,8 @@
           様々な設備が整っており、あなたのビジネスをサポートします。
         </h2>
         <p class="text-white mb-5 text-center">記載されている料金は全て税込価格です。</p>
-        <div class="row">
-          <div class="col-md-3 d-flex">
+        <div class="row card-container">
+          <div class="col-md-4 col-lg-3 d-md-flex">
             <div class="card mb-4 border border-0">
               <img
                 src="/img/office2.jpg"
@@ -474,7 +474,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 d-flex">
+          <div class="col-md-4 col-lg-3 d-md-flex">
             <div class="card mb-4 border border-0">
               <img
                 src="/img/raikyaku.jpg"
@@ -491,7 +491,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 d-flex">
+          <div class="col-md-4 col-lg-3 d-md-flex">
             <div class="card mb-4 border border-0">
               <img
                 src="/img/touki.jpg"
@@ -508,7 +508,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 d-flex">
+          <div class="col-md-4 col-lg-3 d-md-flex">
             <div class="card mb-4 border border-0">
               <img
                 src="/img/rocker2.jpg"
@@ -525,7 +525,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 d-flex">
+          <div class="col-md-4 col-lg-3 d-md-flex">
             <div class="card mb-4 border border-0">
               <img
                 src="/img/mail.png"
@@ -542,7 +542,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 d-flex">
+          <div class="col-md-4 col-lg-3 d-md-flex">
             <div class="card mb-4 border border-0">
               <img
                 src="/img/tensou.jpg"
@@ -559,7 +559,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 d-flex">
+          <div class="col-md-4 col-lg-3 d-md-flex">
             <div class="card mb-4 border border-0">
               <img
                 src="/img/cafe_terrace.jpg"
@@ -570,14 +570,13 @@
               <div class="card-body">
                 <h3 class="card-title">カフェスペース・テラス</h3>
                 <p class="card-text">
-                  カフェスペースもございます。ごゆっくりお過ごしいただけます。<br />
-                  屋上のテラス席でも作業ができます。<br />
+                  カフェスペースもございます。ごゆっくりお過ごしいただけます。屋上のテラス席でも作業ができます。<br />
                   1時間 550円
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-md-3 d-flex">
+          <div class="col-md-4 col-lg-3 d-md-flex">
             <div class="card mb-4 border border-0">
               <img
                 src="/img/seminarroom.jpg"
@@ -594,7 +593,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 d-flex">
+          <div class="col-md-4 col-lg-3 d-md-flex">
             <div class="card mb-4 border border-0">
               <img
                 src="/img/rocker.jpg"
@@ -611,7 +610,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="col-md-3 d-flex">
+          <!-- <div class="col-md-4 col-lg-3 d-md-flex">
             <div class="card mb-4 border border-0">
               <img
                 src="/img/printer.jpg"
@@ -627,7 +626,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 d-flex">
+          <div class="col-md-4 col-lg-3 d-md-flex">
             <div class="card mb-4 border border-0">
               <img
                 src="/img/office.png"
@@ -643,7 +642,7 @@
               </div>
             </div>
           </div> -->
-          <div class="col-md-3 d-flex">
+          <div class="col-md-4 col-lg-3 d-md-flex">
             <div class="card mb-4 border border-0">
               <img
                 src="/img/wifi.jpg"
@@ -659,7 +658,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="col-md-3 d-flex">
+          <!-- <div class="col-md-4 col-lg-3 d-md-flex">
             <div class="card mb-4 border border-0">
               <img
                 src="/img/whiteboard.png"
@@ -675,7 +674,7 @@
               </div>
             </div>
           </div> -->
-          <div class="col-md-3 d-flex">
+          <div class="col-md-4 col-lg-3 d-md-flex">
             <div class="card mb-4 border border-0">
               <img
                 src="/img/cashless.png"
