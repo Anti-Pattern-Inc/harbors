@@ -135,28 +135,4 @@ $(function () {
       }, 500);
     }
   });
-  //スライダー
-  $('.space-slider').slick({
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3.5,
-    rtl: true,
-    prevArrow:'<div class="prev"><img src="/img/slider-prev.svg" alt=""></div>',
-    nextArrow: '<div class="next"><img src="/img/slider-next.svg" alt=""></div>',
-
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2.5,
-        }
-      },
-      {
-        breakpoint: 380,
-        settings: {
-          slidesToShow: 2,
-        }
-      }
-    ],
-  });
 });
