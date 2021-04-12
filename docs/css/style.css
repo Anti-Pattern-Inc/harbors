@@ -564,47 +564,49 @@ iframe.map {
   background-color: #58729F;
 }
 
-.card-img-top {
+.service-card {
+  background-color: #FFF;
+  height: 90%;
+}
+
+.service-img {
   width: 100%;
-  height: 160px;
+  height: 120px;
   object-fit: cover;
 }
 
-.card-body > .card-title {
+.service-text {
+  padding: 18px 12px;
+}
+
+.service-text-title {
   font-size: 18px;
 }
 
-.card-body > .card-text {
-  font-size: 14px;
+.service-text-description {
   margin-bottom: 0;
+  font-size: 14px;
 }
 
+
 @media screen and (max-width: 767.98px) {
-  .services-card {
-    flex-direction: row;
+  .service-card {
+    display: flex;
+    width: 100%;
+    height: auto;
   }
 
-  .services-card .card-body {
-    padding: 16px;
-  }
-
-  .services-card .card-body > .card-title {
-    font-size: 16px;
-    margin-bottom: 6px;
-  }
-
-  .services-card .card-body > .card-text {
-    font-size: 12px;
-  }
-
-  
-  .services-card > .card-img-top {
+  .service-img {
     width: 40%;
     height: auto;
   }
 
-  .card-container > div:nth-child(even) .card-img-top {
-    order: 1;
+  .service-text {
+    width: 60%;
+  }
+
+  .services-container > div:nth-child(even) .service-card {
+    flex-direction: row-reverse;
   }
 }
 
