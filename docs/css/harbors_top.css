@@ -1152,6 +1152,10 @@ section {
   border: none;
   border-radius: 20px;
 }
+
+.access-description {
+  line-height: 1.8;
+}
 /* access */
 
 /* footer */
