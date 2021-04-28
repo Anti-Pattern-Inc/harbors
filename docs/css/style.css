@@ -1827,4 +1827,8 @@ g-contents
 .aws-merit-list li::marker {
   font-size: 20px;
 }
+
+.fv-harbors {
+  font-family: noto-sans-cjk-jp, sans-serif;
+}
 /* END */
