@@ -1810,4 +1810,25 @@ g-contents
     padding-top: 100px;
   }
 }
+
+.aws-merit-list h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.aws-merit-list h3 a {
+  color: #343a40;
+}
+
+.aws-merit-list li {
+  margin-bottom: 30px;
+}
+
+.aws-merit-list li::marker {
+  font-size: 20px;
+}
+
+.fv-harbors {
+  font-family: noto-sans-cjk-jp, sans-serif;
+}
 /* END */
