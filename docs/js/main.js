@@ -1,46 +1,4 @@
 $(function () {
-  
-  // スムーススクロール
-  function smoothScroll(headerHeight, _this) {
-    var href= $(_this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top-headerHeight; 
-    $("html, body").animate({scrollTop:position}, 500, "swing");
-    return false;
-  }
-  $('a[href^="#"]:not(a[href="#scroll"]').on('click', function () {
-    smoothScroll(150, this);
-  });
-  $('a[href^="#scroll"]').on('click', function () {
-    smoothScroll(0, this);
-  });
-  $('a[href^="#top"]').on('click', function () {
-    smoothScroll(0, this);
-  });
-  
-  var startPos = 0;
-  var scrollPos = 0;
-  var topImageHeight = $('.top-image').height();
-  var width = $('html').width();
-  $(window).on('scroll', function () {
-    // スクロールでheader表示切り替え
-    scrollPos = $(this).scrollTop();
-    if (width >= 768 && scrollPos >= topImageHeight) {
-      if (scrollPos >= startPos) {
-        $('#header').addClass('hide');
-      } else {
-        $('#header').removeClass('hide');
-      }
-    }
-    
-    if (scrollPos >= topImageHeight) {
-      $('#header').addClass('white-bg');
-    } else {
-      $('#header').removeClass('white-bg');
-    }
-    startPos = scrollPos;
-  })
-
   $('.header-disabled').hover(
     function () {
       $('.transparent-area').remove();
