@@ -82,31 +82,6 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         });
       }
     </script>
-    <!-- javascript はここから -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"
-      type="text/javascript"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/ja.js"
-      type="text/javascript"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"
-    ></script>
-    <script src="/js/main.js"></script>
   </head>
   <body>
     <header class="container-fluid mb-3 mb-md-0 bg-white px-0" id="header">
@@ -229,7 +204,9 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         <div class="row">
           <div class="col-lg-12 mt-sm-4 pt-md-4">
             <h1 class="contents-title-4">
-              バーチャルオフィスは住所のみのレンタルも可能<br class="d-none d-md-block">
+              バーチャルオフィスは住所のみのレンタルも可能<br
+                class="d-none d-md-block"
+              />
               月額プランの利用料は経費で落ちるのか
             </h1>
           </div>
@@ -836,79 +813,32 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         </div>
       </div>
     </div>
-    <script>
-      $(function () {
-        $('[name="contact_type"]').change(function () {
-          var contactType = $('[name="contact_type"] option:selected').val();
-          if (contactType == "1" || contactType == "2") {
-            $("#form_preferred_visit_date").show();
-            $("#form_preferred_visit_time").show();
-            $('[name="preferred_visit_date"]').attr("required", "true");
-            $('[name="preferred_visit_time"]').attr("required", "true");
-            if (contactType == "1") {
-              if (
-                $('[name="preferred_visit_time"]').children(
-                  'option[value="20:00"]'
-                ).length == 0
-              ) {
-                $('[name="preferred_visit_time"]').append(
-                  '<option value="20:00">20:00~21:00</option>'
-                );
-              }
-            } else {
-              if (
-                $('[name="preferred_visit_time"]').children(
-                  'option[value="20:00"]'
-                ).length == 1
-              ) {
-                $('[name="preferred_visit_time"]')
-                  .children('option[value="20:00"]')
-                  .remove();
-              }
-            }
-          } else {
-            $("#form_preferred_visit_date").hide();
-            $("#form_preferred_visit_time").hide();
-            $('[name="preferred_visit_date"]').removeAttr("required");
-            $('[name="preferred_visit_time"]').removeAttr("required");
-          }
-        });
-      });
-    </script>
-    <script>
-      $("#inquiryForm").submit(function (event) {
-        event.preventDefault();
-        $("#send_button").prop("disabled", true);
-        var postUrl =
-          "https://script.google.com/macros/s/AKfycbwbcIIiHad2j7kq41e0IA1PYjCD6f3wK522sgUIQYPI1qUeZi5U/exec";
-        var postData = $("#inquiryForm").serialize();
-        var posting = $.post(postUrl, postData)
-          .done(function (data) {
-            if (data.message === "reserved") {
-              $("#reservedErrorMessage").show();
-              $("#send_button").prop("disabled", false);
-            } else {
-              gtag("event", "conversion", {
-                event_category: "virtual_office",
-                event_label: "inquiry",
-                value: 1,
-              });
-              var callback = function () {
-                if (typeof url != "undefined") {
-                  window.location = url;
-                }
-              };
-              $("#reservedErrorMessage").hide();
-              $("#inquiryForm").hide();
-              $("#thanksMessage").show();
-            }
-          })
-          .fail(function () {
-            $("#errorMessage").show();
-            $("#send_button").prop("disabled", false);
-          });
-      });
-    </script>
+    <!-- javascript はここから -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/ja.js"
+      type="text/javascript"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"
+    ></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/virtual_form.js"></script>
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe

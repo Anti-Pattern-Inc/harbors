@@ -38,6 +38,14 @@ body {
   line-height: 1.6;
 }
 
+#header {
+  transition: all .5s;
+}
+
+#header.hide {
+  transform: translateY(-180px);
+}
+
 a {
   color: #A9A9A9;
   text-decoration: none;
@@ -82,6 +90,8 @@ h1.display-4{
   -0px 0px 5px #00000044,
   0px -0px 5px #00000044,
   -0px -0px 5px #00000044;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 .nowrap {
@@ -146,7 +156,7 @@ header.container-fluid {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  box-shadow: 0 5px 5px #615F09;
+  box-shadow: 0 8px 8px #615F09;
 }
 
 .virtual_circle_text{
@@ -162,12 +172,6 @@ header.container-fluid {
 .virtual_circle_text span{
   font-size: 26px;
   color: #0F8FFA;
-}
-
-.virtual-top-contents button{
-  background-color: #d85d45;
-  border-radius: 100px;
-  font-size: 24px;
 }
 
 @media screen and (max-width: 768px) {
@@ -401,11 +405,19 @@ iframe.map {
   border-radius: 0;
 }
 
+.virtual-top-image {
+  background-image: url("../img/bg_image.jpg");
+}
+
 .top-image > .filter {
   width: 100%;
   height: 100%;
   opacity: 0.6;
   background-color: #000000;
+}
+
+.virtual-top-image > .filter {
+  opacity: 0.4;
 }
 
 .card-event-title {
@@ -1828,7 +1840,44 @@ g-contents
   font-size: 20px;
 }
 
+.fv-title {
+  font-size: 56px;
+  line-height: 1.5;
+}
+
 .fv-harbors {
   font-family: noto-sans-cjk-jp, sans-serif;
+}
+
+.virtual-fv-cv-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.virtual-fv-cv-btn > button {
+  width: 49%;
+  font-weight: bold;
+  background-color: #df7156;
+  border: 1px solid #df7156;
+  border-radius: 100px;
+  font-size: 26px;
+  color: #FFF;
+  transition: background .4s;
+}
+
+.virtual-fv-cv-btn > button:hover {
+  background-color: rgba(255, 255, 255, .6);
+  color: #df7156;
+}
+
+#header.rooms-header {
+  height: auto;
+  padding-top: 0;
+}
+
+.rooms-header .h-tit {
+  color: #a9a9a9;
 }
 /* END */
