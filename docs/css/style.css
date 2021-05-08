@@ -1852,7 +1852,7 @@ g-contents
 .virtual-fv-cv-btn {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -1865,6 +1865,7 @@ g-contents
   font-size: 26px;
   color: #FFF;
   transition: background .4s;
+  padding: 15px;
 }
 
 .virtual-fv-cv-btn > button:hover {
@@ -1879,5 +1880,21 @@ g-contents
 
 .rooms-header .h-tit {
   color: #a9a9a9;
+}
+
+@media screen and (max-width: 987px) {
+  .fv-title {
+    font-size: 44px;
+  }
+
+  .virtual-fv-cv-btn > button {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 987px) {
+  .virtual-fv-cv-btn > button {
+    font-size: 18px;
+  }
 }
 /* END */
