@@ -18,11 +18,14 @@ $(function () {
     // ".top-image"がないとき
     $(window).on('scroll', function () {
       scrollPos = $(this).scrollTop();
-      if (scrollPos >= startPos) {
-        $('#header').addClass('hide');
-      } else {
-        $('#header').removeClass('hide');
+      if (scrollPos >= 170) {
+        if (scrollPos >= startPos) {
+          $('#header').addClass('hide');
+        } else {
+          $('#header').removeClass('hide');
+        }
       }
+      console.log(scrollPos);
       startPos = scrollPos;
     })
   } else {
