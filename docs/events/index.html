@@ -314,35 +314,41 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           jsonpCallback: "jsondata",
         })
         .done(function (json) {
-          for (var i in json) {
+          console.log(json.length);
+          if(json.length) {
+            for (var i in json) {
+              events_html +=
+                '<div class="card mb-3">' +
+                '<div class="row no-gutters">' +
+                '<div class="col-md-4 my-auto">' +
+                '<img class="card-img" src="' +
+                json[i].img_url +
+                '">' +
+                "</div>" +
+                '<div class="col-md-8">' +
+                '<div class="card-body text-left">' +
+                '<h5 class="card-title">' +
+                json[i].title +
+                "</h5>" +
+                '<h5 class="card-title">' +
+                json[i].date +
+                "　" +
+                json[i].start_time +
+                "~</h5>" +
+                "<p>" +
+                json[i].overview.replace(/\n/g, "<br>") +
+                "</p>" +
+                '<a class="btn btn-primary" href="' +
+                json[i].detail_url +
+                '" target="_blank">詳細ページへ</a>' +
+                "</div>" +
+                "</div>" +
+                "</div>" +
+                "</div>";
+            }
+          } else {
             events_html +=
-              '<div class="card mb-3">' +
-              '<div class="row no-gutters">' +
-              '<div class="col-md-4 my-auto">' +
-              '<img class="card-img" src="' +
-              json[i].img_url +
-              '">' +
-              "</div>" +
-              '<div class="col-md-8">' +
-              '<div class="card-body text-left">' +
-              '<h5 class="card-title">' +
-              json[i].title +
-              "</h5>" +
-              '<h5 class="card-title">' +
-              json[i].date +
-              "　" +
-              json[i].start_time +
-              "~</h5>" +
-              "<p>" +
-              json[i].overview.replace(/\n/g, "<br>") +
-              "</p>" +
-              '<a class="btn btn-primary" href="' +
-              json[i].detail_url +
-              '" target="_blank">詳細ページへ</a>' +
-              "</div>" +
-              "</div>" +
-              "</div>" +
-              "</div>";
+              '<p class="text-center col-12">現在開催予定のイベントはありません。</p>'
           }
           $("#events").append(events_html);
         })

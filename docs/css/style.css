@@ -91,6 +91,12 @@ h6 {
   font-weight: bold !important;
 }
 
+@media screen and (max-width: 768px) {
+  h2, h3, h4 {
+    font-size: 20px;
+  }
+}
+
 h1.display-4 ,.top-text h2{
   text-shadow: 0px 0px 5px #00000044,
   -0px 0px 5px #00000044,
@@ -316,8 +322,7 @@ iframe.map {
 フッター
 --------------------------------- */
 footer {
-  margin-top: 100px;
-  padding-top: 5%;
+  padding: 80px 0;
   background-color: #111;
 }
 
@@ -1379,9 +1384,6 @@ g-contents
 .c-nap h3 {
   font-size: 1.2rem !important;
 }
-.pt-4 {
-  padding-top: 0 !important;
-}
 }
 /** テキストブロック 共通 **/
 .c-block {
@@ -1859,5 +1861,116 @@ g-contents
 .space-slider .next img {
   width: 34px;
   height: 34px;
+}
+
+.space-intro img {
+  width: 82%;
+}
+
+.space-intro h3 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.space-intro-left,
+.space-intro-right{
+  width: 50%;
+  position: relative;
+}
+
+.space-intro-left::after{
+  content: 'Office space';
+  background-color: #9F9F9F;
+  font-family: "Barlow", sans-serif;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 200;
+  padding: 0 36px 2px;
+  border-radius: 36px;
+  position: absolute;
+  top: 230px;
+  right: 0;
+}
+
+.space-intro-right {
+  text-align: right;
+}
+
+.space-intro-right img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.space-intro-right::after{
+  content: 'Terrace space';
+  background-color: #9F9F9F;
+  font-family: "Barlow", sans-serif;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 200;
+  padding: 0 36px 2px;
+  border-radius: 36px;
+  position: absolute;
+  top: 480px;
+  left: 84px;
+}
+
+@media screen and (max-width: 767.8px) {
+  .space-intro {
+    margin-bottom: 20px;
+  }
+
+  .space-intro-left,
+  .space-intro-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .space-intro h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .space-intro-right img {
+    position: static;
+    margin-top: 40px;
+  }
+
+  .space-intro-left::after{
+    padding: 0 28px 2px;
+    font-size: 28px;
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: -15px;
+  }
+
+  .space-intro-right::after{
+    font-size: 28px;
+    padding: 0 28px 2px;
+    border-radius: 36px;
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: -15px;
+  }
+
+  .slick-current + li img {
+    border-radius: 20px 0 0 20px !important;
+  }
+
+  .space-slider .prev {
+    bottom: -60px;
+    right: 90px;
+  }
+
+  .space-slider .next {
+    position: absolute;
+    bottom: -60px;
+    right: 30px;
+  }
 }
 /* END */

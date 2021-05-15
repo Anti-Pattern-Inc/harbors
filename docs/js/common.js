@@ -25,7 +25,6 @@ $(function () {
           $('#header').removeClass('hide');
         }
       }
-      console.log(scrollPos);
       startPos = scrollPos;
     })
   } else {
