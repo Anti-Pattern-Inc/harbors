@@ -220,187 +220,195 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         </button>
       </div>
     </div>
+
+
     <!-- ご契約までの流れ -->
-    <div class="container mt-4">
-      <div class="row">
-        <div
-          class="card col-md-12 mb-4 border border-0 step-card step1 text-white"
-        >
-          <div class="card-body">
-            <h3 class="card-title">Step1 バーチャルオフィス見学予約</h3>
-            <p class="card-text mb-lg-4">
-              基本的には、お申込み前に、施設のご見学をおすすめしております。オンライン説明会、現地見学会の2通りの方法でご案内可能です。<br />見学予約フォームから、バーチャルオフィス見学の予約を行います。<br />お気軽に、見学予約をお申し込みください。
-            </p>
-            <button
-              type="button"
-              class="btn btn-outline-light d-block nowrap mx-auto top-button"
-              onclick="countClickByGa();"
-              data-toggle="modal"
-              data-target="#inquiryFormModal"
-            >
-              見学予約はこちら
-            </button>
+    <section class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div
+            class="card col-md-12 mb-4 border border-0 step-card step1 text-white"
+          >
+            <div class="card-body">
+              <h3 class="card-title">Step1 バーチャルオフィス見学予約</h3>
+              <p class="card-text mb-lg-4">
+                基本的には、お申込み前に、施設のご見学をおすすめしております。オンライン説明会、現地見学会の2通りの方法でご案内可能です。<br />見学予約フォームから、バーチャルオフィス見学の予約を行います。<br />お気軽に、見学予約をお申し込みください。
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-light d-block nowrap mx-auto top-button"
+                onclick="countClickByGa();"
+                data-toggle="modal"
+                data-target="#inquiryFormModal"
+              >
+                見学予約はこちら
+              </button>
+            </div>
           </div>
-        </div>
-        <div
-          class="card col-md-12 mb-4 border border-0 step-card step2 text-white"
-        >
-          <div class="card-body">
-            <h3 class="card-title">Step2 バーチャルオフィス見学</h3>
-            <p class="card-text mb-lg-4">
-              専用ポスト、カフェラウンジ、会議室等を実際にご覧頂きます。また、弊社スタッフにより、サービス内容の説明や料金体系のご説明をさせていただきます。<br />
-              必要な方には、お見積もりをお出し致します。また、希望者にはその場で面談もさせて頂きます。
-            </p>
+          <div
+            class="card col-md-12 mb-4 border border-0 step-card step2 text-white"
+          >
+            <div class="card-body">
+              <h3 class="card-title">Step2 バーチャルオフィス見学</h3>
+              <p class="card-text mb-lg-4">
+                専用ポスト、カフェラウンジ、会議室等を実際にご覧頂きます。また、弊社スタッフにより、サービス内容の説明や料金体系のご説明をさせていただきます。<br />
+                必要な方には、お見積もりをお出し致します。また、希望者にはその場で面談もさせて頂きます。
+              </p>
+            </div>
           </div>
-        </div>
-        <div
-          class="card col-md-12 mb-4 border border-0 step-card step3 text-white"
-        >
-          <div class="card-body">
-            <h3 class="card-title">Step3 お申し込み</h3>
-            <p class="card-text mb-lg-4">
-              オンラインにてお申し込みが可能となります。<br />
-              既にHarborSに決めて頂いた方やお急ぎの方は、見学をせずにこちらの申し込みフォームからすぐにお申し込みいただくことも可能です。<br />
-              スタッフからなるべく早くご連絡させて頂きます。
-            </p>
-            <button
-              type="button"
-              onclick="location.href='https://ap-harbors.firebaseapp.com/virtual-office/register/'"
-              class="btn btn-outline-light d-block nowrap mx-auto top-button"
-            >
-              お申し込みはこちら
-            </button>
+          <div
+            class="card col-md-12 mb-4 border border-0 step-card step3 text-white"
+          >
+            <div class="card-body">
+              <h3 class="card-title">Step3 お申し込み</h3>
+              <p class="card-text mb-lg-4">
+                オンラインにてお申し込みが可能となります。<br />
+                既にHarborSに決めて頂いた方やお急ぎの方は、見学をせずにこちらの申し込みフォームからすぐにお申し込みいただくことも可能です。<br />
+                スタッフからなるべく早くご連絡させて頂きます。
+              </p>
+              <button
+                type="button"
+                onclick="location.href='https://ap-harbors.firebaseapp.com/virtual-office/register/'"
+                class="btn btn-outline-light d-block nowrap mx-auto top-button"
+              >
+                お申し込みはこちら
+              </button>
+            </div>
           </div>
-        </div>
-        <div
-          class="card col-md-12 mb-4 border border-0 step-card step4 text-white"
-        >
-          <div class="card-body">
-            <h3 class="card-title">Step4 必要書類の送付</h3>
-            <p class="card-text mb-lg-4">
-              メールにて、必要書類を送付頂きます。<br />
-              個人でご契約の場合は写真付きの身分証明書、法人の場合は履歴事項全部証明書は写真付きの身分証明書をご用意ください
-            </p>
+          <div
+            class="card col-md-12 mb-4 border border-0 step-card step4 text-white"
+          >
+            <div class="card-body">
+              <h3 class="card-title">Step4 必要書類の送付</h3>
+              <p class="card-text mb-lg-4">
+                メールにて、必要書類を送付頂きます。<br />
+                個人でご契約の場合は写真付きの身分証明書、法人の場合は履歴事項全部証明書は写真付きの身分証明書をご用意ください
+              </p>
+            </div>
           </div>
-        </div>
-        <div
-          class="card col-md-12 mb-4 border border-0 step-card step5 text-white"
-        >
-          <div class="card-body">
-            <h3 class="card-title">Step5 面談による入居審査</h3>
-            <p class="card-text mb-lg-4">
-              弊社では、対面での面談をさせて頂きます。<br />
-              ご入居にあたりましての審査を実施させて頂きます。３営業日程度のお時間を頂く可能性があります。
-            </p>
+          <div
+            class="card col-md-12 mb-4 border border-0 step-card step5 text-white"
+          >
+            <div class="card-body">
+              <h3 class="card-title">Step5 面談による入居審査</h3>
+              <p class="card-text mb-lg-4">
+                弊社では、対面での面談をさせて頂きます。<br />
+                ご入居にあたりましての審査を実施させて頂きます。３営業日程度のお時間を頂く可能性があります。
+              </p>
+            </div>
           </div>
-        </div>
-        <div
-          class="card col-md-12 mb-4 border border-0 step-card step6 text-white"
-        >
-          <div class="card-body">
-            <h3 class="card-title">Step6 正式契約</h3>
-            <p class="card-text mb-lg-4">
-              必要事項を記載の上、利用規約を確認頂き、オンラインにて契約を締結致します。
-            </p>
+          <div
+            class="card col-md-12 mb-4 border border-0 step-card step6 text-white"
+          >
+            <div class="card-body">
+              <h3 class="card-title">Step6 正式契約</h3>
+              <p class="card-text mb-lg-4">
+                必要事項を記載の上、利用規約を確認頂き、オンラインにて契約を締結致します。
+              </p>
+            </div>
           </div>
-        </div>
-        <div
-          class="card col-md-12 mb-4 border border-0 step-card step7 text-white"
-        >
-          <div class="card-body">
-            <h3 class="card-title">Step7 支払い情報の登録</h3>
-            <p class="card-text mb-lg-4">
-              決済に利用するクレジットカード情報をご登録頂きます。<br />
-              基本的には、クレジットカードでの決済をお願いしておりますが、銀行振込を希望される方は、弊社スタッフまでご相談ください。
-            </p>
+          <div
+            class="card col-md-12 mb-4 border border-0 step-card step7 text-white"
+          >
+            <div class="card-body">
+              <h3 class="card-title">Step7 支払い情報の登録</h3>
+              <p class="card-text mb-lg-4">
+                決済に利用するクレジットカード情報をご登録頂きます。<br />
+                基本的には、クレジットカードでの決済をお願いしておりますが、銀行振込を希望される方は、弊社スタッフまでご相談ください。
+              </p>
+            </div>
           </div>
-        </div>
-        <div
-          class="card col-md-12 mb-4 border border-0 step-card step8 text-white"
-        >
-          <div class="card-body">
-            <h3 class="card-title">Step8 サービス利用開始</h3>
-            <p class="card-text mb-lg-4">
-              契約が完了となり、サービスの利用の開始です。
-            </p>
+          <div
+            class="card col-md-12 mb-4 border border-0 step-card step8 text-white"
+          >
+            <div class="card-body">
+              <h3 class="card-title">Step8 サービス利用開始</h3>
+              <p class="card-text mb-lg-4">
+                契約が完了となり、サービスの利用の開始です。
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="container">
-      <div class="l-container">
-        <div class="c-nap pt-5">
-          <h3 class="u-mb20">
-            青山でバーチャルオフィスのレンタルをお考えならHarborS 表参道へ
-          </h3>
-          <table class="c-table">
-            <tr>
-              <th class="u-p15">会社名(英文名)</th>
-              <td class="u-p15">株式会社アンチパターン(Anti-Pattern Inc.)</td>
-            </tr>
-            <tr>
-              <th class="u-p15">店舗名</th>
-              <td class="u-p15">HarborS 表参道(ハーバーズ表参道)</td>
-            </tr>
-            <tr>
-              <th class="u-p15">住所</th>
-              <td class="u-p15">
-                〒107-0062 東京都港区南青山3丁目15−9 MINOWA表参道 3階
-              </td>
-            </tr>
-            <tr>
-              <th class="u-p15">電話番号</th>
-              <td class="u-p15"><a href="tel:0368856140">03-6885-6140</a></td>
-            </tr>
-            <tr>
-              <th class="u-p15">URL</th>
-              <td class="u-p15">
-                <a href="/virtual_office/"
-                  >https://harbors.anti-pattern.co.jp/virtual_office/</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <th class="u-p15">アクセス</th>
-              <td class="u-p15">
-                東京メトロ銀座線、半蔵門線「表参道」下車 A4出口 徒歩3分
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <div class="pt-2">
-      <div class="access pt-2 light-zigzag">
-        <div class="container text-center" id="news">
-          <!-- アクセス -->
-          <h2 class="display-3 pb-3" id="access">ACCESS</h2>
-          <div class="mb-3 text-center">
-            <p class="mb-0 nowrap">
-              住所：東京都港区南青山3丁目15-9<wbr /> MINOWA表参道3F
-            </p>
-            <br />
-            <p class="mb-0 nowrap">
-              アクセス：東京メトロ銀座線 <wbr />半蔵門線「表参道」下車
-              <wbr />A4出口 徒歩3分
-            </p>
-            <br />
-            <p class="mb-0 nowrap">電話番号：03-6885-6140</p>
+    <section>
+      <div class="container">
+        <div class="l-container">
+          <div class="c-nap">
+            <h3 class="u-mb20">
+              青山でバーチャルオフィスのレンタルをお考えならHarborS 表参道へ
+            </h3>
+            <table class="c-table">
+              <tr>
+                <th class="u-p15">会社名(英文名)</th>
+                <td class="u-p15">株式会社アンチパターン(Anti-Pattern Inc.)</td>
+              </tr>
+              <tr>
+                <th class="u-p15">店舗名</th>
+                <td class="u-p15">HarborS 表参道(ハーバーズ表参道)</td>
+              </tr>
+              <tr>
+                <th class="u-p15">住所</th>
+                <td class="u-p15">
+                  〒107-0062 東京都港区南青山3丁目15−9 MINOWA表参道 3階
+                </td>
+              </tr>
+              <tr>
+                <th class="u-p15">電話番号</th>
+                <td class="u-p15"><a href="tel:0368856140">03-6885-6140</a></td>
+              </tr>
+              <tr>
+                <th class="u-p15">URL</th>
+                <td class="u-p15">
+                  <a href="/virtual_office/"
+                    >https://harbors.anti-pattern.co.jp/virtual_office/</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th class="u-p15">アクセス</th>
+                <td class="u-p15">
+                  東京メトロ銀座線、半蔵門線「表参道」下車 A4出口 徒歩3分
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- アクセス -->
+    <section class="bg-light" id="access">
+      <div class="container text-center">
+        <h2 class="display-3 pb-3">ACCESS</h2>
+        <div class="mb-4 text-left">
+          <p class="mb-0">
+            HarborS
+            表参道は、港区青山エリアに位置しており、表参道駅A4出口から徒歩3分という好立地です。<br />
+            住所は「港区南青山」とブランド力抜群のこのエリアは、渋谷、原宿、麻布、赤坂、六本木エリアとも隣接しており、どこからのアクセスも抜群の立地という特徴があります。
+          </p>
+          <p class="mt-2 mb-0">[周辺からのアクセス]</p>
+          <p class="mb-0">渋谷：銀座線で1分 (徒歩20分圏内)</p>
+          <p class="mb-0">原宿：千代田線で1分 (徒歩20分圏内)</p>
+          <p class="mb-0">
+            六本木：千代田線(乃木坂駅利用)で2分 (徒歩25分圏内)
+          </p>
+          <p class="mb-0">赤坂：千代田線で6分 (徒歩30分圏内)</p>
+        </div>
+
         <!-- 地図 -->
         <iframe
-          class="map"
+          class="map border-0"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.99080382981!2d139.7061736147836!3d35.664745284378995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a9122f1cd%3A0xcfe4aad9a0735cb8!2zSGFyYm9yUyDooajlj4LpgZMo44OP44O844OQ44O844K66KGo5Y-C6YGTKQ!5e0!3m2!1sja!2sjp!4v1589869377967!5m2!1sja!2sjp"
+          loading="lazy"
           allowfullscreen=""
         ></iframe>
       </div>
-    </div>
+    </section>
 
     <!-- フッター -->
-    <footer class="py-3 m-0 zigzag-copy">
+    <footer>
       <div class="container small">
         <div class="row">
           <div class="col-md-6 footer-menus">

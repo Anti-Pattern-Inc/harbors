@@ -571,34 +571,37 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </div>
 
-    <div class="access pt-4 light-zigzag">
-      <div class="container text-center" id="news">
-        <!-- アクセス -->
-        <h2 class="display-3 pb-3" id="access">ACCESS</h2>
-        <div class="mb-3 text-center">
-          <p class="mb-0 nowrap">
-            住所：東京都港区南青山3丁目15-9<wbr /> MINOWA表参道3F
+    <!-- アクセス -->
+    <section class="bg-light" id="access">
+      <div class="container text-center">
+        <h2 class="display-3 pb-3">ACCESS</h2>
+        <div class="mb-4 text-left">
+          <p class="mb-0">
+            HarborS
+            表参道は、港区青山エリアに位置しており、表参道駅A4出口から徒歩3分という好立地です。<br />
+            住所は「港区南青山」とブランド力抜群のこのエリアは、渋谷、原宿、麻布、赤坂、六本木エリアとも隣接しており、どこからのアクセスも抜群の立地という特徴があります。
           </p>
-          <br />
-          <p class="mb-0 nowrap">
-            アクセス：東京メトロ銀座線 <wbr />半蔵門線「表参道」下車
-            <wbr />A4出口 徒歩3分
+          <p class="mt-2 mb-0">[周辺からのアクセス]</p>
+          <p class="mb-0">渋谷：銀座線で1分 (徒歩20分圏内)</p>
+          <p class="mb-0">原宿：千代田線で1分 (徒歩20分圏内)</p>
+          <p class="mb-0">
+            六本木：千代田線(乃木坂駅利用)で2分 (徒歩25分圏内)
           </p>
-          <br />
-          <p class="mb-0 nowrap">電話番号：03-6885-6140</p>
+          <p class="mb-0">赤坂：千代田線で6分 (徒歩30分圏内)</p>
         </div>
+
+        <!-- 地図 -->
+        <iframe
+          class="map border-0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.99080382981!2d139.7061736147836!3d35.664745284378995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a9122f1cd%3A0xcfe4aad9a0735cb8!2zSGFyYm9yUyDooajlj4LpgZMo44OP44O844OQ44O844K66KGo5Y-C6YGTKQ!5e0!3m2!1sja!2sjp!4v1589869377967!5m2!1sja!2sjp"
+          loading="lazy"
+          allowfullscreen=""
+        ></iframe>
       </div>
-      <!-- 地図 -->
-      <iframe
-        class="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.99080382981!2d139.7061736147836!3d35.664745284378995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a9122f1cd%3A0xcfe4aad9a0735cb8!2zSGFyYm9yUyDooajlj4LpgZMo44OP44O844OQ44O844K66KGo5Y-C6YGTKQ!5e0!3m2!1sja!2sjp!4v1589869377967!5m2!1sja!2sjp"
-        loading="lazy"
-        allowfullscreen=""
-      ></iframe>
-    </div>
+    </section>
 
     <!-- フッター -->
-    <footer class="py-3 m-0 zigzag-copy">
+    <footer>
       <div class="container small">
         <div class="row">
           <div class="col-md-6 footer-menus">
@@ -626,7 +629,6 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         <small class="text-white">2020 &copy; Anti-Pattern Inc.</small>
       </p>
     </footer>
-
     <!-- Modal -->
     <div
       class="modal fade"
