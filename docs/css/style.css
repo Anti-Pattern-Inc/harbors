@@ -1131,9 +1131,6 @@ g-contents
   padding-bottom: 15px;
 }
 /** NAP **/
-.c-nap{
-  padding-bottom: 25px;
-}
 
 .text_area .c-nap {
   margin: 40px 0 0;
@@ -1427,6 +1424,9 @@ g-contents
 }
 .c-pagelink li {
   margin: 0 10px 20px;
+}
+.c-pagelink li:last-child {
+  margin: 0 10px 0;
 }
 /** NAP表 共通 **/
 .c-nap h3 {
