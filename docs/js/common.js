@@ -3,7 +3,7 @@ $(function () {
   function smoothScroll(_this) {
     var href = $(_this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top - 40;
+    var position = target.offset().top - 20;
     $("html, body").animate({ scrollTop: position }, 500, "swing");
     return false;
   }
@@ -18,10 +18,12 @@ $(function () {
     // ".top-image"がないとき
     $(window).on('scroll', function () {
       scrollPos = $(this).scrollTop();
-      if (scrollPos >= startPos) {
-        $('#header').addClass('hide');
-      } else {
-        $('#header').removeClass('hide');
+      if (scrollPos >= 170) {
+        if (scrollPos >= startPos) {
+          $('#header').addClass('hide');
+        } else {
+          $('#header').removeClass('hide');
+        }
       }
       startPos = scrollPos;
     })

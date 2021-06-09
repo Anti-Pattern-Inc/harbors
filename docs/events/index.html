@@ -83,7 +83,12 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
   <body>
     <header class="container-fluid mb-3 mb-md-0 bg-white px-0" id="header">
       <nav
-        class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-0 px-lg-5 border-bottom"
+        class="
+          navbar navbar-expand-md navbar-light
+          bg-white
+          px-2 px-md-0 px-lg-5
+          border-bottom
+        "
       >
         <a class="nav-link" href="/"><div class="logo"></div></a>
         <button
@@ -214,11 +219,17 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
     </header>
 
     <!-- トップ画像 -->
-    <div class="jumbotron-fluid position-relative events-top">
+    <section class="jumbotron-fluid position-relative events-top">
       <div class="filter"></div>
       <!-- トップ画像内文字 -->
       <div
-        class="text-white position-absolute text-center top-text container-fluid"
+        class="
+          text-white
+          position-absolute
+          text-center
+          top-text
+          container-fluid
+        "
       >
         <div class="row">
           <div class="col-lg-12 pt-2 mt-md-5">
@@ -228,39 +239,44 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <!-- イベント一覧 -->
-    <div class="container mt-5">
-      <div class="row text-center my-5" id="events"></div>
-    </div>
+    <section>
+      <div class="container">
+        <div class="row text-center my-5" id="events"></div>
+      </div>
+    </section>
 
     <!-- アクセス -->
-    <div class="access pt-4 light-zigzag mt-5">
+    <section class="bg-light" id="access">
       <div class="container text-center">
-        <h2 class="display-3 pb-3" id="access">ACCESS</h2>
-        <div class="mb-3 text-center">
-          <p class="mb-0 nowrap">
-            住所：東京都港区南青山3丁目15-9 MINOWA表参道3F
+        <h2 class="display-3 pb-3">ACCESS</h2>
+        <div class="mb-4 text-left">
+          <p class="mb-0">
+            HarborS
+            表参道は、港区青山エリアに位置しており、表参道駅A4出口から徒歩3分という好立地です。<br />
+            住所は「港区南青山」とブランド力抜群のこのエリアは、渋谷、原宿、麻布、赤坂、六本木エリアとも隣接しており、どこからのアクセスも抜群の立地という特徴があります。
           </p>
-          <br />
-          <p class="mb-0 nowrap">
-            アクセス：東京メトロ銀座線、半蔵門線「表参道」下車
-            <wbr />A4出口&ensp;徒歩3分
-          </p>
-          <br />
-          <p class="mb-0 nowrap">電話番号：03-6885-6140</p>
+          <p class="mt-2 mb-0">[周辺からのアクセス]</p>
+          <p class="mb-0">渋谷：銀座線で1分 (徒歩20分圏内)</p>
+          <p class="mb-0">原宿：千代田線で1分 (徒歩20分圏内)</p>
+          <p class="mb-0">六本木：千代田線(乃木坂駅利用)で2分 (徒歩25分圏内)</p>
+          <p class="mb-0">赤坂：千代田線で6分 (徒歩30分圏内)</p>
         </div>
+
+        <!-- 地図 -->
+        <iframe
+          class="map border-0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.99080382981!2d139.7061736147836!3d35.664745284378995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a9122f1cd%3A0xcfe4aad9a0735cb8!2zSGFyYm9yUyDooajlj4LpgZMo44OP44O844OQ44O844K66KGo5Y-C6YGTKQ!5e0!3m2!1sja!2sjp!4v1589869377967!5m2!1sja!2sjp"
+          loading="lazy"
+          allowfullscreen=""
+        ></iframe>
       </div>
-      <!-- 地図 -->
-      <iframe
-        class="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.99080382981!2d139.7061736147836!3d35.664745284378995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a9122f1cd%3A0xcfe4aad9a0735cb8!2zSGFyYm9yUyDooajlj4LpgZMo44OP44O844OQ44O844K66KGo5Y-C6YGTKQ!5e0!3m2!1sja!2sjp!4v1589869377967!5m2!1sja!2sjp"
-        allowfullscreen=""
-      ></iframe>
-    </div>
+    </section>
 
     <!-- フッター -->
-    <footer class="py-3 m-0 zigzag-copy">
+    <footer>
       <div class="container small">
         <div class="row">
           <div class="col-md-6 footer-menus">
@@ -285,7 +301,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         </div>
       </div>
       <p class="text-center mb-0 copyright">
-        <small class="text-white">2019 &copy; Anti-Pattern Inc.</small>
+        <small class="text-white">2020 &copy; Anti-Pattern Inc.</small>
       </p>
     </footer>
 
@@ -308,49 +324,54 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         var events_html = "";
         $.ajax({
           type: "GET",
-          url:
-            "https://script.google.com/macros/s/AKfycbwbHBUZYsGi0DlbRGVJGa9iQNKVoDqRgFxMVcNLZ6KeHZhmIYU/exec",
+          url: "https://script.google.com/macros/s/AKfycbwbHBUZYsGi0DlbRGVJGa9iQNKVoDqRgFxMVcNLZ6KeHZhmIYU/exec",
           dataType: "jsonp",
           jsonpCallback: "jsondata",
         })
-        .done(function (json) {
-          for (var i in json) {
-            events_html +=
-              '<div class="card mb-3">' +
-              '<div class="row no-gutters">' +
-              '<div class="col-md-4 my-auto">' +
-              '<img class="card-img" src="' +
-              json[i].img_url +
-              '">' +
-              "</div>" +
-              '<div class="col-md-8">' +
-              '<div class="card-body text-left">' +
-              '<h5 class="card-title">' +
-              json[i].title +
-              "</h5>" +
-              '<h5 class="card-title">' +
-              json[i].date +
-              "　" +
-              json[i].start_time +
-              "~</h5>" +
-              "<p>" +
-              json[i].overview.replace(/\n/g, "<br>") +
-              "</p>" +
-              '<a class="btn btn-primary" href="' +
-              json[i].detail_url +
-              '" target="_blank">詳細ページへ</a>' +
-              "</div>" +
-              "</div>" +
-              "</div>" +
-              "</div>";
-          }
-          $("#events").append(events_html);
-        })
-        .fail(function () {
-          $("#events").append(
-            '<div class="col-md-12"><p class="text-center">ページが取得できませんでした。時間をおいてご確認ください。</p></div>'
-          );
-        });
+          .done(function (json) {
+            console.log(json.length);
+            if (json.length) {
+              for (var i in json) {
+                events_html +=
+                  '<div class="card mb-3">' +
+                  '<div class="row no-gutters">' +
+                  '<div class="col-md-4 my-auto">' +
+                  '<img class="card-img" src="' +
+                  json[i].img_url +
+                  '">' +
+                  "</div>" +
+                  '<div class="col-md-8">' +
+                  '<div class="card-body text-left">' +
+                  '<h5 class="card-title">' +
+                  json[i].title +
+                  "</h5>" +
+                  '<h5 class="card-title">' +
+                  json[i].date +
+                  "　" +
+                  json[i].start_time +
+                  "~</h5>" +
+                  "<p>" +
+                  json[i].overview.replace(/\n/g, "<br>") +
+                  "</p>" +
+                  '<a class="btn btn-primary" href="' +
+                  json[i].detail_url +
+                  '" target="_blank">詳細ページへ</a>' +
+                  "</div>" +
+                  "</div>" +
+                  "</div>" +
+                  "</div>";
+              }
+            } else {
+              events_html +=
+                '<div class="col-md-12"><p class="text-center mb-0">現在開催予定のイベントはありません。</p></div>';
+            }
+            $("#events").append(events_html);
+          })
+          .fail(function () {
+            $("#events").append(
+              '<div class="col-md-12"><p class="text-center mb-0">ページが取得できませんでした。時間をおいてご確認ください。</p></div>'
+            );
+          });
       });
     </script>
   </body>
