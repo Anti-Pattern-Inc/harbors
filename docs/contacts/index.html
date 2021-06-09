@@ -20,10 +20,7 @@
       property="og:url"
       content="https://harbors.anti-pattern.co.jp/contacts/"
     />
-    <meta
-      property="og:title"
-      content="お問い合わせ | HarborS 表参道"
-    />
+    <meta property="og:title" content="お問い合わせ | HarborS 表参道" />
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
@@ -91,7 +88,12 @@
   <body>
     <header class="container-fluid mb-3 mb-md-0 bg-white px-0" id="header">
       <nav
-        class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-0 px-lg-5 border-bottom"
+        class="
+          navbar navbar-expand-md navbar-light
+          bg-white
+          px-2 px-md-0 px-lg-5
+          border-bottom
+        "
       >
         <a class="nav-link" href="/"><div class="logo"></div></a>
         <button
@@ -221,20 +223,17 @@
       </div>
     </header>
 
-    <main class="contact-main">
+    <section class="contact-main">
       <div class="container">
         <h1>
           HarborS 表参道<br class="d-block d-md-none" />
           お問い合わせフォーム
         </h1>
         <p class="text-center pt-4">
-          必要事項を記載してお問い合わせ下さい。<br>
+          必要事項を記載してお問い合わせ下さい。<br />
           内容を確認次第、2営業日以内にスタッフよりご連絡させていただきます。
         </p>
-        <form
-          class="contact-form"
-          id="googleForm"
-        >
+        <form class="contact-form" id="googleForm">
           <label>
             <p>氏名<span class="text-danger pl-1 small">(必須)</span></p>
             <input type="text" name="entry.332125719" id="name" required />
@@ -253,42 +252,52 @@
             <p>
               お問い合わせ内容<span class="text-danger pl-1 small">(必須)</span>
             </p>
-            <textarea name="entry.364792275" rows="6" id="content" required></textarea>
+            <textarea
+              name="entry.364792275"
+              rows="6"
+              id="content"
+              required
+            ></textarea>
           </label>
-          <input type="submit" class="mt-4 btn btn-outline-secondary" id="submitButton" value="送信する" />
+          <input
+            type="submit"
+            class="mt-4 btn btn-outline-secondary"
+            id="submitButton"
+            value="送信する"
+          />
         </form>
       </div>
+    </section>
 
-      <div class="access light-zigzag">
-        <div class="container text-center">
-          <!-- アクセス -->
-          <h2 class="display-3 pb-3" id="access">ACCESS</h2>
-          <div class="mb-3 text-left">
-            <p class="mb-0">
-              HarborS
-              表参道は、港区青山エリアに位置しており、表参道駅A4出口から徒歩3分という好立地です。<br />
-              住所は「港区南青山」とブランド力抜群のこのエリアは、渋谷、原宿、麻布、赤坂、六本木エリアとも隣接しており、どこからのアクセスも抜群の立地という特徴があります。
-            </p>
-            <p class="mt-2 mb-0">[周辺からのアクセス]</p>
-            <p class="mb-0">渋谷：銀座線で1分 (徒歩20分圏内)</p>
-            <p class="mb-0">原宿：千代田線で1分 (徒歩20分圏内)</p>
-            <p class="mb-0">
-              六本木：千代田線(乃木坂駅利用)で2分 (徒歩25分圏内)
-            </p>
-            <p class="mb-0">赤坂：千代田線で6分 (徒歩30分圏内)</p>
-          </div>
+    <!-- アクセス -->
+    <section class="bg-light" id="access">
+      <div class="container text-center">
+        <h2 class="display-3 pb-3">ACCESS</h2>
+        <div class="mb-4 text-left">
+          <p class="mb-0">
+            HarborS
+            表参道は、港区青山エリアに位置しており、表参道駅A4出口から徒歩3分という好立地です。<br />
+            住所は「港区南青山」とブランド力抜群のこのエリアは、渋谷、原宿、麻布、赤坂、六本木エリアとも隣接しており、どこからのアクセスも抜群の立地という特徴があります。
+          </p>
+          <p class="mt-2 mb-0">[周辺からのアクセス]</p>
+          <p class="mb-0">渋谷：銀座線で1分 (徒歩20分圏内)</p>
+          <p class="mb-0">原宿：千代田線で1分 (徒歩20分圏内)</p>
+          <p class="mb-0">六本木：千代田線(乃木坂駅利用)で2分 (徒歩25分圏内)</p>
+          <p class="mb-0">赤坂：千代田線で6分 (徒歩30分圏内)</p>
         </div>
+
         <!-- 地図 -->
         <iframe
-          class="map"
+          class="map border-0"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.99080382981!2d139.7061736147836!3d35.664745284378995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a9122f1cd%3A0xcfe4aad9a0735cb8!2zSGFyYm9yUyDooajlj4LpgZMo44OP44O844OQ44O844K66KGo5Y-C6YGTKQ!5e0!3m2!1sja!2sjp!4v1589869377967!5m2!1sja!2sjp"
           loading="lazy"
           allowfullscreen=""
         ></iframe>
       </div>
-    </main>
+    </section>
+
     <!-- フッター -->
-    <footer class="py-3 m-0 zigzag-copy">
+    <footer>
       <div class="container small">
         <div class="row">
           <div class="col-md-6 footer-menus">
@@ -317,15 +326,26 @@
       </p>
     </footer>
 
-    <div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="thanksModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-body">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
             <p class="mt-4">
-              お問い合わせありがとうございました。<br>
+              お問い合わせありがとうございました。<br />
               2営業日以内にスタッフよりご連絡させていただきますので、もうしばらくお待ちください。
             </p>
           </div>
@@ -336,15 +356,26 @@
       </div>
     </div>
 
-    <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="errorModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-body">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
             <p class="mt-4">
-              エラーが発生しました。<br>
+              エラーが発生しました。<br />
               大変申し訳ございませんが、しばらく時間を置いてから再度お問い合わせをお願い致します。
             </p>
           </div>
@@ -381,25 +412,31 @@
     <script src="/js/common.js"></script>
 
     <script type="text/javascript">
-      $("#googleForm").submit(function(event) {
+      $("#googleForm").submit(function (event) {
         event.preventDefault();
         $("#submitButton").prop("disabled", true);
-        var postUrl = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/formResponse";
+        var postUrl =
+          "https://docs.google.com/forms/u/1/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/formResponse";
         var name = $("#name").val();
         var email = $("#email").val();
         var tel = $("#tel").val();
         var content = $("#content").val();
-        var postData = {"entry.332125719": name, "entry.1552946980": email, "entry.1238113045": tel, "entry.364792275": content};
+        var postData = {
+          "entry.332125719": name,
+          "entry.1552946980": email,
+          "entry.1238113045": tel,
+          "entry.364792275": content,
+        };
 
         $.post(postUrl, postData)
-          .done(function(data) {
-            $("#thanksModal").modal('show');
+          .done(function (data) {
+            $("#thanksModal").modal("show");
           })
-          .fail(function(jqXHR) {
-            if(jqXHR.status == 0) {
-              $("#thanksModal").modal('show');
+          .fail(function (jqXHR) {
+            if (jqXHR.status == 0) {
+              $("#thanksModal").modal("show");
             } else {
-              $("#errorModal").modal('show');
+              $("#errorModal").modal("show");
             }
           });
       });
