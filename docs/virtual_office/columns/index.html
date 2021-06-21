@@ -22,9 +22,11 @@
     <!-- スタイルシートはここから -->
     <link
       rel="stylesheet"
+      rel="preload"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous"
+      as="style"
     />
     <link
       rel="stylesheet"
@@ -36,10 +38,14 @@
     <link
       href="https://fonts.googleapis.com/css?family=Comfortaa:500"
       rel="stylesheet"
+      rel="preload"
+      as="font"
     />
     <link
       rel="stylesheet"
+      rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css"
+      as="style"
     />
     <link rel="shortcut icon" href="/img/logo.png" />
     <!-- Google Tag Manager -->
@@ -302,9 +308,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                     loading="lazy"
                     class="w-100"
                   />
-                  <h3 class="text-center px-1 py-4 mb-0">
-                    HarborSの特徴
-                  </h3>
+                  <h3 class="text-center px-1 py-4 mb-0">HarborSの特徴</h3>
                 </a>
               </div>
               <p class="px-1">
@@ -328,9 +332,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                     loading="lazy"
                     class="w-100"
                   />
-                  <h3 class="text-center px-1 py-4 mb-0">
-                    ご契約までの流れ
-                  </h3>
+                  <h3 class="text-center px-1 py-4 mb-0">ご契約までの流れ</h3>
                 </a>
               </div>
               <p class="px-1">
@@ -351,9 +353,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                     loading="lazy"
                     class="w-100"
                   />
-                  <h3 class="text-center px-1 py-4 mb-0">
-                    よくあるご質問
-                  </h3>
+                  <h3 class="text-center px-1 py-4 mb-0">よくあるご質問</h3>
                 </a>
               </div>
               <p class="px-1">
@@ -388,7 +388,9 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 >
               </li>
               <li>
-                <a href="/virtual_office/minatoku_merit">バーチャルオフィスを港区で利用する理由とは</a>
+                <a href="/virtual_office/minatoku_merit"
+                  >バーチャルオフィスを港区で利用する理由とは</a
+                >
               </li>
               <li>
                 <a href="/virtual_office/whats_virtual_office/"
@@ -426,8 +428,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 >
               </li>
               <li>
-                <a
-                  href="/virtual_office/monthly_plan_aoyama_virtual_office/"
+                <a href="/virtual_office/monthly_plan_aoyama_virtual_office/"
                   >【青山】バーチャルオフィスなら少ない初期費用で月額プランの利用が可能
                   バーチャルオフィスの利用に向いている業種とは</a
                 >
@@ -446,8 +447,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 >
               </li>
               <li>
-                <a
-                  href="/virtual_office/expenses_virtual_office_address_only/"
+                <a href="/virtual_office/expenses_virtual_office_address_only/"
                   >バーチャルオフィスは住所のみのレンタルも可能
                   月額プランの利用料は経費で落ちるのか</a
                 >
@@ -474,15 +474,13 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 >
               </li>
               <li>
-                <a
-                  href="/virtual_office/about_shared_office_and_rental_office/"
+                <a href="/virtual_office/about_shared_office_and_rental_office/"
                   >シェアオフィス、レンタルオフィスとは？
                   サービスの違いやメリットについて解説</a
                 >
               </li>
               <li>
-                <a
-                  href="/virtual_office/virtual_office_tips_about_money/"
+                <a href="/virtual_office/virtual_office_tips_about_money/"
                   >バーチャルオフィスの料金やお金にまつわるあれこれ</a
                 >
               </li>
@@ -502,9 +500,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           <table class="c-table">
             <tr>
               <th class="u-p15">会社名(英文名)</th>
-              <td class="u-p15">
-                株式会社アンチパターン(Anti-Pattern Inc.)
-              </td>
+              <td class="u-p15">株式会社アンチパターン(Anti-Pattern Inc.)</td>
             </tr>
             <tr>
               <th class="u-p15">店舗名</th>

@@ -37,9 +37,11 @@
     <!-- スタイルシートはここから -->
     <link
       rel="stylesheet"
+      rel="preload"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous"
+      as="style"
     />
     <link
       rel="stylesheet"
@@ -51,10 +53,14 @@
     <link
       href="https://fonts.googleapis.com/css?family=Comfortaa:500"
       rel="stylesheet"
+      rel="preload"
+      as="font"
     />
     <link
       rel="stylesheet"
+      rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css"
+      as="style"
     />
     <link rel="shortcut icon" href="/img/logo.png" />
     <!-- Google Tag Manager -->
@@ -101,7 +107,12 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
   <body>
     <header class="container-fluid mb-3 mb-md-0 bg-white px-0" id="header">
       <nav
-        class="navbar navbar-expand-md navbar-light bg-white px-2 px-md-0 px-lg-5 border-bottom"
+        class="
+          navbar navbar-expand-md navbar-light
+          bg-white
+          px-2 px-md-0 px-lg-5
+          border-bottom
+        "
       >
         <a class="nav-link" href="/"><div class="logo"></div></a>
         <button
@@ -231,7 +242,13 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       <div class="filter"></div>
       <!-- トップ文字 -->
       <div
-        class="text-white position-absolute text-center top-text container-fluid"
+        class="
+          text-white
+          position-absolute
+          text-center
+          top-text
+          container-fluid
+        "
       >
         <div class="row">
           <div class="col-lg-12 pt-md-5">
@@ -244,7 +261,14 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       <div class="fixed-bottom mb-2">
         <button
           type="button"
-          class="btn btn-warning btn-lg mx-auto nowrap text-white top-button d-block"
+          class="
+            btn btn-warning btn-lg
+            mx-auto
+            nowrap
+            text-white
+            top-button
+            d-block
+          "
           onclick="countClickByGa();"
           data-toggle="modal"
           data-target="#inquiryFormModal"
@@ -258,7 +282,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
     <div class="py-5">
       <div class="container">
         <p class="text-center mb-5">
-          多種多様なプランをご用意しており、ご利用者様のニーズに合わせてご利用できます<br><br>
+          多種多様なプランをご用意しており、ご利用者様のニーズに合わせてご利用できます<br /><br />
           記載されている料金は全て税込価格です。
         </p>
         <h5 class="plan-category">

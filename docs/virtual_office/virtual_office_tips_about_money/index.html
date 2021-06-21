@@ -39,9 +39,11 @@
     <!-- スタイルシートはここから -->
     <link
       rel="stylesheet"
+      rel="preload"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous"
+      as="style"
     />
     <link
       rel="stylesheet"
@@ -53,10 +55,14 @@
     <link
       href="https://fonts.googleapis.com/css?family=Comfortaa:500"
       rel="stylesheet"
+      rel="preload"
+      as="font"
     />
     <link
       rel="stylesheet"
+      rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css"
+      as="style"
     />
     <link rel="shortcut icon" href="/img/logo.png" />
     <!-- Google Tag Manager -->
@@ -338,14 +344,23 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         <div class="pt-5">
           <ul class="table-of-contents">
             <h4 class="text-center font-weight-bold mb-3">目次</h4>
-            <li><a href="#p01">バーチャルオフィスを利用する理由</a>
-            </li>
+            <li><a href="#p01">バーチャルオフィスを利用する理由</a></li>
             <li>
               <a href="#p02">バーチャルオフィスを利用する上での懸念点</a>
               <ul>
-                <li><a href="#p02a">バーチャルオフィスで法人口座開設はできるのか</a></li>
-                <li><a href="#p02b">バーチャルオフィスの利用料金は経費で落ちるのか</a></li>
-                <li><a href="#p02c">安い＝良いバーチャルオフィスではない</a></li>
+                <li>
+                  <a href="#p02a"
+                    >バーチャルオフィスで法人口座開設はできるのか</a
+                  >
+                </li>
+                <li>
+                  <a href="#p02b"
+                    >バーチャルオフィスの利用料金は経費で落ちるのか</a
+                  >
+                </li>
+                <li>
+                  <a href="#p02c">安い＝良いバーチャルオフィスではない</a>
+                </li>
               </ul>
             </li>
             <li><a href="#p03">まとめ</a></li>
@@ -360,7 +375,10 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             バーチャルオフィスの利用をおすすめする最大の理由は、事業を行なう上でのコストの負荷をかなり抑えることができる点です。バーチャルオフィスとはその名の通り、作業場所や執務スペースを設けずに、住所などの部分的なオフィス機能のみをレンタルすることでコストを抑えるオフィスサービスです。作業スペースとしてのオフィスという使い方はできませんが、法人登記に必要な住所を借りることができるので、テレワークなどで作業スペースが必要ない場合には、賃貸でオフィスを借りるのと比べて、初期費用もランニングコストも大幅に節約することができます。起業したばかりでは到底オフィスを構えられないような都内の一等地の住所を利用することもできます。
           </p>
           <p class="mb-0">
-            <a href="/virtual_office/merit_in_tokyo_virtual_office/" class="in-page-link">
+            <a
+              href="/virtual_office/merit_in_tokyo_virtual_office/"
+              class="in-page-link"
+            >
               バーチャルオフィスは都内の一等地での起業も可能
               バーチャルオフィスのメリット・初期費用の抑え方
             </a>
@@ -368,7 +386,9 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         </div>
 
         <div class="pt-5 px-3">
-          <h3 class="text-dark title-level2">バーチャルオフィスと他オフィスサービスとの比較</h3>
+          <h3 class="text-dark title-level2">
+            バーチャルオフィスと他オフィスサービスとの比較
+          </h3>
           <p class="card-text text-dark">
             バーチャルオフィスの他にもレンタルオフィスやシェアオフィスというオフィスサービスがありますが、費用を抑えるならバーチャルオフィスが最も低コストです。バーチャルオフィスと他の二つとの最も大きな違いは作業スペースの有無ですが、打ち合わせスペースや会議室、作業スペースを備えたバーチャルオフィスもあるので、必要に応じてそれらを利用することで解決できますので、検討しているオフィスサービスがどのようなサービスを提供しているかよく比較することをおすすめします。
           </p>
@@ -379,11 +399,14 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               class="w-100"
             />
           </div>
-            <p class="mb-0">
-              <a href="/virtual_office/about_shared_office_and_rental_office/" class="in-page-link">
-                シェアオフィス、レンタルオフィスとは？サービスの違いやメリットについて解説
-              </a>
-            </p>
+          <p class="mb-0">
+            <a
+              href="/virtual_office/about_shared_office_and_rental_office/"
+              class="in-page-link"
+            >
+              シェアオフィス、レンタルオフィスとは？サービスの違いやメリットについて解説
+            </a>
+          </p>
         </div>
 
         <div class="pt-5">
@@ -397,48 +420,60 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
 
         <div class="pt-5 px-3">
           <div>
-            <h3 class="text-dark title-level2" id="p02a">バーチャルオフィスで法人口座開設はできるのか</h3>
+            <h3 class="text-dark title-level2" id="p02a">
+              バーチャルオフィスで法人口座開設はできるのか
+            </h3>
             <p class="card-text text-dark">
               事業を行う上で法人用の銀行口座を準備する必要がありますが、バーチャルオフィスを利用していると法人口座の開設の際に審査が通らなかったり、不利になったりするのではないかという不安をお持ちの方が多いようです。実際にはバーチャルオフィスの利用が原因で法人口座の開設で不利になるということはありませんのでご安心ください。
             </p>
             <p class="mb-0">
-              <a href="/virtual_office/post_virtual_office_address_only/" class="in-page-link">
+              <a
+                href="/virtual_office/post_virtual_office_address_only/"
+                class="in-page-link"
+              >
                 バーチャルオフィスには住所のみでの利用や郵便物の受け取り以外にもメリットが豊富
                 法人の口座開設について
               </a>
             </p>
           </div>
           <div class="pt-5">
-            <h3 class="text-dark title-level2" id="p02b">バーチャルオフィスの利用料金は経費で落ちるのか</h3>
+            <h3 class="text-dark title-level2" id="p02b">
+              バーチャルオフィスの利用料金は経費で落ちるのか
+            </h3>
             <p class="card-text text-dark">
-              バーチャルオフィスの利用料金は基本的に毎月かかってくるものなので経費で計上できるのかという疑問の声をいただくこともあります。結論からいうとバーチャルオフィスの利用料を経費として計上することは可能です。<br>
+              バーチャルオフィスの利用料金は基本的に毎月かかってくるものなので経費で計上できるのかという疑問の声をいただくこともあります。結論からいうとバーチャルオフィスの利用料を経費として計上することは可能です。<br />
               納税地や勘定科目などの詳細についてはこちらの記事をご覧ください。
             </p>
             <p class="mb-0">
-              <a href="/virtual_office/expenses_virtual_office_address_only/" class="in-page-link">
+              <a
+                href="/virtual_office/expenses_virtual_office_address_only/"
+                class="in-page-link"
+              >
                 バーチャルオフィスは住所のみのレンタルも可能
                 月額プランの利用料は経費で落ちるのか
               </a>
             </p>
           </div>
           <div class="pt-5">
-            <h3 class="text-dark title-level2" id="p02c">安い＝良いバーチャルオフィスではない</h3>
+            <h3 class="text-dark title-level2" id="p02c">
+              安い＝良いバーチャルオフィスではない
+            </h3>
             <p class="card-text text-dark">
               バーチャルオフィスの利用によるコスト削減について説明しましたが、あえてここで言っておきたいのがバーチャルオフィスは安ければ安いほど良いというわけではないということです。バーチャルオフィスの中にはワンコインや格安を謳うものも多くありますが、必要なサービスが揃っていなかったり、外観がイマイチで顧客の心象が悪くなる懸念があったりすることもあります。事前に見学や説明会などで確かめる必要があります。
             </p>
             <p class="mb-0">
-              <a href="/virtual_office/choose_virtual_office/" class="in-page-link">
-                バーチャルオフィスの選び方！
-                わかりやすい6つのチェックポイント
+              <a
+                href="/virtual_office/choose_virtual_office/"
+                class="in-page-link"
+              >
+                バーチャルオフィスの選び方！ わかりやすい6つのチェックポイント
               </a>
             </p>
           </div>
         </div>
 
         <div class="pt-5">
-          <h2 class="text-dark title-level1" id="p03">
-            まとめ
-          </h2>
+          <h2 class="text-dark title-level1" id="p03">まとめ</h2>
           <div class="text-center py-1">
             <img
               src="/img/virtual_office_tips_about_money3.jpg"
@@ -488,9 +523,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                     loading="lazy"
                     class="w-100"
                   />
-                  <h3 class="text-center px-1 py-4 mb-0">
-                    HarborSの特徴
-                  </h3>
+                  <h3 class="text-center px-1 py-4 mb-0">HarborSの特徴</h3>
                 </a>
               </div>
               <p class="px-1">
@@ -514,9 +547,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                     loading="lazy"
                     class="w-100"
                   />
-                  <h3 class="text-center px-1 py-4 mb-0">
-                    ご契約までの流れ
-                  </h3>
+                  <h3 class="text-center px-1 py-4 mb-0">ご契約までの流れ</h3>
                 </a>
               </div>
               <p class="px-1">
@@ -537,9 +568,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                     loading="lazy"
                     class="w-100"
                   />
-                  <h3 class="text-center px-1 py-4 mb-0">
-                    よくあるご質問
-                  </h3>
+                  <h3 class="text-center px-1 py-4 mb-0">よくあるご質問</h3>
                 </a>
               </div>
               <p class="px-1">
@@ -563,9 +592,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           <table class="c-table">
             <tr>
               <th class="u-p15">会社名(英文名)</th>
-              <td class="u-p15">
-                株式会社アンチパターン(Anti-Pattern Inc.)
-              </td>
+              <td class="u-p15">株式会社アンチパターン(Anti-Pattern Inc.)</td>
             </tr>
             <tr>
               <th class="u-p15">店舗名</th>
