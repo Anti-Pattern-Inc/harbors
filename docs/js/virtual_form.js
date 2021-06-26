@@ -73,7 +73,7 @@ $("#inquiryForm").submit(function (event) {
   event.preventDefault();
   $("#send_button").prop("disabled", true);
   var postUrl =
-    "https://script.google.com/macros/s/AKfycbzaWhdTp6aJjUpfUukiS_kms4ff5XzLQQSbQJ_XzRHxFOuKfK4ZvpEjC6JRgwYK7LSE/exec";
+    "https://script.google.com/macros/s/AKfycbwbcIIiHad2j7kq41e0IA1PYjCD6f3wK522sgUIQYPI1qUeZi5U/exec";
   var postData = $("#inquiryForm").serialize();
   var posting = $.post(postUrl, postData)
     .done(function (data) {
