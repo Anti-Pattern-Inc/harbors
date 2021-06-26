@@ -1,11 +1,35 @@
 $(function () {
+  $("#preferred_visit_date").datetimepicker({
+    format: "YYYY/MM/DD",
+    dayViewHeaderFormat: "YYYY年 MMMM",
+    tooltips: {
+      close: "閉じる",
+      selectMonth: "月を選択",
+      prevMonth: "前月",
+      nextMonth: "次月",
+      selectYear: "年を選択",
+      prevYear: "前年",
+      nextYear: "次年",
+      selectTime: "時間を選択",
+      selectDate: "日付を選択",
+      prevDecade: "前期間",
+      nextDecade: "次期間",
+      selectDecade: "期間を選択",
+      prevCentury: "前世紀",
+      nextCentury: "次世紀",
+    },
+    locale: moment.locale("ja", {
+      week: { dow: 1 },
+    }),
+    buttons: {
+      showClose: true,
+    },
+  });
+
   $('[name="contact_type"]').change(function () {
     var contactType = $('[name="contact_type"] option:selected').val();
     if (contactType == "1" || contactType == "2") {
       $("#form_preferred_visit_date").show();
-      $("#form_preferred_visit_time").show();
-      $('[name="preferred_visit_date"]').attr("required", "true");
-      $('[name="preferred_visit_time"]').attr("required", "true");
       if (contactType == "1") {
         if (
           $('[name="preferred_visit_time"]').children(
@@ -30,17 +54,26 @@ $(function () {
     } else {
       $("#form_preferred_visit_date").hide();
       $("#form_preferred_visit_time").hide();
-      $('[name="preferred_visit_date"]').removeAttr("required");
-      $('[name="preferred_visit_time"]').removeAttr("required");
     }
   });
+
+  $('#preferred_visit_date').on("change.datetimepicker", function (e) {
+    var preferred_visit_date_value = $('input[name=preferred_visit_date]').val();
+    if (preferred_visit_date_value == '') {
+      $("#form_preferred_visit_time").hide();
+      $('[name=preferred_visit_time]').removeAttr("required");
+    } else {
+      $("#form_preferred_visit_time").show();
+      $('[name=preferred_visit_time]').attr("required", "true");
+    }
+  })
 });
 
 $("#inquiryForm").submit(function (event) {
   event.preventDefault();
   $("#send_button").prop("disabled", true);
   var postUrl =
-    "https://script.google.com/macros/s/AKfycbzkyTOZpkSaJCfy2ziQgkd_UPXxObD_rFxoCbiYOHzYOJDHDFKdp-xt5Mdhmov5jioxoA/exec";
+    "https://script.google.com/macros/s/AKfycbwbcIIiHad2j7kq41e0IA1PYjCD6f3wK522sgUIQYPI1qUeZi5U/exec";
   var postData = $("#inquiryForm").serialize();
   var posting = $.post(postUrl, postData)
     .done(function (data) {

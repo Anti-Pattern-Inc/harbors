@@ -1998,4 +1998,8 @@ g-contents
     right: 30px;
   }
 }
+
+form span.bg-danger {
+  background-color: #FA817D !important;
+}
 /* END */
