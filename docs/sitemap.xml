@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://harbors.anti-pattern.co.jp/</loc>
-    <lastmod>2021-04-10</lastmod>
+    <lastmod>2021-07-06</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/coworking/</loc>
-    <lastmod>2021-06-08</lastmod>
+    <lastmod>2021-07-06</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/coworking/specialized_coworking/</loc>
@@ -25,6 +25,10 @@
     <lastmod>2021-06-08</lastmod>
   </url>
   <url>
+    <loc>https://harbors.anti-pattern.co.jp/coworking/how_to_take_aws_exam/</loc>
+    <lastmod>2021-07-06</lastmod>
+  </url>
+  <url>
     <loc>https://harbors.anti-pattern.co.jp/plans/</loc>
     <lastmod>2021-06-08</lastmod>
   </url>
@@ -38,7 +42,7 @@
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/virtual_office/</loc>
-    <lastmod>2021-06-26</lastmod>
+    <lastmod>2021-07-06</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/virtual_office/flow/</loc>
