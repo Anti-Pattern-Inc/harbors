@@ -895,7 +895,7 @@
           <div class="modal-body">
             <form id="inquiryForm">
               <div class="form-group">
-                <label for="">お名前</label><font style="color: red">※</font>
+                <label for="">お名前</label><span class="bg-danger text-white ml-2 px-2 py-1 small rounded-pill">必須</span>
                 <input
                   type="text"
                   class="form-control"
@@ -907,7 +907,7 @@
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">メールアドレス</label
-                ><font style="color: red">※</font>
+                ><span class="bg-danger text-white ml-2 px-2 py-1 small rounded-pill">必須</span>
                 <input
                   type="email"
                   class="form-control"
@@ -919,7 +919,7 @@
                 >
               </div>
               <div class="form-group">
-                <label for="">電話番号</label><font style="color: red">※</font>
+                <label for="">電話番号</label><span class="bg-danger text-white ml-2 px-2 py-1 small rounded-pill">必須</span>
                 <input
                   type="tel"
                   class="form-control"
@@ -931,7 +931,7 @@
               </div>
               <div class="form-group">
                 <label for="">お問い合わせ目的</label
-                ><font style="color: red">※</font>
+                ><span class="bg-danger text-white ml-2 px-2 py-1 small rounded-pill">必須</span>
                 <select class="form-control" name="contact_type" required>
                   <option></option>
                   <option value="1">オンライン説明会を予約したい</option>
@@ -944,8 +944,7 @@
                 id="form_preferred_visit_date"
                 style="display: none"
               >
-                <label for="preferred_visit_date">説明会ご希望日</label
-                ><font style="color: red">※</font>
+                <label for="preferred_visit_date">説明会ご希望日</label>
                 <div
                   class="input-group date"
                   id="preferred_visit_date"
@@ -973,8 +972,7 @@
                 id="form_preferred_visit_time"
                 style="display: none"
               >
-                <label for="preferred_visit_time">説明会開始時刻</label
-                ><font style="color: red">※</font>
+                <label for="preferred_visit_time">説明会開始時刻</label>
                 <select class="form-control" name="preferred_visit_time">
                   <option></option>
                   <option value="11:00">11:00~12:00</option>
@@ -1000,7 +998,6 @@
                   rows="3"
                 ></textarea>
               </div>
-              <p><font style="color: red">※</font>は必須入力項目です。</p>
               <button
                 type="submit"
                 class="btn btn-primary w-100 py-2"
@@ -1090,37 +1087,6 @@
 
     <script>
       $(function () {
-        $("#preferred_visit_date").datetimepicker({
-          format: "YYYY/MM/DD",
-          dayViewHeaderFormat: "YYYY年 MMMM",
-          tooltips: {
-            close: "閉じる",
-            selectMonth: "月を選択",
-            prevMonth: "前月",
-            nextMonth: "次月",
-            selectYear: "年を選択",
-            prevYear: "前年",
-            nextYear: "次年",
-            selectTime: "時間を選択",
-            selectDate: "日付を選択",
-            prevDecade: "前期間",
-            nextDecade: "次期間",
-            selectDecade: "期間を選択",
-            prevCentury: "前世紀",
-            nextCentury: "次世紀",
-          },
-          locale: moment.locale("ja", {
-            week: { dow: 1 },
-          }),
-          buttons: {
-            showClose: true,
-          },
-        });
-      });
-    </script>
-
-    <script>
-      $(function () {
         var formBtn = $(".virtual-form-btn");
         formBtn.hide();
 
@@ -1135,9 +1101,6 @@
         $("#site_tour").click(function () {
           $('[name="contact_type"]').val("2");
           $("#form_preferred_visit_date").show();
-          $("#form_preferred_visit_time").show();
-          $('[name="preferred_visit_date"]').attr("required", "true");
-          $('[name="preferred_visit_time"]').attr("required", "true");
           if (
             $('[name="preferred_visit_time"]').children('option[value="20:00"]')
               .length == 1
@@ -1150,10 +1113,7 @@
 
         $("#online_information_session").click(function () {
           $('[name="contact_type"]').val("1");
-          $("#form_preferred_visit_date").show();
-          $("#form_preferred_visit_time").show();
-          $('[name="preferred_visit_date"]').attr("required", "true");
-          $('[name="preferred_visit_time"]').attr("required", "true");
+          $("#form_preferred_visit_date").show();     
           if (
             $('[name="preferred_visit_time"]').children('option[value="20:00"]')
               .length == 0
@@ -1168,8 +1128,6 @@
           $('[name="contact_type"]').val("");
           $("#form_preferred_visit_date").hide();
           $("#form_preferred_visit_time").hide();
-          $('[name="preferred_visit_date"]').removeAttr("required");
-          $('[name="preferred_visit_time"]').removeAttr("required");
         });
       });
 

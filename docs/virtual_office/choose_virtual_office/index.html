@@ -786,7 +786,11 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           <div class="modal-body">
             <form id="inquiryForm">
               <div class="form-group">
-                <label for="">お名前</label><font style="color: red">※</font>
+                <label for="">お名前</label
+                ><span
+                  class="bg-danger text-white ml-2 px-2 py-1 small rounded-pill"
+                  >必須</span
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -798,7 +802,10 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">メールアドレス</label
-                ><font style="color: red">※</font>
+                ><span
+                  class="bg-danger text-white ml-2 px-2 py-1 small rounded-pill"
+                  >必須</span
+                >
                 <input
                   type="email"
                   class="form-control"
@@ -810,7 +817,11 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 >
               </div>
               <div class="form-group">
-                <label for="">電話番号</label><font style="color: red">※</font>
+                <label for="">電話番号</label
+                ><span
+                  class="bg-danger text-white ml-2 px-2 py-1 small rounded-pill"
+                  >必須</span
+                >
                 <input
                   type="tel"
                   class="form-control"
@@ -822,7 +833,10 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               </div>
               <div class="form-group">
                 <label for="">お問い合わせ目的</label
-                ><font style="color: red">※</font>
+                ><span
+                  class="bg-danger text-white ml-2 px-2 py-1 small rounded-pill"
+                  >必須</span
+                >
                 <select class="form-control" name="contact_type" required>
                   <option></option>
                   <option value="1">オンライン説明会を予約したい</option>
@@ -835,9 +849,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 id="form_preferred_visit_date"
                 style="display: none"
               >
-                <label for="preferred_visit_date"
-                  >オンライン説明会ご希望日</label
-                ><font style="color: red">※</font>
+                <label for="preferred_visit_date">説明会ご希望日</label>
                 <div
                   class="input-group date"
                   id="preferred_visit_date"
@@ -866,14 +878,8 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 id="form_preferred_visit_time"
                 style="display: none"
               >
-                <label for="preferred_visit_time"
-                  >オンライン説明会開始時刻</label
-                ><font style="color: red">※</font>
-                <select
-                  class="form-control"
-                  name="preferred_visit_time"
-                  required
-                >
+                <label for="preferred_visit_time">説明会開始時刻</label>
+                <select class="form-control" name="preferred_visit_time">
                   <option></option>
                   <option value="11:00">11:00~12:00</option>
                   <option value="12:00">12:00~13:00</option>
@@ -885,7 +891,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                   <option value="18:00">18:00~19:00</option>
                   <option value="19:00">19:00~20:00</option>
                 </select>
-                <div class="preferred__visit-note">
+                <div class="preferred_visit_note">
                   <p class="small">※説明会は1時間程度になります</p>
                 </div>
               </div>
@@ -898,7 +904,6 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                   rows="3"
                 ></textarea>
               </div>
-              <p><font style="color: red">※</font>は必須入力項目です。</p>
               <button
                 type="submit"
                 class="btn btn-primary w-100 py-2"
