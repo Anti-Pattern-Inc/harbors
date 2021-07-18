@@ -1131,6 +1131,25 @@ g-contents
     font-size: 1.1rem;
   }
 }
+
+@media (max-width: 576px) {
+  .contents-title-2 {
+    font-size: 1.8rem;
+  }
+
+  .contents-title-3 {
+    font-size: 1.5rem;
+  }
+
+  .contents-title-4 {
+    font-size: 1.25rem;
+  }
+
+  .contents-title-5 {
+    font-size: 1.1rem;
+  }
+}
+
 /** ファーストビュー **/
 .fv {
   margin: 20px 0 30px;

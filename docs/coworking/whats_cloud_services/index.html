@@ -295,258 +295,256 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
 
     <div class="py-2">
       <div class="container">
-        <div class="col-md-12">
+        <div class="pt-3">
+          <div class="text-center pb-3 w-100">
+            <img
+              src="/img/whats_cloud_services1.jpg"
+              alt="コワーキングスペースの画像"
+              class="card-img"
+            />
+          </div>
+
+          <div class="pt-5">
+            <ul class="table-of-contents">
+              <h4 class="text-center font-weight-bold mb-3">目次</h4>
+              <li><a href="#p01">クラウドコンピューティングとは？</a></li>
+              <li><a href="#p02">AWSエンジニアになるためには？</a></li>
+              <li><a href="#p03">最後に</a></li>
+            </ul>
+          </div>
+
+          <p class="pt-5 card-text text-dark">
+            AWS(Amazon Web
+            Services)に関して、エンジニアとして生きていると関わらないことがなくなってきてるのではないでしょうか？<br>
+            Canalysのレポートで<q
+              cite="https://www.canalys.com/newsroom/global-cloud-market-q4-2020"
+              >2020年4Qのクラウドインフラ支出は約4兆2000億円に達し前年同期比で25%増加した</q
+            >と報告されていることから見ても、ものすごい勢いでクラウドコンピューティングの活用が広がっていることが分かります。また、2011年に東京リージョンがオープンして約10年で急拡大していることも見て取れます。<br><br>
+            このような背景から、クラウドを活用できるエンジニア、その中でも特に、シェアNo1であるAWSエンジニアの不足が各所で叫ばれているように思います。
+          </p>
+        </div>
+
+        <div class="pt-5">
+          <h2 class="text-dark title-level1 text-center h2_title" id="p01">
+            クラウドコンピューティングとは？
+          </h2>
+          <p class="text-dark pt-3">
+            インターネット経由で、コンピューターリソースを必要な時に必要な分だけ利用できるサービスの総称です。<br>
+            「AWSのクラウドが選ばれる10の理由」をみることでクラウドコンピューティングがどういうものかを紹介して見たいと思います。<br>
+            詳細は<a
+              href="https://aws.amazon.com/jp/aws-ten-reasons/"
+              target="_blank"
+              >こちら</a
+            >を参照して頂きたいですが、本文でも、こちらの記事から抜粋して簡単に紹介します。
+          </p>
+
+          <ol class="text-dark pt-3 pl-4 aws-merit-list">
+            <li>
+              <h3>
+                <a
+                  href="https://aws.amazon.com/jp/aws-ten-reasons/#1"
+                  target="_blank"
+                  >初期費用ゼロ／低価格</a
+                >
+              </h3>
+              <p>
+                昔は、ITリソースを調達するには、システムの要件定義をして、データセンター選定、ハードウェア調達、設置、OSインストール、設定、アプリケーションデプロイとたくさんのステップを踏む必要があり、構想から調達までに長いリードタイムと高額の初期投資が必要でした。しかし、クラウドサービスであれば、「必要なタイミングで即時に、低価格でITリソースを調達可能」となります。
+              </p>
+            </li>
+            <li>
+              <h3>
+                <a
+                  href="https://aws.amazon.com/jp/aws-ten-reasons/#2"
+                  target="_blank"
+                  >継続的な値下げ</a
+                >
+              </h3>
+              <p>
+                これは、AWSのすごいところなのですが、なんと、過去10年間で85回の値下げを実施しています。AWSの継続的な効率化により、顧客がその恩恵として利用料の値下げを受けることができるのです。AWSの企業努力によって、使っているだけで利用中のITリソースの保守費用が下がるというのもクラウドサービスの特徴の一つですね。
+              </p>
+            </li>
+            <li>
+              <h3>
+                <a
+                  href="https://aws.amazon.com/jp/aws-ten-reasons/#3"
+                  target="_blank"
+                  >サイジングからの解放</a
+                >
+              </h3>
+              <p>
+                従来、ITリソースを調達する際には、適切なサイジングが必要でした。また、システム利用のピークタイムを予想して、ピークに合わせてリソースを調達するため、余剰リソースに対してもコストを支払う必要がありました。<br>
+                AWSでは、必要なタイミングで数クリックで、リソースの増強が可能です。また必要が亡くなった際には、リソースの縮小ができるため、あらかじめ確保していかなくても、システムの特性やビジネスの状況に合わせて、瞬時に調整ができるのもクラウドサービスの特徴の一つです。
+              </p>
+            </li>
+            <li>
+              <h3>
+                <a
+                  href="https://aws.amazon.com/jp/aws-ten-reasons/#4"
+                  target="_blank"
+                  >ビジネス機会を逃さない俊敏性</a
+                >
+              </h3>
+              <p>
+                先ほども述べましたが、従来ITリソースの調達には、長いリードタイム(2-3ヶ月)のような期間が必要でした。しかしながら、クラウドサービスを活用すると、わずか数分でITリソースの調達が完了します。VUCAの時代においては、素早いビジネス判断を可能とするため、クラウドの活用は必須となってきています。
+              </p>
+            </li>
+            <li>
+              <h3>
+                <a
+                  href="https://aws.amazon.com/jp/aws-ten-reasons/#5"
+                  target="_blank"
+                  >最先端技術をいつでも利用可能</a
+                >
+              </h3>
+              <p>
+                2021年3月現在、AWSでは、200を超えるサービスを提供しており、AWSが提供する90%以上のサービスは、お客様のリクエストを元に作られています。機械学習やIoTなど最新のテクノロジーに関しても、Amazonのアカウントがあれば利用することができます。従来では各社で、新しい技術の導入を検討が必要であり、やはり導入リードタイムとコストが大きな負担となっておりました。
+              </p>
+            </li>
+            <li>
+              <h3>
+                <a
+                  href="https://aws.amazon.com/jp/aws-ten-reasons/#6"
+                  target="_blank"
+                  >いつでも即時にグローバル展開</a
+                >
+              </h3>
+              <p>
+                2021年3月現在、AWSでは、25のリージョンが存在しており、世界中にデータセンターを配置しています。従来のように、自社で海外にデータセンターを保有するには、現地の視察やデータセンターの選定から契約まで非常に時間のかかる作業が必要でしたが、AWSのアカウントさえ保有していれば、瞬時に世界各地のコンピューターリソースが活用できるのです。
+              </p>
+            </li>
+            <li>
+              <h3>
+                <a
+                  href="https://aws.amazon.com/jp/aws-ten-reasons/#7"
+                  target="_blank"
+                  >開発速度の向上と属人性の排除</a
+                >
+              </h3>
+              <p>
+                従来のシステムでは、システム規模が膨大になると、影響箇所の分析など、特定のエンジニアの知識に頼らざるをえないような状況がよくありました。<br>
+                マイクロサービスアーキテクチャの採用により、疎結合なシステム開発を行うことができ、属人化の排除や開発スピードの向上が実現できます。<br>
+                AWSのサービスを利用することで、マイクロサービスアーキテクチャでの開発手法がとてもとりやすくなりました。
+              </p>
+            </li>
+            <li>
+              <h3>
+                <a
+                  href="https://aws.amazon.com/jp/aws-ten-reasons/#8"
+                  target="_blank"
+                  >運用負荷軽減と生産性の向上</a
+                >
+              </h3>
+              <p>
+                従来のシステムでは、運用において、アプリケーションのみではなく、ネットワークを含むインフラストラクチャーのさまざまな保守運用を継続的に行う必要がありました。しかし、クラウドサービスでは、サーバレスでのコンピューターリソース提供が進んでおり、従来のようにサーバーを自社で管理しなくても、安定してコンピューターリソースを活用できるようになりました。
+              </p>
+            </li>
+            <li>
+              <h3>
+                <a
+                  href="https://aws.amazon.com/jp/aws-ten-reasons/#9"
+                  target="_blank"
+                  >高いセキュリティを確保</a
+                >
+              </h3>
+              <p>
+                従来では、自社内で全てのセキュリティリスクに備える必要がありました。AWSにおいては、2006年のサービス開始当初からセキュリティにはかなり力を入れており、第三者機関による検証が行われるなど、ある程度の範囲でAWS側でセキュリティを担保してくれます。そのため、クラウドサービスを利用することで、セキュリティ運用の負荷も軽減することができます。
+              </p>
+            </li>
+            <li>
+              <h3>
+                <a
+                  href="https://aws.amazon.com/jp/aws-ten-reasons/#10"
+                  target="_blank"
+                  >日本語での24時間サポート</a
+                >
+              </h3>
+              <p>
+                AWSでは、日本人のオペレーターが24時間365日問い合わせ対応に応じてくれます。海外事業者が提供するクラウドサービスのため、懸念がある方もいらっしゃるかと思いますが、既に、日本に広く普及しているため、サポート体制も充実しています。クラウドサービスはこのようにサポートも充実しているため、最近では安心して利用できるようになってきています。
+              </p>
+            </li>
+          </ol>
+
+          <p class="text-dark pt-3">
+            さて、ここまで「AWS の クラウドが選ばれる 10
+            の理由」をみることクラウドサービスとは何かを考えてきましたが、ご想像いただけたでしょうか？<br>
+            このように、従来のITサービスに対して大きな変革を起こしているクラウドサービスは、これからも更なるスピードで利用が加速していくことが予想されます。<br>
+            そのため、クラウドを活用できる人材の育成が急務だと考えています。
+          </p>
+        </div>
+
+        <div class="pt-5">
+          <h2 class="text-dark title-level1 text-center h2_title" id="p02">
+            AWSエンジニアになるためには？
+          </h2>
+          <p class="card-text text-dark px-4 pt-3">
+            さて、クラウドサービスの魅力がわかってきたところで、実際に自分がエンジニアになるためにはどうすれば良いのでしょうか？<br>
+            クラウドサービスを理解するためにも、まずはシェアNo1のAWSから勉強してみるのが良いのではないでしょうか。<br>
+            このような時代背景から、現在、ベンダー資格でAWS認定資格の人気が急上昇中です。
+          </p>
+        </div>
+
+        <div class="px-md-4 pt-5">
           <div class="pt-3">
-            <div class="text-center pb-3 w-100">
+            <h3 class="text-dark title-level2">AWS認定資格とは？？</h3>
+            <p class="card-text text-dark pt-3">
+              AWSでは、技術者の専門知識を認定するために、11種類の資格を準備しております。<br>
+              最初は、エントリー資格の2種類のどちらかを目指してみてはいかがでしょうか？
+            </p>
+            <ul class="text-dark pl-4">
+              <li class="pb-3">
+                <span class="font-weight-bold"
+                  >AWS 認定 クラウドプラクティショナー</span
+                ><br>
+                クラウドサービスをこれから活用するために、クラウドとは何か？クラウドの価値は何かを理解したい人におすすめです。
+              </li>
+              <li>
+                <span class="font-weight-bold"
+                  >AWS 認定 ソリューションアーキテクト – アソシエイト</span
+                ><br>
+                AWSを既に実務で触ったことがある方や、インフラエンジニアの経験をお持ちの方などで、AWSのサービスを幅広く理解したい人におすすめです。
+              </li>
+            </ul>
+            <p class="card-text">
+              <a
+                href="https://aws.amazon.com/jp/certification/"
+                class="in-page-link"
+                target="_blank"
+                >https://aws.amazon.com/jp/certification/</a
+              >
+            </p>
+          </div>
+
+          <div class="pt-5">
+            <h3 class="text-dark title-level2">
+              実技試験を受けられるプラットフォームengineedとは？
+            </h3>
+            <div class="text-center py-3 w-100">
               <img
-                src="/img/whats_cloud_services1.jpg"
-                alt="コワーキングスペースの画像"
+                src="/img/engineedLogo2.png"
+                alt="engineedのロゴ"
                 class="card-img"
               />
             </div>
-
-            <div class="pt-5">
-              <ul class="table-of-contents">
-                <h4 class="text-center font-weight-bold mb-3">目次</h4>
-                <li><a href="#p01">クラウドコンピューティングとは？</a></li>
-                <li><a href="#p02">AWSエンジニアになるためには？</a></li>
-                <li><a href="#p03">最後に</a></li>
-              </ul>
-            </div>
-
-            <p class="pt-5 card-text text-dark">
-              AWS(Amazon Web
-              Services)に関して、エンジニアとして生きていると関わらないことがなくなってきてるのではないでしょうか？<br>
-              Canalysのレポートで<q
-                cite="https://www.canalys.com/newsroom/global-cloud-market-q4-2020"
-                >2020年4Qのクラウドインフラ支出は約4兆2000億円に達し前年同期比で25%増加した</q
-              >と報告されていることから見ても、ものすごい勢いでクラウドコンピューティングの活用が広がっていることが分かります。また、2011年に東京リージョンがオープンして約10年で急拡大していることも見て取れます。<br><br>
-              このような背景から、クラウドを活用できるエンジニア、その中でも特に、シェアNo1であるAWSエンジニアの不足が各所で叫ばれているように思います。
+            <p class="card-text text-dark pt-3">
+              HarborSを運営する、株式会社アンチパターンが提供するプラットフォームです。AWS認定資格保有者のみが登録できる有資格者限定のサービスです。<br>
+              こちらのサービスでは、AWSを実務レベルで使いこなすための力試しができる実技テストが提供されています。また、実技テストで実力を証明しながら、副業や転職のオファーがもらえるのも特徴の一つです。<br><br>
+              <a
+                href="https://info.engineed.io/engineer/?utm_source=harbors_hp&utm_medium=article&utm_campaign=aws_10_reason"
+                class="in-page-link"
+                >https://info.engineed.io/engineer/</a
+              >
             </p>
           </div>
+        </div>
 
-          <div class="pt-5">
-            <h2 class="text-dark title-level1 text-center h2_title" id="p01">
-              クラウドコンピューティングとは？
-            </h2>
-            <p class="text-dark pt-3">
-              インターネット経由で、コンピューターリソースを必要な時に必要な分だけ利用できるサービスの総称です。<br>
-              「AWSのクラウドが選ばれる10の理由」をみることでクラウドコンピューティングがどういうものかを紹介して見たいと思います。<br>
-              詳細は<a
-                href="https://aws.amazon.com/jp/aws-ten-reasons/"
-                target="_blank"
-                >こちら</a
-              >を参照して頂きたいですが、本文でも、こちらの記事から抜粋して簡単に紹介します。
-            </p>
-
-            <ol class="text-dark pt-3 pl-4 aws-merit-list">
-              <li>
-                <h3>
-                  <a
-                    href="https://aws.amazon.com/jp/aws-ten-reasons/#1"
-                    target="_blank"
-                    >初期費用ゼロ／低価格</a
-                  >
-                </h3>
-                <p>
-                  昔は、ITリソースを調達するには、システムの要件定義をして、データセンター選定、ハードウェア調達、設置、OSインストール、設定、アプリケーションデプロイとたくさんのステップを踏む必要があり、構想から調達までに長いリードタイムと高額の初期投資が必要でした。しかし、クラウドサービスであれば、「必要なタイミングで即時に、低価格でITリソースを調達可能」となります。
-                </p>
-              </li>
-              <li>
-                <h3>
-                  <a
-                    href="https://aws.amazon.com/jp/aws-ten-reasons/#2"
-                    target="_blank"
-                    >継続的な値下げ</a
-                  >
-                </h3>
-                <p>
-                  これは、AWSのすごいところなのですが、なんと、過去10年間で85回の値下げを実施しています。AWSの継続的な効率化により、顧客がその恩恵として利用料の値下げを受けることができるのです。AWSの企業努力によって、使っているだけで利用中のITリソースの保守費用が下がるというのもクラウドサービスの特徴の一つですね。
-                </p>
-              </li>
-              <li>
-                <h3>
-                  <a
-                    href="https://aws.amazon.com/jp/aws-ten-reasons/#3"
-                    target="_blank"
-                    >サイジングからの解放</a
-                  >
-                </h3>
-                <p>
-                  従来、ITリソースを調達する際には、適切なサイジングが必要でした。また、システム利用のピークタイムを予想して、ピークに合わせてリソースを調達するため、余剰リソースに対してもコストを支払う必要がありました。<br>
-                  AWSでは、必要なタイミングで数クリックで、リソースの増強が可能です。また必要が亡くなった際には、リソースの縮小ができるため、あらかじめ確保していかなくても、システムの特性やビジネスの状況に合わせて、瞬時に調整ができるのもクラウドサービスの特徴の一つです。
-                </p>
-              </li>
-              <li>
-                <h3>
-                  <a
-                    href="https://aws.amazon.com/jp/aws-ten-reasons/#4"
-                    target="_blank"
-                    >ビジネス機会を逃さない俊敏性</a
-                  >
-                </h3>
-                <p>
-                  先ほども述べましたが、従来ITリソースの調達には、長いリードタイム(2-3ヶ月)のような期間が必要でした。しかしながら、クラウドサービスを活用すると、わずか数分でITリソースの調達が完了します。VUCAの時代においては、素早いビジネス判断を可能とするため、クラウドの活用は必須となってきています。
-                </p>
-              </li>
-              <li>
-                <h3>
-                  <a
-                    href="https://aws.amazon.com/jp/aws-ten-reasons/#5"
-                    target="_blank"
-                    >最先端技術をいつでも利用可能</a
-                  >
-                </h3>
-                <p>
-                  2021年3月現在、AWSでは、200を超えるサービスを提供しており、AWSが提供する90%以上のサービスは、お客様のリクエストを元に作られています。機械学習やIoTなど最新のテクノロジーに関しても、Amazonのアカウントがあれば利用することができます。従来では各社で、新しい技術の導入を検討が必要であり、やはり導入リードタイムとコストが大きな負担となっておりました。
-                </p>
-              </li>
-              <li>
-                <h3>
-                  <a
-                    href="https://aws.amazon.com/jp/aws-ten-reasons/#6"
-                    target="_blank"
-                    >いつでも即時にグローバル展開</a
-                  >
-                </h3>
-                <p>
-                  2021年3月現在、AWSでは、25のリージョンが存在しており、世界中にデータセンターを配置しています。従来のように、自社で海外にデータセンターを保有するには、現地の視察やデータセンターの選定から契約まで非常に時間のかかる作業が必要でしたが、AWSのアカウントさえ保有していれば、瞬時に世界各地のコンピューターリソースが活用できるのです。
-                </p>
-              </li>
-              <li>
-                <h3>
-                  <a
-                    href="https://aws.amazon.com/jp/aws-ten-reasons/#7"
-                    target="_blank"
-                    >開発速度の向上と属人性の排除</a
-                  >
-                </h3>
-                <p>
-                  従来のシステムでは、システム規模が膨大になると、影響箇所の分析など、特定のエンジニアの知識に頼らざるをえないような状況がよくありました。<br>
-                  マイクロサービスアーキテクチャの採用により、疎結合なシステム開発を行うことができ、属人化の排除や開発スピードの向上が実現できます。<br>
-                  AWSのサービスを利用することで、マイクロサービスアーキテクチャでの開発手法がとてもとりやすくなりました。
-                </p>
-              </li>
-              <li>
-                <h3>
-                  <a
-                    href="https://aws.amazon.com/jp/aws-ten-reasons/#8"
-                    target="_blank"
-                    >運用負荷軽減と生産性の向上</a
-                  >
-                </h3>
-                <p>
-                  従来のシステムでは、運用において、アプリケーションのみではなく、ネットワークを含むインフラストラクチャーのさまざまな保守運用を継続的に行う必要がありました。しかし、クラウドサービスでは、サーバレスでのコンピューターリソース提供が進んでおり、従来のようにサーバーを自社で管理しなくても、安定してコンピューターリソースを活用できるようになりました。
-                </p>
-              </li>
-              <li>
-                <h3>
-                  <a
-                    href="https://aws.amazon.com/jp/aws-ten-reasons/#9"
-                    target="_blank"
-                    >高いセキュリティを確保</a
-                  >
-                </h3>
-                <p>
-                  従来では、自社内で全てのセキュリティリスクに備える必要がありました。AWSにおいては、2006年のサービス開始当初からセキュリティにはかなり力を入れており、第三者機関による検証が行われるなど、ある程度の範囲でAWS側でセキュリティを担保してくれます。そのため、クラウドサービスを利用することで、セキュリティ運用の負荷も軽減することができます。
-                </p>
-              </li>
-              <li>
-                <h3>
-                  <a
-                    href="https://aws.amazon.com/jp/aws-ten-reasons/#10"
-                    target="_blank"
-                    >日本語での24時間サポート</a
-                  >
-                </h3>
-                <p>
-                  AWSでは、日本人のオペレーターが24時間365日問い合わせ対応に応じてくれます。海外事業者が提供するクラウドサービスのため、懸念がある方もいらっしゃるかと思いますが、既に、日本に広く普及しているため、サポート体制も充実しています。クラウドサービスはこのようにサポートも充実しているため、最近では安心して利用できるようになってきています。
-                </p>
-              </li>
-            </ol>
-
-            <p class="text-dark pt-3">
-              さて、ここまで「AWS の クラウドが選ばれる 10
-              の理由」をみることクラウドサービスとは何かを考えてきましたが、ご想像いただけたでしょうか？<br>
-              このように、従来のITサービスに対して大きな変革を起こしているクラウドサービスは、これからも更なるスピードで利用が加速していくことが予想されます。<br>
-              そのため、クラウドを活用できる人材の育成が急務だと考えています。
-            </p>
-          </div>
-
-          <div class="pt-5">
-            <h2 class="text-dark title-level1 text-center h2_title" id="p02">
-              AWSエンジニアになるためには？
-            </h2>
-            <p class="card-text text-dark px-4 pt-3">
-              さて、クラウドサービスの魅力がわかってきたところで、実際に自分がエンジニアになるためにはどうすれば良いのでしょうか？<br>
-              クラウドサービスを理解するためにも、まずはシェアNo1のAWSから勉強してみるのが良いのではないでしょうか。<br>
-              このような時代背景から、現在、ベンダー資格でAWS認定資格の人気が急上昇中です。
-            </p>
-          </div>
-
-          <div class="px-4 pt-5">
-            <div class="pt-3">
-              <h3 class="text-dark title-level2">AWS認定資格とは？？</h3>
-              <p class="card-text text-dark pt-3">
-                AWSでは、技術者の専門知識を認定するために、11種類の資格を準備しております。<br>
-                最初は、エントリー資格の2種類のどちらかを目指してみてはいかがでしょうか？
-              </p>
-              <ul class="text-dark pl-4">
-                <li class="pb-3">
-                  <span class="font-weight-bold"
-                    >AWS 認定 クラウドプラクティショナー</span
-                  ><br>
-                  クラウドサービスをこれから活用するために、クラウドとは何か？クラウドの価値は何かを理解したい人におすすめです。
-                </li>
-                <li>
-                  <span class="font-weight-bold"
-                    >AWS 認定 ソリューションアーキテクト – アソシエイト</span
-                  ><br>
-                  AWSを既に実務で触ったことがある方や、インフラエンジニアの経験をお持ちの方などで、AWSのサービスを幅広く理解したい人におすすめです。
-                </li>
-              </ul>
-              <p class="card-text">
-                <a
-                  href="https://aws.amazon.com/jp/certification/"
-                  class="in-page-link"
-                  target="_blank"
-                  >https://aws.amazon.com/jp/certification/</a
-                >
-              </p>
-            </div>
-
-            <div class="pt-5">
-              <h3 class="text-dark title-level2">
-                実技試験を受けられるプラットフォームengineedとは？
-              </h3>
-              <div class="text-center py-3 w-100">
-                <img
-                  src="/img/engineedLogo2.png"
-                  alt="engineedのロゴ"
-                  class="card-img"
-                />
-              </div>
-              <p class="card-text text-dark pt-3">
-                HarborSを運営する、株式会社アンチパターンが提供するプラットフォームです。AWS認定資格保有者のみが登録できる有資格者限定のサービスです。<br>
-                こちらのサービスでは、AWSを実務レベルで使いこなすための力試しができる実技テストが提供されています。また、実技テストで実力を証明しながら、副業や転職のオファーがもらえるのも特徴の一つです。<br><br>
-                <a
-                  href="https://info.engineed.io/engineer/?utm_source=harbors_hp&utm_medium=article&utm_campaign=aws_10_reason"
-                  class="in-page-link"
-                  >https://info.engineed.io/engineer/</a
-                >
-              </p>
-            </div>
-          </div>
-
-          <div class="pt-5">
-            <h2 class="text-dark title-level1 text-center h2_title" id="p03">
-              最後に
-            </h2>
-            <p class="card-text text-dark px-4 pt-3">
-              AWSを題材に、クラウドサービスについて考えてきましたが、いかがでしたでしょうか？<br>
-              現代では、電気や水道が生活インフラとして整ってきているのと同様に、ITサービスがビジネスインフラとして整ってきているのがわかって頂けたのではないでしょうか。これからの時代にAWSを含むクラウド人材がもっと増えていくことを期待しています。
-            </p>
-          </div>
+        <div class="pt-5">
+          <h2 class="text-dark title-level1 text-center h2_title" id="p03">
+            最後に
+          </h2>
+          <p class="card-text text-dark px-4 pt-3">
+            AWSを題材に、クラウドサービスについて考えてきましたが、いかがでしたでしょうか？<br>
+            現代では、電気や水道が生活インフラとして整ってきているのと同様に、ITサービスがビジネスインフラとして整ってきているのがわかって頂けたのではないでしょうか。これからの時代にAWSを含むクラウド人材がもっと増えていくことを期待しています。
+          </p>
         </div>
       </div>
     </div>
