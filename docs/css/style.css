@@ -2089,4 +2089,41 @@ form span.bg-danger {
   right: 20px;
 }
 
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+お問い合わせページ
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.contact-form {
+  width: 600px;
+}
+
+.contact-form label {
+  display: block;
+  /* margin-bottom: 20px; */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 65%;
+  margin-left: auto;
+}
+
+.contact-form input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767.98px) {
+
+  .contact-form {
+    width: 350px;
+  }
+
+  .contact-form input, .contact-form textarea {
+  width: 100%;
+}
+}
+
 /* END */
