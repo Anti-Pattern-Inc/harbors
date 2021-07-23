@@ -2013,9 +2013,12 @@ form span.bg-danger {
   position: relative;
   display: inline-block;
   padding-left: 20px;
+  font-size: 20px;
+  color: #fff;
+  /* vertical-align: center; */
 }
 
-.arrow_r:before {
+.arrow_r::after {
   content: '';
   width: 12px;
   height: 12px;
@@ -2024,10 +2027,15 @@ form span.bg-danger {
   border-right: solid 2px #fff;
   position: absolute;
   top: 50%;
-  left: -5px;
+  left: -10px;
   margin-top: -8px;
   transform: rotate(45deg);
   transition: left .2s;
+  /* vertical-align: center; */
+}
+
+.fixed-cta .top-button .arrow_r::after {
+  margin-top: -7px;
 }
 
 .virtual-fv-cv-btn > button {
@@ -2036,19 +2044,22 @@ form span.bg-danger {
   padding: 10px;
 }
 
-.virtual-fv-cv-btn > button .arrow_r {
-  font-size: 20px;
-  color: #fff;
+.top-button {
+  width: auto;
 }
 
 .virtual-fv-cv-btn > button:hover .arrow_r {
   color: #df7156;
 }
 
-.virtual-fv-cv-btn > button:hover .arrow_r:before {
+.virtual-fv-cv-btn > button:hover .arrow_r::after {
   border-top: solid 2px #df7156;
   border-right: solid 2px #df7156;
-  left: 0;
+  left: -2px;
+}
+
+.top-button:hover .arrow_r:after {
+  left: -2px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -2062,7 +2073,7 @@ form span.bg-danger {
     width: 80%;
   }
 
-  .virtual-fv-cv-btn > button .arrow_r {
+  .virtual-fv-cv-btn > button .arrow_r, .top-button .arrow_r {
     font-size: 16px;
   }
 }
@@ -2082,11 +2093,6 @@ form span.bg-danger {
   .virtual-fv-cv-btn > button {
     padding: 7px;
   }
-}
-
-.fixed-cta {
-  left: auto;
-  right: 20px;
 }
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
