@@ -232,28 +232,65 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         <div class="row">
           <div class="col-lg-12 pt-sm-4 pt-md-5">
             <h1 class="contents-title-2">
-              バーチャルオフィス <wbr >ご契約までの流れ
+              バーチャルオフィス<br class="d-sm-none"> ご契約までの流れ
             </h1>
           </div>
         </div>
       </div>
-      <div class="fixed-bottom mb-2">
-        <button
-          type="button"
-          class="
+      <div class="fixed-bottom mb-2 virtual-form-btn text-center">
+        <button type="button" class="
             btn btn-warning btn-lg
             mx-auto
             nowrap
-            top-button
             text-white
-            d-block
-          "
-          onclick="countClickByGa();"
-          data-toggle="modal"
-          data-target="#inquiryFormModal"
-        >
+            top-button
+            d-none d-sm-inline-block
+          " onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal" id="toPcInquiryFormModal">
           もっと詳しく知りたい
         </button>
+      </div>
+      <div
+        class="
+          fixed-bottom
+          mb-0
+          d-flex d-sm-none
+          mobile-footer mobile-footer-special
+        "
+      >
+        <div>
+          <button
+            type="button"
+            class="btn btn-warning m-0 w-100 nowrap text-white pb-1 pt-2 px-0"
+            onclick="countClickByGa();"
+            data-toggle="modal"
+            data-target="#inquiryFormModal"
+          >
+            <img
+              src="/img/contact.svg"
+              alt="お問い合わせ"
+              width="25px"
+              height="25px"
+              class="d-block mb-1 mx-auto"
+            >
+            もっと詳しく知りたい
+          </button>
+        </div>
+        <div>
+          <a
+            href="tel:03-6885-6140"
+            class="btn btn-warning m-0 w-100 pb-1 pt-2 px-0 text-white nowrap"
+            onclick="ga('send', 'event', 'call', 1);"
+          >
+            <img
+              src="/img/tel.svg"
+              alt="電話"
+              width="25px"
+              height="25px"
+              class="d-block mb-1 mx-auto"
+            >
+            電話で相談をする
+          </a>
+        </div>
       </div>
     </div>
 
