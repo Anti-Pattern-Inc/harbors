@@ -1,0 +1,122 @@
+.ja {
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
+}
+
+.golden-text {
+  color: #8b7706;
+  font-size: 14px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.virtual-office-main {
+  padding-top: 80px;
+}
+
+
+/* second-view */
+.second-view {
+  position: relative;
+}
+
+.second-view-left {
+  width: 38%;
+  z-index: 10;
+  /* margin: 60px 0 0; */
+}
+
+.second-view-title {
+  margin: 55px 0 50px;
+  color: #333;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 68px;
+}
+
+.second-view-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 30px;
+}
+
+.second-view-right {
+  width: 58%;
+  z-index: 10;
+}
+
+.second-view-right img {
+  border-radius: 20px 0 0 20px;
+}
+
+.second-view-bg::after {
+  content: "";
+  background-color: #f8f8f5;
+  position: absolute;
+  border-radius: 0 0 0 100px;
+  width: 69%;
+  height: 370px;
+  z-index: -1;
+  right: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 1224px) {
+  .second-view-left {
+    margin-top: 0;
+    width: 50%;
+  }
+
+  .second-view-title {
+    margin: 18px 0;
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  .second-view-description {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .second-view-right {
+    width: 46%;
+  }
+
+  .second-view-bg::after {
+    height: 274px;
+  }
+}
+
+@media screen and (max-width: 767.8px) {
+  .second-view-left {
+    width: 100%;
+    max-width: 354px;
+  }
+
+  .second-view-title {
+    margin: 20px 0;
+    font-size: 32px;
+    line-height: 54px;
+  }
+
+  .second-view-description {
+    margin-bottom: 40px;
+  }
+
+  .second-view-right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .second-view-left {
+    width: 300px;
+  }
+
+  .second-view-title {
+    font-size: 28px;
+    line-height: 50px;
+  }
+}
+/* second-view */
