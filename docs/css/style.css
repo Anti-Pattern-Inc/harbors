@@ -2028,16 +2028,12 @@ form span.bg-danger {
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
-.arrow_r {
+.top-button {
   position: relative;
-  display: inline-block;
-  padding-left: 20px;
   font-size: 20px;
-  color: #fff;
-  /* vertical-align: center; */
 }
 
-.arrow_r::after {
+.top-button::after {
   content: '';
   width: 12px;
   height: 12px;
@@ -2046,35 +2042,29 @@ form span.bg-danger {
   border-right: solid 2px #fff;
   position: absolute;
   top: 50%;
-  left: -10px;
-  margin-top: -8px;
-  transform: rotate(45deg);
-  transition: left .2s;
-  /* vertical-align: center; */
-}
-
-.fixed-cta .top-button .arrow_r::after {
+  right: 30px;
   margin-top: -7px;
+  transform: rotate(45deg);
+  transition: right .2s;
 }
 
 .virtual-fv-cv-btn > button {
   width: 80%;
   transition: background 0.4s;
   padding: 10px;
+  font-size: 20px;
 }
 
-.virtual-fv-cv-btn > button:hover .arrow_r {
-  color: #df7156;
-}
-
-.virtual-fv-cv-btn > button:hover .arrow_r::after {
+.virtual-fv-cv-btn .top-button:hover::after {
   border-top: solid 2px #df7156;
   border-right: solid 2px #df7156;
-  left: -2px;
+  right: 10px;
 }
 
-.top-button:hover .arrow_r:after {
-  left: -2px;
+.virtual-form-btn .top-button:hover::after {
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  right: 10px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -2088,8 +2078,16 @@ form span.bg-danger {
     width: 80%;
   }
 
-  .virtual-fv-cv-btn > button .arrow_r, .top-button .arrow_r {
+  .top-button {
     font-size: 16px;
+  }
+
+  .virtual-fv-cv-btn > button {
+    font-size: 16px;
+  }
+
+  .virtual-form-btn .top-button {
+    width: 340px;
   }
 }
 
@@ -2122,7 +2120,6 @@ form span.bg-danger {
 
 .contact-form label {
   display: block;
-  /* margin-bottom: 20px; */
 }
 
 .contact-form input,
@@ -2144,7 +2141,7 @@ form span.bg-danger {
 
   .contact-form input, .contact-form textarea {
   width: 100%;
-}
+  }
 }
 
 /* END */
