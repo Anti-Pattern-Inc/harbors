@@ -2028,12 +2028,12 @@ form span.bg-danger {
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
-.top-button {
+.virtual-fv-cv-btn .top-button, .virtual-form-btn .top-button {
   position: relative;
   font-size: 20px;
 }
 
-.top-button::after {
+.virtual-fv-cv-btn .top-button::after, .virtual-form-btn .top-button::after {
   content: '';
   width: 12px;
   height: 12px;
@@ -2058,13 +2058,13 @@ form span.bg-danger {
 .virtual-fv-cv-btn .top-button:hover::after {
   border-top: solid 2px #df7156;
   border-right: solid 2px #df7156;
-  right: 10px;
+  right: 20px;
 }
 
 .virtual-form-btn .top-button:hover::after {
   border-top: solid 2px #fff;
   border-right: solid 2px #fff;
-  right: 10px;
+  right: 20px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -2078,7 +2078,7 @@ form span.bg-danger {
     width: 80%;
   }
 
-  .top-button {
+  .virtual-fv-cv-btn .top-button, .virtual-form-btn .top-button {
     font-size: 16px;
   }
 
