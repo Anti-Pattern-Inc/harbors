@@ -1476,10 +1476,11 @@ g-contents
   margin: 0 10px 0;
 }
 /** NAP表 共通 **/
-.c-nap h3 {
+.c-nap h3, .c-nap .c-nap-title {
   background: #18315e;
   padding: 10px;
   color: #fff;
+  font-size: 1.75rem;
 }
 .c-table {
   border-collapse: collapse;
@@ -1893,12 +1894,22 @@ g-contents
   position: absolute;
   bottom: -70px;
   right: 160px;
+  cursor: pointer;
+}
+
+.space-slider .prev:hover {
+  opacity: 0.6;
 }
 
 .space-slider .next {
   position: absolute;
   bottom: -70px;
   right: 100px;
+  cursor: pointer;
+}
+
+.space-slider .next:hover {
+  opacity: 0.6;
 }
 
 .space-slider .prev img,
