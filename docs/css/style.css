@@ -1461,6 +1461,11 @@ g-contents
   width: 100%;
 }
 /** リンク一覧 共通 **/
+.c-pagelink h3 {
+  background: #18315e;
+  padding: 10px;
+  color: #fff;
+}
 .c-pagelink {
   padding-left: 20px;
 }
@@ -2110,47 +2115,36 @@ form span.bg-danger {
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
 .c-pagelink li {
-	position: relative;
-	padding-left: 20px;
   list-style: none;
-}
-
-.c-pagelink li:after {
-	content: '';
-	display: block; 
-	position: absolute; 
-	background: #777;
-	width: 9px;
-	height: 9px; 
-	top: 6px; 
-	left: 0px; 
-	transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
+  margin-bottom: 0;
 }
 
 .c-linkblock h2 {
-  background: #18315e;
-  padding: 10px;
-  color: #fff;
   font-size: 1.75rem;
 }
 
-.c-linkblock h3 {
-  font-size: 1.25rem;
-  padding: 40px 0 20px;
+.c-pagelink img {
+  width: 130px;
+  height: 90px;
+  object-fit: cover;
 }
 
-.column-leader {
-  background-color: transparent;
-  color: #000;
+.c-pagelink {
+  padding-left: 0;
 }
 
 @media screen and (max-width: 768px) {
-  .c-linkblock h2 {
-      font-size: 1.2rem !important;
+  .c-lineblock h2 {
+    font-size: 20px;
+  }
+
+  .c-pagelink img {
+    width: 80px;
+    height: 60px;
   }
 }
+
+
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
