@@ -301,6 +301,7 @@
     border-radius: 50%;
     background: #FFF;
     z-index: 10;
+    cursor: pointer;
   }
 
   .nav-toggle span {
