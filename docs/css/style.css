@@ -1116,7 +1116,7 @@ g-contents
   }
 
   .contents-title-2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .contents-title-3 {
@@ -1134,7 +1134,7 @@ g-contents
 
 @media (max-width: 576px) {
   .contents-title-2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .contents-title-3 {
@@ -2120,7 +2120,7 @@ form span.bg-danger {
 }
 
 .c-linkblock h2 {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
 }
 
 .c-pagelink img {
