@@ -21,6 +21,12 @@
   position: relative;
 }
 
+.second-view-container {
+  max-width: calc((100vw + 1140px) / 2);
+  padding-left: 20px;
+  margin: 0 0 0 auto;
+}
+
 .second-view-left {
   width: 38%;
   z-index: 10;
@@ -28,7 +34,7 @@
 }
 
 .second-view-title {
-  margin: 30px 0;
+  margin: 20px 0;
   color: #333;
   font-weight: bold;
   font-size: 36px;
@@ -71,7 +77,7 @@
 
   .second-view-title {
     margin: 18px 0;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 50px;
   }
 
@@ -90,6 +96,11 @@
 }
 
 @media screen and (max-width: 767.8px) {
+  .second-view-container {
+    max-width: 100%;
+    padding-left: 0%;
+  }
+
   .second-view-left {
     width: 100%;
     max-width: 354px;
