@@ -1116,7 +1116,7 @@ g-contents
   }
 
   .contents-title-2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .contents-title-3 {
@@ -1134,7 +1134,7 @@ g-contents
 
 @media (max-width: 576px) {
   .contents-title-2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .contents-title-3 {
@@ -1461,7 +1461,7 @@ g-contents
   width: 100%;
 }
 /** リンク一覧 共通 **/
-.c-linkblock h3 {
+.c-pagelink h3 {
   background: #18315e;
   padding: 10px;
   color: #fff;
@@ -2107,6 +2107,44 @@ form span.bg-danger {
     padding: 7px;
   }
 }
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+お役立ちコラム
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.c-pagelink li {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.c-linkblock h2 {
+  font-size: 1.25rem;
+}
+
+.c-pagelink img {
+  width: 130px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.c-pagelink {
+  padding-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .c-lineblock h2 {
+    font-size: 20px;
+  }
+
+  .c-pagelink img {
+    width: 80px;
+    height: 60px;
+  }
+}
+
+
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
