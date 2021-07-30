@@ -33,42 +33,6 @@ $(function () {
     }
   )
 
-
-    
-  $('.footer-disabled').hover(
-    function () {
-      $('.transparent-area').remove();
-      if ($('.hovered')) {
-        closeSpeechBubble()
-      }
-      var speechBubble = $(this).next();
-      $(this).addClass('hovered');
-      speechBubble.addClass('hovered');
-      transparentAreaWidth = speechBubble.outerWidth();
-      transparentAreaHeight = 42;
-      $(this).before('<div class="transparent-area hovered"></div>');
-      $('.transparent-area').offset({
-        top: speechBubble.offset().top + speechBubble.outerHeight(),
-        left: speechBubble.offset().left
-      })
-      $('.transparent-area').width(transparentAreaWidth);
-      $('.transparent-area').height(transparentAreaHeight);
-    },
-    function () {
-      if ($('.transparent-area').is(':hover')) {
-        $('.footer-speech-bubble.hovered').mouseleave(
-          function () {
-            $('.transparent-area').remove();
-            closeSpeechBubble()
-          }
-        )
-      } else {
-        $('.transparent-area').remove();
-        closeSpeechBubble()
-      }
-    }
-  );
-
   function closeSpeechBubble() {
     $('.header-disabled').removeClass('hovered');
     $('.footer-disabled').removeClass('hovered');
