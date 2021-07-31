@@ -2225,8 +2225,10 @@ form span.bg-danger {
 }
 
 .flow-number {
-  font-size: 40px;
+  font-size: 50px;
   line-height: 60px;
+  font-weight: 400;
+  font-family: 'Barlow', sans-serif;
 }
 
 .flow-description {
