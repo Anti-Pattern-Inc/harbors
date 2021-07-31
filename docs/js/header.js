@@ -32,14 +32,14 @@ $(function () {
       }
     }
   )
-
+  
   function closeSpeechBubble() {
     $('.header-disabled').removeClass('hovered');
     $('.footer-disabled').removeClass('hovered');
     $('.speech-bubble').removeClass('hovered');
     $('.footer-speech-bubble').removeClass('hovered');
   }
-      
+  
   // ハンバーガー
   $('.nav-toggle').click(function () {
     let deviceWidth = $('html').width();
@@ -56,5 +56,16 @@ $(function () {
         left: deviceWidth
       }, 500);
     }
+  });
+
+  $('.nav-hover').click(
+    function() {
+      let deviceWidth = $('html').width();
+      $("html").removeClass("no-scroll");
+      $('.nav-toggle').removeClass('cross');
+      $('.nav-menu').removeClass('open');
+      $('.nav-menu').stop().animate({
+        left: deviceWidth
+      }, 500);
   });
 });

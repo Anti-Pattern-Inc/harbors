@@ -110,7 +110,7 @@
   font-weight: 600;
 }
 
-.nav-menu ul > li:not(:first-child) {
+.nav-menu ul > li {
   margin-left: 20px;
 }
 
@@ -242,7 +242,7 @@
     margin-left: 8px;
   }
 
-  .nav-menu ul > li:not(:first-child) {
+  .nav-menu ul > li {
     margin-left: 6px;
   }
 }
