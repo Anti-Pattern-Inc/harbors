@@ -1,5 +1,5 @@
-.breadcrumb span {
-  color: #333;
+.breadcrumb li a:hover {
+  text-decoration: underline;
 }
 
 .breadcrumb li:after {
@@ -25,10 +25,6 @@
 
 .no-scroll {
   overflow: hidden;
-}
-
-.breadcrumb li a:hover {
-  text-decoration: none;
 }
 
 /* header */
