@@ -34,6 +34,8 @@
       content="https://harbors.anti-pattern.co.jp/img/ogimg.jpg"
     >
     <meta property="fb:app_id" content="621479295258516">
+    <!-- VOTOPを正規化 -->
+    <link rel="canonical" href="https://harbors.anti-pattern.co.jp/virtual_office/">
     <!-- スタイルシートはここから -->
     <link
       rel="stylesheet"
@@ -152,7 +154,7 @@
         <div class="collapse navbar-collapse" id="navbar-header">
           <ul class="navbar-nav ml-auto pt-2">
             <li class="nav-item">
-              <a class="nav-link" href="/virtual_office/">バーチャルオフィス</a>
+              <a class="nav-link" href="/virtual_office/columns/">お役立ちコラム</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -164,7 +166,7 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                スペース
+                レンタルスペース
               </a>
               <div
                 class="dropdown-menu"
@@ -222,21 +224,21 @@
       <!-- トップ画像 -->
       <section class="second-view pb-5">
         <div class="second-view-bg"></div>
-        <div class="right-container">
+        <div class="second-view-container right-container">
           <div class="d-md-flex justify-content-between align-items-center">
             <div class="second-view-left mx-auto mx-md-0">
-              <p class="golden-text">HarborS 表参道</p>
-              <h1 class="rooms-title ja">
-                港区青山の<br>バーチャルオフィス
-              </h1>
+              <p class="golden-text mb-1">港区青山のバーチャルオフィス <br class="d-md-none">HarborS 表参道</p>
+              <!-- <h2 class="golden-text"></h2> -->
+              <h2 class="second-view-title ja">
+                リアルにこだわった<br>次世代バーチャルオフィス
+              </h2>
               <p class="rooms-description ja mb-4">
-                東京都内のブランドエリアで最も人気な一等地「港区」の住所を5,280円(税込)からご利用頂けます。<br>
-                法人登記、郵便転送を含む豊富なオプションをお選び頂けます。
+                東京都内のブランドエリアで最も人気な一等地「港区」の住所を5,280円(税込)からご利用頂けます。法人登記、郵便転送を含む豊富なオプションをお選び頂けます。
               </p>
               <div class="virtual-fv-cv-btn align-items-center">
                 <button
                   type="button"
-                  class="btn btn-sm-lg top-button d-block mx-auto mt-lg-3"
+                  class="btn btn-sm-lg top-button d-block mx-auto"
                   onclick="countClickByGa();"
                   data-toggle="modal"
                   data-target="#inquiryFormModal"
@@ -244,7 +246,7 @@
                   見学してみる
                 </button>
               </div>
-              <p class="mt-3 text-center rooms-description">オンライン説明会も実施しております。</p>
+              <p class="mt-3 text-center second-view-description">オンライン説明会も実施しております。</p>
             </div>
             
             <div class="second-view-right">
@@ -258,70 +260,70 @@
           </div>
         </div>
       </section>
-        <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta">
+      <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta">
+        <button
+          type="button"
+          class="
+            btn btn-warning btn-lg
+            mx-auto
+            nowrap
+            text-white
+            top-button
+            d-none d-sm-inline-block
+          "
+          onclick="countClickByGa();"
+          data-toggle="modal"
+          data-target="#inquiryFormModal"
+          id="toPcInquiryFormModal"
+        >
+          もっと詳しく知りたい
+        </button>
+      </div>
+
+      <div
+        class="
+          fixed-bottom
+          mb-0
+          d-flex d-sm-none
+          mobile-footer mobile-footer-special
+        "
+      >
+        <div>
           <button
             type="button"
-            class="
-              btn btn-warning btn-lg
-              mx-auto
-              nowrap
-              text-white
-              top-button
-              d-none d-sm-inline-block
-            "
+            class="btn btn-warning m-0 w-100 nowrap text-white pb-1 pt-2 px-0"
             onclick="countClickByGa();"
             data-toggle="modal"
             data-target="#inquiryFormModal"
-            id="toPcInquiryFormModal"
           >
+            <img
+              src="/img/contact.svg"
+              alt="お問い合わせ"
+              width="25px"
+              height="25px"
+              class="d-block mb-1 mx-auto"
+              id="toSpInquiryFormModal"
+            >
             もっと詳しく知りたい
           </button>
         </div>
-  
-        <div
-          class="
-            fixed-bottom
-            mb-0
-            d-flex d-sm-none
-            mobile-footer mobile-footer-special
-          "
-        >
-          <div>
-            <button
-              type="button"
-              class="btn btn-warning m-0 w-100 nowrap text-white pb-1 pt-2 px-0"
-              onclick="countClickByGa();"
-              data-toggle="modal"
-              data-target="#inquiryFormModal"
+        <div>
+          <a
+            href="tel:03-6885-6140"
+            class="btn btn-warning m-0 w-100 pb-1 pt-2 px-0 text-white nowrap"
+            onclick="ga('send', 'event', 'call', 1);"
+          >
+            <img
+              src="/img/tel.svg"
+              alt="電話"
+              width="25px"
+              height="25px"
+              class="d-block mb-1 mx-auto"
             >
-              <img
-                src="/img/contact.svg"
-                alt="お問い合わせ"
-                width="25px"
-                height="25px"
-                class="d-block mb-1 mx-auto"
-                id="toSpInquiryFormModal"
-              >
-              もっと詳しく知りたい
-            </button>
-          </div>
-          <div>
-            <a
-              href="tel:03-6885-6140"
-              class="btn btn-warning m-0 w-100 pb-1 pt-2 px-0 text-white nowrap"
-              onclick="ga('send', 'event', 'call', 1);"
-            >
-              <img
-                src="/img/tel.svg"
-                alt="電話"
-                width="25px"
-                height="25px"
-                class="d-block mb-1 mx-auto"
-              >
-              電話で相談をする
-            </a>
-          </div>
+            電話で相談をする
+          </a>
         </div>
+      </div>
 
       <!-- セカンドビュー -->
       <section class="pt-0 pb-2">
@@ -334,8 +336,8 @@
           </div>
         </div>
       </section>
-
-      <section class="pt-0">
+      <!-- About Us -->
+      <section class="bg-light">
         <div class="container">
           <div>
             <h2 class="display-3 text-center">ABOUT US</h2>
@@ -411,7 +413,7 @@
         </div>
       </section>
       <!-- Services -->
-      <section class="bg-light">
+      <section>
         <div class="container">
           <h2 class="display-3 text-center">SERVICES</h2>
           <h3 class="text-center mb-5 pt-3">
@@ -419,12 +421,12 @@
           </h3>
           <div class="row">
             <div class="col-md-12">
-              <div class="py-4 bg-white text-center monthly-fee w-75 mx-auto">
+              <div class="py-4 bg-light text-center monthly-fee mx-auto">
                 <h2 class="mb-0 text-center">
                   月額基本料金 <small>(税込)</small>
                 </h2>
                 <p class="mt-2 display-3 text-center">5,280円</p>
-                <p class="mb-0 mx-auto w-75 text-center">
+                <p class="mb-0 mx-auto text-center">
                   ※住所貸し、来客対応の料金が含まれます
                 </p>
               </div>
@@ -632,13 +634,139 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Flow -->
+      <section class="virtual-flow bg-light">
+        <div class="container flow-container">
+          <h2 class="display-3 text-center">FLOW</h2>
+          <h3 class="text-center mb-5 pt-3">
+            ご契約までの流れ
+          </h3>
           <div class="row">
-            <div class="col-md-6 offset-md-3">
-              <div class="text-center py-4 mt-5 flow-button">
-                <h3 class="mb-0 text-center">ご契約の手順について</h3>
-                <a href="/virtual_office/flow/"></a>
+            <div class="col-12 col-md-6 col-xl-4 mb-4">
+              <div class="flow-card card flow1 border-0">
+                <div class="card-body">
+                  <h3 class="flow-title">
+                    <span class="flow-number">01</span><br>
+                    バーチャルオフィス見学予約
+                  </h3>
+                  <p class="flow-description">
+                    お申込み前に、オンライン説明会、現地見学会のどちらかに参加されることをおすすめしております。まずは下記のフォームから、見学予約をお申し込みください。
+                  </p>
+                </div>
               </div>
             </div>
+            <div class="col-12 col-md-6 col-xl-4 mb-4">
+              <div class="flow-card card flow2 border-0">
+                <div class="card-body">
+                  <h3 class="flow-title">
+                    <span class="flow-number">02</span><br>
+                    バーチャルオフィス見学
+                  </h3>
+                  <p class="flow-description">
+                    専用ポスト、カフェラウンジ、会議室等を実際にご覧頂きます。また、弊社スタッフにより、サービス内容の説明や料金体系のご説明をさせていただきます。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 mb-4">
+              <div class="flow-card card flow3 border-0">
+                <div class="card-body">
+                  <h3 class="flow-title">
+                    <span class="flow-number">03</span><br>
+                    お申し込み
+                  </h3>
+                  <p class="flow-description">
+                    オンラインにてお申し込みが可能となります。見学をせずに申し込みフォームからすぐにお申し込みいただくことも可能です。<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 mb-4">
+              <div class="flow-card card flow4 border-0">
+                <div class="card-body">
+                  <h3 class="flow-title">
+                    <span class="flow-number">04</span><br>
+                    必要書類の送付
+                  </h3>
+                  <p class="flow-description">
+                    メールにて、必要書類を送付頂きます。個人でご契約の場合は写真付きの身分証明書、法人の場合は履歴事項全部証明書と写真付きの身分証明書をご用意ください。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 mb-4">
+              <div class="flow-card card flow5 border-0">
+                <div class="card-body">
+                  <h3 class="flow-title">
+                    <span class="flow-number">05</span><br>
+                    面談による入居審査
+                  </h3>
+                  <p class="flow-description">
+                    弊社では対面で面談をさせて頂いております。その後、ご入居にあたりまして審査を実施させて頂きます。３営業日程度のお時間を頂く可能性があります。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 mb-4">
+              <div class="flow-card card flow6 border-0">
+                <div class="card-body">
+                  <h3 class="flow-title">
+                    <span class="flow-number">06</span><br>
+                    正式契約
+                  </h3>
+                  <p class="flow-description">
+                    必要事項を記載の上、利用規約を確認頂き、オンラインにて契約を締結致します。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 mb-4">
+              <div class="flow-card card flow7 border-0">
+                <div class="card-body">
+                  <h3 class="flow-title">
+                    <span class="flow-number">07</span><br>
+                    支払い情報の登録
+                  </h3>
+                  <p class="flow-description">
+                    決済に利用するクレジットカード情報をご登録頂きます。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 mb-4">
+              <div class="flow-card card flow8 border-0">
+                <div class="card-body">
+                  <h3 class="flow-title">
+                    <span class="flow-number">08</span><br>
+                    サービス利用開始
+                  </h3>
+                  <p class="flow-description">
+                    契約が完了となり、サービスの利用の開始です。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-lg-flex w-75 mx-auto justify-content-between mt-4">
+            <button
+              type="button"
+              class="btn flow-cta d-block nowrap mx-auto mb-4 mb-lg-0"
+              onclick="countClickByGa();"
+              data-toggle="modal"
+              data-target="#inquiryFormModal"
+            >
+              見学予約はこちら
+            </button>
+            <button
+              type="button"
+              onclick="location.href='https://ap-harbors.firebaseapp.com/virtual-office/register/'"
+              class="btn flow-cta d-block nowrap mx-auto"
+            >
+              お申し込みはこちら
+            </button>
           </div>
         </div>
       </section>
@@ -711,13 +839,13 @@
       </section>
 
       <!-- コラム -->
-      <section>
+      <section class="bg-light">
         <div class="container">
           <div class="l-container">
             <div class="c-nap pt-5">
-              <h3 class="u-mb20">
+              <h2 class="u-mb20 c-nap-title">
                 青山でバーチャルオフィスのレンタルをお考えならHarborS 表参道へ
-              </h3>
+              </h2>
               <table class="c-table">
                 <tr>
                   <th class="u-p15">会社名(英文名)</th>
@@ -785,7 +913,7 @@
       </section>
 
       <!-- アクセス -->
-      <section class="bg-light" id="access">
+      <section id="access">
         <div class="container text-center">
           <h2 class="display-3 pb-3">ACCESS</h2>
           <div class="mb-4 text-left">

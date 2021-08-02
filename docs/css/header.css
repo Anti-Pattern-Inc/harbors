@@ -1,5 +1,5 @@
-.breadcrumb span {
-  color: #333;
+.breadcrumb li a:hover {
+  text-decoration: underline;
 }
 
 .breadcrumb li:after {
@@ -25,10 +25,6 @@
 
 .no-scroll {
   overflow: hidden;
-}
-
-.breadcrumb li a:hover {
-  text-decoration: none;
 }
 
 /* header */
@@ -110,7 +106,7 @@
   font-weight: 600;
 }
 
-.nav-menu ul > li:not(:first-child) {
+.nav-menu ul > li {
   margin-left: 20px;
 }
 
@@ -242,7 +238,7 @@
     margin-left: 8px;
   }
 
-  .nav-menu ul > li:not(:first-child) {
+  .nav-menu ul > li {
     margin-left: 6px;
   }
 }
