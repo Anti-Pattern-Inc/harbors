@@ -372,7 +372,7 @@ footer {
 
 .events-top {
   background: linear-gradient(#1b406b, #172c59);
-  height: 260px;
+  height: 250px;
   box-shadow: 0px 5px 6px 0px #e2e2e2;
   border-radius: 0;
 }
@@ -388,7 +388,7 @@ footer {
 }
 
 .events-top .top-text {
-  top: 60%;
+  top: 65%;
 }
 
 .virtual-office .top-text {

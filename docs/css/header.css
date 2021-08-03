@@ -33,7 +33,7 @@
   position: fixed;
   z-index: 100;
   color: #333;
-  padding: 15px 30px 10px;
+  padding: 20px 30px;
   transition: .5s;
   font-family: noto-sans-cjk-jp, sans-serif;;
 }
@@ -89,7 +89,7 @@
 }
 
 #header.hide {
-  transform: translateY(-122px);
+  transform: translateY(-140px);
 }
 
 .header-left span {
@@ -141,7 +141,7 @@
   display: none;
   opacity: 0;
   position: absolute;
-  top: 95px;
+  top: 105px;
   right: 10px;
   padding: 32px;
   background-color: #F8F8F5;
