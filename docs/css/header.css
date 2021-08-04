@@ -33,7 +33,7 @@
   position: fixed;
   z-index: 100;
   color: #333;
-  padding: 15px 30px 10px;
+  padding: 20px 30px;
   transition: .5s;
   font-family: noto-sans-cjk-jp, sans-serif;;
 }
@@ -89,7 +89,7 @@
 }
 
 #header.hide {
-  transform: translateY(-122px);
+  transform: translateY(-160px);
 }
 
 .header-left span {
@@ -116,6 +116,7 @@
 }
 
 .header-lower-right {
+  position: relative;
   font-size: 16px;
   margin-bottom: 0;
 }
@@ -141,7 +142,7 @@
   display: none;
   opacity: 0;
   position: absolute;
-  top: 95px;
+  top: 55px;
   right: 10px;
   padding: 32px;
   background-color: #F8F8F5;
@@ -178,7 +179,7 @@
   display: none;
   opacity: 0;
   top: -20px;
-  right: 200px;
+  right: 150px;
   border-right: 25px solid transparent;
   border-bottom: 25px solid #F8F8F5;
   border-left: 25px solid transparent;
@@ -190,7 +191,7 @@
   display: none;
   opacity: 0;
   top: -20px;
-  right: 40px;
+  right: 150px;
   border-right: 25px solid transparent;
   border-bottom: 25px solid #F8F8F5;
   border-left: 25px solid transparent;
@@ -240,6 +241,10 @@
 
   .nav-menu ul > li {
     margin-left: 6px;
+  }
+
+  .h-tit {
+    color: #333;
   }
 }
 
