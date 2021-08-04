@@ -349,23 +349,32 @@
         </div>
       </section>
       <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta">
-        <button
-          type="button"
-          class="
-            btn btn-warning btn-lg
-            mx-auto
-            nowrap
-            text-white
-            top-button
-            d-none d-sm-inline-block
-          "
-          onclick="countClickByGa();"
-          data-toggle="modal"
-          data-target="#inquiryFormModal"
-          id="toPcInquiryFormModal"
-        >
-          もっと詳しく知りたい
-        </button>
+        <div class="cta-card d-none d-sm-block">
+          <div class="cta-img">
+            <div class="cta-text-box w-100">
+              <h4 class="cta-lead text-white mx-auto">最短3日で港区青山の<br>住所を手に入れよう！</h4>
+              <p class="text-white cta-p">「お問い合わせ」「お申込み」<br>は24時間365日いつでも可能！</p>
+            </div>
+          </div>
+          <div class="virtual-fixed-cv-btn">
+            <button
+              type="button"
+              class="cv-contact-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
+              onclick="countClickByGa();"
+              data-toggle="modal"
+              data-target="#inquiryFormModal"
+            >
+              お問い合わせ
+            </button>
+            <button
+            type="button"
+            onclick="location.href='https://ap-harbors.firebaseapp.com/virtual-office/register/'"
+            class="cv-apply-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
+            >
+              お申し込み
+            </button>
+          </div>
+        </div>
       </div>
 
       <div
