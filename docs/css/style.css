@@ -41,6 +41,11 @@ section {
   padding: 80px 0;
 }
 
+.section-heading {
+  font-size: 1.75rem;
+  line-height: 2;
+}
+
 #header {
   transition: all 0.5s;
 }
