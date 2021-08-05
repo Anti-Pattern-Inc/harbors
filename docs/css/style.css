@@ -41,6 +41,11 @@ section {
   padding: 80px 0;
 }
 
+.section-heading {
+  font-size: 1.75rem;
+  line-height: 2;
+}
+
 #header {
   transition: all 0.5s;
 }
@@ -372,7 +377,7 @@ footer {
 
 .events-top {
   background: linear-gradient(#1b406b, #172c59);
-  height: 250px;
+  height: 260px;
   box-shadow: 0px 5px 6px 0px #e2e2e2;
   border-radius: 0;
 }
@@ -388,7 +393,7 @@ footer {
 }
 
 .events-top .top-text {
-  top: 65%;
+  top: 60%;
 }
 
 .virtual-office .top-text {
