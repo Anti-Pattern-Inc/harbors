@@ -2317,4 +2317,135 @@ form span.bg-danger {
   }
 }
 
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+バーチャルTOPの固定CTA
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+
+.cta-card {
+  background: #fff;
+  width: 300px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: 10px;
+  box-shadow: 0 0 5px #aaa;
+  position: relative;
+}
+
+.cta-img {
+  background-image: url(/img/features_of_harbors1.jpg);
+  background-size: cover;
+  height: 60%;
+  position: relative;
+  text-align: center;
+}
+
+.cta-img::before{
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}
+
+.cta-text-box {
+  position: absolute;
+  margin: auto;
+}
+
+.virtual-fixed-cv-btn {
+  max-width: 450px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 0;
+}
+
+.cta-card .virtual-fixed-cv-btn > button {
+  width: 80%;
+  font-weight: bold;
+  border-radius: 100px;
+  font-size: 15px;
+  transition: background 0.4s;
+  padding: 5px 10px;
+}
+
+.cta-card .virtual-fixed-cv-btn .cv-contact-btn {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #df7156;
+}
+
+.cta-card .virtual-fixed-cv-btn .cv-apply-btn {
+  background-color: #df7156;
+  border: 1px solid #df7156;
+  color: #fff;
+}
+
+.cta-card .virtual-fixed-cv-btn .cv-apply-btn::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 0;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  margin-top: -7px;
+  transform: rotate(45deg);
+  transition: right .2s;
+}
+
+.cta-card .virtual-fixed-cv-btn .cv-apply-btn:hover::after {
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  right: 20px;
+}
+
+.cta-card .virtual-fixed-cv-btn .cv-contact-btn::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 0;
+  border-top: solid 2px #df7156;
+  border-right: solid 2px #df7156;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  margin-top: -7px;
+  transform: rotate(45deg);
+  transition: right .2s;
+}
+
+.cta-card .virtual-fixed-cv-btn .cv-contact-btn:hover::after {
+  border-top: solid 2px #df7156;
+  border-right: solid 2px #df7156;
+  right: 20px;
+}
+
+.cta-card .virtual-fixed-cv-btn .cv-apply-btn:hover, .cta-card .virtual-fixed-cv-btn .cv-contact-btn:hover {
+  opacity: 0.8;
+}
+
+.cta-lead {
+  margin-top: 40px;
+  letter-spacing: 2px;
+  line-height: 1.3em;
+}
+
+.cta-p {
+  font-size: 12px;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.fixed-bottom {
+  z-index: 20;
+}
+
 /* END */
