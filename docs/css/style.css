@@ -2323,10 +2323,14 @@ form span.bg-danger {
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
+.fixed-cta {
+  width: fit-content;
+  margin-left: auto;
+}
 
 .cta-card {
   background: #fff;
-  width: 300px;
+  width: 270px;
   height: 250px;
   margin-left: auto;
   margin-right: 10px;
@@ -2343,7 +2347,7 @@ form span.bg-danger {
 }
 
 .cta-img::before{
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.5);
   position: absolute;
   top: 0;
   right: 0;
@@ -2434,12 +2438,14 @@ form span.bg-danger {
 
 .cta-lead {
   margin-top: 40px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1.3em;
+  font-size: 20px;
 }
 
 .cta-p {
-  font-size: 12px;
+  margin-top: 20px;
+  font-size: 10px;
   width: fit-content;
   margin-left: auto;
 }
