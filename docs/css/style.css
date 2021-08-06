@@ -2448,11 +2448,10 @@ form span.bg-danger {
   font-size: 20px;
 }
 
-.cta-p {
+.cta-sentence {
   margin-top: 20px;
   font-size: 10px;
-  width: fit-content;
-  margin-left: auto;
+  text-align: center;
 }
 
 .fixed-bottom {
