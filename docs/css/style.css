@@ -2432,8 +2432,7 @@ form span.bg-danger {
   right: 20px;
 }
 
-.cta-card .virtual-fixed-cv-btn .cv-apply-btn:
-hover, .cta-card .virtual-fixed-cv-btn .cv-contact-btn:hover {
+.cta-card .virtual-fixed-cv-btn .cv-apply-btn:hover, .cta-card .virtual-fixed-cv-btn .cv-contact-btn:hover {
   opacity: 0.8;
 }
 
