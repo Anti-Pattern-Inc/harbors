@@ -2299,6 +2299,28 @@ form span.bg-danger {
   transition: background 0.4s;
 }
 
+.flow-cta-contents {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.flow-cta-sentence {
+  line-height: 20px;
+  display: flex;
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+
+.flow-icon {
+  fill: #fff;
+}
+
+.flow-cta:hover .flow-icon {
+  fill: #18325f;
+}
+
+
+
 @media screen and (max-width: 991.98px) {
   .flow-card:nth-of-type(odd) {
     margin-right: 4%;
@@ -2458,4 +2480,24 @@ form span.bg-danger {
   z-index: 20;
 }
 
+.mobile-footer .mv-cta {
+  height: 100%;
+  font-size: 13px;
+  background-color: #ffa500;
+}
+
+.mobile-footer .mv-cta:hover {
+  opacity: 1;
+  background-color: #eb9800;
+}
+
+.mv-cta-contents {
+  width: fit-content;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.application-img {
+  fill: #fff;
+}
 /* END */

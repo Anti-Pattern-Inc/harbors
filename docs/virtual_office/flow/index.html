@@ -358,35 +358,40 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         <div>
           <button
             type="button"
-            class="btn btn-warning m-0 w-100 nowrap text-white pb-1 pt-2 px-0"
+            class="btn m-0 w-100 nowrap text-white px-0 py-3 mv-cta"
             onclick="countClickByGa();"
             data-toggle="modal"
             data-target="#inquiryFormModal"
           >
-            <img
-              src="/img/contact.svg"
-              alt="お問い合わせ"
-              width="25px"
-              height="25px"
-              class="d-block mb-1 mx-auto"
-            >
-            もっと詳しく知りたい
+            <div class="mv-cta-contents mx-auto d-flex align-middle">
+              <img
+                src="/img/contact.svg"
+                alt="お問い合わせ"
+                width="20px"
+                height="20px"
+                class="d-block mr-2"
+                id="toSpInquiryFormModal"
+              >
+              もっと詳しく知りたい
+            </div>
           </button>
         </div>
         <div>
           <a
             href="tel:03-6885-6140"
-            class="btn btn-warning m-0 w-100 pb-1 pt-2 px-0 text-white nowrap"
+            class="btn m-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
             onclick="ga('send', 'event', 'call', 1);"
           >
-            <img
-              src="/img/tel.svg"
-              alt="電話"
-              width="25px"
-              height="25px"
-              class="d-block mb-1 mx-auto"
-            >
-            電話で相談をする
+            <div class="mv-cta-contents mx-auto d-flex align-middle">
+              <img
+                src="/img/tel.svg"
+                alt="電話"
+                width="20px"
+                height="20px"
+                class="d-block mr-2"
+              >
+              電話で相談をする
+            </div>
           </a>
         </div>
       </div>
