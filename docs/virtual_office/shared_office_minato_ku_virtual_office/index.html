@@ -348,84 +348,51 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         </button>
       </div>
 
-      <div class="fixed-bottom mb-0 d-flex d-sm-none mobile-footer">
-        <div>
-          <a
-            href="/virtual_office/"
-            class="btn btn-light m-0 w-100 pb-1 pt-2 px-0 nowrap"
-          >
-            <img
-              src="/img/home.svg"
-              alt="トップ"
-              width="25px"
-              height="25px"
-              class="d-block mb-1 mx-auto"
-            >
-            トップ
-          </a>
-        </div>
-        <div>
-          <a
-            href="/virtual_office/flow/"
-            class="btn btn-light m-0 w-100 pb-1 pt-2 px-0 nowrap"
-          >
-            <img
-              src="/img/flow.svg"
-              alt="契約の流れ"
-              width="25px"
-              height="25px"
-              class="d-block mb-1 mx-auto"
-            >
-            契約の流れ
-          </a>
-        </div>
-        <div>
-          <a
-            href="/virtual_office/features_of_harbors/"
-            class="btn btn-light m-0 w-100 pb-1 pt-2 px-0 nowrap"
-          >
-            <img
-              src="/img/column.svg"
-              alt="HarborS 表参道の特徴"
-              width="25px"
-              height="25px"
-              class="d-block mb-1 mx-auto"
-            >
-            HarborSとは
-          </a>
-        </div>
+      <div
+        class="
+          fixed-bottom
+          mb-0
+          d-flex d-sm-none
+          mobile-footer mobile-footer-special
+        "
+      >
         <div>
           <button
             type="button"
-            class="btn btn-warning m-0 w-100 nowrap text-white pb-1 pt-2 px-0"
+            class="btn m-0 w-100 nowrap text-white px-0 py-3 mv-cta"
             onclick="countClickByGa();"
             data-toggle="modal"
             data-target="#inquiryFormModal"
           >
-            <img
-              src="/img/contact.svg"
-              alt="お問い合わせ"
-              width="25px"
-              height="25px"
-              class="d-block mb-1 mx-auto"
-            >
-            お問い合わせ
+            <div class="mv-cta-contents mx-auto d-flex align-middle">
+              <img
+                src="/img/contact.svg"
+                alt="お問い合わせ"
+                width="20px"
+                height="20px"
+                class="d-block mr-2"
+                id="toSpInquiryFormModal"
+              >
+              もっと詳しく知りたい
+            </div>
           </button>
         </div>
         <div>
           <a
             href="tel:03-6885-6140"
-            class="btn btn-warning m-0 w-100 pb-1 pt-2 px-0 text-white nowrap"
+            class="btn m-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
             onclick="ga('send', 'event', 'call', 1);"
           >
-            <img
-              src="/img/tel.svg"
-              alt="電話"
-              width="25px"
-              height="25px"
-              class="d-block mb-1 mx-auto"
-            >
-            電話
+            <div class="mv-cta-contents mx-auto d-flex align-middle">
+              <img
+                src="/img/tel.svg"
+                alt="電話"
+                width="20px"
+                height="20px"
+                class="d-block mr-2"
+              >
+              電話で相談をする
+            </div>
           </a>
         </div>
       </div>
@@ -576,9 +543,8 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </div>
             <div class="link-button-text">
               <span>
-                港区青山のバーチャルオフィス<br>
-                HarborS 表参道の特徴<br>
-                はこちら
+                港区のバーチャルオフィス<br>
+                HarborSの特徴とは？
               </span>
             </div>
           </a>
