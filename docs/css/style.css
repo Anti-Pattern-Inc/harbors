@@ -82,6 +82,10 @@ a:hover {
   .right-container {
     max-width: calc((100vw + 354px) / 2);
   }
+  .section-heading {
+    font-size: 1.0rem;
+    line-height: 1.8;
+  }
 }
 
 /* 見出しを太字に */
@@ -2200,7 +2204,7 @@ form span.bg-danger {
   }
 
   .contact-form input, .contact-form textarea {
-  width: 100%;
+    width: 100%;
   }
 }
 
@@ -2500,4 +2504,40 @@ form span.bg-danger {
 .application-img {
   fill: #fff;
 }
+
+/* こんな方におすすめ */
+
+.strength-item {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 5px #aaa;
+}
+
+.strength-item:hover {
+  opacity: 0.8;
+}
+
+.checkbox {
+  width: 30px;
+  height: auto;
+  margin: 0 5px 0 0;
+}
+
+.chevron-down, .chevron-up {
+  display: none;
+}
+
+.chevron-down.show, .chevron-up.show {
+  display: block;
+}
+
+.hidden-text {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.strength-detail {
+  font-size: 14px;
+}
+
 /* END */
