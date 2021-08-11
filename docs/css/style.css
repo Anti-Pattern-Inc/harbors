@@ -1162,6 +1162,7 @@ g-contents
 /** ファーストビュー **/
 .fv {
   margin: 20px 0 30px;
+  font-size: 14px;
 }
 
 .monthly-fee {
@@ -1171,6 +1172,10 @@ g-contents
 @media screen and (max-width: 767.98px) {
   .monthly-fee {
     width: 100%;
+  }
+  .fv {
+    margin: 0%;
+    font-size: 12px;
   }
 }
 /** SEOテキスト **/
