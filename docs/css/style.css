@@ -1684,6 +1684,14 @@ g-contents
   .virtual_circle_text span {
     font-size: 22px;
   }
+
+  .rooms-main .display-3 {
+    font-size: 2rem;
+  }
+
+  .monthly-fee .display-3 {
+    font-size: 4rem;
+  }
 }
 
 /* END */
@@ -1698,10 +1706,6 @@ g-contents
   .display-3,
   .display-4 {
     font-size: 2rem;
-  }
-
-  .monthly-fee .display-3 {
-    font-size: 4rem;
   }
 
   h1.display-4 {
@@ -2510,15 +2514,15 @@ form span.bg-danger {
   fill: #fff;
 }
 
-/* こんな方におすすめ */
+/* REASONS */
 
-.strength-item {
+.reasons-item {
   cursor: pointer;
   background-color: #fff;
   box-shadow: 0 0 5px #aaa;
 }
 
-.strength-item:hover {
+.reasons-item:hover {
   opacity: 0.8;
 }
 
@@ -2541,8 +2545,27 @@ form span.bg-danger {
   border-top: 1px solid #ccc;
 }
 
-.strength-detail {
+.reasons-item h3 {
+  font-size: 1.5rem;
+}
+
+.reasons-item p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.reasons-detail {
   font-size: 14px;
+  margin: 0;
+}
+
+@media screen and (max-width: 991.98px) {
+  .reasons-item h3 {
+    font-size: 1.0rem;
+  }
+  .reasons-item p {
+    font-size: 14px;
+  }
 }
 
 /* END */
