@@ -1685,7 +1685,7 @@ g-contents
     font-size: 22px;
   }
 
-  .rooms-main .display-3 {
+  .virtual-top .display-3 {
     font-size: 2rem;
   }
 
@@ -2062,6 +2062,10 @@ form span.bg-danger {
 バーチャルオフィスFV
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.virtual-top {
+  padding-top: 100px;
+}
 
 .virtual-fv-cv-btn .top-button, .virtual-form-btn .top-button {
   position: relative;
@@ -2565,6 +2569,14 @@ form span.bg-danger {
   }
   .reasons-item p {
     font-size: 14px;
+  }
+}
+
+/* Virtual-Top */
+
+@media screen and (max-width: 575.98px) {
+  .virtual-top section {
+    padding: 40px 0;
   }
 }
 
