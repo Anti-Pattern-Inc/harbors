@@ -2336,14 +2336,6 @@ form span.bg-danger {
   fill: #18325f;
 }
 
-
-
-@media screen and (max-width: 991.98px) {
-  .flow-card:nth-of-type(odd) {
-    margin-right: 4%;
-  }
-}
-
 @media screen and (max-width: 767.98px) {
   .flow-container {
     padding: 0 10px;
