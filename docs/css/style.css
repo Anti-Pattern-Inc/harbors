@@ -2288,14 +2288,14 @@ form span.bg-danger {
   margin: 5px;
   width: 340px;
   box-shadow: 0px 2px 5px rgb(17 14 9);
-  background-color: #18325f;
-  border: 3px solid #18325f;
+  background-color: #df7156;
+  border: 3px solid #df7156;
   border-radius: 10px;
 }
 
 .flow-cta:hover {
   background-color: #fff;
-  color: #18325f;
+  color: #df7156;
   transition: background 0.4s;
 }
 
@@ -2316,7 +2316,7 @@ form span.bg-danger {
 }
 
 .flow-cta:hover .flow-icon {
-  fill: #18325f;
+  fill: #df7156;
 }
 
 
@@ -2483,12 +2483,12 @@ form span.bg-danger {
 .mobile-footer .mv-cta {
   height: 100%;
   font-size: 13px;
-  background-color: #ffa500;
+  background-color: #df7156;
 }
 
 .mobile-footer .mv-cta:hover {
   opacity: 1;
-  background-color: #eb9800;
+  background-color: #bb604a;
 }
 
 .mv-cta-contents {
@@ -2500,4 +2500,24 @@ form span.bg-danger {
 .application-img {
   fill: #fff;
 }
+
+.about-us-detail {
+  background-color: #df7156;
+  border: 3px solid #df7156;
+}
+
+.about-us-detail:hover {
+  color: #df7156;
+}
+
+.pc-footer {
+  background-color: #df7156;
+  border: 3px solid #df7156;
+}
+
+.pc-footer:hover {
+  border-color: #bb604a;
+  background-color: #bb604a;
+}
+
 /* END */
