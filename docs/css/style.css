@@ -82,6 +82,10 @@ a:hover {
   .right-container {
     max-width: calc((100vw + 354px) / 2);
   }
+  .section-heading {
+    font-size: 1.0rem;
+    line-height: 1.8;
+  }
 }
 
 /* 見出しを太字に */
@@ -1158,6 +1162,7 @@ g-contents
 /** ファーストビュー **/
 .fv {
   margin: 20px 0 30px;
+  font-size: 14px;
 }
 
 .monthly-fee {
@@ -1167,6 +1172,10 @@ g-contents
 @media screen and (max-width: 767.98px) {
   .monthly-fee {
     width: 100%;
+  }
+  .fv {
+    margin: 0%;
+    font-size: 12px;
   }
 }
 /** SEOテキスト **/
@@ -1675,6 +1684,14 @@ g-contents
   .virtual_circle_text span {
     font-size: 22px;
   }
+
+  .virtual-top .display-3 {
+    font-size: 2rem;
+  }
+
+  .monthly-fee .display-3 {
+    font-size: 4rem;
+  }
 }
 
 /* END */
@@ -1689,10 +1706,6 @@ g-contents
   .display-3,
   .display-4 {
     font-size: 2rem;
-  }
-
-  .monthly-fee .display-3 {
-    font-size: 4rem;
   }
 
   h1.display-4 {
@@ -2050,6 +2063,10 @@ form span.bg-danger {
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
+.virtual-top {
+  padding-top: 100px;
+}
+
 .virtual-fv-cv-btn .top-button, .virtual-form-btn .top-button {
   position: relative;
   font-size: 20px;
@@ -2200,7 +2217,7 @@ form span.bg-danger {
   }
 
   .contact-form input, .contact-form textarea {
-  width: 100%;
+    width: 100%;
   }
 }
 
@@ -2500,6 +2517,70 @@ form span.bg-danger {
 .application-img {
   fill: #fff;
 }
+
+/* REASONS */
+
+.reasons-item {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 5px #aaa;
+}
+
+.reasons-item:hover {
+  opacity: 0.8;
+}
+
+.checkbox {
+  width: 30px;
+  height: auto;
+  margin: 0 5px 0 0;
+}
+
+.chevron-down, .chevron-up {
+  display: none;
+}
+
+.chevron-down.show, .chevron-up.show {
+  display: block;
+}
+
+.hidden-text {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.reasons-item h3 {
+  font-size: 1.5rem;
+}
+
+.reasons-item p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.reasons-detail {
+  font-size: 14px;
+  margin: 0;
+}
+
+@media screen and (max-width: 991.98px) {
+  .reasons-item h3 {
+    font-size: 1.0rem;
+  }
+  .reasons-item p {
+    font-size: 14px;
+  }
+}
+
+/* Virtual-Top */
+
+@media screen and (max-width: 575.98px) {
+  .virtual-top section {
+    padding: 40px 0;
+  }
+}
+
+/* CTAの色を統一 */
 
 .about-us-detail {
   background-color: #df7156;
