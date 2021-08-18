@@ -1589,6 +1589,9 @@ g-contents
     padding: 10px 10px 10px 25px;
   }
 }
+.bulletsless-list {
+  list-style: none;
+}
 /** ボタン タブレット **/
 @media screen and (min-width: 768px) {
   .c-btn-anchor {
