@@ -2601,4 +2601,9 @@ form span.bg-danger {
   background-color: #bb604a;
 }
 
+.virtual-breadcrumb {
+  max-width: 1140px;
+  margin: auto;
+}
+
 /* END */

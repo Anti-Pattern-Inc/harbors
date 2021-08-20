@@ -23,7 +23,6 @@
 
 .second-view-container {
   max-width: calc((100vw + 1140px) / 2);
-  padding-left: 20px;
   margin: 0 0 0 auto;
 }
 
@@ -92,6 +91,10 @@
 
   .second-view-bg::after {
     height: 274px;
+  }
+
+  .second-view-container {
+    padding-left: 20px;
   }
 }
 
