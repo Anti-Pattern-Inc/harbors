@@ -92,6 +92,11 @@
   transform: translateY(-160px);
 }
 
+.header-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 .header-left span {
   display: inline-block;
   font-size: 12px;

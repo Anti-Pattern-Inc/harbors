@@ -1589,6 +1589,9 @@ g-contents
     padding: 10px 10px 10px 25px;
   }
 }
+.bulletsless-list {
+  list-style: none;
+}
 /** ボタン タブレット **/
 @media screen and (min-width: 768px) {
   .c-btn-anchor {
@@ -2172,6 +2175,7 @@ form span.bg-danger {
   padding-left: 0;
 }
 
+
 @media screen and (max-width: 768px) {
   .c-lineblock h2 {
     font-size: 20px;
@@ -2334,14 +2338,6 @@ form span.bg-danger {
 
 .flow-cta:hover .flow-icon {
   fill: #df7156;
-}
-
-
-
-@media screen and (max-width: 991.98px) {
-  .flow-card:nth-of-type(odd) {
-    margin-right: 4%;
-  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -2599,6 +2595,11 @@ form span.bg-danger {
 .pc-footer:hover {
   border-color: #bb604a;
   background-color: #bb604a;
+}
+
+.virtual-breadcrumb {
+  max-width: 1140px;
+  margin: auto;
 }
 
 /* END */
