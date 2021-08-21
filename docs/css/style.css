@@ -2175,7 +2175,6 @@ form span.bg-danger {
   padding-left: 0;
 }
 
-
 @media screen and (max-width: 768px) {
   .c-lineblock h2 {
     font-size: 20px;
@@ -2599,7 +2598,9 @@ form span.bg-danger {
 
 .virtual-breadcrumb {
   max-width: 1140px;
-  margin: auto;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* END */
