@@ -1589,6 +1589,9 @@ g-contents
     padding: 10px 10px 10px 25px;
   }
 }
+.bulletsless-list {
+  list-style: none;
+}
 /** ボタン タブレット **/
 @media screen and (min-width: 768px) {
   .c-btn-anchor {
@@ -2334,14 +2337,6 @@ form span.bg-danger {
 
 .flow-cta:hover .flow-icon {
   fill: #df7156;
-}
-
-
-
-@media screen and (max-width: 991.98px) {
-  .flow-card:nth-of-type(odd) {
-    margin-right: 4%;
-  }
 }
 
 @media screen and (max-width: 767.98px) {
