@@ -2625,6 +2625,9 @@ form span.bg-danger {
   .question-box {
     width: 90%;
   }
+  .virtual-top {
+    padding-top: 95px;
+  }
 }
 
 @media screen and (max-width: 575.98px) {
@@ -2632,5 +2635,6 @@ form span.bg-danger {
     width: 85%;
   }
 }
+
 
 /* END */
