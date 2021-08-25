@@ -1771,9 +1771,10 @@ g-contents
 }
 
 .column-container {
-  background-color: hsl(193, 92%, 95%);
-  border-radius: 30px;
+  background-color: #fff;
+  border-radius: 20px;
   color: #384b50;
+  padding: 30px;
 }
 
 .in-page-link {
@@ -1825,6 +1826,9 @@ g-contents
 @media screen and (max-width: 767.98px) {
   .contact-main {
     padding-top: 100px;
+  }
+  .column-container {
+    padding: 30px 15px;
   }
 }
 
