@@ -1528,40 +1528,12 @@
             );
           }
         });
-
         $("#toPcInquiryFormModal, #toSpInquiryFormModal").click(function () {
           $('[name="contact_type"]').val("");
           $("#form_preferred_visit_date").hide();
           $("#form_preferred_visit_time").hide();
         });
       });
-
-      $(".space-slider").slick({
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3.5,
-        rtl: true,
-        nextArrow:
-          '<div class="prev"><img src="/img/slider-prev.svg" alt=""></div>',
-        prevArrow:
-          '<div class="next"><img src="/img/slider-next.svg" alt=""></div>',
-
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2.5,
-            },
-          },
-          {
-            breakpoint: 380,
-            settings: {
-              slidesToShow: 2,
-            },
-          },
-        ],
-      });
-
       $('.hidden-text').hide();
       $('.reasons-item').click(function() {
           $(this).next().slideToggle();
