@@ -2603,4 +2603,57 @@ form span.bg-danger {
   padding-right: 15px;
 }
 
+/* faqをvirtual topに移設 */
+
+.top-faq h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+.question-box {
+  align-items: center;
+}
+
+.question-box p, .capital-a {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.top-faq .hidden-text {
+  border-top: none;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .question-box {
+    align-items: flex-start;
+  }
+
+  .question-box p, .capital-a {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .top-faq h3 {
+    font-size: 1.0rem;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .question-box h3 {
+    font-size: 14px;
+  }
+
+  .answer-text {
+    font-size: 14px;
+  }
+
+  .question-box p, .capital-a {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}
+
 /* END */
