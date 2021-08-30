@@ -2663,5 +2663,17 @@ form span.bg-danger {
   }
 }
 
+/* フォームの送信ボタン */
+
+.btn-submit {
+    color: #fff;
+    background-color: #df7156;
+    border: 2px solid #df7156;
+}
+
+.btn-submit:hover {
+  color: #df7156;
+  background-color: #fff;
+}
 
 /* END */
