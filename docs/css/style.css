@@ -2665,14 +2665,21 @@ form span.bg-danger {
 /* フォームの送信ボタン */
 
 .btn-submit {
-    color: #fff;
-    background-color: #df7156;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #df7156;
     border: 2px solid #df7156;
 }
 
 .btn-submit:hover {
   color: #df7156;
   background-color: #fff;
+}
+
+.modal-footer {
+  border-top: #fff;
 }
 
 /* END */
