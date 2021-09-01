@@ -2374,7 +2374,6 @@ form span.bg-danger {
 .cta-card {
   background: #fff;
   width: 270px;
-  height: 250px;
   margin-left: auto;
   margin-right: 10px;
   box-shadow: 0 0 5px #aaa;
@@ -2384,9 +2383,8 @@ form span.bg-danger {
 .cta-img {
   background-image: url(/img/features_of_harbors1.jpg);
   background-size: cover;
-  height: 60%;
+  height: 110px;
   position: relative;
-  text-align: center;
 }
 
 .cta-img::before{
@@ -2399,27 +2397,20 @@ form span.bg-danger {
   content: ' ';
 }
 
-.cta-text-box {
-  position: absolute;
-  margin: auto;
-}
-
 .virtual-fixed-cv-btn {
-  max-width: 450px;
+  padding: 5px;
+  height: auto;
   margin: 0 auto;
-  position: absolute;
-  bottom: 3px;
-  left: 0;
-  right: 0;
 }
 
 .cta-card .virtual-fixed-cv-btn > button {
   width: 80%;
   font-weight: bold;
   border-radius: 100px;
-  font-size: 15px;
+  font-size: 13px;
   transition: background 0.4s;
-  padding: 5px 10px;
+  padding: 4px 10px;
+  text-align: center;
 }
 
 .cta-card .virtual-fixed-cv-btn .cv-contact-btn {
@@ -2480,16 +2471,24 @@ form span.bg-danger {
 }
 
 .cta-lead {
-  margin-top: 40px;
-  letter-spacing: 1px;
-  line-height: 1.3em;
-  font-size: 20px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  letter-spacing: 2px;
+  font-size: 17px;
 }
 
 .cta-sentence {
-  margin-top: 20px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  width: 100%;
   font-size: 10px;
-  text-align: center;
+  margin-bottom: 0;
 }
 
 .fixed-bottom {
