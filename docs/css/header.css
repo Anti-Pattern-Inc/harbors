@@ -96,6 +96,7 @@
   padding: 0 15px;
   max-width: 1140px;
   margin: 0 auto;
+  position: relative;
 }
 
 .header-left span {
@@ -151,7 +152,7 @@
   display: none;
   opacity: 0;
   position: absolute;
-  top: 110px;
+  top: 100px;
   right: 30px;
   padding: 32px;
   background-color: #F8F8F5;

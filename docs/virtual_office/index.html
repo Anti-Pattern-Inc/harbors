@@ -203,7 +203,7 @@
                   <div class="d-flex d-md-block d-xl-flex justify-content-between">
                     <div class="mr-0 mr-xl-5 mb-0 mb-md-4 mb-xl-0">
                       <a href="https://sky-terrace.anti-pattern.co.jp/">
-                        <img src="/img/rental_space.jpg" alt="HarborS 表参道のテラス" class="radius">
+                        <img src="/img/rental_space.jpg" alt="HarborS 表参道のテラス" class="radius" loading="lazy">
                         <span>
                           スカイテラス表参道
                           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon">
@@ -223,7 +223,7 @@
                     </div>
                     <div>
                       <a href="/rooms/">
-                        <img src="/img/room-a.jpg" alt="HarborS 表参道の会議室" class="radius">
+                        <img src="/img/room-a.jpg" alt="HarborS 表参道の会議室" class="radius" loading="lazy">
                         <span>
                           会議室
                           <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="arrow">
@@ -322,10 +322,40 @@
 
     <main class="virtual-top">
       <!-- トップ画像 -->
-      <section class="second-view pb-4">
+      <section class="second-view pb-4 pt-sm-5 mt-md-3">
         <div class="second-view-bg"></div>
         <div class="second-view-container right-container">
-          <div class="d-md-flex justify-content-between align-items-center">
+          <div class="d-md-flex flex-row-reverse justify-content-between align-items-center">
+            <div class="second-view-right">
+              <!-- <img
+              src="/img/votop-fv.jpg"
+              alt="HarborS 表参道の会議室の外観"
+              width="100%"
+              height="auto"
+              loading="lazy"
+              class="d-none"
+              >
+              <img
+              src="/img/votop-fv-2x.jpg"
+              alt="HarborS 表参道の会議室の外観"
+              width="100%"
+              height="auto"
+              loading="lazy"
+              > -->
+              <picture>
+                <source 
+                srcset="/img/votop-fv-2x.jpg" 
+                media="(max-width: 1200px)"
+                ><!-- 1200px以下で表示する画像 -->
+                <img 
+                src="/img/votop-fv.jpg" 
+                alt="HarborS 表参道の会議室の外観" 
+                width="100%"
+                height="auto"
+                loading="lazy"
+                ><!-- 1200px以上で表示する画像 -->
+              </picture>
+            </div>
             <div class="second-view-left mx-auto mx-md-0">
               <h1 class="second-view-title ja">
                 <span class="golden-text">
@@ -352,26 +382,16 @@
               <p class="mt-3 text-center second-view-description">オンライン説明会も実施しております。</p>
             </div>
             
-            <div class="second-view-right">
-              <img
-              src="/img/bg_image.jpg"
-              alt="HarborS 表参道の会議室の外観"
-              width="100%"
-              height="auto"
-              >
-            </div>
           </div>
         </div>
       </section>
       <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta ml-auto">
         <div class="cta-card d-none d-sm-block">
           <div class="cta-img">
-            <div class="cta-text-box w-100">
-              <h4 class="cta-lead text-white mx-auto">最短3日で港区青山の<br>住所を手に入れよう！</h4>
-              <p class="text-white cta-sentence">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
-            </div>
+            <h4 class="cta-lead text-white mx-auto w-75">最短3日で港区青山の<br>住所を手に入れよう！</h4>
+            <p class="text-white cta-sentence">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
           </div>
-          <div class="virtual-fixed-cv-btn">
+          <div class="virtual-fixed-cv-btn position-relative">
             <button
               type="button"
               class="cv-contact-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
@@ -384,7 +404,7 @@
             <button
             type="button"
             onclick="window.open('https://ap-harbors.firebaseapp.com/virtual-office/register/','view');"
-            class="cv-apply-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
+            class="cv-apply-btn btn btn-sm-lg top-button d-block mx-auto"
             >
               お申し込み
             </button>
@@ -416,6 +436,7 @@
                 height="20px"
                 class="d-block mr-2"
                 id="toSpInquiryFormModal"
+                loading="lazy"
               >
               もっと詳しく知りたい
             </div>
@@ -434,6 +455,7 @@
                 width="20px"
                 height="20px"
                 class="d-block mr-2"
+                loading="lazy"
               >
               電話で相談をする
             </div>
@@ -462,7 +484,7 @@
         <div class="container pb-3">
           <div class="row align-items-center reasons-item mx-0">
             <div class="col-md-3 p-0">
-              <img src="/img/features_of_harbors1.jpg" alt="HarborSのテラス" class="w-100 mx-auto">
+              <img src="/img/votop-reason1.jpg" alt="HarborSのテラス" class="w-100 mx-auto" loading="lazy">
             </div>
             <div class="col-md-9 my-3 my-md-0 pl-md-4">
               <div class="d-flex align-items-center">
@@ -475,8 +497,8 @@
                   </p>
                 </div>
                 <div class="ml-1 ml-md-3 d-flex align-items-center">
-                  <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show">
-                  <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up">
+                  <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                  <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
                 </div>
               </div>
             </div>
@@ -494,7 +516,7 @@
           </div>
           <div class="row align-items-center mt-3 reasons-item mx-0">
             <div class="col-md-3 p-0">
-              <img src="/img/bg_image.jpg" alt="HarborSの外観" class="w-100 mx-auto">
+              <img src="/img/votop-reason2.jpg" alt="HarborSの外観" class="w-100 mx-auto" loading="lazy">
             </div>
             <div class="col-md-9 my-3 my-md-0 pl-md-4">
               <div class="d-flex align-items-center">
@@ -507,8 +529,8 @@
                   </p>
                 </div>
                 <div class="ml-1 ml-md-3 d-flex align-items-center">
-                  <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show">
-                  <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up">
+                  <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                  <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
                 </div>
               </div>
             </div>
@@ -526,7 +548,7 @@
           </div>
           <div class="row align-items-center mt-3 reasons-item mx-0">
             <div class="col-md-3 p-0">
-              <img src="/img/room-a.jpg" alt="HarborSの会議室" class="w-100 mx-auto">
+              <img src="/img/votop-reason3.jpg" alt="HarborSの会議室" class="w-100 mx-auto" loading="lazy">
             </div>
             <div class="col-md-9 my-3 my-md-0 pl-md-4">
               <div class="d-flex align-items-center">
@@ -539,8 +561,8 @@
                   </p>
                 </div>
                 <div class="ml-1 ml-md-3 d-flex align-items-center">
-                  <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show">
-                  <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up">
+                  <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                  <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
                 </div>
               </div>
             </div>
@@ -560,7 +582,7 @@
           </div>
           <div class="row align-items-center mt-3 reasons-item mx-0">
             <div class="col-md-3 p-0">
-              <img src="/img/features_of_harbors3.jpg" alt="HarborSのコワーキングスペース" class="w-100 mx-auto">
+              <img src="/img/votop-reason4.jpg" alt="HarborSのコワーキングスペース" class="w-100 mx-auto" loading="lazy">
             </div>
             <div class="col-md-9 my-3 my-md-0 pl-md-4">
               <div class="d-flex align-items-center">
@@ -573,8 +595,8 @@
                   </p>
                 </div>
                 <div class="ml-1 ml-md-3 d-flex align-items-center">
-                  <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show">
-                  <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up">
+                  <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                  <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
                 </div>
               </div>
             </div>
@@ -616,7 +638,7 @@
             <div class="col-12 col-md-4 col-lg-3">
               <div class="service-card mb-4">
                 <img
-                  src="/img/office2.jpg"
+                  src="/img/votop-service1.jpg"
                   alt="HarborS 表参道の外観"
                   loading="lazy"
                   class="border service-img"
@@ -632,7 +654,7 @@
             <div class="col-12 col-md-4 col-lg-3">
               <div class="service-card mb-4">
                 <img
-                  src="/img/raikyaku.jpg"
+                  src="/img/votop-service2.jpg"
                   alt="お辞儀する女性"
                   loading="lazy"
                   class="border service-img"
@@ -648,7 +670,7 @@
             <div class="col-12 col-md-4 col-lg-3">
               <div class="service-card mb-4">
                 <img
-                  src="/img/touki.jpg"
+                  src="/img/votop-service3.jpg"
                   alt="契約書"
                   loading="lazy"
                   class="border service-img"
@@ -665,7 +687,7 @@
             <div class="col-12 col-md-4 col-lg-3">
               <div class="service-card mb-4">
                 <img
-                  src="/img/rocker2.jpg"
+                  src="/img/votop-service4.jpg"
                   alt="HarborS 表参道のポスト"
                   loading="lazy"
                   class="border service-img"
@@ -682,7 +704,7 @@
             <div class="col-12 col-md-4 col-lg-3">
               <div class="service-card mb-4">
                 <img
-                  src="/img/mail.jpg"
+                  src="/img/votop-service5.jpg"
                   alt="郵便物と切手"
                   loading="lazy"
                   class="border service-img"
@@ -699,7 +721,7 @@
             <div class="col-12 col-md-4 col-lg-3">
               <div class="service-card mb-4">
                 <img
-                  src="/img/tensou.jpg"
+                  src="/img/votop-service6.jpg"
                   alt="電話転送サービス"
                   loading="lazy"
                   class="border service-img"
@@ -716,7 +738,7 @@
             <div class="col-12 col-md-4 col-lg-3">
               <div class="service-card mb-4">
                 <img
-                  src="/img/cafe_terrace.jpg"
+                  src="/img/votop-service7.jpg"
                   alt="HarborS 表参道のカフェ"
                   loading="lazy"
                   class="border service-img"
@@ -733,7 +755,7 @@
             <div class="col-12 col-md-4 col-lg-3">
               <div class="service-card mb-4">
                 <img
-                  src="/img/seminarroom.jpg"
+                  src="/img/votop-service8.jpg"
                   alt="HarborS 表参道の会議室"
                   loading="lazy"
                   class="border service-img"
@@ -750,7 +772,7 @@
             <div class="col-12 col-md-4 col-lg-3">
               <div class="service-card mb-4">
                 <img
-                  src="/img/rocker.jpg"
+                  src="/img/votop-service9.jpg"
                   alt="HarborS 表参道のロッカー"
                   loading="lazy"
                   class="border service-img"
@@ -767,7 +789,7 @@
             <div class="col-12 col-md-4 col-lg-3">
               <div class="service-card mb-4">
                 <img
-                  src="/img/office.jpg"
+                  src="/img/votop-service1.jpg"
                   alt="HarborS 表参道の外観"
                   loading="lazy"
                   class="border service-img"
@@ -783,7 +805,7 @@
             <div class="col-12 col-md-4 col-lg-3">
               <div class="service-card mb-4">
                 <img
-                  src="/img/wifi.jpg"
+                  src="/img/votop-service11.jpg"
                   alt="パソコンを操作する人"
                   loading="lazy"
                   class="border service-img"
@@ -799,7 +821,7 @@
             <div class="col-12 col-md-4 col-lg-3">
               <div class="service-card mb-4">
                 <img
-                  src="/img/cashless.jpg"
+                  src="/img/votop-service12.jpg"
                   alt="対応している決済方法"
                   loading="lazy"
                   class="border service-img"
@@ -984,8 +1006,8 @@
                 </h3>
               </div>
               <div class="mr-1 mr-md-3 d-flex align-items-center">
-                <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show">
-                <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up">
+                <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
               </div>
             </div>
           </div>
@@ -1010,8 +1032,8 @@
                 </h3>
               </div>
               <div class="mr-1 mr-md-3 d-flex align-items-center">
-                <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show">
-                <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up">
+                <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
               </div>
             </div>
           </div>
@@ -1036,8 +1058,8 @@
                 </h3>
               </div>
               <div class="mr-1 mr-md-3 d-flex align-items-center">
-                <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show">
-                <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up">
+                <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
               </div>
             </div>
           </div>
@@ -1061,8 +1083,8 @@
                 </h3>
               </div>
               <div class="mr-1 mr-md-3 d-flex align-items-center">
-                <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show">
-                <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up">
+                <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
               </div>
             </div>
           </div>
@@ -1086,8 +1108,8 @@
                 </h3>
               </div>
               <div class="mr-1 mr-md-3 d-flex align-items-center">
-                <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show">
-                <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up">
+                <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
               </div>
             </div>
           </div>
@@ -1115,8 +1137,8 @@
                 </h3>
               </div>
               <div class="mr-1 mr-md-3 d-flex align-items-center">
-                <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show">
-                <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up">
+                <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
               </div>
             </div>
           </div>
@@ -1139,8 +1161,8 @@
                 </h3>
               </div>
               <div class="mr-1 mr-md-3 d-flex align-items-center">
-                <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show">
-                <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up">
+                <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
               </div>
             </div>
           </div>
@@ -1425,7 +1447,7 @@
               </div>
               <button
                 type="submit"
-                class="btn btn-primary w-100 py-2"
+                class="btn w-100 py-2 btn-submit"
                 id="send_button"
               >
                 送信する
@@ -1457,6 +1479,7 @@
                   alt="友だち追加"
                   height="36"
                   border="0"
+                  loading="lazy"
               ></a>
             </div>
             <div id="errorMessage" style="display: none">
