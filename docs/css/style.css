@@ -1147,7 +1147,7 @@ g-contents
   }
 
   .contents-title-3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .contents-title-4 {
@@ -2256,28 +2256,22 @@ form span.bg-danger {
 }
 
 .flow-card.flow1 {
-  background-image: url(/img/seminarroom.jpg);
+  background-image: url(/img/flow-bg1.jpg);
 }
 .flow-card.flow2 {
-  background-image: url(/img/cafe.jpg);
+  background-image: url(/img/flow-bg2.jpg);
 }
 .flow-card.flow3 {
-  background-image: url(/img/pc.jpg);
+  background-image: url(/img/flow-bg3.jpg);
 }
 .flow-card.flow4 {
-  background-image: url(/img/documents.jpg);
+  background-image: url(/img/flow-bg4.jpg);
 }
 .flow-card.flow5 {
-  background-image: url(/img/interview.jpg);
+  background-image: url(/img/flow-bg5.jpg);
 }
 .flow-card.flow6 {
-  background-image: url(/img/engineer.jpg);
-}
-.flow-card.flow7 {
-  background-image: url(/img/creditcard.jpg);
-}
-.flow-card.flow8 {
-  background-image: url(/img/virtual_office.jpg);
+  background-image: url(/img/flow-bg6.jpg);
 }
 
 .flow-card >.card-body {
@@ -2374,7 +2368,6 @@ form span.bg-danger {
 .cta-card {
   background: #fff;
   width: 270px;
-  height: 250px;
   margin-left: auto;
   margin-right: 10px;
   box-shadow: 0 0 5px #aaa;
@@ -2384,9 +2377,8 @@ form span.bg-danger {
 .cta-img {
   background-image: url(/img/features_of_harbors1.jpg);
   background-size: cover;
-  height: 60%;
+  height: 110px;
   position: relative;
-  text-align: center;
 }
 
 .cta-img::before{
@@ -2399,27 +2391,20 @@ form span.bg-danger {
   content: ' ';
 }
 
-.cta-text-box {
-  position: absolute;
-  margin: auto;
-}
-
 .virtual-fixed-cv-btn {
-  max-width: 450px;
+  padding: 5px;
+  height: auto;
   margin: 0 auto;
-  position: absolute;
-  bottom: 3px;
-  left: 0;
-  right: 0;
 }
 
 .cta-card .virtual-fixed-cv-btn > button {
   width: 80%;
   font-weight: bold;
   border-radius: 100px;
-  font-size: 15px;
+  font-size: 13px;
   transition: background 0.4s;
-  padding: 5px 10px;
+  padding: 4px 10px;
+  text-align: center;
 }
 
 .cta-card .virtual-fixed-cv-btn .cv-contact-btn {
@@ -2480,16 +2465,24 @@ form span.bg-danger {
 }
 
 .cta-lead {
-  margin-top: 40px;
-  letter-spacing: 1px;
-  line-height: 1.3em;
-  font-size: 20px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  letter-spacing: 2px;
+  font-size: 17px;
 }
 
 .cta-sentence {
-  margin-top: 20px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  width: 100%;
   font-size: 10px;
-  text-align: center;
+  margin-bottom: 0;
 }
 
 .fixed-bottom {
@@ -2663,5 +2656,17 @@ form span.bg-danger {
   }
 }
 
+/* フォームの送信ボタン */
+
+.btn-submit {
+    color: #fff;
+    background-color: #df7156;
+    border: 2px solid #df7156;
+}
+
+.btn-submit:hover {
+  color: #df7156;
+  background-color: #fff;
+}
 
 /* END */
