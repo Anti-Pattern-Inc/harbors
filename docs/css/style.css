@@ -2656,7 +2656,19 @@ form span.bg-danger {
   }
 }
 
-/* フォームの送信ボタン */
+/* バーチャルフォーム */
+
+.modal-container {
+  max-width: 550px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .modal-container {
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+  }
+}
 
 .btn-submit {
     color: #fff;

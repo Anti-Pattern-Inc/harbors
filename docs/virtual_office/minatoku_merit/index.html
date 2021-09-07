@@ -379,7 +379,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           data-toggle="modal"
           data-target="#inquiryFormModal"
         >
-          もっと詳しく知りたい
+          無料で相談してみる
         </button>
       </div>
 
@@ -408,7 +408,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 class="d-block mr-2"
                 id="toSpInquiryFormModal"
               >
-              もっと詳しく知りたい
+              無料で相談してみる
             </div>
           </button>
         </div>
@@ -912,64 +912,49 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           <div class="modal-body">
             <form id="inquiryForm">
               <div class="form-group">
-                <label for="">お名前</label
-                ><span
-                  class="bg-danger text-white ml-2 px-2 py-1 small rounded-pill"
-                  >必須</span
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  name="name"
-                  aria-describedby=""
-                  placeholder=""
-                  required
-                >
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">メールアドレス</label
-                ><span
-                  class="bg-danger text-white ml-2 px-2 py-1 small rounded-pill"
-                  >必須</span
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  name="mail"
-                  id=""
-                  aria-describedby=""
-                  placeholder=""
-                  required
-                >
-              </div>
-              <div class="form-group">
-                <label for="">電話番号</label
-                ><span
-                  class="bg-danger text-white ml-2 px-2 py-1 small rounded-pill"
-                  >必須</span
-                >
-                <input
-                  type="tel"
-                  class="form-control"
-                  name="tel"
-                  aria-describedby=""
-                  placeholder=""
-                  required
-                >
-              </div>
-              <div class="form-group">
                 <label for="">お問い合わせ目的</label
-                ><span
-                  class="bg-danger text-white ml-2 px-2 py-1 small rounded-pill"
-                  >必須</span
-                >
+                ><span class="text-danger">*</span>
+                <div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <input type="radio" id="contact_type1" name="contact_type" value="1" required>
+                      <label for="contact_type1">
+                        オンライン説明会を予約したい
+                      </label>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="radio" id="contact_type2" name="contact_type" value="2">
+                      <label for="contact_type2">
+                        現地の見学説明会を予約したい
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <input type="radio" id="contact_type3" name="contact_type" value="3">
+                      <label for="contact_type3" class="mb-sm-0">
+                        資料を送付してほしい
+                      </label>
+                    </div>
+                    <div class="col-6">
+                      <input type="radio" id="contact_type4" name="contact_type" value="4">
+                      <label for="contact_type4" class="mb-sm-0">
+                        その他
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="form-group">
+                <label for="">お問い合わせ目的</label
+                ><span class="text-danger">*</span>
                 <select class="form-control" name="contact_type" required>
                   <option></option>
                   <option value="1">オンライン説明会を予約したい</option>
                   <option value="2">現地の見学説明会を予約したい</option>
                   <option value="3">資料を送付してほしい</option>
                 </select>
-              </div>
+              </div> -->
               <div
                 class="form-group"
                 id="form_preferred_visit_date"
@@ -986,7 +971,6 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                     name="preferred_visit_date"
                     class="form-control datetimepicker-input"
                     data-target="#preferred_visit_date"
-                    required
                   >
                   <div
                     class="input-group-append"
@@ -1022,7 +1006,42 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 </div>
               </div>
               <div class="form-group">
-                <label for="">その他ご要望</label>
+                <label for="">お名前</label><span class="text-danger">*</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  aria-describedby=""
+                  placeholder=""
+                  required
+                >
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">メールアドレス</label
+                ><span class="text-danger">*</span>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="mail"
+                  id=""
+                  aria-describedby=""
+                  placeholder=""
+                  required
+                >
+              </div>
+              <div class="form-group">
+                <label for="">電話番号</label><span class="text-danger">*</span>
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="tel"
+                  aria-describedby=""
+                  placeholder=""
+                  required
+                >
+              </div>
+              <div class="form-group">
+                <label for="">備考・要望など</label><span class="text-danger" id="remarks_required" style="display: none;">*</span>
                 <textarea
                   class="form-control"
                   name="remarks"
@@ -1039,7 +1058,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               </button>
               <div class="modal-footer">
                 <p class="small">
-                  HarborSは、株式会社アンチパターンが運営する、南青山のバーチャルオフィスです。
+                  HarborS 表参道は、株式会社アンチパターンが運営する、南青山のバーチャルオフィスです。
                 </p>
               </div>
               <input
