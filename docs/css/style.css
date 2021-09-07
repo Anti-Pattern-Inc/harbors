@@ -1147,7 +1147,7 @@ g-contents
   }
 
   .contents-title-3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .contents-title-4 {
@@ -2256,28 +2256,22 @@ form span.bg-danger {
 }
 
 .flow-card.flow1 {
-  background-image: url(/img/seminarroom.jpg);
+  background-image: url(/img/flow-bg1.jpg);
 }
 .flow-card.flow2 {
-  background-image: url(/img/cafe.jpg);
+  background-image: url(/img/flow-bg2.jpg);
 }
 .flow-card.flow3 {
-  background-image: url(/img/pc.jpg);
+  background-image: url(/img/flow-bg3.jpg);
 }
 .flow-card.flow4 {
-  background-image: url(/img/documents.jpg);
+  background-image: url(/img/flow-bg4.jpg);
 }
 .flow-card.flow5 {
-  background-image: url(/img/interview.jpg);
+  background-image: url(/img/flow-bg5.jpg);
 }
 .flow-card.flow6 {
-  background-image: url(/img/engineer.jpg);
-}
-.flow-card.flow7 {
-  background-image: url(/img/creditcard.jpg);
-}
-.flow-card.flow8 {
-  background-image: url(/img/virtual_office.jpg);
+  background-image: url(/img/flow-bg6.jpg);
 }
 
 .flow-card >.card-body {
@@ -2662,7 +2656,19 @@ form span.bg-danger {
   }
 }
 
-/* フォームの送信ボタン */
+/* バーチャルフォーム */
+
+.modal-container {
+  max-width: 550px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .modal-container {
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+  }
+}
 
 .btn-submit {
   display: block;
