@@ -56,11 +56,15 @@ $(function () {
         }
       } else {
         if (contactType == "4") {
+          $("#form_preferred_visit_date").hide();
+          $("#form_preferred_visit_time").hide();
           $('[name="remarks"]').attr("required", "true");
           $('#remarks_required').show();
         } else {
           $("#form_preferred_visit_date").hide();
           $("#form_preferred_visit_time").hide();
+          $('[name="remarks"]').removeAttr("required");
+          $('#remarks_required').hide();
         }
       }
     })
