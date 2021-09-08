@@ -2241,10 +2241,12 @@ form span.bg-danger {
   border-radius: 0%;
   height: 100%;
   margin-bottom: 20px;
-  box-shadow: 1px 1px 10px #000;
+  /* box-shadow: 1px 1px 10px #000; */
+  box-shadow: 0 0 5px #aaa;
+  /* color: #aaa; */
 }
 
-.flow-card::before {
+/* .flow-card::before {
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
@@ -2253,25 +2255,25 @@ form span.bg-danger {
   left: 0;
   content: " ";
   z-index: 0;
-}
+} */
 
 .flow-card.flow1 {
-  background-image: url(/img/flow-bg1.jpg);
+  /* background-image: url(/img/flow-bg1.jpg); */
 }
 .flow-card.flow2 {
-  background-image: url(/img/flow-bg2.jpg);
+  /* background-image: url(/img/flow-bg2.jpg); */
 }
 .flow-card.flow3 {
-  background-image: url(/img/flow-bg3.jpg);
+  /* background-image: url(/img/flow-bg3.jpg); */
 }
 .flow-card.flow4 {
-  background-image: url(/img/flow-bg4.jpg);
+  /* background-image: url(/img/flow-bg4.jpg); */
 }
 .flow-card.flow5 {
-  background-image: url(/img/flow-bg5.jpg);
+  /* background-image: url(/img/flow-bg5.jpg); */
 }
 .flow-card.flow6 {
-  background-image: url(/img/flow-bg6.jpg);
+  /* background-image: url(/img/flow-bg6.jpg); */
 }
 
 .flow-card >.card-body {
@@ -2280,7 +2282,7 @@ form span.bg-danger {
 }
 
 .flow-title {
-  color: #ffffff;
+  color: #df7156;
   font-size: 16px;
   line-height: 24px;
 }
@@ -2293,7 +2295,7 @@ form span.bg-danger {
 }
 
 .flow-description {
-  color: #ffffff;
+  /* color: #ffffff; */
   font-size: 14px;
   margin: 0;
 }
