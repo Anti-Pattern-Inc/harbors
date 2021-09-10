@@ -232,10 +232,20 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 992px) {
+
   .header-left span {
-    margin-left: 8px;
+    display: block;
+    margin: 8px auto 0;
+    text-align: center;
   }
+  
+  .header-lower-right {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 850px) {
 
   .nav-menu ul > li {
     margin-left: 6px;
@@ -265,6 +275,7 @@
   }
 
   .header-left span {
+    display: inline-block;
     margin-left: 16px;
   }
 
@@ -351,7 +362,8 @@
   .header-lower-right {
     order: 1;
     width: 320px;
-    margin: 0 auto 15px;
+    margin: 0 auto;
+    font-size: 16px;
   }
 
   .nav-menu ul > p {

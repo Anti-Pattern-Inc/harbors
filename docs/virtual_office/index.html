@@ -117,7 +117,7 @@
     <header id="header" class="bg-white">
       <div class="header-container d-flex justify-content-between ja align-items-center">
         <div class="header-left vertical-align-middle">
-          <a href="/" class="d-inline-block">
+          <a href="/" class="d-inline-block d-md-block d-lg-inline-block">
             <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="109.931" height="53" viewBox="0 0 109.931 53" class="header-logo bg-black">
               <g id="harbors_logo" data-name="レイヤー 1">
                 <path id="harbors_logo_mark" data-name="パス 3" d="M76.2,19.666,73.86,17.659,89.548,0c6.652,5.855,13.26,11.659,20.017,17.609l-7.856,8.845-2.328-2.007,5.744-6.522-3.406-3.115-5.845,6.522-2.328-2.007,5.81-6.557L95.844,9.733l-5.8,6.472-2.293-2.037L93.5,7.646,89.819,4.39Z" transform="translate(-36.805)" fill="#000"></path>
@@ -177,50 +177,39 @@
             </ul>
             <ul class="header-lower-right d-md-flex justify-content-end">
               <li>
-                <a href="/virtual_office/columns/" class="nav-hover">
-                  お役立ちコラム
+                <a href="#reasons" class="nav-hover">選ばれる理由
                   <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
                     <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="header-disabled nav-hover">レンタルスペース</a>
-                <div class="speech-bubble triangle-1">
-                  <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                    <div class="mr-0 mr-xl-5 mb-0 mb-md-4 mb-xl-0">
-                      <a href="https://sky-terrace.anti-pattern.co.jp/">
-                        <img src="/img/votop-nav1.jpg" alt="HarborS 表参道のテラス" class="radius" loading="lazy">
-                        <span>
-                          スカイテラス表参道
-                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon">
-                            <g id="link-icon" transform="translate(-1154 -5516)">
-                              <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
-                                <rect width="10" height="11.667" stroke="none"/>
-                                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-                              </g>
-                              <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
-                                <rect width="10" height="11.667" stroke="none"/>
-                                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-                              </g>
-                            </g>
-                          </svg>
-                        </span>
-                      </a>
-                    </div>
-                    <div>
-                      <a href="/rooms/">
-                        <img src="/img/votop-nav2.jpg" alt="HarborS 表参道の会議室" class="radius" loading="lazy">
-                        <span>
-                          会議室
-                          <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="arrow">
-                            <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#666" stroke-width="1"/>
-                          </svg>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                <a href="#services" class="nav-hover">サービス
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#flow" class="nav-hover">契約の流れ
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#faq" class="nav-hover">よくある質問
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#columns" class="nav-hover">お役立ち情報
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
               </li>
               <li>
                 <a href="#access" class="nav-hover">アクセス
@@ -467,7 +456,7 @@
       </section>
 
       <!-- reasons -->
-      <section class="reasons bg-light">
+      <section class="reasons bg-light" id="reasons">
         <h2 class="text-center section-heading mb-4 mb-md-5">
           <span class="display-3">REASONS</span><br>
           HarborS表参道が選ばれる理由
@@ -605,7 +594,7 @@
         </div>
       </section>
       <!-- Services -->
-      <section>
+      <section id="services">
         <div class="container">
           <h2 class="text-center mb-4 mb-md-5 section-heading">
             <span class="display-3">SERVICES</span><br>
@@ -843,7 +832,7 @@
       </section>
 
       <!-- Flow -->
-      <section class="virtual-flow bg-light">
+      <section class="virtual-flow bg-light" id="flow">
         <div class="container flow-container">
           <h2 class="text-center mb-4 mb-md-5 section-heading">
             <span class="display-3">FLOW</span><br>
@@ -995,7 +984,7 @@
       </section>
 
       <!-- faq -->
-      <section class="top-faq">
+      <section class="top-faq" id="faq">
         <h2 class="text-center section-heading mb-4 mb-md-5">
           <span class="display-3">FAQ</span><br>
           バーチャルオフィスのよくあるご質問
@@ -1182,7 +1171,7 @@
       </section>
 
           <!-- コラム -->
-    <section class="bg-light">
+    <section class="bg-light" id=columns>
       <div class="container">
         <h2 class="text-center section-heading mb-4 mb-md-5">
           <span class="display-3">COLUMNS</span><br>
