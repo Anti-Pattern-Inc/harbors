@@ -2690,4 +2690,31 @@ form span.bg-danger {
   border-top: #fff;
 }
 
+.services-container ul {
+  list-style-type: none;
+}
+
+.services-container li {
+  margin-bottom: 20px;
+}
+
+.virtual-columns-title {
+  font-size: 14.5px;
+}
+
+.virtual-columns {
+  font-size: 12.5px;
+}
+
+@media screen and (max-width: 1199.98px) {
+
+  .virtual-columns-title {
+    font-size: 12px;
+  }
+  
+  .virtual-columns {
+    font-size: 10px;
+  }
+}
+
 /* END */
