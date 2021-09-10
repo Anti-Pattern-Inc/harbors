@@ -2143,6 +2143,7 @@ form span.bg-danger {
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
+
 .c-pagelink li {
   list-style: none;
   margin-bottom: 0;
@@ -2697,6 +2698,10 @@ form span.bg-danger {
   .virtual-columns {
     font-size: 10px;
   }
+}
+
+.c-pagelink {
+  margin-bottom: 0;
 }
 
 /* END */
