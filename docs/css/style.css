@@ -2692,11 +2692,11 @@ form span.bg-danger {
 @media screen and (max-width: 1199.98px) {
 
   .virtual-columns-title {
-    font-size: 12px;
+    font-size: 13px;
   }
   
   .virtual-columns {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
