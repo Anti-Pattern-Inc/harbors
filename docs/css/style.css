@@ -1478,12 +1478,9 @@ g-contents
 .c-pagelink {
   padding-left: 20px;
 }
-.c-pagelink li {
+/* .c-pagelink li {
   margin: 0 10px 20px;
-}
-.c-pagelink li:last-child {
-  margin: 0 10px 0;
-}
+} */
 /** NAP表 共通 **/
 .c-nap h3, .c-nap .c-nap-title {
   background: #18315e;
@@ -2147,6 +2144,8 @@ form span.bg-danger {
 .c-pagelink li {
   list-style: none;
   margin-bottom: 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .c-linkblock h2 {
@@ -2161,6 +2160,12 @@ form span.bg-danger {
 
 .c-pagelink {
   padding-left: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .c-pagelink li {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2682,7 +2687,7 @@ form span.bg-danger {
 }
 
 .virtual-columns-title {
-  font-size: 14.5px;
+  font-size: 16px;
 }
 
 .virtual-columns {
