@@ -2709,4 +2709,11 @@ form span.bg-danger {
   margin-bottom: 0;
 }
 
+.virtual-service-icon {
+  width: 20%;
+}
+
+.virtual-service-text {
+  width: 80%;
+}
 /* END */
