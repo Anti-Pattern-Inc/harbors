@@ -54,6 +54,7 @@
       as="style"
     >
     <link rel="stylesheet" rel="preload" href="/css/style.css" as="style">
+    <link rel="stylesheet" rel="preload" href="/css/header.css" as="style">
     <link
       rel="stylesheet"
       rel="preload"
@@ -112,108 +113,235 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header class="container-fluid mb-3 mb-md-0 bg-white px-0" id="header">
-      <nav
-        class="
-          navbar navbar-expand-md navbar-light
-          bg-white
-          px-2 px-md-0 px-lg-5
-          border-bottom
-        "
-      >
-        <a class="nav-link" href="/"><div class="logo"></div></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbar-header"
-          aria-controls="navbar-header"
-          aria-expanded="false"
-          aria-label="ナビゲーションの切替"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-header">
-          <ul class="navbar-nav ml-auto pt-2">
-            <li class="nav-item align-bottom">
-              <a class="nav-link" href="/coworking/">コワーキング</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/events/">イベント</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href=""
-                id="navbarLearningDropdownMenuLink"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                学習プログラム
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarLearningDropdownMenuLink"
-              >
-                <a
-                  class="dropdown-item text-secondary"
-                  href="/extends/"
-                  target="_blank"
-                  >extends</a
-                >
-                <a
-                  class="dropdown-item text-secondary"
-                  href="https://posse.anti-pattern.co.jp/"
-                  target="_blank"
-                  >POSSE</a
-                >
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href=""
-                id="navbarSpaceDropdownMenuLink"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                スペース
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarSpaceDropdownMenuLink"
-              >
-                <a class="dropdown-item text-secondary" href="/rooms/"
-                  >会議室</a
-                >
-                <a
-                  class="dropdown-item text-secondary"
-                  href="https://sky-terrace.anti-pattern.co.jp/"
-                  target="_blank"
-                  >スカイテラス表参道</a
-                >
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#access">アクセス</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contacts/">お問い合わせ</a>
-            </li>
-          </ul>
+
+    <header id="header" class="bg-white">
+      <div class="header-container d-flex justify-content-between ja align-items-center">
+        <div class="header-left vertical-align-middle">
+          <a href="/" class="d-inline-block">
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="109.931" height="53" viewBox="0 0 109.931 53" class="header-logo bg-black">
+              <g id="harbors_logo" data-name="レイヤー 1">
+                <path id="harbors_logo_mark" data-name="パス 3" d="M76.2,19.666,73.86,17.659,89.548,0c6.652,5.855,13.26,11.659,20.017,17.609l-7.856,8.845-2.328-2.007,5.744-6.522-3.406-3.115-5.845,6.522-2.328-2.007,5.81-6.557L95.844,9.733l-5.8,6.472-2.293-2.037L93.5,7.646,89.819,4.39Z" transform="translate(-36.805)" fill="#000"></path>
+                <path id="harbors_logo_1h" data-name="パス 2" d="M22.807,79.128H18.713V68.171H4.355V79.037H0V53.125H4.169V64.077H18.643v-11h4.164Z" transform="translate(0 -26.45)" fill="#000"></path>
+                <path id="harbors_logo_2a" data-name="パス 5" d="M63.837,93.5c-2.278.161-4.34.391-6.4.421a5.424,5.424,0,0,1-5.679-5.453,6.02,6.02,0,0,1,5.519-6.221c3.467-.271,6.321,1.841,6.522,5.017C63.952,89.291,63.837,91.357,63.837,93.5ZM57.9,91.1a3.012,3.012,0,1,0-3.123-2.9A3.012,3.012,0,0,0,57.9,91.1Z" transform="translate(-25.788 -40.973)" fill="#000"></path>
+                <path id="harbors_logo_3r" data-name="パス 7" d="M82.169,94.144c0-2.784-.14-5.3.045-7.8.171-2.358,2.077-3.547,5.087-3.361V85.44c-2.077.151-2.182,1.635-2.087,3.341s0,3.311,0,5.2Z" transform="translate(-40.921 -41.341)" fill="#000"></path>
+                <path id="harbors_logo_4b" data-name="パス 4" d="M98.181,66.33h3.055v8.759a19.176,19.176,0,0,1,2.574-.717,5.554,5.554,0,0,1,6.427,4.841A5.965,5.965,0,0,1,105,86.006c-3.632.4-6.672-1.766-6.783-5.132C98.071,76.1,98.181,71.307,98.181,66.33Zm9.061,13.927a3.01,3.01,0,0,0-3.01-3.09,2.895,2.895,0,0,0-2.97,2.865,2.86,2.86,0,0,0,2.85,3.161,2.92,2.92,0,0,0,3.131-2.935Z" transform="translate(-48.905 -33.053)" fill="#000"></path>
+                <path id="harbors_logo_5a" data-name="パス 6" d="M132.78,93.949c-3.562,0-6.02-2.333-6.02-5.774a5.95,5.95,0,0,1,6.186-5.935,5.753,5.753,0,0,1,5.975,5.9,6.02,6.02,0,0,1-6.141,5.81Zm3.01-5.87a2.87,2.87,0,0,0-3.01-3.01,3.01,3.01,0,1,0,.03,6.02,2.87,2.87,0,0,0,2.965-3.01Z" transform="translate(-63.166 -40.981)" fill="#000"></path>
+                <path id="harbors_logo_6r" data-name="パス 8" d="M161.712,83.219v2.463c-1.931,0-2.358,1.169-2.243,2.885s.03,3.582.03,5.519h-2.915c0-2.7-.181-5.363.055-7.982C156.845,83.871,158.952,82.793,161.712,83.219Z" transform="translate(-77.995 -41.423)" fill="#000"></path>
+                <path id="harbors_logo_7s" data-name="パス 1" d="M193.611,53.18v3.637H180.747c-1.786,0-3.131.592-3.768,2.353a3.535,3.535,0,0,0,3.266,4.952c2.654.09,5.348,0,8.027.04,4.39.09,7.4,2.835,7.636,6.883.251,4.269-2.508,7.821-6.858,8.057-5.253.286-10.535.065-15.944.065V75.354h6.02c3.08,0,6.156.055,9.231-.04a3.41,3.41,0,0,0,3.366-3.718,3.351,3.351,0,0,0-3.346-3.512c-2.6-.1-5.218,0-7.826-.045-4.952-.06-8-2.95-7.982-7.525,0-4.47,3.236-7.49,8.082-7.525,4.144-.025,8.293,0,12.442,0A2.288,2.288,0,0,1,193.611,53.18Z" transform="translate(-85.993 -26.399)" fill="#000"></path>
+              </g>
+            </svg>
+          </a>
+          <span>ハーバーズ表参道</span>
         </div>
-      </nav>
+        <div class="header-right">
+          <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="nav-menu">
+            <ul class="header-upper-right d-md-flex justify-content-end">
+              <li class="d-none d-md-block"><a href="/contacts/" class="nav-hover">お問い合わせ</a></li>
+              <li class="d-none d-md-block">
+                <a href="tel: 0368856140" class="nav-hover">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18.495" height="18.443" viewBox="0 0 18.495 18.443" class="header-logo mr-1">
+                    <g id="tel-icon" transform="translate(-1479.867 -1076.324)" style="isolation: isolate">
+                      <g id="tell_group_1" data-name="グループ 1" transform="translate(1482.828 1076.824)">
+                        <path id="tell_1" data-name="パス 9" d="M1498.5,1089.4a.272.272,0,0,1-.272-.272v-6.015a5.742,5.742,0,1,0-11.485,0v6.015a.272.272,0,1,1-.544,0v-6.015a6.286,6.286,0,1,1,12.573,0v6.015A.272.272,0,0,1,1498.5,1089.4Z" transform="translate(-1486.197 -1076.824)" fill="#000" stroke="#000" stroke-width="1"/>
+                      </g>
+                      <g id="tell_group_2" data-name="グループ 2" transform="translate(1480.367 1084.208)">
+                        <path id="tell_2" data-name="パス 10" d="M1483.1,1099.5h-1.419a1.316,1.316,0,0,1-1.314-1.314v-2.56a1.315,1.315,0,0,1,1.314-1.314h1.419a.272.272,0,0,1,.272.272v4.645A.272.272,0,0,1,1483.1,1099.5Zm-1.419-4.645a.771.771,0,0,0-.771.77v2.56a.771.771,0,0,0,.771.77h1.147v-4.1Z" transform="translate(-1480.367 -1094.316)" fill="#000" stroke="#000" stroke-width="1"/>
+                      </g>
+                      <g id="tell_group_3" data-name="グループ 3" transform="translate(1494.857 1084.208)">
+                        <path id="tell_3" data-name="パス 11" d="M1516.381,1099.5h-1.419a.272.272,0,0,1-.272-.272v-4.645a.272.272,0,0,1,.272-.272h1.419a1.315,1.315,0,0,1,1.314,1.314v2.56A1.316,1.316,0,0,1,1516.381,1099.5Zm-1.147-.544h1.147a.771.771,0,0,0,.771-.77v-2.56a.771.771,0,0,0-.771-.77h-1.147Z" transform="translate(-1514.69 -1094.316)" fill="#000" stroke="#000" stroke-width="1"/>
+                      </g>
+                      <g id="tell_group_4" data-name="グループ 4" transform="translate(1487.05 1091.911)">
+                        <path id="tell_4" data-name="パス 12" d="M1497.375,1114.918a1.178,1.178,0,1,1,1.178-1.178A1.179,1.179,0,0,1,1497.375,1114.918Zm0-1.812a.634.634,0,1,0,.634.634A.635.635,0,0,0,1497.375,1113.106Z" transform="translate(-1496.197 -1112.562)" fill="#000" stroke="#000" stroke-width="1"/>
+                      </g>
+                      <g id="tell_group_5" data-name="グループ 5" transform="translate(1482.828 1088.853)">
+                        <path id="tell_5" data-name="パス 13" d="M1490.69,1109.825h-.257a4.241,4.241,0,0,1-4.236-4.236.272.272,0,1,1,.544,0,3.7,3.7,0,0,0,3.693,3.692h.257a.272.272,0,1,1,0,.544Z" transform="translate(-1486.197 -1105.317)" fill="#000" stroke="#000" stroke-width="1"/>
+                      </g>
+                    </g>
+                  </svg>
+                  03-6885-6140
+                </a>
+              </li>
+              <li class="d-none d-md-block">
+                <a href="mailto:contact@harbors.sh" class="nav-hover">
+                  <svg id="Capa_1" enable-background="new 0 0 479.058 479.058" height="18.443" viewBox="0 0 479.058 479.058" width="18.495" xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                    <path d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"/>
+                  </svg>
+                  contact@harbors.sh
+                </a>
+              </li>
+            </ul>
+            <ul class="header-lower-right d-md-flex justify-content-end">
+              <li>
+                <a href="/coworking/" class="nav-hover">
+                  コワーキング
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="/events/" class="nav-hover">
+                  イベント
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="header-disabled nav-hover">学習プログラム</a>
+                <div class="speech-bubble triangle-2">
+                  <div class="d-flex d-md-block d-xl-flex justify-content-between">
+                    <div class="mr-0 mr-xl-5 mb-0 mb-md-4 mb-xl-0">
+                      <a href="https://posse.anti-pattern.co.jp/">
+                        <img src="/img/posseLogotouka.png" alt="POSSEのロゴ" width="280" height="auto" class="radius">
+                        <span>
+                          POSSE
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon">
+                              <g id="link-icon" transform="translate(-1154 -5516)">
+                                <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
+                                  <rect width="10" height="11.667" stroke="none"/>
+                                  <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+                                </g>
+                                <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
+                                  <rect width="10" height="11.667" stroke="none"/>
+                                  <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+                                </g>
+                              </g>
+                            </svg>
+                        </span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="/extends/">
+                        <img src="/img/extendsLogoTouka.png" alt="extendsのロゴ" width="280" height="auto" class="radius">
+                        <span>
+                          extends
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon">
+                            <g id="link-icon" transform="translate(-1154 -5516)">
+                              <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
+                                <rect width="10" height="11.667" stroke="none"/>
+                                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+                              </g>
+                              <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
+                                <rect width="10" height="11.667" stroke="none"/>
+                                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+                              </g>
+                            </g>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a class="header-disabled nav-hover">レンタルスペース</a>
+                <div class="speech-bubble triangle-1">
+                  <div class="d-flex d-md-block d-xl-flex justify-content-between">
+                    <div class="mr-0 mr-xl-5 mb-0 mb-md-4 mb-xl-0">
+                      <a href="https://sky-terrace.anti-pattern.co.jp/">
+                        <img src="/img/rental_space.jpg" alt="HarborS 表参道のテラス" class="radius">
+                        <span>
+                          スカイテラス表参道
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon">
+                            <g id="link-icon" transform="translate(-1154 -5516)">
+                              <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
+                                <rect width="10" height="11.667" stroke="none"/>
+                                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+                              </g>
+                              <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
+                                <rect width="10" height="11.667" stroke="none"/>
+                                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+                              </g>
+                            </g>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="/rooms/">
+                        <img src="/img/room-a.jpg" alt="HarborS 表参道の会議室" class="radius">
+                        <span>
+                          会議室
+                          <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="arrow">
+                            <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#666" stroke-width="1"/>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#access" class="nav-hover">アクセス
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav-footer">
+              <div class="nav-footer-container">
+                <p>メニュー</p>
+                <p class="small">
+                  <a href="https://anti-pattern.co.jp/" target="_blank">運営会社</a>
+                  <a href="/contacts/">お問い合わせ</a>
+                  <a href="https://anti-pattern.co.jp/legal/privacy/" target="_blank">プライバシーポリシー</a>
+                </p>
+                <p class="pt-3">利用規約</p>
+                <p class="small mb-0">
+                  <a href="/terms/harbors/">コワーキングスペース</a>
+                  <a href="/terms//virtual_office/">バーチャルオフィス</a><br>
+                  <a href="/terms/rooms/">ミーティングルーム</a>
+                  <a href="/terms/posse">POSSE</a>
+                </p>
+              </div>
+              <div class="d-flex small justify-content-center">
+                <a href="tel:0368856140" class="d-block text-center mb-5 pr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18.495" height="18.443" viewBox="0 0 18.495 18.443" class="mr-1">
+                    <g id="tel-icon" transform="translate(-1479.867 -1076.324)" style="isolation: isolate">
+                      <g id="tell_group_1" data-name="グループ 1" transform="translate(1482.828 1076.824)">
+                        <path id="tell_1" data-name="パス 9" d="M1498.5,1089.4a.272.272,0,0,1-.272-.272v-6.015a5.742,5.742,0,1,0-11.485,0v6.015a.272.272,0,1,1-.544,0v-6.015a6.286,6.286,0,1,1,12.573,0v6.015A.272.272,0,0,1,1498.5,1089.4Z" transform="translate(-1486.197 -1076.824)" fill="#fff" stroke="#fff" stroke-width="1"/>
+                      </g>
+                      <g id="tell_group_2" data-name="グループ 2" transform="translate(1480.367 1084.208)">
+                        <path id="tell_2" data-name="パス 10" d="M1483.1,1099.5h-1.419a1.316,1.316,0,0,1-1.314-1.314v-2.56a1.315,1.315,0,0,1,1.314-1.314h1.419a.272.272,0,0,1,.272.272v4.645A.272.272,0,0,1,1483.1,1099.5Zm-1.419-4.645a.771.771,0,0,0-.771.77v2.56a.771.771,0,0,0,.771.77h1.147v-4.1Z" transform="translate(-1480.367 -1094.316)" fill="#fff" stroke="#fff" stroke-width="1"/>
+                      </g>
+                      <g id="tell_group_3" data-name="グループ 3" transform="translate(1494.857 1084.208)">
+                        <path id="tell_3" data-name="パス 11" d="M1516.381,1099.5h-1.419a.272.272,0,0,1-.272-.272v-4.645a.272.272,0,0,1,.272-.272h1.419a1.315,1.315,0,0,1,1.314,1.314v2.56A1.316,1.316,0,0,1,1516.381,1099.5Zm-1.147-.544h1.147a.771.771,0,0,0,.771-.77v-2.56a.771.771,0,0,0-.771-.77h-1.147Z" transform="translate(-1514.69 -1094.316)" fill="#fff" stroke="#fff" stroke-width="1"/>
+                      </g>
+                      <g id="tell_group_4" data-name="グループ 4" transform="translate(1487.05 1091.911)">
+                        <path id="tell_4" data-name="パス 12" d="M1497.375,1114.918a1.178,1.178,0,1,1,1.178-1.178A1.179,1.179,0,0,1,1497.375,1114.918Zm0-1.812a.634.634,0,1,0,.634.634A.635.635,0,0,0,1497.375,1113.106Z" transform="translate(-1496.197 -1112.562)" fill="#fff" stroke="#fff" stroke-width="1"/>
+                      </g>
+                      <g id="tell_group_5" data-name="グループ 5" transform="translate(1482.828 1088.853)">
+                        <path id="tell_5" data-name="パス 13" d="M1490.69,1109.825h-.257a4.241,4.241,0,0,1-4.236-4.236.272.272,0,1,1,.544,0,3.7,3.7,0,0,0,3.693,3.692h.257a.272.272,0,1,1,0,.544Z" transform="translate(-1486.197 -1105.317)" fill="#fff" stroke="#fff" stroke-width="1"/>
+                      </g>
+                    </g>
+                  </svg>
+                  03-6885-6140
+                </a>
+                <a href="mailto:contact@harbors.sh" class="d-block text-center mb-5 pl-3">
+                  <svg id="Capa_1" enable-background="new 0 0 479.058 479.058" height="18.443" viewBox="0 0 479.058 479.058" width="18.495" xmlns="http://www.w3.org/2000/svg" class="mr-1" fill ="#fff">
+                    <path d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"/>
+                  </svg>
+                  contact@harbors.sh
+                </a>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
       <!-- パンくずリスト -->
-      <div class="breadcrumb d-none d-md-block bg-white px-2 px-lg-5">
+      <div class="breadcrumb virtual-breadcrumb d-none d-md-block bg-transparent pt-2 pb-0">
         <ol
           itemscope
           itemtype="https://schema.org/BreadcrumbList"
-          class="px-2 mb-0"
+          class="p-0 mb-0"
         >
           <li
             itemprop="itemListElement"
@@ -221,7 +349,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             itemtype="https://schema.org/ListItem"
           >
             <a itemprop="item" href="/coworking/" class="text-muted">
-              <span itemprop="name">コワーキングスペースTOP</span>
+              <span itemprop="name" class="ml-0">コワーキングスペースTOP</span>
             </a>
             <meta itemprop="position" content="1" >
           </li>
@@ -1185,5 +1313,6 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
     ></script>
     <script src="/js/common.js"></script>
     <script src="/js/coworking_form.js"></script>
+    <script src="/js/header.js"></script>
   </body>
 </html>
