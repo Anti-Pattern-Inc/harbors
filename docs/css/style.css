@@ -1478,12 +1478,9 @@ g-contents
 .c-pagelink {
   padding-left: 20px;
 }
-.c-pagelink li {
+/* .c-pagelink li {
   margin: 0 10px 20px;
-}
-.c-pagelink li:last-child {
-  margin: 0 10px 0;
-}
+} */
 /** NAP表 共通 **/
 .c-nap h3, .c-nap .c-nap-title {
   background: #18315e;
@@ -2143,9 +2140,12 @@ form span.bg-danger {
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
+
 .c-pagelink li {
   list-style: none;
   margin-bottom: 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .c-linkblock h2 {
@@ -2160,6 +2160,12 @@ form span.bg-danger {
 
 .c-pagelink {
   padding-left: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .c-pagelink li {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2224,10 +2230,12 @@ form span.bg-danger {
   border-radius: 0%;
   height: 100%;
   margin-bottom: 20px;
-  box-shadow: 1px 1px 10px #000;
+  /* box-shadow: 1px 1px 10px #000; */
+  box-shadow: 0 0 5px #aaa;
+  /* color: #aaa; */
 }
 
-.flow-card::before {
+/* .flow-card::before {
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
@@ -2236,25 +2244,25 @@ form span.bg-danger {
   left: 0;
   content: " ";
   z-index: 0;
-}
+} */
 
 .flow-card.flow1 {
-  background-image: url(/img/flow-bg1.jpg);
+  /* background-image: url(/img/flow-bg1.jpg); */
 }
 .flow-card.flow2 {
-  background-image: url(/img/flow-bg2.jpg);
+  /* background-image: url(/img/flow-bg2.jpg); */
 }
 .flow-card.flow3 {
-  background-image: url(/img/flow-bg3.jpg);
+  /* background-image: url(/img/flow-bg3.jpg); */
 }
 .flow-card.flow4 {
-  background-image: url(/img/flow-bg4.jpg);
+  /* background-image: url(/img/flow-bg4.jpg); */
 }
 .flow-card.flow5 {
-  background-image: url(/img/flow-bg5.jpg);
+  /* background-image: url(/img/flow-bg5.jpg); */
 }
 .flow-card.flow6 {
-  background-image: url(/img/flow-bg6.jpg);
+  /* background-image: url(/img/flow-bg6.jpg); */
 }
 
 .flow-card >.card-body {
@@ -2263,7 +2271,7 @@ form span.bg-danger {
 }
 
 .flow-title {
-  color: #ffffff;
+  color: #df7156;
   font-size: 16px;
   line-height: 24px;
 }
@@ -2275,7 +2283,7 @@ form span.bg-danger {
 }
 
 .flow-description {
-  color: #ffffff;
+  /* color: #ffffff; */
   font-size: 14px;
   margin: 0;
 }
@@ -2653,14 +2661,52 @@ form span.bg-danger {
 }
 
 .btn-submit {
-    color: #fff;
-    background-color: #df7156;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #df7156;
     border: 2px solid #df7156;
 }
 
 .btn-submit:hover {
   color: #df7156;
   background-color: #fff;
+}
+
+.modal-footer {
+  border-top: #fff;
+}
+
+.services-container ul {
+  list-style-type: none;
+}
+
+.services-container li {
+  margin-bottom: 20px;
+}
+
+.virtual-columns-title {
+  font-size: 16px;
+}
+
+.virtual-columns {
+  font-size: 12.5px;
+}
+
+@media screen and (max-width: 1199.98px) {
+
+  .virtual-columns-title {
+    font-size: 13px;
+  }
+  
+  .virtual-columns {
+    font-size: 12px;
+  }
+}
+
+.c-pagelink {
+  margin-bottom: 0;
 }
 
 /* END */

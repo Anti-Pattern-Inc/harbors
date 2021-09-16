@@ -117,7 +117,7 @@
     <header id="header" class="bg-white">
       <div class="header-container d-flex justify-content-between ja align-items-center">
         <div class="header-left vertical-align-middle">
-          <a href="/" class="d-inline-block">
+          <a href="/" class="d-inline-block d-md-block d-lg-inline-block">
             <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="109.931" height="53" viewBox="0 0 109.931 53" class="header-logo bg-black">
               <g id="harbors_logo" data-name="レイヤー 1">
                 <path id="harbors_logo_mark" data-name="パス 3" d="M76.2,19.666,73.86,17.659,89.548,0c6.652,5.855,13.26,11.659,20.017,17.609l-7.856,8.845-2.328-2.007,5.744-6.522-3.406-3.115-5.845,6.522-2.328-2.007,5.81-6.557L95.844,9.733l-5.8,6.472-2.293-2.037L93.5,7.646,89.819,4.39Z" transform="translate(-36.805)" fill="#000"></path>
@@ -177,50 +177,39 @@
             </ul>
             <ul class="header-lower-right d-md-flex justify-content-end">
               <li>
-                <a href="/virtual_office/columns/" class="nav-hover">
-                  お役立ちコラム
+                <a href="#reasons" class="nav-hover">選ばれる理由
                   <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
                     <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="header-disabled nav-hover">レンタルスペース</a>
-                <div class="speech-bubble triangle-1">
-                  <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                    <div class="mr-0 mr-xl-5 mb-0 mb-md-4 mb-xl-0">
-                      <a href="https://sky-terrace.anti-pattern.co.jp/">
-                        <img src="/img/votop-nav1.jpg" alt="HarborS 表参道のテラス" class="radius" loading="lazy">
-                        <span>
-                          スカイテラス表参道
-                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon">
-                            <g id="link-icon" transform="translate(-1154 -5516)">
-                              <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
-                                <rect width="10" height="11.667" stroke="none"/>
-                                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-                              </g>
-                              <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
-                                <rect width="10" height="11.667" stroke="none"/>
-                                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-                              </g>
-                            </g>
-                          </svg>
-                        </span>
-                      </a>
-                    </div>
-                    <div>
-                      <a href="/rooms/">
-                        <img src="/img/votop-nav2.jpg" alt="HarborS 表参道の会議室" class="radius" loading="lazy">
-                        <span>
-                          会議室
-                          <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="arrow">
-                            <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#666" stroke-width="1"/>
-                          </svg>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                <a href="#services" class="nav-hover">サービス
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#flow" class="nav-hover">契約の流れ
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#faq" class="nav-hover">よくある質問
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#columns" class="nav-hover">お役立ち情報
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
               </li>
               <li>
                 <a href="#access" class="nav-hover">アクセス
@@ -467,7 +456,7 @@
       </section>
 
       <!-- reasons -->
-      <section class="reasons bg-light">
+      <section class="reasons bg-light" id="reasons">
         <h2 class="text-center section-heading mb-4 mb-md-5">
           <span class="display-3">REASONS</span><br>
           HarborS表参道が選ばれる理由
@@ -605,7 +594,7 @@
         </div>
       </section>
       <!-- Services -->
-      <section>
+      <section id="services">
         <div class="container">
           <h2 class="text-center mb-4 mb-md-5 section-heading">
             <span class="display-3">SERVICES</span><br>
@@ -826,11 +815,24 @@
               </div>
             </div>
           </div>
+          <div class="w-75 mx-auto mt-4">
+            <button
+              type="button"
+              class="btn flow-cta d-block nowrap mx-auto mb-4 mb-lg-2 "
+              onclick="countClickByGa();"
+              data-toggle="modal"
+              data-target="#inquiryFormModal"
+            >
+              <div class="align-middle flow-cta-contents">
+                <p class="flow-cta-sentence">相談してみる</p>
+              </div>
+            </button>
+          </div>
         </div>
       </section>
 
       <!-- Flow -->
-      <section class="virtual-flow bg-light">
+      <section class="virtual-flow bg-light" id="flow">
         <div class="container flow-container">
           <h2 class="text-center mb-4 mb-md-5 section-heading">
             <span class="display-3">FLOW</span><br>
@@ -982,7 +984,7 @@
       </section>
 
       <!-- faq -->
-      <section class="top-faq">
+      <section class="top-faq" id="faq">
         <h2 class="text-center section-heading mb-4 mb-md-5">
           <span class="display-3">FAQ</span><br>
           バーチャルオフィスのよくあるご質問
@@ -1169,10 +1171,319 @@
       </section>
 
       <!-- コラム -->
-      <section class="bg-light">
+      <section class="bg-light" id=columns>
+        <div class="container">
+          <h2 class="text-center section-heading mb-4 mb-md-5">
+            <span class="display-3">COLUMNS</span><br>
+            バーチャルオフィス・シェアオフィスの<br class="d-sm-none d-md-block d-lg-none">お役立ちコラム
+          </h2>
+          <div class="row">
+            <div class="col-md-6 col-12 mx-auto text-center">
+              <h3 class="title-level2 virtual-columns-title mb-5">東京都内でバーチャルオフィスを利用する</h3>
+              <ul class="c-pagelink">
+                <li>
+                  <a
+                    href="/virtual_office/features_of_areas_in_tokyo/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      バーチャルオフィス 東京都内エリア別の特徴
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/virtual_office/minatoku_merit/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      バーチャルオフィスを港区で利用する理由とは
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/virtual_office/aoyama_merit/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      バーチャルオフィス利用で<br class="d-sm-none d-md-block">青山がおすすめの理由
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/virtual_office/virtual_office_setagaya_ku_recommend/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      世田谷区在住の方必見！<br>東京都内でおすすめのバーチャルオフィス | HarborS表参道
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+              </ul>
+              <h3 class="title-level2 virtual-columns-title my-5">バーチャルオフィスの利用と<br class="d-sm-none d-md-block">一緒に知っておきたい知識</h3>
+              <ul class="c-pagelink text-center">
+                <li>
+                  <a
+                    href="/virtual_office/rental_in_tokyo_virtual_office/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between text-center"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      バーチャルオフィスを都内でレンタルするなら<br>
+                      価格を比較する前に知っておきたい副業と週末起業のそれぞれの特徴
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/virtual_office/specified_commercial_transactions/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      ネットショップ運営で知っておきたい特定商取引法とは？
+                      安全に使える青山の住所を提供
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/virtual_office/post_virtual_office_address_only/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      バーチャルオフィスには住所のみでの利用や郵便物の受け取り以外にもメリットが豊富<br>
+                      法人の口座開設について
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/virtual_office/registration_virtual_office_registration/"
+                    class="btn btn-outline-secondary py-3 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      バーチャルオフィスは登記住所にも利用可能<br class="d-none d-md-block">
+                      保険加入の際に気をつける点
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+              </ul>
+              <h3 class="title-level2 virtual-columns-title my-5">バーチャルオフィスのサービスについて</h3>
+              <ul class="c-pagelink">
+                <li>
+                  <a
+                    href="/virtual_office/access_minato_ku_virtual_office/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      港区のバーチャルオフィスは駅周辺のアクセス便利な場所がおすすめ
+                      バーチャルオフィスの会議室利用のメリットと選ぶポイント
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/virtual_office/initial_cost_virtual_office_registration/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      バーチャルオフィスを登記住所にすれば起業の初期費用が抑えられる<br class="d-none d-md-block">
+                      起業における固定電話電話のメリットとは
+                      オプションプランが豊富なHarborS 表参道
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-12 mx-auto text-center">
+              <h3 class="title-level2 virtual-columns-title my-5 mt-md-0">バーチャルオフィス・シェアオフィスの<br class="d-sm-none">基礎知識</h3>
+              <ul class="c-pagelink">
+                <li>
+                  <a
+                    href="/virtual_office/whats_virtual_office/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      バーチャルオフィスとは？<br class="d-sm-none d-md-block">
+                      ブランド力向上やコストカットで事業を支援
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/virtual_office/choose_virtual_office/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      バーチャルオフィスの選び方！<br>
+                      わかりやすい6つのチェックポイント
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/virtual_office/about_shared_office_and_rental_office/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      シェアオフィス、レンタルオフィスとは？<br>
+                      サービスの違いやメリットについて解説
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/virtual_office/monthly_plan_aoyama_virtual_office/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      【青山】バーチャルオフィスなら少ない初期費用で月額プランの利用が可能<br class="d-none d-md-block">
+                      バーチャルオフィスの利用に向いている業種とは
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/virtual_office/shared_office_minato_ku_virtual_office/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      港区でバーチャルオフィス・シェアオフィスをお探しの方へ<br class="d-none d-md-block">
+                      バーチャルオフィスの歴史とオフィス形態の種類
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+              </ul>
+              <h3 class="title-level2 virtual-columns-title my-5">バーチャルオフィスの料金や<br class="d-sm-none d-md-block">お金に関するトピック</h3>
+              <ul class="c-pagelink">
+                <li>
+                  <a
+                    href="/virtual_office/virtual_office_tips_about_money/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      バーチャルオフィスの料金や<br class="d-sm-none d-md-block">お金にまつわるあれこれ
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/virtual_office/merit_in_tokyo_virtual_office/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      バーチャルオフィスは都内の一等地での起業も<br class="d-none d-md-block">可能
+                      バーチャルオフィスのメリット・初期費用の抑え方
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/virtual_office/expenses_virtual_office_address_only/"
+                    class="btn btn-outline-secondary py-3 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      バーチャルオフィスは住所のみのレンタルも可能<br>
+                      月額プランの利用料は経費で落ちるのか
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+              </ul>
+              
+              <h3 class="title-level2 virtual-columns-title my-5">バーチャルオフィスを利用した<br class="d-sm-none">法人登記について</h3>
+              <ul class="c-pagelink">
+                <li>
+                  <a
+                    href="/virtual_office/virtual_office_tips_about_home_office/"
+                    class="btn btn-outline-secondary py-3 mb-4 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      自宅をオフィスにする際におすすめの<br class="d-sm-none d-md-block">バーチャルオフィスでの法人登記について
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/virtual_office/corporate_registration_aoyama_virtual_office/"
+                    class="btn btn-outline-secondary py-3 d-flex w-100 justify-content-between"
+                    role="button"
+                  >
+                    <p class="virtual-columns d-flex align-items-center mb-0 text-center mx-auto">
+                      法人登記に必要な書類とは？<br class="d-none d-md-block">
+                      青山のバーチャルオフィスまで徒歩圏内
+                    </p><span 
+                      class="float-right column-span d-flex align-items-center ml-2"
+                    >&gt;</span> 
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
         <div class="container">
           <div class="l-container">
-            <div class="c-nap pt-5">
+            <div class="c-nap">
               <h2 class="u-mb20 c-nap-title">
                 青山でバーチャルオフィスのレンタルをお考えならHarborS 表参道へ
               </h2>
@@ -1216,40 +1527,24 @@
               </table>
             </div>
           </div>
-        </div>
-
-        <div class="container">
-          <div class="mt-5 column-container text_area">
-            <h2 class="mb-4">
-              都内一等地「港区」の住所を手に入れよう！東京でバーチャルオフィスをお探しなら
-            </h2>
-            <p>
-              東京都内で住所をレンタルできるバーチャルオフィスの利用をお考えの方は、HarborS
-              表参道へご相談ください。HarborS
-              表参道のバーチャルオフィスなら、東京都内の一等地である「港区南青山」の住所をご利用いただけます。法人登記や郵便転送など様々なオプションもご利用いただけます。<br><br>
-              バーチャルオフィスを利用するメリットとして、レンタルオフィスやシェアオフィスなどと比較して、低価格でビジネスの起業や副業をスタートできる点が挙げられます。HarborS
-              表参道のバーチャルオフィスは、表参道駅より徒歩3分という立地のよさが最大のメリットです。<br><br>
-              基本料金に含まれる来客の対応をはじめ、郵便物・宅配物の転送や電話転送サービスも追加料金によりご利用いただけます。東京でバーチャルオフィスのレンタルをお考えの方は、ぜひHarborS
-              表参道までお問い合わせください。
-            </p>
-
-            <div class="row mt-4">
-              <div class="col-md-12">
-                <p>
-                  <a
-                    href="/virtual_office/columns/"
-                    class="text-secondary text-link font-weight-bold"
-                    >バーチャルオフィス・シェアオフィスのお役立ちコラムはこちら</a
-                  >
-                </p>
+          <div class="w-75 mx-auto mt-5">
+            <button
+              type="button"
+              class="btn flow-cta d-block nowrap mx-auto mb-4 mb-lg-2 "
+              onclick="countClickByGa();"
+              data-toggle="modal"
+              data-target="#inquiryFormModal"
+            >
+              <div class="align-middle flow-cta-contents">
+                <p class="flow-cta-sentence">相談してみる</p>
               </div>
-            </div>
+            </button>
           </div>
         </div>
       </section>
 
       <!-- アクセス -->
-      <section id="access">
+      <section class="bg-light" id="access">
         <div class="container text-center">
           <h2 class="pb-3"><span class="display-3">ACCESS</span></h2>
           <div class="mb-4 text-left">
@@ -1472,7 +1767,7 @@
               </div>
               <button
                 type="submit"
-                class="btn w-100 py-2 btn-submit"
+                class="btn py-2 btn-submit"
                 id="send_button"
               >
                 送信する
