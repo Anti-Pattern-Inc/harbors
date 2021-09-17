@@ -33,19 +33,18 @@ $(function () {
     $(window).on('scroll', function () {
       scrollPos = $(this).scrollTop();
       if (scrollPos >= topImageHeight) {
+        $('#header').addClass('white-bg');
         if (scrollPos >= startPos) {
           $('#header').addClass('hide');
         } else {
           $('#header').removeClass('hide');
         }
-      }
-      
-      if (scrollPos >= topImageHeight) {
-        $('#header').addClass('white-bg');
       } else {
         $('#header').removeClass('white-bg');
       }
+      
       startPos = scrollPos;
     })
   }
 })
+

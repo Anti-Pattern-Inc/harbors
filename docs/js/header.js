@@ -69,3 +69,19 @@ $(function () {
       }, 500);
   });
 });
+
+// footerと重なったら右下CTA非表示
+
+$(window).on('scroll', function () {
+  var scrollPos = $(this).scrollTop(); 
+  var documentHeight = $(document).height();
+  var displayHeight = $(window).height();
+
+  if(scrollPos > documentHeight-displayHeight-500){
+      $('.cta-card').fadeOut('slow');
+      $('.cta-card').addClass('invisible');
+  }else{
+      $('.cta-card').fadeIn('slow');
+      $('.cta-card').removeClass('invisible');
+  }
+});

@@ -440,3 +440,414 @@
   }
 }
 /* header */
+
+
+
+/* footer */
+footer {
+  margin-top: 120px;
+  padding: 50px 0 120px;
+  background-color: #111;
+  color: #FFF;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+.footer-left {
+  width: 25%;
+}
+
+.footer-left img {
+  width: 140px;
+  margin: 50px 0 25px;
+}
+
+.footer-left p {
+  font-size: 12px;
+}
+
+.footer-left .copy {
+  color: #666;
+  margin-top: 160px;
+  font-size: 12px;
+}
+
+.footer-right {
+  width: 75%;
+}
+
+.page-top {
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.page-top span {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.footer-row-top {
+  padding: 40px 20px;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  position: relative;
+}
+
+.footer-row-bottom {
+  padding: 35px 20px;
+  border-bottom: 1px solid #707070;
+}
+
+.footer-row-bottom > div:first-child {
+  margin-bottom: 30px;
+}
+
+.footer-right-title {
+  width: 140px;
+  padding: 4px 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-row-top a {
+  color: #FFF;
+  margin-right: 26px;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 4px;
+  background: linear-gradient(#FFF, #FFF) right bottom / 0 1px no-repeat;
+	transition: background-size .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.footer-row-top a:hover {
+  background-position: left bottom;
+	background-size: 100% 1px;
+}
+
+.footer-right-subtitle {
+  width: 100px;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.footer-row-bottom a {
+  color: #FFF;
+  padding: 0 16px;
+  border-right: 1px solid #FFF;
+  font-size: 12px;
+}
+
+.footer-row-bottom a > span {
+  padding: 4px;
+  background: linear-gradient(#FFF, #FFF) right bottom / 0 1px no-repeat;
+	transition: background-size .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.footer-row-bottom a:hover > span {
+  background-position: left bottom;
+	background-size: 100% 1px;
+}
+
+.footer-row-bottom > div a:last-child {
+  border: none;
+  padding-right: 0;
+}
+
+.footer-disabled {
+  cursor: pointer;
+}
+
+.footer-speech-bubble {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  width: 950px;
+  bottom: 190px;
+  right: 0;
+  padding: 32px;
+  background-color: #FFF;
+  border-radius: 20px;
+  color: #CCC;
+}
+
+.footer-speech-bubble .radius {
+  width: 280px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 16px;
+  background-color: #F5F5F8;
+}
+
+.footer-speech-bubble a {
+  display: inline-block;
+  margin-right: 0;
+}
+
+.footer-speech-bubble a span {
+  color: #666;
+  padding: 4px;
+  background: linear-gradient(#666, #666) left bottom / 100% 2px no-repeat;
+  transition: background-size 0.6s;
+  text-decoration: none;
+}
+
+.footer-speech-bubble a:hover span {
+  background-position: right bottom;
+  background-size: 0 2px;
+}
+
+.triangle-3::before {
+  content: "";
+  position: absolute;
+  display: none;
+  opacity: 0;
+  top: 255px;
+  right: 280px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #FFF;
+  border-left: 25px solid transparent;
+}
+
+.triangle-4::before {
+  content: "";
+  position: absolute;
+  display: none;
+  opacity: 0;
+  top: 255px;
+  right: 145px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #FFF;
+  border-left: 25px solid transparent;
+}
+
+.footer-speech-bubble.hovered::before {
+  display: block;
+  opacity: 1;
+  animation-duration: .6s;
+  animation-timing-function: ease;
+  animation-name: fade-in;
+}
+
+.footer-speech-bubble.hovered {
+  display: block;
+  opacity: 1;
+  animation-duration: .6s;
+  animation-timing-function: ease;
+  animation-name: fade-in;
+}
+
+@media screen and (max-width: 1070px) {
+  .triangle-3::before {
+    top: 255px;
+    right: 230px;
+  }
+
+  .triangle-4::before {
+    top: 255px;
+    right: 95px;
+  }
+}
+
+@media screen and (max-width: 991.8px) {
+  .footer-left {
+    width: 19%;
+  }
+
+  .footer-right {
+    width: 81%;
+  }
+
+  .footer-row-top {
+    padding: 40px 10px;
+  }
+  
+  .footer-row-bottom {
+    padding: 35px 10px;
+  }
+  
+  .footer-right-title {
+    width: 100px;
+  }
+  
+  .footer-row-top a {
+    margin-right: 8px;
+  }
+
+  .footer-right-subtitle {
+    width: 75px;
+  }
+
+  .footer-row-bottom a {
+    padding: 0 8px;
+  }
+  
+  .footer-speech-bubble {
+    width: auto;
+  }
+
+  .triangle-3::before {
+    top: 475px;
+    right: 300px;
+  }
+
+  .triangle-4::before {
+    top: 475px;
+    right: 170px;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .triangle-3::before {
+    top: 475px;
+    right: 220px;
+  }
+
+  .triangle-4::before {
+    top: 475px;
+    right: 90px;
+  }
+}
+
+@media screen and (max-width: 767.8px) {
+  footer {
+    padding-bottom: 40px;
+  }
+
+  .footer-left, .footer-right {
+    width: 100%;
+  }
+
+  .copy-sp {
+    margin-top: 60px;
+    font-size: 12px;
+  }
+  
+  .copy-sp a {
+    color: #666;
+  }
+
+  .footer-left > div {
+    width: 50%;
+  }
+
+  .footer-left >div img {
+    margin: 0;
+  }
+
+  .page-top-sp {
+    text-align: right;
+  }
+
+  .page-top-sp a {
+    display: inline-block;
+  }
+
+  .page-top-sp img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .footer-row-top {
+    padding: 20px 10px;
+  }
+
+  .footer-row-top a {
+    margin-right: 22px;
+  }
+
+  .footer-row-bottom {
+    padding: 20px 10px;
+  }
+
+  .footer-right-title,
+  .footer-right-subtitle {
+    margin-bottom: 10px;
+  }
+
+  .footer-row-bottom > div:first-child {
+    margin-bottom: 20px;
+  }
+
+  .footer-row-top > div:first-child {
+    margin-bottom:  20px;
+  }
+
+  .footer-row-bottom a > span {
+    padding: 0;
+  }
+
+  .footer-disabled {
+    margin-top: 10px;
+  }
+
+  .footer-speech-bubble {
+    display: block;
+    opacity: 1;
+    position: static;
+    width: 100%;
+    color: #CCC;
+    background: none;
+    padding: 0;
+  }
+
+  .footer-speech-bubble > div > div {
+    width: 50%;
+  }
+
+  .footer-speech-bubble .radius {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    margin-right: 0;
+  }
+
+  .footer-disabled::before {
+    content: none;
+    animation: none;
+  }
+
+  .footer-speech-bubble a {
+    display: inline-block;
+    margin-right: 0;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .footer-speech-bubble a span {
+    padding: 0;
+    background: none;
+    font-size: 12px;
+    color: #FFF;
+  }
+
+  .footer-disabled.hovered::before {
+    display: none;
+    opacity: 0;
+    animation: none;
+  }
+
+  .footer-speech-bubble.hovered {
+    display: block;
+    opacity: 1;
+    animation: none;
+  }
+
+  .footer-speech-bubble .link-icon g {
+    fill: #000;
+    stroke: #FFF;
+  }
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  /* display: block; */
+}
+
+/* footer */
