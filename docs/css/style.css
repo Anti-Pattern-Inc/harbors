@@ -218,7 +218,10 @@ header.container-fluid {
 
 /* パンくずリスト */
 .breadcrumb {
-  margin: 0;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
   list-style: none;
 }
 
@@ -464,6 +467,14 @@ a.disabled {
   
   .header-lower-right {
     font-size: 14px;
+  }
+
+  .triangle-1::before {
+    right: 100px;
+  }
+
+  .triangle-2::before {
+    right: 220px;
   }
 }
 
@@ -1816,7 +1827,37 @@ h2.top {
 }
 
 .rooms-main {
-  padding-top: 100px;
+  padding-top: 120px;
+}
+
+.rooms-main .container,
+.rooms-footer .container {
+  max-width: 1100px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+#header.rooms-header {
+  height: auto;
+  padding-top: 0;
+}
+
+.rooms-header .header-container {
+  max-width: 1100px;
+  padding: 0 10px;
+}
+
+.rooms-header .h-tit {
+  color: #a9a9a9;
+  max-width: 1100px;
+  padding: 0 10px;
+  margin: .5rem auto;
+}
+
+.rooms-header .breadcrumb {
+  max-width: 1100px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .rooms-title {
@@ -1907,6 +1948,15 @@ h2.top {
 }
 
 @media screen and (max-width: 767.8px) {
+  .rooms-main {
+    padding-top: 100px;
+  }
+
+  .rooms-main .container,
+  .rooms-footer .container {
+    max-width: 354px;
+  }
+
   .rooms-title {
     margin: 20px 0;
     font-size: 32px;
@@ -1919,6 +1969,10 @@ h2.top {
 }
 
 @media screen and (max-width: 380px) {
+  .rooms-header .h-tit {
+    margin: .5rem auto .25rem;
+  }
+
   .rooms-title {
     font-size: 28px;
     line-height: 50px;
@@ -1936,7 +1990,9 @@ g-contents
 .h-tit {
   font-size: 11px;
   font-weight: normal !important;
-  margin: 0;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: .5rem auto;
 }
 
 .contents-title-2 {
@@ -1958,7 +2014,6 @@ g-contents
 @media (max-width: 768px) {
   .h-tit {
     font-size: 10px;
-    padding: 5px 10px 0;
   }
 
   .contents-title-2 {
@@ -1979,6 +2034,10 @@ g-contents
 }
 
 @media (max-width: 576px) {
+  .h-tit {
+    margin: .5rem auto .25rem;
+  }
+
   .contents-title-2 {
     font-size: 1.5rem;
   }
@@ -2710,15 +2769,6 @@ g-contents
   color: #df7156;
 }
 
-#header.rooms-header {
-  height: auto;
-  padding-top: 0;
-}
-
-.rooms-header .h-tit {
-  color: #a9a9a9;
-}
-
 @media screen and (max-width: 987px) {
   .fv-title {
     font-size: 44px;
@@ -3435,13 +3485,6 @@ form span.bg-danger {
 .pc-footer:hover {
   border-color: #bb604a;
   background-color: #bb604a;
-}
-
-.virtual-breadcrumb {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /* faqをvirtual topに移設 */
