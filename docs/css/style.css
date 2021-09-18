@@ -3348,6 +3348,12 @@ form span.bg-danger {
   fill: #fff;
 }
 
+@media screen and (max-width: 575.98px) {
+  .cta-card {
+    display: none;
+  }
+}
+
 /* REASONS */
 
 .reasons-item {
