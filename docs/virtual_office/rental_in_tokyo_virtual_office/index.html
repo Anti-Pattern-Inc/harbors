@@ -38,7 +38,6 @@
       as="style"
     >
     <link rel="stylesheet" rel="preload" href="/css/style.css" as="style">
-    <link rel="stylesheet" rel="preload" href="/css/header.css" as="style">
     <link
       rel="stylesheet"
       rel="preload"
@@ -102,7 +101,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         <div class="header-left vertical-align-middle">
           <a href="/virtual_office/" class="d-inline-block">
             <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="109.931" height="53" viewBox="0 0 109.931 53" class="header-logo bg-black">
-<g id="harbors_logo" data-name="レイヤー 1">
+              <g id="harbors_logo" data-name="レイヤー 1">
                 <path id="harbors_logo_mark" data-name="パス 3" d="M76.2,19.666,73.86,17.659,89.548,0c6.652,5.855,13.26,11.659,20.017,17.609l-7.856,8.845-2.328-2.007,5.744-6.522-3.406-3.115-5.845,6.522-2.328-2.007,5.81-6.557L95.844,9.733l-5.8,6.472-2.293-2.037L93.5,7.646,89.819,4.39Z" transform="translate(-36.805)" fill="#000"></path>
                 <path id="harbors_logo_1h" data-name="パス 2" d="M22.807,79.128H18.713V68.171H4.355V79.037H0V53.125H4.169V64.077H18.643v-11h4.164Z" transform="translate(0 -26.45)" fill="#000"></path>
                 <path id="harbors_logo_2a" data-name="パス 5" d="M63.837,93.5c-2.278.161-4.34.391-6.4.421a5.424,5.424,0,0,1-5.679-5.453,6.02,6.02,0,0,1,5.519-6.221c3.467-.271,6.321,1.841,6.522,5.017C63.952,89.291,63.837,91.357,63.837,93.5ZM57.9,91.1a3.012,3.012,0,1,0-3.123-2.9A3.012,3.012,0,0,0,57.9,91.1Z" transform="translate(-25.788 -40.973)" fill="#000"></path>
@@ -114,7 +113,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               </g>
             </svg>
           </a>
-          <span>ハーバーズ<br class="d-none d-md-block d-lg-none vertical-align-center">表参道</span>
+          <span>ハーバーズ表参道</span>
         </div>
         <div class="header-right">
           <div class="nav-toggle">
@@ -272,7 +271,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         </div>
       </div>
       <!-- パンくずリスト -->
-            <div class="breadcrumb virtual-breadcrumb d-none d-md-block bg-transparent pt-2 pb-0">
+            <div class="breadcrumb d-none d-md-block bg-transparent pt-2 pb-0">
         <ol
           itemscope
           itemtype="https://schema.org/BreadcrumbList"
@@ -375,7 +374,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             data-toggle="modal"
             data-target="#inquiryFormModal"
           >
-            <div class="mv-cta-contents mx-auto d-flex align-middle">
+            <div class="mv-cta-contents mx-auto d-flex align-items-center">
               <img
                 src="/img/contact.svg"
                 alt="お問い合わせ"
@@ -384,17 +383,19 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 class="d-block mr-2"
                 id="toSpInquiryFormModal"
               >
-              無料で相談してみる
+              <p class="mt-1 mb-0">
+                無料で相談してみる
+              </p>
             </div>
           </button>
         </div>
         <div>
           <a
             href="tel:03-6885-6140"
-            class="btn m-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
+            class="btnm-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
             onclick="ga('send', 'event', 'call', 1);"
           >
-            <div class="mv-cta-contents mx-auto d-flex align-middle">
+            <div class="mv-cta-contents mx-auto d-flex align-items-center">
               <img
                 src="/img/tel.svg"
                 alt="電話"
@@ -402,7 +403,9 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 height="20px"
                 class="d-block mr-2"
               >
-              電話で相談をする
+              <p class="mt-1 mb-0">
+                電話で相談をする
+              </p>
             </div>
           </a>
         </div>
@@ -723,7 +726,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="inquiryFormModalTitle">
-              バーチャルオフィスに関する<wbr >お問い合わせ
+              <nobr>バーチャルオフィスに関する<wbr>お問い合わせ</nobr>
             </h5>
             <button
               type="button"
@@ -761,7 +764,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                         資料を送付してほしい
                       </label>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6">
                       <input type="radio" id="contact_type4" name="contact_type" value="4">
                       <label for="contact_type4" class="mb-sm-0">
                         その他お問い合わせ

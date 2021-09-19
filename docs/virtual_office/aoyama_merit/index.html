@@ -51,7 +51,6 @@
       as="style"
     >
     <link rel="stylesheet" rel="preload" href="/css/style.css" as="style">
-    <link rel="stylesheet" rel="preload" href="/css/header.css" as="style">
     <link
       rel="stylesheet"
       rel="preload"
@@ -127,7 +126,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               </g>
             </svg>
           </a>
-          <span>ハーバーズ<br class="d-none d-md-block d-lg-none vertical-align-center">表参道</span>
+          <span>ハーバーズ表参道</span>
         </div>
         <div class="header-right">
           <div class="nav-toggle">
@@ -285,7 +284,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         </div>
       </div>
       <!-- パンくずリスト -->
-            <div class="breadcrumb virtual-breadcrumb d-none d-md-block bg-transparent pt-2 pb-0">
+            <div class="breadcrumb d-none d-md-block bg-transparent pt-2 pb-0">
         <ol
           itemscope
           itemtype="https://schema.org/BreadcrumbList"
@@ -391,7 +390,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             data-toggle="modal"
             data-target="#inquiryFormModal"
           >
-            <div class="mv-cta-contents mx-auto d-flex align-middle">
+            <div class="mv-cta-contents mx-auto d-flex align-items-center">
               <img
                 src="/img/contact.svg"
                 alt="お問い合わせ"
@@ -400,17 +399,19 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 class="d-block mr-2"
                 id="toSpInquiryFormModal"
               >
-              無料で相談してみる
+              <p class="mt-1 mb-0">
+                無料で相談してみる
+              </p>
             </div>
           </button>
         </div>
         <div>
           <a
             href="tel:03-6885-6140"
-            class="btn m-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
+            class="btnm-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
             onclick="ga('send', 'event', 'call', 1);"
           >
-            <div class="mv-cta-contents mx-auto d-flex align-middle">
+            <div class="mv-cta-contents mx-auto d-flex align-items-center">
               <img
                 src="/img/tel.svg"
                 alt="電話"
@@ -418,7 +419,9 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 height="20px"
                 class="d-block mr-2"
               >
-              電話で相談をする
+              <p class="mt-1 mb-0">
+                電話で相談をする
+              </p>
             </div>
           </a>
         </div>
@@ -793,7 +796,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="inquiryFormModalTitle">
-              バーチャルオフィスに関する<wbr >お問い合わせ
+              <nobr>バーチャルオフィスに関する<wbr>お問い合わせ</nobr>
             </h5>
             <button
               type="button"
@@ -831,7 +834,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                         資料を送付してほしい
                       </label>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6">
                       <input type="radio" id="contact_type4" name="contact_type" value="4">
                       <label for="contact_type4" class="mb-sm-0">
                         その他お問い合わせ
