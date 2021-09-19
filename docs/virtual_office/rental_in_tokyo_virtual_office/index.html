@@ -374,7 +374,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             data-toggle="modal"
             data-target="#inquiryFormModal"
           >
-            <div class="mv-cta-contents mx-auto d-flex align-middle">
+            <div class="mv-cta-contents mx-auto d-flex align-items-center">
               <img
                 src="/img/contact.svg"
                 alt="お問い合わせ"
@@ -383,17 +383,19 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 class="d-block mr-2"
                 id="toSpInquiryFormModal"
               >
-              無料で相談してみる
+              <p class="mt-1 mb-0">
+                無料で相談してみる
+              </p>
             </div>
           </button>
         </div>
         <div>
           <a
             href="tel:03-6885-6140"
-            class="btn m-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
+            class="btnm-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
             onclick="ga('send', 'event', 'call', 1);"
           >
-            <div class="mv-cta-contents mx-auto d-flex align-middle">
+            <div class="mv-cta-contents mx-auto d-flex align-items-center">
               <img
                 src="/img/tel.svg"
                 alt="電話"
@@ -401,7 +403,9 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 height="20px"
                 class="d-block mr-2"
               >
-              電話で相談をする
+              <p class="mt-1 mb-0">
+                電話で相談をする
+              </p>
             </div>
           </a>
         </div>
