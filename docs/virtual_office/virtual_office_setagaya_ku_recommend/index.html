@@ -1225,7 +1225,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 id="form_preferred_visit_date"
                 style="display: none"
               >
-                <label for="preferred_visit_date">説明会ご希望日</label>
+                <label for="preferred_visit_date">説明会ご希望日（任意）</label>
                 <div
                   class="input-group date"
                   id="preferred_visit_date"
@@ -1253,7 +1253,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 id="form_preferred_visit_time"
                 style="display: none"
               >
-                <label for="preferred_visit_time">説明会開始時刻</label>
+                <label for="preferred_visit_time">説明会開始時刻（任意）</label>
                 <select class="form-control" name="preferred_visit_time">
                   <option></option>
                   <option value="11:00">11:00~12:00</option>
@@ -1321,6 +1321,24 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               >
                 送信する
               </button>
+              <div id="errorMessage" style="display: none">
+                <p style="color: red" class="m-0">
+                  予期せぬエラーが発生しました。<br>大変申し訳ございませんが、別途<a
+                    style="color: red; text-decoration-line: underline"
+                    href="/contacts/"
+                    >お問い合わせフォーム</a
+                  >か<a
+                    href="tel:0368856140"
+                    style="color: red; text-decoration-line: underline"
+                    >お電話(03-6885-6140)</a
+                  >へお問い合わせくださいませ。
+                </p>
+              </div>
+              <div id="reservedErrorMessage" style="display: none">
+                <p style="color: red" class="m-0">
+                  ご希望の日時でご予約が取れませんでした。<br>大変申し訳ございませんが、別の日時で再度予約をお願いいたします。
+                </p>
+              </div>
               <div class="modal-footer">
                 <p class="small">
                   HarborS 表参道は、株式会社アンチパターンが運営する、南青山のバーチャルオフィスです。
@@ -1349,24 +1367,6 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                   height="36"
                   border="0"
               ></a>
-            </div>
-            <div id="errorMessage" style="display: none">
-              <p style="color: red">
-                予期せぬエラーが発生しました。<br>大変申し訳ございませんが、別途<a
-                  style="color: red; text-decoration-line: underline"
-                  href="/contacts/"
-                  >お問い合わせフォーム</a
-                >か<a
-                  href="tel:0368856140"
-                  style="color: red; text-decoration-line: underline"
-                  >お電話(03-6885-6140)</a
-                >へお問い合わせくださいませ。
-              </p>
-            </div>
-            <div id="reservedErrorMessage" style="display: none">
-              <p style="color: red">
-                ご希望の日時でご予約が取れませんでした。<br>大変申し訳ございませんが、別の日時で再度予約をお願いいたします。
-              </p>
             </div>
           </div>
         </div>

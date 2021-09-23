@@ -3223,6 +3223,10 @@ form span.bg-danger {
     padding: 15px;
     margin: 0;
   }
+
+  #reservedErrorMessage p {
+    font-size: 14px;
+  }
 }
 
 .btn-submit {
