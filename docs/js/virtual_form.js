@@ -117,14 +117,22 @@ $(function () {
 $("#inquiryForm").submit(function (event) {
   event.preventDefault();
   $("#send_button").prop("disabled", true);
+  $(document).ajaxSend(function() {
+    $('#send_button').text('送信中です...')
+  });
   var postUrl =
     "https://script.google.com/macros/s/AKfycbyBxYYU_ntrTNukVViNuQSArkIstKbwmsFGIWZCUYBkmfesMtWRkTnvOEnwM51vMJEZCQ/exec";
   var postData = $("#inquiryForm").serialize();
-  var posting = $.post(postUrl, postData)
+  $.ajax({
+    type: 'POST',
+    url: postUrl,
+    data: postData
+  })
     .done(function (data) {
       if (data.message === "reserved") {
         $("#reservedErrorMessage").show();
         $("#send_button").prop("disabled", false);
+        $('#send_button').text('送信する')
       } else {
         gtag("event", "conversion", {
           event_category: "virtual_office",
@@ -146,6 +154,7 @@ $("#inquiryForm").submit(function (event) {
       }
     })
     .fail(function () {
+      $('#send_button').text('送信する')
       $("#errorMessage").show();
       $("#send_button").prop("disabled", false);
     });

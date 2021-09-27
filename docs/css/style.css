@@ -2411,6 +2411,10 @@ g-contents
     font-size: 2rem;
   }
 
+  .monthly-fee .display-3 {
+    font-size: 2.5rem;
+  }
+
   h1.display-4 {
     font-size: 3rem;
   }
@@ -3152,13 +3156,18 @@ form span.bg-danger {
 /* faqをvirtual topに移設 */
 
 .top-faq h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0;
-    line-height: 1.6;
+  font-size: 1.0rem;
+  margin-bottom: 0;
+  line-height: 1.2;
 }
+/* 
+.faq-wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+} */
 
 .question-box {
-  align-items: center;
+  align-items: flex-end;
 }
 
 .question-box p, .capital-a {
@@ -3170,20 +3179,17 @@ form span.bg-danger {
   border-top: none;
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 991.98px) {
   .question-box {
     align-items: flex-start;
   }
-
+  .top-faq h3 {
+    font-size: 1.0rem;
+    line-height: 1.5;
+  }
   .question-box p, .capital-a {
     font-size: 20px;
     line-height: 20px;
-  }
-}
-
-@media screen and (max-width: 991.98px) {
-  .top-faq h3 {
-    font-size: 1.0rem;
   }
   .virtual-top {
     padding-top: 95px;
@@ -3217,6 +3223,10 @@ form span.bg-danger {
     padding: 15px;
     margin: 0;
   }
+
+  #reservedErrorMessage p {
+    font-size: 14px;
+  }
 }
 
 .btn-submit {
@@ -3246,23 +3256,29 @@ form span.bg-danger {
 }
 
 .virtual-columns-title {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .virtual-columns {
-  font-size: 12.5px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1199.98px) {
 
   .virtual-columns-title {
-    font-size: 13px;
+    font-size: 16px;
   }
   
   .virtual-columns {
     font-size: 12px;
   }
 }
+
+/* @media screen and (max-width: 767.98px) {
+  .virtual-columns-title {
+    font-size: 16px;
+  }
+} */
 
 .c-pagelink {
   margin-bottom: 0;
@@ -3274,5 +3290,15 @@ form span.bg-danger {
 
 .virtual-service-text {
   width: 80%;
+}
+
+.tax-included {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .tax-included {
+    font-size: 12px;
+  }
 }
 /* END */
