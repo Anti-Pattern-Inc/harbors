@@ -3305,13 +3305,13 @@ form span.bg-danger {
 }
 
 /* VOTOP矢印 */
-.btnarrow4{
+.reasons-item .btnarrow4{
   position: relative;
   display: inline-block;
   padding: 0 20px;
   text-decoration: none;
   outline: none;
-  
+  font-size: 13px;
 }
 
 .btnarrow4::before{
