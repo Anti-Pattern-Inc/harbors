@@ -3080,6 +3080,8 @@ form span.bg-danger {
 
 .reasons-item:hover {
   opacity: 0.8;
+  text-decoration: none;
+  color: #777;
 }
 
 .checkbox {
@@ -3112,7 +3114,7 @@ form span.bg-danger {
 
 .reasons-detail {
   font-size: 14px;
-  margin: 0;
+  padding: 0 15px;
 }
 
 @media screen and (max-width: 991.98px) {
@@ -3301,5 +3303,69 @@ form span.bg-danger {
     font-size: 12px;
   }
 }
+
+/*矢印が右に移動する*/
+.btnarrow4{
+  /*矢印と下線の基点とするためrelativeを指定*/
+position: relative;
+  /*形状*/
+  display: inline-block;
+padding: 0 20px;
+  text-decoration: none;
+  outline: none;
+  
+}
+
+/*矢印と下線の形状*/
+.btnarrow4::before{
+  content: '';
+  /*絶対配置で下線の位置を決める*/
+position: absolute;
+  bottom:-2px;
+  left:15%;
+  /*下線の形状*/    
+  width: 85%;
+  height: 1px;
+background:#777;
+  /*アニメーションの指定*/
+  transition: all .3s;
+}
+
+.btnarrow4::after{
+  content: '';
+  /*絶対配置で矢印の位置を決める*/
+position: absolute;
+  bottom:3px;
+  right:0;
+  /*矢印の形状*/    
+  width: 15px;
+  height:1px;
+background:#777;
+  transform: rotate(35deg);
+  /*アニメーションの指定*/
+  transition: all .3s;
+}
+
+/*hoverした際の移動*/
+.reasons-item:hover .btnarrow4::before{
+  left:20%;
+}
+
+.reasons-item:hover .btnarrow4::after{
+  right:-5%;
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+/* body{
+  vertical-align:middle; 
+  padding: 100px 0;
+  text-align: center;
+}
+
+p{
+  margin: 0 0 10px 0;
+} */
 
 /* END */
