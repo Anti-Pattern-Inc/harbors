@@ -3304,49 +3304,39 @@ form span.bg-danger {
   }
 }
 
-/*矢印が右に移動する*/
+/* VOTOP矢印 */
 .btnarrow4{
-  /*矢印と下線の基点とするためrelativeを指定*/
-position: relative;
-  /*形状*/
+  position: relative;
   display: inline-block;
-padding: 0 20px;
+  padding: 0 20px;
   text-decoration: none;
   outline: none;
   
 }
 
-/*矢印と下線の形状*/
 .btnarrow4::before{
   content: '';
-  /*絶対配置で下線の位置を決める*/
-position: absolute;
+  position: absolute;
   bottom:-2px;
   left:15%;
-  /*下線の形状*/    
   width: 85%;
   height: 1px;
-background:#777;
-  /*アニメーションの指定*/
+  background:#777;
   transition: all .3s;
 }
 
 .btnarrow4::after{
   content: '';
-  /*絶対配置で矢印の位置を決める*/
-position: absolute;
+  position: absolute;
   bottom:3px;
   right:0;
-  /*矢印の形状*/    
   width: 15px;
   height:1px;
-background:#777;
+  background:#777;
   transform: rotate(35deg);
-  /*アニメーションの指定*/
   transition: all .3s;
 }
 
-/*hoverした際の移動*/
 .reasons-item:hover .btnarrow4::before{
   left:20%;
 }
@@ -3355,17 +3345,55 @@ background:#777;
   right:-5%;
 }
 
+/* VOTOPのFAQ */
 
-/*========= レイアウトのためのCSS ===============*/
-
-/* body{
-  vertical-align:middle; 
-  padding: 100px 0;
-  text-align: center;
+.virtual-faq-question {
+  color: #ee8585;
+  margin-left: 32px;
+  text-indent: -40px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-p{
-  margin: 0 0 10px 0;
-} */
+.virtual-faq-question::before {
+  color: #ee8585;
+  content: "Q.";
+  margin-right: 17px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.virtual-faq-answer {
+  margin-bottom: 0px;
+  margin-left: 32px;
+  text-indent: -38px;
+  font-size: 16px;
+}
+
+.virtual-faq-answer::before {
+  content: "A.";
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 575.98px) {
+
+  .virtual-faq-question {
+    font-size: 14px;
+  }
+
+  .virtual-faq-answer {
+    font-size: 14px;
+  }
+
+  .virtual-faq-question::before {
+    font-size: 18px;
+  }
+
+  .virtual-faq-answer::before {
+    font-size: 18px;
+  }
+}
 
 /* END */
