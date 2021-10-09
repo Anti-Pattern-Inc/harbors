@@ -3406,7 +3406,13 @@ form span.bg-danger {
   padding: 0 15px;
 }
 
+.article-cta-img {
+  height: 130px;
+}
 
+.cta-card .article-cv-btn > button {
+  padding: 6px 10px;
+}
 
 
 

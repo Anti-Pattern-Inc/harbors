@@ -341,31 +341,38 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           </div>
         </div>
       </div>
-      <div class="fixed-bottom mb-2 virtual-form-btn text-center">
-        <button
-          type="button"
-          class="
-            btn btn-lg
-            pc-footer
-            mx-auto
-            nowrap
-            text-white
-            top-button
-            d-none d-sm-inline-block
-          "
-          onclick="countClickByGa();"
-          data-toggle="modal"
-          data-target="#inquiryFormModal"
-        >
-          無料で相談してみる
-        </button>
+            <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta ml-auto d-none d-md-block">
+        <div class="cta-card">
+          <div class="cta-img article-cta-img">
+            <h4 class="cta-lead text-white mx-auto w-75">最短3日で港区青山の<br>住所を手に入れよう！</h4>
+            <p class="text-white cta-sentence">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
+          </div>
+          <div class="virtual-fixed-cv-btn position-relative article-cv-btn">
+            <button
+              type="button"
+              class="cv-contact-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
+              onclick="countClickByGa();"
+              data-toggle="modal"
+              data-target="#inquiryFormModal"
+            >
+              お問い合わせ
+            </button>
+            <button
+            type="button"
+            onclick="window.open('https://ap-harbors.firebaseapp.com/virtual-office/register/','view');"
+            class="cv-apply-btn btn btn-sm-lg top-button d-block mx-auto"
+            >
+              お申し込み
+            </button>
+          </div>
+        </div>
       </div>
 
       <div
         class="
           fixed-bottom
           mb-0
-          d-flex d-sm-none
+          d-flex d-md-none
           mobile-footer mobile-footer-special
         "
       >
