@@ -3414,6 +3414,20 @@ form span.bg-danger {
   padding: 6px 10px;
 }
 
+.contents-main h2 {
+  font-size: 1.7rem;
+}
 
+.contents-main h3 {
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  .contents-main h2, .contents-main h3 {
+      font-size: 18px;
+  }
+
+}
 
 /* END */
