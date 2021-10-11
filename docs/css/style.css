@@ -1993,6 +1993,28 @@ g-contents
   }
 }
 
+.contents-main h2 {
+  font-size: 1.3rem;
+}
+
+.contents-main h3 {
+  font-size: 1.2rem;
+}
+
+.contents-main h4 {
+  font-size: 1.125rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contents-main h2, .contents-main h3, .contents-main h4 {
+    font-size: 16px;
+  }
+
+  .contents-main .card-text {
+    font-size: 14px;
+  }
+}
+
 /** ファーストビュー **/
 .fv {
   margin: 20px 0 30px;
@@ -2247,7 +2269,7 @@ g-contents
   .c-linkblock h3 {
     font-size: 1.2rem !important;
   }
-  .c-nap h3, .c-nap .c-nap-title {
+  .c-nap h3 {
     font-size: 1.2rem !important;
   }
 }
@@ -2291,6 +2313,9 @@ g-contents
   padding: 10px;
   color: #fff;
   font-size: 1.75rem;
+}
+.c-nap .c-nap-title {
+  font-size: 1.2rem;
 }
 .c-table {
   border-collapse: collapse;
@@ -3414,20 +3439,5 @@ form span.bg-danger {
   padding: 6px 10px;
 }
 
-.contents-main h2 {
-  font-size: 1.7rem;
-}
-
-.contents-main h3 {
-  font-size: 1.6rem;
-}
-
-@media screen and (max-width: 768px) {
-
-  .contents-main h2, .contents-main h3 {
-      font-size: 18px;
-  }
-
-}
 
 /* END */
