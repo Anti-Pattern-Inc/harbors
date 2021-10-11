@@ -1480,7 +1480,7 @@ h2.color-gray {
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 .table-of-contents {
   background-color: #fafafa;
-  width: 60%;
+  width: 560px;
   margin: 0 auto;
   border: dotted #18325f 2px;
   box-shadow: 0 0 5px #999;
@@ -1652,6 +1652,9 @@ features_of_harbors
 @media screen and (min-width: 768px) {
   .card-img {
     width: 50%;
+  }
+  .contents-main .card-img {
+    width: 450px;
   }
 }
 
@@ -1990,6 +1993,28 @@ g-contents
   }
 }
 
+.contents-main h2 {
+  font-size: 1.3rem;
+}
+
+.contents-main h3 {
+  font-size: 1.2rem;
+}
+
+.contents-main h4 {
+  font-size: 1.125rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contents-main h2, .contents-main h3, .contents-main h4 {
+    font-size: 16px;
+  }
+
+  .contents-main .card-text {
+    font-size: 14px;
+  }
+}
+
 /** ファーストビュー **/
 .fv {
   margin: 20px 0 30px;
@@ -2071,6 +2096,9 @@ g-contents
 /* // 内部コーディング */
 
 /* コンテンツ */
+.contents-main .container {
+  max-width: 650px;
+}
 /** パンくず修正 **/
 .breadcrumb li:last-child::after {
   display: none;
@@ -2241,7 +2269,7 @@ g-contents
   .c-linkblock h3 {
     font-size: 1.2rem !important;
   }
-  .c-nap h3, .c-nap .c-nap-title {
+  .c-nap h3 {
     font-size: 1.2rem !important;
   }
 }
@@ -2285,6 +2313,9 @@ g-contents
   padding: 10px;
   color: #fff;
   font-size: 1.75rem;
+}
+.c-nap .c-nap-title {
+  font-size: 1.2rem;
 }
 .c-table {
   border-collapse: collapse;
@@ -3080,6 +3111,8 @@ form span.bg-danger {
 
 .reasons-item:hover {
   opacity: 0.8;
+  text-decoration: none;
+  color: #777;
 }
 
 .checkbox {
@@ -3112,7 +3145,7 @@ form span.bg-danger {
 
 .reasons-detail {
   font-size: 14px;
-  margin: 0;
+  padding: 0 15px;
 }
 
 @media screen and (max-width: 991.98px) {
@@ -3301,5 +3334,110 @@ form span.bg-danger {
     font-size: 12px;
   }
 }
+
+/* VOTOP矢印 */
+.reasons-item .btnarrow4{
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  text-decoration: none;
+  outline: none;
+  font-size: 13px;
+}
+
+.btnarrow4::before{
+  content: '';
+  position: absolute;
+  bottom:-2px;
+  left:15%;
+  width: 85%;
+  height: 1px;
+  background:#777;
+  transition: all .3s;
+}
+
+.btnarrow4::after{
+  content: '';
+  position: absolute;
+  bottom:3px;
+  right:0;
+  width: 15px;
+  height:1px;
+  background:#777;
+  transform: rotate(35deg);
+  transition: all .3s;
+}
+
+.reasons-item:hover .btnarrow4::before{
+  left:20%;
+}
+
+.reasons-item:hover .btnarrow4::after{
+  right:-5%;
+}
+
+/* VOTOPのFAQ */
+
+.virtual-faq-question {
+  color: #ee8585;
+  margin-left: 32px;
+  text-indent: -40px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.virtual-faq-question::before {
+  color: #ee8585;
+  content: "Q.";
+  margin-right: 17px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.virtual-faq-answer {
+  margin-bottom: 0px;
+  margin-left: 32px;
+  text-indent: -38px;
+  font-size: 16px;
+}
+
+.virtual-faq-answer::before {
+  content: "A.";
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 575.98px) {
+
+  .virtual-faq-question {
+    font-size: 14px;
+  }
+
+  .virtual-faq-answer {
+    font-size: 14px;
+  }
+
+  .virtual-faq-question::before {
+    font-size: 18px;
+  }
+
+  .virtual-faq-answer::before {
+    font-size: 18px;
+  }
+}
+
+.about-details {
+  padding: 0 15px;
+}
+
+.article-cta-img {
+  height: 130px;
+}
+
+.cta-card .article-cv-btn > button {
+  padding: 6px 10px;
+}
+
 
 /* END */

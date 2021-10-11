@@ -166,7 +166,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 </a>
               </li>
               <li>
-                <a href="/virtual_office/columns/" class="nav-hover">
+                <a href="/virtual_office#columns" class="nav-hover">
                   お役立ちコラム
                   <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
                     <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
@@ -286,20 +286,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </a>
             <meta itemprop="position" content="1">
           </li>
-          <li
-            itemprop="itemListElement"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-          >
-            <a
-              itemprop="item"
-              href="/virtual_office/columns/"
-              class="text-muted"
-            >
-              <span itemprop="name">お役立ちコラム</span>
-            </a>
-            <meta itemprop="position" content="2">
-          </li>
+
           <li
             itemprop="itemListElement"
             itemscope
@@ -341,31 +328,38 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           </div>
         </div>
       </div>
-      <div class="fixed-bottom mb-2 virtual-form-btn text-center">
-        <button
-          type="button"
-          class="
-            btn btn-lg
-            pc-footer
-            mx-auto
-            nowrap
-            text-white
-            top-button
-            d-none d-sm-inline-block
-          "
-          onclick="countClickByGa();"
-          data-toggle="modal"
-          data-target="#inquiryFormModal"
-        >
-          無料で相談してみる
-        </button>
+            <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta ml-auto d-none d-md-block">
+        <div class="cta-card">
+          <div class="cta-img article-cta-img">
+            <h4 class="cta-lead text-white mx-auto w-75">最短3日で港区青山の<br>住所を手に入れよう！</h4>
+            <p class="text-white cta-sentence">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
+          </div>
+          <div class="virtual-fixed-cv-btn position-relative article-cv-btn">
+            <button
+              type="button"
+              class="cv-contact-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
+              onclick="countClickByGa();"
+              data-toggle="modal"
+              data-target="#inquiryFormModal"
+            >
+              お問い合わせ
+            </button>
+            <button
+            type="button"
+            onclick="window.open('https://ap-harbors.firebaseapp.com/virtual-office/register/','view');"
+            class="cv-apply-btn btn btn-sm-lg top-button d-block mx-auto"
+            >
+              お申し込み
+            </button>
+          </div>
+        </div>
       </div>
 
       <div
         class="
           fixed-bottom
           mb-0
-          d-flex d-sm-none
+          d-flex d-md-none
           mobile-footer mobile-footer-special
         "
       >
@@ -415,7 +409,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </div>
 
-    <section>
+    <section class="contents-main pb-0">
       <div class="container">
         <!--　コンテンツここから　-->
         <div class="l-container">
@@ -431,10 +425,11 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               法人登記の際に必要な書類
             </h2>
             <div class="u-mb30 c-block">
-              <div class="img-right-s">
+              <div class="text-center mb-3">
                 <img
                   alt="法人登記のポイント"
                   src="/img/virtual-contents6-1.jpg"
+                  class="card-img image-size"
                 >
               </div>
               <p class="u-m0 u-pb1em">
@@ -443,7 +438,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               <p class="u-m0 u-pb1em">
                 法人登記の主な必要書類は以下のとおりです。
               </p>
-              <ul class="c-list pl-4">
+              <ul class="px-5 py-4 border">
                 <li>設立登記申請書</li>
                 <li>登録免許税納付用台紙</li>
                 <li>定款（謄本）</li>
@@ -609,8 +604,9 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               表参道
             </h2>
             <div class="u-mb30 c-block">
-              <div class="img-right-s">
-                <img alt="読書する男性" src="/img/virtual-contents6-2.jpg">
+              <div class="text-center mb-3">
+                <img alt="読書する男性" src="/img/virtual-contents6-2.jpg"
+                class="card-img image-size">
               </div>
               <p class="u-m0 u-pb1em">
                 バーチャルオフィスであれば、少ない初期費用で青山のような一等地の住所での法人登記ができ、会社のイメージや社会的信用の向上が見込めます。
@@ -631,8 +627,14 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               </p>
             </div>
           </div>
+        </div>
+        <!--　コンテンツここまで　-->
+      </div>
+    </section>
 
-          <a
+    <section class="pt-0">
+      <div class="container">
+        <a
             href="/virtual_office/features_of_harbors/"
             class="link-button d-flex"
           >
@@ -649,13 +651,57 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               </span>
             </div>
           </a>
-        </div>
-        <!--　コンテンツここまで　-->
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container">
+        <h2 class="text-center"><span class="display-3">RELATED ARTICLES</span></h2>
+        <ul class="c-pagelink px-md-2 pt-5">
+          <li>
+            <a
+              href="/virtual_office/virtual_office_tips_about_home_office/"
+              class="d-flex align-items-center border-top border-bottom"
+            >
+              <div class="p-3">
+                <img src="/img/virtual_office_tips_about_home_office1.jpg" alt="自宅をオフィスにする">
+              </div>
+              <p class="my-3 mx-2">
+                自宅をオフィスにする際におすすめのバーチャルオフィスでの法人登記について
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/virtual_office/choose_virtual_office/" class="d-flex align-items-center border-bottom"
+            >
+              <div class="p-3">
+                <img src="/img/choose_virtual_office1.jpg" alt="チョイスの文字">
+              </div>
+              <p class="my-3 mx-2">
+                バーチャルオフィスの選び方！わかりやすい6つのチェックポイント
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/virtual_office/whats_virtual_office/"
+              class="d-flex align-items-center border-bottom"
+            >
+              <div class="p-3">
+                <img src="/img/question.jpg" alt="はてなマークの写真">
+              </div>
+              <p class="my-3 mx-2">
+                バーチャルオフィスとは？ブランド力向上やコストカットで事業を支援
+              </p>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- ABOUT US -->
-    <section class="bg-light">
+    <section>
       <div class="container">
         <h2 class="text-center"><span class="display-3">ABOUT US</span></h2>
 
@@ -730,7 +776,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </section>
 
-    <section>
+    <section class="bg-light">
       <div class="container">
         <div class="c-nap">
           <h3 class="u-mb20">
@@ -783,7 +829,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
     </section>
 
     <!-- アクセス -->
-    <section class="bg-light" id="access">
+    <section id="access">
       <div class="container text-center">
         <h2 class="pb-3"><span class="display-3">ACCESS</span></h2>
         <div class="mb-4 text-left">

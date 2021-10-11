@@ -181,7 +181,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 </a>
               </li>
               <li>
-                <a href="/virtual_office/columns/" class="nav-hover">
+                <a href="/virtual_office#columns" class="nav-hover">
                   お役立ちコラム
                   <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
                     <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
@@ -301,20 +301,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </a>
             <meta itemprop="position" content="1">
           </li>
-          <li
-            itemprop="itemListElement"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-          >
-            <a
-              itemprop="item"
-              href="/virtual_office/columns/"
-              class="text-muted"
-            >
-              <span itemprop="name">お役立ちコラム</span>
-            </a>
-            <meta itemprop="position" content="2">
-          </li>
+
           <li
             itemprop="itemListElement"
             itemscope
@@ -350,36 +337,43 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         <div class="row">
           <div class="col-lg-12 pt-4 pt-md-5">
             <h1 class="title_responsive contents-title-2">
-              バーチャルオフィスを港区で利用する理由とは
+              バーチャルオフィスを港区で<br class="d-sm-none">利用する理由とは
             </h1>
           </div>
         </div>
       </div>
-      <div class="fixed-bottom mb-2 virtual-form-btn text-center">
-        <button
-          type="button"
-          class="
-            btn btn-lg
-            pc-footer
-            mx-auto
-            nowrap
-            text-white
-            top-button
-            d-none d-sm-inline-block
-          "
-          onclick="countClickByGa();"
-          data-toggle="modal"
-          data-target="#inquiryFormModal"
-        >
-          無料で相談してみる
-        </button>
+            <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta ml-auto d-none d-md-block">
+        <div class="cta-card">
+          <div class="cta-img article-cta-img">
+            <h4 class="cta-lead text-white mx-auto w-75">最短3日で港区青山の<br>住所を手に入れよう！</h4>
+            <p class="text-white cta-sentence">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
+          </div>
+          <div class="virtual-fixed-cv-btn position-relative article-cv-btn">
+            <button
+              type="button"
+              class="cv-contact-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
+              onclick="countClickByGa();"
+              data-toggle="modal"
+              data-target="#inquiryFormModal"
+            >
+              お問い合わせ
+            </button>
+            <button
+            type="button"
+            onclick="window.open('https://ap-harbors.firebaseapp.com/virtual-office/register/','view');"
+            class="cv-apply-btn btn btn-sm-lg top-button d-block mx-auto"
+            >
+              お申し込み
+            </button>
+          </div>
+        </div>
       </div>
 
       <div
         class="
           fixed-bottom
           mb-0
-          d-flex d-sm-none
+          d-flex d-md-none
           mobile-footer mobile-footer-special
         "
       >
@@ -429,7 +423,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </div>
 
-    <section>
+    <section class="contents-main pb-0">
       <div class="container">
         <div>
           <p class="card-text text-dark">
@@ -468,7 +462,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           <h2 class="text-dark title-level1 text-center h2_title" id="p01">
             港区の特徴
           </h2>
-          <div class="text-center py-2">
+          <div class="text-center py-3">
             <img
               src="/img/minatoku_merit1.jpg"
               alt="東京の夜景"
@@ -476,13 +470,13 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               class="card-img image-size"
             >
           </div>
-          <p class="card-text text-dark px-md-4">
+          <p class="card-text text-dark">
             港区といえば都内でも特に人気や知名度が高いことでお馴染みです。おしゃれでハイセンスな街であり、高級感がある洗練された街であり、ビジネスの中心地というイメージを多くの方が抱くでしょう。実際に港区は都内のビジネス主要3区と言われ、千代田区、中央区と共に東京都のビジネスの中枢的な役割を担っています。情報通信サービス系や広告系、外資系の企業を始めとして、数多くの上場企業が拠点を構えていることからもその重要性が窺えます。<br>
             また、外資系企業が数多く存在することも特徴の一つです。これは日本にある大使館の約半数が港区にあり、その影響で外資系が集中していると考えられています。
           </p>
         </div>
 
-        <div class="px-md-4 pt-5">
+        <div class="pt-5">
           <div class="pt-3">
             <h3 class="text-dark title-level2" id="p02">
               港区企業エリアごとの特色
@@ -494,29 +488,29 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           </div>
         </div>
 
-        <div class="px-md-4 pt-5">
-          <div class="pt-3 px-md-3">
+        <div class="pt-5">
+          <div class="pt-3">
             <h4 class="text-dark title-level3" id="p02a">青山</h4>
             <p class="card-text text-dark pt-3">
               業種問わず多数の有名企業の本社ビルの所在地となっているだけでなく、大企業と中小企業が混在する中に、アパレルやデザイン関連の店舗や事務所としての利用の人気のエリアです。海外ブランドの日本法人や雑誌・広告などのクリエイティブ系企業も多く存在します。近年ではバーチャルオフィスなどを活用するという選択肢が増えたことで、青山はアパレル以外にもあらゆるスモールビジネスや個人事業主の開業、登記地としても人気が高まっているエリアです。
             </p>
           </div>
 
-          <div class="pt-3 pt-md-4 px-md-3">
+          <div class="pt-3 pt-md-4">
             <h4 class="text-dark title-level3" id="p02b">新橋・汐留・品川</h4>
             <p class="card-text text-dark pt-3">
               サラリーマンの街として有名な新橋を中心としたこのエリアは、電機・精密機器関連、鉄鋼・非鉄業、機械関連、食品関連など、多種多様な企業が存在しています。汐留には電通、ソフトバンク、日本通電など大企業の本社もあります。
             </p>
           </div>
 
-          <div class="pt-3 pt-md-4 px-md-3">
+          <div class="pt-3 pt-md-4">
             <h4 class="text-dark title-level3" id="p02c">六本木・麻布</h4>
             <p class="card-text text-dark pt-3">
               六本木にはAWSやGoogleの日本法人などの大企業を始めとする外資系やIT企業が数多く存在します。麻布周辺には大使館が多数あり、その影響で外資系企業が多いと考えられています。　
             </p>
           </div>
 
-          <div class="pt-3 pt-md-4 px-md-3">
+          <div class="pt-3 pt-md-4">
             <h4 class="text-dark title-level3" id="p02d">赤坂・虎ノ門</h4>
             <p class="card-text text-dark pt-3">
               赤坂にはYahooや博報堂DYホールディングスを始めとする情報通信サービスや広告関連の企業が存在感を顕します。虎ノ門は官公庁との位置関係から、法律事務所や会計事務所などの士業の事務所が多く集まっています。
@@ -526,7 +520,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
 
         <div class="pt-5">
           <h2 class="text-dark title-level1 text-center" id="p03">
-            既に港区内で登記をしている方のメリット
+            既に港区内で登記をしている方の<br class="d-sm-none">メリット
           </h2>
 
           <p class="text-dark pt-3">
@@ -534,7 +528,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           </p>
         </div>
 
-        <div class="px-md-4 pt-5">
+        <div class="pt-5">
           <div class="pt-0">
             <h3 class="text-dark title-level2">
               同一管轄内の移転登記はコストや手間が少ない
@@ -548,7 +542,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
 
         <div class="pt-5">
           <h2 class="text-dark title-level1 text-center h2_title" id="p04">
-            港区でこれから新しく法人を設立する方のメリット
+            港区でこれから新しく法人を<br class="d-sm-none">設立する方のメリット
           </h2>
           <div class="text-center py-2">
             <img
@@ -560,7 +554,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           </div>
         </div>
 
-        <div class="px-md-4 pt-5">
+        <div class="pt-5">
           <div class="pt-3">
             <h3 class="text-dark title-level2">企業への支援制度が充実</h3>
             <p class="card-text text-dark pt-3">
@@ -595,11 +589,16 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               class="card-img image-size"
             >
           </div>
-          <p class="card-text text-dark px-md-4">
+          <p class="card-text text-dark">
             港区はビジネスの中心でありながら、スタイリッシュで洗練されたイメージを持つエリアです。魅力的なイメージを持つ反面で、それだけにどうしてもオフィスを構えるにはコストがかかってしまいます。そうした問題を解決するのがバーチャルオフィスです。港区で事業を行いたいもののコストがネックという方はぜひ港区のバーチャルオフィスをご検討ください。
           </p>
         </div>
 
+      </div>
+    </section>
+
+    <section class="pt-0">
+      <div class="container">
         <div class="mt-5">
           <a
             href="/virtual_office/features_of_harbors/"
@@ -622,8 +621,55 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </section>
 
-    <!-- ABOUT US -->
     <section class="bg-light">
+      <div class="container">
+        <h2 class="text-center"><span class="display-3">RELATED ARTICLES</span></h2>
+        <ul class="c-pagelink px-md-2 pt-5">
+          <li>
+            <a
+              href="/virtual_office/features_of_areas_in_tokyo/"
+              class="d-flex align-items-center border-top border-bottom"
+            >
+              <div class="p-3">
+                <img src="/img/features_of_areas_in_tokyo1.jpg" alt="東京の夜景">
+              </div>
+              <p class="my-3 mx-2">
+                バーチャルオフィス 東京都内エリア別の特徴
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/virtual_office/aoyama_merit/"
+              class="d-flex align-items-center border-bottom"
+            >
+              <div class="p-3">
+                <img src="/img/aoyama_merit1.jpg" alt="疑問に感じる男性">
+              </div>
+              <p class="my-3 mx-2">
+                バーチャルオフィス利用で青山がおすすめの理由
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/virtual_office/virtual_office_setagaya_ku_recommend/"
+              class="d-flex align-items-center border-bottom"
+            >
+              <div class="p-3">
+                <img src="/img/setagaya1.jpg" alt="チェックリスト">
+              </div>
+              <p class="my-3 mx-2">
+                【世田谷区在住の方必見！】<br class="d-lg-none">東京都内でおすすめのバーチャルオフィス
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section>
       <div class="container">
         <h2 class="text-center"><span class="display-3">ABOUT US</span></h2>
 
@@ -698,7 +744,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </section>
 
-    <section>
+    <section class="bg-light">
       <div class="container">
         <div class="c-nap">
           <h3 class="u-mb20">
@@ -751,7 +797,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
     </section>
 
     <!-- アクセス -->
-    <section class="bg-light" id="access">
+    <section id="access">
       <div class="container text-center">
         <h2 class="pb-3"><span class="display-3">ACCESS</span></h2>
         <div class="mb-4 text-left">
