@@ -166,7 +166,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 </a>
               </li>
               <li>
-                <a href="/virtual_office/columns/" class="nav-hover">
+                <a href="/virtual_office#columns" class="nav-hover">
                   お役立ちコラム
                   <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
                     <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
@@ -286,20 +286,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </a>
             <meta itemprop="position" content="1">
           </li>
-          <li
-            itemprop="itemListElement"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-          >
-            <a
-              itemprop="item"
-              href="/virtual_office/columns/"
-              class="text-muted"
-            >
-              <span itemprop="name">お役立ちコラム</span>
-            </a>
-            <meta itemprop="position" content="2">
-          </li>
+
           <li
             itemprop="itemListElement"
             itemscope
@@ -343,25 +330,38 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           </div>
         </div>
       </div>
-      <div class="fixed-bottom mb-2 virtual-form-btn text-center">
-        <button type="button" class="
-            btn btn-lg
-            pc-footer
-            mx-auto
-            nowrap
-            text-white
-            top-button
-            d-none d-sm-inline-block
-          " onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal" id="toPcInquiryFormModal">
-          無料で相談してみる
-        </button>
+      <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta ml-auto d-none d-md-block">
+        <div class="cta-card">
+          <div class="cta-img article-cta-img">
+            <h4 class="cta-lead text-white mx-auto w-75">最短3日で港区青山の<br>住所を手に入れよう！</h4>
+            <p class="text-white cta-sentence">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
+          </div>
+          <div class="virtual-fixed-cv-btn position-relative article-cv-btn">
+            <button
+              type="button"
+              class="cv-contact-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
+              onclick="countClickByGa();"
+              data-toggle="modal"
+              data-target="#inquiryFormModal"
+            >
+              お問い合わせ
+            </button>
+            <button
+            type="button"
+            onclick="window.open('https://ap-harbors.firebaseapp.com/virtual-office/register/','view');"
+            class="cv-apply-btn btn btn-sm-lg top-button d-block mx-auto"
+            >
+              お申し込み
+            </button>
+          </div>
+        </div>
       </div>
 
       <div
         class="
           fixed-bottom
           mb-0
-          d-flex d-sm-none
+          d-flex d-md-none
           mobile-footer mobile-footer-special
         "
       >
@@ -411,7 +411,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </div>
 
-    <section>
+    <section class="contents-main pb-0">
       <div class="container">
         <!--　コンテンツここから　-->
         <div class="u-pb30 l-container">
@@ -430,13 +430,14 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </div>
 
             <h2 class="u-mt60 u-mb20 l-heading-secondary">
-              港区でバーチャルオフィス・シェアオフィス探し！バーチャルオフィスの普及
+              港区でバーチャルオフィス・シェアオフィス探し！<br>バーチャルオフィスの普及
             </h2>
             <div class="u-mb30 c-block">
-              <div class="img-right-s">
+              <div class="text-center mb-3">
                 <img
                   alt="レンタルオフィス"
                   src="/img/virtual-contents3-1.jpg"
+                  class="card-img image-size"
                 >
               </div>
               <p class="u-m0 u-pb1em">
@@ -455,30 +456,43 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 バーチャルという名称ですが、実際には会議室やカフェスペースが利用できたり、来客対応や郵便物の受け取りサービスがあったりと、低価格でありながらサービスが充実しているところも人気の理由です。
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <a href="/virtual_office/" class="link-button d-flex">
-              <div class="link-button-img">
-                <img
-                  src="/img/features_of_harbors3.jpg"
-                  alt="HarborS 表参道のコワーキングスペース"
-                >
-              </div>
-              <div class="link-button-text">
-                <span>
-                  バーチャルオフィスの詳細<br>
-                  はこちら
-                </span>
-              </div>
-            </a>
+    <section class="p-0">
+      <div class="container">
+        <a href="/virtual_office/" class="link-button d-flex">
+          <div class="link-button-img">
+            <img
+              src="/img/features_of_harbors3.jpg"
+              alt="HarborS 表参道のコワーキングスペース"
+            >
+          </div>
+          <div class="link-button-text">
+            <span>
+              バーチャルオフィスの詳細<br>
+              はこちら
+            </span>
+          </div>
+        </a>
+      </div>
+    </section>
 
+    <section class="contents-main p-0">
+      <div class="container">
+        <div class="l-container">
+          <div class="l-section">
             <h2 class="u-mt60 u-mb20 l-heading-secondary">
-              時代の変化とともに顕著に注目されるワークスタイル！オフィス形態の種類
+              時代の変化とともに顕著に注目されるワークスタイル！<br>オフィス形態の種類
             </h2>
             <div class="u-mb30 c-block">
-              <div class="img-right-s">
+              <div class="text-center mb-3">
                 <img
                   alt="パソコンと仕事道具"
                   src="/img/virtual-contents3-2.jpg"
+                  class="card-img image-size"
                 >
               </div>
               <p class="u-m0 u-pb1em">
@@ -523,10 +537,9 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 </p>
               </div>
             </div>
-
+      
             <h2 class="u-mt60 u-mb20 l-heading-secondary">
-              港区でバーチャルオフィスやシェアオフィスをお探しなら好立地のHarborS
-              表参道
+              港区でバーチャルオフィスやシェアオフィスをお探しなら<br>好立地のHarborS 表参道
             </h2>
             <div class="u-mb30 c-block">
               <p class="u-m0 u-pb1em">
@@ -543,31 +556,83 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               </p>
             </div>
           </div>
-
-          <a
-            href="/virtual_office/features_of_harbors/"
-            class="link-button d-flex"
-          >
-            <div class="link-button-img">
-              <img
-                src="/img/features_of_harbors1.jpg"
-                alt="HarborS 表参道のテラス"
-              >
-            </div>
-            <div class="link-button-text">
-              <span>
-                港区のバーチャルオフィス<br>
-                HarborSの特徴とは？
-              </span>
-            </div>
-          </a>
         </div>
-        <!--　コンテンツここまで　-->
+      </div>
+    </section>
+          
+    <!--　コンテンツここまで　-->
+    
+    <section class="pt-0">
+      <div class="container">
+        <a
+        href="/virtual_office/features_of_harbors/"
+        class="link-button d-flex"
+      >
+        <div class="link-button-img">
+          <img
+            src="/img/features_of_harbors1.jpg"
+            alt="HarborS 表参道のテラス"
+          >
+        </div>
+        <div class="link-button-text">
+          <span>
+            港区のバーチャルオフィス<br>
+            HarborSの特徴とは？
+          </span>
+        </div>
+      </a>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container">
+        <h2 class="text-center"><span class="display-3">RELATED ARTICLES</span></h2>
+        <ul class="c-pagelink px-md-2 pt-5">
+          <li>
+            <a
+              href="/virtual_office/choose_virtual_office/" class="d-flex align-items-center border-top border-bottom"
+            >
+              <div class="p-3">
+                <img src="/img/choose_virtual_office1.jpg" alt="チョイスの文字">
+              </div>
+              <p class="my-3 mx-2">
+                バーチャルオフィスの選び方！わかりやすい6つのチェックポイント
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/virtual_office/about_shared_office_and_rental_office/" 
+              class="d-flex align-items-center border-bottom"
+            >
+              <div class="p-3">
+                <img src="/img/about_shared_ofiice_and_rental_office1.jpg" alt="広々としたオフィス">
+              </div>
+              <p class="my-3 mx-2">
+                シェアオフィス、レンタルオフィスとは？
+                サービスの違いやメリットについて解説
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/virtual_office/whats_virtual_office/"
+              class="d-flex align-items-center border-top border-bottom"
+            >
+              <div class="p-3">
+                <img src="/img/question.jpg" alt="はてなマークの写真">
+              </div>
+              <p class="my-3 mx-2">
+                バーチャルオフィスとは？ブランド力向上やコストカットで事業を支援
+              </p>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- ABOUT US -->
-    <section class="bg-light">
+    <section>
       <div class="container">
         <h2 class="text-center"><span class="display-3">ABOUT US</span></h2>
 
@@ -642,7 +707,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </section>
 
-    <section>
+    <section class="bg-light">
       <div class="container">
         <div class="c-nap">
           <h3 class="u-mb20">
@@ -695,7 +760,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
     </section>
 
     <!-- アクセス -->
-    <section class="bg-light" id="access">
+    <section id="access">
       <div class="container text-center">
         <h2 class="pb-3"><span class="display-3">ACCESS</span></h2>
         <div class="mb-4 text-left">

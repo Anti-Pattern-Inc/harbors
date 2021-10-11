@@ -181,7 +181,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 </a>
               </li>
               <li>
-                <a href="/virtual_office/columns/" class="nav-hover">
+                <a href="/virtual_office#columns" class="nav-hover">
                   お役立ちコラム
                   <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
                     <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
@@ -301,20 +301,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </a>
             <meta itemprop="position" content="1">
           </li>
-          <li
-            itemprop="itemListElement"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-          >
-            <a
-              itemprop="item"
-              href="/virtual_office/columns/"
-              class="text-muted"
-            >
-              <span itemprop="name">お役立ちコラム</span>
-            </a>
-            <meta itemprop="position" content="2">
-          </li>
+
 
           <li
             itemprop="itemListElement"
@@ -356,31 +343,38 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           </div>
         </div>
       </div>
-      <div class="fixed-bottom mb-2 virtual-form-btn text-center">
-        <button
-          type="button"
-          class="
-            btn btn-lg
-            pc-footer
-            mx-auto
-            nowrap
-            text-white
-            top-button
-            d-none d-sm-inline-block
-          "
-          onclick="countClickByGa();"
-          data-toggle="modal"
-          data-target="#inquiryFormModal"
-        >
-          無料で相談してみる
-        </button>
+            <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta ml-auto d-none d-md-block">
+        <div class="cta-card">
+          <div class="cta-img article-cta-img">
+            <h4 class="cta-lead text-white mx-auto w-75">最短3日で港区青山の<br>住所を手に入れよう！</h4>
+            <p class="text-white cta-sentence">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
+          </div>
+          <div class="virtual-fixed-cv-btn position-relative article-cv-btn">
+            <button
+              type="button"
+              class="cv-contact-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
+              onclick="countClickByGa();"
+              data-toggle="modal"
+              data-target="#inquiryFormModal"
+            >
+              お問い合わせ
+            </button>
+            <button
+            type="button"
+            onclick="window.open('https://ap-harbors.firebaseapp.com/virtual-office/register/','view');"
+            class="cv-apply-btn btn btn-sm-lg top-button d-block mx-auto"
+            >
+              お申し込み
+            </button>
+          </div>
+        </div>
       </div>
 
       <div
         class="
           fixed-bottom
           mb-0
-          d-flex d-sm-none
+          d-flex d-md-none
           mobile-footer mobile-footer-special
         "
       >
@@ -430,7 +424,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </div>
 
-    <section>
+    <section class="contents-main">
       <div class="container">
         <div>
           <div class="text-center py-2 mb-3">
@@ -481,10 +475,10 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           </p>
         </div>
 
-        <div class="px-md-4 pt-5">
+        <div class="pt-5">
           <div>
             <h3 class="text-dark title-level2" id="p01a">
-              バーチャルオフィス比較のポイント①　料金やコスト
+              バーチャルオフィス比較のポイント①<br>料金やコスト
             </h3>
 
             <p class="card-text text-dark pt-3">
@@ -499,7 +493,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
 
           <div class="pt-5">
             <h3 class="text-dark title-level2" id="p01b">
-              バーチャルオフィス比較のポイント②　アクセスと通いやすさ
+              バーチャルオフィス比較のポイント②<br>アクセスと通いやすさ
             </h3>
 
             <p class="card-text text-dark pt-3">
@@ -511,7 +505,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
 
           <div class="pt-5">
             <h3 class="text-dark title-level2" id="p01c">
-              バーチャルオフィス比較のポイント③　利用できる住所のブランド力や安全性
+              バーチャルオフィス比較のポイント③<br>利用できる住所のブランド力や安全性
             </h3>
 
             <p class="card-text text-dark pt-3">
@@ -527,9 +521,9 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
 
         <div class="pt-5">
           <h2 class="text-dark title-level1 text-center h2_title" id="p02">
-            世田谷区内のおすすめバーチャルオフィス
+            世田谷区内の<br class="d-sm-none">おすすめバーチャルオフィス
           </h2>
-          <div class="c-nap pt-5 px-md-4">
+          <div class="c-nap pt-5">
             <h3 class="u-mb20 c-nap-title">
               ①Karigo バーチャルオフィス世田谷 自由が丘
             </h3>
@@ -568,7 +562,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               Karigoのバーチャルオフィスは同じ世田谷区内には三軒茶屋にもあるので、お住まいの地域に合わせて選択すると良いです。
             </p>
           </div>
-          <div class="c-nap pt-5 px-md-4">
+          <div class="c-nap pt-5">
             <h3 class="u-mb20 c-nap-title">
               ②吉田一仁税理士事務所
             </h3>
@@ -604,7 +598,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               最寄りである三軒茶屋駅は世田谷線と田園都市線の2路線が乗り入れており、交通の便も良いです。
             </p>
           </div>
-          <div class="c-nap pt-5 px-md-4">
+          <div class="c-nap pt-5">
             <h3 class="u-mb20 c-nap-title">
               ③下高井戸コワーキングスペース invento
             </h3>
@@ -642,7 +636,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               専用ポストを利用できるので、近隣にお住まいの方には特におすすめです。
             </p>
           </div>
-          <div class="c-nap pt-5 px-md-4">
+          <div class="c-nap pt-5">
             <h3 class="u-mb20 c-nap-title">
               ④ワンストップビジネスセンター二子玉川
             </h3>
@@ -687,7 +681,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           <h2 class="text-dark title-level1 text-center h2_title" id="p03">
             世田谷区以外のおすすめバーチャルオフィス
           </h2>
-          <div class="c-nap pt-5 px-md-4">
+          <div class="c-nap pt-5">
             <h3 class="u-mb20 c-nap-title">
               ①HarborS 表参道
             </h3>
@@ -735,7 +729,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </p>
             <a href="/virtual_office/" class="text-primary">港区青山の格安・好立地なバーチャルオフィス HarborS表参道</a>
           </div>
-          <div class="c-nap pt-5 px-md-4">
+          <div class="c-nap pt-5">
             <h3 class="u-mb20 c-nap-title">
               ②サーブコープ 青山パラシオタワー
             </h3>
@@ -778,7 +772,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               月額利用料に見合った魅力的なサービスとオフィスですが、単に住所のみを使いたいという方やスモールビジネスでコストを抑えたいという方にはオーバースペックな場合もあります。予算や事業内容との兼ね合いを考えた上で慎重に検討すると良いでしょう。
             </p>
           </div>
-          <div class="c-nap pt-5 px-md-4">
+          <div class="c-nap pt-5">
             <h3 class="u-mb20 c-nap-title">
               ③ナレッジソサエティ
             </h3>
@@ -822,7 +816,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               銀行口座開設ができなかった場合の返金があるので安心して利用開始できます。
             </p>
           </div>
-          <div class="c-nap pt-5 px-md-4">
+          <div class="c-nap pt-5">
             <h3 class="u-mb20 c-nap-title">
               ④ワンストップビジネスセンター青山本店
             </h3>
@@ -864,7 +858,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               また、同じビルにいくつか他のバーチャルオフィスも入居しているという点には注意しておいた方が良いでしょう。例えば、他所のバーチャルオフィス利用者に問題があった場合、こちらのバーチャルオフィスのどんなに審査体制が万全でも住所に傷が着き、巻き添えになる恐れがあるので、ビルの他のテナントやバーチャルオフィスなどについても予め良く調べて、運営体制などに問題がなさそうか確認しておくと良いでしょう。
             </p>
           </div>
-          <div class="c-nap pt-5 px-md-4">
+          <div class="c-nap pt-5">
             <h3 class="u-mb20 c-nap-title">
               ⑤リージャス　表参道
             </h3>
@@ -906,7 +900,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               リージャスはレンタルオフィスなどを含め全国170の拠点を有する、「世界最大のフレキシブルオフィスプロバイダー」を謳うコワーキングスペース・バーチャルオフィスの運営会社です。表参道店では、青山のブランド住所の利用とやビル内ラウンジの利用が可能です。月額費用は若干割高ですが、高級感を求める方にはおすすめです。
             </p>
           </div>
-          <div class="c-nap pt-5 px-md-4">
+          <div class="c-nap pt-5">
             <h3 class="u-mb20 c-nap-title">
               ⑥DMMバーチャルオフィス 渋谷
             </h3>
@@ -965,8 +959,55 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </section>
 
-    <!-- ABOUT US -->
     <section class="bg-light">
+      <div class="container">
+        <h2 class="text-center"><span class="display-3">RELATED ARTICLES</span></h2>
+        <ul class="c-pagelink px-md-2 pt-5">
+          <li>
+            <a
+              href="/virtual_office/minatoku_merit"
+              class="d-flex align-items-center border-top border-bottom"
+            >
+              <div class="p-3">
+                <img src="/img/minatoku_merit1.jpg" alt="東京の夜景">
+              </div>
+              <p class="my-3 mx-2">
+                バーチャルオフィスを港区で利用する理由とは
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/virtual_office/aoyama_merit/"
+              class="d-flex align-items-center border-bottom"
+            >
+              <div class="p-3">
+                <img src="/img/aoyama_merit1.jpg" alt="疑問に感じる男性">
+              </div>
+              <p class="my-3 mx-2">
+                バーチャルオフィス利用で青山がおすすめの理由
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/virtual_office/features_of_areas_in_tokyo/"
+              class="d-flex align-items-center border-top border-bottom"
+            >
+              <div class="p-3">
+                <img src="/img/features_of_areas_in_tokyo1.jpg" alt="東京の夜景">
+              </div>
+              <p class="my-3 mx-2">
+                バーチャルオフィス 東京都内エリア別の特徴
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section>
       <div class="container">
         <h2 class="text-center"><span class="display-3">ABOUT US</span></h2>
 
@@ -1041,7 +1082,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </section>
 
-    <section>
+    <section class="bg-light">
       <div class="container">
         <div class="c-nap">
           <h3 class="u-mb20">
@@ -1094,7 +1135,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
     </section>
 
     <!-- アクセス -->
-    <section class="bg-light" id="access">
+    <section id="access">
       <div class="container text-center">
         <h2 class="pb-3"><span class="display-3">ACCESS</span></h2>
         <div class="mb-4 text-left">
