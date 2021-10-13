@@ -3439,10 +3439,12 @@ form span.bg-danger {
   padding: 6px 10px;
 }
 
-/* services */
-/* .reason {
-  position: relative;
-} */
+/* reasons */
+
+.reason-container {
+  width: 960px;
+  margin: 0 auto;
+}
 
 .reason-row {
   margin-bottom: 75px;
@@ -3469,7 +3471,7 @@ form span.bg-danger {
 
 .reason > img {
   border-radius: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .reason-title {
@@ -3478,6 +3480,7 @@ form span.bg-danger {
   font-weight: bold;
   color: #333;
   margin: 20px 0;
+  line-height: 1.5;
 }
 
 .reason-description {
