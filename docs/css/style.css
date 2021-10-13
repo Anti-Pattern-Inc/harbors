@@ -3439,5 +3439,116 @@ form span.bg-danger {
   padding: 6px 10px;
 }
 
+/* services */
+/* .reason {
+  position: relative;
+} */
+
+.reason-row {
+  margin-bottom: 75px;
+}
+
+.reason {
+  width: 46%;
+  position: relative;
+}
+
+.reason .reason-img-link {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.reason-img-link:hover {
+  opacity: .7;
+  transition: all 1s;
+}
+
+.reason .reason-img-link > img {
+  border-radius: 20px;
+}
+
+.reason > img {
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+.reason-title {
+  font-size: 24px;
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0;
+}
+
+.reason-description {
+  font-size: 14px;
+  font-family: noto-sans-cjk-jp, sans-serif;
+  line-height: 26px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.reason-link {
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.reason-link a {
+  display: inline-block;
+  color: #666;
+  padding: 6px;
+  background: linear-gradient(#666, #666) left bottom / 100% 1px no-repeat;
+  transition: background-size 0.6s;
+  text-decoration: none;
+}
+
+.reason-link a:hover {
+  background-position: right bottom;
+  background-size: 0 1px;
+}
+
+.services-bg::after {
+  content: "";
+  background-color: #f8f8f5;
+  position: absolute;
+  border-radius: 0 100px 100px 0;
+  width: 72%;
+  height: 1450px;
+  z-index: -1;
+  left: 0;
+  top: 148px;
+}
+
+@media screen and (max-width: 767.8px) {
+  .reason {
+    width: 100%;
+  }
+
+  .reason > img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .reason-description {
+    margin-bottom: 20px;
+  }
+
+  .reason-link {
+    position: static;
+    text-align: right;
+  }
+
+  .reason {
+    margin-bottom: 75px;
+  }
+
+  .services-bg::after {
+    height: 2450px;
+    top: 128px;
+  }
+}
+/* services */
 
 /* END */
