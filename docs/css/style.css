@@ -3442,11 +3442,11 @@ form span.bg-danger {
 /* reasons */
 
 .reason-container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
-.reason-row {
+.reason-row:nth-of-type(1) {
   margin-bottom: 75px;
 }
 
@@ -3512,26 +3512,28 @@ form span.bg-danger {
   background-size: 0 1px;
 }
 
-.services-bg::after {
-  content: "";
-  background-color: #f8f8f5;
-  position: absolute;
-  border-radius: 0 100px 100px 0;
-  width: 72%;
-  height: 1450px;
-  z-index: -1;
-  left: 0;
-  top: 148px;
+@media screen and (max-width: 991.98px) {
+  .reason-container {
+    max-width: 720px;
+  }
 }
 
 @media screen and (max-width: 767.8px) {
   .reason {
     width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .reason-container {
+    max-width: 540px;
+  }
+
+  .reason-row {
+    margin: 0;
   }
 
   .reason > img {
     border-radius: 10px;
-    margin-bottom: 20px;
   }
 
   .reason-description {
@@ -3543,13 +3545,10 @@ form span.bg-danger {
     text-align: right;
   }
 
-  .reason {
-    margin-bottom: 75px;
-  }
-
-  .services-bg::after {
-    height: 2450px;
-    top: 128px;
+  .reason-title {
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 15px 0;
   }
 }
 /* services */
