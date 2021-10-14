@@ -3441,11 +3441,6 @@ form span.bg-danger {
 
 /* reasons */
 
-.reason-container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
 .reason-row:nth-of-type(1) {
   margin-bottom: 75px;
 }
@@ -3512,20 +3507,10 @@ form span.bg-danger {
   background-size: 0 1px;
 }
 
-@media screen and (max-width: 991.98px) {
-  .reason-container {
-    max-width: 720px;
-  }
-}
-
 @media screen and (max-width: 767.8px) {
   .reason {
     width: 100%;
     margin-bottom: 50px;
-  }
-
-  .reason-container {
-    max-width: 540px;
   }
 
   .reason-row {
@@ -3552,5 +3537,25 @@ form span.bg-danger {
   }
 }
 /* services */
+
+/* small-container */
+
+.small-container {
+  max-width: 910px;
+}
+
+@media screen and (max-width: 911.98px) {
+  .small-container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .small-container {
+    max-width: 540px;
+  }
+}
+
+/* small-container */
 
 /* END */
