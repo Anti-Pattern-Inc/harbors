@@ -3558,4 +3558,42 @@ form span.bg-danger {
 
 /* small-container */
 
+.virtual-breadcrumb {
+  max-width: 1145px;
+  position: relative;
+}
+
+.virtual-breadcrumb ol {
+  position: absolute;
+  top: 20px;
+}
+
+.virtual-content-breadcrumb {
+  top: -80px;
+}
+
+@media screen and (max-width: 1024px) {
+  .virtual-breadcrumb ol {
+    left: 20px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .virtual-breadcrumb ol {
+    top: 10px;
+    left: 30px;
+  }
+
+  .virtual-breadcrumb li a span {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .virtual-breadcrumb ol {
+    top: 5px;
+    left: 10px;
+  }
+}
+
 /* END */
