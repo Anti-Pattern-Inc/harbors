@@ -3597,4 +3597,8 @@ form span.bg-danger {
 
 /* virtual-breadcrumb */
 
+.virtual-second-view {
+  padding: 30px 0;
+}
+
 /* END */
