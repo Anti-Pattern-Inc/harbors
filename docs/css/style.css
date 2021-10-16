@@ -3558,6 +3558,8 @@ form span.bg-danger {
 
 /* small-container */
 
+/* virtual-breadcrumb */
+
 .virtual-breadcrumb {
   max-width: 1145px;
   position: relative;
@@ -3595,5 +3597,7 @@ form span.bg-danger {
     left: 10px;
   }
 }
+
+/* virtual-breadcrumb */
 
 /* END */
