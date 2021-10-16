@@ -2547,7 +2547,7 @@ g-contents
   width: 49%;
   font-weight: bold;
   background-color: #df7156;
-  border: 1px solid #df7156;
+  border: 2px solid #df7156;
   border-radius: 100px;
   font-size: 26px;
   color: #fff;
@@ -2889,7 +2889,7 @@ form span.bg-danger {
   width: 340px;
   box-shadow: 0px 2px 5px rgb(17 14 9);
   background-color: #df7156;
-  border: 3px solid #df7156;
+  border: 2px solid #df7156;
   border-radius: 10px;
 }
 
@@ -2930,7 +2930,7 @@ form span.bg-danger {
     font-size: 14px;
   }
   .flow-cta {
-    font-size: 16px;
+    font-size: 18px;
     width: 100%;
     padding: 10px;
   }
