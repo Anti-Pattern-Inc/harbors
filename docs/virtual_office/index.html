@@ -268,36 +268,11 @@
           </nav>
         </div>
       </div>
-      <!-- パンくずリスト -->
-      <div class="breadcrumb d-none d-md-block bg-transparent pt-2 pb-0">
-        <ol
-          itemscope
-          itemtype="https://schema.org/BreadcrumbList"
-          class="p-0 mb-0"
-        >
-        <li
-        itemprop="itemListElement"
-        itemscope
-        itemtype="https://schema.org/ListItem"
-        class="breadcrumb-last"
-      >
-        <a
-          href="/virtual_office/"
-          itemprop="item"
-          class="d-inline-block mb-0 disabled"
-          tabindex="-1"
-        >
-          <span itemprop="name">バーチャルオフィスTOP</span>
-        </a>
-        <meta itemprop="position" content="1">
-      </li>
-        </ol>
-      </div> 
     </header>
 
     <main class="virtual-top">
       <!-- トップ画像 -->
-      <section class="second-view pb-4 pt-sm-5 mt-md-3">
+      <section class="second-view virtual-second-view">
         <div class="second-view-bg"></div>
         <div class="second-view-container right-container">
           <div class="d-md-flex flex-row-reverse justify-content-between align-items-center">
@@ -355,7 +330,7 @@
                   data-toggle="modal"
                   data-target="#inquiryFormModal"
                 >
-                  相談してみる
+                  無料で相談してみる
                 </button>
               </div>
               <p class="mt-3 text-center second-view-description">オンライン説明会も実施しております。</p>
@@ -449,10 +424,10 @@
       <!-- セカンドビュー -->
       <section class="pt-0">
         <div class="container">
-          <div class="fv">
+          <div class="fv text-center">
             <p class="m-0">
               東京でバーチャルオフィスを探すなら、HarborS
-              表参道をご活用ください。お客様のビジネスに適した様々なオプションをご用意しております。レンタルオフィスと比較して、低価格で東京都内一等地の住所をご利用いただけます。
+              表参道をご活用ください。<br class="d-none d-sm-block">お客様のビジネスに適した様々なオプションをご用意しております。<br class="d-none d-sm-block">レンタルオフィスと比較して、低価格で東京都内一等地の住所をご利用いただけます。
             </p>
           </div>
         </div>
@@ -464,89 +439,59 @@
           <span class="display-3">REASONS</span><br>
           HarborS表参道が選ばれる理由
         </h2>
-        <div class="container pb-3">
-          <a href="#reasonReasonable" class="row align-items-center reasons-item mx-0">
-            <div class="col-md-3 p-0">
+
+        <div class="container small-container">
+          <div class="reason-row d-md-flex justify-content-between">
+            <div class="reason">
               <img src="/img/votop-reason1.jpg" alt="HarborSのテラス" class="w-100 mx-auto" loading="lazy">
-            </div>
-            <div class="col-md-9 my-3 my-md-0 pl-md-2 pl-lg-4">
-              <div class="d-flex align-items-center">
-                <div>
-                  <h3 class="text-dark">
-                    &#147;綺麗&#148;なバーチャルオフィスを<br class="d-sm-none">&#147;安く&#148;借りられる
-                  </h3>
-                  <p>
-                    住所のみを借りるバーチャルオフィスにおいても、一等地のお洒落で先進的なオフィス空間は顧客や取引先との関係を育む上で重要なポイントになります。
-                  </p>
-                </div>
-              </div>
-              <div class="text-right">
-                <p class="btnarrow4">詳しく見る</p>
+              <h3 class="reason-title">&#147;綺麗&#148;なバーチャルオフィスを<br class="d-md-none d-lg-block">&#147;安く&#148;借りられる</h3>
+              <p class="reason-description">住所のみを借りるバーチャルオフィスにおいても、一等地のお洒落で先進的なオフィス空間は顧客や取引先との関係を育む上で重要なポイントになります。</p>
+              <div class="reason-link">
+                <a href="#reasonReasonable">
+                  詳しく見る
+                  <img src="/img/arrow.svg" alt="矢印" width="12" height="12">
+                </a>
               </div>
             </div>
-          </a>
-          <a href="#reasonAddress" class="row align-items-center mt-3 reasons-item mx-0">
-            <div class="col-md-3 p-0">
-              <img src="/img/votop-reason2.jpg" alt="HarborSの外観" class="w-100 mx-auto" loading="lazy">
-            </div>
-            <div class="col-md-9 my-3 my-md-0 pl-md-2 pl-lg-4">
-              <div class="d-flex align-items-center">
-                <div>
-                  <h3 class="text-dark">
-                    個人事業主や法人登記で<br class="d-sm-none">&#147;港区南青山&#148;の住所を使用できる
-                  </h3>
-                  <p>
-                    東京都内でも人気の高い『港区青山』という一等地の住所を利用することはお客様の事業に高いブランド力と安心感を付与します。
-                  </p>
-                </div>
-              </div>
-              <div class="text-right">
-                <p class="btnarrow4">詳しく見る</p>
+            <div class="reason">
+              <img src="/img/votop-reason2.jpg" alt="HarborS 表参道の外観" class="w-100 mx-auto" loading="lazy">
+              <h3 class="reason-title">個人事業主や法人登記で<br class="">&#147;港区南青山&#148;の住所を使用できる</h3>
+              <p class="reason-description">東京都内でも人気の高い『港区青山』という一等地の住所を利用することはお客様の事業に高いブランド力と安心感を付与します。</p>
+              <div class="reason-link">
+                <a href="#reasonAddress">
+                  詳しく見る
+                  <img src="/img/arrow.svg" alt="矢印" width="12" height="12">
+                </a>
               </div>
             </div>
-          </a>
-          <a href="#reasonSpace" class="row align-items-center mt-3 reasons-item mx-0">
-            <div class="col-md-3 p-0">
+          </div>
+          <div class="reason-row d-md-flex justify-content-between">
+            <div class="reason">
               <img src="/img/votop-reason3.jpg" alt="HarborSの会議室" class="w-100 mx-auto" loading="lazy">
-            </div>
-            <div class="col-md-9 my-3 my-md-0 pl-md-2 pl-lg-4">
-              <div class="d-flex align-items-center">
-                <div>
-                  <h3 class="text-dark">
-                    対面の&#147;打ち合わせ&#148;や&#147;商談&#148;も<br class="d-sm-none">行えるスペース
-                  </h3>
-                  <p>
-                    表参道駅徒歩3分の好アクセス。オープンテラスや会議室、カフェラウンジも併設しているのでシーンに応じた使い分けが可能です。
-                  </p>
-                </div>
-              </div>
-              <div class="text-right">
-                <p class="btnarrow4">詳しく見る</p>
+              <h3 class="reason-title">対面の&#147;打ち合わせ&#148;や<br class="d-sm-none d-md-block">&#147;商談&#148;も行えるスペース</h3>
+              <p class="reason-description">表参道駅徒歩3分の好アクセス。オープンテラスや会議室、カフェラウンジも併設しているのでシーンに応じた使い分けが可能です。</p>
+              <div class="reason-link">
+                <a href="#reasonSpace">
+                  詳しく見る
+                  <img src="/img/arrow.svg" alt="矢印" width="12" height="12">
+                </a>
               </div>
             </div>
-          </a>
-          <a href="#reasonService" class="row align-items-center mt-3 reasons-item mx-0">
-            <div class="col-md-3 p-0">
+            <div class="reason">
               <img src="/img/votop-reason4.jpg" alt="HarborSのコワーキングスペース" class="w-100 mx-auto" loading="lazy">
-            </div>
-            <div class="col-md-9 my-3 my-md-0 pl-md-2 pl-lg-4">
-              <div class="d-flex align-items-center">
-                <div>
-                  <h3 class="text-dark">
-                    自分に合ったサービスを選べる
-                  </h3>
-                  <p>
-                    豊富なサービスの中から本当に必要なものだけを自由にオプションの中から選択できるので、無駄がなくお得にご利用いただけます。
-                  </p>
-                </div>
-              </div>
-              <div class="text-right">
-                <p class="btnarrow4">詳しく見る</p>
+              <h3 class="reason-title">自分に合ったサービスを<br class="d-none d-md-block d-lg-none">選べる</h3>
+              <p class="reason-description">豊富なサービスの中から本当に必要なものだけを自由にオプションの中から選択できるので、無駄がなくお得にご利用いただけます。</p>
+              <div class="reason-link">
+                <a href="#reasonService" class="mr-3">
+                  詳しく見る
+                  <img src="/img/arrow.svg" alt="矢印" width="12" height="12">
+                </a>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       </section>
+
       <!-- Services -->
       <section id="services">
         <div class="container">
@@ -567,7 +512,7 @@
               </div>
             </div>
           </div>
-          <div class="services-container py-4 pt-md-5">
+          <div class="services-container container small-container py-4 pt-md-5">
             <div class="row">
               <div class="col-md-6 d-flex mx-auto align-items-center">
                 <div class="virtual-service-icon d-flex align-items-center justify-content-center">
@@ -735,7 +680,7 @@
               data-target="#inquiryFormModal"
             >
               <div class="align-middle flow-cta-contents">
-                <p class="flow-cta-sentence">相談してみる</p>
+                <p class="flow-cta-sentence">無料で相談してみる</p>
               </div>
             </button>
           </div>
@@ -900,10 +845,8 @@
           <span class="display-3">FAQ</span><br>
           バーチャルオフィスのよくあるご質問
         </h2>
-        
-
         <div class="faq-wrapper">
-          <div class="container pb-3">
+          <div class="container small-container pb-3">
             <div class="p-4 faq">
               <p class="virtual-faq-question">バーチャルオフィスの住所はどのような用途に使えますか？<br class="d-sm-none">また、使える住所はどうなりますか？</p>
               <p class="virtual-faq-answer">
@@ -1296,9 +1239,9 @@
       </section>
 
       <section id="reasonDetails">
-        <div class="container">
+        <div class="container small-container">
           <h2 class="text-center mb-4 mb-md-5 section-heading">
-            <span class="display-3">DETAILS</span>
+            <span class="display-3">DETAILS</span><br>HarborS表参道の特徴
           </h2>
           <div id="reasonReasonable">
             <h3 class="title-level2 virtual-columns-title my-4 my-sm-5 mt-md-0">
@@ -1349,13 +1292,25 @@
               今後は拠点展開も見据えており、よりお客様にとって利用しやすいバーチャルオフィス運営を目指してまいります。
             </p>
           </div>
+          <div class="w-75 mx-auto mt-4 mt-md-5">
+            <button
+              type="button"
+              class="btn flow-cta d-block nowrap mx-auto mb-4 mb-lg-2 "
+              onclick="countClickByGa();"
+              data-toggle="modal"
+              data-target="#inquiryFormModal"
+            >
+              <div class="align-middle flow-cta-contents">
+                <p class="flow-cta-sentence">無料で相談してみる</p>
+              </div>
+            </button>
+          </div>
         </div>
       </section>
 
       <section id="About" class="bg-light">
-        <div class="container">
+        <div class="container small-container">
           <h2 class="text-center section-heading mb-4 mb-md-5">
-            <span class="display-3">ABOUT</span><br>
             バーチャルオフィスとは？
           </h2>
           <div>
@@ -1440,7 +1395,7 @@
       </section>
 
       <section>
-        <div class="container">
+        <div class="container small-container">
           <div class="l-container">
             <div class="c-nap">
               <h2 class="u-mb20 c-nap-title">
@@ -1495,7 +1450,7 @@
               data-target="#inquiryFormModal"
             >
               <div class="align-middle flow-cta-contents">
-                <p class="flow-cta-sentence">相談してみる</p>
+                <p class="flow-cta-sentence">無料で相談してみる</p>
               </div>
             </button>
           </div>
