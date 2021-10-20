@@ -3558,40 +3558,39 @@ form span.bg-danger {
 /* virtual-breadcrumb */
 
 .virtual-breadcrumb {
-  max-width: 1145px;
+  max-width: 1140px;
   position: relative;
 }
 
 .virtual-breadcrumb ol {
   position: absolute;
-  top: 20px;
+  top: 30px;
 }
 
 .virtual-content-breadcrumb {
   top: -80px;
 }
 
-@media screen and (max-width: 1024px) {
-  .virtual-breadcrumb ol {
-    left: 20px;
+@media (max-width: 1200px) {
+  .virtual-breadcrumb {
+    max-width: 960px;
   }
 }
 
-@media screen and (max-width: 767.98px) {
-  .virtual-breadcrumb ol {
-    top: 10px;
-    left: 30px;
-  }
+@media (max-width: 992px) {
+  .virtual-breadcrumb {
+    max-width: 720px;
+  }  
+}
+
+@media screen and (max-width: 768px) {
+
+  .virtual-breadcrumb {
+    max-width: 540px;
+  }  
 
   .virtual-breadcrumb li a span {
     font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 575.98px) {
-  .virtual-breadcrumb ol {
-    top: 5px;
-    left: 10px;
   }
 }
 
@@ -3599,6 +3598,10 @@ form span.bg-danger {
 
 .virtual-second-view {
   padding: 30px 0;
+}
+
+.virtual-breadcrumb li:after {
+  color: #fff;
 }
 
 /* END */
