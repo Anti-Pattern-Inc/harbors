@@ -285,109 +285,99 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </header>
 
-    <div class="jumbotron-fluid position-relative events-top p-0">
-      <div class="filter"></div>
-      <!-- トップ文字 -->
-      <div
-        class="
-          text-white
-          position-absolute
-          text-center
-          top-text
-          container-fluid
-        "
-      >
-        <div class="row">
-          <div class="col-lg-12 pt-3">
-            <h1 class="title_responsive contents-title-2">
-              バーチャルオフィス利用で青山がおすすめの理由
-            </h1>
-          </div>
+    <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta ml-auto d-none d-md-block">
+      <div class="cta-card">
+        <div class="cta-img article-cta-img">
+          <h4 class="cta-lead text-white mx-auto w-75">最短3日で港区青山の<br>住所を手に入れよう！</h4>
+          <p class="text-white cta-sentence">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
         </div>
-      </div>
-            <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta ml-auto d-none d-md-block">
-        <div class="cta-card">
-          <div class="cta-img article-cta-img">
-            <h4 class="cta-lead text-white mx-auto w-75">最短3日で港区青山の<br>住所を手に入れよう！</h4>
-            <p class="text-white cta-sentence">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
-          </div>
-          <div class="virtual-fixed-cv-btn position-relative article-cv-btn">
-            <button
-              type="button"
-              class="cv-contact-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
-              onclick="countClickByGa();"
-              data-toggle="modal"
-              data-target="#inquiryFormModal"
-            >
-              お問い合わせ
-            </button>
-            <button
-            type="button"
-            onclick="window.open('https://ap-harbors.firebaseapp.com/virtual-office/register/','view');"
-            class="cv-apply-btn btn btn-sm-lg top-button d-block mx-auto"
-            >
-              お申し込み
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="
-          fixed-bottom
-          mb-0
-          d-flex d-md-none
-          mobile-footer mobile-footer-special
-        "
-      >
-        <div>
+        <div class="virtual-fixed-cv-btn position-relative article-cv-btn">
           <button
             type="button"
-            class="btn m-0 w-100 nowrap text-white px-0 py-3 mv-cta"
+            class="cv-contact-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
             onclick="countClickByGa();"
             data-toggle="modal"
             data-target="#inquiryFormModal"
           >
-            <div class="mv-cta-contents mx-auto d-flex align-items-center">
-              <img
-                src="/img/contact.svg"
-                alt="お問い合わせ"
-                width="20px"
-                height="20px"
-                class="d-block mr-2"
-                id="toSpInquiryFormModal"
-              >
-              <p class="mt-1 mb-0">
-                無料で相談してみる
-              </p>
-            </div>
+            お問い合わせ
+          </button>
+          <button
+          type="button"
+          onclick="window.open('https://ap-harbors.firebaseapp.com/virtual-office/register/','view');"
+          class="cv-apply-btn btn btn-sm-lg top-button d-block mx-auto"
+          >
+            お申し込み
           </button>
         </div>
-        <div>
-          <a
-            href="tel:03-6885-6140"
-            class="btnm-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
-            onclick="ga('send', 'event', 'call', 1);"
-          >
-            <div class="mv-cta-contents mx-auto d-flex align-items-center">
-              <img
-                src="/img/tel.svg"
-                alt="電話"
-                width="20px"
-                height="20px"
-                class="d-block mr-2"
-              >
-              <p class="mt-1 mb-0">
-                電話で相談をする
-              </p>
-            </div>
-          </a>
-        </div>
+      </div>
+    </div>
+
+    <div
+      class="
+        fixed-bottom
+        mb-0
+        d-flex d-md-none
+        mobile-footer mobile-footer-special
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn m-0 w-100 nowrap text-white px-0 py-3 mv-cta"
+          onclick="countClickByGa();"
+          data-toggle="modal"
+          data-target="#inquiryFormModal"
+        >
+          <div class="mv-cta-contents mx-auto d-flex align-items-center">
+            <img
+              src="/img/contact.svg"
+              alt="お問い合わせ"
+              width="20px"
+              height="20px"
+              class="d-block mr-2"
+              id="toSpInquiryFormModal"
+            >
+            <p class="mt-1 mb-0">
+              無料で相談してみる
+            </p>
+          </div>
+        </button>
+      </div>
+      <div>
+        <a
+          href="tel:03-6885-6140"
+          class="btnm-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
+          onclick="ga('send', 'event', 'call', 1);"
+        >
+          <div class="mv-cta-contents mx-auto d-flex align-items-center">
+            <img
+              src="/img/tel.svg"
+              alt="電話"
+              width="20px"
+              height="20px"
+              class="d-block mr-2"
+            >
+            <p class="mt-1 mb-0">
+              電話で相談をする
+            </p>
+          </div>
+        </a>
       </div>
     </div>
 
     <section class="contents-main">
       <div class="container">
+        <div class="text-center pt-5">
+          <img
+            src="/img/aoyama_merit1.jpg"
+            alt="疑問に感じる男性"
+            loading="lazy"
+            class="card-img image-size"
+          >
+        </div>
+        <h1 class="title_responsive contents-title-2  text-center text-dark py-4 mb-0">
+          バーチャルオフィス利用で青山が<br class="d-none d-sm-block">おすすめの理由
+        </h1>
         <div>
           <p class="card-text text-dark">
             バーチャルオフィスを探す際に、利用できる住所を重要視する人は多いです。都内の至る所にバーチャルオフィスは存在し、それゆえに選択肢が多く迷われている方も多いと思います。そんな方におすすめしたいのが「青山エリア」です。港区内でも特に人気の高い青山エリアの魅力を紹介します。
@@ -395,7 +385,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         </div>
 
         <div class="pt-5">
-          <ul class="table-of-contents">
+          <ul class="table-of-contents virtual-table">
             <h4 class="text-center font-weight-bold mb-3">目次</h4>
             <li><a href="#p01">そもそも青山エリアとは</a></li>
             <li>
@@ -422,15 +412,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           <h2 class="text-dark title-level1 text-center h2_title" id="p01">
             そもそも青山エリアとは
           </h2>
-          <div class="text-center py-2 mb-3">
-            <img
-              src="/img/aoyama_merit1.jpg"
-              alt="疑問に感じる男性"
-              loading="lazy"
-              class="card-img image-size"
-            >
-          </div>
-          <p class="card-text text-dark">
+          <p class="card-text text-dark pt-3">
             青山エリアは住所が港区の中でも南青山、北青山、西麻布の一帯が該当します。<br>
             骨董通りや青山通りを中心にハイセンスなショップやおしゃれなカフェが立ち並ぶスタイリッシュな街並みだけでなく、多くの企業が本社ビルを構えるオフィス街という一面も持ちます。それだけでなく、青山通りの欅並木や青山霊園の桜並木、神宮外苑の銀杏並木など自然を身近に感じることもでき、都会的な華やかさと豊かな自然が共存するエリアと言えます。
           </p>

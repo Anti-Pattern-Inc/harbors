@@ -286,117 +286,106 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </header>
 
-    <div class="jumbotron-fluid position-relative events-top p-0">
-      <div class="filter"></div>
-      <!-- トップ文字 -->
-      <div
-        class="
-          text-white
-          position-absolute
-          text-center
-          top-text
-          container-fluid
-        "
-      >
-        <div class="row">
-          <div class="col-lg-12 pt-3">
-            <h1 class="title_responsive contents-title-2">
-              バーチャルオフィスを港区で<br class="d-sm-none">利用する理由とは
-            </h1>
-          </div>
+    <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta ml-auto d-none d-md-block">
+      <div class="cta-card">
+        <div class="cta-img article-cta-img">
+          <h4 class="cta-lead text-white mx-auto w-75">最短3日で港区青山の<br>住所を手に入れよう！</h4>
+          <p class="text-white cta-sentence">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
         </div>
-      </div>
-            <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta ml-auto d-none d-md-block">
-        <div class="cta-card">
-          <div class="cta-img article-cta-img">
-            <h4 class="cta-lead text-white mx-auto w-75">最短3日で港区青山の<br>住所を手に入れよう！</h4>
-            <p class="text-white cta-sentence">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
-          </div>
-          <div class="virtual-fixed-cv-btn position-relative article-cv-btn">
-            <button
-              type="button"
-              class="cv-contact-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
-              onclick="countClickByGa();"
-              data-toggle="modal"
-              data-target="#inquiryFormModal"
-            >
-              お問い合わせ
-            </button>
-            <button
-            type="button"
-            onclick="window.open('https://ap-harbors.firebaseapp.com/virtual-office/register/','view');"
-            class="cv-apply-btn btn btn-sm-lg top-button d-block mx-auto"
-            >
-              お申し込み
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="
-          fixed-bottom
-          mb-0
-          d-flex d-md-none
-          mobile-footer mobile-footer-special
-        "
-      >
-        <div>
+        <div class="virtual-fixed-cv-btn position-relative article-cv-btn">
           <button
             type="button"
-            class="btn m-0 w-100 nowrap text-white px-0 py-3 mv-cta"
+            class="cv-contact-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
             onclick="countClickByGa();"
             data-toggle="modal"
             data-target="#inquiryFormModal"
           >
-            <div class="mv-cta-contents mx-auto d-flex align-items-center">
-              <img
-                src="/img/contact.svg"
-                alt="お問い合わせ"
-                width="20px"
-                height="20px"
-                class="d-block mr-2"
-                id="toSpInquiryFormModal"
-              >
-              <p class="mt-1 mb-0">
-                無料で相談してみる
-              </p>
-            </div>
+            お問い合わせ
+          </button>
+          <button
+          type="button"
+          onclick="window.open('https://ap-harbors.firebaseapp.com/virtual-office/register/','view');"
+          class="cv-apply-btn btn btn-sm-lg top-button d-block mx-auto"
+          >
+            お申し込み
           </button>
         </div>
-        <div>
-          <a
-            href="tel:03-6885-6140"
-            class="btnm-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
-            onclick="ga('send', 'event', 'call', 1);"
-          >
-            <div class="mv-cta-contents mx-auto d-flex align-items-center">
-              <img
-                src="/img/tel.svg"
-                alt="電話"
-                width="20px"
-                height="20px"
-                class="d-block mr-2"
-              >
-              <p class="mt-1 mb-0">
-                電話で相談をする
-              </p>
-            </div>
-          </a>
-        </div>
+      </div>
+    </div>
+
+    <div
+      class="
+        fixed-bottom
+        mb-0
+        d-flex d-md-none
+        mobile-footer mobile-footer-special
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn m-0 w-100 nowrap text-white px-0 py-3 mv-cta"
+          onclick="countClickByGa();"
+          data-toggle="modal"
+          data-target="#inquiryFormModal"
+        >
+          <div class="mv-cta-contents mx-auto d-flex align-items-center">
+            <img
+              src="/img/contact.svg"
+              alt="お問い合わせ"
+              width="20px"
+              height="20px"
+              class="d-block mr-2"
+              id="toSpInquiryFormModal"
+            >
+            <p class="mt-1 mb-0">
+              無料で相談してみる
+            </p>
+          </div>
+        </button>
+      </div>
+      <div>
+        <a
+          href="tel:03-6885-6140"
+          class="btnm-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
+          onclick="ga('send', 'event', 'call', 1);"
+        >
+          <div class="mv-cta-contents mx-auto d-flex align-items-center">
+            <img
+              src="/img/tel.svg"
+              alt="電話"
+              width="20px"
+              height="20px"
+              class="d-block mr-2"
+            >
+            <p class="mt-1 mb-0">
+              電話で相談をする
+            </p>
+          </div>
+        </a>
       </div>
     </div>
 
     <section class="contents-main pb-0">
       <div class="container">
+        <div class="text-center pt-5">
+          <img
+            src="/img/minatoku_merit1.jpg"
+            alt="東京の夜景"
+            loading="lazy"
+            class="card-img image-size"
+          >
+        </div>
+        <h1 class="title_responsive contents-title-2 text-center text-dark py-4 mb-0">
+          バーチャルオフィスを港区で<br>利用する理由とは
+        </h1>
         <div>
           <p class="card-text text-dark">
             港区で事業を行うことにどんなメリットがあるのかについて解説します。港区という土地のブランドだけでなく、法人登記前に知っておきたいメリットについてご説明いたします。
           </p>
         </div>
-
         <div class="pt-5">
-          <ul class="table-of-contents">
+          <ul class="table-of-contents virtual-table">
             <h4 class="text-center font-weight-bold mb-3">目次</h4>
             <li><a href="#p01">港区の特徴</a></li>
             <li>
@@ -426,15 +415,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           <h2 class="text-dark title-level1 text-center h2_title" id="p01">
             港区の特徴
           </h2>
-          <div class="text-center py-3">
-            <img
-              src="/img/minatoku_merit1.jpg"
-              alt="東京の夜景"
-              loading="lazy"
-              class="card-img image-size"
-            >
-          </div>
-          <p class="card-text text-dark">
+          <p class="card-text text-dark pt-3">
             港区といえば都内でも特に人気や知名度が高いことでお馴染みです。おしゃれでハイセンスな街であり、高級感がある洗練された街であり、ビジネスの中心地というイメージを多くの方が抱くでしょう。実際に港区は都内のビジネス主要3区と言われ、千代田区、中央区と共に東京都のビジネスの中枢的な役割を担っています。情報通信サービス系や広告系、外資系の企業を始めとして、数多くの上場企業が拠点を構えていることからもその重要性が窺えます。<br>
             また、外資系企業が数多く存在することも特徴の一つです。これは日本にある大使館の約半数が港区にあり、その影響で外資系が集中していると考えられています。
           </p>

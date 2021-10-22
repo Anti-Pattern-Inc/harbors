@@ -3583,7 +3583,7 @@ form span.bg-danger {
   }  
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.8px) {
 
   .virtual-breadcrumb {
     max-width: 540px;
@@ -3594,14 +3594,24 @@ form span.bg-danger {
   }
 }
 
+@media (max-width: 575.98px) {
+  .virtual-breadcrumb {
+    max-width: 720px;
+  }  
+}
+
 /* virtual-breadcrumb */
 
 .virtual-second-view {
   padding: 30px 0;
 }
 
-.virtual-breadcrumb li:after {
+footer .virtual-breadcrumb li:after {
   color: #fff;
+}
+
+.virtual-table {
+  border: none;
 }
 
 /* END */

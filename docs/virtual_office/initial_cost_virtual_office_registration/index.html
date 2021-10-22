@@ -272,114 +272,96 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </header>
 
-    <div class="jumbotron-fluid position-relative events-top p-0">
-      <div class="filter"></div>
-      <!-- トップ文字 -->
-      <div
-        class="
-          text-white
-          position-absolute
-          text-center
-          top-text
-          container-fluid
-        "
-      >
-        <div class="row">
-          <div class="col-lg-12 pt-3">
-            <h1 class="contents-title-5">
-              バーチャルオフィスを登記住所にすれば起業の初期費用が抑えられる<br
-                class="d-none d-md-block"
-              >
-              起業における固定電話のメリットとは オプションプランが豊富なHarborS
-              表参道
-            </h1>
-          </div>
+    <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta ml-auto d-none d-md-block">
+      <div class="cta-card">
+        <div class="cta-img article-cta-img">
+          <h4 class="cta-lead text-white mx-auto w-75">最短3日で港区青山の<br>住所を手に入れよう！</h4>
+          <p class="text-white cta-sentence">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
         </div>
-      </div>
-
-      <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta ml-auto d-none d-md-block">
-        <div class="cta-card">
-          <div class="cta-img article-cta-img">
-            <h4 class="cta-lead text-white mx-auto w-75">最短3日で港区青山の<br>住所を手に入れよう！</h4>
-            <p class="text-white cta-sentence">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
-          </div>
-          <div class="virtual-fixed-cv-btn position-relative article-cv-btn">
-            <button
-              type="button"
-              class="cv-contact-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
-              onclick="countClickByGa();"
-              data-toggle="modal"
-              data-target="#inquiryFormModal"
-            >
-              お問い合わせ
-            </button>
-            <button
-            type="button"
-            onclick="window.open('https://ap-harbors.firebaseapp.com/virtual-office/register/','view');"
-            class="cv-apply-btn btn btn-sm-lg top-button d-block mx-auto"
-            >
-              お申し込み
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="
-          fixed-bottom
-          mb-0
-          d-flex d-md-none
-          mobile-footer mobile-footer-special
-        "
-      >
-        <div>
+        <div class="virtual-fixed-cv-btn position-relative article-cv-btn">
           <button
             type="button"
-            class="btn m-0 w-100 nowrap text-white px-0 py-3 mv-cta"
+            class="cv-contact-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
             onclick="countClickByGa();"
             data-toggle="modal"
             data-target="#inquiryFormModal"
           >
-            <div class="mv-cta-contents mx-auto d-flex align-items-center">
-              <img
-                src="/img/contact.svg"
-                alt="お問い合わせ"
-                width="20px"
-                height="20px"
-                class="d-block mr-2"
-                id="toSpInquiryFormModal"
-              >
-              <p class="mt-1 mb-0">
-                無料で相談してみる
-              </p>
-            </div>
+            お問い合わせ
+          </button>
+          <button
+          type="button"
+          onclick="window.open('https://ap-harbors.firebaseapp.com/virtual-office/register/','view');"
+          class="cv-apply-btn btn btn-sm-lg top-button d-block mx-auto"
+          >
+            お申し込み
           </button>
         </div>
-        <div>
-          <a
-            href="tel:03-6885-6140"
-            class="btnm-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
-            onclick="ga('send', 'event', 'call', 1);"
-          >
-            <div class="mv-cta-contents mx-auto d-flex align-items-center">
-              <img
-                src="/img/tel.svg"
-                alt="電話"
-                width="20px"
-                height="20px"
-                class="d-block mr-2"
-              >
-              <p class="mt-1 mb-0">
-                電話で相談をする
-              </p>
-            </div>
-          </a>
-        </div>
+      </div>
+    </div>
+
+    <div
+      class="
+        fixed-bottom
+        mb-0
+        d-flex d-md-none
+        mobile-footer mobile-footer-special
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn m-0 w-100 nowrap text-white px-0 py-3 mv-cta"
+          onclick="countClickByGa();"
+          data-toggle="modal"
+          data-target="#inquiryFormModal"
+        >
+          <div class="mv-cta-contents mx-auto d-flex align-items-center">
+            <img
+              src="/img/contact.svg"
+              alt="お問い合わせ"
+              width="20px"
+              height="20px"
+              class="d-block mr-2"
+              id="toSpInquiryFormModal"
+            >
+            <p class="mt-1 mb-0">
+              無料で相談してみる
+            </p>
+          </div>
+        </button>
+      </div>
+      <div>
+        <a
+          href="tel:03-6885-6140"
+          class="btnm-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
+          onclick="ga('send', 'event', 'call', 1);"
+        >
+          <div class="mv-cta-contents mx-auto d-flex align-items-center">
+            <img
+              src="/img/tel.svg"
+              alt="電話"
+              width="20px"
+              height="20px"
+              class="d-block mr-2"
+            >
+            <p class="mt-1 mb-0">
+              電話で相談をする
+            </p>
+          </div>
+        </a>
       </div>
     </div>
 
     <section class="contents-main pb-0">
       <div class="container">
+        <div class="text-center pt-5">
+          <img alt="電話機" src="/img/virtual-contents10-1.jpg" class="card-img image-size">
+        </div>
+        <h1 class="contents-title-5 text-center text-dark py-4 mb-0">
+          バーチャルオフィスを登記住所にすれば起業の初期費用が抑えられる<br class="d-none d-md-block">
+          起業における固定電話のメリットとは オプションプランが豊富なHarborS
+          表参道
+        </h1>
         <!--　コンテンツここから　-->
         <div class="u-pb30 l-container">
           <div class="l-section">
@@ -395,13 +377,10 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               </p>
             </div>
 
-            <h2 class="u-mt60 u-mb20 l-heading-secondary">
+            <h2 class="u-mt60 l-heading-secondary ">
               起業の際に固定電話番号を取得するメリット
             </h2>
             <div class="u-mb30 c-block">
-              <div class="text-center mb-3">
-                <img alt="電話機" src="/img/virtual-contents10-1.jpg" class="card-img image-size">
-              </div>
               <div class="c-s-block">
                 <h3 class="u-mb10 u-mt30 l-tertiary">
                   <span></span>社会的信用を得ることができる
