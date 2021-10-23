@@ -3614,4 +3614,19 @@ footer .virtual-breadcrumb li:after {
   border: none;
 }
 
+.contents-main {
+  padding: 100px 0 80px;
+}
+
+.contents-main p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 767.8px) {
+
+  .contents-main {
+    padding: 80px 0;
+  }
+}
+
 /* END */
