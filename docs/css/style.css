@@ -3560,6 +3560,7 @@ form span.bg-danger {
 .virtual-breadcrumb {
   max-width: 1140px;
   position: relative;
+  padding-left: 0;
 }
 
 .virtual-breadcrumb ol {
@@ -3571,33 +3572,15 @@ form span.bg-danger {
   top: -80px;
 }
 
-@media (max-width: 1200px) {
-  .virtual-breadcrumb {
-    max-width: 960px;
-  }
-}
-
-@media (max-width: 992px) {
-  .virtual-breadcrumb {
-    max-width: 720px;
-  }  
-}
-
 @media screen and (max-width: 767.8px) {
-
-  .virtual-breadcrumb {
-    max-width: 540px;
-  }  
 
   .virtual-breadcrumb li a span {
     font-size: 12px;
   }
-}
 
-@media (max-width: 575.98px) {
-  .virtual-breadcrumb {
-    max-width: 720px;
-  }  
+  .virtual-content-breadcrumb {
+    top: -90px;
+  }
 }
 
 /* virtual-breadcrumb */
@@ -3620,6 +3603,10 @@ footer .virtual-breadcrumb li:after {
 
 .contents-main p {
   text-align: justify;
+}
+
+.virtual-container {
+  overflow: visible;
 }
 
 @media screen and (max-width: 767.8px) {
