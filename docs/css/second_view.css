@@ -21,6 +21,10 @@
   position: relative;
 }
 
+.virtual-top .second-view {
+  padding: 30px 0;
+}
+
 .second-view-container {
   max-width: calc((100vw + 1140px) / 2);
   margin: 0 0 0 auto;
