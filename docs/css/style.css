@@ -2096,8 +2096,19 @@ g-contents
 /* // 内部コーディング */
 
 /* コンテンツ */
+.contents-main {
+  padding: 100px 0 80px;
+}
 .contents-main .container {
   max-width: 650px;
+}
+.contents-main p {
+  text-align: justify;
+}
+@media screen and (max-width: 767.8px) {
+  .contents-main {
+    padding: 80px 0;
+  }
 }
 /** パンくず修正 **/
 .breadcrumb li:last-child::after {
@@ -3294,7 +3305,6 @@ form span.bg-danger {
 }
 
 @media screen and (max-width: 1199.98px) {
-
   .virtual-columns-title {
     font-size: 16px;
   }
@@ -3303,12 +3313,6 @@ form span.bg-danger {
     font-size: 12px;
   }
 }
-
-/* @media screen and (max-width: 767.98px) {
-  .virtual-columns-title {
-    font-size: 16px;
-  }
-} */
 
 .c-pagelink {
   margin-bottom: 0;
@@ -3557,48 +3561,20 @@ form span.bg-danger {
 
 /* virtual-breadcrumb */
 
+footer .virtual-breadcrumb li:after {
+  color: #fff;
+}
+
 .virtual-breadcrumb {
-  max-width: 1145px;
-  position: relative;
+  padding: 0;
+  margin: 0 0 50px;
 }
 
-.virtual-breadcrumb ol {
-  position: absolute;
-  top: 20px;
-}
-
-.virtual-content-breadcrumb {
-  top: -80px;
-}
-
-@media screen and (max-width: 1024px) {
-  .virtual-breadcrumb ol {
-    left: 20px;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .virtual-breadcrumb ol {
-    top: 10px;
-    left: 30px;
-  }
-
+@media screen and (max-width: 767.8px) {
   .virtual-breadcrumb li a span {
     font-size: 12px;
   }
 }
 
-@media screen and (max-width: 575.98px) {
-  .virtual-breadcrumb ol {
-    top: 5px;
-    left: 10px;
-  }
-}
-
 /* virtual-breadcrumb */
-
-.virtual-second-view {
-  padding: 30px 0;
-}
-
 /* END */
