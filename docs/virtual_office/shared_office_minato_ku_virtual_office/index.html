@@ -271,8 +271,8 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </header>
 
-    <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta ml-auto d-none d-md-block">
-      <div class="cta-card">
+    <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta ml-auto" style="display: none;">
+      <div class="cta-card article-cta-card">
         <div class="cta-img article-cta-img">
           <h4 class="cta-lead text-white mx-auto w-75">最短3日で港区青山の<br>住所を手に入れよう！</h4>
           <p class="text-white cta-sentence">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
@@ -1096,5 +1096,19 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
     <script src="/js/common.js"></script>
     <script src="/js/virtual_form.js"></script>
     <script src="/js/header.js"></script>
+    <script>
+      var formBtn = $(".virtual-form-btn");
+      var footerPos = $('footer').offset().top;
+      formBtn.hide();
+      
+      $(window).scroll(function () {
+        var scrollPos = $(window).scrollTop();
+        if ($(window).scrollTop() < 500 || scrollPos + $(window).height() > footerPos) {
+          formBtn.fadeOut();
+        } else {
+          formBtn.fadeIn();
+        }
+      });
+    </script>
   </body>
 </html>
