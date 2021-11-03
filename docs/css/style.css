@@ -3103,6 +3103,12 @@ form span.bg-danger {
   fill: #fff;
 }
 
+@media screen and (max-width: 767.98px) {
+  .article-cta-card {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 575.98px) {
   .cta-card {
     display: none;
@@ -3570,9 +3576,17 @@ footer .virtual-breadcrumb li:after {
   margin: 0 0 50px;
 }
 
+.virtual-footer {
+  padding: 40px 0;
+}
+
 @media screen and (max-width: 767.8px) {
   .virtual-breadcrumb li a span {
     font-size: 12px;
+  }
+
+  .virtual-footer {
+    padding: 20px 0 40px;
   }
 }
 
