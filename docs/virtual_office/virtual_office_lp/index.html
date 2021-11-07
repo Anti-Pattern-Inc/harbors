@@ -115,7 +115,7 @@
     <header id="header" class="bg-white">
       <div class="header-container d-flex justify-content-between ja align-items-center">
         <div class="header-left vertical-align-middle">
-          <a href="/" class="d-inline-block d-md-block d-lg-inline-block">
+          <a href="/virtual_office/virtual_office_lp/" class="d-inline-block d-md-block d-lg-inline-block">
             <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="109.931" height="53" viewBox="0 0 109.931 53" class="header-logo bg-black">
               <g id="harbors_logo" data-name="レイヤー 1">
                 <path id="harbors_logo_mark" data-name="パス 3" d="M76.2,19.666,73.86,17.659,89.548,0c6.652,5.855,13.26,11.659,20.017,17.609l-7.856,8.845-2.328-2.007,5.744-6.522-3.406-3.115-5.845,6.522-2.328-2.007,5.81-6.557L95.844,9.733l-5.8,6.472-2.293-2.037L93.5,7.646,89.819,4.39Z" transform="translate(-36.805)" fill="#000"></path>
@@ -266,7 +266,7 @@
       <!-- トップ画像 -->
       <section class="first-view">
         <div class="first-view-bg"></div>
-        <div class="first-view-container right-container">
+        <div class="first-view-container">
           <div class="d-md-flex flex-row-reverse justify-content-between align-items-center">
             <div class="first-view-right">
               <!-- <img
@@ -327,7 +327,6 @@
               </div>
               <p class="mt-3 text-center first-view-description">オンライン説明会も実施しております。</p>
             </div>
-            
           </div>
         </div>
       </section>
@@ -363,7 +362,7 @@
           fixed-bottom
           mb-0
           d-flex d-sm-none
-          mobile-footer mobile-footer-special
+          mobile-footer
         "
       >
         <div>
@@ -413,18 +412,6 @@
         </div>
       </div>
 
-      <!-- セカンドビュー -->
-      <section class="pt-0">
-        <div class="container">
-          <div class="fv text-center">
-            <p class="m-0">
-              東京でバーチャルオフィスを探すなら、HarborS
-              表参道をご活用ください。<br class="d-none d-sm-block">お客様のビジネスに適した様々なオプションをご用意しております。<br class="d-none d-sm-block">レンタルオフィスと比較して、低価格で東京都内一等地の住所をご利用いただけます。
-            </p>
-          </div>
-        </div>
-      </section>
-
       <!-- reasons -->
       <section class="reasons bg-light" id="reasons">
         <h2 class="text-center section-heading mb-4 mb-md-5">
@@ -438,22 +425,22 @@
               <img src="/img/votop-reason1.jpg" alt="HarborSのテラス" class="w-100 mx-auto" loading="lazy">
               <h3 class="reason-title">&#147;綺麗&#148;なバーチャルオフィスを<br class="d-md-none d-lg-block">&#147;安く&#148;借りられる</h3>
               <p class="reason-description text-justify">住所のみを借りるバーチャルオフィスにおいても、一等地のお洒落で先進的なオフィス空間は顧客や取引先との関係を育む上で重要なポイントになります。</p>
-              <div class="reason-link">
-                <a href="#reasonReasonable">
+              <div class="reason-link d-none d-md-block">
+                <button type="button" class="reason-modal-btn" data-toggle="modal" data-target="#reasonsDetailModal1">
                   詳しく見る
                   <img src="/img/arrow.svg" alt="矢印" width="12" height="12">
-                </a>
+                </button>
               </div>
             </div>
             <div class="reason">
               <img src="/img/votop-reason2.jpg" alt="HarborS 表参道の外観" class="w-100 mx-auto" loading="lazy">
               <h3 class="reason-title">個人事業主や法人登記で<br class="">&#147;港区南青山&#148;の住所を使用できる</h3>
               <p class="reason-description text-justify">東京都内でも人気の高い『港区青山』という一等地の住所を利用することはお客様の事業に高いブランド力と安心感を付与します。</p>
-              <div class="reason-link">
-                <a href="#reasonAddress">
+              <div class="reason-link d-none d-md-block">
+                <button type="button" class="reason-modal-btn" data-toggle="modal" data-target="#reasonsDetailModal2">
                   詳しく見る
                   <img src="/img/arrow.svg" alt="矢印" width="12" height="12">
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -462,22 +449,22 @@
               <img src="/img/votop-reason3.jpg" alt="HarborSの会議室" class="w-100 mx-auto" loading="lazy">
               <h3 class="reason-title">対面の&#147;打ち合わせ&#148;や<br class="d-sm-none d-md-block">&#147;商談&#148;も行えるスペース</h3>
               <p class="reason-description text-justify">表参道駅徒歩3分の好アクセス。オープンテラスや会議室、カフェラウンジも併設しているのでシーンに応じた使い分けが可能です。</p>
-              <div class="reason-link">
-                <a href="#reasonSpace">
+              <div class="reason-link d-none d-md-block">
+                <button type="button" class="reason-modal-btn" data-toggle="modal" data-target="#reasonsDetailModal3">
                   詳しく見る
                   <img src="/img/arrow.svg" alt="矢印" width="12" height="12">
-                </a>
+                </button>
               </div>
             </div>
             <div class="reason">
               <img src="/img/votop-reason4.jpg" alt="HarborSのコワーキングスペース" class="w-100 mx-auto" loading="lazy">
               <h3 class="reason-title">自分に合ったサービスを<br class="d-none d-md-block d-lg-none">選べる</h3>
               <p class="reason-description text-justify">豊富なサービスの中から本当に必要なものだけを自由にオプションの中から選択できるので、無駄がなくお得にご利用いただけます。</p>
-              <div class="reason-link">
-                <a href="#reasonService" class="mr-3">
+              <div class="reason-link d-none d-md-block">
+                <button type="button" class="reason-modal-btn" data-toggle="modal" data-target="#reasonsDetailModal4">
                   詳しく見る
                   <img src="/img/arrow.svg" alt="矢印" width="12" height="12">
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -907,77 +894,7 @@
         </div>
       </section>
 
-      <section id="reasonDetails" class="bg-light">
-        <div class="container small-container">
-          <h2 class="text-center mb-4 mb-md-5 section-heading">
-            <span class="display-3">DETAILS</span><br>HarborS表参道の特徴
-          </h2>
-          <div id="reasonReasonable">
-            <h3 class="title-level2 virtual-columns-title my-4 my-sm-5 mt-md-0">
-              おしゃれさとコスパの高さを両立したバーチャルオフィス
-            </h3>
-            <p class="reasons-detail text-justify">
-              HarborS 表参道のバーチャルオフィスでは「東京都港区南青山」の住所利用と来客対応を基本料金に含まれるサービスとして月額5280円で提供しております。名刺やHPにご利用できる住所や利便性、おしゃれさなどの付加価値を考えると月額5280円という価格はお手頃と言えるのではないでしょうか。<br><br>
-              バーチャルオフィスの住所を法人登記やHP、名刺などに記載するとなると、それを見たクライアントや顧客がバーチャルオフィスと知らずに突然訪れることも。HarborS 表参道は内装にもこだわったバーチャルオフィスなので、そういった突然の来訪の際にも、港区や青山という地名の期待感を裏切らない綺麗でおしゃれなオフィスでお迎えが可能です。<br><br>
-              バーチャルオフィスを利用せずに「港区南青山」で賃貸オフィスを借りようとする場合と比較すると、価格の安さをより分かりやすく想像していただけると思います。例えば港区で賃貸オフィスを借りるとすると、たった1坪でHarborSのバーチャルオフィスのオプションを全て付けてもお釣りが来るような金額になることも。オフィスとして活用するには当然1坪では意味が無いので、必要最低限の広さを用意するとなると賃料は大きな負担になります。<br><br>
-              港区に限らず、東京都内でオフィスを借りるとなると、かなりの費用がかかります。実現可能なコストの中で、「東京都港区南青山」という住所を使うためのアイデアの一つとしてもバーチャルオフィスの活用はとても有用と言えます。<br><br>
-              東京都内一等地の土地による付加価値をはじめ、「イメージ」「価格」「利便性」のバランスで見た時のコストパフォーマンスの高さこそが、HarborS 表参道のバーチャルオフィスが多くのお客様にご利用いただけている理由なのだと実感しております。
-            </p>
-          </div>
-          <div id="reasonAddress">
-            <h3 class="title-level2 virtual-columns-title my-4 my-sm-5">
-              東京都内の人気エリア「港区青山」の住所が利用可能
-            </h3>
-            <p class="reasons-detail text-justify">
-              HarborS 表参道のバーチャルオフィスでは「東京都港区南青山」の住所をお貸しすることができます。もちろん法人登記も可能です。<br>
-              バーチャルオフィスを利用する際には、その土地の持つイメージも大変重要な要素になってきますので、事業内容や顧客の層にマッチした場所を利用したいと考える方は多く、弊社にも住所にこだわってバーチャルオフィスを探されているお客様が沢山いらっしゃいます。<br><br>
-              さて、弊社の提供する「港区南青山」という住所を聞いてどのようなイメージを抱くでしょうか？おそらく多くの人は高級感がありお洒落な街という想像をするでしょう。それは事業に使った場合も同様で、東京都内の一等地に当たる「港区南青山」の住所をHPや法人登記に利用することで、その高級感や洗練されたイメージから事業への安心感が生まれ、信頼感を高めることができます。<br><br>
-              弊社の提供する「港区南青山」の住所は、どのような業種にも馴染みやすく、高いブランド力を兼ね備えたとても使い勝手の良い住所だと自負しています。<br><br>
-              HarborS 表参道の周辺にはカフェや食事処が豊富で、少し足を伸ばせば表参道ヒルズがあります。わざわざバーチャルオフィスに出向くのではなく、日常の買い物やランチのついでに利用できるのも魅力の一つだと考えております。表参道や青山という街が好きという理由で弊社をお選びいただくお客様も少なくありません。
-            </p>
-          </div>
-          <div id="reasonSpace">
-            <h3 class="title-level2 virtual-columns-title my-4 my-sm-5">
-              シーンに応じて使い分け可能なビジネススペース
-            </h3>
-            <p class="reasons-detail text-justify">
-              バーチャルオフィスの利用用途となると、法人登記など住所のみの利用などがメインになりますが、HarborS 表参道は実際にビジネスを行う場としての機能も兼ね備えています。<br><br>
-              それを踏まえた上で、表参道駅から徒歩3分という好アクセスな立地も是非知っていただきたいポイントです。実は表参道駅は複数の路線が乗り入れており、近隣県の路線等直結しているなど、東京都内だけでなく都外からも訪れやすいです。さらに駅から近ければ、バーチャルオフィスに郵便物を取りに来る際やカフェスペースを使った打ち合わせの際にも利用しやすく、時間と手間を軽減することができます。<br><br>
-              オフィスを持たないとなると、急な来客や打ち合わせなどが入った際に利用できるスペースが必要になります。弊社ではカフェスペースだけでなく、屋上のテラスもバーチャルオフィス会員様に開放しており、予約不要でご利用いただけます。<br><br>
-              打ち合わせなどの用途以外にも、日々の作業の気分転換としてカフェやテラスのご利用も可能です。<br><br>
-              カフェやテラスなどのオープンなスペースでは話しづらい場合や大人数での会議を行う場合には、貸し会議室もご利用いただけます。人数や用途に合わせて二つの会議室を繋げての利用も可能で最大20人まで収容可能です。<br><br>
-              会議室のご利用には事前に予約が必要です。予約に際してはキャンセル料がかからない仮予約期間を設けておりますので、気軽にご予約いただけます。<br><br>
-              前述のようなブランド力と駅からの近さ、シーンに応じた使い分けができるスペースを兼ね備えた東京都内のバーチャルオフィスとなると、その数はかなり限られてきます。
-            </p>
-          </div>
-          <div id="reasonService">
-            <h3 class="title-level2 virtual-columns-title my-4 my-sm-5">
-              自由に選択できるオプションで無駄を省ける
-            </h3>
-            <p class="reasons-detail text-justify">
-              バーチャルオフィスは利用されるお客様のビジネスの形態や規模などによって、必要とされるサービスが異なりますが、プランや料金系体によっては不要なサービスを契約しなくてはならない場合があります。例えば、個人事業主のお客様など法人登記が不要な場合でも、基本料金に法人登記オプションが含まれているなどのケースがあります。<br><br>
-              弊社ではそういったサービスのミスマッチを防ぎ、お客様の多様なニーズにお応えするため、基本料金で提供するサービスをあえてシンプルなものにし、お客様自身が必要なオプションを選び、ご利用いただけるようにサービス設計をしております。ご利用方法や頻度などに応じてオプション内容のご提案も可能ですので気軽に説明会にいらしてください。<br><br>
-              法人登記や24時間使える専用ポストや遠方にお住まいの方でも利用しやすい郵便転送、セキュリティやプライバシーに不安がある方にも安心の電話転送サービスなど様々なサービスをご用意しています。なかでも、専用ポストを契約できるバーチャルオフィスはあまり多くありませんので、頻繁に表参道に立ち寄る方にはぜひおすすめしたいサービスです。<br><br>
-              今後は拠点展開も見据えており、よりお客様にとって利用しやすいバーチャルオフィス運営を目指してまいります。
-            </p>
-          </div>
-          <div class="w-75 mx-auto mt-4 mt-md-5">
-            <button
-              type="button"
-              class="btn flow-cta d-block nowrap mx-auto mb-4 mb-lg-2 "
-              onclick="countClickByGa();"
-              data-toggle="modal"
-              data-target="#inquiryFormModal"
-            >
-              <div class="align-middle flow-cta-contents">
-                <p class="flow-cta-sentence">無料で相談してみる</p>
-              </div>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section>
+      <section class="bg-light">
         <div class="container small-container">
           <div class="l-container">
             <div class="c-nap">
@@ -1041,7 +958,7 @@
       </section>
 
       <!-- アクセス -->
-      <section id="access" class="bg-light">
+      <section id="access">
         <div class="container text-center">
           <h2 class="pb-3"><span class="display-3">ACCESS</span></h2>
           <div class="mb-4 text-left">
@@ -1088,54 +1005,15 @@
               <span>Page top</span>
               <a href="#top"><img src="/img/top-icon.svg" alt="ページトップボタン"></a>
             </div>
-            <div class="footer-row-top ja">
-              <div class="d-md-flex">
-                <p class="footer-right-title en">Service</p>
-                <a href="/virtual_office/" class="">
-                  バーチャルオフィス
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
-                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
-                  </svg>
-                </a>
-                <br class="d-block d-md-none">
-                <a href="https://sky-terrace.anti-pattern.co.jp/" class="">
-                  スカイテラス表参道
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon d-inline d-md-none">
-                    <g id="link-icon" transform="translate(-1154 -5516)">
-                      <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
-                        <rect width="10" height="11.667" stroke="none"/>
-                        <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-                      </g>
-                      <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
-                        <rect width="10" height="11.667" stroke="none"/>
-                        <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-                <br class="d-block d-md-none">
-                <a href="/rooms/" class="">
-                  会議室
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
-                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
             <div class="footer-row-bottom ja">
               <div class="d-md-flex">
-                <p class="footer-right-subtitle">メニュー</p>
-                <a href="https://anti-pattern.co.jp/" target="_blank"><span>運営会社</span></a>
-                <a href="/contacts/"><span>お問い合わせ</span></a>
-                <a href="https://anti-pattern.co.jp/legal/privacy/" target="_blank"><span>プライバシーポリシー</span></a>
+                <p class="footer-right-subtitle">運営会社</p>
+                <p class="footer-right-content">株式会社アンチパターン</p>
+                <p class="footer-right-content">〒107-0062 東京都港区南青山3丁目15−9 MINOWA表参道3階</p>
               </div>
               <div class="d-md-flex">
                 <p class="footer-right-subtitle">利用規約</p>
-                <a href="/terms/harbors/" class=""><span>コワーキングスペース</span></a>
-                <a href="/terms/virtual_office/" class=""><span>バーチャルオフィス</span></a>
-                <br class="d-block d-md-none">
-                <a href="/terms/rooms/" class=""><span>ミーティングルーム</span></a>
-                <a href="/terms/posse/" class=""><span>POSSE</span></a>
+                <a href="/terms/virtual_office/" class=""><span>バーチャルオフィス利用規約</span></a>
               </div>
             </div>
           </div>
@@ -1369,6 +1247,107 @@
                   loading="lazy"
               ></a>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- reasons detail modal1 -->
+    <div class="modal fade" id="reasonsDetailModal1" tabindex="-1" role="dialog" aria-labelledby="reasonsDetailModal1Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header reason-modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h3 class="title-level2 virtual-columns-title mb-4">
+              おしゃれさとコスパの高さを両立したバーチャルオフィス
+            </h3>
+            <p class="reasons-detail text-justify">
+              HarborS 表参道のバーチャルオフィスでは「東京都港区南青山」の住所利用と来客対応を基本料金に含まれるサービスとして月額5280円で提供しております。名刺やHPにご利用できる住所や利便性、おしゃれさなどの付加価値を考えると月額5280円という価格はお手頃と言えるのではないでしょうか。<br><br>
+              バーチャルオフィスの住所を法人登記やHP、名刺などに記載するとなると、それを見たクライアントや顧客がバーチャルオフィスと知らずに突然訪れることも。HarborS 表参道は内装にもこだわったバーチャルオフィスなので、そういった突然の来訪の際にも、港区や青山という地名の期待感を裏切らない綺麗でおしゃれなオフィスでお迎えが可能です。<br><br>
+              バーチャルオフィスを利用せずに「港区南青山」で賃貸オフィスを借りようとする場合と比較すると、価格の安さをより分かりやすく想像していただけると思います。例えば港区で賃貸オフィスを借りるとすると、たった1坪でHarborSのバーチャルオフィスのオプションを全て付けてもお釣りが来るような金額になることも。オフィスとして活用するには当然1坪では意味が無いので、必要最低限の広さを用意するとなると賃料は大きな負担になります。<br><br>
+              港区に限らず、東京都内でオフィスを借りるとなると、かなりの費用がかかります。実現可能なコストの中で、「東京都港区南青山」という住所を使うためのアイデアの一つとしてもバーチャルオフィスの活用はとても有用と言えます。<br><br>
+              東京都内一等地の土地による付加価値をはじめ、「イメージ」「価格」「利便性」のバランスで見た時のコストパフォーマンスの高さこそが、HarborS 表参道のバーチャルオフィスが多くのお客様にご利用いただけている理由なのだと実感しております。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- reasons detail modal2 -->
+    <div class="modal fade" id="reasonsDetailModal2" tabindex="-1" role="dialog" aria-labelledby="reasonsDetailModal2Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header reason-modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h3 class="title-level2 virtual-columns-title mb-4">
+              東京都内の人気エリア「港区青山」の住所が利用可能
+            </h3>
+            <p class="reasons-detail text-justify">
+              HarborS 表参道のバーチャルオフィスでは「東京都港区南青山」の住所をお貸しすることができます。もちろん法人登記も可能です。<br>
+              バーチャルオフィスを利用する際には、その土地の持つイメージも大変重要な要素になってきますので、事業内容や顧客の層にマッチした場所を利用したいと考える方は多く、弊社にも住所にこだわってバーチャルオフィスを探されているお客様が沢山いらっしゃいます。<br><br>
+              さて、弊社の提供する「港区南青山」という住所を聞いてどのようなイメージを抱くでしょうか？おそらく多くの人は高級感がありお洒落な街という想像をするでしょう。それは事業に使った場合も同様で、東京都内の一等地に当たる「港区南青山」の住所をHPや法人登記に利用することで、その高級感や洗練されたイメージから事業への安心感が生まれ、信頼感を高めることができます。<br><br>
+              弊社の提供する「港区南青山」の住所は、どのような業種にも馴染みやすく、高いブランド力を兼ね備えたとても使い勝手の良い住所だと自負しています。<br><br>
+              HarborS 表参道の周辺にはカフェや食事処が豊富で、少し足を伸ばせば表参道ヒルズがあります。わざわざバーチャルオフィスに出向くのではなく、日常の買い物やランチのついでに利用できるのも魅力の一つだと考えております。表参道や青山という街が好きという理由で弊社をお選びいただくお客様も少なくありません。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- reasons detail modal3 -->
+    <div class="modal fade" id="reasonsDetailModal3" tabindex="-1" role="dialog" aria-labelledby="reasonsDetailModal2Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header reason-modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h3 class="title-level2 virtual-columns-title mb-4">
+              シーンに応じて使い分け可能なビジネススペース
+            </h3>
+            <p class="reasons-detail text-justify">
+              バーチャルオフィスの利用用途となると、法人登記など住所のみの利用などがメインになりますが、HarborS 表参道は実際にビジネスを行う場としての機能も兼ね備えています。<br><br>
+              それを踏まえた上で、表参道駅から徒歩3分という好アクセスな立地も是非知っていただきたいポイントです。実は表参道駅は複数の路線が乗り入れており、近隣県の路線等直結しているなど、東京都内だけでなく都外からも訪れやすいです。さらに駅から近ければ、バーチャルオフィスに郵便物を取りに来る際やカフェスペースを使った打ち合わせの際にも利用しやすく、時間と手間を軽減することができます。<br><br>
+              オフィスを持たないとなると、急な来客や打ち合わせなどが入った際に利用できるスペースが必要になります。弊社ではカフェスペースだけでなく、屋上のテラスもバーチャルオフィス会員様に開放しており、予約不要でご利用いただけます。<br><br>
+              打ち合わせなどの用途以外にも、日々の作業の気分転換としてカフェやテラスのご利用も可能です。<br><br>
+              カフェやテラスなどのオープンなスペースでは話しづらい場合や大人数での会議を行う場合には、貸し会議室もご利用いただけます。人数や用途に合わせて二つの会議室を繋げての利用も可能で最大20人まで収容可能です。<br><br>
+              会議室のご利用には事前に予約が必要です。予約に際してはキャンセル料がかからない仮予約期間を設けておりますので、気軽にご予約いただけます。<br><br>
+              前述のようなブランド力と駅からの近さ、シーンに応じた使い分けができるスペースを兼ね備えた東京都内のバーチャルオフィスとなると、その数はかなり限られてきます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- reasons detail modal4 -->
+    <div class="modal fade" id="reasonsDetailModal4" tabindex="-1" role="dialog" aria-labelledby="reasonsDetailModal4Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header reason-modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h3 class="title-level2 virtual-columns-title mb-4">
+              自由に選択できるオプションで無駄を省ける
+            </h3>
+            <p class="reasons-detail text-justify">
+              バーチャルオフィスは利用されるお客様のビジネスの形態や規模などによって、必要とされるサービスが異なりますが、プランや料金系体によっては不要なサービスを契約しなくてはならない場合があります。例えば、個人事業主のお客様など法人登記が不要な場合でも、基本料金に法人登記オプションが含まれているなどのケースがあります。<br><br>
+              弊社ではそういったサービスのミスマッチを防ぎ、お客様の多様なニーズにお応えするため、基本料金で提供するサービスをあえてシンプルなものにし、お客様自身が必要なオプションを選び、ご利用いただけるようにサービス設計をしております。ご利用方法や頻度などに応じてオプション内容のご提案も可能ですので気軽に説明会にいらしてください。<br><br>
+              法人登記や24時間使える専用ポストや遠方にお住まいの方でも利用しやすい郵便転送、セキュリティやプライバシーに不安がある方にも安心の電話転送サービスなど様々なサービスをご用意しています。なかでも、専用ポストを契約できるバーチャルオフィスはあまり多くありませんので、頻繁に表参道に立ち寄る方にはぜひおすすめしたいサービスです。<br><br>
+              今後は拠点展開も見据えており、よりお客様にとって利用しやすいバーチャルオフィス運営を目指してまいります。
+            </p>
           </div>
         </div>
       </div>

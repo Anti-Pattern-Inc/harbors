@@ -42,16 +42,7 @@ a:hover {
   overflow: hidden;
 }
 
-.right-container {
-  max-width: calc((100vw + 1100px) / 2);
-  padding-left: 10px;
-  margin: 0 0 0 auto;
-}
-
 @media screen and (max-width: 767.8px) {
-  .right-container {
-    max-width: calc((100vw + 354px) / 2);
-  }
   .section-heading {
     font-size: 1.0rem;
     line-height: 1.8;
@@ -626,7 +617,7 @@ iframe.map {
 /* footer */
 footer {
   margin: 0;
-  padding: 80px 0;
+  padding: 50px 0;
   background-color: #111;
   color: #FFF;
 }
@@ -641,7 +632,7 @@ footer a:hover {
 
 .footer-left img {
   width: 140px;
-  margin: 50px 0 25px;
+  margin: 0 0 25px;
 }
 
 .footer-left p {
@@ -650,7 +641,7 @@ footer a:hover {
 
 .footer-left .copy {
   color: #666;
-  margin-top: 160px;
+  margin-top: 30px;
   font-size: 12px;
 }
 
@@ -660,7 +651,7 @@ footer a:hover {
 
 .page-top {
   text-align: right;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .page-top span {
@@ -676,8 +667,7 @@ footer a:hover {
 }
 
 .footer-row-bottom {
-  padding: 35px 20px;
-  border-bottom: 1px solid #707070;
+  padding: 15px 20px;
 }
 
 .footer-row-bottom > div:first-child {
@@ -715,6 +705,13 @@ footer a:hover {
 }
 
 .footer-row-bottom a {
+  color: #FFF;
+  padding: 0 16px;
+  border-right: 1px solid #FFF;
+  font-size: 12px;
+}
+
+.footer-right-content {
   color: #FFF;
   padding: 0 16px;
   border-right: 1px solid #FFF;
@@ -902,7 +899,7 @@ footer a:hover {
   }
 
   .copy-sp {
-    margin-top: 60px;
+    margin-top: 20px;
     font-size: 12px;
   }
   
@@ -943,13 +940,17 @@ footer a:hover {
     padding: 20px 10px;
   }
 
+  .footer-right-content {
+    border: none;
+  }
+
   .footer-right-title,
   .footer-right-subtitle {
     margin-bottom: 10px;
   }
 
   .footer-row-bottom > div:first-child {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .footer-row-top > div:first-child {
@@ -1600,10 +1601,6 @@ form span.bg-danger {
 }
 
 @media screen and (max-width: 767.8px) {
-  .right-container {
-    max-width: 100%;
-    padding-left: 0;
-  }
   
   .first-view-right img {
     max-width: calc((100vw + 354px) / 2);
@@ -1640,11 +1637,12 @@ form span.bg-danger {
 }
 
 .virtual-top .first-view {
-  padding: 30px 0;
+  padding: 30px 0 50px;
 }
 
 .first-view-container {
-  max-width: calc((100vw + 1140px) / 2);
+  max-width: calc((100vw + 1100px) / 2);
+  padding-left: 10px;
   margin: 0 0 0 auto;
 }
 
@@ -1696,6 +1694,10 @@ form span.bg-danger {
 }
 
 @media screen and (max-width: 1224px) {
+  .first-view-container {
+    padding-left: 20px;
+  }
+
   .first-view-left {
     margin-top: 0;
     width: 50%;
@@ -1720,10 +1722,6 @@ form span.bg-danger {
     height: 274px;
   }
 
-  .first-view-container {
-    padding-left: 20px;
-  }
-
   .virtual-top-lead {
     font-size: 14px;
     line-height: 25px;
@@ -1733,7 +1731,7 @@ form span.bg-danger {
 @media screen and (max-width: 767.8px) {
   .first-view-container {
     max-width: 100%;
-    padding-left: 0%;
+    padding-left: 0;
   }
 
   .first-view-left {
@@ -1757,6 +1755,10 @@ form span.bg-danger {
 
   .virtual-top-lead {
     margin-bottom: 40px;
+  }
+
+  .virtual-top .first-view {
+    padding: 30px 0;
   }
 }
 
@@ -2029,6 +2031,19 @@ form span.bg-danger {
   fill: #fff;
 }
 
+.mobile-footer > div {
+  width: 50%;
+  border-right: #ddd 1px solid;
+}
+
+.mobile-footer > div:last-child {
+  border: none;
+}
+
+.mobile-footer button, .mobile-footer a {
+  border-radius: 0;
+}
+
 @media screen and (max-width: 767.98px) {
   .article-cta-card {
     display: none;
@@ -2090,16 +2105,20 @@ REASONS
   right: 0;
 }
 
-.reason-link a {
+.reason-link button {
   display: inline-block;
   color: #666;
   padding: 6px;
   background: linear-gradient(#666, #666) left bottom / 100% 1px no-repeat;
   transition: background-size 0.6s;
   text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
-.reason-link a:hover {
+
+.reason-link button:hover {
   background-position: right bottom;
   background-size: 0 1px;
 }
@@ -2107,7 +2126,7 @@ REASONS
 @media screen and (max-width: 767.8px) {
   .reason {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 
   .reason-row {
@@ -2236,5 +2255,12 @@ REASONS
   }
 }
 /* small-container */
+
+/* reason modal */
+
+.reason-modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
 
 /* END */
