@@ -536,7 +536,7 @@ form span.bg-danger {
 }
 
 .first-view-container {
-  max-width: calc((100vw + 1100px) / 2);
+  max-width: calc((100vw + 1140px) / 2);
   padding-left: 10px;
   margin: 0 0 0 auto;
 }
@@ -736,6 +736,7 @@ form span.bg-danger {
 }
 
 .reason-link button {
+  cursor: pointer;
   display: inline-block;
   color: #666;
   padding: 6px;
@@ -752,11 +753,13 @@ form span.bg-danger {
   background-size: 0 1px;
 }
 
+.reason-modal-header {
+  border-bottom: 1px solid #203744;
+}
+
 .reason-modal-title {
   font-size: 20px;
-  border-bottom: 2px dotted #203744;
-  border-left: 10px solid #203744;
-  padding: 7px;
+  padding: 3px 15px 0;
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -941,40 +944,42 @@ form span.bg-danger {
 /* flow */
 
 /* faq */
-.faq {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: #fcfcfc;
+.faq-item {
+  cursor: pointer;
 }
 
-.virtual-faq-question {
-  color: #ee8585;
-  margin-left: 32px;
-  text-indent: -40px;
-  font-weight: bold;
+.chevron-down, .chevron-up {
+  display: none;
+}
+
+.chevron-down.show, .chevron-up.show {
+  display: block;
+}
+
+.faq h3 {
   font-size: 16px;
+  margin-bottom: 0;
+  padding-top: 5px;
 }
 
-.virtual-faq-question::before {
-  color: #ee8585;
-  content: "Q.";
-  margin-right: 17px;
-  font-weight: bold;
+.question-box {
+  align-items: center;
+}
+
+.question-box p {
+  margin-bottom: 0;
+}
+
+.question-box p, .capital-a {
   font-size: 20px;
 }
 
-.virtual-faq-answer {
-  margin-bottom: 0px;
-  margin-left: 32px;
-  text-indent: -38px;
-  font-size: 16px;
+.faq .hidden-text {
+  border-top: none;
 }
 
-.virtual-faq-answer::before {
-  content: "A.";
-  margin-right: 10px;
-  font-weight: bold;
-  font-size: 20px;
+.answer-text {
+  padding-top: 5px;
 }
 
 @media screen and (max-width: 575.98px) {
@@ -984,29 +989,14 @@ form span.bg-danger {
 
   .answer-text {
     font-size: 14px;
+    padding-top: 0;
   }
 
   .question-box p, .capital-a {
     font-size: 16px;
-    line-height: 1.3;
-  }
-
-  .virtual-faq-question {
-    font-size: 14px;
-  }
-
-  .virtual-faq-answer {
-    font-size: 14px;
-  }
-
-  .virtual-faq-question::before {
-    font-size: 18px;
-  }
-
-  .virtual-faq-answer::before {
-    font-size: 18px;
   }
 }
+
 /* faq */
 
 /** nap **/
@@ -1362,7 +1352,6 @@ footer a:hover {
 .footer-row-bottom a {
   color: #FFF;
   padding: 0 16px;
-  border-right: 1px solid #FFF;
   font-size: 12px;
 }
 
@@ -1476,6 +1465,7 @@ footer a:hover {
 
   .footer-right-content {
     border: none;
+    padding: 0 8px;
   }
 
   .footer-right-title,
@@ -1495,6 +1485,5 @@ footer a:hover {
     padding: 0;
   }
 }
-
 /* footer */
 /* END */
