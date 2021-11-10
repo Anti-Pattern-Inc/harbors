@@ -985,6 +985,7 @@ form span.bg-danger {
 @media screen and (max-width: 575.98px) {
   .question-box h3 {
     font-size: 14px;
+    padding-top: 2px;
   }
 
   .answer-text {
