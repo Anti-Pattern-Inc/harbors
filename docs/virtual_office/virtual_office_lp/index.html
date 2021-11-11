@@ -3,36 +3,47 @@
   <head
     prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"
   >
-    <meta charset="UTF-8" />
-    <title>HarborS 表参道 バーチャルオフィス</title>
+    <meta charset="UTF-8">
+    <title>港区青山の格安・好立地なバーチャルオフィス HarborS表参道</title>
     <meta
       name="description"
-      content="東京都港区南青山に住所を置く、コワーキングスペース併設のバーチャルオフィスサービスです。"
-    />
+      content="HarborS表参道は青山・表参道エリアで駅近と格安を兼ね備えた港区のバーチャルオフィスです。法人登記などの住所利用のみならず、立地に見合ったおしゃれで洗練されたオフィスを必要に応じて使い分けることが可能で、価格や立地、サービスの豊富さなど総合力の高さでは東京都内でも屈指のバーチャルオフィスであると自負しています。"
+    >
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="robots" content="noindex" />
+    >
 
-    <!-- OGP設定 -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@harbors_sh" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@harbors_sh">
     <meta
       property="og:url"
-      content="https://harbors.anti-pattern.co.jp/virtual_office_lp/"
-    />
-    <meta property="og:title" content="HarborS 表参道|バーチャルオフィス" />
-    <meta property="og:type" content="website" />
+      content="https://harbors.anti-pattern.co.jp/virtual_office/virtual_office_lp/"
+    >
+    <meta
+      property="og:title"
+      content="港区青山の格安・好立地なバーチャルオフィス HarborS表参道"
+    >
+    <meta property="og:type" content="website">
     <meta
       property="og:description"
-      content="「港区南青山」のバーチャルオフィスの詳細お問い合わせはこちら！"
-    />
+      content="HarborS表参道は青山・表参道エリアで駅近と格安を兼ね備えた港区のバーチャルオフィスです。法人登記などの住所利用のみならず、立地に見合ったおしゃれで洗練されたオフィスを必要に応じて使い分けることが可能で、価格や立地、サービスの豊富さなど総合力の高さでは東京都内でも屈指のバーチャルオフィスであると自負しています。"
+    >
     <meta
       property="og:image"
-      content="https://harbors.anti-pattern.co.jp/img/og_virtual_office.jpg"
-    />
-    <meta property="fb:app_id" content="621479295258516" />
+      content="https://harbors.anti-pattern.co.jp/img/virtual_office_ogp.jpg"
+    >
+    <meta property="fb:app_id" content="621479295258516">
+    <!-- VOTOPを正規化 -->
+    <link rel="canonical" href="https://harbors.anti-pattern.co.jp/virtual_office/">
+    <!-- フォント -->
+    <link 
+      rel="stylesheet"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap"
+      crossorigin="anonymous"
+      as="font"
+    >
     <!-- スタイルシートはここから -->
     <link
       rel="stylesheet"
@@ -41,10 +52,30 @@
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous"
       as="style"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/lp_virtual_office.css" />
-    <link rel="shortcut icon" href="../img/logo.png" />
+    >
+    <link rel="stylesheet" rel="preload" href="/css/lp_virtual_office.css" as="style">
+    <link
+      rel="stylesheet"
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css"
+      as="style"
+    >
+    <link rel="shortcut icon" href="/img/logo.png">
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NFP7GS5");
+    </script>
+    <!-- End Google Tag Manager -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -61,7 +92,7 @@
       gtag("config", "AW-701518947");
       function countClickByGa() {
         gtag("event", "click", {
-          event_category: "easy_virtual_office",
+          event_category: "virtual_office",
           event_label: "open_form",
           value: 1,
         });
@@ -69,55 +100,1067 @@
     </script>
   </head>
 
-  <body>
-    <div class="main-contents">
-      <div class="jumbotron-fluid position-relative top-image p-0">
-        <div class="filter"></div>
-        <!-- トップ画像内文字 -->
-        <h1 class="head-text position-absolute nowrap">
-          「港区南青山」徒歩3分の<wbr />バーチャルオフィス
-        </h1>
-        <div class="description">
-          「HarborS
-          表参道」は、スタッフ一同、起業を考えてらっしゃる皆様のビジネスシーンをより快適にできるようにお手伝いをさせて頂きたいと考えております。是非ご見学にいらしてください。
+  <body id="top">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NFP7GS5"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header id="header" class="bg-white">
+      <div class="header-container d-flex justify-content-between ja align-items-center">
+        <div class="header-left vertical-align-middle">
+          <a href="/virtual_office/virtual_office_lp/" class="d-inline-block d-md-block d-lg-inline-block">
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="109.931" height="53" viewBox="0 0 109.931 53" class="header-logo bg-black">
+              <g id="harbors_logo" data-name="レイヤー 1">
+                <path id="harbors_logo_mark" data-name="パス 3" d="M76.2,19.666,73.86,17.659,89.548,0c6.652,5.855,13.26,11.659,20.017,17.609l-7.856,8.845-2.328-2.007,5.744-6.522-3.406-3.115-5.845,6.522-2.328-2.007,5.81-6.557L95.844,9.733l-5.8,6.472-2.293-2.037L93.5,7.646,89.819,4.39Z" transform="translate(-36.805)" fill="#000"></path>
+                <path id="harbors_logo_1h" data-name="パス 2" d="M22.807,79.128H18.713V68.171H4.355V79.037H0V53.125H4.169V64.077H18.643v-11h4.164Z" transform="translate(0 -26.45)" fill="#000"></path>
+                <path id="harbors_logo_2a" data-name="パス 5" d="M63.837,93.5c-2.278.161-4.34.391-6.4.421a5.424,5.424,0,0,1-5.679-5.453,6.02,6.02,0,0,1,5.519-6.221c3.467-.271,6.321,1.841,6.522,5.017C63.952,89.291,63.837,91.357,63.837,93.5ZM57.9,91.1a3.012,3.012,0,1,0-3.123-2.9A3.012,3.012,0,0,0,57.9,91.1Z" transform="translate(-25.788 -40.973)" fill="#000"></path>
+                <path id="harbors_logo_3r" data-name="パス 7" d="M82.169,94.144c0-2.784-.14-5.3.045-7.8.171-2.358,2.077-3.547,5.087-3.361V85.44c-2.077.151-2.182,1.635-2.087,3.341s0,3.311,0,5.2Z" transform="translate(-40.921 -41.341)" fill="#000"></path>
+                <path id="harbors_logo_4b" data-name="パス 4" d="M98.181,66.33h3.055v8.759a19.176,19.176,0,0,1,2.574-.717,5.554,5.554,0,0,1,6.427,4.841A5.965,5.965,0,0,1,105,86.006c-3.632.4-6.672-1.766-6.783-5.132C98.071,76.1,98.181,71.307,98.181,66.33Zm9.061,13.927a3.01,3.01,0,0,0-3.01-3.09,2.895,2.895,0,0,0-2.97,2.865,2.86,2.86,0,0,0,2.85,3.161,2.92,2.92,0,0,0,3.131-2.935Z" transform="translate(-48.905 -33.053)" fill="#000"></path>
+                <path id="harbors_logo_5a" data-name="パス 6" d="M132.78,93.949c-3.562,0-6.02-2.333-6.02-5.774a5.95,5.95,0,0,1,6.186-5.935,5.753,5.753,0,0,1,5.975,5.9,6.02,6.02,0,0,1-6.141,5.81Zm3.01-5.87a2.87,2.87,0,0,0-3.01-3.01,3.01,3.01,0,1,0,.03,6.02,2.87,2.87,0,0,0,2.965-3.01Z" transform="translate(-63.166 -40.981)" fill="#000"></path>
+                <path id="harbors_logo_6r" data-name="パス 8" d="M161.712,83.219v2.463c-1.931,0-2.358,1.169-2.243,2.885s.03,3.582.03,5.519h-2.915c0-2.7-.181-5.363.055-7.982C156.845,83.871,158.952,82.793,161.712,83.219Z" transform="translate(-77.995 -41.423)" fill="#000"></path>
+                <path id="harbors_logo_7s" data-name="パス 1" d="M193.611,53.18v3.637H180.747c-1.786,0-3.131.592-3.768,2.353a3.535,3.535,0,0,0,3.266,4.952c2.654.09,5.348,0,8.027.04,4.39.09,7.4,2.835,7.636,6.883.251,4.269-2.508,7.821-6.858,8.057-5.253.286-10.535.065-15.944.065V75.354h6.02c3.08,0,6.156.055,9.231-.04a3.41,3.41,0,0,0,3.366-3.718,3.351,3.351,0,0,0-3.346-3.512c-2.6-.1-5.218,0-7.826-.045-4.952-.06-8-2.95-7.982-7.525,0-4.47,3.236-7.49,8.082-7.525,4.144-.025,8.293,0,12.442,0A2.288,2.288,0,0,1,193.611,53.18Z" transform="translate(-85.993 -26.399)" fill="#000"></path>
+              </g>
+            </svg>
+          </a>
+          <span>ハーバーズ表参道</span>
         </div>
-        <div class="points border-stripe">
-          おすすめできる！<br />
-          3つのポイント
-        </div>
-        <div class="text-black main-txt balloon clearfix">
-          <ul class="lead">
-            <li>
-              <span>1.一等地の住所を利用可能</span>
-              <img class="img_style" src="../img/minamiaoyama.png" />
-            </li>
-            <li>
-              <span>2.お洒落なオフィスでカフェラウンジも利用可能</span>
-              <img class="img_style" src="../img/cafe.jpg" />
-            </li>
-            <li>
-              <span>3.月額4,800円から</span>
-              <img class="img_style" src="../img/price.png" />
-            </li>
-          </ul>
-        </div>
-        <div class="height100"></div>
-        <div class="fixed-bottom mtb2">
-          <div class="btn btn-success mx-auto nowrap text-white top-button">
-            電話をかける<a href="tel:0368856140"></a>
+        <div class="header-right">
+          <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
+          <nav class="nav-menu">
+            <ul class="header-upper-right d-md-flex justify-content-end">
+              <li class="d-none d-md-block">
+                <a href="tel: 0368856140" class="nav-hover">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18.495" height="18.443" viewBox="0 0 18.495 18.443" class="header-logo mr-1">
+                    <g id="tel-icon" transform="translate(-1479.867 -1076.324)" style="isolation: isolate">
+                      <g id="tell_group_1" data-name="グループ 1" transform="translate(1482.828 1076.824)">
+                        <path id="tell_1" data-name="パス 9" d="M1498.5,1089.4a.272.272,0,0,1-.272-.272v-6.015a5.742,5.742,0,1,0-11.485,0v6.015a.272.272,0,1,1-.544,0v-6.015a6.286,6.286,0,1,1,12.573,0v6.015A.272.272,0,0,1,1498.5,1089.4Z" transform="translate(-1486.197 -1076.824)" fill="#000" stroke="#000" stroke-width="1"/>
+                      </g>
+                      <g id="tell_group_2" data-name="グループ 2" transform="translate(1480.367 1084.208)">
+                        <path id="tell_2" data-name="パス 10" d="M1483.1,1099.5h-1.419a1.316,1.316,0,0,1-1.314-1.314v-2.56a1.315,1.315,0,0,1,1.314-1.314h1.419a.272.272,0,0,1,.272.272v4.645A.272.272,0,0,1,1483.1,1099.5Zm-1.419-4.645a.771.771,0,0,0-.771.77v2.56a.771.771,0,0,0,.771.77h1.147v-4.1Z" transform="translate(-1480.367 -1094.316)" fill="#000" stroke="#000" stroke-width="1"/>
+                      </g>
+                      <g id="tell_group_3" data-name="グループ 3" transform="translate(1494.857 1084.208)">
+                        <path id="tell_3" data-name="パス 11" d="M1516.381,1099.5h-1.419a.272.272,0,0,1-.272-.272v-4.645a.272.272,0,0,1,.272-.272h1.419a1.315,1.315,0,0,1,1.314,1.314v2.56A1.316,1.316,0,0,1,1516.381,1099.5Zm-1.147-.544h1.147a.771.771,0,0,0,.771-.77v-2.56a.771.771,0,0,0-.771-.77h-1.147Z" transform="translate(-1514.69 -1094.316)" fill="#000" stroke="#000" stroke-width="1"/>
+                      </g>
+                      <g id="tell_group_4" data-name="グループ 4" transform="translate(1487.05 1091.911)">
+                        <path id="tell_4" data-name="パス 12" d="M1497.375,1114.918a1.178,1.178,0,1,1,1.178-1.178A1.179,1.179,0,0,1,1497.375,1114.918Zm0-1.812a.634.634,0,1,0,.634.634A.635.635,0,0,0,1497.375,1113.106Z" transform="translate(-1496.197 -1112.562)" fill="#000" stroke="#000" stroke-width="1"/>
+                      </g>
+                      <g id="tell_group_5" data-name="グループ 5" transform="translate(1482.828 1088.853)">
+                        <path id="tell_5" data-name="パス 13" d="M1490.69,1109.825h-.257a4.241,4.241,0,0,1-4.236-4.236.272.272,0,1,1,.544,0,3.7,3.7,0,0,0,3.693,3.692h.257a.272.272,0,1,1,0,.544Z" transform="translate(-1486.197 -1105.317)" fill="#000" stroke="#000" stroke-width="1"/>
+                      </g>
+                    </g>
+                  </svg>
+                  03-6885-6140
+                </a>
+              </li>
+              <li class="d-none d-md-block">
+                <a href="mailto:contact@harbors.sh" class="nav-hover">
+                  <svg id="Capa_1" enable-background="new 0 0 479.058 479.058" height="18.443" viewBox="0 0 479.058 479.058" width="18.495" xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                    <path d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"/>
+                  </svg>
+                  contact@harbors.sh
+                </a>
+              </li>
+            </ul>
+            <ul class="header-lower-right d-md-flex justify-content-end">
+              <li>
+                <a href="#reasons" class="nav-hover">選ばれる理由
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#services" class="nav-hover">サービス
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#flow" class="nav-hover">契約の流れ
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#faq" class="nav-hover">よくある質問
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#access" class="nav-hover">アクセス
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav-footer">
+              <div class="nav-footer-container">
+                <p>運営会社</p>
+                <p class="small">
+                  <a href="https://anti-pattern.co.jp/" target="_blank">株式会社アンチパターン</a>
+                </p>
+                <p class="pt-3">利用規約</p>
+                <p class="small mb-0">
+                  <a href="/terms//virtual_office/">バーチャルオフィス利用規約</a>
+                </p>
+              </div>
+              <div class="d-flex small justify-content-center">
+                <a href="tel:0368856140" class="d-block text-center mb-5 pr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18.495" height="18.443" viewBox="0 0 18.495 18.443" class="mr-1">
+                    <g id="tel-icon" transform="translate(-1479.867 -1076.324)" style="isolation: isolate">
+                      <g id="tell_group_1" data-name="グループ 1" transform="translate(1482.828 1076.824)">
+                        <path id="tell_1" data-name="パス 9" d="M1498.5,1089.4a.272.272,0,0,1-.272-.272v-6.015a5.742,5.742,0,1,0-11.485,0v6.015a.272.272,0,1,1-.544,0v-6.015a6.286,6.286,0,1,1,12.573,0v6.015A.272.272,0,0,1,1498.5,1089.4Z" transform="translate(-1486.197 -1076.824)" fill="#fff" stroke="#fff" stroke-width="1"/>
+                      </g>
+                      <g id="tell_group_2" data-name="グループ 2" transform="translate(1480.367 1084.208)">
+                        <path id="tell_2" data-name="パス 10" d="M1483.1,1099.5h-1.419a1.316,1.316,0,0,1-1.314-1.314v-2.56a1.315,1.315,0,0,1,1.314-1.314h1.419a.272.272,0,0,1,.272.272v4.645A.272.272,0,0,1,1483.1,1099.5Zm-1.419-4.645a.771.771,0,0,0-.771.77v2.56a.771.771,0,0,0,.771.77h1.147v-4.1Z" transform="translate(-1480.367 -1094.316)" fill="#fff" stroke="#fff" stroke-width="1"/>
+                      </g>
+                      <g id="tell_group_3" data-name="グループ 3" transform="translate(1494.857 1084.208)">
+                        <path id="tell_3" data-name="パス 11" d="M1516.381,1099.5h-1.419a.272.272,0,0,1-.272-.272v-4.645a.272.272,0,0,1,.272-.272h1.419a1.315,1.315,0,0,1,1.314,1.314v2.56A1.316,1.316,0,0,1,1516.381,1099.5Zm-1.147-.544h1.147a.771.771,0,0,0,.771-.77v-2.56a.771.771,0,0,0-.771-.77h-1.147Z" transform="translate(-1514.69 -1094.316)" fill="#fff" stroke="#fff" stroke-width="1"/>
+                      </g>
+                      <g id="tell_group_4" data-name="グループ 4" transform="translate(1487.05 1091.911)">
+                        <path id="tell_4" data-name="パス 12" d="M1497.375,1114.918a1.178,1.178,0,1,1,1.178-1.178A1.179,1.179,0,0,1,1497.375,1114.918Zm0-1.812a.634.634,0,1,0,.634.634A.635.635,0,0,0,1497.375,1113.106Z" transform="translate(-1496.197 -1112.562)" fill="#fff" stroke="#fff" stroke-width="1"/>
+                      </g>
+                      <g id="tell_group_5" data-name="グループ 5" transform="translate(1482.828 1088.853)">
+                        <path id="tell_5" data-name="パス 13" d="M1490.69,1109.825h-.257a4.241,4.241,0,0,1-4.236-4.236.272.272,0,1,1,.544,0,3.7,3.7,0,0,0,3.693,3.692h.257a.272.272,0,1,1,0,.544Z" transform="translate(-1486.197 -1105.317)" fill="#fff" stroke="#fff" stroke-width="1"/>
+                      </g>
+                    </g>
+                  </svg>
+                  03-6885-6140
+                </a>
+                <a href="mailto:contact@harbors.sh" class="d-block text-center mb-5 pl-3">
+                  <svg id="Capa_1" enable-background="new 0 0 479.058 479.058" height="18.443" viewBox="0 0 479.058 479.058" width="18.495" xmlns="http://www.w3.org/2000/svg" class="mr-1" fill ="#fff">
+                    <path d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"/>
+                  </svg>
+                  contact@harbors.sh
+                </a>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="virtual-top">
+      <!-- トップ画像 -->
+      <section class="first-view">
+        <div class="first-view-bg"></div>
+        <div class="first-view-container">
+          <div class="d-md-flex flex-row-reverse justify-content-between align-items-center">
+            <div class="first-view-right">
+              <picture>
+                <source 
+                srcset="/img/votop-fv-3x.jpg" 
+                media="(max-width: 600px)"
+                ><!-- 600px以下で表示する画像 -->
+                <source 
+                srcset="/img/votop-fv-2x.jpg" 
+                media="(max-width: 1200px)"
+                ><!-- 1200px以下で表示する画像 -->
+                <img 
+                src="/img/votop-fv.jpg" 
+                alt="HarborS 表参道の会議室の外観" 
+                width="100%"
+                height="auto"
+                loading="lazy"
+                ><!-- 1200px以上で表示する画像 -->
+              </picture>
+            </div>
+            <div class="first-view-left mx-auto mx-md-0">
+              <h1 class="first-view-title ja">
+                <span class="golden-text">
+                  HarborS 表参道 | 港区青山のバーチャルオフィス
+                </span><br>
+                <span>
+                  リアルにこだわった<br>次世代バーチャルオフィス
+                </span>
+              </h1>
+              <p class="virtual-top-lead ja mb-4 text-justify">
+                東京都内のブランドエリアで最も人気な一等地「港区」の住所を5,280円(税込)からご利用頂けます。法人登記、郵便転送を含む豊富なオプションをお選び頂けます。
+              </p>
+              <div class="virtual-fv-cv-btn align-items-center">
+                <button
+                  type="button"
+                  class="btn btn-sm-lg top-button d-block mx-auto"
+                  onclick="countClickByGa();"
+                  data-toggle="modal"
+                  data-target="#inquiryFormModal"
+                >
+                  無料で相談してみる
+                </button>
+              </div>
+              <p class="mt-3 text-center first-view-description">オンライン説明会も実施しております。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta ml-auto" style="display: none;">
+        <div class="cta-card">
+          <div class="cta-img">
+            <h4 class="cta-lead text-white mx-auto w-75">最短3日で港区青山の<br>住所を手に入れよう！</h4>
+            <p class="text-white cta-sentence">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
+          </div>
+          <div class="virtual-fixed-cv-btn position-relative">
+            <button
+              type="button"
+              class="cv-contact-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
+              onclick="countClickByGa();"
+              data-toggle="modal"
+              data-target="#inquiryFormModal"
+            >
+              お問い合わせ
+            </button>
+            <button
+            type="button"
+            onclick="window.open('https://ap-harbors.firebaseapp.com/virtual-office/register/','view');"
+            class="cv-apply-btn btn btn-sm-lg top-button d-block mx-auto"
+            >
+              お申し込み
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="
+          fixed-bottom
+          mb-0
+          d-flex d-sm-none
+          mobile-footer
+        "
+      >
+        <div>
+          <a
+            href="tel:03-6885-6140"
+            class="btn m-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
+            onclick="ga('send', 'event', 'call', 1);"
+          >
+            <div class="mv-cta-contents mx-auto d-flex align-items-center">
+              <img
+                src="/img/tel.svg"
+                alt="電話"
+                width="20px"
+                height="20px"
+                class="d-block mr-2"
+                loading="lazy"
+              >
+              <p class="mt-1 mb-0">
+                電話で相談をする
+              </p>
+            </div>
+          </a>
+        </div>
+        <div>
           <button
             type="button"
-            class="btn btn-primary mx-auto nowrap text-white top-button"
+            class="btn m-0 w-100 nowrap text-white px-0 py-3 mv-cta"
             onclick="countClickByGa();"
             data-toggle="modal"
             data-target="#inquiryFormModal"
           >
-            お問い合わせ
+            <div class="mv-cta-contents mx-auto d-flex align-items-center">
+              <img
+                src="/img/contact.svg"
+                alt="お問い合わせ"
+                width="20px"
+                height="20px"
+                class="d-block mr-2"
+                id="toSpInquiryFormModal"
+                loading="lazy"
+              >
+              <p class="mt-1 mb-0">
+                無料で相談してみる
+              </p>
+            </div>
           </button>
         </div>
       </div>
-    </div>
+
+      <!-- reasons -->
+      <section class="reasons bg-light" id="reasons">
+        <h2 class="text-center section-heading mb-4 mb-md-5">
+          <span class="english-section-title">REASONS</span><br>
+          HarborS表参道が選ばれる理由
+        </h2>
+
+        <div class="container small-container">
+          <div class="reason-row d-md-flex justify-content-between">
+            <div class="reason">
+              <img src="/img/votop-reason1.jpg" alt="HarborSのテラス" class="w-100 mx-auto" loading="lazy">
+              <h3 class="reason-title">&#147;綺麗&#148;なバーチャルオフィスを<br class="d-md-none d-lg-block">&#147;安く&#148;借りられる</h3>
+              <p class="reason-description text-justify">住所のみを借りるバーチャルオフィスにおいても、一等地のお洒落で先進的なオフィス空間は顧客や取引先との関係を育む上で重要なポイントになります。</p>
+              <div class="reason-link d-none d-md-block">
+                <button type="button" class="reason-modal-btn" data-toggle="modal" data-target="#reasonsDetailModal1">
+                  詳しく見る
+                  <img src="/img/arrow.svg" alt="矢印" width="12" height="12">
+                </button>
+              </div>
+            </div>
+            <div class="reason">
+              <img src="/img/votop-reason2.jpg" alt="HarborS 表参道の外観" class="w-100 mx-auto" loading="lazy">
+              <h3 class="reason-title">個人事業主や法人登記で<br class="">&#147;港区南青山&#148;の住所を使用できる</h3>
+              <p class="reason-description text-justify">東京都内でも人気の高い『港区青山』という一等地の住所を利用することはお客様の事業に高いブランド力と安心感を付与します。</p>
+              <div class="reason-link d-none d-md-block">
+                <button type="button" class="reason-modal-btn" data-toggle="modal" data-target="#reasonsDetailModal2">
+                  詳しく見る
+                  <img src="/img/arrow.svg" alt="矢印" width="12" height="12">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="reason-row d-md-flex justify-content-between">
+            <div class="reason">
+              <img src="/img/votop-reason3.jpg" alt="HarborSの会議室" class="w-100 mx-auto" loading="lazy">
+              <h3 class="reason-title">対面の&#147;打ち合わせ&#148;や<br class="d-sm-none d-md-block">&#147;商談&#148;も行えるスペース</h3>
+              <p class="reason-description text-justify">表参道駅徒歩3分の好アクセス。オープンテラスや会議室、カフェラウンジも併設しているのでシーンに応じた使い分けが可能です。</p>
+              <div class="reason-link d-none d-md-block">
+                <button type="button" class="reason-modal-btn" data-toggle="modal" data-target="#reasonsDetailModal3">
+                  詳しく見る
+                  <img src="/img/arrow.svg" alt="矢印" width="12" height="12">
+                </button>
+              </div>
+            </div>
+            <div class="reason">
+              <img src="/img/votop-reason4.jpg" alt="HarborSのコワーキングスペース" class="w-100 mx-auto" loading="lazy">
+              <h3 class="reason-title">自分に合ったサービスを<br class="d-none d-md-block d-lg-none">選べる</h3>
+              <p class="reason-description text-justify">豊富なサービスの中から本当に必要なものだけを自由にオプションの中から選択できるので、無駄がなくお得にご利用いただけます。</p>
+              <div class="reason-link d-none d-md-block">
+                <button type="button" class="reason-modal-btn" data-toggle="modal" data-target="#reasonsDetailModal4">
+                  詳しく見る
+                  <img src="/img/arrow.svg" alt="矢印" width="12" height="12">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services">
+        <div class="container">
+          <h2 class="text-center mb-4 mb-md-5 section-heading">
+            <span class="english-section-title">SERVICES</span><br>
+            様々な設備が整っており、<br class="d-sm-none">あなたのビジネスをサポートします。
+          </h2>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="py-4 bg-light text-center monthly-fee mx-auto">
+                <h2 class="mb-0 text-center">
+                  月額基本料金 <small>(税込)</small>
+                </h2>
+                <p class="mt-2 price text-center">5,280円</p>
+                <p class="mb-0 mx-auto text-center">
+                  ※住所貸し、来客対応の料金が含まれます
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="services-container container small-container py-4 pt-md-5">
+            <div class="row">
+              <div class="col-md-6 d-flex mx-auto align-items-center">
+                <div class="service-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px"  viewBox="0 0 64 64" stroke-width="3" stroke="currentColor" fill="none"><path d="M34.82,52.73H14.69V22.18a1,1,0,0,1,.52-.87L33.34,11.4a1,1,0,0,1,1.48.88Z" stroke-linecap="round"/><path d="M48.87,52.73H34.92V21.59L48.4,29.3a1,1,0,0,1,.47.85Z" stroke-linecap="round"/><line x1="28.1" y1="24.86" x2="21.06" y2="24.86" stroke-linecap="round"/><line x1="43.66" y1="32.41" x2="40.14" y2="32.41" stroke-linecap="round"/><line x1="43.66" y1="36.9" x2="40.14" y2="36.9" stroke-linecap="round"/><line x1="43.66" y1="41.71" x2="40.14" y2="41.71" stroke-linecap="round"/><line x1="43.66" y1="46.19" x2="40.14" y2="46.19" stroke-linecap="round"/><line x1="28.1" y1="30.44" x2="21.06" y2="30.44" stroke-linecap="round"/><line x1="28.1" y1="35.94" x2="21.06" y2="35.94" stroke-linecap="round"/><line x1="28.1" y1="41.44" x2="21.06" y2="41.44" stroke-linecap="round"/><line x1="28.1" y1="46.94" x2="21.06" y2="46.94" stroke-linecap="round"/><line x1="9.46" y1="52.73" x2="54.54" y2="52.73" stroke-linecap="round"/></svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="service-text-title">住所貸し</h3>
+                  <p class="service-text-description text-justify">
+                    お客様のお名刺やホームページ等に、「港区南青山」のご住所をご利用頂けます。
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex mx-auto align-items-center">
+                <div class="service-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" viewBox="0 0 64 64" stroke-width="3" stroke="currentColor" fill="none"><circle cx="31.89" cy="22.71" r="5.57"/><path d="M43.16,43.74A11.28,11.28,0,0,0,31.89,32.47h0A11.27,11.27,0,0,0,20.62,43.74Z"/><circle cx="48.46" cy="22.71" r="5.57"/><path d="M46.87,43.74H59.73A11.27,11.27,0,0,0,48.46,32.47h0a11.24,11.24,0,0,0-5.29,1.32"/><circle cx="15.54" cy="22.71" r="5.57"/><path d="M17.13,43.74H4.27A11.27,11.27,0,0,1,15.54,32.47h0a11.24,11.24,0,0,1,5.29,1.32"/></svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="service-text-title">来客対応</h3>
+                  <p class="service-text-description text-justify">
+                    突然の来客があった場合は、お客様がご不在であることをお伝えし、メールにて来客のご連絡を差し上げます。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 d-flex mx-auto align-items-center">
+                <div class="service-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" viewBox="0 0 64 64" stroke-width="3" stroke="currentColor" fill="none"><polyline points="45.56 46.83 45.56 56.26 7.94 56.26 7.94 20.6 19.9 7.74 45.56 7.74 45.56 21.29"/><polyline points="19.92 7.74 19.9 20.6 7.94 20.6"/><line x1="13.09" y1="47.67" x2="31.1" y2="47.67"/><line x1="13.09" y1="41.14" x2="29.1" y2="41.14"/><line x1="13.09" y1="35.04" x2="33.1" y2="35.04"/><line x1="13.09" y1="28.94" x2="39.1" y2="28.94"/><path d="M34.45,43.23l.15,4.3a.49.49,0,0,0,.62.46l4.13-1.11a.54.54,0,0,0,.34-.23L57.76,22.21a1.23,1.23,0,0,0-.26-1.72l-3.14-2.34a1.22,1.22,0,0,0-1.72.26L34.57,42.84A.67.67,0,0,0,34.45,43.23Z"/><line x1="50.2" y1="21.7" x2="55.27" y2="25.57"/></svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="service-text-title">法人登記</h3>
+                  <p class="service-text-description text-justify">
+                    法人登記の際に、お客様の本店住所として、「港区南青山」のご住所をご利用頂けます。<br>
+                    月額 2,200円
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex mx-auto align-items-center">
+                <div class="service-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mailbox" width="50px" height="50px" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M10 21v-6.5a3.5 3.5 0 0 0 -7 0v6.5h18v-6a4 4 0 0 0 -4 -4h-10.5" />
+                    <path d="M12 11v-8h4l2 2l-2 2h-4" />
+                    <path d="M6 15h1" />
+                  </svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="service-text-title">専用ポスト</h3>
+                  <p class="service-text-description text-justify">
+                    お客様専用にポストをご準備致します。24時間365日好きなタイミングで郵便物の回収が可能です。<br>
+                    月額 2,200円
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 d-flex mx-auto align-items-center">
+                <div class="service-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" viewBox="0 0 64 64" stroke-width="3" stroke="currentColor" fill="none"><rect x="7.1" y="9.65" width="49.8" height="44.71" rx="2.5"/><polyline points="7.88 9.65 33.04 31.62 56.15 10.37"/></svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="service-text-title">郵便物転送</h3>
+                  <p class="service-text-description text-justify">
+                    お客様宛に届いた郵便物・宅配物を毎週木曜日に指定のご住所へまとめて発送いたします。<br>
+                    月額 3,300円〜
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex mx-auto align-items-center">
+                <div class="service-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" viewBox="0 0 64 64" stroke-width="3" stroke="currentColor" fill="none"><path d="M11.11,8.4a2.62,2.62,0,0,0-2.53,2.78c.35,6,2,20.64,9.9,29.77,9.46,11,21.78,14.79,34.42,14.23a2.68,2.68,0,0,0,2.52-2.65V42.92a4,4,0,0,0-3.09-3.86L46,37.66a4,4,0,0,0-4.16,1.69l-1.4,2.12a1,1,0,0,1-1.22.37C36,40.45,23.17,34.45,21.76,24.33a1,1,0,0,1,.48-1l2.54-1.55a4,4,0,0,0,1.81-4.21L25.2,11.13a4,4,0,0,0-4-3.12Z"/></svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="service-text-title">電話転送サービス</h3>
+                  <p class="service-text-description text-justify">
+                    お客様専用の03から始まる電話番号を付与します。お客様ご指定の電話番号へ転送致します。<br>
+                    月額 2,200円
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 d-flex mx-auto align-items-center">
+                <div class="service-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" viewBox="0 0 64 64" stroke-width="3" stroke="currentColor" fill="none"><path d="M43.32,30.08a7.86,7.86,0,0,1,3.11-.64,8,8,0,1,1,0,16,7.81,7.81,0,0,1-3.1-.63"/><path d="M17.18,24.82H43.32a0,0,0,0,1,0,0V41.7A11.36,11.36,0,0,1,32,53.06H28.54A11.36,11.36,0,0,1,17.18,41.7V24.82A0,0,0,0,1,17.18,24.82Z"/><line x1="9.59" y1="53.06" x2="52.17" y2="53.06" stroke-linecap="round"/><path d="M24.36,19.63c0-5,4-5,4-10.09" stroke-linecap="round"/><path d="M32.66,19.47c.45-6.13,4.44-5.83,4.89-12" stroke-linecap="round"/></svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="service-text-title">カフェスペース・テラス</h3>
+                  <p class="service-text-description text-justify">
+                    カフェスペースもございます。ごゆっくりお過ごしいただけます。屋上のテラス席でも作業ができます。<br>
+                    1時間 550円
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex mx-auto align-items-center">
+                <div class="service-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" viewBox="0 0 64 64" stroke-width="3" stroke="currentColor" fill="none"><path d="M38.18,44.11H20l-5.79,4.68.06-4.68H12.17a1.36,1.36,0,0,1-1.36-1.37V23a1.36,1.36,0,0,1,1.37-1.36h26A1.36,1.36,0,0,1,39.58,23V42.71A1.4,1.4,0,0,1,38.18,44.11Z"/><line x1="15.05" y1="27.2" x2="34.5" y2="27.2"/><line x1="15.05" y1="32.26" x2="25.7" y2="32.26"/><line x1="15.05" y1="37.32" x2="30.07" y2="37.32"/><path d="M42.14,36H44l5.79,3.92L49.77,36h2.06a1.36,1.36,0,0,0,1.36-1.36V14.89a1.36,1.36,0,0,0-1.37-1.36h-26a1.36,1.36,0,0,0-1.36,1.36V19"/></svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="service-text-title">会議室</h3>
+                  <p class="service-text-description text-justify">
+                    イベントスペースなどにもご利用いただける会議室がございます。<br>
+                    1時間 3,300円
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 d-flex mx-auto align-items-center">
+                <div class="service-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" viewBox="0 0 64 64" stroke-width="3" stroke="currentColor" fill="none"><path d="M50.44,55.76H13.56a1.84,1.84,0,0,1-1.83-2l3.28-33a1.85,1.85,0,0,1,1.83-1.66H47.16A1.85,1.85,0,0,1,49,20.71l3.28,33A1.84,1.84,0,0,1,50.44,55.76Z"/><path d="M22.27,24.27V18a9.73,9.73,0,1,1,19.46,0v6.3"/><circle cx="22.27" cy="24.27" r="2"/><circle cx="41.73" cy="24.27" r="2"/></svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="service-text-title">レンタルロッカー</h3>
+                  <p class="service-text-description text-justify">
+                    レンタルロッカーもございます。<br>
+                    月額 2,200円〜
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex mx-auto align-items-center">
+                <div class="service-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px"  viewBox="0 0 64 64" stroke-width="3" stroke="currentColor" fill="none"><path d="M34.82,52.73H14.69V22.18a1,1,0,0,1,.52-.87L33.34,11.4a1,1,0,0,1,1.48.88Z" stroke-linecap="round"/><path d="M48.87,52.73H34.92V21.59L48.4,29.3a1,1,0,0,1,.47.85Z" stroke-linecap="round"/><line x1="28.1" y1="24.86" x2="21.06" y2="24.86" stroke-linecap="round"/><line x1="43.66" y1="32.41" x2="40.14" y2="32.41" stroke-linecap="round"/><line x1="43.66" y1="36.9" x2="40.14" y2="36.9" stroke-linecap="round"/><line x1="43.66" y1="41.71" x2="40.14" y2="41.71" stroke-linecap="round"/><line x1="43.66" y1="46.19" x2="40.14" y2="46.19" stroke-linecap="round"/><line x1="28.1" y1="30.44" x2="21.06" y2="30.44" stroke-linecap="round"/><line x1="28.1" y1="35.94" x2="21.06" y2="35.94" stroke-linecap="round"/><line x1="28.1" y1="41.44" x2="21.06" y2="41.44" stroke-linecap="round"/><line x1="28.1" y1="46.94" x2="21.06" y2="46.94" stroke-linecap="round"/><line x1="9.46" y1="52.73" x2="54.54" y2="52.73" stroke-linecap="round"/></svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="service-text-title">アクセスのいい立地</h3>
+                  <p class="service-text-description text-justify">
+                    表参道駅から徒歩3分の好立地です。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 d-flex mx-auto align-items-center">
+                <div class="service-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" viewBox="0 0 64 64" stroke-width="3" stroke="currentColor" fill="none"><path d="M21.84,37.11a17.78,17.78,0,0,1,20.24-.35" stroke-linecap="round"/><path d="M14.79,29.32a28.27,28.27,0,0,1,34.61-.19" stroke-linecap="round"/><path d="M7.58,21.68a38.73,38.73,0,0,1,48.84-.34" stroke-linecap="round"/><circle cx="32.09" cy="47.11" r="3.58" stroke-linecap="round"/></svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="service-text-title">無料Wi-Fi</h3>
+                  <p class="service-text-description text-justify">
+                    通信量も十分なWi-Fiでお仕事していただけます。
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex mx-auto align-items-center">
+                <div class="service-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" viewBox="0 0 64 64" stroke-width="3" stroke="currentColor" fill="none"><path d="M12,14.85h40.9a4,4,0,0,1,4,4V45.13a4,4,0,0,1-4,4H11.12a4,4,0,0,1-4-4V19.73A4.88,4.88,0,0,1,12,14.85Z"/><line x1="7.1" y1="22.15" x2="56.9" y2="22.15"/><line x1="7.1" y1="27.68" x2="56.9" y2="27.68"/><path d="M48,36.81a3.5,3.5,0,0,0-2.14.75,3.45,3.45,0,0,0-2.13-.75,3.5,3.5,0,1,0,0,7,3.44,3.44,0,0,0,2.13-.74A3.5,3.5,0,1,0,48,36.81Z"/></svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="service-text-title">キャッシュレス対応</h3>
+                  <p class="service-text-description text-justify">
+                    カフェではキャッシュレス対応を行っています。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="my-3 my-md-4 text-center tax-included">記載されている料金は全て税込価格です。</p>
+          </div>
+          <div class="w-75 mx-auto mt-4">
+            <button
+              type="button"
+              class="btn flow-cta d-block nowrap mx-auto mb-4 mb-lg-2 "
+              onclick="countClickByGa();"
+              data-toggle="modal"
+              data-target="#inquiryFormModal"
+            >
+              <div class="align-middle flow-cta-contents">
+                <p class="flow-cta-sentence">無料で相談してみる</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Flow -->
+      <section class="virtual-flow bg-light" id="flow">
+        <div class="container flow-container">
+          <h2 class="text-center mb-4 mb-md-5 section-heading">
+            <span class="english-section-title">FLOW</span><br>
+            ご契約までの流れ
+          </h2>
+          <div class="row">
+            <div class="col-12 col-md-6 col-xl-4 mb-4">
+              <div class="flow-card card flow1 border-0">
+                <div class="card-body">
+                  <h3 class="flow-title">
+                    <span class="flow-number">01</span><br>
+                    バーチャルオフィス見学予約
+                  </h3>
+                  <p class="flow-description text-justify">
+                    お申込み前に、オンライン説明会、現地見学会のどちらかに参加されることをおすすめしております。まずは下記のフォームから、見学予約をお申し込みください。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 mb-4">
+              <div class="flow-card card flow2 border-0">
+                <div class="card-body">
+                  <h3 class="flow-title">
+                    <span class="flow-number">02</span><br>
+                    バーチャルオフィス見学
+                  </h3>
+                  <p class="flow-description text-justify">
+                    専用ポスト、カフェラウンジ、会議室等を実際にご覧頂きます。また、弊社スタッフにより、サービス内容の説明や料金体系のご説明をさせていただきます。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 mb-4">
+              <div class="flow-card card flow3 border-0">
+                <div class="card-body">
+                  <h3 class="flow-title">
+                    <span class="flow-number">03</span><br>
+                    お申し込み
+                  </h3>
+                  <p class="flow-description text-justify">
+                    オンラインにてお申し込みが可能となります。見学をせずに申し込みフォームからすぐにお申し込みいただくことも可能です。<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 mb-4">
+              <div class="flow-card card flow4 border-0">
+                <div class="card-body">
+                  <h3 class="flow-title">
+                    <span class="flow-number">04</span><br>
+                    必要書類の送付
+                  </h3>
+                  <p class="flow-description text-justify">
+                    メールにて、必要書類を送付頂きます。個人でご契約の場合は写真付きの身分証明書、法人の場合は履歴事項全部証明書と写真付きの身分証明書をご用意ください。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 mb-4">
+              <div class="flow-card card flow5 border-0">
+                <div class="card-body">
+                  <h3 class="flow-title">
+                    <span class="flow-number">05</span><br>
+                    面談による入居審査
+                  </h3>
+                  <p class="flow-description text-justify">
+                    弊社では対面で面談をさせて頂いております。その後、ご入居にあたりまして審査を実施させて頂きます。３営業日程度のお時間を頂く可能性があります。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 mb-4">
+              <div class="flow-card card flow6 border-0">
+                <div class="card-body">
+                  <h3 class="flow-title">
+                    <span class="flow-number">06</span><br>
+                    正式契約・サービス利用開始
+                  </h3>
+                  <p class="flow-description text-justify">
+                    審査が完了致しましたら、審査通過の案内に併せて申込内容証明書及び入会金・初月利用料の請求書を送付いたします。初回請求のお支払い完了が確認でき次第、サービスのご利用が可能となります。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-lg-flex w-75 mx-auto justify-content-between mt-4">
+            <button
+              type="button"
+              class="btn flow-cta d-block nowrap mx-auto mb-4 mb-lg-2"
+              onclick="countClickByGa();"
+              data-toggle="modal"
+              data-target="#inquiryFormModal"
+            >
+              <div class="d-flex align-middle flow-cta-contents">
+                <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="width: 23px; height: 23px; opacity: 1;" xml:space="preserve" class="mr-2 flow-icon">
+                <g>
+                  <path class="st0" d="M442.539,73.946c-44.84-37.927-108.949-60.084-187.344-60.066c-74.388,0-137.905,20.981-183.328,58.411
+                    c-22.702,18.686-40.758,41.492-53.06,67.428C6.489,165.648-0.019,194.641,0,225.422c-0.019,37.214,7.768,71.586,23.511,101.577
+                    c14.99,28.664,37.297,53.04,65.699,72.103c-6.715,28.269-16.157,68.67-16.157,68.689c-0.432,1.815-0.658,3.706-0.639,5.624
+                    c-0.018,7.59,3.518,14.897,9.667,19.608l0.038,0.028v0.01c4.402,3.348,9.705,5.06,15.01,5.06c3.988,0,8.031-0.969,11.68-2.934
+                    l0.358-0.188l0.357-0.216c0.019-0.009,5.079-3.01,12.866-7.618c11.661-6.903,29.435-17.407,45.291-26.745
+                    c7.919-4.665,15.367-9.038,21.31-12.508c5.924-3.46,10.476-6.103,12.17-7.034l0.075-0.047l0.112-0.065
+                    c22.1-12.527,39.705-14.634,53.849-14.709c58.702-0.085,121.212-11.464,171.13-42.62c24.902-15.602,46.57-36.413,61.806-63.056
+                    c15.272-26.624,23.886-58.853,23.868-96.16C512.112,165.545,487.416,111.78,442.539,73.946z M454.709,301.24
+                    c-8.822,15.376-20.37,28.316-34.232,39.282c-20.784,16.429-46.871,28.288-75.479,35.934c-28.598,7.664-59.652,11.088-89.802,11.078
+                    c-18.508-0.075-44.369,3.414-72.752,19.684v-0.01c-3.141,1.749-10.137,5.822-19.354,11.219
+                    c-13.222,7.759-30.62,18.019-45.14,26.614c3.536-15.094,7.656-32.576,10.721-45.413v-0.019c0.508-2.144,0.884-4.468,0.884-7.11
+                    c0.038-3.724-0.922-8.266-3.065-12.046c-1.6-2.831-3.65-5.06-5.436-6.583c-2.746-2.285-4.796-3.273-5.944-3.903l-1.166-0.592
+                    l-0.132-0.075c-25.147-16.204-43.655-36.329-56.18-60.188c-12.527-23.897-19.11-51.781-19.11-83.69
+                    c0-25.401,5.285-48.526,15.084-69.187c14.708-30.94,39.667-56.605,73.786-74.896c34.082-18.254,77.398-28.937,127.805-28.937
+                    c71.284,0.019,125.933,20.031,162.46,50.952c36.47,31.025,55.692,72.799,55.824,120.864
+                    C473.442,255.723,466.407,280.729,454.709,301.24z"></path>
+                  <path class="st0" d="M135.055,197.171c-16.278,0-29.472,13.204-29.472,29.483c0,16.278,13.194,29.473,29.472,29.473
+                    c16.288,0,29.482-13.194,29.482-29.473C164.538,210.375,151.344,197.171,135.055,197.171z"></path>
+                  <path class="st0" d="M250.024,197.171c-16.28,0-29.474,13.204-29.474,29.483c0,16.278,13.194,29.473,29.474,29.473
+                    c16.288,0,29.482-13.194,29.482-29.473C279.506,210.375,266.312,197.171,250.024,197.171z"></path>
+                  <path class="st0" d="M365,197.171c-16.278,0-29.482,13.204-29.482,29.483c0,16.278,13.204,29.473,29.482,29.473
+                    c16.288,0,29.484-13.194,29.484-29.473C394.484,210.375,381.288,197.171,365,197.171z"></path>
+                </g>
+                </svg>
+                <p class="flow-cta-sentence">見学予約はこちら</p>
+              </div>
+            </button>
+            <button
+              type="button"
+              onclick="window.open('https://ap-harbors.firebaseapp.com/virtual-office/register/','view');"
+              class="btn flow-cta d-block nowrap mx-auto mb-4 mb-lg-2"
+            >
+              <div class="d-flex align-middle flow-cta-contents">
+                <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="width: 23px; height: 23px; opacity: 1;" xml:space="preserve" class="mr-2 flow-icon">
+                  <g>
+                    <path class="st0" d="M503.556,156.001l-18.569-18.561c-11.258-11.266-29.518-11.257-40.776,0l-17.37,17.379l59.346,59.346
+                      l17.369-17.369C514.814,185.528,514.814,167.268,503.556,156.001z"></path>
+                    <polygon class="st0" points="264.082,317.579 264.082,376.924 323.428,376.924 470.001,230.352 410.656,171.006 	"></polygon>
+                    <rect x="121.111" y="142.306" class="st0" width="167.616" height="27.936"></rect>
+                    <rect x="121.111" y="244.738" class="st0" width="167.616" height="27.936"></rect>
+                    <rect x="121.111" y="347.17" class="st0" width="102.432" height="27.936"></rect>
+                    <path class="st0" d="M372.589,454.658c0,4.282-3.492,7.766-7.766,7.774H45.014c-4.274-0.008-7.748-3.492-7.766-7.774V57.344
+                      c0.018-4.284,3.492-7.766,7.766-7.776h319.809c4.274,0.009,7.766,3.492,7.766,7.776v112.225l37.248-37.248V57.344
+                      c-0.018-24.872-20.133-45.005-45.014-45.024H45.014C20.152,12.339,0.019,32.472,0,57.344v397.314
+                      c0.019,24.871,20.152,45.005,45.014,45.022h319.809c24.881-0.018,44.996-20.151,45.014-45.022V330.019l-37.248,37.248V454.658z"></path>
+                  </g>
+                  </svg>
+                  <p class="flow-cta-sentence">お申し込みはこちら</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- faq -->
+      <section class="faq" id="faq">
+        <h2 class="text-center section-heading mb-4 mb-md-5">
+          <span class="english-section-title">FAQ</span><br>
+          バーチャルオフィスのよくあるご質問
+        </h2>
+        <div class="faq-wrapper">
+          <div class="container small-container pb-3">
+            <!-- <div class="p-4 faq">
+              <p class="virtual-faq-question text-justify">バーチャルオフィスの住所はどのような用途に使えますか？<br class="d-sm-none">また、使える住所はどうなりますか？</p>
+              <p class="virtual-faq-answer text-justify">
+                名刺やHP等へのご記載や法人登記用の住所としてもご利用いただけます。<br><br>
+                自宅の住所を登記簿やHP、名刺などに記載することにプライバシーやセキュリティ上の不安を感じている方や、事業のブランディングを目的に「東京都港区南青山」という都内一等地の住所を利用したい方にご利用いただくことが多いです。<br><br>
+                ご利用いただける住所は下記の住所にお客様ごとに割り振られる枝番を付けたものをご利用いただきます。<br><br>
+                〒107-0062
+                東京都港区南青山3丁目15−9 MINOWA表参道 3階
+              </p>
+            </div>
+            <div class="mt-5 p-4 faq">
+              <p class="virtual-faq-question text-justify">バーチャルオフィスの見学や説明会はどのように予約できますか？<br class="d-sm-none">また、いつ実施していますか？</p>
+              <p class="virtual-faq-answer text-justify">
+                現地見学・オンライン説明会ともに毎日11時〜19時の間で受け付けております。<br><br>
+                また、ページ下部のボタンより説明会のお申込や資料請求が可能です。<br>
+                空き状況にもよりますが当日の予約も可能ですのでご希望の際はお問い合わせください。<br><br>
+                弊社バーチャルオフィスは単なる住所貸しに止まらず、商談や作業を行うスペースとしてもご利用いただけます。<br>
+                そのため、従来の無機質なバーチャルオフィスと異なり、内装などにもこだわっておりますので、是非現地見学にて雰囲気等をお確かめいただくことをおすすめしております。
+              </p>
+            </div>
+            <div class="mt-5 p-4 faq">
+              <p class="virtual-faq-question text-justify">見学なしでの契約はできますか？</p>
+              <p class="virtual-faq-answer text-justify">
+                見学なしでの契約も可能です。<br>
+                  サービスやシステムについての認識齟齬を避けるため、原則としてスタッフからの説明会を経てのお申し込みとなりますが、お急ぎの方は以下よりお申込いただけます。<br>
+                  尚、見学なしでお申込いただいた場合でも審査の一環として面談を設けております。<br>
+                  面談時に念のためサービスの説明などを行いますので、ご不明点はその際にご質問ください。
+              </p>
+            </div>
+            <div class="mt-5 p-4 faq">
+              <p class="virtual-faq-question text-justify">審査の目的はなんですか？また、審査の内容や基準について知りたいです。</p>
+              <p class="virtual-faq-answer text-justify">
+                バーチャルオフィスでの公序良俗に反する事業、または違法的・反社会的な事業のための住所、電話番号などの不適切な利用を予防し、お客様にご利用いただく住所の信用と安全を担保する目的で実施しております。<br><br>
+                審査を設けることで安心してご利用いただけるバーチャルオフィス運営を目指しておりますので、ご協力いただけますと幸いです。<br><br>
+                また、審査内容や審査基準についてはお答えできませんので予めご了承ください。
+              </p>
+            </div>
+            <div class="mt-5 p-4 faq">
+              <p class="virtual-faq-question text-justify">審査時の必要書類とは何を指しますか？</p>
+              <p class="virtual-faq-answer text-justify">
+                お申し込み頂く方によってご提出頂く書類が違いますのであらかじめご確認ください。<br><br>
+                （法人の方）履歴事項全部証明書<br>
+                （個人事業主で社名・屋号をお持ちで開業届を提出済の方）開業届<br>
+                （共通）写真付きの身分証明書<br>
+                ※PDF等でお送りいただければ幸いです。または面談時にお持ち頂いても構いません。<br><br>
+                法人設立前の場合は、法人設立後に履歴事項全部証明書をご提出ください。<br>
+                その場合、審査に必要な書類は身分証明書のみとなります。<br><br>
+                必要書類の提出と面談の実施を踏まえて審査を行います。
+              </p>
+            </div>
+            <div class="mt-5 p-4 faq">
+              <p class="virtual-faq-question text-justify">見学前に見積もりはもらえますか？</p>
+              <p class="virtual-faq-answer text-justify">
+                ご利用を希望されるサービス等を事前にお知らせいただければ、初期費用や月額利用料の金額を算出してご案内いたします。説明会当日でも、その場でお見積もりをお出しできますのでお声かけください。<br><br>
+                既に見学・説明会の予約がお済みの場合はメールにてご連絡ください。
+                これからご予約される場合は予約フォームにてその旨お伝えください。
+              </p>
+            </div>
+            <div class="mt-5 p-4 faq">
+              <p class="virtual-faq-question text-justify">エンジニアではありませんが利用できますか？</p>
+              <p class="virtual-faq-answer text-justify">
+                バーチャルオフィスに関してはエンジニアの方以外でもご利用いただけます。
+              </p>
+            </div> -->
+            <div class="align-items-center faq-item mx-0 mt-2 mb-3">
+              <div class="d-flex justify-content-between align-items-center bg-light">
+                <div class="p-3 p-md-4 question-box d-flex">
+                  <p class="text-dark font-weight-bold mr-2">Q.</p>
+                  <h3 class="text-dark">
+                    バーチャルオフィスの住所はどのような用途に使えますか？<br class="d-sm-none">また、使える住所はどうなりますか？
+                  </h3>
+                </div>
+                <div class="mr-1 mr-md-3 d-flex align-items-center">
+                  <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                  <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="row hidden-text mx-0">
+              <div class="col-12 p-3 p-md-4 d-flex align-items-start">
+                <p class="font-weight-bold mr-2 capital-a">A.</p>
+                <p class="answer-text">
+                  名刺やHP等へのご記載や法人登記用の住所としてもご利用いただけます。<br><br>
+                  自宅の住所を登記簿やHP、名刺などに記載することにプライバシーやセキュリティ上の不安を感じている方や、事業のブランディングを目的に「東京都港区南青山」という都内一等地の住所を利用したい方にご利用いただくことが多いです。<br><br>
+                  ご利用いただける住所は下記の住所にお客様ごとに割り振られる枝番を付けたものをご利用いただきます。<br><br>
+                  〒107-0062
+                  東京都港区南青山3丁目15−9 MINOWA表参道 3階
+                </p>
+              </div>
+            </div>
+            <div class="align-items-center faq-item mx-0 mb-3">
+              <div class="d-flex justify-content-between align-items-center bg-light">
+                <div class="p-3 p-md-4 question-box d-flex">
+                  <p class="text-dark font-weight-bold mr-2">Q.</p>
+                  <h3 class="text-dark">
+                    バーチャルオフィスの見学や説明会はどのように予約できますか？<br class="d-sm-none">また、いつ実施していますか？
+                  </h3>
+                </div>
+                <div class="mr-1 mr-md-3 d-flex align-items-center">
+                  <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                  <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="row hidden-text mx-0">
+              <div class="col-12 p-3 p-md-4 d-flex align-items-start">
+                <p class="font-weight-bold mr-2 capital-a">A.</p>
+                <p class="answer-text">
+                  現地見学・オンライン説明会ともに毎日11時〜19時の間で受け付けております。<br><br>
+                  また、ページ下部のボタンより説明会のお申込や資料請求が可能です。<br>
+                  空き状況にもよりますが当日の予約も可能ですのでご希望の際はお問い合わせください。<br><br>
+                  弊社バーチャルオフィスは単なる住所貸しに止まらず、商談や作業を行うスペースとしてもご利用いただけます。<br>
+                  そのため、従来の無機質なバーチャルオフィスと異なり、内装などにもこだわっておりますので、是非現地見学にて雰囲気等をお確かめいただくことをおすすめしております。
+                </p>
+              </div>
+            </div>
+            <div class="align-items-center faq-item mx-0 mb-3">
+              <div class="d-flex justify-content-between align-items-center bg-light">
+                <div class="p-3 p-md-4 question-box d-flex">
+                  <p class="text-dark font-weight-bold mr-2">Q.</p>
+                  <h3 class="text-dark">
+                    見学なしでの契約はできますか？
+                  </h3>
+                </div>
+                <div class="mr-1 mr-md-3 d-flex align-items-center">
+                  <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                  <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="row hidden-text mx-0">
+              <div class="col-12 p-3 p-md-4 d-flex align-items-start">
+                <p class="font-weight-bold mr-2 capital-a">A.</p>
+                <p class="answer-text">
+                  見学なしでの契約も可能です。<br>
+                  サービスやシステムについての認識齟齬を避けるため、原則としてスタッフからの説明会を経てのお申し込みとなりますが、お急ぎの方は以下よりお申込いただけます。<br>
+                  尚、見学なしでお申込いただいた場合でも審査の一環として面談を設けております。<br>
+                  面談時に念のためサービスの説明などを行いますので、ご不明点はその際にご質問ください。
+                </p>
+              </div>
+            </div>
+            <div class="align-items-center faq-item mx-0 mb-3">
+              <div class="d-flex justify-content-between align-items-center bg-light">
+                <div class="p-3 p-md-4 question-box d-flex">
+                  <p class="text-dark font-weight-bold mr-2">Q.</p>
+                  <h3 class="text-dark">
+                    審査の目的はなんですか？また、審査の内容や基準について知りたいです。
+                  </h3>
+                </div>
+                <div class="mr-1 mr-md-3 d-flex align-items-center">
+                  <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                  <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="row hidden-text mx-0">
+              <div class="col-12 p-3 p-md-4 d-flex align-items-start">
+                <p class="font-weight-bold mr-2 capital-a">A.</p>
+                <p class="answer-text">
+                  バーチャルオフィスでの公序良俗に反する事業、または違法的・反社会的な事業のための住所、電話番号などの不適切な利用を予防し、お客様にご利用いただく住所の信用と安全を担保する目的で実施しております。<br><br>
+                  審査を設けることで安心してご利用いただけるバーチャルオフィス運営を目指しておりますので、ご協力いただけますと幸いです。<br><br>
+                  また、審査内容や審査基準についてはお答えできませんので予めご了承ください。
+
+                </p>
+              </div>
+            </div>
+            <div class="align-items-center faq-item mx-0 mb-3">
+              <div class="d-flex justify-content-between align-items-center bg-light">
+                <div class="p-3 p-md-4 question-box d-flex">
+                  <p class="text-dark font-weight-bold mr-2">Q.</p>
+                  <h3 class="text-dark">
+                    審査時の必要書類とは何を指しますか？
+                  </h3>
+                </div>
+                <div class="mr-1 mr-md-3 d-flex align-items-center">
+                  <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                  <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="row hidden-text mx-0">
+              <div class="col-12 p-3 p-md-4 d-flex align-items-start">
+                <p class="font-weight-bold mr-2 capital-a">A.</p>
+                <p class="answer-text">
+                  お申し込み頂く方によってご提出頂く書類が違いますのであらかじめご確認ください。<br><br>
+                  （法人の方）履歴事項全部証明書<br>
+                  （個人事業主で社名・屋号をお持ちで開業届を提出済の方）開業届<br>
+                  （共通）写真付きの身分証明書<br>
+                  ※PDF等でお送りいただければ幸いです。または面談時にお持ち頂いても構いません。<br><br>
+                  法人設立前の場合は、法人設立後に履歴事項全部証明書をご提出ください。<br>
+                  その場合、審査に必要な書類は身分証明書のみとなります。<br><br>
+                  必要書類の提出と面談の実施を踏まえて審査を行います。
+                </p>
+              </div>
+            </div>
+            <div class="align-items-center faq-item mx-0 mb-3">
+              <div class="d-flex justify-content-between align-items-center bg-light">
+                <div class="p-3 p-md-4 question-box d-flex">
+                  <p class="text-dark font-weight-bold mr-2">Q.</p>
+                  <h3 class="text-dark">
+                    見学前に見積もりはもらえますか？
+                  </h3>
+                </div>
+                <div class="mr-1 mr-md-3 d-flex align-items-center">
+                  <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                  <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="row hidden-text mx-0">
+              <div class="col-12 p-3 p-md-4 d-flex align-items-start">
+                <p class="font-weight-bold mr-2 capital-a">A.</p>
+                <p class="answer-text">
+                  ご利用を希望されるサービス等を事前にお知らせいただければ、初期費用や月額利用料の金額を算出してご案内いたします。説明会当日でも、その場でお見積もりをお出しできますのでお声かけください。<br><br>
+                  既に見学・説明会の予約がお済みの場合はメールにてご連絡ください。
+                  これからご予約される場合は予約フォームにてその旨お伝えください。
+                </p>
+              </div>
+            </div>
+            <div class="align-items-center faq-item mx-0 mb-3">
+              <div class="d-flex justify-content-between align-items-center bg-light">
+                <div class="p-3 p-md-4 question-box d-flex">
+                  <p class="text-dark font-weight-bold mr-2">Q.</p>
+                  <h3 class="text-dark">
+                    エンジニアではありませんが利用できますか？
+                  </h3>
+                </div>
+                <div class="mr-1 mr-md-3 d-flex align-items-center">
+                  <img src="/img/chevron_down.svg" alt="下向きアイコン" class="chevron-down show" loading="lazy">
+                  <img src="/img/chevron_up.svg" alt="上向きアイコン" class="chevron-up" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="row hidden-text mx-0">
+              <div class="col-12 p-3 p-md-4 d-flex align-items-start">
+                <p class="font-weight-bold mr-2 capital-a">A.</p>
+                <p class="answer-text">
+                  バーチャルオフィスに関してはエンジニアの方以外でもご利用いただけます。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-light">
+        <div class="container small-container">
+          <div class="nap">
+            <h2 class="mb-3 nap-title">
+              青山でバーチャルオフィスのレンタルをお考えならHarborS 表参道へ
+            </h2>
+            <table class="nap-table">
+              <tr>
+                <th class="p-3">住所</th>
+                <td class="p-3">
+                  〒107-0062 東京都港区南青山3丁目15−9 MINOWA表参道 3階
+                </td>
+              </tr>
+              <tr>
+                <th class="p-3">電話番号</th>
+                <td class="p-3"><a href="tel:0368856140">03-6885-6140</a></td>
+              </tr>
+              <tr>
+                <th class="p-3">メールアドレス</th>
+                <td class="p-3"><a href="mailto:contact@harbors.sh">contact@harbors.sh</a></td>
+              </tr>
+              <tr>
+                <th class="p-3">アクセス</th>
+                <td class="p-3">
+                  東京メトロ銀座線、半蔵門線「表参道」下車 A4出口 徒歩3分
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="w-75 mx-auto mt-5">
+            <button
+              type="button"
+              class="btn flow-cta d-block nowrap mx-auto mb-4 mb-lg-2 "
+              onclick="countClickByGa();"
+              data-toggle="modal"
+              data-target="#inquiryFormModal"
+            >
+              <div class="align-middle flow-cta-contents">
+                <p class="flow-cta-sentence">無料で相談してみる</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- アクセス -->
+      <section id="access">
+        <div class="container small-container text-center">
+          <h2 class="pb-3 section-heading"><span class="english-section-title">ACCESS</span></h2>
+          <div class="mb-4 text-left">
+            <p class="mb-0">
+              HarborS
+              表参道は、港区青山エリアに位置しており、表参道駅A4出口から徒歩3分という好立地です。<br>
+              住所は「港区南青山」とブランド力抜群のこのエリアは、渋谷、原宿、麻布、赤坂、六本木エリアとも隣接しており、<br class="d-none d-xl-block">どこからのアクセスも抜群の立地という特徴があります。
+            </p>
+            <p class="mt-2 mb-0 font-weight-bold">[周辺からのアクセス]</p>
+            <p class="mb-0">渋谷：銀座線で1分 (徒歩20分圏内)</p>
+            <p class="mb-0">原宿：千代田線で1分 (徒歩20分圏内)</p>
+            <p class="mb-0">六本木：千代田線(乃木坂駅利用)で2分 (徒歩25分圏内)</p>
+            <p class="mb-0">赤坂：千代田線で6分 (徒歩30分圏内)</p>
+          </div>
+
+          <!-- 地図 -->
+          <iframe
+            class="map border-0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.99080382981!2d139.7061736147836!3d35.664745284378995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a9122f1cd%3A0xcfe4aad9a0735cb8!2zSGFyYm9yUyDooajlj4LpgZMo44OP44O844OQ44O844K66KGo5Y-C6YGTKQ!5e0!3m2!1sja!2sjp!4v1589869377967!5m2!1sja!2sjp"
+            loading="lazy"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+      <div class="container">
+        <div class="d-md-flex justify-content-between">
+          <div class="d-flex d-md-block footer-left">
+            <div class="mr-md-3 mr-lg-0">
+              <img src="/img/harbors_logo_w.svg" alt="HarborS 表参道のロゴ" class="img-fluid">
+              <p class="my-4 ja">ハーバーズ表参道</p>
+              <a href="https://anti-pattern.co.jp/" class="d-none d-md-inline-block copy en">&copy; anti-pattern.inc</a>
+            </div>
+            <div class="d-block d-md-none page-top-sp en">
+              <span>Page top</span>
+              <a href="#top"><img src="/img/top-icon.svg" alt="ページトップボタン"></a>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="d-none d-md-block page-top en">
+              <span>Page top</span>
+              <a href="#top"><img src="/img/top-icon.svg" alt="ページトップボタン"></a>
+            </div>
+            <div class="footer-row-bottom ja">
+              <div class="d-md-flex">
+                <p class="footer-right-subtitle">運営会社</p>
+                <a href="https://anti-pattern.co.jp" target="_blank" class="footer-right-content">株式会社アンチパターン</a>
+                <p class="footer-right-content mb-0">〒107-0062 東京都港区南青山3丁目15−9 <br class="d-sm-none">MINOWA表参道3階</p>
+              </div>
+              <div class="d-md-flex">
+                <p class="footer-right-subtitle">利用規約</p>
+                <a href="/terms/virtual_office/" class="footer-right-content">バーチャルオフィス利用規約</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="d-block d-md-none text-center copy-sp en">
+          <a href="https://anti-pattern.co.jp/">&copy; anti-pattern.inc</a>
+        </p>
+      </div>
+    </footer>
 
     <!-- Modal -->
     <div
@@ -131,7 +1174,9 @@
       <div class="modal-dialog modal-dialog-centered modal-container" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="inquiryFormModalTitle">お問い合わせ</h5>
+            <h5 class="modal-title" id="inquiryFormModalTitle">
+              <nobr>バーチャルオフィスに関する<wbr>お問い合わせ</nobr>
+            </h5>
             <button
               type="button"
               class="close"
@@ -144,8 +1189,101 @@
           <div class="modal-body">
             <form id="inquiryForm">
               <div class="form-group">
-                <label for="">お名前 or Twitter ID(@xxxxx)</label
-                ><font style="color: red">※</font>
+                <label for="">お問い合わせ目的</label
+                ><span class="text-danger">*</span>
+                <div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <input type="radio" id="contact_type1" name="contact_type" value="1" required>
+                      <label for="contact_type1">
+                        オンライン説明会を予約したい
+                      </label>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="radio" id="contact_type2" name="contact_type" value="2">
+                      <label for="contact_type2">
+                        現地の見学説明会を予約したい
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <input type="radio" id="contact_type3" name="contact_type" value="3">
+                      <label for="contact_type3" class="mb-sm-0">
+                        資料を送付してほしい
+                      </label>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="radio" id="contact_type4" name="contact_type" value="4">
+                      <label for="contact_type4" class="mb-sm-0">
+                        その他お問い合わせ
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="form-group">
+                <label for="">お問い合わせ目的</label
+                ><span class="text-danger">*</span>
+                <select class="form-control" name="contact_type" required>
+                  <option></option>
+                  <option value="1">オンライン説明会を予約したい</option>
+                  <option value="2">現地の見学説明会を予約したい</option>
+                  <option value="3">資料を送付してほしい</option>
+                </select>
+              </div> -->
+              <div
+                class="form-group"
+                id="form_preferred_visit_date"
+                style="display: none"
+              >
+                <label for="preferred_visit_date">説明会ご希望日（任意）</label>
+                <div
+                  class="input-group date"
+                  id="preferred_visit_date"
+                  data-target-input="nearest"
+                >
+                  <input
+                    type="text"
+                    name="preferred_visit_date"
+                    class="form-control datetimepicker-input"
+                    data-target="#preferred_visit_date"
+                  >
+                  <div
+                    class="input-group-append"
+                    data-target="#preferred_visit_date"
+                    data-toggle="datetimepicker"
+                  >
+                    <div class="input-group-text">
+                      <img src="/img/calendar-solid.svg" alt="カレンダーのアイコン" style="width: 14px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="form-group"
+                id="form_preferred_visit_time"
+                style="display: none"
+              >
+                <label for="preferred_visit_time">説明会開始時刻（任意）</label>
+                <select class="form-control" name="preferred_visit_time">
+                  <option></option>
+                  <option value="11:00">11:00~12:00</option>
+                  <option value="12:00">12:00~13:00</option>
+                  <option value="13:00">13:00~14:00</option>
+                  <option value="14:00">14:00~15:00</option>
+                  <option value="15:00">15:00~16:00</option>
+                  <option value="16:00">16:00~17:00</option>
+                  <option value="17:00">17:00~18:00</option>
+                  <option value="18:00">18:00~19:00</option>
+                  <option value="19:00">19:00~20:00</option>
+                </select>
+                <div class="preferred_visit_note">
+                  <p class="small">※説明会は1時間程度になります</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">お名前</label><span class="text-danger">*</span>
                 <input
                   type="text"
                   class="form-control"
@@ -153,11 +1291,11 @@
                   aria-describedby=""
                   placeholder=""
                   required
-                />
+                >
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">メールアドレス</label
-                ><font style="color: red">※</font>
+                ><span class="text-danger">*</span>
                 <input
                   type="email"
                   class="form-control"
@@ -166,46 +1304,21 @@
                   aria-describedby=""
                   placeholder=""
                   required
-                />
+                >
               </div>
               <div class="form-group">
-                <label for="">電話番号</label>
+                <label for="">電話番号</label><span class="text-danger">*</span>
                 <input
                   type="tel"
                   class="form-control"
                   name="tel"
                   aria-describedby=""
                   placeholder=""
-                />
+                  required
+                >
               </div>
               <div class="form-group">
-                <label for="">お問い合わせ目的</label
-                ><font style="color: red">※</font>
-                <select class="form-control" name="frequency" required>
-                  <option></option>
-                  <option value="資料を送付して欲しい">
-                    資料を送付して欲しい
-                  </option>
-                  <option value="電話で詳しく説明して欲しい">
-                    電話で詳しく説明して欲しい
-                  </option>
-                  <option value="見学予約をしたい">見学予約をしたい</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="">HarborSを知ったきっかけは？</label>
-                <select class="form-control" name="trigger">
-                  <option></option>
-                  <option value="検索">検索</option>
-                  <option value="twitter">twitter</option>
-                  <option value="facebook">facebook</option>
-                  <option value="まとめサイト">まとめサイト</option>
-                  <option value="チラシ広告">チラシ広告</option>
-                  <option value="その他">その他</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="">その他ご要望</label>
+                <label for="">備考・要望など</label><span class="text-danger" id="remarks_required" style="display: none;">*</span>
                 <textarea
                   class="form-control"
                   name="remarks"
@@ -213,35 +1326,225 @@
                   rows="3"
                 ></textarea>
               </div>
-              <p><font style="color: red">※</font>は必須入力項目です。</p>
-              <button type="submit" class="btn py-2 btn-submit">
+              <button
+                type="submit"
+                class="btn py-2 btn-submit mb-3"
+                id="send_button"
+              >
                 送信する
               </button>
-              <div class="modal-footer">
-                <p class="small">
-                  HarborSは、株式会社アンチパターン
-                  が運営する、南青山のバーチャルオフィス兼エンジニア特化型コワーキングスペースです。
+              <div id="errorMessage" style="display: none;">
+                <p style="color: red" class="m-0">
+                  予期せぬエラーが発生しました。<br>大変申し訳ございませんが、別途<a
+                    style="color: red; text-decoration-line: underline"
+                    href="/contacts/"
+                    >お問い合わせフォーム</a
+                  >か<a
+                    href="tel:0368856140"
+                    style="color: red; text-decoration-line: underline"
+                    >お電話(03-6885-6140)</a
+                  >または<a
+                    href="mailto:contact@harbors.sh"
+                    style="color: red; text-decoration-line: underline"
+                  >メール(contact@harbors.sh)</a
+                  >でお問い合わせくださいませ。
                 </p>
               </div>
-              <input type="hidden" name="sheetName" value="バーチャルLP" />
+              <div id="reservedErrorMessage" style="display: none">
+                <p style="color: red" class="m-0">
+                  ご希望の日時でご予約が取れませんでした。<br>大変申し訳ございませんが、別の日時で再度予約をお願いいたします。
+                </p>
+              </div>
+              <div class="modal-footer">
+                <p class="small">
+                  HarborS 表参道は、株式会社アンチパターンが運営する、南青山のバーチャルオフィスです。
+                </p>
+              </div>
+              <input
+                type="hidden"
+                name="sheetName"
+                value="バーチャルオフィス会員"
+              >
             </form>
             <div id="thanksMessage" style="display: none">
               <p>
-                お問い合わせありがとうございました。<br />担当からご連絡させていただきますのでお待ちください。
+                お問い合わせありがとうございました。<br>担当からご連絡させていただきますのでお待ちください。
               </p>
+              <p>
+                HarborSは、「LINE（ライン）」にて情報配信中！！<br>
+                友だち登録いただくと、お得なイベント情報や新しいサービス情報をお届けします♪<br>
+                また、説明会を予約していただいた方には、<br>
+                説明会開始時間のリマインドなどもさせていただきます。
+              </p>
+              <a href="https://lin.ee/uOuueAH"
+                ><img
+                  src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
+                  alt="友だち追加"
+                  height="36"
+                  border="0"
+                  loading="lazy"
+              ></a>
             </div>
-            <div id="errorMessage" style="display: none">
-              <p style="color: red">
-                予期せぬエラーが発生しました。<br />大変申し訳ございませんが、別途<a
-                  style="color: red; text-decoration-line: underline"
-                  href="/contacts/"
-                  >お問い合わせフォーム</a
-                >か<a
-                  href="tel:0368856140"
-                  style="color: red; text-decoration-line: underline"
-                  >お電話(03-6885-6140)</a
-                >へお問い合わせくださいませ。
-              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- reasons detail modal1 -->
+    <div class="modal fade" id="reasonsDetailModal1" tabindex="-1" role="dialog" aria-labelledby="reasonsDetailModal1Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered small-container" role="document">
+        <div class="modal-content">
+          <div class="modal-header reason-modal-header">
+            <h3 class="reason-modal-title mb-0">
+              おしゃれさとコスパの高さを両立したバーチャルオフィス
+            </h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="reasons-detail text-justify">
+              HarborS 表参道のバーチャルオフィスでは「東京都港区南青山」の住所利用と来客対応を基本料金に含まれるサービスとして月額5280円で提供しております。名刺やHPにご利用できる住所や利便性、おしゃれさなどの付加価値を考えると月額5280円という価格はお手頃と言えるのではないでしょうか。<br><br>
+              バーチャルオフィスの住所を法人登記やHP、名刺などに記載するとなると、それを見たクライアントや顧客がバーチャルオフィスと知らずに突然訪れることも。HarborS 表参道は内装にもこだわったバーチャルオフィスなので、そういった突然の来訪の際にも、港区や青山という地名の期待感を裏切らない綺麗でおしゃれなオフィスでお迎えが可能です。<br><br>
+              バーチャルオフィスを利用せずに「港区南青山」で賃貸オフィスを借りようとする場合と比較すると、価格の安さをより分かりやすく想像していただけると思います。例えば港区で賃貸オフィスを借りるとすると、たった1坪でHarborSのバーチャルオフィスのオプションを全て付けてもお釣りが来るような金額になることも。オフィスとして活用するには当然1坪では意味が無いので、必要最低限の広さを用意するとなると賃料は大きな負担になります。<br><br>
+              港区に限らず、東京都内でオフィスを借りるとなると、かなりの費用がかかります。実現可能なコストの中で、「東京都港区南青山」という住所を使うためのアイデアの一つとしてもバーチャルオフィスの活用はとても有用と言えます。<br><br>
+              東京都内一等地の土地による付加価値をはじめ、「イメージ」「価格」「利便性」のバランスで見た時のコストパフォーマンスの高さこそが、HarborS 表参道のバーチャルオフィスが多くのお客様にご利用いただけている理由なのだと実感しております。
+            </p>
+          </div>
+          <div class="modal-footer pt-0">
+            <div class="w-75 mx-auto">
+              <button
+                type="button"
+                class="btn flow-cta d-block nowrap mx-auto mb-4 mb-lg-2 "
+                onclick="countClickByGa();"
+                data-toggle="modal"
+                data-target="#inquiryFormModal"
+              >
+                <div class="align-middle flow-cta-contents">
+                  <p class="flow-cta-sentence">無料で相談してみる</p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- reasons detail modal2 -->
+    <div class="modal fade" id="reasonsDetailModal2" tabindex="-1" role="dialog" aria-labelledby="reasonsDetailModal2Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered small-container" role="document">
+        <div class="modal-content">
+          <div class="modal-header reason-modal-header">
+            <h3 class="reason-modal-title mb-0">
+              東京都内の人気エリア「港区青山」の住所が利用可能
+            </h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="reasons-detail text-justify">
+              HarborS 表参道のバーチャルオフィスでは「東京都港区南青山」の住所をお貸しすることができます。もちろん法人登記も可能です。<br>
+              バーチャルオフィスを利用する際には、その土地の持つイメージも大変重要な要素になってきますので、事業内容や顧客の層にマッチした場所を利用したいと考える方は多く、弊社にも住所にこだわってバーチャルオフィスを探されているお客様が沢山いらっしゃいます。<br><br>
+              さて、弊社の提供する「港区南青山」という住所を聞いてどのようなイメージを抱くでしょうか？おそらく多くの人は高級感がありお洒落な街という想像をするでしょう。それは事業に使った場合も同様で、東京都内の一等地に当たる「港区南青山」の住所をHPや法人登記に利用することで、その高級感や洗練されたイメージから事業への安心感が生まれ、信頼感を高めることができます。<br><br>
+              弊社の提供する「港区南青山」の住所は、どのような業種にも馴染みやすく、高いブランド力を兼ね備えたとても使い勝手の良い住所だと自負しています。<br><br>
+              HarborS 表参道の周辺にはカフェや食事処が豊富で、少し足を伸ばせば表参道ヒルズがあります。わざわざバーチャルオフィスに出向くのではなく、日常の買い物やランチのついでに利用できるのも魅力の一つだと考えております。表参道や青山という街が好きという理由で弊社をお選びいただくお客様も少なくありません。
+            </p>
+          </div>
+          <div class="modal-footer pt-0">
+            <div class="w-75 mx-auto">
+              <button
+                type="button"
+                class="btn flow-cta d-block nowrap mx-auto mb-4 mb-lg-2 "
+                onclick="countClickByGa();"
+                data-toggle="modal"
+                data-target="#inquiryFormModal"
+              >
+                <div class="align-middle flow-cta-contents">
+                  <p class="flow-cta-sentence">無料で相談してみる</p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- reasons detail modal3 -->
+    <div class="modal fade" id="reasonsDetailModal3" tabindex="-1" role="dialog" aria-labelledby="reasonsDetailModal2Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered small-container" role="document">
+        <div class="modal-content">
+          <div class="modal-header reason-modal-header">
+            <h3 class="reason-modal-title mb-0">
+              シーンに応じて使い分け可能なビジネススペース
+            </h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="reasons-detail text-justify">
+              バーチャルオフィスの利用用途となると、法人登記など住所のみの利用などがメインになりますが、HarborS 表参道は実際にビジネスを行う場としての機能も兼ね備えています。<br><br>
+              それを踏まえた上で、表参道駅から徒歩3分という好アクセスな立地も是非知っていただきたいポイントです。実は表参道駅は複数の路線が乗り入れており、近隣県の路線等直結しているなど、東京都内だけでなく都外からも訪れやすいです。さらに駅から近ければ、バーチャルオフィスに郵便物を取りに来る際やカフェスペースを使った打ち合わせの際にも利用しやすく、時間と手間を軽減することができます。<br><br>
+              オフィスを持たないとなると、急な来客や打ち合わせなどが入った際に利用できるスペースが必要になります。弊社ではカフェスペースだけでなく、屋上のテラスもバーチャルオフィス会員様に開放しており、予約不要でご利用いただけます。<br><br>
+              打ち合わせなどの用途以外にも、日々の作業の気分転換としてカフェやテラスのご利用も可能です。<br><br>
+              カフェやテラスなどのオープンなスペースでは話しづらい場合や大人数での会議を行う場合には、貸し会議室もご利用いただけます。人数や用途に合わせて二つの会議室を繋げての利用も可能で最大20人まで収容可能です。<br><br>
+              会議室のご利用には事前に予約が必要です。予約に際してはキャンセル料がかからない仮予約期間を設けておりますので、気軽にご予約いただけます。<br><br>
+              前述のようなブランド力と駅からの近さ、シーンに応じた使い分けができるスペースを兼ね備えた東京都内のバーチャルオフィスとなると、その数はかなり限られてきます。
+            </p>
+          </div>
+          <div class="modal-footer pt-0">
+            <div class="w-75 mx-auto">
+              <button
+                type="button"
+                class="btn flow-cta d-block nowrap mx-auto mb-4 mb-lg-2 "
+                onclick="countClickByGa();"
+                data-toggle="modal"
+                data-target="#inquiryFormModal"
+              >
+                <div class="align-middle flow-cta-contents">
+                  <p class="flow-cta-sentence">無料で相談してみる</p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- reasons detail modal4 -->
+    <div class="modal fade" id="reasonsDetailModal4" tabindex="-1" role="dialog" aria-labelledby="reasonsDetailModal4Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered small-container" role="document">
+        <div class="modal-content">
+          <div class="modal-header reason-modal-header">
+            <h3 class="reason-modal-title mb-0">
+              自由に選択できるオプションで無駄を省ける
+            </h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="reasons-detail text-justify">
+              バーチャルオフィスは利用されるお客様のビジネスの形態や規模などによって、必要とされるサービスが異なりますが、プランや料金系体によっては不要なサービスを契約しなくてはならない場合があります。例えば、個人事業主のお客様など法人登記が不要な場合でも、基本料金に法人登記オプションが含まれているなどのケースがあります。<br><br>
+              弊社ではそういったサービスのミスマッチを防ぎ、お客様の多様なニーズにお応えするため、基本料金で提供するサービスをあえてシンプルなものにし、お客様自身が必要なオプションを選び、ご利用いただけるようにサービス設計をしております。ご利用方法や頻度などに応じてオプション内容のご提案も可能ですので気軽に説明会にいらしてください。<br><br>
+              法人登記や24時間使える専用ポストや遠方にお住まいの方でも利用しやすい郵便転送、セキュリティやプライバシーに不安がある方にも安心の電話転送サービスなど様々なサービスをご用意しています。なかでも、専用ポストを契約できるバーチャルオフィスはあまり多くありませんので、頻繁に表参道に立ち寄る方にはぜひおすすめしたいサービスです。<br><br>
+              今後は拠点展開も見据えており、よりお客様にとって利用しやすいバーチャルオフィス運営を目指してまいります。
+            </p>
+          </div>
+          <div class="modal-footer pt-0">
+            <div class="w-75 mx-auto">
+              <button
+                type="button"
+                class="btn flow-cta d-block nowrap mx-auto mb-4 mb-lg-2 "
+                onclick="countClickByGa();"
+                data-toggle="modal"
+                data-target="#inquiryFormModal"
+              >
+                <div class="align-middle flow-cta-contents">
+                  <p class="flow-cta-sentence">無料で相談してみる</p>
+                </div>
+              </button>
             </div>
           </div>
         </div>
@@ -260,6 +1563,74 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/ja.js"
+      type="text/javascript"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"
+    ></script>
+    <script src="/js/common.js"></script>
     <script src="/js/virtual_form.js"></script>
+    <script src="/js/header.js"></script>
+
+    <script>
+      $(function () {
+        var formBtn = $(".virtual-form-btn");
+        var footerPosition = $('footer').offset().top;
+        formBtn.hide();
+        
+        $(window).scroll(function () {
+          var scrollPosition = $(window).scrollTop();
+          if ($(window).scrollTop() < 500 || scrollPosition + $(window).height() > footerPosition) {
+            formBtn.fadeOut();
+          } else {
+            formBtn.fadeIn();
+          }
+        });
+
+        $("#site_tour").click(function () {
+          $('[name="contact_type"]').val("2");
+          $("#form_preferred_visit_date").show();
+          if (
+            $('[name="preferred_visit_time"]').children('option[value="20:00"]')
+              .length == 1
+          ) {
+            $('[name="preferred_visit_time"]')
+              .children('option[value="20:00"]')
+              .remove();
+          }
+        });
+
+        $("#online_information_session").click(function () {
+          $('[name="contact_type"]').val("1");
+          $("#form_preferred_visit_date").show();     
+          if (
+            $('[name="preferred_visit_time"]').children('option[value="20:00"]')
+              .length == 0
+          ) {
+            $('[name="preferred_visit_time"]').append(
+              '<option value="20:00">20:00~21:00</option>'
+            );
+          }
+        });
+        $("#toPcInquiryFormModal, #toSpInquiryFormModal").click(function () {
+          $('[name="contact_type"]').val("");
+          $("#form_preferred_visit_date").hide();
+          $("#form_preferred_visit_time").hide();
+        });
+      });
+      $('.hidden-text').hide();
+      $('.faq-item').click(function() {
+          $(this).next().slideToggle();
+          $(this).find('.chevron-down').toggleClass('show');
+          $(this).find('.chevron-up').toggleClass('show');
+      });
+    </script>
   </body>
 </html>
