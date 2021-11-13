@@ -333,43 +333,6 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           </nav>
         </div>
       </div>
-
-      <!-- パンくずリスト -->
-      <div class="breadcrumb d-none d-md-block bg-transparent pt-2 pb-0">
-        <ol
-          itemscope
-          itemtype="https://schema.org/BreadcrumbList"
-          class="p-0 mb-0"
-        >
-          <li
-            itemprop="itemListElement"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-          >
-            <a itemprop="item" href="/coworking/" class="text-muted">
-              <span itemprop="name" class="ml-0">コワーキングスペースTOP</span>
-            </a>
-            <meta itemprop="position" content="1">
-          </li>
-
-          <li
-            itemprop="itemListElement"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            class="breadcrumb-last"
-          >
-            <a
-              href="/coworking/how_to_take_aws_exam/"
-              itemprop="item"
-              class="d-inline-block mb-0 disabled"
-              tabindex="-1"
-            >
-              <span itemprop="name">AWS認定試験の受け方</span>
-            </a>
-            <meta itemprop="position" content="2">
-          </li>
-        </ol>
-      </div>
     </header>
 
     <div class="jumbotron-fluid position-relative events-top p-0">
@@ -883,33 +846,117 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
     </section>
 
     <!-- フッター -->
-    <footer>
-      <div class="container small">
-        <div class="row">
-          <div class="col-md-6 footer-menus">
-            <p><a href="https://anti-pattern.co.jp">運営会社</a></p>
-            <p>
-              <a href="/contacts/">お問い合わせ</a>
-            </p>
-            <p>
-              <a href="https://anti-pattern.co.jp/legal/privacy/"
-                >プライバシーポリシー</a
+    <footer class="virtual-footer">
+      <div class="container">
+        <!-- パンくずリスト -->
+        <div class="breadcrumb virtual-breadcrumb bg-transparent pt-2 pb-0 mb-5 mb-md-0">
+          <ol
+            itemscope
+            itemtype="https://schema.org/BreadcrumbList"
+            class="p-0 mb-0"
+          >
+            <li
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ListItem"
+            >
+              <a itemprop="item" href="/coworking/" class="text-muted">
+                <span itemprop="name" class="ml-0 text-white">コワーキングスペースTOP</span>
+              </a>
+              <meta itemprop="position" content="1">
+            </li>
+
+            <li
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ListItem"
+              class="breadcrumb-last"
+            >
+              <a
+                href="/coworking/how_to_take_aws_exam/"
+                itemprop="item"
+                class="d-inline-block mb-0 disabled"
+                tabindex="-1"
               >
-            </p>
+                <span itemprop="name" class="text-white">AWS認定試験の受け方</span>
+              </a>
+              <meta itemprop="position" content="2">
+            </li>
+          </ol>
+        </div>
+        <div class="d-md-flex justify-content-between">
+          <div class="d-flex d-md-block footer-left">
+            <div class="mr-md-3 mr-lg-0">
+              <img src="/img/harbors_logo_w.svg" alt="HarborS 表参道のロゴ" class="img-fluid">
+              <p class="my-4 ja">ハーバーズ表参道</p>
+              <a href="https://anti-pattern.co.jp/" class="d-none d-md-inline-block copy en">&copy; anti-pattern.inc</a>
+            </div>
+            <div class="d-block d-md-none page-top-sp en">
+              <span>Page top</span>
+              <a href="#top"><img src="/img/top-icon.svg" alt="ページトップボタン"></a>
+            </div>
           </div>
-          <div class="col-md-6 footer-menus">
-            <p><a href="/terms/harbors/">コワーキングスペース利用規約</a></p>
-            <p>
-              <a href="/terms/virtual_office/">バーチャルオフィス利用規約</a>
-            </p>
-            <p><a href="/terms/rooms/">ミーティングルーム利用規約</a></p>
-            <p><a href="/terms/posse/">POSSE利用規約</a></p>
+          <div class="footer-right">
+            <div class="d-none d-md-block page-top en">
+              <span>Page top</span>
+              <a href="#top"><img src="/img/top-icon.svg" alt="ページトップボタン"></a>
+            </div>
+            <div class="footer-row-top ja">
+              <div class="d-md-flex">
+                <p class="footer-right-title en">Service</p>
+                <a href="/coworking/" class="">
+                  コワーキング
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+                <br class="d-block d-md-none">
+                <a href="https://sky-terrace.anti-pattern.co.jp/" class="">
+                  スカイテラス表参道
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon d-inline d-md-none">
+                    <g id="link-icon" transform="translate(-1154 -5516)">
+                      <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
+                        <rect width="10" height="11.667" stroke="none"/>
+                        <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+                      </g>
+                      <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
+                        <rect width="10" height="11.667" stroke="none"/>
+                        <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+                <br class="d-block d-md-none">
+                <a href="/rooms/" class="">
+                  会議室
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="footer-row-bottom ja">
+              <div class="d-md-flex">
+                <p class="footer-right-subtitle">メニュー</p>
+                <a href="https://anti-pattern.co.jp/" target="_blank"><span>運営会社</span></a>
+                <a href="/contacts/"><span>お問い合わせ</span></a>
+                <a href="https://anti-pattern.co.jp/legal/privacy/" target="_blank"><span>プライバシーポリシー</span></a>
+              </div>
+              <div class="d-md-flex">
+                <p class="footer-right-subtitle">利用規約</p>
+                <a href="/terms/harbors/" class=""><span>コワーキングスペース</span></a>
+                <a href="/terms/virtual_office/" class=""><span>バーチャルオフィス</span></a>
+                <br class="d-block d-md-none">
+                <a href="/terms/rooms/" class=""><span>ミーティングルーム</span></a>
+                <a href="/terms/posse/" class=""><span>POSSE</span></a>
+              </div>
+            </div>
           </div>
         </div>
+        <p class="d-block d-md-none text-center copy-sp en">
+          <a href="https://anti-pattern.co.jp/">&copy; anti-pattern.inc</a>
+        </p>
       </div>
-      <p class="text-center mb-0 copyright">
-        <small class="text-white">2020 &copy; Anti-Pattern Inc.</small>
-      </p>
     </footer>
 
     <!-- Modal -->
