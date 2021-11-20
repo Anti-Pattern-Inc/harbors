@@ -1161,10 +1161,6 @@ footer a:hover {
   overflow: auto;
 }
 
-.plan-category:hover {
-  opacity: 0.8;
-}
-
 .plan-category>a {
   position: absolute;
   top: 0;
