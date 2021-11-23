@@ -119,6 +119,7 @@ $("#inquiryForm").submit(function (event) {
   $("#send_button").prop("disabled", true);
   $(document).ajaxSend(function() {
     $('#send_button').text('送信中です...')
+    $('#send_button').addClass('sending')
   });
   var postUrl =
     "https://script.google.com/macros/s/AKfycbyBxYYU_ntrTNukVViNuQSArkIstKbwmsFGIWZCUYBkmfesMtWRkTnvOEnwM51vMJEZCQ/exec";
@@ -133,6 +134,7 @@ $("#inquiryForm").submit(function (event) {
         $("#reservedErrorMessage").show();
         $("#send_button").prop("disabled", false);
         $('#send_button').text('送信する')
+        $('#send_button').removeClass('sending')
       } else {
         gtag("event", "conversion", {
           event_category: "virtual_office",
@@ -154,8 +156,9 @@ $("#inquiryForm").submit(function (event) {
       }
     })
     .fail(function () {
-      $('#send_button').text('送信する')
       $("#errorMessage").show();
       $("#send_button").prop("disabled", false);
+      $('#send_button').text('送信する')
+      $('#send_button').removeClass('sending')
     });
 });

@@ -3462,6 +3462,14 @@ form span.bg-danger {
   max-width: 550px;
 }
 
+input[name="contact_type"] {
+  cursor: pointer;
+}
+
+.contact-type-label {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 575.98px) {
   .modal-container {
     width: 100%;
@@ -3482,7 +3490,7 @@ form span.bg-danger {
   border: 2px solid #df7156;
 }
 
-.btn-submit:hover {
+.btn-submit:hover, .btn-submit.sending {
   color: #df7156;
   background-color: #fff;
 }
