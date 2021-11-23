@@ -318,63 +318,45 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
 
     </header>
 
-    <div class="jumbotron-fluid position-relative events-top p-0">
-      <div class="filter"></div>
-      <!-- トップ文字 -->
-      <div
+    <div class="fixed-bottom mb-2">
+      <button
+        type="button"
         class="
+          btn btn-warning btn-lg
+          mx-auto
+          nowrap
+          top-button
           text-white
-          position-absolute
-          text-center
-          top-text
-          container-fluid
+          d-block
         "
+        onclick="countClickByGa();"
+        data-toggle="modal"
+        data-target="#inquiryFormModal"
       >
-        <div class="row">
-          <div class="col-lg-12 pt-0 pt-md-4">
-            <h1 class="title_responsive pt-3 contents-title-3">
-              おすすめのエンジニアもくもく会とは？<br>参加時のポイントと注意点を解説
-            </h1>
-          </div>
-        </div>
-      </div>
-      <div class="fixed-bottom mb-2">
-        <button
-          type="button"
-          class="
-            btn btn-warning btn-lg
-            mx-auto
-            nowrap
-            top-button
-            text-white
-            d-block
-          "
-          onclick="countClickByGa();"
-          data-toggle="modal"
-          data-target="#inquiryFormModal"
-        >
-          もっと詳しく知りたい
-        </button>
-      </div>
+        もっと詳しく知りたい
+      </button>
     </div>
 
-    <div class="py-2 contents-main">
+    <section class="contents-main">
       <div class="container">
         <div class="pt-3">
-          <div class="text-center pb-3 w-100">
+          <div class="text-center pt-5">
             <img
               src="/img/engineer_mokumoku1.jpg"
               alt="作業する集団"
               class="card-img"
             >
           </div>
+          <h1 class="contents-title-3 text-center text-dark py-4 mb-0">
+            おすすめのエンジニアもくもく会とは？<br>参加時のポイントと注意点を解説
+          </h1>
           <p class="card-text text-dark">
             もくもく会に参加してみたいけれど、どんなイベントなのかイメージが出来ずに二の足を踏んでいる方も多いと思います。そんなもくもく会と呼ばれるプログラミング勉強会初心者の方に向けてもくもく会に参加する上で知っておきたいポイントなどを紹介します。もくもく会は人脈を作りたい方や、新しい知識を得たい方におすすめのイベントです。既にもくもく会に参加経験がある方にはおすすめのもくもく会の紹介もありますので是非参考にしてください。
           </p>
         </div>
 
         <div class="pt-5">
-          <ul class="table-of-contents">
+          <ul class="table-of-contents border-0">
             <h4 class="text-center font-weight-bold mb-3">目次</h4>
             <li><a href="#p01">もくもく会とは？</a></li>
             <li><a href="#p02">もくもく会に参加するには</a></li>
@@ -933,7 +915,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           </p>
         </div>
       </div>
-    </div>
+    </>
 
     <section>
       <div class="container">
