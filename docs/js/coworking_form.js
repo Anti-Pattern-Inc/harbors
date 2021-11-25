@@ -40,7 +40,7 @@ $("#inquiryForm").submit(function (event) {
   event.preventDefault();
   $("#send_button").prop("disabled", true);
   var postUrl =
-    "https://script.google.com/macros/s/AKfycbyBxYYU_ntrTNukVViNuQSArkIstKbwmsFGIWZCUYBkmfesMtWRkTnvOEnwM51vMJEZCQ/exec";
+    "https://script.google.com/macros/s/AKfycbzkU0OkFb4iDcUn0W5UW4ia_iv4jXDmf6mcUUuKWpCzUrcGhAF-644z8KUwcUfUi6EStQ/exec";
   var postData = $("#inquiryForm").serialize();
   var posting = $.post(postUrl, postData)
     .done(function (data) {
