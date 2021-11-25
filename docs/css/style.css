@@ -1152,10 +1152,6 @@ footer a:hover {
   overflow: auto;
 }
 
-.plan-category:hover {
-  opacity: 0.8;
-}
-
 .plan-category>a {
   position: absolute;
   top: 0;
@@ -1191,7 +1187,7 @@ footer a:hover {
   }
 }
 
-.flow-button, .plan-button {
+.flow-button {
   position: relative;
   background-color: #18325f;
   color: #ffffff;
@@ -1225,7 +1221,7 @@ footer a:hover {
   height: 100%;
 }
 
-.flow-button:hover, .plan-button:hover {
+.flow-button:hover {
   background-color: #fff;
   color: #18325f;
 }
@@ -1753,6 +1749,18 @@ features_of_harbors
   }
 }
 
+@media screen and (max-width: 768px) {
+  .table-scroll table th, .table-scroll table td {
+    font-size: 14px;
+  }
+}
+
+/* OPEN */
+
+.open-img img {
+  border-radius: 1.25rem;
+}
+
 /* COLUMNS */
 
 .coworking-columns {
@@ -2039,10 +2047,7 @@ g-contents
 /* first-view */
 .first-view {
   position: relative;
-}
-
-.first-view {
-  padding: 30px 0;
+  padding: 30px 0 50px;
 }
 
 .first-view-container {
@@ -3403,12 +3408,6 @@ form span.bg-danger {
   margin-bottom: 0;
   line-height: 1.2;
 }
-
-/* 
-.faq-wrapper {
-  max-width: 1080px;
-  margin: 0 auto;
-} */
 
 .question-box {
   align-items: flex-end;

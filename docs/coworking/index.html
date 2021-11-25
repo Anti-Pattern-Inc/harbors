@@ -66,7 +66,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
   </script>
 </head>
 
-<body>
+<body id="top">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFP7GS5" height="0" width="0"
       style="display: none; visibility: hidden"></iframe></noscript>
@@ -193,29 +193,6 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                       <img src="/img/posseLogotouka.png" alt="POSSEのロゴ" width="280" height="auto" class="radius">
                       <span>
                         POSSE
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667"
-                          class="link-icon">
-                          <g id="link-icon" transform="translate(-1154 -5516)">
-                            <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666"
-                              stroke-width="1">
-                              <rect width="10" height="11.667" stroke="none" />
-                              <rect x="0.5" y="0.5" width="9" height="10.667" fill="none" />
-                            </g>
-                            <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666"
-                              stroke-width="1">
-                              <rect width="10" height="11.667" stroke="none" />
-                              <rect x="0.5" y="0.5" width="9" height="10.667" fill="none" />
-                            </g>
-                          </g>
-                        </svg>
-                      </span>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="/extends/">
-                      <img src="/img/extendsLogoTouka.png" alt="extendsのロゴ" width="280" height="auto" class="radius">
-                      <span>
-                        extends
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667"
                           class="link-icon">
                           <g id="link-icon" transform="translate(-1154 -5516)">
@@ -687,31 +664,35 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
 
     <!-- OPEN -->
     <section>
-      <div class="container">
+      <div class="container small-container">
         <h2 class="text-center" id="coworking"><span class="display-3">OPEN</span></h2>
-        <dl class="row pt-5">
-          <dt class="col-sm-4 offset-md-2 py-2">営業日時</dt>
-          <dd class="col-sm-4 py-2">
-            <p class="mb-2">年中無休</p>
-            <p class="mb-0">24時間利用可能</p>
-          </dd>
-          <dt class="col-sm-4 offset-md-2 py-2">ドロップイン可能時間帯</dt>
-          <dd class="col-sm-4 py-2">
-            <p class="mb-2">毎日 10:00-20:00（不定休）</p>
-            <p class="mb-0">
-              ※正月、ゴールデンウィーク等々（<a href="https://twitter.com/harbors_sh?ref_src=twsrc%5Etfw" class="in-page-link"
-                target="_blank">Twitter</a>にて随時案内してますがお問い合わせください）
-            </p>
-          </dd>
-          <dt class="col-sm-4 offset-md-2 py-2">受付対応時間</dt>
-          <dd class="col-sm-4 py-2">
-            <p class="mb-2">平日 10:00〜19:00（祝日を除く）</p>
-            <p class="mb-0">
-              ※正月、ゴールデンウィーク等々（<a href="https://twitter.com/harbors_sh?ref_src=twsrc%5Etfw" class="in-page-link"
-                target="_blank">Twitter</a>にて随時案内してますがお問い合わせください）
-            </p>
-          </dd>
-        </dl>
+
+        <div class="row pt-5">
+          <div class="open-img col-md-6 col-lg-7">
+            <img src="../img/votop-reason4.jpg" alt="コワーキングスペース" class="img-fluid w-100">
+          </div>
+          <div class="col-md-6 col-lg-5 d-flex align-items-center pt-5 pt-md-0 pb-4 pb-md-0 pl-lg-4">
+            <div>
+              <p class="pb-2">
+                <span class="font-weight-bold">営業日時</span><br>
+                年中無休<br>
+                24時間利用可能
+              </p>
+              <p class="py-2">
+                <span class="font-weight-bold">ドロップイン可能時間帯</span><br>
+                毎日 10:00-20:00（不定休）<br>
+                ※正月、ゴールデンウィーク等々（<a href="https://twitter.com/harbors_sh?ref_src=twsrc%5Etfw" class="in-page-link"
+                  target="_blank">Twitter</a>にて随時案内してますがお問い合わせください）
+              </p>
+              <p class="pt-2 mb-0">
+                <span class="font-weight-bold">受付対応時間</span><br>
+                平日 10:00〜19:00（祝日を除く）<br>
+                ※正月、ゴールデンウィーク等々（<a href="https://twitter.com/harbors_sh?ref_src=twsrc%5Etfw" class="in-page-link"
+                  target="_blank">Twitter</a>にて随時案内してますがお問い合わせください）
+              </p>
+            </div>
+          </div>
+        </div>
 
         <!-- <div class="twitter_area pt-4">
             <a
@@ -736,7 +717,6 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
     <section class="bg-light">
       <div class="container">
         <h2 class="text-center"><span class="display-3">PLANS</span></h2>
-        <p class="pt-4 text-center">記載されている料金は全て税込価格です。</p>
 
         <div class="pt-5 table-scroll" id="tableScroll">
           <table class="plan-list table table-bordered table-sm text-center">
@@ -851,23 +831,13 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </tr>
           </table>
         </div>
+        <p class="pt-4 text-center">記載されている料金は全て税込価格です。</p>
 
-        <div class="row pt-5">
+        <div class="row pt-5 pb-3">
           <div class="col-md-6 offset-md-3">
-            <div class="text-center py-3 plan-button">
+            <div class="plan-button text-center py-3 btn btn-outline-secondary w-100 position-relative">
               <h3 class="mb-0 py-2 text-center plan-button-sentence">コワーキングプラン詳細</h3>
               <a href="/plans/"></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="row pt-4">
-          <div class="col-md-6 offset-md-3">
-            <div class="text-center py-3 plan-button">
-              <h3 class="mb-0 py-2 text-center plan-button-sentence">
-                <nobr>メンターサービス <wbr >extends詳細</nobr>
-              </h3>
-              <a href="/extends/" target="_blank"></a>
             </div>
           </div>
         </div>
@@ -1028,6 +998,16 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               role="button">
               <p class="coworking-columns d-flex align-items-center mb-0 text-center mx-auto">
                 駅近でドロップインができるコワーキングスペース特集
+              </p>
+              <span class="float-right column-span d-flex align-items-center ml-1 ml-sm-2">&gt;</span>
+            </a>
+          </li>
+          <li>
+            <a href="/coworking/coworking_dropin_allday/"
+              class="btn btn-outline-secondary px-2 px-sm-3 py-3 mb-4 d-flex w-100 justify-content-between"
+              role="button">
+              <p class="coworking-columns d-flex align-items-center mb-0 text-center mx-auto">
+                ドロップインで1日利用できるコワーキングスペース10選 
               </p>
               <span class="float-right column-span d-flex align-items-center ml-1 ml-sm-2">&gt;</span>
             </a>
