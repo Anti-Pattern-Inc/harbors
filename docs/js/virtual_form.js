@@ -121,7 +121,7 @@ $("#inquiryForm").submit(function (event) {
     $('#send_button').text('送信中です...')
   });
   var postUrl =
-    "https://script.google.com/macros/s/AKfycbyBxYYU_ntrTNukVViNuQSArkIstKbwmsFGIWZCUYBkmfesMtWRkTnvOEnwM51vMJEZCQ/exec";
+    "https://script.google.com/macros/s/AKfycbzkU0OkFb4iDcUn0W5UW4ia_iv4jXDmf6mcUUuKWpCzUrcGhAF-644z8KUwcUfUi6EStQ/exec";
   var postData = $("#inquiryForm").serialize();
   $.ajax({
     type: 'POST',
