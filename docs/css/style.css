@@ -61,16 +61,7 @@ a:hover {
   overflow: hidden;
 }
 
-.right-container {
-  max-width: calc((100vw + 1100px) / 2);
-  padding-left: 10px;
-  margin: 0 0 0 auto;
-}
-
 @media screen and (max-width: 767.8px) {
-  .right-container {
-    max-width: calc((100vw + 354px) / 2);
-  }
   .section-heading {
     font-size: 1.0rem;
     line-height: 1.8;
@@ -1796,33 +1787,13 @@ h2.top {
   padding-top: 120px;
 }
 
-.rooms-main .container, .rooms-footer .container {
-  max-width: 1100px;
-  padding: 0 10px;
-  margin: 0 auto;
-}
-
 #header.rooms-header {
   height: auto;
   padding-top: 0;
 }
 
-.rooms-header .header-container {
-  max-width: 1100px;
-  padding: 0 10px;
-}
-
 .rooms-header .h-tit {
   color: #a9a9a9;
-  max-width: 1100px;
-  padding: 0 10px;
-  margin: .5rem auto;
-}
-
-.rooms-header .breadcrumb {
-  max-width: 1100px;
-  padding: 0 10px;
-  margin: 0 auto;
 }
 
 .rooms-title {
@@ -1899,6 +1870,9 @@ h2.top {
 }
 
 @media screen and (max-width: 1224px) {
+  .rooms-main .container, .rooms-footer .container {
+    padding: 0 10px;
+  }
   .rooms-title {
     margin: 18px 0;
     font-size: 34px;
@@ -1924,6 +1898,9 @@ h2.top {
   }
   .rooms-description {
     margin-bottom: 40px;
+  }
+  .rooms-list-center {
+    border: none;
   }
 }
 
@@ -2076,6 +2053,7 @@ g-contents
 .first-view-container {
   max-width: calc((100vw + 1140px) / 2);
   margin: 0 0 0 auto;
+  padding-left: 15px;
 }
 
 .first-view-left {
@@ -2990,10 +2968,6 @@ form span.bg-danger {
 }
 
 @media screen and (max-width: 767.8px) {
-  .right-container {
-    max-width: 100%;
-    padding-left: 0;
-  }
   .first-view-right img {
     max-width: calc((100vw + 354px) / 2);
     display: block;
@@ -3487,6 +3461,14 @@ form span.bg-danger {
   max-width: 550px;
 }
 
+input[name="contact_type"] {
+  cursor: pointer;
+}
+
+.contact-type-label {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 575.98px) {
   .modal-container {
     width: 100%;
@@ -3507,7 +3489,7 @@ form span.bg-danger {
   border: 2px solid #df7156;
 }
 
-.btn-submit:hover {
+.btn-submit:hover, .btn-submit.sending {
   color: #df7156;
   background-color: #fff;
 }

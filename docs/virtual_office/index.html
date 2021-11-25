@@ -273,24 +273,9 @@
       <!-- トップ画像 -->
       <section class="first-view virtual-first-view">
         <div class="first-view-bg"></div>
-        <div class="first-view-container right-container">
+        <div class="first-view-container">
           <div class="d-md-flex flex-row-reverse justify-content-between align-items-center">
             <div class="first-view-right">
-              <!-- <img
-              src="/img/votop-fv.jpg"
-              alt="HarborS 表参道の会議室の外観"
-              width="100%"
-              height="auto"
-              loading="lazy"
-              class="d-none"
-              >
-              <img
-              src="/img/votop-fv-2x.jpg"
-              alt="HarborS 表参道の会議室の外観"
-              width="100%"
-              height="auto"
-              loading="lazy"
-              > -->
               <picture>
                 <source 
                 srcset="/img/votop-fv-3x.jpg" 
@@ -1694,44 +1679,34 @@
                 <div>
                   <div class="row">
                     <div class="col-sm-6">
-                      <input type="radio" id="contact_type1" name="contact_type" value="1" required>
-                      <label for="contact_type1">
+                      <label for="contact_type1" class="contact-type-label">
+                        <input type="radio" id="contact_type1" name="contact_type" value="1" required>
                         オンライン説明会を予約したい
-                      </label>
+                      </input>
                     </div>
                     <div class="col-sm-6">
-                      <input type="radio" id="contact_type2" name="contact_type" value="2">
-                      <label for="contact_type2">
+                      <label for="contact_type2" class="contact-type-label">
+                        <input type="radio" id="contact_type2" name="contact_type" value="2">
                         現地の見学説明会を予約したい
-                      </label>
+                      </input>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
-                      <input type="radio" id="contact_type3" name="contact_type" value="3">
-                      <label for="contact_type3" class="mb-sm-0">
+                      <label for="contact_type3" class="contact-type-label mb-sm-0">
+                        <input type="radio" id="contact_type3" name="contact_type" value="3">
                         資料を送付してほしい
-                      </label>
+                      </input>
                     </div>
                     <div class="col-sm-6">
-                      <input type="radio" id="contact_type4" name="contact_type" value="4">
-                      <label for="contact_type4" class="mb-sm-0">
+                      <label for="contact_type4" class="contact-type-label mb-sm-0">
+                        <input type="radio" id="contact_type4" name="contact_type" value="4">
                         その他お問い合わせ
-                      </label>
+                      </input>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- <div class="form-group">
-                <label for="">お問い合わせ目的</label
-                ><span class="text-danger">*</span>
-                <select class="form-control" name="contact_type" required>
-                  <option></option>
-                  <option value="1">オンライン説明会を予約したい</option>
-                  <option value="2">現地の見学説明会を予約したい</option>
-                  <option value="3">資料を送付してほしい</option>
-                </select>
-              </div> -->
               <div
                 class="form-group"
                 id="form_preferred_visit_date"
