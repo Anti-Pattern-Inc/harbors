@@ -5,11 +5,11 @@ $(function () {
       if ($('.hovered')) {
         closeSpeechBubble()
       }
-      var speechBubble = $(this).next();
+      let speechBubble = $(this).next();
       $(this).addClass('hovered');
       speechBubble.addClass('hovered');
-      transparentAreaWidth = speechBubble.outerWidth();
-      transparentAreaHeight = 35;
+      let transparentAreaWidth = speechBubble.outerWidth();
+      let transparentAreaHeight = 35;
       $(this).before('<div class="transparent-area hovered"></div>');
       $('.transparent-area').offset({
         top: speechBubble.offset().top - 35,
@@ -41,11 +41,11 @@ $(function () {
       if ($('.hovered')) {
         closeSpeechBubble()
       }
-      var speechBubble = $(this).next();
+      let speechBubble = $(this).next();
       $(this).addClass('hovered');
       speechBubble.addClass('hovered');
-      transparentAreaWidth = speechBubble.outerWidth();
-      transparentAreaHeight = 42;
+      let transparentAreaWidth = speechBubble.outerWidth();
+      let transparentAreaHeight = 42;
       $(this).before('<div class="transparent-area hovered"></div>');
       $('.transparent-area').offset({
         top: speechBubble.offset().top + speechBubble.outerHeight(),
@@ -78,7 +78,7 @@ $(function () {
       
   // ハンバーガー
   $('.nav-toggle').click(function () {
-    var deviceWidth = $('html').width();
+    let deviceWidth = $('html').width();
     $('.nav-toggle').toggleClass('cross');
     $('.nav-menu').toggleClass('open');
     $("html").toggleClass("no-scroll");
@@ -92,5 +92,16 @@ $(function () {
         left: deviceWidth
       }, 500);
     }
+  });
+
+  $('.nav-hover').click(
+    function() {
+      let deviceWidth = $('html').width();
+      $("html").removeClass("no-scroll");
+      $('.nav-toggle').removeClass('cross');
+      $('.nav-menu').removeClass('open');
+      $('.nav-menu').stop().animate({
+        left: deviceWidth
+      }, 500);
   });
 });

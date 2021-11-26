@@ -835,7 +835,7 @@ footer a:hover {
   display: none;
   opacity: 0;
   top: 255px;
-  right: 280px;
+  right: 440px;
   border-right: 25px solid transparent;
   border-top: 25px solid #FFF;
   border-left: 25px solid transparent;
@@ -847,7 +847,7 @@ footer a:hover {
   display: none;
   opacity: 0;
   top: 255px;
-  right: 145px;
+  right: 310px;
   border-right: 25px solid transparent;
   border-top: 25px solid #FFF;
   border-left: 25px solid transparent;
@@ -869,14 +869,14 @@ footer a:hover {
   animation-name: fade-in;
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1199.8px) {
   .triangle-3::before {
     top: 255px;
-    right: 230px;
+    right: 300px;
   }
   .triangle-4::before {
     top: 255px;
-    right: 95px;
+    right: 200px;
   }
 }
 
@@ -913,7 +913,7 @@ footer a:hover {
     right: 300px;
   }
   .triangle-4::before {
-    top: 475px;
+    top: 280px;
     right: 170px;
   }
 }
@@ -924,8 +924,8 @@ footer a:hover {
     right: 220px;
   }
   .triangle-4::before {
-    top: 475px;
-    right: 90px;
+    top: 280px;
+    right: 120px;
   }
 }
 
@@ -1699,6 +1699,10 @@ features_of_harbors
 
 .coworking-service-text {
   width: 80%;
+}
+
+.coworking-footer-container {
+  overflow: visible;
 }
 
 /* コワーキングプラン ヒント */
