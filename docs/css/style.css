@@ -853,6 +853,30 @@ footer a:hover {
   border-left: 25px solid transparent;
 }
 
+.triangle-5::before {
+  content: "";
+  position: absolute;
+  display: none;
+  opacity: 0;
+  top: 255px;
+  right: 280px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #FFF;
+  border-left: 25px solid transparent;
+}
+
+.triangle-6::before {
+  content: "";
+  position: absolute;
+  display: none;
+  opacity: 0;
+  top: 255px;
+  right: 145px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #FFF;
+  border-left: 25px solid transparent;
+}
+
 .footer-speech-bubble.hovered::before {
   display: block;
   opacity: 1;
@@ -877,6 +901,14 @@ footer a:hover {
   .triangle-4::before {
     top: 255px;
     right: 200px;
+  }
+  .triangle-5::before {
+    top: 255px;
+    right: 230px;
+  }
+  .triangle-6::before {
+    top: 255px;
+    right: 95px;
   }
 }
 
@@ -916,6 +948,14 @@ footer a:hover {
     top: 280px;
     right: 170px;
   }
+  .triangle-5::before {
+    top: 475px;
+    right: 150px;
+  }
+  .triangle-6::before {
+    top: 255px;
+    right: 45px;
+  }
 }
 
 @media screen and (max-width: 895px) {
@@ -926,6 +966,14 @@ footer a:hover {
   .triangle-4::before {
     top: 280px;
     right: 120px;
+  }
+  .triangle-5::before {
+    top: 475px;
+    right: 170px;
+  }
+  .triangle-6::before {
+    top: 255px;
+    right: 45px;
   }
 }
 
@@ -1030,6 +1078,9 @@ footer a:hover {
   .footer-speech-bubble .link-icon g {
     fill: #000;
     stroke: #FFF;
+  }
+  .footer-speech-bubble.hovered::before {
+    display: none;
   }
 }
 
