@@ -1408,20 +1408,14 @@ footer a:hover {
   }
 
   .triangle-4::before {
-    top: 475px;
+    top: 280px;
     right: 170px;
   }
 }
 
 @media screen and (max-width: 895px) {
-  .triangle-3::before {
-    top: 475px;
-    right: 220px;
-  }
-
-  .triangle-4::before {
-    top: 282px;
-    right: 90px;
+  .footer-speech-bubble.hovered::before {
+    display: none;
   }
 }
 
