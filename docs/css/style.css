@@ -835,13 +835,37 @@ footer a:hover {
   display: none;
   opacity: 0;
   top: 255px;
-  right: 280px;
+  right: 440px;
   border-right: 25px solid transparent;
   border-top: 25px solid #FFF;
   border-left: 25px solid transparent;
 }
 
 .triangle-4::before {
+  content: "";
+  position: absolute;
+  display: none;
+  opacity: 0;
+  top: 255px;
+  right: 310px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #FFF;
+  border-left: 25px solid transparent;
+}
+
+.triangle-5::before {
+  content: "";
+  position: absolute;
+  display: none;
+  opacity: 0;
+  top: 255px;
+  right: 280px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #FFF;
+  border-left: 25px solid transparent;
+}
+
+.triangle-6::before {
   content: "";
   position: absolute;
   display: none;
@@ -869,12 +893,20 @@ footer a:hover {
   animation-name: fade-in;
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1199.8px) {
   .triangle-3::before {
+    top: 255px;
+    right: 300px;
+  }
+  .triangle-4::before {
+    top: 255px;
+    right: 200px;
+  }
+  .triangle-5::before {
     top: 255px;
     right: 230px;
   }
-  .triangle-4::before {
+  .triangle-6::before {
     top: 255px;
     right: 95px;
   }
@@ -913,8 +945,16 @@ footer a:hover {
     right: 300px;
   }
   .triangle-4::before {
-    top: 475px;
+    top: 280px;
     right: 170px;
+  }
+  .triangle-5::before {
+    top: 475px;
+    right: 150px;
+  }
+  .triangle-6::before {
+    top: 255px;
+    right: 45px;
   }
 }
 
@@ -924,8 +964,16 @@ footer a:hover {
     right: 220px;
   }
   .triangle-4::before {
+    top: 280px;
+    right: 120px;
+  }
+  .triangle-5::before {
     top: 475px;
-    right: 90px;
+    right: 170px;
+  }
+  .triangle-6::before {
+    top: 255px;
+    right: 45px;
   }
 }
 
@@ -1030,6 +1078,9 @@ footer a:hover {
   .footer-speech-bubble .link-icon g {
     fill: #000;
     stroke: #FFF;
+  }
+  .footer-speech-bubble.hovered::before {
+    display: none;
   }
 }
 
@@ -1699,6 +1750,10 @@ features_of_harbors
 
 .coworking-service-text {
   width: 80%;
+}
+
+.coworking-footer-container {
+  overflow: visible;
 }
 
 /* コワーキングプラン ヒント */
