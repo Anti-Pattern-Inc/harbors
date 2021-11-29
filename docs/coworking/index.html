@@ -1281,38 +1281,96 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       var events_html = "";
       $.ajax({
         type: "GET",
-        url: "https://script.google.com/macros/s/AKfycbwbHBUZYsGi0DlbRGVJGa9iQNKVoDqRgFxMVcNLZ6KeHZhmIYU/exec",
+        url: "https://script.google.com/macros/s/AKfycbwbHBUZYsGi0DlbRGVJGa9iQNKVoDqRgFxMVcNLZ6KeHZhmIYU/exec?jsonp=jsondata",
         dataType: "jsonp",
-        jsonpCallback: "jsondata",
-        success: function (json) {
-          if (json.length) {
-            for (var i = 0; i < 3; i++) {
+        jsonpCallback: "jsondata"
+      })
+        .done(function (json) {
+          switch(json.length) {
+            case 2:
+              for (let i = 0; i < 2; i++) {
+                events_html +=
+                  '<div class="col-md-6 mb-4 event-card">' +
+                  '<a href="' +
+                  json[i].detail_url +
+                  '" target="_blank">' +
+                  '<div class="card text-white h-100">' +
+                  '<img class="event-card-img my-auto" loading="lazy" src="' +
+                  json[i].img_url +
+                  '">' +
+                  '<div class="card-img-overlay card-event-title">' +
+                  '<h4 class="event-card-title card-title">' +
+                  json[i].title +
+                  "</h4>" +
+                  '<p class="card-text">' +
+                  json[i].date +
+                  "</p>" +
+                  "</div>" +
+                  "</div>" +
+                  "</a>" +
+                  "</div>";
+              }
+              console.log('case 2')
+              break;
+            case 1:
               events_html +=
-                '<div class="col-md-4 mb-4 event-card">' +
-                '<div class="card text-white">' +
-                '<img class="card-img event-card-img" loading="lazy" src="' +
-                json[i].img_url +
+                '<div class="offset-md-4 col-md-4 mb-4 event-card">' +
+                '<a href="' +
+                json[0].detail_url +
+                '" target="_blank">' +
+                '<div class="card text-white h-100">' +
+                '<img class="event-card-img my-auto" loading="lazy" src="' +
+                json[0].img_url +
                 '">' +
                 '<div class="card-img-overlay card-event-title">' +
                 '<h4 class="event-card-title card-title">' +
-                json[i].title +
+                json[0].title +
                 "</h4>" +
                 '<p class="card-text">' +
-                json[i].date +
+                json[0].date +
                 "</p>" +
                 "</div>" +
                 "</div>" +
+                "</a>" +
                 "</div>";
-            }
-            $("#events").append(events_html);
-            resizeImg();
+              break;
+            case 0:
+              events_html += 
+                '<div class="col-md-12"><p class="text-center mb-0">現在開催予定のイベントはありません。</p></div>';
+              break;
+            default:
+              for (var i = 0; i < 3; i++) {
+                events_html +=
+                  '<div class="col-md-4 mb-4 event-card">' +
+                  '<a href="' +
+                  json[i].detail_url +
+                  '" target="_blank">' +
+                  '<div class="card text-white h-100">' +
+                  '<img class="event-card-img my-auto" loading="lazy" src="' +
+                  json[i].img_url +
+                  '">' +
+                  '<div class="card-img-overlay card-event-title">' +
+                  '<h4 class="event-card-title card-title">' +
+                  json[i].title +
+                  "</h4>" +
+                  '<p class="card-text">' +
+                  json[i].date +
+                  "</p>" +
+                  "</div>" +
+                  "</div>" +
+                  "</a>" +
+                  "</div>";
+              }
+              break;
           }
-        },
-      }).fail(function () {
-        $("#events").append(
-          '<div class="col-md-12"><p class="text-center">ページが取得できませんでした。時間をおいてご確認ください。</p></div>'
-        );
-      });
+          $("#events").append(events_html);
+          resizeImg();
+        })
+        .fail(function () {
+          $("#events").append(
+            '<div class="col-md-12"><p class="text-center">ページが取得できませんでした。時間をおいてご確認ください。</p></div>'
+          );
+        });
     });
     $(function () {
       resizeYoutube();
@@ -1325,7 +1383,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       if ($(".event-card")[0]) {
         var width = $(".event-card")[0].clientWidth;
         var height = (width * 2) / 3;
-        $(".event-card-img").css("height", height + "px");
+        $(".event-card").css("height", height + "px");
       }
     }
     function resizeYoutube() {

@@ -1122,6 +1122,12 @@ footer a:hover {
   object-fit: cover;
 }
 
+@media screen and (max-width: 767.98px) {
+  .event-card-img {
+    height: 100%;
+  }
+}
+
 .event-card-title {
   max-height: 84px;
   overflow: hidden;
