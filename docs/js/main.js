@@ -106,4 +106,51 @@ $(function () {
         left: deviceWidth
       }, 500);
   });
+
+  // スムーススクロール
+  function smoothScroll(_this) {
+    let href = $(_this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    let position = target.offset().top - 20;
+    $("html, body").animate({ scrollTop: position }, 500, "swing");
+    return false;
+  }
+  $('a[href^="#"]').not(".dropdown-toggle,[data-toggle='modal'],[data-toggle='collapse'],[data-toggle='tab']").on('click', function () {
+    smoothScroll(this);
+  });
+
+  // 下スクロールでheaderを非表示
+  let startPosition = 0;
+  let scrollPosition = 0;
+  if ($('.top-image').length == 0) {
+    // ".top-image"がないとき
+    $(window).on('scroll', function () {
+      scrollPosition = $(this).scrollTop();
+      if (scrollPosition >= 170) {
+        if (scrollPosition >= startPosition) {
+          $('#header').addClass('hide');
+        } else {
+          $('#header').removeClass('hide');
+        }
+      }
+      startPosition = scrollPosition;
+    })
+  } else {
+    // ".top-image"があるとき
+    let topImageHeight = $('.top-image').height();
+    $(window).on('scroll', function () {
+      scrollPosition = $(this).scrollTop();
+      if (scrollPosition >= topImageHeight) {
+        $('#header').addClass('white-bg');
+        if (scrollPosition >= startPosition) {
+          $('#header').addClass('hide');
+        } else {
+          $('#header').removeClass('hide');
+        }
+      } else {
+        $('#header').removeClass('white-bg');
+      }
+      startPosition = scrollPosition;
+    })
+  }
 });
