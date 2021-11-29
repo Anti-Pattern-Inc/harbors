@@ -54,7 +54,6 @@
       as="style"
     >
     <link rel="stylesheet" rel="preload" href="/css/style.css" as="style">
-    <link rel="stylesheet" rel="preload" href="/css/second_view.css" as="style">
     <link
       rel="stylesheet"
       rel="preload"
@@ -272,26 +271,11 @@
 
     <main class="virtual-top">
       <!-- トップ画像 -->
-      <section class="second-view virtual-second-view">
-        <div class="second-view-bg"></div>
-        <div class="second-view-container right-container">
+      <section class="first-view virtual-first-view">
+        <div class="first-view-bg"></div>
+        <div class="first-view-container">
           <div class="d-md-flex flex-row-reverse justify-content-between align-items-center">
-            <div class="second-view-right">
-              <!-- <img
-              src="/img/votop-fv.jpg"
-              alt="HarborS 表参道の会議室の外観"
-              width="100%"
-              height="auto"
-              loading="lazy"
-              class="d-none"
-              >
-              <img
-              src="/img/votop-fv-2x.jpg"
-              alt="HarborS 表参道の会議室の外観"
-              width="100%"
-              height="auto"
-              loading="lazy"
-              > -->
+            <div class="first-view-right">
               <picture>
                 <source 
                 srcset="/img/votop-fv-3x.jpg" 
@@ -310,8 +294,8 @@
                 ><!-- 1200px以上で表示する画像 -->
               </picture>
             </div>
-            <div class="second-view-left mx-auto mx-md-0">
-              <h1 class="second-view-title ja">
+            <div class="first-view-left mx-auto mx-md-0">
+              <h1 class="first-view-title ja">
                 <span class="golden-text">
                   HarborS 表参道 | 港区青山のバーチャルオフィス
                 </span><br>
@@ -333,7 +317,7 @@
                   無料で相談してみる
                 </button>
               </div>
-              <p class="mt-3 text-center second-view-description">オンライン説明会も実施しております。</p>
+              <p class="mt-3 text-center first-view-description">オンライン説明会も実施しております。</p>
             </div>
             
           </div>
@@ -1615,7 +1599,7 @@
                   </svg>
                 </a>
                 <br class="d-block d-md-none">
-                <a href="https://sky-terrace.anti-pattern.co.jp/" class="">
+                <a href="https://sky-terrace.anti-pattern.co.jp/" target="_blank" class="">
                   スカイテラス表参道
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon d-inline d-md-none">
                     <g id="link-icon" transform="translate(-1154 -5516)">
@@ -1695,44 +1679,34 @@
                 <div>
                   <div class="row">
                     <div class="col-sm-6">
-                      <input type="radio" id="contact_type1" name="contact_type" value="1" required>
-                      <label for="contact_type1">
+                      <label for="contact_type1" class="contact-type-label">
+                        <input type="radio" id="contact_type1" name="contact_type" value="1" required>
                         オンライン説明会を予約したい
-                      </label>
+                      </input>
                     </div>
                     <div class="col-sm-6">
-                      <input type="radio" id="contact_type2" name="contact_type" value="2">
-                      <label for="contact_type2">
+                      <label for="contact_type2" class="contact-type-label">
+                        <input type="radio" id="contact_type2" name="contact_type" value="2">
                         現地の見学説明会を予約したい
-                      </label>
+                      </input>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
-                      <input type="radio" id="contact_type3" name="contact_type" value="3">
-                      <label for="contact_type3" class="mb-sm-0">
+                      <label for="contact_type3" class="contact-type-label mb-sm-0">
+                        <input type="radio" id="contact_type3" name="contact_type" value="3">
                         資料を送付してほしい
-                      </label>
+                      </input>
                     </div>
                     <div class="col-sm-6">
-                      <input type="radio" id="contact_type4" name="contact_type" value="4">
-                      <label for="contact_type4" class="mb-sm-0">
+                      <label for="contact_type4" class="contact-type-label mb-sm-0">
+                        <input type="radio" id="contact_type4" name="contact_type" value="4">
                         その他お問い合わせ
-                      </label>
+                      </input>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- <div class="form-group">
-                <label for="">お問い合わせ目的</label
-                ><span class="text-danger">*</span>
-                <select class="form-control" name="contact_type" required>
-                  <option></option>
-                  <option value="1">オンライン説明会を予約したい</option>
-                  <option value="2">現地の見学説明会を予約したい</option>
-                  <option value="3">資料を送付してほしい</option>
-                </select>
-              </div> -->
               <div
                 class="form-group"
                 id="form_preferred_visit_date"
@@ -1915,9 +1889,8 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"
     ></script>
-    <script src="/js/common.js"></script>
     <script src="/js/virtual_form.js"></script>
-    <script src="/js/header.js"></script>
+    <script src="/js/main.js"></script>
 
     <script>
       $(function () {

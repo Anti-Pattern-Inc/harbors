@@ -178,7 +178,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 <div class="speech-bubble triangle-1">
                   <div class="d-flex d-md-block d-xl-flex justify-content-between">
                     <div class="mr-0 mr-xl-5 mb-0 mb-md-4 mb-xl-0">
-                      <a href="https://sky-terrace.anti-pattern.co.jp/">
+                      <a href="https://sky-terrace.anti-pattern.co.jp/" target="_blank">
                         <img src="/img/rental_space.jpg" alt="HarborS 表参道のテラス" class="radius">
                         <span>
                           スカイテラス表参道
@@ -806,7 +806,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                   </svg>
                 </a>
                 <br class="d-block d-md-none">
-                <a href="https://sky-terrace.anti-pattern.co.jp/" class="">
+                <a href="https://sky-terrace.anti-pattern.co.jp/" target="_blank" class="">
                   スカイテラス表参道
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon d-inline d-md-none">
                     <g id="link-icon" transform="translate(-1154 -5516)">
@@ -886,44 +886,34 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 <div>
                   <div class="row">
                     <div class="col-sm-6">
-                      <input type="radio" id="contact_type1" name="contact_type" value="1" required>
-                      <label for="contact_type1">
+                      <label for="contact_type1" class="contact-type-label">
+                        <input type="radio" id="contact_type1" name="contact_type" value="1" required>
                         オンライン説明会を予約したい
                       </label>
                     </div>
                     <div class="col-sm-6">
-                      <input type="radio" id="contact_type2" name="contact_type" value="2">
-                      <label for="contact_type2">
+                      <label for="contact_type2" class="contact-type-label">
+                        <input type="radio" id="contact_type2" name="contact_type" value="2">
                         現地の見学説明会を予約したい
                       </label>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
-                      <input type="radio" id="contact_type3" name="contact_type" value="3">
-                      <label for="contact_type3" class="mb-sm-0">
+                      <label for="contact_type3" class="contact-type-label mb-sm-0">
+                        <input type="radio" id="contact_type3" name="contact_type" value="3">
                         資料を送付してほしい
                       </label>
                     </div>
                     <div class="col-sm-6">
-                      <input type="radio" id="contact_type4" name="contact_type" value="4">
-                      <label for="contact_type4" class="mb-sm-0">
+                      <label for="contact_type4" class="contact-type-label mb-sm-0">
+                        <input type="radio" id="contact_type4" name="contact_type" value="4">
                         その他お問い合わせ
                       </label>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- <div class="form-group">
-                <label for="">お問い合わせ目的</label
-                ><span class="text-danger">*</span>
-                <select class="form-control" name="contact_type" required>
-                  <option></option>
-                  <option value="1">オンライン説明会を予約したい</option>
-                  <option value="2">現地の見学説明会を予約したい</option>
-                  <option value="3">資料を送付してほしい</option>
-                </select>
-              </div> -->
               <div
                 class="form-group"
                 id="form_preferred_visit_date"
@@ -1100,9 +1090,8 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"
     ></script>
-    <script src="/js/common.js"></script>
     <script src="/js/virtual_form.js"></script>
-    <script src="/js/header.js"></script>
+    <script src="/js/main.js"></script>
     <script>
       var formBtn = $(".virtual-form-btn");
       var footerPos = $('footer').offset().top;

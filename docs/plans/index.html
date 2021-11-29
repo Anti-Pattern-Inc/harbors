@@ -201,7 +201,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 <div class="speech-bubble triangle-2">
                   <div class="d-flex d-md-block d-xl-flex justify-content-between">
                     <div class="mr-0 mr-xl-5 mb-0 mb-md-4 mb-xl-0">
-                      <a href="https://posse.anti-pattern.co.jp/">
+                      <a href="https://posse-ap.com/" target="_blank">
                         <img src="/img/posseLogotouka.png" alt="POSSEのロゴ" width="280" height="auto" class="radius">
                         <span>
                           POSSE
@@ -220,26 +220,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                         </span>
                       </a>
                     </div>
-                    <div>
-                      <a href="/extends/">
-                        <img src="/img/extendsLogoTouka.png" alt="extendsのロゴ" width="280" height="auto" class="radius">
-                        <span>
-                          extends
-                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon">
-                            <g id="link-icon" transform="translate(-1154 -5516)">
-                              <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
-                                <rect width="10" height="11.667" stroke="none"/>
-                                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-                              </g>
-                              <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
-                                <rect width="10" height="11.667" stroke="none"/>
-                                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-                              </g>
-                            </g>
-                          </svg>
-                        </span>
-                      </a>
-                    </div>
+
                   </div>
                 </div>
               </li>
@@ -248,7 +229,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 <div class="speech-bubble triangle-1">
                   <div class="d-flex d-md-block d-xl-flex justify-content-between">
                     <div class="mr-0 mr-xl-5 mb-0 mb-md-4 mb-xl-0">
-                      <a href="https://sky-terrace.anti-pattern.co.jp/">
+                      <a href="https://sky-terrace.anti-pattern.co.jp/" target="_blank">
                         <img src="/img/rental_space.jpg" alt="HarborS 表参道のテラス" class="radius">
                         <span>
                           スカイテラス表参道
@@ -339,157 +320,52 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           </nav>
         </div>
       </div>
-
-      <!-- パンくずリスト -->
-      <div class="breadcrumb d-none d-md-block bg-transparent pt-2 pb-0">
-        <ol
-          itemscope
-          itemtype="https://schema.org/BreadcrumbList"
-          class="p-0 mb-0"
-        >
-          <li
-            itemprop="itemListElement"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-          >
-            <a itemprop="item" href="/coworking/" class="text-muted">
-              <span itemprop="name">コワーキングスペースTOP</span>
-            </a>
-            <meta itemprop="position" content="1">
-          </li>
-
-          <li
-            itemprop="itemListElement"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            class="breadcrumb-last"
-          >
-            <a
-              itemprop="item"
-              class="d-inline-block mb-0 disabled"
-              tabindex="-1"
-            >
-              <span itemprop="name">料金プラン</span>
-            </a>
-            <meta itemprop="position" content="2">
-          </li>
-        </ol>
-      </div>
     </header>
 
-    <div class="jumbotron-fluid position-relative events-top p-0">
-      <div class="filter"></div>
-      <!-- トップ文字 -->
-      <div
+    <div class="fixed-bottom mb-2">
+      <button
+        type="button"
         class="
+          btn btn-warning btn-lg
+          mx-auto
+          nowrap
           text-white
-          position-absolute
-          text-center
-          top-text
-          container-fluid
+          top-button
+          d-block
         "
+        onclick="countClickByGa();"
+        data-toggle="modal"
+        data-target="#inquiryFormModal"
       >
-        <div class="row">
-          <div class="col-lg-12 pt-md-5">
-            <h1 class="contents-title-2">
-              利用目的別<br class="d-block d-md-none">料金プラン一覧
+        もっと詳しく知りたい
+      </button>
+    </div>
+
+    <section class="contents-main pb-3">
+      <div class="container">
+        <div class="pt-3">
+          <div class="pt-5 text-center">
+            <h1 class="contents-title-2 text-center">
+              利用目的別<br class="d-md-none">料金プラン一覧
             </h1>
           </div>
         </div>
       </div>
-      <div class="fixed-bottom mb-2">
-        <button
-          type="button"
-          class="
-            btn btn-warning btn-lg
-            mx-auto
-            nowrap
-            text-white
-            top-button
-            d-block
-          "
-          onclick="countClickByGa();"
-          data-toggle="modal"
-          data-target="#inquiryFormModal"
-        >
-          もっと詳しく知りたい
-        </button>
-      </div>
-    </div>
+    </section>
 
     <!-- プラン -->
-    <div class="py-5">
+    <section class="pt-3">
       <div class="container">
         <p class="text-center mb-5">
           多種多様なプランをご用意しており、ご利用者様のニーズに合わせてご利用できます<br><br>
           記載されている料金は全て税込価格です。
         </p>
-        <h5 class="plan-category">
-          <a
-            class="d-flex align-items-center collapse"
-            data-toggle="collapse"
-            href="#collapse1"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-          ></a>
-          <div class="plans-category-name">
-            独学が大変！メンターが欲しい駆け出しエンジニア向け
-          </div>
-          <div class="plans-open-icon">
-            <i class="fas fa-angle-right" style="text-align: right"></i>
-          </div>
+        <h5 class="title-level1 text-center h2_title mb-4">
+          自分にあった時間に限定してお得に使いたい人向け
         </h5>
-        <div class="row collapse" id="collapse1">
-          <div class="col-md-12 d-flex">
-            <div class="card mb-4 border">
-              <div class="card-body">
-                <h3 class="card-title">メンター付きプラン(完全オンライン)</h3>
-                <p class="card-text mb-lg-4">
-                  プログラミング初学者に対して現役エンジニアがメンターとなり学習を併走するプランです。
-                  まず最初に、カウンセリングをさせて頂き、学習プランを一緒に立てます。
-                  その後、指定のチャットツールやオンラインMTGにて事前予約制で質問をすることも可能となります。<br>
-                  完全オンラインなので、スペースをご利用いただく場合は、ドロップインの料金が必要となります。
-                </p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">料金：32,780〜円／月</li>
-                <li class="list-group-item">利用可能時間帯：利用なし</li>
-                <li class="list-group-item">利用時間制限：なし</li>
-                <li class="list-group-item">超過料金：なし</li>
-                <li class="list-group-item">入会金：11,000円</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col col-md-10 offset-md-1">
-            <button
-              type="button"
-              class="btn-lg btn-block btn-info border-info pt-3 pb-3 mt-3 mb-3"
-              onclick="window.open('/extends/', '_blank');"
-            >
-              <nobr>メンターサービス <wbr >extends詳細</nobr>
-            </button>
-          </div>
-        </div>
-        <h5 class="plan-category">
-          <a
-            class="d-flex align-items-center collapse"
-            data-toggle="collapse"
-            href="#collapse2"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-          ></a>
-          <div class="plans-category-name">
-            自分にあった時間に限定してお得に使いたい人向け
-          </div>
-          <div class="plans-open-icon">
-            <i class="fas fa-angle-right" style="text-align: right"></i>
-          </div>
-        </h5>
-        <div class="row collapse" id="collapse2">
+        <div class="row" id="collapse2">
           <div class="col-md-4 d-flex">
-            <div class="card mb-4 border">
+            <div class="card mb-4 border w-100">
               <div class="card-body">
                 <h3 class="card-title">ビジネスプラン</h3>
                 <p class="card-text mb-lg-4">
@@ -507,7 +383,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </div>
           </div>
           <div class="col-md-4 d-flex">
-            <div class="card mb-4 border">
+            <div class="card mb-4 border w-100">
               <div class="card-body">
                 <h3 class="card-title">平日ナイトプラン</h3>
                 <p class="card-text mb-lg-4">
@@ -527,7 +403,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </div>
           </div>
           <div class="col-md-4 d-flex">
-            <div class="card mb-4 border">
+            <div class="card mb-4 border w-100">
               <div class="card-body">
                 <h3 class="card-title">土日祝プラン</h3>
                 <p class="card-text mb-lg-4">
@@ -545,7 +421,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </div>
           </div>
           <div class="col-md-4 d-flex">
-            <div class="card mb-4 border">
+            <div class="card mb-4 border w-100">
               <div class="card-body">
                 <h3 class="card-title">モーニングプラン</h3>
                 <p class="card-text mb-lg-4">
@@ -563,7 +439,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </div>
           </div>
           <div class="col-md-4 d-flex">
-            <div class="card mb-4 border">
+            <div class="card mb-4 border w-100">
               <div class="card-body">
                 <h3 class="card-title">深夜プラン</h3>
                 <p class="card-text mb-lg-4">
@@ -581,25 +457,12 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </div>
           </div>
         </div>
-        <h5 class="plan-category">
-          <a
-            class="d-flex align-items-center collapse"
-            data-toggle="collapse"
-            href="#collapse3"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-          ></a>
-          <div class="plans-category-name">
-            いつでも好きな時間に利用したい人向け
-          </div>
-          <div class="plans-open-icon">
-            <i class="fas fa-angle-right" style="text-align: right"></i>
-          </div>
+        <h5 class="title-level1 text-center h2_title mt-4 mb-4">
+          いつでも好きな時間に利用したい人向け
         </h5>
-        <div class="row collapse" id="collapse3">
+        <div class="row" id="collapse3">
           <div class="col-md-4 d-flex">
-            <div class="card mb-4 border">
+            <div class="card mb-4 border w-100">
               <div class="card-body">
                 <h3 class="card-title">フリー32時間プラン</h3>
                 <p class="card-text mb-lg-4">
@@ -615,7 +478,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </div>
           </div>
           <div class="col-md-4 d-flex">
-            <div class="card mb-4 border">
+            <div class="card mb-4 border w-100">
               <div class="card-body">
                 <h3 class="card-title">フリー64時間プラン</h3>
                 <p class="card-text mb-lg-4">
@@ -631,7 +494,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </div>
           </div>
           <div class="col-md-4 d-flex">
-            <div class="card mb-4 border">
+            <div class="card mb-4 border w-100">
               <div class="card-body">
                 <h3 class="card-title">フリー無制限プラン</h3>
                 <p class="card-text mb-lg-4">
@@ -647,7 +510,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </div>
           </div>
           <div class="col-md-4 d-flex">
-            <div class="card mb-4 border">
+            <div class="card mb-4 border w-100">
               <div class="card-body">
                 <h3 class="card-title">ライトプラン</h3>
                 <p class="card-text mb-lg-4">
@@ -664,7 +527,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </div>
           </div>
           <div class="col-md-4 d-flex">
-            <div class="card mb-4 border">
+            <div class="card mb-4 border w-100">
               <div class="card-body">
                 <h3 class="card-title">プライベートデスク</h3>
                 <p class="card-text mb-lg-4">
@@ -680,25 +543,12 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </div>
           </div>
         </div>
-        <h5 class="plan-category">
-          <a
-            class="d-flex align-items-center collapse"
-            data-toggle="collapse"
-            href="#collapse4"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-          ></a>
-          <div class="plans-category-name">
-            まずはお手軽に使ってみたい人向け
-          </div>
-          <div class="plans-open-icon">
-            <i class="fas fa-angle-right" style="text-align: right"></i>
-          </div>
+        <h5 class="title-level1 text-center h2_title mt-4 mb-4">
+          まずはお手軽に使ってみたい人向け
         </h5>
-        <div class="row collapse" id="collapse4">
+        <div class="row" id="collapse4">
           <div class="col-md-6 d-flex">
-            <div class="card mb-4 border">
+            <div class="card mb-4 border w-100">
               <div class="card-body">
                 <h3 class="card-title">ライトプラン</h3>
                 <p class="card-text mb-lg-4">
@@ -715,7 +565,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </div>
           </div>
           <div class="col-md-6 d-flex">
-            <div class="card mb-4 border">
+            <div class="card mb-4 border w-100">
               <div class="card-body">
                 <h3 class="card-title">ドロップイン</h3>
                 <p class="card-text mb-lg-4">
@@ -737,106 +587,232 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="container">
-      <div class="l-container">
-        <div class="c-nap pt-5">
-          <h3 class="u-mb20">
-            エンジニアの方の作業場所・勉強場所・交流場所としてHarborS 表参道へ
-          </h3>
-          <table class="c-table">
-            <tr>
-              <th class="u-p15">会社名(英文名)</th>
-              <td class="u-p15">株式会社アンチパターン(Anti-Pattern Inc.)</td>
-            </tr>
-            <tr>
-              <th class="u-p15">店舗名</th>
-              <td class="u-p15">HarborS 表参道(ハーバーズ表参道)</td>
-            </tr>
-            <tr>
-              <th class="u-p15">住所</th>
-              <td class="u-p15">
-                〒107-0062 東京都港区南青山3丁目15−9 MINOWA表参道 3階
-              </td>
-            </tr>
-            <tr>
-              <th class="u-p15">電話番号</th>
-              <td class="u-p15"><a href="tel:0368856140">03-6885-6140</a></td>
-            </tr>
-            <tr>
-              <th class="u-p15">URL</th>
-              <td class="u-p15">
-                <a href="/">https://harbors.anti-pattern.co.jp/</a>
-              </td>
-            </tr>
-            <tr>
-              <th class="u-p15">アクセス</th>
-              <td class="u-p15">
-                東京メトロ銀座線、半蔵門線「表参道」下車 A4出口 徒歩3分
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <div class="pt-2">
-      <div class="access pt-4">
-        <div class="container text-center" id="news">
-          <!-- アクセス -->
-          <h2 class="display-3 pb-3" id="access">ACCESS</h2>
-          <div class="mb-3 text-center">
-            <p class="mb-0 nowrap">
-              住所：東京都港区南青山3丁目15-9<wbr > MINOWA表参道3F
-            </p>
-            <br>
-            <p class="mb-0 nowrap">
-              アクセス：東京メトロ銀座線 <wbr >半蔵門線「表参道」下車
-              <wbr >A4出口 徒歩3分
-            </p>
-            <br>
-            <p class="mb-0 nowrap">電話番号：03-6885-6140</p>
+    <section>
+      <div class="container">
+        <div class="l-container">
+          <div class="c-nap pt-5">
+            <h3 class="u-mb20">
+              エンジニアの方の作業場所・勉強場所・交流場所としてHarborS 表参道へ
+            </h3>
+            <table class="c-table">
+              <tr>
+                <th class="u-p15">会社名(英文名)</th>
+                <td class="u-p15">株式会社アンチパターン(Anti-Pattern Inc.)</td>
+              </tr>
+              <tr>
+                <th class="u-p15">店舗名</th>
+                <td class="u-p15">HarborS 表参道(ハーバーズ表参道)</td>
+              </tr>
+              <tr>
+                <th class="u-p15">住所</th>
+                <td class="u-p15">
+                  〒107-0062 東京都港区南青山3丁目15−9 MINOWA表参道 3階
+                </td>
+              </tr>
+              <tr>
+                <th class="u-p15">電話番号</th>
+                <td class="u-p15"><a href="tel:0368856140">03-6885-6140</a></td>
+              </tr>
+              <tr>
+                <th class="u-p15">URL</th>
+                <td class="u-p15">
+                  <a href="/">https://harbors.anti-pattern.co.jp/</a>
+                </td>
+              </tr>
+              <tr>
+                <th class="u-p15">アクセス</th>
+                <td class="u-p15">
+                  東京メトロ銀座線、半蔵門線「表参道」下車 A4出口 徒歩3分
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
-        <!-- 地図 -->
-        <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.99080382981!2d139.7061736147836!3d35.664745284378995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a9122f1cd%3A0xcfe4aad9a0735cb8!2zSGFyYm9yUyDooajlj4LpgZMo44OP44O844OQ44O844K66KGo5Y-C6YGTKQ!5e0!3m2!1sja!2sjp!4v1589869377967!5m2!1sja!2sjp"
-          allowfullscreen=""
-        ></iframe>
       </div>
-    </div>
+    </section>
+
+    <!-- アクセス -->
+    <section id="access" class="bg-light">
+      <div class="container text-center">
+        <h2 class="pb-3"><span class="display-3">ACCESS</span></h2>
+        <div class="mb-4 text-left">
+          <p class="mb-0">
+            HarborS
+            表参道は、港区青山エリアに位置しており、表参道駅A4出口から徒歩3分という好立地です。<br>
+            住所は「港区南青山」とブランド力抜群のこのエリアは、渋谷、原宿、麻布、赤坂、六本木エリアとも隣接しており、どこからのアクセスも抜群の立地という特徴があります。
+          </p>
+          <p class="mt-2 mb-0">[周辺からのアクセス]</p>
+          <p class="mb-0">渋谷：銀座線で1分 (徒歩20分圏内)</p>
+          <p class="mb-0">原宿：千代田線で1分 (徒歩20分圏内)</p>
+          <p class="mb-0">六本木：千代田線(乃木坂駅利用)で2分 (徒歩25分圏内)</p>
+          <p class="mb-0">赤坂：千代田線で6分 (徒歩30分圏内)</p>
+        </div>
+
+        <!-- 地図 -->
+        <iframe class="map border-0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.99080382981!2d139.7061736147836!3d35.664745284378995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a9122f1cd%3A0xcfe4aad9a0735cb8!2zSGFyYm9yUyDooajlj4LpgZMo44OP44O844OQ44O844K66KGo5Y-C6YGTKQ!5e0!3m2!1sja!2sjp!4v1589869377967!5m2!1sja!2sjp"
+          loading="lazy" allowfullscreen=""></iframe>
+      </div>
+    </section>
 
     <!-- フッター -->
-    <footer class="py-3 m-0">
-      <div class="container small">
-        <div class="row">
-          <div class="col-md-6 footer-menus">
-            <p><a href="https://anti-pattern.co.jp">運営会社</a></p>
-            <p>
-              <a href="/contacts/">お問い合わせ</a>
-            </p>
-            <p>
-              <a href="https://anti-pattern.co.jp/legal/privacy/"
-                >プライバシーポリシー</a
+    <footer class="virtual-footer">
+      <div class="container coworking-footer-container">
+        <!-- パンくずリスト -->
+        <div class="breadcrumb virtual-breadcrumb bg-transparent pt-2 pb-0 mb-5 mb-md-0">
+          <ol
+            itemscope
+            itemtype="https://schema.org/BreadcrumbList"
+            class="p-0 mb-0"
+          >
+            <li
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ListItem"
+            >
+              <a itemprop="item" href="/coworking/" class="text-muted">
+                <span itemprop="name" class="ml-0 text-white">コワーキングスペースTOP</span>
+              </a>
+              <meta itemprop="position" content="1">
+            </li>
+
+            <li
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ListItem"
+              class="breadcrumb-last"
+            >
+              <a
+                itemprop="item"
+                class="d-inline-block mb-0 disabled"
+                tabindex="-1"
               >
-            </p>
+                <span itemprop="name" class="text-white">料金プラン</span>
+              </a>
+              <meta itemprop="position" content="2">
+            </li>
+          </ol>
+        </div>
+        <div class="d-md-flex justify-content-between">
+          <div class="d-flex d-md-block footer-left">
+            <div class="mr-md-3 mr-lg-0">
+              <img src="/img/harbors_logo_w.svg" alt="HarborS 表参道のロゴ" class="img-fluid">
+              <p class="my-4 ja">ハーバーズ表参道</p>
+              <a href="https://anti-pattern.co.jp/" class="d-none d-md-inline-block copy en">&copy; anti-pattern.inc</a>
+            </div>
+            <div class="d-block d-md-none page-top-sp en">
+              <span>Page top</span>
+              <a href="#top"><img src="/img/top-icon.svg" alt="ページトップボタン"></a>
+            </div>
           </div>
-          <div class="col-md-6 footer-menus">
-            <p><a href="/terms/harbors/">コワーキングスペース利用規約</a></p>
-            <p>
-              <a href="/terms/virtual_office/">バーチャルオフィス利用規約</a>
-            </p>
-            <p><a href="/terms/rooms/">ミーティングルーム利用規約</a></p>
-            <p><a href="/terms/posse/">POSSE利用規約</a></p>
+          <div class="footer-right">
+            <div class="d-none d-md-block page-top en">
+              <span>Page top</span>
+              <a href="#top"><img src="/img/top-icon.svg" alt="ページトップボタン"></a>
+            </div>
+            <div class="footer-row-top ja">
+              <div class="d-md-flex mb-5">
+                <p class="footer-right-title en">Service</p>
+                <a href="/coworking/" class="footer-disabled">
+                  コワーキング
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                  </svg>
+                </a>
+                <br class="d-block d-md-none">
+                <a class="d-inline-block footer-disabled">レンタルスペース</a>
+                <div class="footer-speech-bubble triangle-3">
+                  <div class="d-flex d-md-block d-lg-flex justify-content-between">
+                    <div class="mr-0 mr-lg-5 mb-0 mb-md-4 mb-lg-0">
+                      <a href="https://sky-terrace.anti-pattern.co.jp/" target="_blank">
+                        <img src="/img/rental_space.jpg" alt="HarborS 表参道のテラス" class="radius">
+                        <span>
+                          スカイテラス表参道
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon">
+                            <g id="link-icon" transform="translate(-1154 -5516)">
+                              <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
+                                <rect width="10" height="11.667" stroke="none"/>
+                                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+                              </g>
+                              <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
+                                <rect width="10" height="11.667" stroke="none"/>
+                                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+                              </g>
+                            </g>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="/rooms/">
+                        <img src="/img/room-a.jpg" alt="HarborS 表参道の会議室" class="radius">
+                        <span>
+                          会議室
+                          <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="arrow">
+                            <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#666" stroke-width="1"/>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <a class="d-inline-block footer-disabled">学習サービス</a>
+                <div class="footer-speech-bubble triangle-4 w-auto">
+                  <div class="d-flex d-md-block d-lg-flex justify-content-between">
+                    <div class="mr-0 mr-lg-5 mb-0 mb-md-4 mb-lg-0">
+                      <a href="https://posse-ap.com/" target="_blank">
+                        <img src="/img/posseLogotouka.png" alt="POSSEのロゴ" width="280" height="auto" class="radius">
+                        <span>
+                          POSSE
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon">
+                              <g id="link-icon" transform="translate(-1154 -5516)">
+                                <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
+                                  <rect width="10" height="11.667" stroke="none"/>
+                                  <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+                                </g>
+                                <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
+                                  <rect width="10" height="11.667" stroke="none"/>
+                                  <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+                                </g>
+                              </g>
+                            </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-md-flex">
+                <p class="footer-right-title en">Information</p>
+                <a href="/events/" class="">イベント</a>
+              </div>
+            </div>
+            <div class="footer-row-bottom ja">
+              <div class="d-md-flex">
+                <p class="footer-right-subtitle">メニュー</p>
+                <a href="https://anti-pattern.co.jp/" target="_blank"><span>運営会社</span></a>
+                <a href="/contacts/"><span>お問い合わせ</span></a>
+                <a href="https://anti-pattern.co.jp/legal/privacy/" target="_blank"><span>プライバシーポリシー</span></a>
+              </div>
+              <div class="d-md-flex">
+                <p class="footer-right-subtitle">利用規約</p>
+                <a href="/terms/harbors/" class=""><span>コワーキングスペース</span></a>
+                <a href="/terms/virtual_office/" class=""><span>バーチャルオフィス</span></a>
+                <br class="d-block d-md-none">
+                <a href="/terms/rooms/" class=""><span>ミーティングルーム</span></a>
+                <a href="/terms/posse/" class=""><span>POSSE</span></a>
+              </div>
+            </div>
           </div>
         </div>
+        <p class="d-block d-md-none text-center copy-sp en">
+          <a href="https://anti-pattern.co.jp/">&copy; anti-pattern.inc</a>
+        </p>
       </div>
-      <p class="text-center mb-0 copyright">
-        <small class="text-white">2020 &copy; Anti-Pattern Inc.</small>
-      </p>
     </footer>
+
 
     <!-- Modal -->
     <div
@@ -1088,8 +1064,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         });
       });
     </script>
-    <script src="/js/common.js"></script>
     <script src="/js/coworking_form.js"></script>
-    <script src="/js/header.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
