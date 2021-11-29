@@ -1,645 +1,618 @@
 <!DOCTYPE html>
 <html>
-  <head
-    prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"
-  >
-    <meta charset="UTF-8">
-    <title>エンジニア特化型コワーキングスペース | HarborS 表参道</title>
-    <meta
-      name="description"
-      content="「日本のソフトウェアエンジニアを憧れの職業へ」をVisionに掲げる、株式会社アンチパターンが運営するコワーキングスペース。エンジニア特化型のコミュニティ形成を支援している。コワーキング会員のみならず、ドロップインの利用も可能である。渋谷からも近い距離にあり、多くのエンジニアにとって、足を運びやすい場所に位置している。勉強会やイベントも多数開催しているため、会員以外の方もお気軽に参加頂きたい。現地見学やオンラインでも説明会を実施中。"
-    >
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    >
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@harbors_sh">
-    <meta
-      property="og:url"
-      content="https://harbors.anti-pattern.co.jp/coworking/"
-    >
-    <meta
-      property="og:title"
-      content="エンジニア特化型コワーキングスペース | HarborS 表参道"
-    >
-    <meta property="og:type" content="website">
-    <meta
-      property="og:description"
-      content="「日本のソフトウェアエンジニアを憧れの職業へ」をVisionに掲げる、株式会社アンチパターンが運営するエンジニア特化型のコワーキングスペース。見学予約受付。"
-    >
-    <meta
-      property="og:image"
-      content="https://harbors.anti-pattern.co.jp/img/ogimg.jpg"
-    >
-    <meta property="fb:app_id" content="621479295258516">
-    <link 
-      rel="stylesheet"
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&display=swap"
-      crossorigin="anonymous"
-      as="font"
-    >
-    <!-- スタイルシートはここから -->
-    <link
-      rel="stylesheet"
-      rel="preload"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
-      as="style"
-    >
-    <link rel="stylesheet" rel="preload" href="/css/style.css" as="style">
-    <link
-      rel="stylesheet"
-      rel="preload"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css"
-      as="style"
-    >
-    <link rel="shortcut icon" href="/img/logo.png">
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-NFP7GS5");
-    </script>
-    <!-- End Google Tag Manager -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-150157952-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-150157952-1");
-      gtag("config", "AW-701518947");
-    </script>
-    <!-- Event snippet for コワーキング見学予約 conversion page
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset="UTF-8">
+  <title>エンジニア特化型コワーキングスペース | HarborS 表参道</title>
+  <meta name="description"
+    content="「日本のソフトウェアエンジニアを憧れの職業へ」をVisionに掲げる、株式会社アンチパターンが運営するコワーキングスペース。エンジニア特化型のコミュニティ形成を支援している。コワーキング会員のみならず、ドロップインの利用も可能である。渋谷からも近い距離にあり、多くのエンジニアにとって、足を運びやすい場所に位置している。勉強会やイベントも多数開催しているため、会員以外の方もお気軽に参加頂きたい。現地見学やオンラインでも説明会を実施中。">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@harbors_sh">
+  <meta property="og:url" content="https://harbors.anti-pattern.co.jp/coworking/">
+  <meta property="og:title" content="エンジニア特化型コワーキングスペース | HarborS 表参道">
+  <meta property="og:type" content="website">
+  <meta property="og:description"
+    content="「日本のソフトウェアエンジニアを憧れの職業へ」をVisionに掲げる、株式会社アンチパターンが運営するエンジニア特化型のコワーキングスペース。見学予約受付。">
+  <meta property="og:image" content="https://harbors.anti-pattern.co.jp/img/ogimg.jpg">
+  <meta property="fb:app_id" content="621479295258516">
+  <link rel="stylesheet" rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&display=swap"
+    crossorigin="anonymous" as="font">
+  <!-- スタイルシートはここから -->
+  <link rel="stylesheet" rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"
+    as="style">
+  <link rel="stylesheet" rel="preload" href="/css/style.css" as="style">
+  <link rel="stylesheet" rel="preload"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css"
+    as="style">
+  <link rel="shortcut icon" href="/img/logo.png">
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-NFP7GS5");
+  </script>
+  <!-- End Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150157952-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-150157952-1");
+    gtag("config", "AW-701518947");
+  </script>
+  <!-- Event snippet for コワーキング見学予約 conversion page
 In your html page, add the snippet and call gtag_report_conversion_cowork when someone clicks on the chosen link or button. -->
-    <script>
-      function countClickByGa() {
-        gtag("event", "click", {
-          event_category: "coworking",
-          event_label: "open_form",
-          value: 1,
-        });
-      }
-    </script>
-  </head>
+  <script>
+    function countClickByGa() {
+      gtag("event", "click", {
+        event_category: "coworking",
+        event_label: "open_form",
+        value: 1,
+      });
+    }
+  </script>
+</head>
 
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-NFP7GS5"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+<body id="top">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFP7GS5" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-    <header id="header" class="bg-white">
-      <div class="header-container d-flex justify-content-between ja align-items-center">
-        <div class="header-left vertical-align-middle">
-          <a href="/" class="d-inline-block">
-            <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="109.931" height="53" viewBox="0 0 109.931 53" class="header-logo bg-black">
-              <g id="harbors_logo" data-name="レイヤー 1">
-                <path id="harbors_logo_mark" data-name="パス 3" d="M76.2,19.666,73.86,17.659,89.548,0c6.652,5.855,13.26,11.659,20.017,17.609l-7.856,8.845-2.328-2.007,5.744-6.522-3.406-3.115-5.845,6.522-2.328-2.007,5.81-6.557L95.844,9.733l-5.8,6.472-2.293-2.037L93.5,7.646,89.819,4.39Z" transform="translate(-36.805)" fill="#000"></path>
-                <path id="harbors_logo_1h" data-name="パス 2" d="M22.807,79.128H18.713V68.171H4.355V79.037H0V53.125H4.169V64.077H18.643v-11h4.164Z" transform="translate(0 -26.45)" fill="#000"></path>
-                <path id="harbors_logo_2a" data-name="パス 5" d="M63.837,93.5c-2.278.161-4.34.391-6.4.421a5.424,5.424,0,0,1-5.679-5.453,6.02,6.02,0,0,1,5.519-6.221c3.467-.271,6.321,1.841,6.522,5.017C63.952,89.291,63.837,91.357,63.837,93.5ZM57.9,91.1a3.012,3.012,0,1,0-3.123-2.9A3.012,3.012,0,0,0,57.9,91.1Z" transform="translate(-25.788 -40.973)" fill="#000"></path>
-                <path id="harbors_logo_3r" data-name="パス 7" d="M82.169,94.144c0-2.784-.14-5.3.045-7.8.171-2.358,2.077-3.547,5.087-3.361V85.44c-2.077.151-2.182,1.635-2.087,3.341s0,3.311,0,5.2Z" transform="translate(-40.921 -41.341)" fill="#000"></path>
-                <path id="harbors_logo_4b" data-name="パス 4" d="M98.181,66.33h3.055v8.759a19.176,19.176,0,0,1,2.574-.717,5.554,5.554,0,0,1,6.427,4.841A5.965,5.965,0,0,1,105,86.006c-3.632.4-6.672-1.766-6.783-5.132C98.071,76.1,98.181,71.307,98.181,66.33Zm9.061,13.927a3.01,3.01,0,0,0-3.01-3.09,2.895,2.895,0,0,0-2.97,2.865,2.86,2.86,0,0,0,2.85,3.161,2.92,2.92,0,0,0,3.131-2.935Z" transform="translate(-48.905 -33.053)" fill="#000"></path>
-                <path id="harbors_logo_5a" data-name="パス 6" d="M132.78,93.949c-3.562,0-6.02-2.333-6.02-5.774a5.95,5.95,0,0,1,6.186-5.935,5.753,5.753,0,0,1,5.975,5.9,6.02,6.02,0,0,1-6.141,5.81Zm3.01-5.87a2.87,2.87,0,0,0-3.01-3.01,3.01,3.01,0,1,0,.03,6.02,2.87,2.87,0,0,0,2.965-3.01Z" transform="translate(-63.166 -40.981)" fill="#000"></path>
-                <path id="harbors_logo_6r" data-name="パス 8" d="M161.712,83.219v2.463c-1.931,0-2.358,1.169-2.243,2.885s.03,3.582.03,5.519h-2.915c0-2.7-.181-5.363.055-7.982C156.845,83.871,158.952,82.793,161.712,83.219Z" transform="translate(-77.995 -41.423)" fill="#000"></path>
-                <path id="harbors_logo_7s" data-name="パス 1" d="M193.611,53.18v3.637H180.747c-1.786,0-3.131.592-3.768,2.353a3.535,3.535,0,0,0,3.266,4.952c2.654.09,5.348,0,8.027.04,4.39.09,7.4,2.835,7.636,6.883.251,4.269-2.508,7.821-6.858,8.057-5.253.286-10.535.065-15.944.065V75.354h6.02c3.08,0,6.156.055,9.231-.04a3.41,3.41,0,0,0,3.366-3.718,3.351,3.351,0,0,0-3.346-3.512c-2.6-.1-5.218,0-7.826-.045-4.952-.06-8-2.95-7.982-7.525,0-4.47,3.236-7.49,8.082-7.525,4.144-.025,8.293,0,12.442,0A2.288,2.288,0,0,1,193.611,53.18Z" transform="translate(-85.993 -26.399)" fill="#000"></path>
-              </g>
-            </svg>
+  <header id="header" class="bg-white">
+    <div class="header-container d-flex justify-content-between ja align-items-center">
+      <div class="header-left vertical-align-middle">
+        <a href="/" class="d-inline-block">
+          <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="109.931" height="53" viewBox="0 0 109.931 53"
+            class="header-logo bg-black">
+            <g id="harbors_logo" data-name="レイヤー 1">
+              <path id="harbors_logo_mark" data-name="パス 3"
+                d="M76.2,19.666,73.86,17.659,89.548,0c6.652,5.855,13.26,11.659,20.017,17.609l-7.856,8.845-2.328-2.007,5.744-6.522-3.406-3.115-5.845,6.522-2.328-2.007,5.81-6.557L95.844,9.733l-5.8,6.472-2.293-2.037L93.5,7.646,89.819,4.39Z"
+                transform="translate(-36.805)" fill="#000"></path>
+              <path id="harbors_logo_1h" data-name="パス 2"
+                d="M22.807,79.128H18.713V68.171H4.355V79.037H0V53.125H4.169V64.077H18.643v-11h4.164Z"
+                transform="translate(0 -26.45)" fill="#000"></path>
+              <path id="harbors_logo_2a" data-name="パス 5"
+                d="M63.837,93.5c-2.278.161-4.34.391-6.4.421a5.424,5.424,0,0,1-5.679-5.453,6.02,6.02,0,0,1,5.519-6.221c3.467-.271,6.321,1.841,6.522,5.017C63.952,89.291,63.837,91.357,63.837,93.5ZM57.9,91.1a3.012,3.012,0,1,0-3.123-2.9A3.012,3.012,0,0,0,57.9,91.1Z"
+                transform="translate(-25.788 -40.973)" fill="#000"></path>
+              <path id="harbors_logo_3r" data-name="パス 7"
+                d="M82.169,94.144c0-2.784-.14-5.3.045-7.8.171-2.358,2.077-3.547,5.087-3.361V85.44c-2.077.151-2.182,1.635-2.087,3.341s0,3.311,0,5.2Z"
+                transform="translate(-40.921 -41.341)" fill="#000"></path>
+              <path id="harbors_logo_4b" data-name="パス 4"
+                d="M98.181,66.33h3.055v8.759a19.176,19.176,0,0,1,2.574-.717,5.554,5.554,0,0,1,6.427,4.841A5.965,5.965,0,0,1,105,86.006c-3.632.4-6.672-1.766-6.783-5.132C98.071,76.1,98.181,71.307,98.181,66.33Zm9.061,13.927a3.01,3.01,0,0,0-3.01-3.09,2.895,2.895,0,0,0-2.97,2.865,2.86,2.86,0,0,0,2.85,3.161,2.92,2.92,0,0,0,3.131-2.935Z"
+                transform="translate(-48.905 -33.053)" fill="#000"></path>
+              <path id="harbors_logo_5a" data-name="パス 6"
+                d="M132.78,93.949c-3.562,0-6.02-2.333-6.02-5.774a5.95,5.95,0,0,1,6.186-5.935,5.753,5.753,0,0,1,5.975,5.9,6.02,6.02,0,0,1-6.141,5.81Zm3.01-5.87a2.87,2.87,0,0,0-3.01-3.01,3.01,3.01,0,1,0,.03,6.02,2.87,2.87,0,0,0,2.965-3.01Z"
+                transform="translate(-63.166 -40.981)" fill="#000"></path>
+              <path id="harbors_logo_6r" data-name="パス 8"
+                d="M161.712,83.219v2.463c-1.931,0-2.358,1.169-2.243,2.885s.03,3.582.03,5.519h-2.915c0-2.7-.181-5.363.055-7.982C156.845,83.871,158.952,82.793,161.712,83.219Z"
+                transform="translate(-77.995 -41.423)" fill="#000"></path>
+              <path id="harbors_logo_7s" data-name="パス 1"
+                d="M193.611,53.18v3.637H180.747c-1.786,0-3.131.592-3.768,2.353a3.535,3.535,0,0,0,3.266,4.952c2.654.09,5.348,0,8.027.04,4.39.09,7.4,2.835,7.636,6.883.251,4.269-2.508,7.821-6.858,8.057-5.253.286-10.535.065-15.944.065V75.354h6.02c3.08,0,6.156.055,9.231-.04a3.41,3.41,0,0,0,3.366-3.718,3.351,3.351,0,0,0-3.346-3.512c-2.6-.1-5.218,0-7.826-.045-4.952-.06-8-2.95-7.982-7.525,0-4.47,3.236-7.49,8.082-7.525,4.144-.025,8.293,0,12.442,0A2.288,2.288,0,0,1,193.611,53.18Z"
+                transform="translate(-85.993 -26.399)" fill="#000"></path>
+            </g>
+          </svg>
+        </a>
+        <span>ハーバーズ表参道</span>
+      </div>
+      <div class="header-right">
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="nav-menu">
+          <ul class="header-upper-right d-md-flex justify-content-end">
+            <li class="d-none d-md-block"><a href="/contacts/" class="nav-hover">お問い合わせ</a></li>
+            <li class="d-none d-md-block">
+              <a href="tel: 0368856140" class="nav-hover">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18.495" height="18.443" viewBox="0 0 18.495 18.443"
+                  class="header-logo mr-1">
+                  <g id="tel-icon" transform="translate(-1479.867 -1076.324)" style="isolation: isolate">
+                    <g id="tell_group_1" data-name="グループ 1" transform="translate(1482.828 1076.824)">
+                      <path id="tell_1" data-name="パス 9"
+                        d="M1498.5,1089.4a.272.272,0,0,1-.272-.272v-6.015a5.742,5.742,0,1,0-11.485,0v6.015a.272.272,0,1,1-.544,0v-6.015a6.286,6.286,0,1,1,12.573,0v6.015A.272.272,0,0,1,1498.5,1089.4Z"
+                        transform="translate(-1486.197 -1076.824)" fill="#000" stroke="#000" stroke-width="1" />
+                    </g>
+                    <g id="tell_group_2" data-name="グループ 2" transform="translate(1480.367 1084.208)">
+                      <path id="tell_2" data-name="パス 10"
+                        d="M1483.1,1099.5h-1.419a1.316,1.316,0,0,1-1.314-1.314v-2.56a1.315,1.315,0,0,1,1.314-1.314h1.419a.272.272,0,0,1,.272.272v4.645A.272.272,0,0,1,1483.1,1099.5Zm-1.419-4.645a.771.771,0,0,0-.771.77v2.56a.771.771,0,0,0,.771.77h1.147v-4.1Z"
+                        transform="translate(-1480.367 -1094.316)" fill="#000" stroke="#000" stroke-width="1" />
+                    </g>
+                    <g id="tell_group_3" data-name="グループ 3" transform="translate(1494.857 1084.208)">
+                      <path id="tell_3" data-name="パス 11"
+                        d="M1516.381,1099.5h-1.419a.272.272,0,0,1-.272-.272v-4.645a.272.272,0,0,1,.272-.272h1.419a1.315,1.315,0,0,1,1.314,1.314v2.56A1.316,1.316,0,0,1,1516.381,1099.5Zm-1.147-.544h1.147a.771.771,0,0,0,.771-.77v-2.56a.771.771,0,0,0-.771-.77h-1.147Z"
+                        transform="translate(-1514.69 -1094.316)" fill="#000" stroke="#000" stroke-width="1" />
+                    </g>
+                    <g id="tell_group_4" data-name="グループ 4" transform="translate(1487.05 1091.911)">
+                      <path id="tell_4" data-name="パス 12"
+                        d="M1497.375,1114.918a1.178,1.178,0,1,1,1.178-1.178A1.179,1.179,0,0,1,1497.375,1114.918Zm0-1.812a.634.634,0,1,0,.634.634A.635.635,0,0,0,1497.375,1113.106Z"
+                        transform="translate(-1496.197 -1112.562)" fill="#000" stroke="#000" stroke-width="1" />
+                    </g>
+                    <g id="tell_group_5" data-name="グループ 5" transform="translate(1482.828 1088.853)">
+                      <path id="tell_5" data-name="パス 13"
+                        d="M1490.69,1109.825h-.257a4.241,4.241,0,0,1-4.236-4.236.272.272,0,1,1,.544,0,3.7,3.7,0,0,0,3.693,3.692h.257a.272.272,0,1,1,0,.544Z"
+                        transform="translate(-1486.197 -1105.317)" fill="#000" stroke="#000" stroke-width="1" />
+                    </g>
+                  </g>
+                </svg>
+                03-6885-6140
+              </a>
+            </li>
+            <li class="d-none d-md-block">
+              <a href="mailto:contact@harbors.sh" class="nav-hover">
+                <svg id="Capa_1" enable-background="new 0 0 479.058 479.058" height="18.443"
+                  viewBox="0 0 479.058 479.058" width="18.495" xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                  <path
+                    d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z" />
+                </svg>
+                contact@harbors.sh
+              </a>
+            </li>
+          </ul>
+          <ul class="header-lower-right d-md-flex justify-content-end">
+            <li>
+              <a href="/coworking/" class="nav-hover">
+                コワーキング
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606"
+                  class="d-inline d-md-none">
+                  <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF"
+                    stroke-width="1" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="/events/" class="nav-hover">
+                イベント
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606"
+                  class="d-inline d-md-none">
+                  <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF"
+                    stroke-width="1" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="header-disabled nav-hover">学習プログラム</a>
+              <div class="speech-bubble triangle-2">
+                <div class="d-flex d-md-block d-xl-flex justify-content-between">
+                  <div class="mr-0 mr-xl-5 mb-0 mb-md-4 mb-xl-0">
+                    <a href="https://posse-ap.com/" target="_blank">
+                      <img src="/img/posseLogotouka.png" alt="POSSEのロゴ" width="280" height="auto" class="radius">
+                      <span>
+                        POSSE
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667"
+                          class="link-icon">
+                          <g id="link-icon" transform="translate(-1154 -5516)">
+                            <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666"
+                              stroke-width="1">
+                              <rect width="10" height="11.667" stroke="none" />
+                              <rect x="0.5" y="0.5" width="9" height="10.667" fill="none" />
+                            </g>
+                            <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666"
+                              stroke-width="1">
+                              <rect width="10" height="11.667" stroke="none" />
+                              <rect x="0.5" y="0.5" width="9" height="10.667" fill="none" />
+                            </g>
+                          </g>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="header-disabled nav-hover">レンタルスペース</a>
+              <div class="speech-bubble triangle-1">
+                <div class="d-flex d-md-block d-xl-flex justify-content-between">
+                  <div class="mr-0 mr-xl-5 mb-0 mb-md-4 mb-xl-0">
+                    <a href="https://sky-terrace.anti-pattern.co.jp/" target="_blank">
+                      <img src="/img/rental_space.jpg" alt="HarborS 表参道のテラス" class="radius">
+                      <span>
+                        スカイテラス表参道
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667"
+                          class="link-icon">
+                          <g id="link-icon" transform="translate(-1154 -5516)">
+                            <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666"
+                              stroke-width="1">
+                              <rect width="10" height="11.667" stroke="none" />
+                              <rect x="0.5" y="0.5" width="9" height="10.667" fill="none" />
+                            </g>
+                            <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666"
+                              stroke-width="1">
+                              <rect width="10" height="11.667" stroke="none" />
+                              <rect x="0.5" y="0.5" width="9" height="10.667" fill="none" />
+                            </g>
+                          </g>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="/rooms/">
+                      <img src="/img/room-a.jpg" alt="HarborS 表参道の会議室" class="radius">
+                      <span>
+                        会議室
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606"
+                          viewBox="0 0 10.607 10.606" class="arrow">
+                          <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none"
+                            stroke="#666" stroke-width="1" />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#access" class="nav-hover">アクセス
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606"
+                  class="d-inline d-md-none">
+                  <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF"
+                    stroke-width="1" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav-footer">
+            <div class="nav-footer-container">
+              <p>メニュー</p>
+              <p class="small">
+                <a href="https://anti-pattern.co.jp/" target="_blank">運営会社</a>
+                <a href="/contacts/">お問い合わせ</a>
+                <a href="https://anti-pattern.co.jp/legal/privacy/" target="_blank">プライバシーポリシー</a>
+              </p>
+              <p class="pt-3">利用規約</p>
+              <p class="small mb-0">
+                <a href="/terms/harbors/">コワーキングスペース</a>
+                <a href="/terms//virtual_office/">バーチャルオフィス</a><br>
+                <a href="/terms/rooms/">ミーティングルーム</a>
+                <a href="/terms/posse">POSSE</a>
+              </p>
+            </div>
+            <div class="d-flex small justify-content-center">
+              <a href="tel:0368856140" class="d-block text-center mb-5 pr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18.495" height="18.443" viewBox="0 0 18.495 18.443"
+                  class="mr-1">
+                  <g id="tel-icon" transform="translate(-1479.867 -1076.324)" style="isolation: isolate">
+                    <g id="tell_group_1" data-name="グループ 1" transform="translate(1482.828 1076.824)">
+                      <path id="tell_1" data-name="パス 9"
+                        d="M1498.5,1089.4a.272.272,0,0,1-.272-.272v-6.015a5.742,5.742,0,1,0-11.485,0v6.015a.272.272,0,1,1-.544,0v-6.015a6.286,6.286,0,1,1,12.573,0v6.015A.272.272,0,0,1,1498.5,1089.4Z"
+                        transform="translate(-1486.197 -1076.824)" fill="#fff" stroke="#fff" stroke-width="1" />
+                    </g>
+                    <g id="tell_group_2" data-name="グループ 2" transform="translate(1480.367 1084.208)">
+                      <path id="tell_2" data-name="パス 10"
+                        d="M1483.1,1099.5h-1.419a1.316,1.316,0,0,1-1.314-1.314v-2.56a1.315,1.315,0,0,1,1.314-1.314h1.419a.272.272,0,0,1,.272.272v4.645A.272.272,0,0,1,1483.1,1099.5Zm-1.419-4.645a.771.771,0,0,0-.771.77v2.56a.771.771,0,0,0,.771.77h1.147v-4.1Z"
+                        transform="translate(-1480.367 -1094.316)" fill="#fff" stroke="#fff" stroke-width="1" />
+                    </g>
+                    <g id="tell_group_3" data-name="グループ 3" transform="translate(1494.857 1084.208)">
+                      <path id="tell_3" data-name="パス 11"
+                        d="M1516.381,1099.5h-1.419a.272.272,0,0,1-.272-.272v-4.645a.272.272,0,0,1,.272-.272h1.419a1.315,1.315,0,0,1,1.314,1.314v2.56A1.316,1.316,0,0,1,1516.381,1099.5Zm-1.147-.544h1.147a.771.771,0,0,0,.771-.77v-2.56a.771.771,0,0,0-.771-.77h-1.147Z"
+                        transform="translate(-1514.69 -1094.316)" fill="#fff" stroke="#fff" stroke-width="1" />
+                    </g>
+                    <g id="tell_group_4" data-name="グループ 4" transform="translate(1487.05 1091.911)">
+                      <path id="tell_4" data-name="パス 12"
+                        d="M1497.375,1114.918a1.178,1.178,0,1,1,1.178-1.178A1.179,1.179,0,0,1,1497.375,1114.918Zm0-1.812a.634.634,0,1,0,.634.634A.635.635,0,0,0,1497.375,1113.106Z"
+                        transform="translate(-1496.197 -1112.562)" fill="#fff" stroke="#fff" stroke-width="1" />
+                    </g>
+                    <g id="tell_group_5" data-name="グループ 5" transform="translate(1482.828 1088.853)">
+                      <path id="tell_5" data-name="パス 13"
+                        d="M1490.69,1109.825h-.257a4.241,4.241,0,0,1-4.236-4.236.272.272,0,1,1,.544,0,3.7,3.7,0,0,0,3.693,3.692h.257a.272.272,0,1,1,0,.544Z"
+                        transform="translate(-1486.197 -1105.317)" fill="#fff" stroke="#fff" stroke-width="1" />
+                    </g>
+                  </g>
+                </svg>
+                03-6885-6140
+              </a>
+              <a href="mailto:contact@harbors.sh" class="d-block text-center mb-5 pl-3">
+                <svg id="Capa_1" enable-background="new 0 0 479.058 479.058" height="18.443"
+                  viewBox="0 0 479.058 479.058" width="18.495" xmlns="http://www.w3.org/2000/svg" class="mr-1"
+                  fill="#fff">
+                  <path
+                    d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z" />
+                </svg>
+                contact@harbors.sh
+              </a>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- パンくずリスト -->
+    <!-- <div class="breadcrumb d-none d-md-block bg-transparent pt-2 pb-0">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="p-0 mb-0">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-last">
+          <a href="/coworking/" itemprop="item" class="d-inline-block mb-0 disabled" tabindex="-1">
+            <span itemprop="name" class="ml-0">コワーキングスペースTOP</span>
           </a>
-          <span>ハーバーズ表参道</span>
-        </div>
-        <div class="header-right">
-          <div class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <nav class="nav-menu">
-            <ul class="header-upper-right d-md-flex justify-content-end">
-              <li class="d-none d-md-block"><a href="/contacts/" class="nav-hover">お問い合わせ</a></li>
-              <li class="d-none d-md-block">
-                <a href="tel: 0368856140" class="nav-hover">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18.495" height="18.443" viewBox="0 0 18.495 18.443" class="header-logo mr-1">
-                    <g id="tel-icon" transform="translate(-1479.867 -1076.324)" style="isolation: isolate">
-                      <g id="tell_group_1" data-name="グループ 1" transform="translate(1482.828 1076.824)">
-                        <path id="tell_1" data-name="パス 9" d="M1498.5,1089.4a.272.272,0,0,1-.272-.272v-6.015a5.742,5.742,0,1,0-11.485,0v6.015a.272.272,0,1,1-.544,0v-6.015a6.286,6.286,0,1,1,12.573,0v6.015A.272.272,0,0,1,1498.5,1089.4Z" transform="translate(-1486.197 -1076.824)" fill="#000" stroke="#000" stroke-width="1"/>
-                      </g>
-                      <g id="tell_group_2" data-name="グループ 2" transform="translate(1480.367 1084.208)">
-                        <path id="tell_2" data-name="パス 10" d="M1483.1,1099.5h-1.419a1.316,1.316,0,0,1-1.314-1.314v-2.56a1.315,1.315,0,0,1,1.314-1.314h1.419a.272.272,0,0,1,.272.272v4.645A.272.272,0,0,1,1483.1,1099.5Zm-1.419-4.645a.771.771,0,0,0-.771.77v2.56a.771.771,0,0,0,.771.77h1.147v-4.1Z" transform="translate(-1480.367 -1094.316)" fill="#000" stroke="#000" stroke-width="1"/>
-                      </g>
-                      <g id="tell_group_3" data-name="グループ 3" transform="translate(1494.857 1084.208)">
-                        <path id="tell_3" data-name="パス 11" d="M1516.381,1099.5h-1.419a.272.272,0,0,1-.272-.272v-4.645a.272.272,0,0,1,.272-.272h1.419a1.315,1.315,0,0,1,1.314,1.314v2.56A1.316,1.316,0,0,1,1516.381,1099.5Zm-1.147-.544h1.147a.771.771,0,0,0,.771-.77v-2.56a.771.771,0,0,0-.771-.77h-1.147Z" transform="translate(-1514.69 -1094.316)" fill="#000" stroke="#000" stroke-width="1"/>
-                      </g>
-                      <g id="tell_group_4" data-name="グループ 4" transform="translate(1487.05 1091.911)">
-                        <path id="tell_4" data-name="パス 12" d="M1497.375,1114.918a1.178,1.178,0,1,1,1.178-1.178A1.179,1.179,0,0,1,1497.375,1114.918Zm0-1.812a.634.634,0,1,0,.634.634A.635.635,0,0,0,1497.375,1113.106Z" transform="translate(-1496.197 -1112.562)" fill="#000" stroke="#000" stroke-width="1"/>
-                      </g>
-                      <g id="tell_group_5" data-name="グループ 5" transform="translate(1482.828 1088.853)">
-                        <path id="tell_5" data-name="パス 13" d="M1490.69,1109.825h-.257a4.241,4.241,0,0,1-4.236-4.236.272.272,0,1,1,.544,0,3.7,3.7,0,0,0,3.693,3.692h.257a.272.272,0,1,1,0,.544Z" transform="translate(-1486.197 -1105.317)" fill="#000" stroke="#000" stroke-width="1"/>
-                      </g>
-                    </g>
-                  </svg>
-                  03-6885-6140
-                </a>
-              </li>
-              <li class="d-none d-md-block">
-                <a href="mailto:contact@harbors.sh" class="nav-hover">
-                  <svg id="Capa_1" enable-background="new 0 0 479.058 479.058" height="18.443" viewBox="0 0 479.058 479.058" width="18.495" xmlns="http://www.w3.org/2000/svg" class="mr-1">
-                    <path d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"/>
-                  </svg>
-                  contact@harbors.sh
-                </a>
-              </li>
-            </ul>
-            <ul class="header-lower-right d-md-flex justify-content-end">
-              <li>
-                <a href="/coworking/" class="nav-hover">
-                  コワーキング
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
-                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="/events/" class="nav-hover">
-                  イベント
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
-                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="header-disabled nav-hover">学習プログラム</a>
-                <div class="speech-bubble triangle-2">
-                  <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                    <div class="mr-0 mr-xl-5 mb-0 mb-md-4 mb-xl-0">
-                      <a href="https://posse.anti-pattern.co.jp/">
-                        <img src="/img/posseLogotouka.png" alt="POSSEのロゴ" width="280" height="auto" class="radius">
-                        <span>
-                          POSSE
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon">
-                              <g id="link-icon" transform="translate(-1154 -5516)">
-                                <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
-                                  <rect width="10" height="11.667" stroke="none"/>
-                                  <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-                                </g>
-                                <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
-                                  <rect width="10" height="11.667" stroke="none"/>
-                                  <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-                                </g>
-                              </g>
-                            </svg>
-                        </span>
-                      </a>
-                    </div>
-                    <div>
-                      <a href="/extends/">
-                        <img src="/img/extendsLogoTouka.png" alt="extendsのロゴ" width="280" height="auto" class="radius">
-                        <span>
-                          extends
-                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon">
-                            <g id="link-icon" transform="translate(-1154 -5516)">
-                              <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
-                                <rect width="10" height="11.667" stroke="none"/>
-                                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-                              </g>
-                              <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
-                                <rect width="10" height="11.667" stroke="none"/>
-                                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-                              </g>
-                            </g>
-                          </svg>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <a class="header-disabled nav-hover">レンタルスペース</a>
-                <div class="speech-bubble triangle-1">
-                  <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                    <div class="mr-0 mr-xl-5 mb-0 mb-md-4 mb-xl-0">
-                      <a href="https://sky-terrace.anti-pattern.co.jp/">
-                        <img src="/img/rental_space.jpg" alt="HarborS 表参道のテラス" class="radius">
-                        <span>
-                          スカイテラス表参道
-                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon">
-                            <g id="link-icon" transform="translate(-1154 -5516)">
-                              <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
-                                <rect width="10" height="11.667" stroke="none"/>
-                                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-                              </g>
-                              <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
-                                <rect width="10" height="11.667" stroke="none"/>
-                                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-                              </g>
-                            </g>
-                          </svg>
-                        </span>
-                      </a>
-                    </div>
-                    <div>
-                      <a href="/rooms/">
-                        <img src="/img/room-a.jpg" alt="HarborS 表参道の会議室" class="radius">
-                        <span>
-                          会議室
-                          <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="arrow">
-                            <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#666" stroke-width="1"/>
-                          </svg>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <a href="#access" class="nav-hover">アクセス
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
-                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <ul class="nav-footer">
-              <div class="nav-footer-container">
-                <p>メニュー</p>
-                <p class="small">
-                  <a href="https://anti-pattern.co.jp/" target="_blank">運営会社</a>
-                  <a href="/contacts/">お問い合わせ</a>
-                  <a href="https://anti-pattern.co.jp/legal/privacy/" target="_blank">プライバシーポリシー</a>
-                </p>
-                <p class="pt-3">利用規約</p>
-                <p class="small mb-0">
-                  <a href="/terms/harbors/">コワーキングスペース</a>
-                  <a href="/terms//virtual_office/">バーチャルオフィス</a><br>
-                  <a href="/terms/rooms/">ミーティングルーム</a>
-                  <a href="/terms/posse">POSSE</a>
-                </p>
-              </div>
-              <div class="d-flex small justify-content-center">
-                <a href="tel:0368856140" class="d-block text-center mb-5 pr-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18.495" height="18.443" viewBox="0 0 18.495 18.443" class="mr-1">
-                    <g id="tel-icon" transform="translate(-1479.867 -1076.324)" style="isolation: isolate">
-                      <g id="tell_group_1" data-name="グループ 1" transform="translate(1482.828 1076.824)">
-                        <path id="tell_1" data-name="パス 9" d="M1498.5,1089.4a.272.272,0,0,1-.272-.272v-6.015a5.742,5.742,0,1,0-11.485,0v6.015a.272.272,0,1,1-.544,0v-6.015a6.286,6.286,0,1,1,12.573,0v6.015A.272.272,0,0,1,1498.5,1089.4Z" transform="translate(-1486.197 -1076.824)" fill="#fff" stroke="#fff" stroke-width="1"/>
-                      </g>
-                      <g id="tell_group_2" data-name="グループ 2" transform="translate(1480.367 1084.208)">
-                        <path id="tell_2" data-name="パス 10" d="M1483.1,1099.5h-1.419a1.316,1.316,0,0,1-1.314-1.314v-2.56a1.315,1.315,0,0,1,1.314-1.314h1.419a.272.272,0,0,1,.272.272v4.645A.272.272,0,0,1,1483.1,1099.5Zm-1.419-4.645a.771.771,0,0,0-.771.77v2.56a.771.771,0,0,0,.771.77h1.147v-4.1Z" transform="translate(-1480.367 -1094.316)" fill="#fff" stroke="#fff" stroke-width="1"/>
-                      </g>
-                      <g id="tell_group_3" data-name="グループ 3" transform="translate(1494.857 1084.208)">
-                        <path id="tell_3" data-name="パス 11" d="M1516.381,1099.5h-1.419a.272.272,0,0,1-.272-.272v-4.645a.272.272,0,0,1,.272-.272h1.419a1.315,1.315,0,0,1,1.314,1.314v2.56A1.316,1.316,0,0,1,1516.381,1099.5Zm-1.147-.544h1.147a.771.771,0,0,0,.771-.77v-2.56a.771.771,0,0,0-.771-.77h-1.147Z" transform="translate(-1514.69 -1094.316)" fill="#fff" stroke="#fff" stroke-width="1"/>
-                      </g>
-                      <g id="tell_group_4" data-name="グループ 4" transform="translate(1487.05 1091.911)">
-                        <path id="tell_4" data-name="パス 12" d="M1497.375,1114.918a1.178,1.178,0,1,1,1.178-1.178A1.179,1.179,0,0,1,1497.375,1114.918Zm0-1.812a.634.634,0,1,0,.634.634A.635.635,0,0,0,1497.375,1113.106Z" transform="translate(-1496.197 -1112.562)" fill="#fff" stroke="#fff" stroke-width="1"/>
-                      </g>
-                      <g id="tell_group_5" data-name="グループ 5" transform="translate(1482.828 1088.853)">
-                        <path id="tell_5" data-name="パス 13" d="M1490.69,1109.825h-.257a4.241,4.241,0,0,1-4.236-4.236.272.272,0,1,1,.544,0,3.7,3.7,0,0,0,3.693,3.692h.257a.272.272,0,1,1,0,.544Z" transform="translate(-1486.197 -1105.317)" fill="#fff" stroke="#fff" stroke-width="1"/>
-                      </g>
-                    </g>
-                  </svg>
-                  03-6885-6140
-                </a>
-                <a href="mailto:contact@harbors.sh" class="d-block text-center mb-5 pl-3">
-                  <svg id="Capa_1" enable-background="new 0 0 479.058 479.058" height="18.443" viewBox="0 0 479.058 479.058" width="18.495" xmlns="http://www.w3.org/2000/svg" class="mr-1" fill ="#fff">
-                    <path d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"/>
-                  </svg>
-                  contact@harbors.sh
-                </a>
-              </div>
-            </ul>
-          </nav>
-        </div>
-      </div>
+          <meta itemprop="position" content="1">
+        </li>
+      </ol>
+    </div> -->
+  </header>
 
-      <!-- パンくずリスト -->
-      <div class="breadcrumb d-none d-md-block bg-transparent pt-2 pb-0">
-        <ol
-          itemscope
-          itemtype="https://schema.org/BreadcrumbList"
-          class="p-0 mb-0"
-        >
-          <li
-            itemprop="itemListElement"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            class="breadcrumb-last"
-          >
-            <a
-              href="/coworking/"
-              itemprop="item"
-              class="d-inline-block mb-0 disabled"
-              tabindex="-1"
-            >
-              <span itemprop="name" class="ml-0">コワーキングスペースTOP</span>
-            </a>
-            <meta itemprop="position" content="1">
-          </li>
-        </ol>
-      </div>
-    </header>
-
+  <main class="coworking-main">
     <!-- トップ画像 -->
-    <section
-      class="jumbotron-fluid position-relative top-image p-0 coworking-top"
-    >
-      <div class="filter"></div>
-      <!-- トップ画像内文字 -->
-      <div
-        class="
-          text-white
-          position-absolute
-          text-center
-          top-text
-          container-fluid
-        "
-      >
-        <div class="row py-5">
-          <div class="col-lg-12">
-            <h2 class="display-4 nowrap">
-              <span class="fv-harbors">HarborS</span> <wbr >表参道
-            </h2>
+    <section class="first-view">
+      <div class="first-view-bg"></div>
+      <div class="first-view-container">
+        <div class="d-md-flex flex-row-reverse justify-content-between align-items-center">
+          <div class="first-view-right">
+            <picture>
+              <source srcset="/img/cafe-image.jpg" media="(max-width: 600px)"><!-- 600px以下で表示する画像 -->
+              <source srcset="/img/cafe-image.jpg" media="(max-width: 1200px)"><!-- 1200px以下で表示する画像 -->
+              <img src="/img/cafe-image.jpg" alt="HarborS 表参道の会議室の外観" width="100%" height="auto" loading="lazy">
+              <!-- 1200px以上で表示する画像 -->
+            </picture>
           </div>
-          <div class="col-lg-12">
-            <h2 class="nowrap">
-              <br>エンジニア特化型<wbr >コワーキング<wbr >スペース
-            </h2>
-          </div>
-          <div class="col-lg-12">
-            <p class="lead mt-5 nowrap">
-              「HarborS」はエンジニア同士の<wbr >繋がりを創造できる場所です。<br>
-              働く環境が整っているうえに、<wbr >エンジニア向け勉強会や<wbr >イベントも多数開催しています。<br>
-              HarborSのコミュニティマネージャが<wbr >会員同士の繋がり、<wbr >コミュニティ形成のお手伝いを<wbr >させていただきます。<br>
+          <div class="first-view-left mx-auto mx-md-0">
+            <h1 class="first-view-title ja">
+              <span class="golden-text">
+                HarborS 表参道
+              </span><br>
+              <span>
+                エンジニア特化型<br>コワーキングスペース
+              </span>
+            </h1>
+            <p class="coworking-top-lead ja mb-1 text-justify">
+              「HarborS」はエンジニア同士の繋がりを創造できる場所です。<br>
+              働く環境が整っているうえに、エンジニア向け勉強会やイベントも多数開催しています。<br>
+              HarborSのコミュニティマネージャが会員同士の繋がり、コミュニティ形成のお手伝いをさせていただきます。<br>
             </p>
           </div>
         </div>
       </div>
-      <div class="fixed-bottom mb-2">
-        <button
-          type="button"
-          class="
+    </section>
+
+    <!-- トップ画像 -->
+    <div class="fixed-bottom mb-2">
+      <button type="button" class="
             btn btn-warning btn-lg
             mx-auto
             nowrap
             text-white
             top-button
             d-block
-          "
-          onclick="countClickByGa();"
-          data-toggle="modal"
-          data-target="#inquiryFormModal"
-        >
-          もっと詳しく知りたい
-        </button>
-      </div>
-    </section>
+          " onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+        もっと詳しく知りたい
+      </button>
+    </div>
 
-    <!-- セカンドビュー -->
-    <section>
+    <!-- Services -->
+    <section id="services" class="bg-light">
       <div class="container">
-        <h2 class="text-center mt-5">「HarborS」で新しい出会いを</h2>
-        <div class="row py-5">
-          <div class="col-12 col-lg-6 order-md-2 p-lg-0 mb-3">
-            <img
-              src="/img/engineer.jpg"
-              alt="握手する人"
-              loading="lazy"
-              class="w-100"
-            >
-          </div>
-          <div class="col-12 col-lg-5 order-md-1 ml-md-auto">
-            <p class="text-right mt-5 nowrap">
-              「アプリ開発のエンジニアを<wbr >探していたんです」<br>
-              <br>
-              「どのようなプロダクトなんですか？」<br>
-              <br>
-            </p>
-          </div>
-        </div>
-        <div class="row py-5">
-          <div class="col-12 col-lg-6 p-lg-0 mb-3">
-            <img
-              src="/img/designer.jpg"
-              alt="相談する2人"
-              loading="lazy"
-              class="w-100"
-            >
-          </div>
-          <div class="col-12 col-lg-5 ml-md-autob float-right">
-            <p class="mt-5 nowrap">
-              「サービスのデザインが<wbr >なかなか決まらなくて」<br>
-              <br>
-              「来週またここで会いましょう」<br>
-              <br>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="bg-light">
-      <div class="container">
-        <h2 class="text-center"><span class="display-3">SERVICES</span></h2>
-        <h3 class="text-center mb-5 pt-3">
-          様々な設備が整っており、あなたのビジネスをサポートします。
-        </h3>
-        <div class="row services-container">
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="service-card mb-4 border border-0">
-              <img
-                src="/img/seminarroom.jpg"
-                alt="HarborS 表参道のセミナールーム"
-                loading="lazy"
-                class="border service-img"
-              >
-              <div class="service-text">
+        <h2 class="text-center mb-0 mb-md-4 section-heading">
+          <span class="display-3">SERVICES</span><br>
+          様々な設備が整っており、<br class="d-sm-none">あなたのビジネスをサポートします。
+        </h2>
+        <div class="services-container container small-container pt-4">
+          <div class="row">
+            <div class="col-md-6 d-flex mx-auto align-items-center">
+              <div class="coworking-service-icon d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" viewBox="0 0 64 64" stroke-width="3"
+                  stroke="currentColor" fill="none">
+                  <path
+                    d="M38.18,44.11H20l-5.79,4.68.06-4.68H12.17a1.36,1.36,0,0,1-1.36-1.37V23a1.36,1.36,0,0,1,1.37-1.36h26A1.36,1.36,0,0,1,39.58,23V42.71A1.4,1.4,0,0,1,38.18,44.11Z" />
+                  <line x1="15.05" y1="27.2" x2="34.5" y2="27.2" />
+                  <line x1="15.05" y1="32.26" x2="25.7" y2="32.26" />
+                  <line x1="15.05" y1="37.32" x2="30.07" y2="37.32" />
+                  <path
+                    d="M42.14,36H44l5.79,3.92L49.77,36h2.06a1.36,1.36,0,0,0,1.36-1.36V14.89a1.36,1.36,0,0,0-1.37-1.36h-26a1.36,1.36,0,0,0-1.36,1.36V19" />
+                </svg>
+              </div>
+              <div class="service-text coworking-service-text">
                 <h3 class="service-text-title">セミナールーム</h3>
-                <p class="service-text-description">
+                <p class="service-text-description text-justify">
                   イベントスペースなどにもご利用いただけるセミナールームがございます。
                 </p>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="service-card mb-4 border border-0">
-              <img
-                src="/img/cafe.jpg"
-                alt="HarborS 表参道のカフェ"
-                loading="lazy"
-                class="border service-img"
-              >
-              <div class="service-text">
+            <div class="col-md-6 d-flex mx-auto align-items-center">
+              <div class="coworking-service-icon d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" viewBox="0 0 64 64" stroke-width="3"
+                  stroke="currentColor" fill="none">
+                  <path d="M43.32,30.08a7.86,7.86,0,0,1,3.11-.64,8,8,0,1,1,0,16,7.81,7.81,0,0,1-3.1-.63" />
+                  <path
+                    d="M17.18,24.82H43.32a0,0,0,0,1,0,0V41.7A11.36,11.36,0,0,1,32,53.06H28.54A11.36,11.36,0,0,1,17.18,41.7V24.82A0,0,0,0,1,17.18,24.82Z" />
+                  <line x1="9.59" y1="53.06" x2="52.17" y2="53.06" stroke-linecap="round" />
+                  <path d="M24.36,19.63c0-5,4-5,4-10.09" stroke-linecap="round" />
+                  <path d="M32.66,19.47c.45-6.13,4.44-5.83,4.89-12" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="service-text coworking-service-text">
                 <h3 class="service-text-title">カフェスペース</h3>
-                <p class="service-text-description">
-                  コワーキング内にカフェスペースもございます。ごゆっくりお過ごしいただけます。
+                <p class="service-text-description text-justify">
+                  飲食可能なカフェスペースも用意しておりますので、ごゆっくりお過ごしいただけます。
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="service-card mb-4 border border-0">
-              <img
-                src="/img/rocker.jpg"
-                alt="HarborS 表参道のロッカー"
-                loading="lazy"
-                class="border service-img"
-              >
-              <div class="service-text">
+          <div class="row">
+            <div class="col-md-6 d-flex mx-auto align-items-center">
+              <div class="coworking-service-icon d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" viewBox="0 0 64 64" stroke-width="3"
+                  stroke="currentColor" fill="none">
+                  <path
+                    d="M50.44,55.76H13.56a1.84,1.84,0,0,1-1.83-2l3.28-33a1.85,1.85,0,0,1,1.83-1.66H47.16A1.85,1.85,0,0,1,49,20.71l3.28,33A1.84,1.84,0,0,1,50.44,55.76Z" />
+                  <path d="M22.27,24.27V18a9.73,9.73,0,1,1,19.46,0v6.3" />
+                  <circle cx="22.27" cy="24.27" r="2" />
+                  <circle cx="41.73" cy="24.27" r="2" />
+                </svg>
+              </div>
+              <div class="service-text coworking-service-text">
                 <h3 class="service-text-title">レンタルロッカー</h3>
-                <p class="service-text-description">
+                <p class="service-text-description text-justify">
                   レンタルロッカーもございます。
                 </p>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="service-card mb-4 border border-0">
-              <img
-                src="/img/printer.jpg"
-                alt="HarborS 表参道の複合機とシュレッダー"
-                loading="lazy"
-                class="border service-img"
-              >
-              <div class="service-text">
+            <div class="col-md-6 d-flex mx-auto align-items-center">
+              <div class="coworking-service-icon d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="2.5" stroke="currentcolor"
+                  fill="none" class="duration-300 transform transition-all" style="width: 48px; height: 48px;">
+                  <path
+                    d="M17.34 39.37H14a3.31 3.31 0 01-3.31-3.3v-15.3a3.31 3.31 0 013.31-3.3h36a3.31 3.31 0 013.31 3.3v15.3a3.31 3.31 0 01-3.31 3.3h-2.82M17.34 17.47v-6.88h29.84v6.88"
+                    stroke-linecap="round"></path>
+                  <path stroke-linecap="round"
+                    d="M17.34 32.02h29.84v21.39H17.34zM21.63 37.93H42.1M15.54 32.02h33.61M21.76 42.72h20.48M22.03 47.76h13.9">
+                  </path>
+                  <circle cx="46.76" cy="24.04" r="1.75" stroke-linecap="round"></circle>
+                </svg>
+              </div>
+              <div class="service-text coworking-service-text">
                 <h3 class="service-text-title">複合機・シュレッダー</h3>
-                <p class="service-text-description">
+                <p class="service-text-description text-justify">
                   複合機、シュレッダーもございます。
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="service-card mb-4 border border-0">
-              <img
-                src="/img/office.jpg"
-                alt="HarborS 表参道の外観"
-                loading="lazy"
-                class="border service-img"
-              >
-              <div class="service-text">
+          <div class="row">
+            <div class="col-md-6 d-flex mx-auto align-items-center">
+              <div class="coworking-service-icon d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" viewBox="0 0 64 64" stroke-width="3"
+                  stroke="currentColor" fill="none">
+                  <path d="M34.82,52.73H14.69V22.18a1,1,0,0,1,.52-.87L33.34,11.4a1,1,0,0,1,1.48.88Z"
+                    stroke-linecap="round" />
+                  <path d="M48.87,52.73H34.92V21.59L48.4,29.3a1,1,0,0,1,.47.85Z" stroke-linecap="round" />
+                  <line x1="28.1" y1="24.86" x2="21.06" y2="24.86" stroke-linecap="round" />
+                  <line x1="43.66" y1="32.41" x2="40.14" y2="32.41" stroke-linecap="round" />
+                  <line x1="43.66" y1="36.9" x2="40.14" y2="36.9" stroke-linecap="round" />
+                  <line x1="43.66" y1="41.71" x2="40.14" y2="41.71" stroke-linecap="round" />
+                  <line x1="43.66" y1="46.19" x2="40.14" y2="46.19" stroke-linecap="round" />
+                  <line x1="28.1" y1="30.44" x2="21.06" y2="30.44" stroke-linecap="round" />
+                  <line x1="28.1" y1="35.94" x2="21.06" y2="35.94" stroke-linecap="round" />
+                  <line x1="28.1" y1="41.44" x2="21.06" y2="41.44" stroke-linecap="round" />
+                  <line x1="28.1" y1="46.94" x2="21.06" y2="46.94" stroke-linecap="round" />
+                  <line x1="9.46" y1="52.73" x2="54.54" y2="52.73" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="service-text coworking-service-text">
                 <h3 class="service-text-title">アクセスのいい立地</h3>
-                <p class="service-text-description">
+                <p class="service-text-description text-justify">
                   表参道駅から徒歩3分の好立地です。
                 </p>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="service-card mb-4 border border-0">
-              <img
-                src="/img/wifi.jpg"
-                alt="パソコンを操作する人"
-                loading="lazy"
-                class="border service-img"
-              >
-              <div class="service-text">
+            <div class="col-md-6 d-flex mx-auto align-items-center">
+              <div class="coworking-service-icon d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" viewBox="0 0 64 64" stroke-width="3"
+                  stroke="currentColor" fill="none">
+                  <path d="M21.84,37.11a17.78,17.78,0,0,1,20.24-.35" stroke-linecap="round" />
+                  <path d="M14.79,29.32a28.27,28.27,0,0,1,34.61-.19" stroke-linecap="round" />
+                  <path d="M7.58,21.68a38.73,38.73,0,0,1,48.84-.34" stroke-linecap="round" />
+                  <circle cx="32.09" cy="47.11" r="3.58" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="service-text coworking-service-text">
                 <h3 class="service-text-title">無料Wi-Fi</h3>
-                <p class="service-text-description">
+                <p class="service-text-description text-justify">
                   通信量も十分なWi-Fiでお仕事していただけます。
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="service-card mb-4 border border-0">
-              <img
-                src="/img/terrace.jpg"
-                alt="HarborS 表参道のテラス"
-                loading="lazy"
-                class="border service-img"
-              >
-              <div class="service-text">
+          <div class="row">
+            <div class="col-md-6 d-flex mx-auto align-items-center">
+              <div class="coworking-service-icon d-flex align-items-center justify-content-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg" style="width: 48px; height: 48px;">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                  </path>
+                </svg>
+              </div>
+              <div class="service-text coworking-service-text">
                 <h3 class="service-text-title">テラス</h3>
-                <p class="service-text-description">
+                <p class="service-text-description text-justify">
                   屋上のテラス席でも作業ができます。
                 </p>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="service-card mb-4 border border-0">
-              <img
-                src="/img/books.jpg"
-                alt="HarborS 表参道の技術書"
-                loading="lazy"
-                class="border service-img"
-              >
-              <div class="service-text">
+            <div class="col-md-6 d-flex mx-auto align-items-center">
+              <div class="coworking-service-icon d-flex align-items-center justify-content-center">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  style="width: 48px; height: 48px;">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                  </path>
+                </svg>
+              </div>
+              <div class="service-text coworking-service-text">
                 <h3 class="service-text-title">豊富な技術書</h3>
-                <p class="service-text-description">
+                <p class="service-text-description text-justify">
                   技術書を多く取り揃えており、定期的に新しい本を入荷しております。
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="service-card mb-4 border border-0">
-              <img
-                src="/img/monitor.jpg"
-                alt="HarborS 表参道のディスプレイ"
-                loading="lazy"
-                class="border service-img"
-              >
-              <div class="service-text">
+          <div class="row">
+            <div class="col-md-6 d-flex mx-auto align-items-center">
+              <div class="coworking-service-icon d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="2.5" stroke="currentcolor"
+                  fill="none" class="duration-300 transform transition-all" style="width: 48px; height: 48px;">
+                  <rect x="8.33" y="10.82" width="47.34" height="34.38" rx="2.02"></rect>
+                  <path d="M8.33 37.66h47.34M23.05 53.18a6.67 6.67 0 003.55-8M41.84 53.18a6.66 6.66 0 01-3.55-8"></path>
+                  <path stroke-linecap="round" d="M17.5 53.18h29M33.49 17.66l-8.54 9.14M39.03 23.84l-5.62 6.01"></path>
+                </svg>
+              </div>
+              <div class="service-text coworking-service-text">
                 <h3 class="service-text-title">ディスプレイ</h3>
-                <p class="service-text-description">
+                <p class="service-text-description text-justify">
                   無料でモバイルディスプレイの貸し出しをしています。
                 </p>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="service-card mb-4 border border-0">
-              <img
-                src="/img/whiteboard.jpg"
-                alt="HarborS 表参道のホワイトボード"
-                loading="lazy"
-                class="border service-img"
-              >
-              <div class="service-text">
+            <div class="col-md-6 d-flex mx-auto align-items-center">
+              <div class="coworking-service-icon d-flex align-items-center justify-content-center">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  style="width: 48px; height: 48px;">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                    d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+                </svg>
+              </div>
+              <div class="service-text coworking-service-text">
                 <h3 class="service-text-title">ホワイトボード</h3>
-                <p class="service-text-description">
+                <p class="service-text-description text-justify">
                   会議などで活用することができます。
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="service-card mb-4 border border-0">
-              <img
-                src="/img/cashless.jpg"
-                alt="対応している決済方法"
-                loading="lazy"
-                class="border service-img"
-              >
-              <div class="service-text">
+          <div class="row">
+            <div class="col-md-6 d-flex mx-auto align-items-center">
+              <div class="coworking-service-icon d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" viewBox="0 0 64 64" stroke-width="3"
+                  stroke="currentColor" fill="none">
+                  <path
+                    d="M12,14.85h40.9a4,4,0,0,1,4,4V45.13a4,4,0,0,1-4,4H11.12a4,4,0,0,1-4-4V19.73A4.88,4.88,0,0,1,12,14.85Z" />
+                  <line x1="7.1" y1="22.15" x2="56.9" y2="22.15" />
+                  <line x1="7.1" y1="27.68" x2="56.9" y2="27.68" />
+                  <path
+                    d="M48,36.81a3.5,3.5,0,0,0-2.14.75,3.45,3.45,0,0,0-2.13-.75,3.5,3.5,0,1,0,0,7,3.44,3.44,0,0,0,2.13-.74A3.5,3.5,0,1,0,48,36.81Z" />
+                </svg>
+              </div>
+              <div class="service-text coworking-service-text">
                 <h3 class="service-text-title">キャッシュレス対応</h3>
-                <p class="service-text-description">
-                  コワーキング内カフェではキャッシュレス対応を行っています。
+                <p class="service-text-description text-justify">
+                  ご利用料金、お飲み物代のお支払いは全てキャッシュレス決済にて承ります。
                 </p>
               </div>
+            </div>
+            <div class="col-md-6 d-flex mx-auto align-items-center">
             </div>
           </div>
         </div>
@@ -648,66 +621,61 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
 
     <!-- OPEN -->
     <section>
-      <div class="container">
-        <h2 class="text-center" id="coworking"><span class="display-3">OPEN</span></h2>
-        <dl class="row pt-5">
-          <dt class="col-sm-4 offset-md-2 py-2">営業日時</dt>
-          <dd class="col-sm-4 py-2">
-            <p class="mb-2">年中無休</p>
-            <p class="mb-0">24時間利用可能</p>
-          </dd>
-          <dt class="col-sm-4 offset-md-2 py-2">ドロップイン可能時間帯</dt>
-          <dd class="col-sm-4 py-2">
-            <p class="mb-2">毎日 10:00-20:00（不定休）</p>
-            <p class="mb-0">
-              ※正月、ゴールデンウィーク等々（<a
-                href="https://twitter.com/harbors_sh?ref_src=twsrc%5Etfw"
-                class="in-page-link"
-                target="_blank"
-                >Twitter</a
-              >にて随時案内してますがお問い合わせください）
-            </p>
-          </dd>
-          <dt class="col-sm-4 offset-md-2 py-2">受付対応時間</dt>
-          <dd class="col-sm-4 py-2">
-            <p class="mb-2">平日 10:00〜19:00（祝日を除く）</p>
-            <p class="mb-0">
-              ※正月、ゴールデンウィーク等々（<a
-                href="https://twitter.com/harbors_sh?ref_src=twsrc%5Etfw"
-                class="in-page-link"
-                target="_blank"
-                >Twitter</a
-              >にて随時案内してますがお問い合わせください）
-            </p>
-          </dd>
-        </dl>
+      <div class="container small-container">
+        <h2 class="text-center section-heading" id="coworking"><span class="display-3">OPEN</span></h2>
 
-        <div class="twitter_area pt-4">
-          <a
-            class="twitter-timeline"
-            data-lang="ja"
-            data-width="320"
-            data-height="400"
-            data-theme="dark"
-            href="https://twitter.com/harbors_sh?ref_src=twsrc%5Etfw"
-            >Tweets by harbors_sh</a
-          >
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
+        <div class="row pt-4 pt-md-5">
+          <div class="d-none d-md-block open-img col-md-6 col-lg-7">
+            <img src="../img/votop-reason4.jpg" alt="コワーキングスペース" class="img-fluid w-100">
+          </div>
+          <div class="col-md-6 col-lg-5 d-flex align-items-center pb-0 pl-lg-4 px-4 px-md-3">
+            <div>
+              <p class="pb-2 mb-0">
+                <span class="font-weight-bold">営業日時</span><br>
+                年中無休<br>
+                24時間利用可能
+              </p>
+              <p class="py-2 mb-0">
+                <span class="font-weight-bold">ドロップイン可能時間帯</span><br>
+                毎日 10:00-20:00（不定休）<br>
+                ※正月、ゴールデンウィーク等々<br class="d-sm-none">（<a href="https://twitter.com/harbors_sh?ref_src=twsrc%5Etfw" class="in-page-link"
+                  target="_blank">Twitter</a>にて随時案内してますがお問い合わせください）
+              </p>
+              <p class="pt-2 mb-0">
+                <span class="font-weight-bold">受付対応時間</span><br>
+                平日 10:00〜19:00（祝日を除く）<br>
+                ※正月、ゴールデンウィーク等々<br class="d-sm-none">（<a href="https://twitter.com/harbors_sh?ref_src=twsrc%5Etfw" class="in-page-link"
+                  target="_blank">Twitter</a>にて随時案内してますがお問い合わせください）
+              </p>
+            </div>
+          </div>
         </div>
+
+        <!-- <div class="twitter_area pt-4">
+            <a
+              class="twitter-timeline"
+              data-lang="ja"
+              data-width="320"
+              data-height="400"
+              data-theme="dark"
+              href="https://twitter.com/harbors_sh?ref_src=twsrc%5Etfw"
+              >Tweets by harbors_sh</a
+            >
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </div> -->
       </div>
     </section>
 
     <!-- PLANS -->
     <section class="bg-light">
       <div class="container">
-        <h2 class="text-center"><span class="display-3">PLANS</span></h2>
-        <p class="pt-4 text-center">記載されている料金は全て税込価格です。</p>
+        <h2 class="text-center section-heading"><span class="display-3">PLANS</span><br>料金プラン</h2>
 
-        <div class="pt-5">
+        <div class="pt-4 pt-md-5 table-scroll" id="tableScroll">
           <table class="plan-list table table-bordered table-sm text-center">
             <tr class="bg-darkgray text-light">
               <th>プラン</th>
@@ -783,9 +751,29 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               </td>
             </tr>
           </table>
+          <div class="hint" id="hint">
+            <div class="d-flex justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#fff" class="bi bi-arrow-left-short"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#fff" class="bi bi-arrow-right-short"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#fff"
+              class="bi bi-hand-index-thumb d-block mx-auto" viewBox="0 0 16 16">
+              <path
+                d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 0 0 1 0V6.435l.106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 1 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.118a.5.5 0 0 1-.447-.276l-1.232-2.465-2.512-4.185a.517.517 0 0 1 .809-.631l2.41 2.41A.5.5 0 0 0 6 9.5V1.75A.75.75 0 0 1 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v6.543L3.443 6.736A1.517 1.517 0 0 0 1.07 8.588l2.491 4.153 1.215 2.43A1.5 1.5 0 0 0 6.118 16h6.302a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z" />
+            </svg>
+            <p class="hint-sentence">スクロールできます</p>
+          </div>
         </div>
 
-        <div class="pt-4">
+        <div class="pt-4 table-scroll">
           <table class="plan-list table table-bordered table-sm text-center">
             <tr class="bg-darkgray text-light">
               <th>プラン</th>
@@ -800,23 +788,13 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
             </tr>
           </table>
         </div>
+        <p class="pt-4 text-center">記載されている料金は全て税込価格です。</p>
 
-        <div class="row pt-5">
+        <div class="row pt-5 pb-3">
           <div class="col-md-6 offset-md-3">
-            <div class="text-center py-3 plan-button">
-              <h3 class="mb-0 py-2 text-center">コワーキングプラン詳細</h3>
+            <div class="plan-button text-center py-3 btn btn-outline-secondary w-100 position-relative">
+              <h3 class="mb-0 py-2 text-center plan-button-sentence">コワーキングプラン詳細</h3>
               <a href="/plans/"></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="row pt-4">
-          <div class="col-md-6 offset-md-3">
-            <div class="text-center py-3 plan-button">
-              <h3 class="mb-0 py-2 text-center">
-                <nobr>メンターサービス <wbr >extends詳細</nobr>
-              </h3>
-              <a href="/extends/" target="_blank"></a>
             </div>
           </div>
         </div>
@@ -851,10 +829,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         <div class="row" id="events"></div>
         <div class="row">
           <div class="col-md-12 text-center">
-            <button
-              class="btn btn-white py-2 mb-1"
-              onclick="location.href='/events/'"
-            >
+            <button class="btn btn-white py-2 mb-1" onclick="location.href='/events/'">
               イベント一覧
             </button>
           </div>
@@ -868,10 +843,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         <div class="row pt-5 text-left">
           <div class="col-md-12 offset-lg-2 col-lg-8 mb-3">
             <h4>
-              <a
-                href="https://prtimes.jp/main/html/rd/p/000000003.000054643.html"
-                target="_blank"
-              >
+              <a href="https://prtimes.jp/main/html/rd/p/000000003.000054643.html" target="_blank">
                 エンジニアコミュニティ「HarborS」で、東京フリーランスが「30DAYSブートキャンプ」を開催！
               </a>
             </h4>
@@ -884,10 +856,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
           </div>
           <div class="col-md-12 offset-lg-2 col-lg-8 mb-3 mt-5">
             <h4>
-              <a
-                href="https://prtimes.jp/main/html/rd/p/000000002.000054643.html"
-                target="_blank"
-              >
+              <a href="https://prtimes.jp/main/html/rd/p/000000002.000054643.html" target="_blank">
                 株式会社アンチパターンがエンジニア特化型コワーキング事業「HarborS」をリリース。第一弾として表参道拠点をオープン！
               </a>
             </h4>
@@ -902,30 +871,14 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         <!-- YouTube -->
         <div class="row pt-5">
           <div class="col-12 col-lg-6 p-lg-0 mb-3">
-            <iframe
-              class="youtube-area"
-              style="padding: 10px"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/wPpJ5ZabMeI"
-              loading="lazy"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <iframe class="youtube-area" style="padding: 10px" width="560" height="315"
+              src="https://www.youtube.com/embed/wPpJ5ZabMeI" loading="lazy" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="col-12 col-lg-6 p-lg-0 mb-3">
-            <iframe
-              class="youtube-area"
-              style="padding: 10px"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/sJ9M9zPXEVs"
-              loading="lazy"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <iframe class="youtube-area" style="padding: 10px" width="560" height="315"
+              src="https://www.youtube.com/embed/sJ9M9zPXEVs" loading="lazy" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -933,80 +886,90 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
 
     <!-- コラム -->
     <section class="bg-light">
-      <div class="container">
+      <div class="container small-container">
         <h2 class="text-center"><span class="display-3">COLUMNS</span></h2>
-        <div class="text-center pt-5">
-          <a
-            href="/coworking/how_to_take_aws_exam/"
-            class="btn btn-outline-secondary py-3 mb-4 w-75"
-            role="button"
-          >
-            AWS 認定試験をコワーキングスペースで受けてみる？<span
-              class="float-right column-span"
-              >&gt;</span
-            > </a
-          ><br>
-          <a
-            href="/coworking/about_aws_saa_exam/"
-            class="btn btn-outline-secondary py-3 mb-4 w-75"
-            role="button"
-          >
-            AWS認定 SAA(ソリューションアーキテクトアソシエイト)の資格とは<span
-              class="float-right column-span"
-              >&gt;</span
-            > </a
-          ><br>
-          <a
-            href="/coworking/whats_cloud_services/"
-            class="btn btn-outline-secondary py-3 mb-4 w-75"
-            role="button"
-          >
-            AWSのクラウドが選ばれる10の理由からクラウドとは何かを考える<span
-              class="float-right column-span"
-              >&gt;</span
-            > </a
-          ><br>
-          <a
-            href="/coworking/specialized_coworking/"
-            class="btn btn-outline-secondary py-3 mb-4 w-75"
-            role="button"
-          >
-            ユニークでおすすめのコワーキングスペース特集<span
-              class="float-right column-span"
-              >&gt;</span
-            > </a
-          ><br>
-          <a
-            href="/coworking/engineer_mokumoku/"
-            class="btn btn-outline-secondary py-3 mb-4 w-75"
-            role="button"
-          >
-            おすすめのエンジニアもくもく会とは？<br>参加時のポイントと注意点を解説<span
-              class="float-right"
-              >&gt;</span
-            > </a
-          ><br>
-          <a
-            href="/coworking/engineer_coworking_tokyo/"
-            class="btn btn-outline-secondary py-3 mb-4 w-75"
-            role="button"
-          >
-            エンジニアにおすすめの東京のコワーキングスペース<span
-              class="float-right"
-              >&gt;</span
-            > </a
-          ><br>
-          <a
-            href="/coworking/coworking_ekichika_doropin/"
-            class="btn btn-outline-secondary py-3 mb-4 w-75"
-            role="button"
-          >
-            駅近でドロップインができるコワーキングスペース特集<span
-              class="float-right"
-              >&gt;</span
-            > </a
-          ><br>
-        </div>
+        <ul class="c-pagelink pt-4 pt-md-5">
+          <li>
+            <a href="/coworking/how_to_take_aws_exam/"
+              class="btn btn-outline-secondary px-2 px-sm-3 py-3 mb-4 d-flex w-100 justify-content-between"
+              role="button">
+              <p class="coworking-columns d-flex align-items-center mb-0 text-center mx-auto">
+                AWS 認定試験をコワーキングスペースで受けてみる？
+              </p>
+              <span class="float-right column-span d-flex align-items-center ml-1 ml-sm-2">&gt;</span>
+            </a>
+          </li>
+          <li>
+            <a href="/coworking/about_aws_saa_exam/"
+              class="btn btn-outline-secondary px-2 px-sm-3 py-3 mb-4 d-flex w-100 justify-content-between"
+              role="button">
+              <p class="coworking-columns d-flex align-items-center mb-0 text-center mx-auto">
+                AWS認定 SAA(ソリューションアーキテクトアソシエイト)の資格とは
+              </p>
+              <span class="float-right column-span d-flex align-items-center ml-1 ml-sm-2">&gt;</span>
+            </a>
+          </li>
+          <li>
+            <a href="/coworking/whats_cloud_services/"
+              class="btn btn-outline-secondary px-2 px-sm-3 py-3 mb-4 d-flex w-100 justify-content-between"
+              role="button">
+              <p class="coworking-columns d-flex align-items-center mb-0 text-center mx-auto">
+                AWSのクラウドが選ばれる10の理由からクラウドとは何かを考える
+              </p>
+              <span class="float-right column-span d-flex align-items-center ml-1 ml-sm-2">&gt;</span>
+            </a>
+          </li>
+          <li>
+            <a href="/coworking/specialized_coworking/"
+              class="btn btn-outline-secondary px-2 px-sm-3 py-3 mb-4 d-flex w-100 justify-content-between"
+              role="button">
+              <p class="coworking-columns d-flex align-items-center mb-0 text-center mx-auto">
+                ユニークでおすすめのコワーキングスペース特集
+              </p>
+              <span class="float-right column-span d-flex align-items-center ml-1 ml-sm-2">&gt;</span>
+            </a>
+          </li>
+          <li>
+            <a href="/coworking/engineer_mokumoku/"
+              class="btn btn-outline-secondary px-2 px-sm-3 py-3 mb-4 d-flex w-100 justify-content-between"
+              role="button">
+              <p class="coworking-columns d-flex align-items-center mb-0 text-center mx-auto">
+                おすすめのエンジニアもくもく会とは？<br>参加時のポイントと注意点を解説
+              </p>
+              <span class="float-right column-span d-flex align-items-center ml-1 ml-sm-2">&gt;</span>
+            </a>
+          </li>
+          <li>
+            <a href="/coworking/engineer_coworking_tokyo/"
+              class="btn btn-outline-secondary px-2 px-sm-3 py-3 mb-4 d-flex w-100 justify-content-between"
+              role="button">
+              <p class="coworking-columns d-flex align-items-center mb-0 text-center mx-auto">
+                エンジニアにおすすめの東京のコワーキングスペース
+              </p>
+              <span class="float-right column-span d-flex align-items-center ml-1 ml-sm-2">&gt;</span>
+            </a>
+          </li>
+          <li>
+            <a href="/coworking/coworking_ekichika_doropin/"
+              class="btn btn-outline-secondary px-2 px-sm-3 py-3 mb-4 d-flex w-100 justify-content-between"
+              role="button">
+              <p class="coworking-columns d-flex align-items-center mb-0 text-center mx-auto">
+                駅近でドロップインができるコワーキングスペース特集
+              </p>
+              <span class="float-right column-span d-flex align-items-center ml-1 ml-sm-2">&gt;</span>
+            </a>
+          </li>
+          <li>
+            <a href="/coworking/coworking_dropin_allday/"
+              class="btn btn-outline-secondary px-2 px-sm-3 py-3 d-flex w-100 justify-content-between"
+              role="button">
+              <p class="coworking-columns d-flex align-items-center mb-0 text-center mx-auto">
+                ドロップインで1日利用できるコワーキングスペース10選 
+              </p>
+              <span class="float-right column-span d-flex align-items-center ml-1 ml-sm-2">&gt;</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -1072,283 +1035,266 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         </div>
 
         <!-- 地図 -->
-        <iframe
-          class="map border-0"
+        <iframe class="map border-0"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.99080382981!2d139.7061736147836!3d35.664745284378995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8a9122f1cd%3A0xcfe4aad9a0735cb8!2zSGFyYm9yUyDooajlj4LpgZMo44OP44O844OQ44O844K66KGo5Y-C6YGTKQ!5e0!3m2!1sja!2sjp!4v1589869377967!5m2!1sja!2sjp"
-          loading="lazy"
-          allowfullscreen=""
-        ></iframe>
+          loading="lazy" allowfullscreen=""></iframe>
       </div>
     </section>
+  </main>
 
-    <!-- フッター -->
-    <footer>
-      <div class="container small">
-        <div class="row">
-          <div class="col-md-6 footer-menus">
-            <p><a href="https://anti-pattern.co.jp">運営会社</a></p>
-            <p>
-              <a href="/contacts/">お問い合わせ</a>
-            </p>
-            <p>
-              <a href="https://anti-pattern.co.jp/legal/privacy/"
-                >プライバシーポリシー</a
-              >
-            </p>
+  <!-- フッター -->
+  <footer>
+    <div class="container">
+      <div class="d-md-flex justify-content-between">
+        <div class="d-flex d-md-block footer-left">
+          <div class="mr-md-3 mr-lg-0">
+            <img src="/img/harbors_logo_w.svg" alt="HarborS 表参道のロゴ" class="img-fluid">
+            <p class="my-4 ja">ハーバーズ表参道</p>
+            <a href="https://anti-pattern.co.jp/" class="d-none d-md-inline-block copy en">&copy; anti-pattern.inc</a>
           </div>
-          <div class="col-md-6 footer-menus">
-            <p><a href="/terms/harbors/">コワーキングスペース利用規約</a></p>
-            <p>
-              <a href="/terms/virtual_office/">バーチャルオフィス利用規約</a>
-            </p>
-            <p><a href="/terms/rooms/">ミーティングルーム利用規約</a></p>
-            <p><a href="/terms/posse/">POSSE利用規約</a></p>
+          <div class="d-block d-md-none page-top-sp en">
+            <span>Page top</span>
+            <a href="#top"><img src="/img/top-icon.svg" alt="ページトップボタン"></a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="d-none d-md-block page-top en">
+            <span>Page top</span>
+            <a href="#top"><img src="/img/top-icon.svg" alt="ページトップボタン"></a>
+          </div>
+          <div class="footer-row-top ja">
+            <div class="d-md-flex pb-4">
+              <p class="footer-right-title en">Service</p>
+              <a href="/coworking/" class="">
+                コワーキング
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                  <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                </svg>
+              </a>
+              <br class="d-block d-md-none">
+              <a href="https://sky-terrace.anti-pattern.co.jp/" target="_blank" class="">
+                スカイテラス表参道
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon d-inline d-md-none">
+                  <g id="link-icon" transform="translate(-1154 -5516)">
+                    <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
+                      <rect width="10" height="11.667" stroke="none"/>
+                      <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+                    </g>
+                    <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
+                      <rect width="10" height="11.667" stroke="none"/>
+                      <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <br class="d-block d-md-none">
+              <a href="/rooms/" class="">
+                会議室
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+                  <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+                </svg>
+              </a>
+              <br class="d-block d-md-none">
+              <a href="https://posse-ap.com/" target="_blank">
+                POSSE
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon d-inline d-md-none">
+                  <g id="link-icon" transform="translate(-1154 -5516)">
+                    <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
+                      <rect width="10" height="11.667" stroke="none"/>
+                      <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+                    </g>
+                    <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
+                      <rect width="10" height="11.667" stroke="none"/>
+                      <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <div class="d-md-flex">
+              <p class="footer-right-title en">Information</p>
+              <a href="/events/" class="">イベント</a>
+            </div>
+          </div>
+          <div class="footer-row-bottom ja">
+            <div class="d-md-flex">
+              <p class="footer-right-subtitle">メニュー</p>
+              <a href="https://anti-pattern.co.jp/" target="_blank"><span>運営会社</span></a>
+              <a href="/contacts/"><span>お問い合わせ</span></a>
+              <a href="https://anti-pattern.co.jp/legal/privacy/" target="_blank"><span>プライバシーポリシー</span></a>
+            </div>
+            <div class="d-md-flex">
+              <p class="footer-right-subtitle">利用規約</p>
+              <a href="/terms/harbors/" class=""><span>コワーキングスペース</span></a>
+              <a href="/terms/virtual_office/" class=""><span>バーチャルオフィス</span></a>
+              <br class="d-block d-md-none">
+              <a href="/terms/rooms/" class=""><span>ミーティングルーム</span></a>
+              <a href="/terms/posse/" class=""><span>POSSE</span></a>
+            </div>
           </div>
         </div>
       </div>
-      <p class="text-center mb-0 copyright">
-        <small class="text-white">2020 &copy; Anti-Pattern Inc.</small>
+      <p class="d-block d-md-none text-center copy-sp en">
+        <a href="https://anti-pattern.co.jp/">&copy; anti-pattern.inc</a>
       </p>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="inquiryFormModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="inquiryFormModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="inquiryFormModalTitle">
-              <nobr>コワーキングスペースに関する<wbr >お問い合わせ</nobr>
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form id="inquiryForm">
-              <div class="form-group">
-                <label for="">名前 or Twitter ID(@xxxxx)</label
-                ><font style="color: red">※</font>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="name"
-                  aria-describedby=""
-                  placeholder=""
-                  required
-                >
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">メールアドレス</label
-                ><font style="color: red">※</font>
-                <input
-                  type="email"
-                  class="form-control"
-                  name="mail"
-                  id=""
-                  aria-describedby=""
-                  placeholder=""
-                  required
-                >
-              </div>
-              <div class="form-group">
-                <label for="">電話番号</label><font style="color: red">※</font>
-                <input
-                  type="tel"
-                  class="form-control"
-                  name="tel"
-                  aria-describedby=""
-                  placeholder=""
-                  required
-                >
-              </div>
-              <div class="form-group">
-                <label for="">お問い合わせ目的</label
-                ><font style="color: red">※</font>
-                <select class="form-control" name="contact_type" required>
-                  <option></option>
-                  <option value="1">オンライン説明会を予約したい</option>
-                  <option value="2">現地の見学説明会を予約したい</option>
-                  <option value="3">資料を送付してほしい</option>
-                </select>
-              </div>
-              <div
-                class="form-group"
-                id="form_preferred_visit_date"
-                style="display: none"
-              >
-                <label for="preferred_visit_date">見学ご希望日</label
-                ><font style="color: red">※</font>
-                <div
-                  class="input-group date"
-                  id="preferred_visit_date"
-                  data-target-input="nearest"
-                >
-                  <input
-                    type="text"
-                    name="preferred_visit_date"
-                    class="form-control datetimepicker-input"
-                    data-target="#preferred_visit_date"
-                    required
-                  >
-                  <div
-                    class="input-group-append"
-                    data-target="#preferred_visit_date"
-                    data-toggle="datetimepicker"
-                  >
-                    <div class="input-group-text">
-                      <img src="/img/calendar-solid.svg" alt="カレンダーのアイコン" style="width: 14px;">
-                    </div>
+  <!-- Modal -->
+  <div class="modal fade" id="inquiryFormModal" tabindex="-1" role="dialog"
+    aria-labelledby="inquiryFormModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="inquiryFormModalTitle">
+            <nobr>コワーキングスペースに関する<wbr >お問い合わせ</nobr>
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="inquiryForm">
+            <div class="form-group">
+              <label for="">名前 or Twitter ID(@xxxxx)</label>
+              <font style="color: red">※</font>
+              <input type="text" class="form-control" name="name" aria-describedby="" placeholder="" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">メールアドレス</label>
+              <font style="color: red">※</font>
+              <input type="email" class="form-control" name="mail" id="" aria-describedby="" placeholder="" required>
+            </div>
+            <div class="form-group">
+              <label for="">電話番号</label>
+              <font style="color: red">※</font>
+              <input type="tel" class="form-control" name="tel" aria-describedby="" placeholder="" required>
+            </div>
+            <div class="form-group">
+              <label for="">お問い合わせ目的</label>
+              <font style="color: red">※</font>
+              <select class="form-control" name="contact_type" required>
+                <option></option>
+                <option value="1">オンライン説明会を予約したい</option>
+                <option value="2">現地の見学説明会を予約したい</option>
+                <option value="3">資料を送付してほしい</option>
+              </select>
+            </div>
+            <div class="form-group" id="form_preferred_visit_date" style="display: none">
+              <label for="preferred_visit_date">見学ご希望日</label>
+              <font style="color: red">※</font>
+              <div class="input-group date" id="preferred_visit_date" data-target-input="nearest">
+                <input type="text" name="preferred_visit_date" class="form-control datetimepicker-input"
+                  data-target="#preferred_visit_date" required>
+                <div class="input-group-append" data-target="#preferred_visit_date" data-toggle="datetimepicker">
+                  <div class="input-group-text">
+                    <img src="/img/calendar-solid.svg" alt="カレンダーのアイコン" style="width: 14px;">
                   </div>
                 </div>
               </div>
-              <div
-                class="form-group"
-                id="form_preferred_visit_time"
-                style="display: none"
-              >
-                <label for="preferred_visit_time">見学開始時刻</label
-                ><font style="color: red">※</font>
-                <select
-                  class="form-control"
-                  name="preferred_visit_time"
-                  required
-                >
-                  <option></option>
-                  <option value="11:00">11:00~12:00</option>
-                  <option value="12:00">12:00~13:00</option>
-                  <option value="13:00">13:00~14:00</option>
-                  <option value="14:00">14:00~15:00</option>
-                  <option value="15:00">15:00~16:00</option>
-                  <option value="16:00">16:00~17:00</option>
-                  <option value="17:00">17:00~18:00</option>
-                  <option value="18:00">18:00~19:00</option>
-                  <option value="19:00">19:00~20:00</option>
-                </select>
-                <div class="preferred__visit-note">
-                  <p class="small">※見学は1時間程度になります</p>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="">その他ご要望</label>
-                <textarea
-                  class="form-control"
-                  name="remarks"
-                  id=""
-                  rows="3"
-                ></textarea>
-              </div>
-              <p><font style="color: red">※</font>は必須入力項目です。</p>
-              <button
-                type="submit"
-                class="btn btn-primary w-100 py-2"
-                id="send_button"
-              >
-                送信する
-              </button>
-              <div class="modal-footer">
-                <p class="small">
-                  HarborSは、株式会社アンチパターン
-                  が運営する、南青山のバーチャルオフィス兼エンジニア特化型コワーキングスペースです。
-                </p>
-              </div>
-              <input type="hidden" name="sheetName" value="コワーキング会員">
-            </form>
-            <div id="thanksMessage" style="display: none">
-              <p>
-                お問い合わせありがとうございました。<br>担当からご連絡させていただきますのでお待ちください。
-              </p>
-              <p>
-                HarborSは、「LINE（ライン）」にて情報配信中！！<br>
-                友だち登録いただくと、お得なイベント情報や新しいサービス情報をお届けします♪<br>
-                また、説明会を予約していただいた方には、<br>
-                説明会開始時間のリマインドなどもさせていただきます。
-              </p>
-              <a href="https://lin.ee/uOuueAH"
-                ><img
-                  src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
-                  alt="友だち追加"
-                  height="36"
-                  border="0"
-              ></a>
             </div>
-            <div id="errorMessage" style="display: none">
-              <p style="color: red">
-                予期せぬエラーが発生しました。<br>大変申し訳ございませんが、別途<a
-                  style="color: red; text-decoration-line: underline"
-                  href="/contacts/"
-                  >お問い合わせフォーム</a
-                >か<a
-                  href="tel:0368856140"
-                  style="color: red; text-decoration-line: underline"
-                  >お電話(03-6885-6140)</a
-                >へお問い合わせくださいませ。
+            <div class="form-group" id="form_preferred_visit_time" style="display: none">
+              <label for="preferred_visit_time">見学開始時刻</label>
+              <font style="color: red">※</font>
+              <select class="form-control" name="preferred_visit_time" required>
+                <option></option>
+                <option value="11:00">11:00~12:00</option>
+                <option value="12:00">12:00~13:00</option>
+                <option value="13:00">13:00~14:00</option>
+                <option value="14:00">14:00~15:00</option>
+                <option value="15:00">15:00~16:00</option>
+                <option value="16:00">16:00~17:00</option>
+                <option value="17:00">17:00~18:00</option>
+                <option value="18:00">18:00~19:00</option>
+                <option value="19:00">19:00~20:00</option>
+              </select>
+              <div class="preferred__visit-note">
+                <p class="small">※見学は1時間程度になります</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">その他ご要望</label>
+              <textarea class="form-control" name="remarks" id="" rows="3"></textarea>
+            </div>
+            <p>
+              <font style="color: red">※</font>は必須入力項目です。
+            </p>
+            <button type="submit" class="btn btn-primary w-100 py-2" id="send_button">
+              送信する
+            </button>
+            <div class="modal-footer">
+              <p class="small">
+                HarborSは、株式会社アンチパターン
+                が運営する、南青山のバーチャルオフィス兼エンジニア特化型コワーキングスペースです。
               </p>
             </div>
-            <div id="reservedErrorMessage" style="display: none">
-              <p style="color: red">
-                ご希望の日時でご予約が取れませんでした。<br>大変申し訳ございませんが、別の日時で再度予約をお願いいたします。
-              </p>
-            </div>
+            <input type="hidden" name="sheetName" value="コワーキング会員">
+          </form>
+          <div id="thanksMessage" style="display: none">
+            <p>
+              お問い合わせありがとうございました。<br>担当からご連絡させていただきますのでお待ちください。
+            </p>
+            <p>
+              HarborSは、「LINE（ライン）」にて情報配信中！！<br>
+              友だち登録いただくと、お得なイベント情報や新しいサービス情報をお届けします♪<br>
+              また、説明会を予約していただいた方には、<br>
+              説明会開始時間のリマインドなどもさせていただきます。
+            </p>
+            <a href="https://lin.ee/uOuueAH"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
+                alt="友だち追加" height="36" border="0"></a>
+          </div>
+          <div id="errorMessage" style="display: none">
+            <p style="color: red">
+              予期せぬエラーが発生しました。<br>大変申し訳ございませんが、別途<a style="color: red; text-decoration-line: underline"
+                href="/contacts/">お問い合わせフォーム</a>か<a href="tel:0368856140"
+                style="color: red; text-decoration-line: underline">お電話(03-6885-6140)</a>へお問い合わせくださいませ。
+            </p>
+          </div>
+          <div id="reservedErrorMessage" style="display: none">
+            <p style="color: red">
+              ご希望の日時でご予約が取れませんでした。<br>大変申し訳ございませんが、別の日時で再度予約をお願いいたします。
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- javascript はここから -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"
-      type="text/javascript"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/ja.js"
-      type="text/javascript"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"
-    ></script>
-    <script src="/js/common.js"></script>
-    <script src="/js/coworking_form.js"></script>
-    <script src="/js/header.js"></script>
-    <!-- イベント一覧情報を取得する -->
-    <script>
-      $(document).ready(function () {
-        var events_html = "";
-        $.ajax({
-          type: "GET",
-          url: "https://script.google.com/macros/s/AKfycbwbHBUZYsGi0DlbRGVJGa9iQNKVoDqRgFxMVcNLZ6KeHZhmIYU/exec",
-          dataType: "jsonp",
-          jsonpCallback: "jsondata",
-          success: function (json) {
-            if (json.length) {
-              for (var i = 0; i < 3; i++) {
+  <!-- javascript はここから -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/ja.js" type="text/javascript"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+  <script src="/js/coworking_form.js"></script>
+  <script src="/js/main.js"></script>
+  <!-- イベント一覧情報を取得する -->
+  <script>
+    $(document).ready(function () {
+      var events_html = "";
+      $.ajax({
+        type: "GET",
+        url: "https://script.google.com/macros/s/AKfycbwbHBUZYsGi0DlbRGVJGa9iQNKVoDqRgFxMVcNLZ6KeHZhmIYU/exec?jsonp=jsondata",
+        dataType: "jsonp",
+        jsonpCallback: "jsondata"
+      })
+        .done(function (json) {
+          switch(json.length) {
+            case 2:
+              for (let i = 0; i < 2; i++) {
                 events_html +=
-                  '<div class="col-md-4 mb-4 event-card">' +
-                  '<div class="card text-white">' +
-                  '<img class="card-img event-card-img" loading="lazy" src="' +
+                  '<div class="col-md-6 mb-4 event-card">' +
+                  '<a href="' +
+                  json[i].detail_url +
+                  '" target="_blank">' +
+                  '<div class="card text-white h-100">' +
+                  '<img class="event-card-img my-auto" loading="lazy" src="' +
                   json[i].img_url +
                   '">' +
                   '<div class="card-img-overlay card-event-title">' +
@@ -1360,66 +1306,129 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                   "</p>" +
                   "</div>" +
                   "</div>" +
+                  "</a>" +
                   "</div>";
               }
-              $("#events").append(events_html);
-              resizeImg();
-            }
-          },
-        }).fail(function () {
+              console.log('case 2')
+              break;
+            case 1:
+              events_html +=
+                '<div class="offset-md-4 col-md-4 mb-4 event-card">' +
+                '<a href="' +
+                json[0].detail_url +
+                '" target="_blank">' +
+                '<div class="card text-white h-100">' +
+                '<img class="event-card-img my-auto" loading="lazy" src="' +
+                json[0].img_url +
+                '">' +
+                '<div class="card-img-overlay card-event-title">' +
+                '<h4 class="event-card-title card-title">' +
+                json[0].title +
+                "</h4>" +
+                '<p class="card-text">' +
+                json[0].date +
+                "</p>" +
+                "</div>" +
+                "</div>" +
+                "</a>" +
+                "</div>";
+              break;
+            case 0:
+              events_html += 
+                '<div class="col-md-12"><p class="text-center mb-0">現在開催予定のイベントはありません。</p></div>';
+              break;
+            default:
+              for (var i = 0; i < 3; i++) {
+                events_html +=
+                  '<div class="col-md-4 mb-4 event-card">' +
+                  '<a href="' +
+                  json[i].detail_url +
+                  '" target="_blank">' +
+                  '<div class="card text-white h-100">' +
+                  '<img class="event-card-img my-auto" loading="lazy" src="' +
+                  json[i].img_url +
+                  '">' +
+                  '<div class="card-img-overlay card-event-title">' +
+                  '<h4 class="event-card-title card-title">' +
+                  json[i].title +
+                  "</h4>" +
+                  '<p class="card-text">' +
+                  json[i].date +
+                  "</p>" +
+                  "</div>" +
+                  "</div>" +
+                  "</a>" +
+                  "</div>";
+              }
+              break;
+          }
+          $("#events").append(events_html);
+          resizeImg();
+        })
+        .fail(function () {
           $("#events").append(
             '<div class="col-md-12"><p class="text-center">ページが取得できませんでした。時間をおいてご確認ください。</p></div>'
           );
         });
-      });
-      $(function () {
-        resizeYoutube();
-      });
-      $(window).resize(function () {
-        resizeImg();
-        resizeYoutube();
-      });
-      function resizeImg() {
-        if ($(".event-card")[0]) {
-          var width = $(".event-card")[0].clientWidth;
-          var height = (width * 2) / 3;
-          $(".event-card-img").css("height", height + "px");
-        }
+    });
+    $(function () {
+      resizeYoutube();
+    });
+    $(window).resize(function () {
+      resizeImg();
+      resizeYoutube();
+    });
+    function resizeImg() {
+      if ($(".event-card")[0]) {
+        var width = $(".event-card")[0].clientWidth;
+        var height = (width * 2) / 3;
+        $(".event-card").css("height", height + "px");
       }
-      function resizeYoutube() {
-        var width = $(".youtube-area")[0].clientWidth;
-        var height = (width * 9) / 16;
-        $(".youtube-area").css("height", height + "px");
-      }
+    }
+    function resizeYoutube() {
+      var width = $(".youtube-area")[0].clientWidth;
+      var height = (width * 9) / 16;
+      $(".youtube-area").css("height", height + "px");
+    }
 
-      $(function () {
-        $("#preferred_visit_date").datetimepicker({
-          format: "YYYY/MM/DD",
-          dayViewHeaderFormat: "YYYY年 MMMM",
-          tooltips: {
-            close: "閉じる",
-            selectMonth: "月を選択",
-            prevMonth: "前月",
-            nextMonth: "次月",
-            selectYear: "年を選択",
-            prevYear: "前年",
-            nextYear: "次年",
-            selectTime: "時間を選択",
-            selectDate: "日付を選択",
-            prevDecade: "前期間",
-            nextDecade: "次期間",
-            selectDecade: "期間を選択",
-            prevCentury: "前世紀",
-            nextCentury: "次世紀",
-          },
-          locale: moment.locale("ja", {
-            week: { dow: 1 },
-          }),
-          buttons: {
-            showClose: true,
-          },
-        });
+    $(function () {
+      $("#preferred_visit_date").datetimepicker({
+        format: "YYYY/MM/DD",
+        dayViewHeaderFormat: "YYYY年 MMMM",
+        tooltips: {
+          close: "閉じる",
+          selectMonth: "月を選択",
+          prevMonth: "前月",
+          nextMonth: "次月",
+          selectYear: "年を選択",
+          prevYear: "前年",
+          nextYear: "次年",
+          selectTime: "時間を選択",
+          selectDate: "日付を選択",
+          prevDecade: "前期間",
+          nextDecade: "次期間",
+          selectDecade: "期間を選択",
+          prevCentury: "前世紀",
+          nextCentury: "次世紀",
+        },
+        locale: moment.locale("ja", {
+          week: { dow: 1 },
+        }),
+        buttons: {
+          showClose: true,
+        },
       });
-    </script>
-  </body>
+    });
+
+    $(function () {
+      $("#tableScroll").scroll(function () {
+        var scroll = $(this).scrollLeft();
+        if (scroll > 10) {
+          $(".hint").animate({ opacity: 0 }, { duration: 400, easing: 'swing' })
+        }
+      });
+    });
+  </script>
+</body>
+
 </html>

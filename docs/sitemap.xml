@@ -2,43 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://harbors.anti-pattern.co.jp/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-11-19</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/coworking/</loc>
-    <lastmod>2021-09-29</lastmod>
+    <lastmod>2021-11-28</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/coworking/specialized_coworking/</loc>
-    <lastmod>2021-10-12</lastmod>
+    <lastmod>2021-11-28</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/coworking/engineer_mokumoku/</loc>
-    <lastmod>2021-10-12</lastmod>
+    <lastmod>2021-11-28</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/coworking/engineer_coworking_tokyo/</loc>
-    <lastmod>2021-10-12</lastmod>
+    <lastmod>2021-11-28</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/coworking/whats_cloud_services/</loc>
-    <lastmod>2021-10-12</lastmod>
+    <lastmod>2021-11-28</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/coworking/how_to_take_aws_exam/</loc>
-    <lastmod>2021-10-12</lastmod>
+    <lastmod>2021-11-28</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/coworking/coworking_ekichika_doropin/</loc>
-    <lastmod>2021-10-12</lastmod>
+    <lastmod>2021-11-28</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/coworking/about_aws_saa_exam/</loc>
-    <lastmod>2021-10-12</lastmod>
+    <lastmod>2021-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://harbors.anti-pattern.co.jp/coworking/coworking_dropin_allday/</loc>
+    <lastmod>2021-11-28</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/plans/</loc>
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2021-11-28</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/satellite_office/</loc>
@@ -46,11 +50,11 @@
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/events/</loc>
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2021-11-28</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/virtual_office/</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-11-13</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/virtual_office/columns/</loc>
@@ -146,26 +150,26 @@
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/rooms/</loc>
-    <lastmod>2021-10-16</lastmod>
+    <lastmod>2021-11-28</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/terms/harbors/</loc>
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2021-09-28</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/terms/virtual_office/</loc>
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2021-11-28</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/terms/rooms/</loc>
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2021-11-28</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/terms/posse/</loc>
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2021-11-28</lastmod>
   </url>
   <url>
     <loc>https://harbors.anti-pattern.co.jp/contacts/</loc>
-    <lastmod>2021-09-18</lastmod>
+    <lastmod>2021-11-28</lastmod>
   </url>
 </urlset>
