@@ -298,34 +298,23 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
     </header>
 
     <!-- トップ画像 -->
-    <section class="contents-main">
-      <div class="filter"></div>
-      <!-- トップ画像内文字 -->
-      <div
-        class="
-          text-center
-          top-text
-        "
-      >
-        <div class="row">
-          <div class="col-lg-12 pt-5 mt-5">
-            <h1 class="contents-title-2">
-              エンジニア向けIT勉強会・<br class="d-md-none">イベント情報一覧
-            </h1>
-          </div>
-        </div>
+    <section class="contents-main pb-0">
+      <div class="pt-5 text-center">
+        <h1 class="contents-title-2">
+          エンジニア向けIT勉強会・<br class="d-md-none">イベント情報一覧
+        </h1>
       </div>
     </section>
 
     <!-- イベント一覧 -->
-    <section>
+    <section class="py-4 py-md-5">
       <div class="container">
-        <div class="row text-center my-5" id="events"></div>
+        <div class="row text-center" id="events"></div>
       </div>
     </section>
 
     <!-- アクセス -->
-    <section class="bg-light" id="access">
+    <section class="bg-light py-4 py-md-5" id="access">
       <div class="container text-center">
         <h2 class="pb-3"><span class="display-3">ACCESS</span></h2>
         <div class="mb-4 text-left">
@@ -517,7 +506,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                   '<div class="card mb-3">' +
                   '<div class="row no-gutters">' +
                   '<div class="col-md-4 my-auto">' +
-                  '<img class="card-img" src="' +
+                  '<img class="w-100" src="' +
                   json[i].img_url +
                   '">' +
                   "</div>" +
