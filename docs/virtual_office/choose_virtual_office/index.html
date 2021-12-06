@@ -287,85 +287,138 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </header>
 
-    <div class="fixed-bottom mb-2 virtual-form-btn text-center fixed-cta ml-auto" style="display: none;">
-      <div class="cta-card article-cta-card">
-        <div class="cta-img article-cta-img">
-          <h4 class="cta-lead text-white mx-auto w-75">最短3日で港区青山の<br>住所を手に入れよう！</h4>
-          <p class="text-white cta-sentence">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
+      <div
+      class="
+        fixed-bottom
+        mb-0
+        bg-white
+        virtual-form-btn
+      "
+      style="display: none;"
+      >
+        <div class="container d-none d-lg-flex flex-column justify-content-between mx-auto my-2 align-items-center">
+          <div>
+            <p class="mb-0">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
+          </div>
+          <div class="d-flex">
+            <button
+              type="button"
+              class="btn virtual-pc-cta d-block nowrap mr-4"
+              onclick="countClickByGa();"
+              data-toggle="modal"
+              data-target="#inquiryFormModal"
+            >
+              <div class="d-flex align-middle virtual-pc-cta-contents">
+                <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="width: 23px; height: 23px; opacity: 1;" xml:space="preserve" class="mr-2 flow-icon">
+                <g>
+                  <path class="st0" d="M442.539,73.946c-44.84-37.927-108.949-60.084-187.344-60.066c-74.388,0-137.905,20.981-183.328,58.411
+                    c-22.702,18.686-40.758,41.492-53.06,67.428C6.489,165.648-0.019,194.641,0,225.422c-0.019,37.214,7.768,71.586,23.511,101.577
+                    c14.99,28.664,37.297,53.04,65.699,72.103c-6.715,28.269-16.157,68.67-16.157,68.689c-0.432,1.815-0.658,3.706-0.639,5.624
+                    c-0.018,7.59,3.518,14.897,9.667,19.608l0.038,0.028v0.01c4.402,3.348,9.705,5.06,15.01,5.06c3.988,0,8.031-0.969,11.68-2.934
+                    l0.358-0.188l0.357-0.216c0.019-0.009,5.079-3.01,12.866-7.618c11.661-6.903,29.435-17.407,45.291-26.745
+                    c7.919-4.665,15.367-9.038,21.31-12.508c5.924-3.46,10.476-6.103,12.17-7.034l0.075-0.047l0.112-0.065
+                    c22.1-12.527,39.705-14.634,53.849-14.709c58.702-0.085,121.212-11.464,171.13-42.62c24.902-15.602,46.57-36.413,61.806-63.056
+                    c15.272-26.624,23.886-58.853,23.868-96.16C512.112,165.545,487.416,111.78,442.539,73.946z M454.709,301.24
+                    c-8.822,15.376-20.37,28.316-34.232,39.282c-20.784,16.429-46.871,28.288-75.479,35.934c-28.598,7.664-59.652,11.088-89.802,11.078
+                    c-18.508-0.075-44.369,3.414-72.752,19.684v-0.01c-3.141,1.749-10.137,5.822-19.354,11.219
+                    c-13.222,7.759-30.62,18.019-45.14,26.614c3.536-15.094,7.656-32.576,10.721-45.413v-0.019c0.508-2.144,0.884-4.468,0.884-7.11
+                    c0.038-3.724-0.922-8.266-3.065-12.046c-1.6-2.831-3.65-5.06-5.436-6.583c-2.746-2.285-4.796-3.273-5.944-3.903l-1.166-0.592
+                    l-0.132-0.075c-25.147-16.204-43.655-36.329-56.18-60.188c-12.527-23.897-19.11-51.781-19.11-83.69
+                    c0-25.401,5.285-48.526,15.084-69.187c14.708-30.94,39.667-56.605,73.786-74.896c34.082-18.254,77.398-28.937,127.805-28.937
+                    c71.284,0.019,125.933,20.031,162.46,50.952c36.47,31.025,55.692,72.799,55.824,120.864
+                    C473.442,255.723,466.407,280.729,454.709,301.24z"></path>
+                  <path class="st0" d="M135.055,197.171c-16.278,0-29.472,13.204-29.472,29.483c0,16.278,13.194,29.473,29.472,29.473
+                    c16.288,0,29.482-13.194,29.482-29.473C164.538,210.375,151.344,197.171,135.055,197.171z"></path>
+                  <path class="st0" d="M250.024,197.171c-16.28,0-29.474,13.204-29.474,29.483c0,16.278,13.194,29.473,29.474,29.473
+                    c16.288,0,29.482-13.194,29.482-29.473C279.506,210.375,266.312,197.171,250.024,197.171z"></path>
+                  <path class="st0" d="M365,197.171c-16.278,0-29.482,13.204-29.482,29.483c0,16.278,13.204,29.473,29.482,29.473
+                    c16.288,0,29.484-13.194,29.484-29.473C394.484,210.375,381.288,197.171,365,197.171z"></path>
+                </g>
+                </svg>
+                <p class="virtual-pc-cta-sentence mb-0">お問い合わせ</p>
+              </div>
+            </button>
+            <button
+              type="button"
+              onclick="window.open('https://ap-harbors.firebaseapp.com/virtual-office/register/','view');"
+              class="btn virtual-pc-cta d-block nowrap"
+            >
+              <div class="d-flex align-middle virtual-pc-cta-contents">
+                <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="width: 23px; height: 23px; opacity: 1;" xml:space="preserve" class="mr-2 flow-icon">
+                  <g>
+                    <path class="st0" d="M503.556,156.001l-18.569-18.561c-11.258-11.266-29.518-11.257-40.776,0l-17.37,17.379l59.346,59.346
+                      l17.369-17.369C514.814,185.528,514.814,167.268,503.556,156.001z"></path>
+                    <polygon class="st0" points="264.082,317.579 264.082,376.924 323.428,376.924 470.001,230.352 410.656,171.006 	"></polygon>
+                    <rect x="121.111" y="142.306" class="st0" width="167.616" height="27.936"></rect>
+                    <rect x="121.111" y="244.738" class="st0" width="167.616" height="27.936"></rect>
+                    <rect x="121.111" y="347.17" class="st0" width="102.432" height="27.936"></rect>
+                    <path class="st0" d="M372.589,454.658c0,4.282-3.492,7.766-7.766,7.774H45.014c-4.274-0.008-7.748-3.492-7.766-7.774V57.344
+                      c0.018-4.284,3.492-7.766,7.766-7.776h319.809c4.274,0.009,7.766,3.492,7.766,7.776v112.225l37.248-37.248V57.344
+                      c-0.018-24.872-20.133-45.005-45.014-45.024H45.014C20.152,12.339,0.019,32.472,0,57.344v397.314
+                      c0.019,24.871,20.152,45.005,45.014,45.022h319.809c24.881-0.018,44.996-20.151,45.014-45.022V330.019l-37.248,37.248V454.658z"></path>
+                  </g>
+                  </svg>
+                  <p class="virtual-pc-cta-sentence mb-0">お申し込み</p>
+              </div>
+            </button>
+          </div>
         </div>
-        <div class="virtual-fixed-cv-btn position-relative article-cv-btn">
+      </div>
+
+      <div
+        class="
+          fixed-bottom
+          mb-0
+          d-flex d-lg-none
+          mobile-footer mobile-footer-special
+        "
+      >
+        <div>
           <button
             type="button"
-            class="cv-contact-btn btn btn-sm-lg top-button d-block mx-auto mb-2"
+            class="btn m-0 w-100 nowrap text-white px-0 py-3 mv-cta"
             onclick="countClickByGa();"
             data-toggle="modal"
             data-target="#inquiryFormModal"
           >
-            お問い合わせ
-          </button>
-          <button
-          type="button"
-          onclick="window.open('https://ap-harbors.firebaseapp.com/virtual-office/register/','view');"
-          class="cv-apply-btn btn btn-sm-lg top-button d-block mx-auto"
-          >
-            お申し込み
+            <div class="mv-cta-contents mx-auto d-flex align-items-center">
+              <img
+                src="/img/tel.svg"
+                alt="電話"
+                width="20px"
+                height="20px"
+                class="d-block mr-2"
+                loading="lazy"
+              >
+              <p class="mt-1 mb-0">
+                電話で相談をする
+              </p>
+            </div>
           </button>
         </div>
+        <div>
+          <a
+            href="tel:03-6885-6140"
+            class="btn m-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
+            onclick="ga('send', 'event', 'call', 1);"
+          >
+            <div class="mv-cta-contents mx-auto d-flex align-items-center">
+              <img
+                src="/img/contact.svg"
+                alt="お問い合わせ"
+                width="20px"
+                height="20px"
+                class="d-block mr-2"
+                id="toSpInquiryFormModal"
+                loading="lazy"
+              >
+              <p class="mt-1 mb-0">
+                無料で相談してみる
+              </p>
+            </div>
+          </a>
+        </div>
       </div>
-    </div>
-
-    <div
-      class="
-        fixed-bottom
-        mb-0
-        d-flex d-md-none
-        mobile-footer mobile-footer-special
-      "
-    >
-      <div>
-        <button
-          type="button"
-          class="btn m-0 w-100 nowrap text-white px-0 py-3 mv-cta"
-          onclick="countClickByGa();"
-          data-toggle="modal"
-          data-target="#inquiryFormModal"
-        >
-          <div class="mv-cta-contents mx-auto d-flex align-items-center">
-            <img
-              src="/img/contact.svg"
-              alt="お問い合わせ"
-              width="20px"
-              height="20px"
-              class="d-block mr-2"
-              id="toSpInquiryFormModal"
-            >
-            <p class="mt-1 mb-0">
-              無料で相談してみる
-            </p>
-          </div>
-        </button>
-      </div>
-      <div>
-        <a
-          href="tel:03-6885-6140"
-          class="btnm-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
-          onclick="ga('send', 'event', 'call', 1);"
-        >
-          <div class="mv-cta-contents mx-auto d-flex align-items-center">
-            <img
-              src="/img/tel.svg"
-              alt="電話"
-              width="20px"
-              height="20px"
-              class="d-block mr-2"
-            >
-            <p class="mt-1 mb-0">
-              電話で相談をする
-            </p>
-          </div>
-        </a>
-      </div>
-    </div>
 
     <section class="contents-main">
       <div class="container">
@@ -387,7 +440,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         </div>
 
         <div class="pt-5">
-          <ul class="table-of-contents border-0">
+          <ul class="table-of-contents">
             <h4 class="text-center font-weight-bold mb-3">目次</h4>
             <li><a href="#p01">料金</a></li>
             <li><a href="#p02">サービス</a></li>
@@ -836,7 +889,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
     <footer class="virtual-footer">
       <div class="container">
         <!-- パンくずリスト -->
-        <div class="breadcrumb virtual-breadcrumb bg-transparent pt-2 pb-0 mb-5 mb-md-0">
+        <div class="breadcrumb bg-transparent pt-2 pb-0 mb-5 mb-md-0">
           <ol
             itemscope
             itemtype="https://schema.org/BreadcrumbList"
