@@ -34,7 +34,6 @@ $(function () {
   )
 
 
-    
   $('.footer-disabled').hover(
     function () {
       $('.transparent-area').remove();
