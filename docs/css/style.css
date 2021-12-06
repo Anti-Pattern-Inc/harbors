@@ -80,12 +80,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1.display-4, .top-text h2 {
+.top-text h2 {
   text-shadow: 0px 0px 5px #00000044, -0px 0px 5px #00000044, 0px -0px 5px #00000044, -0px -0px 5px #00000044;
-}
-
-h1.display-4 {
-  font-size: 6.5em;
 }
 
 .lead {
@@ -158,10 +154,9 @@ header.container-fluid {
 
 .breadcrumb {
   max-width: 1140px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
   list-style: none;
+  padding: 0;
+  margin: 0 0 50px;
 }
 
 .breadcrumb li {
@@ -172,11 +167,11 @@ header.container-fluid {
 .breadcrumb li:after {
   content: ">";
   padding: 0 8px;
-  color: #333;
+  color: #fff;
 }
 
-.breadcrumb li:last-child:after {
-  content: "";
+.breadcrumb li:last-child::after {
+  display: none;
 }
 
 .breadcrumb li a, .breadcrumb li p {
@@ -187,6 +182,27 @@ header.container-fluid {
   text-decoration: underline;
 }
 
+#breadcrumbs {
+  font-size: 90%;
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+/* バーチャル パンくず */
+
+.virtual-footer {
+  padding: 40px 0;
+}
+
+@media screen and (max-width: 767.8px) {
+  .breadcrumb li a span {
+    font-size: 12px;
+  }
+  .virtual-footer {
+    padding: 20px 0 40px;
+  }
+}
+
 a.disabled {
   pointer-events: none;
   color: #000;
@@ -195,14 +211,6 @@ a.disabled {
 /* ------------------------------
 ヘッダー
 --------------------------------- */
-
-.breadcrumb li a:hover {
-  text-decoration: underline;
-}
-
-.breadcrumb li:after {
-  color: #333;
-}
 
 .header-left span {
   color: #333;
@@ -224,8 +232,6 @@ a.disabled {
 .no-scroll {
   overflow: hidden;
 }
-
-/* header */
 
 #header {
   width: 100vw;
@@ -603,42 +609,6 @@ a.disabled {
   }
 }
 
-/* header */
-
-/* ヘッダー営業時間 */
-
-.top-stitch {
-  padding: 0.5rem 0;
-  color: #565656;
-  background-color: #a9a9a9;
-  box-shadow: 0px 0px 0px 10px #a9a9a9;
-  border-bottom: dashed 2px #fff;
-  border-left: dashed 2px #fff;
-  border-right: dashed 2px #fff;
-  margin-bottom: 10px;
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-}
-
-.top-stitch p {
-  margin: 0;
-  padding: 0;
-}
-
-/* コワーキング料金一覧テーブル */
-
-table.plan-list th, table.plan-list td {
-  vertical-align: middle;
-}
-
-/* twitter埋め込み */
-
-.twitter_area {
-  margin: 0 auto;
-  width: 320px;
-}
-
 /* ------------------------------
 NEWS
 --------------------------------- */
@@ -670,8 +640,6 @@ iframe.map {
 /* ------------------------------
 フッター
 --------------------------------- */
-
-/* footer */
 
 footer {
   margin: 0;
@@ -1084,11 +1052,25 @@ footer a:hover {
   }
 }
 
-.invisible {
-  display: none;
+/* ------------------------------
+small-container
+--------------------------------- */
+
+.small-container {
+  max-width: 910px;
 }
 
-/* footer */
+@media screen and (max-width: 911.98px) {
+  .small-container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .small-container {
+    max-width: 540px;
+  }
+}
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -1194,56 +1176,6 @@ footer a:hover {
   width: 50%;
 }
 
-/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-
-コワーキングプランページ
-
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-
-.plan-category {
-  position: relative;
-  display: block;
-  background-color: #18335f;
-  color: #ffffff;
-  padding: 10px;
-  overflow: auto;
-}
-
-.plan-category>a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.plan-category>.plans-open-icon {
-  display: block;
-  float: right;
-  margin-right: 5px;
-  height: 100%;
-}
-
-.plan-category>.plans-category-name {
-  width: 90%;
-  float: left;
-  height: 100%;
-}
-
-@media screen and (max-width: 575.98px) {
-  .plan-category>.plans-category-name {
-    width: 100%;
-  }
-  .plan-category>.plans-open-icon {
-    margin-top: 5px;
-    width: 100%;
-    text-align: center;
-  }
-  .plan-category>.plans-open-icon>i {
-    transform: rotate(90deg);
-  }
-}
-
 .flow-button {
   position: relative;
   background-color: #18325f;
@@ -1328,13 +1260,9 @@ footer a:hover {
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
-バーチャルオフィスTOP About us
+バーチャルオフィス About us
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-
-h2.color-gray {
-  color: #a9a9a9;
-}
 
 .about-us {
   overflow: hidden;
@@ -1439,19 +1367,6 @@ h2.color-gray {
   z-index: 10;
 }
 
-.harbors-button {
-  border: #fff 1px solid;
-  color: #fff;
-  box-shadow: 0 0px 10px 10px gray;
-  transition: all 0.7s;
-}
-
-.harbors-button:hover {
-  background-color: #fff;
-  color: #a9a9a9;
-  box-shadow: none;
-}
-
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 目次
@@ -1462,7 +1377,6 @@ h2.color-gray {
   background-color: #fafafa;
   width: 560px;
   margin: 0 auto;
-  border: dotted #18325f 2px;
   box-shadow: 0 0 5px #999;
   color: #18325f;
   padding: 30px;
@@ -1559,12 +1473,6 @@ h2.color-gray {
   padding: 7px;
 }
 
-.title-level2-solid {
-  border-bottom: 1px solid #426579;
-  border-left: 10px solid #426579;
-  padding: 7px;
-}
-
 .title-level2 {
   border-bottom: 2px dotted #203744;
   border-left: 10px solid #203744;
@@ -1601,12 +1509,6 @@ h2.color-gray {
   }
   .h2_title small {
     font-size: 22px;
-  }
-}
-
-@media screen and (min-width: 991.98px) {
-  .br-tb {
-    display: none;
   }
 }
 
@@ -1683,10 +1585,8 @@ features_of_harbors
   vertical-align: middle;
 }
 
-@media screen and (max-width: 768px) {
-  .faq-button {
+.faq-button {
     width: 100%;
-  }
 }
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -1762,7 +1662,17 @@ features_of_harbors
   overflow: visible;
 }
 
-/* コワーキングプラン ヒント */
+/* ------------------------------
+コワーキング料金一覧テーブル
+--------------------------------- */
+
+table.plan-list th, table.plan-list td {
+  vertical-align: middle;
+}
+
+/* ------------------------------
+コワーキングプランヒント
+--------------------------------- */
 
 .table-scroll {
   overflow: auto;
@@ -1816,13 +1726,17 @@ features_of_harbors
   }
 }
 
-/* OPEN */
+/* ------------------------------
+OPEN
+--------------------------------- */
 
 .open-img img {
   border-radius: 1.25rem;
 }
 
-/* COLUMNS */
+/* ------------------------------
+COLUMNS
+--------------------------------- */
 
 .coworking-columns {
   font-size: 16px;
@@ -2066,7 +1980,9 @@ g-contents
   }
 }
 
-/** ファーストビュー **/
+/* ------------------------------
+ファーストビュー
+--------------------------------- */
 
 .fv {
   margin: 20px 0 30px;
@@ -2133,7 +2049,6 @@ g-contents
 .first-view-description {
   font-size: 14px;
   color: #666;
-  line-height: 30px;
   margin-bottom: 0%;
 }
 
@@ -2178,7 +2093,6 @@ g-contents
 
   .first-view-description {
     font-size: 12px;
-    line-height: 20px;
   }
 
   .first-view-right {
@@ -2244,61 +2158,10 @@ g-contents
 
 /** SEOテキスト **/
 
-.text_area h2, .c-nap h2 {
+.c-nap h2 {
   font-size: 1.5rem;
   margin: 0 0 15px;
   text-align: left;
-}
-
-.text_area p {
-  margin: 0;
-}
-
-.text_area .u-pb15 {
-  padding-bottom: 15px;
-}
-
-/** NAP **/
-
-.text_area .c-nap {
-  margin: 40px 0 0;
-}
-
-.text_area .c-table {
-  border-collapse: collapse;
-  border: 1px solid #ddd;
-  text-align: left;
-  width: 100%;
-}
-
-.text_area .c-table th {
-  background: #f7f7f7;
-  border: 1px solid #ddd;
-  text-align: left;
-  vertical-align: middle;
-  width: 25%;
-}
-
-.text_area .c-table td {
-  border: 1px solid #ddd;
-  vertical-align: middle;
-}
-
-.text_area .u-p15 {
-  padding: 15px;
-}
-
-@media only screen and (max-width: 768px) {
-  .text_area h2, .text_area .c-nap h2 {
-    font-size: 1.35rem;
-  }
-  .text_area .c-table th {
-    display: block;
-    width: auto;
-  }
-  .text_area .c-table td {
-    display: block;
-  }
 }
 
 /** アンカーテキスト **/
@@ -2331,37 +2194,6 @@ g-contents
 @media screen and (max-width: 767.8px) {
   .contents-main {
     padding: 80px 0;
-  }
-}
-
-/** パンくず修正 **/
-
-.breadcrumb li:last-child::after {
-  display: none;
-}
-
-/** 大見出し修正 **/
-
-@media screen and (min-width: 768px) {
-  .g-h-tit {
-    padding-top: 85px;
-  }
-  .g-h-tit2 {
-    padding-top: 75px;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .g-h-tit, .g-h-tit2 {
-    font-size: 150%;
-    padding-top: 30px;
-  }
-}
-
-@media screen and (min-width: 980px) {
-  .g-h-tit, .g-h-tit2 {
-    font-size: 2rem;
-    padding-top: 0;
   }
 }
 
@@ -2507,12 +2339,6 @@ g-contents
   padding-bottom: 1em !important;
 }
 
-#breadcrumbs {
-  font-size: 90%;
-  margin: 0 0 20px;
-  text-align: left;
-}
-
 .l-container {
   word-break: normal;
   color: #343a40;
@@ -2564,21 +2390,6 @@ g-contents
 
 .c-block a {
   color: red;
-}
-
-/** 小見出しブロック 共通 **/
-
-/** 画像 共通 **/
-
-.img-left-s, .img-right-s, .img-left-l, .img-right-l {
-  float: none;
-  margin: 0 0 4%;
-  width: 100%;
-}
-
-.img-left-s img, .img-right-s img, .img-left-l img, .img-right-l img {
-  vertical-align: middle;
-  width: 100%;
 }
 
 /** リンク一覧 共通 **/
@@ -2633,33 +2444,6 @@ g-contents
   }
   .c-table td {
     display: block;
-  }
-}
-
-/** ボタン 共通 **/
-
-@media (min-width: 768px) {
-  /** リンク一覧 PCのみ **/
-  /** 画像 PCのみ **/
-  .img-left-s {
-    float: left;
-    margin: 0 4% 4% 0;
-    width: 35%;
-  }
-  .img-right-s {
-    float: right;
-    margin: 0 0 4% 4%;
-    width: 35%;
-  }
-  .img-left-l {
-    float: left;
-    margin: 0 4% 4% 0;
-    width: 30%;
-  }
-  .img-right-l {
-    float: right;
-    margin: 0 0 4% 4%;
-    width: 30%;
   }
 }
 
@@ -2736,7 +2520,7 @@ g-contents
   .top-image {
     height: 700px;
   }
-  .display-3, .display-4 {
+  .display-3 {
     font-size: 2rem;
   }
   .monthly-fee .display-3 {
@@ -2751,14 +2535,6 @@ g-contents
   .stitch img {
     width: 100%;
   }
-}
-
-.emergency {
-  background-color: #f5c9c6;
-  border-radius: 5px;
-  color: #ed1c24;
-  font-size: 16px;
-  font-weight: bold;
 }
 
 .in-page-link {
@@ -2795,10 +2571,6 @@ g-contents
   border: 1px #aaa solid;
   border-radius: 10px;
   padding: 4px;
-}
-
-.form-submit {
-  margin-top: 10px;
 }
 
 .contact-main .access {
@@ -3114,9 +2886,13 @@ form span.bg-danger {
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
-バーチャルTOPのFLOW
+バーチャルオフィスTOP
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+/* ------------------------------
+FLOW
+--------------------------------- */
 
 .flow-card {
   background-size: cover;
@@ -3206,135 +2982,13 @@ form span.bg-danger {
   }
 }
 
-/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-
-バーチャルTOPの固定CTA
-
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+/* ------------------------------
+固定CTA
+--------------------------------- */
 
 .fixed-cta {
   width: fit-content;
   margin-left: auto;
-}
-
-.cta-card {
-  background: #fff;
-  width: 270px;
-  margin-left: auto;
-  margin-right: 10px;
-  box-shadow: 0 0 5px #aaa;
-  position: relative;
-}
-
-.cta-img {
-  background-image: url(/img/features_of_harbors1.jpg);
-  background-size: cover;
-  height: 110px;
-  position: relative;
-}
-
-.cta-img::before {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: ' ';
-}
-
-.virtual-fixed-cv-btn {
-  padding: 5px;
-  height: auto;
-  margin: 0 auto;
-}
-
-.cta-card .virtual-fixed-cv-btn>button {
-  width: 80%;
-  font-weight: bold;
-  border-radius: 100px;
-  font-size: 13px;
-  transition: background 0.4s;
-  padding: 4px 10px;
-  text-align: center;
-}
-
-.cta-card .virtual-fixed-cv-btn .cv-contact-btn {
-  background-color: rgba(255, 255, 255, 0.6);
-  color: #df7156;
-}
-
-.cta-card .virtual-fixed-cv-btn .cv-apply-btn {
-  background-color: #df7156;
-  border: 1px solid #df7156;
-  color: #fff;
-}
-
-.cta-card .virtual-fixed-cv-btn .cv-apply-btn::after {
-  content: '';
-  width: 12px;
-  height: 12px;
-  border: 0;
-  border-top: solid 2px #fff;
-  border-right: solid 2px #fff;
-  position: absolute;
-  top: 50%;
-  right: 30px;
-  margin-top: -7px;
-  transform: rotate(45deg);
-  transition: right .2s;
-}
-
-.cta-card .virtual-fixed-cv-btn .cv-apply-btn:hover::after {
-  border-top: solid 2px #fff;
-  border-right: solid 2px #fff;
-  right: 20px;
-}
-
-.cta-card .virtual-fixed-cv-btn .cv-contact-btn::after {
-  content: '';
-  width: 12px;
-  height: 12px;
-  border: 0;
-  border-top: solid 2px #df7156;
-  border-right: solid 2px #df7156;
-  position: absolute;
-  top: 50%;
-  right: 30px;
-  margin-top: -7px;
-  transform: rotate(45deg);
-  transition: right .2s;
-}
-
-.cta-card .virtual-fixed-cv-btn .cv-contact-btn:hover::after {
-  border-top: solid 2px #df7156;
-  border-right: solid 2px #df7156;
-  right: 20px;
-}
-
-.cta-card .virtual-fixed-cv-btn .cv-apply-btn:hover, .cta-card .virtual-fixed-cv-btn .cv-contact-btn:hover {
-  opacity: 0.8;
-}
-
-.cta-lead {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  letter-spacing: 2px;
-  font-size: 17px;
-}
-
-.cta-sentence {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  width: 100%;
-  font-size: 10px;
-  margin-bottom: 0;
 }
 
 .fixed-bottom {
@@ -3374,340 +3028,62 @@ form span.bg-danger {
   }
 }
 
-/* REASONS */
+.virtual-pc-cta {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px;
+  width: 230px;
+  box-shadow: 0px 2px 5px rgb(17 14 9);
+  background-color: #df7156;
+  border: 2px solid #df7156;
+  border-radius: 10px;
+}
 
-.reasons-item {
-  cursor: pointer;
+.virtual-pc-cta:hover {
   background-color: #fff;
-  box-shadow: 0 0 5px #aaa;
+  color: #df7156;
+  transition: background 0.4s;
 }
 
-.reasons-item:hover {
-  opacity: 0.8;
-  text-decoration: none;
-  color: #777;
+.virtual-pc-cta-contents {
+  width: fit-content;
+  margin: 0 auto;
 }
 
-.checkbox {
-  width: 30px;
-  height: auto;
-  margin: 0 5px 0 0;
+.virtual-pc-cta-lead {
+  font-size: 18px;
 }
 
-.chevron-down, .chevron-up {
-  display: none;
+.fvirtual-pc-cta-sentence {
+  line-height: 20px;
+  display: flex;
+  margin-top: 3px;
+  margin-bottom: 0;
 }
 
-.chevron-down.show, .chevron-up.show {
-  display: block;
+.virtual-pc-cta:hover .flow-icon {
+  fill: #df7156;
 }
 
-.hidden-text {
-  background-color: #fff;
-  border-top: 1px solid #ccc;
+@media screen and (max-width: 767.98px) {
+
+  .virtual-pc-cta {
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+  }
 }
 
-.reasons-item h3 {
-  font-size: 1.5rem;
-}
-
-.reasons-item p {
-  font-size: 16px;
-  margin: 0;
-}
+/* ------------------------------
+REASONS
+--------------------------------- */
 
 .reasons-detail {
   font-size: 14px;
   padding: 0 15px;
 }
-
-@media screen and (max-width: 991.98px) {
-  .reasons-item h3 {
-    font-size: 1.0rem;
-  }
-  .reasons-item p {
-    font-size: 14px;
-  }
-}
-
-/* Virtual-Top */
-
-@media screen and (max-width: 575.98px) {
-  .virtual-top section {
-    padding: 40px 0;
-  }
-  .coworking-main section {
-    padding: 40px 0;
-  }
-}
-
-/* CTAの色を統一 */
-
-.about-us-detail {
-  background-color: #df7156;
-  border: 3px solid #df7156;
-}
-
-.about-us-detail:hover {
-  color: #df7156;
-}
-
-.pc-footer {
-  background-color: #df7156;
-  border: 3px solid #df7156;
-}
-
-.pc-footer:hover {
-  border-color: #bb604a;
-  background-color: #bb604a;
-}
-
-/* faqをvirtual topに移設 */
-
-.top-faq h3 {
-  font-size: 1.0rem;
-  margin-bottom: 0;
-  line-height: 1.2;
-}
-
-.question-box {
-  align-items: flex-end;
-}
-
-.question-box p, .capital-a {
-  font-size: 24px;
-  line-height: 24px;
-}
-
-.top-faq .hidden-text {
-  border-top: none;
-}
-
-@media screen and (max-width: 991.98px) {
-  .question-box {
-    align-items: flex-start;
-  }
-  .top-faq h3 {
-    font-size: 1.0rem;
-    line-height: 1.5;
-  }
-  .question-box p, .capital-a {
-    font-size: 20px;
-    line-height: 20px;
-  }
-  .virtual-top {
-    padding-top: 95px;
-  }
-  .coworking-main {
-    padding-top: 95px;
-  }
-}
-
-@media screen and (max-width: 575.98px) {
-  .question-box h3 {
-    font-size: 14px;
-  }
-  .answer-text {
-    font-size: 14px;
-  }
-  .question-box p, .capital-a {
-    font-size: 16px;
-    line-height: 1.3;
-  }
-}
-
-/* バーチャルフォーム */
-
-.modal-container {
-  max-width: 550px;
-}
-
-input[name="contact_type"] {
-  cursor: pointer;
-}
-
-.contact-type-label {
-  cursor: pointer;
-}
-
-@media screen and (max-width: 575.98px) {
-  .modal-container {
-    width: 100%;
-    padding: 15px;
-    margin: 0;
-  }
-  #reservedErrorMessage p {
-    font-size: 14px;
-  }
-}
-
-.btn-submit {
-  display: block;
-  width: 70%;
-  margin: 0 auto;
-  color: #fff;
-  background-color: #df7156;
-  border: 2px solid #df7156;
-}
-
-.btn-submit:hover, .btn-submit.sending {
-  color: #df7156;
-  background-color: #fff;
-}
-
-.modal-footer {
-  border-top: #fff;
-}
-
-.services-container ul {
-  list-style-type: none;
-}
-
-.services-container li {
-  margin-bottom: 20px;
-}
-
-.virtual-columns-title {
-  font-size: 20px;
-}
-
-.virtual-columns {
-  font-size: 16px;
-}
-
-@media screen and (max-width: 1199.98px) {
-  .virtual-columns-title {
-    font-size: 16px;
-  }
-  .virtual-columns {
-    font-size: 12px;
-  }
-}
-
-.c-pagelink {
-  margin-bottom: 0;
-}
-
-.virtual-service-icon {
-  width: 20%;
-}
-
-.virtual-service-text {
-  width: 80%;
-}
-
-.tax-included {
-  font-size: 14px;
-}
-
-@media screen and (max-width: 575.98px) {
-  .tax-included {
-    font-size: 12px;
-  }
-}
-
-/* VOTOP矢印 */
-
-.reasons-item .btnarrow4 {
-  position: relative;
-  display: inline-block;
-  padding: 0 20px;
-  text-decoration: none;
-  outline: none;
-  font-size: 13px;
-}
-
-.btnarrow4::before {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 15%;
-  width: 85%;
-  height: 1px;
-  background: #777;
-  transition: all .3s;
-}
-
-.btnarrow4::after {
-  content: '';
-  position: absolute;
-  bottom: 3px;
-  right: 0;
-  width: 15px;
-  height: 1px;
-  background: #777;
-  transform: rotate(35deg);
-  transition: all .3s;
-}
-
-.reasons-item:hover .btnarrow4::before {
-  left: 20%;
-}
-
-.reasons-item:hover .btnarrow4::after {
-  right: -5%;
-}
-
-/* VOTOPのFAQ */
-
-.virtual-faq-question {
-  color: #ee8585;
-  margin-left: 32px;
-  text-indent: -40px;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.virtual-faq-question::before {
-  color: #ee8585;
-  content: "Q.";
-  margin-right: 17px;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.virtual-faq-answer {
-  margin-bottom: 0px;
-  margin-left: 32px;
-  text-indent: -38px;
-  font-size: 16px;
-}
-
-.virtual-faq-answer::before {
-  content: "A.";
-  margin-right: 10px;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-@media screen and (max-width: 575.98px) {
-  .virtual-faq-question {
-    font-size: 14px;
-  }
-  .virtual-faq-answer {
-    font-size: 14px;
-  }
-  .virtual-faq-question::before {
-    font-size: 18px;
-  }
-  .virtual-faq-answer::before {
-    font-size: 18px;
-  }
-}
-
-.about-details {
-  padding: 0 15px;
-}
-
-.article-cta-img {
-  height: 130px;
-}
-
-.cta-card .article-cv-btn>button {
-  padding: 6px 10px;
-}
-
-/* reasons */
 
 .reason-row:nth-of-type(1) {
   margin-bottom: 75px;
@@ -3800,52 +3176,238 @@ input[name="contact_type"] {
   }
 }
 
-/* services */
+/* ------------------------------
+ファーストビュー
+--------------------------------- */
 
-/* small-container */
-
-.small-container {
-  max-width: 910px;
-}
-
-@media screen and (max-width: 911.98px) {
-  .small-container {
-    max-width: 720px;
+@media screen and (max-width: 575.98px) {
+  .virtual-top section {
+    padding: 40px 0;
+  }
+  .coworking-main section {
+    padding: 40px 0;
   }
 }
 
-@media screen and (max-width: 767.98px) {
-  .small-container {
-    max-width: 540px;
+/* ------------------------------
+CTAの色統一
+--------------------------------- */
+
+.about-us-detail {
+  background-color: #df7156;
+  border: 3px solid #df7156;
+}
+
+.about-us-detail:hover {
+  color: #df7156;
+}
+
+.pc-footer {
+  background-color: #df7156;
+  border: 3px solid #df7156;
+}
+
+.pc-footer:hover {
+  border-color: #bb604a;
+  background-color: #bb604a;
+}
+
+/* ------------------------------
+FAQ (VOTOP)
+--------------------------------- */
+
+.top-faq h3 {
+  font-size: 1.0rem;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.question-box {
+  align-items: flex-end;
+}
+
+.question-box p, .capital-a {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.top-faq .hidden-text {
+  border-top: none;
+}
+
+.virtual-faq-question {
+  color: #ee8585;
+  margin-left: 32px;
+  text-indent: -40px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.virtual-faq-question::before {
+  color: #ee8585;
+  content: "Q.";
+  margin-right: 17px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.virtual-faq-answer {
+  margin-bottom: 0px;
+  margin-left: 32px;
+  text-indent: -38px;
+  font-size: 16px;
+}
+
+.virtual-faq-answer::before {
+  content: "A.";
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 991.98px) {
+  .question-box {
+    align-items: flex-start;
+  }
+  .top-faq h3 {
+    font-size: 1.0rem;
+    line-height: 1.5;
+  }
+  .question-box p, .capital-a {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .virtual-top {
+    padding-top: 95px;
+  }
+  .coworking-main {
+    padding-top: 95px;
   }
 }
 
-/* small-container */
+@media screen and (max-width: 575.98px) {
+  .question-box h3 {
+    font-size: 14px;
+  }
+  .answer-text {
+    font-size: 14px;
+  }
+  .question-box p, .capital-a {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .virtual-faq-question {
+    font-size: 14px;
+  }
+  .virtual-faq-answer {
+    font-size: 14px;
+  }
+  .virtual-faq-question::before {
+    font-size: 18px;
+  }
+  .virtual-faq-answer::before {
+    font-size: 18px;
+  }
+}
 
-/* virtual-breadcrumb */
+.article-cta-img {
+  height: 130px;
+}
 
-footer .virtual-breadcrumb li:after {
+.cta-card .article-cv-btn>button {
+  padding: 6px 10px;
+}
+
+/* ------------------------------
+バーチャルフォーム
+--------------------------------- */
+
+.modal-container {
+  max-width: 550px;
+}
+
+input[name="contact_type"] {
+  cursor: pointer;
+}
+
+.contact-type-label {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 575.98px) {
+  .modal-container {
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+  }
+  #reservedErrorMessage p {
+    font-size: 14px;
+  }
+}
+
+.btn-submit {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
   color: #fff;
+  background-color: #df7156;
+  border: 2px solid #df7156;
 }
 
-.virtual-breadcrumb {
-  padding: 0;
-  margin: 0 0 50px;
+.btn-submit:hover, .btn-submit.sending {
+  color: #df7156;
+  background-color: #fff;
 }
 
-.virtual-footer {
-  padding: 40px 0;
+.modal-footer {
+  border-top: #fff;
 }
 
-@media screen and (max-width: 767.8px) {
-  .virtual-breadcrumb li a span {
+.services-container ul {
+  list-style-type: none;
+}
+
+.services-container li {
+  margin-bottom: 20px;
+}
+
+.virtual-columns-title {
+  font-size: 20px;
+}
+
+.virtual-columns {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .virtual-columns-title {
+    font-size: 16px;
+  }
+  .virtual-columns {
     font-size: 12px;
   }
-  .virtual-footer {
-    padding: 20px 0 40px;
-  }
 }
 
-/* virtual-breadcrumb */
+.c-pagelink {
+  margin-bottom: 0;
+}
+
+.virtual-service-icon {
+  width: 20%;
+}
+
+.virtual-service-text {
+  width: 80%;
+}
+
+.tax-included {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .tax-included {
+    font-size: 12px;
+  }
+}
 
 /* END */
