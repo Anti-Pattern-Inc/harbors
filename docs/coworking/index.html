@@ -828,8 +828,8 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         </h3>
         <div class="row" id="events"></div>
         <div class="row">
-          <div class="col-md-12 text-center">
-            <button class="btn btn-white py-2 mb-1" onclick="location.href='/events/'">
+          <div class="col-md-4 mx-auto text-center">
+            <button class="w-100 btn btn-outline-secondary py-2 mb-1" onclick="location.href='/events/'">
               イベント一覧
             </button>
           </div>
@@ -1280,7 +1280,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       var events_html = "";
       $.ajax({
         type: "GET",
-        url: "https://script.google.com/macros/s/AKfycbxfKbltnEr5z2bfXBeR_e8C4BPhGfrvjVt9FFQ5F66kJDX1ZrJgnX_y_LbLxbv4u6u7/exec",
+        url: "https://script.google.com/macros/s/AKfycbwbHBUZYsGi0DlbRGVJGa9iQNKVoDqRgFxMVcNLZ6KeHZhmIYU/exec?jsonp=jsondata",
         dataType: "jsonp",
         jsonpCallback: "jsondata"
       })
@@ -1335,7 +1335,7 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               break;
             case 0:
               events_html += 
-                '<div class="col-md-12"><p class="text-center mb-0">現在開催予定のイベントはありません。</p></div>';
+                '<div class="col-md-12"><p class="text-center">現在開催予定のイベントはありません。</p></div>';
               break;
             default:
               for (var i = 0; i < 3; i++) {
