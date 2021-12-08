@@ -180,6 +180,8 @@ header.container-fluid {
 
 .breadcrumb li a:hover {
   text-decoration: underline;
+  color: #fff;
+  opacity: 0.8;
 }
 
 #breadcrumbs {
