@@ -288,113 +288,94 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
       </div>
     </header>
 
-    <div class="jumbotron-fluid position-relative events-top p-0">
-      <div class="filter"></div>
-      <!-- トップ文字 -->
-      <div
+    <div class="fixed-bottom mb-2 virtual-form-btn text-center">
+      <button
+        type="button"
         class="
+          btn btn-lg
+          pc-footer
+          mx-auto
+          nowrap
           text-white
-          position-absolute
-          text-center
-          top-text
-          container-fluid
+          top-button
+          d-none d-sm-inline-block
         "
+        onclick="countClickByGa();"
+        data-toggle="modal"
+        data-target="#inquiryFormModal"
       >
-        <div class="row">
-          <div class="col-lg-12 pt-3">
-            <h1 class="title_responsive contents-title-2">
-              <small class="mb-5">港区青山のバーチャルオフィス</small
-              ><br>HarborS 表参道の特徴
-            </h1>
-          </div>
-        </div>
-      </div>
-      <div class="fixed-bottom mb-2 virtual-form-btn text-center">
+        無料で相談してみる
+      </button>
+    </div>
+
+    <div
+      class="
+        fixed-bottom
+        mb-0
+        d-flex d-sm-none
+        mobile-footer mobile-footer-special
+      "
+    >
+      <div>
         <button
           type="button"
-          class="
-            btn btn-lg
-            pc-footer
-            mx-auto
-            nowrap
-            text-white
-            top-button
-            d-none d-sm-inline-block
-          "
+          class="btn m-0 w-100 nowrap text-white px-0 py-3 mv-cta"
           onclick="countClickByGa();"
           data-toggle="modal"
           data-target="#inquiryFormModal"
         >
-          無料で相談してみる
+          <div class="mv-cta-contents mx-auto d-flex align-items-center">
+            <img
+              src="/img/contact.svg"
+              alt="お問い合わせ"
+              width="20px"
+              height="20px"
+              class="d-block mr-2"
+              id="toSpInquiryFormModal"
+            >
+            <p class="mt-1 mb-0">
+              無料で相談してみる
+            </p>
+          </div>
         </button>
       </div>
-
-      <div
-        class="
-          fixed-bottom
-          mb-0
-          d-flex d-sm-none
-          mobile-footer mobile-footer-special
-        "
-      >
-        <div>
-          <button
-            type="button"
-            class="btn m-0 w-100 nowrap text-white px-0 py-3 mv-cta"
-            onclick="countClickByGa();"
-            data-toggle="modal"
-            data-target="#inquiryFormModal"
-          >
-            <div class="mv-cta-contents mx-auto d-flex align-items-center">
-              <img
-                src="/img/contact.svg"
-                alt="お問い合わせ"
-                width="20px"
-                height="20px"
-                class="d-block mr-2"
-                id="toSpInquiryFormModal"
-              >
-              <p class="mt-1 mb-0">
-                無料で相談してみる
-              </p>
-            </div>
-          </button>
-        </div>
-        <div>
-          <a
-            href="tel:03-6885-6140"
-            class="btnm-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
-            onclick="ga('send', 'event', 'call', 1);"
-          >
-            <div class="mv-cta-contents mx-auto d-flex align-items-center">
-              <img
-                src="/img/tel.svg"
-                alt="電話"
-                width="20px"
-                height="20px"
-                class="d-block mr-2"
-              >
-              <p class="mt-1 mb-0">
-                電話で相談をする
-              </p>
-            </div>
-          </a>
-        </div>
+      <div>
+        <a
+          href="tel:03-6885-6140"
+          class="btnm-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta"
+          onclick="ga('send', 'event', 'call', 1);"
+        >
+          <div class="mv-cta-contents mx-auto d-flex align-items-center">
+            <img
+              src="/img/tel.svg"
+              alt="電話"
+              width="20px"
+              height="20px"
+              class="d-block mr-2"
+            >
+            <p class="mt-1 mb-0">
+              電話で相談をする
+            </p>
+          </div>
+        </a>
       </div>
     </div>
 
-    <section class="contents-main pb-0">
+    <section class="contents-main">
       <div class="container">
+        <div class="text-center pt-5">
+          <img
+            src="/img/features_of_harbors1.jpg"
+            alt="HarborS 表参道トップ画像"
+            loading="lazy"
+            class="card-img image-size"
+          >
+        </div>
+        <h1 class="title_responsive contents-title-2  text-center text-dark py-4 mb-0">
+          <small class="mb-5">港区青山のバーチャルオフィス</small><br>HarborS 表参道の特徴
+        </h1>
         <div>
-          <div class="text-center w-100 mx-auto">
-            <img
-              src="/img/features_of_harbors1.jpg"
-              alt="HarborS 表参道トップ画像"
-              loading="lazy"
-              class="card-img"
-            >
-          </div>
-          <p class="card-text text-dark pt-5">
+          <p class="card-text text-dark">
             HarborS
             表参道のバーチャルオフィスに興味を持っていただき、ありがとうございます。このページでは弊社が提供するサービスやその魅力について、手前味噌ではありますがご紹介させていただきます。
             <br>今後、ビジネスを始められる方やバーチャルオフィスの利用を検討していらっしゃる方のお役に立てれば幸いです。
