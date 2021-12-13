@@ -268,23 +268,6 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         mobile-footer mobile-footer-special
       ">
         <div>
-            <button type="button" class="btn m-0 w-100 nowrap text-white px-0 py-3 mv-cta" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
-          <div class="mv-cta-contents mx-auto d-flex align-items-center">
-            <img
-              src="/img/contact.svg"
-              alt="お問い合わせ"
-              width="20px"
-              height="20px"
-              class="d-block mr-2"
-              id="toSpInquiryFormModal"
-            >
-            <p class="mt-1 mb-0">
-              無料で相談してみる
-            </p>
-          </div>
-        </button>
-        </div>
-        <div>
             <a href="tel:03-6885-6140" class="btnm-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta" onclick="ga('send', 'event', 'call', 1);">
                 <div class="mv-cta-contents mx-auto d-flex align-items-center">
                     <img src="/img/tel.svg" alt="電話" width="20px" height="20px" class="d-block mr-2">
@@ -293,6 +276,23 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                     </p>
                 </div>
             </a>
+        </div>
+        <div>
+            <button type="button" class="btn m-0 w-100 nowrap text-white px-0 py-3 mv-cta" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
+                <div class="mv-cta-contents mx-auto d-flex align-items-center">
+                    <img
+                    src="/img/contact.svg"
+                    alt="お問い合わせ"
+                    width="20px"
+                    height="20px"
+                    class="d-block mr-2"
+                    id="toSpInquiryFormModal"
+                    >
+                    <p class="mt-1 mb-0">
+                    無料で相談してみる
+                    </p>
+                </div>
+            </button>
         </div>
     </div>
 
