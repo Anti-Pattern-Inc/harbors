@@ -3530,8 +3530,25 @@ input[name="contact_type"] {
     color: #fff;
 }
 
+.fixed-line:hover {
+    color: #06C755;
+}
+
 .line-logo {
     height: 40px;
+}
+
+.form-line {
+    width: 50%;
+    background-color: #06C755;
+    border: #06C755 solid 2px;
+    color: #fff;
+}
+
+@media screen and (max-width: 575.98px) {
+    .form-line {
+        width: 70%;
+    }
 }
 
 /* END */
