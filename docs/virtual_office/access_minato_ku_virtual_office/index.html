@@ -855,21 +855,43 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
   </footer>
 
   <!-- Modal -->
-  <div class="modal fade" id="inquiryFormModal" tabindex="-1" role="dialog"
-    aria-labelledby="inquiryFormModalCenterTitle" aria-hidden="true">
+  <div
+    class="modal fade text-dark"
+    id="inquiryFormModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="inquiryFormModalCenterTitle"
+    aria-hidden="true"
+  >
     <div class="modal-dialog modal-dialog-centered modal-container" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="inquiryFormModalTitle">
             <nobr>バーチャルオフィスに関する<wbr>お問い合わせ</nobr>
           </h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <form id="inquiryForm">
-            <div class="form-group">
+            <div class="pb-4 mb-3 border-bottom">
+              <p class="text-center mb-2">LINE@でのお問い合わせも可能です</p>
+              <a href="https://page.line.me/475zqfzt?openQrModal=true" class="d-block btn m-0 px-2 py-1 text-white nowrap form-line mx-auto">
+                <div class="mv-cta-contents mx-auto d-flex align-items-center my-0">
+                  <img src="/img/LINE_Brand_icon.png" alt="LINEのアイコン" class="d-block line-logo img-fluid mr-2">
+                  <p class="m-0 d-flex align-igems-center">
+                    LINEでお問い合わせ
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="form-group mb-4">
               <label for="">お問い合わせ目的</label><span class="text-danger">*</span>
               <div>
                 <div class="row">
@@ -902,19 +924,39 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 </div>
               </div>
             </div>
-            <div class="form-group" id="form_preferred_visit_date" style="display: none">
+            <div
+              class="form-group mb-4"
+              id="form_preferred_visit_date"
+              style="display: none"
+            >
               <label for="preferred_visit_date">説明会ご希望日（任意）</label>
-              <div class="input-group date" id="preferred_visit_date" data-target-input="nearest">
-                <input type="text" name="preferred_visit_date" class="form-control datetimepicker-input"
-                  data-target="#preferred_visit_date">
-                <div class="input-group-append" data-target="#preferred_visit_date" data-toggle="datetimepicker">
+              <div
+                class="input-group date"
+                id="preferred_visit_date"
+                data-target-input="nearest"
+              >
+                <input
+                  type="text"
+                  name="preferred_visit_date"
+                  class="form-control datetimepicker-input"
+                  data-target="#preferred_visit_date"
+                >
+                <div
+                  class="input-group-append"
+                  data-target="#preferred_visit_date"
+                  data-toggle="datetimepicker"
+                >
                   <div class="input-group-text">
                     <img src="/img/calendar-solid.svg" alt="カレンダーのアイコン" style="width: 14px;">
                   </div>
                 </div>
               </div>
             </div>
-            <div class="form-group" id="form_preferred_visit_time" style="display: none">
+            <div
+              class="form-group mb-4"
+              id="form_preferred_visit_time"
+              style="display: none"
+            >
               <label for="preferred_visit_time">説明会開始時刻（任意）</label>
               <select class="form-control" name="preferred_visit_time">
                 <option></option>
@@ -932,31 +974,73 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 <p class="small">※説明会は1時間程度になります</p>
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-4">
               <label for="">お名前</label><span class="text-danger">*</span>
-              <input type="text" class="form-control" name="name" aria-describedby="" placeholder="" required>
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                aria-describedby=""
+                placeholder="ハーバーズ 太郎"
+                required
+              >
             </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">メールアドレス</label><span class="text-danger">*</span>
-              <input type="email" class="form-control" name="mail" id="" aria-describedby="" placeholder="" required>
+            <div class="form-group mb-4">
+              <label for="exampleInputEmail1">メールアドレス</label
+              ><span class="text-danger">*</span>
+              <input
+                type="email"
+                class="form-control"
+                name="mail"
+                id=""
+                aria-describedby=""
+                placeholder="contact@harbors.sh"
+                required
+              >
             </div>
-            <div class="form-group">
+            <div class="form-group mb-4">
               <label for="">電話番号</label><span class="text-danger">*</span>
-              <input type="tel" class="form-control" name="tel" aria-describedby="" placeholder="" required>
+              <input
+                type="tel"
+                class="form-control"
+                name="tel"
+                aria-describedby=""
+                placeholder="03-6885-6140"
+                required
+              >
             </div>
-            <div class="form-group">
-              <label for="">備考・要望など</label><span class="text-danger" id="remarks_required"
-                style="display: none;">*</span>
-              <textarea class="form-control" name="remarks" id="" rows="3"></textarea>
+            <div class="form-group mb-4">
+              <label for="">備考・要望など</label><span class="text-danger" id="remarks_required" style="display: none;">*</span>
+              <textarea
+                class="form-control"
+                name="remarks"
+                id=""
+                rows="4"
+                placeholder="ご希望・ご質問などございましたら、こちらにご記入ください"
+              ></textarea>
             </div>
-            <button type="submit" class="btn py-2 btn-submit mb-3" id="send_button">
+            <button
+              type="submit"
+              class="btn py-2 btn-submit mb-3 font-weight-bold"
+              id="send_button"
+            >
               送信する
             </button>
-            <div id="errorMessage" style="display: none">
+            <div id="errorMessage" style="display: none;">
               <p style="color: red" class="m-0">
-                予期せぬエラーが発生しました。<br>大変申し訳ございませんが、別途<a style="color: red; text-decoration-line: underline"
-                  href="/contacts/">お問い合わせフォーム</a>か<a href="tel:0368856140"
-                  style="color: red; text-decoration-line: underline">お電話(03-6885-6140)</a>へお問い合わせくださいませ。
+                予期せぬエラーが発生しました。<br>大変申し訳ございませんが、別途<a
+                  style="color: red; text-decoration-line: underline"
+                  href="/contacts/"
+                  >お問い合わせフォーム</a
+                >か<a
+                  href="tel:0368856140"
+                  style="color: red; text-decoration-line: underline"
+                  >お電話(03-6885-6140)</a
+                >または<a
+                  href="mailto:contact@harbors.sh"
+                  style="color: red; text-decoration-line: underline"
+                >メール(contact@harbors.sh)</a
+                >でお問い合わせくださいませ。
               </p>
             </div>
             <div id="reservedErrorMessage" style="display: none">
@@ -969,7 +1053,11 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                 HarborS 表参道は、株式会社アンチパターンが運営する、南青山のバーチャルオフィスです。
               </p>
             </div>
-            <input type="hidden" name="sheetName" value="バーチャルオフィス会員">
+            <input
+              type="hidden"
+              name="sheetName"
+              value="バーチャルオフィス会員"
+            >
           </form>
           <div id="thanksMessage" style="display: none">
             <p>
@@ -981,8 +1069,14 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               また、説明会を予約していただいた方には、<br>
               説明会開始時間のリマインドなどもさせていただきます。
             </p>
-            <a href="https://lin.ee/uOuueAH"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
-                alt="友だち追加" height="36" border="0"></a>
+            <a href="https://lin.ee/uOuueAH"
+              ><img
+                src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
+                alt="友だち追加"
+                height="36"
+                border="0"
+                loading="lazy"
+            ></a>
           </div>
         </div>
       </div>
