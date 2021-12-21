@@ -1164,7 +1164,7 @@
 
     <!-- Modal -->
     <div
-      class="modal fade"
+      class="modal fade text-dark"
       id="inquiryFormModal"
       tabindex="-1"
       role="dialog"
@@ -1188,9 +1188,19 @@
           </div>
           <div class="modal-body">
             <form id="inquiryForm">
-              <div class="form-group">
-                <label for="">お問い合わせ目的</label
-                ><span class="text-danger">*</span>
+              <div class="pb-4 mb-3 border-bottom">
+                <p class="text-center mb-2">LINE@でのお問い合わせも可能です</p>
+                <a href="https://page.line.me/475zqfzt?openQrModal=true" class="d-block btn m-0 px-2 py-1 text-white nowrap form-line mx-auto">
+                  <div class="mv-cta-contents mx-auto d-flex align-items-center my-0">
+                    <img src="/img/LINE_Brand_icon.png" alt="LINEのアイコン" class="d-block line-logo img-fluid mr-2">
+                    <p class="m-0 d-flex align-igems-center">
+                      LINEでお問い合わせ
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="form-group mb-4">
+                <label for="">お問い合わせ目的</label><span class="text-danger">*</span>
                 <div>
                   <div class="row">
                     <div class="col-sm-6">
@@ -1223,7 +1233,7 @@
                 </div>
               </div>
               <div
-                class="form-group"
+                class="form-group mb-4"
                 id="form_preferred_visit_date"
                 style="display: none"
               >
@@ -1251,7 +1261,7 @@
                 </div>
               </div>
               <div
-                class="form-group"
+                class="form-group mb-4"
                 id="form_preferred_visit_time"
                 style="display: none"
               >
@@ -1272,18 +1282,18 @@
                   <p class="small">※説明会は1時間程度になります</p>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group mb-4">
                 <label for="">お名前</label><span class="text-danger">*</span>
                 <input
                   type="text"
                   class="form-control"
                   name="name"
                   aria-describedby=""
-                  placeholder=""
+                  placeholder="例) 港区 太郎"
                   required
                 >
               </div>
-              <div class="form-group">
+              <div class="form-group mb-4">
                 <label for="exampleInputEmail1">メールアドレス</label
                 ><span class="text-danger">*</span>
                 <input
@@ -1292,33 +1302,34 @@
                   name="mail"
                   id=""
                   aria-describedby=""
-                  placeholder=""
+                  placeholder="例) aaa@bbb.com"
                   required
                 >
               </div>
-              <div class="form-group">
+              <div class="form-group mb-4">
                 <label for="">電話番号</label><span class="text-danger">*</span>
                 <input
                   type="tel"
                   class="form-control"
                   name="tel"
                   aria-describedby=""
-                  placeholder=""
+                  placeholder="例) 050-1234-5678"
                   required
                 >
               </div>
-              <div class="form-group">
+              <div class="form-group mb-4">
                 <label for="">備考・要望など</label><span class="text-danger" id="remarks_required" style="display: none;">*</span>
                 <textarea
                   class="form-control"
                   name="remarks"
                   id=""
-                  rows="3"
+                  rows="4"
+                  placeholder="ご希望・ご質問などございましたら、こちらにご記入ください"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                class="btn py-2 btn-submit mb-3"
+                class="btn py-2 btn-submit mb-3 font-weight-bold"
                 id="send_button"
               >
                 送信する
