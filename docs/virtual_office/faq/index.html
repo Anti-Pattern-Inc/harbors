@@ -248,53 +248,87 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
         </div>
     </header>
 
-    <div class="fixed-bottom mb-2 virtual-form-btn text-center">
-        <button type="button" class="
-          btn btn-lg
-          pc-footer
-          mx-auto
-          nowrap
-          text-white
-          top-button
-          d-none d-sm-inline-block
-        " onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
-        無料で相談してみる
-      </button>
+    <div
+      class="fixed-bottom mb-0 bg-white virtual-form-btn"
+      style="display: none;"
+    >
+      <div class="container d-none d-lg-flex flex-column justify-content-between mx-auto my-2 align-items-center">
+        <div>
+          <p class="mb-0">お問い合わせ、お申込みは24時間365日いつでも可能！</p>
+        </div>
+        <div class="d-flex">
+          <button
+            type="button"
+            class="btn virtual-pc-cta d-block nowrap mr-4"
+            onclick="countClickByGa();"
+            data-toggle="modal"
+            data-target="#inquiryFormModal"
+          >
+            <div class="d-flex align-middle virtual-pc-cta-contents">
+              <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="width: 23px; height: 23px; opacity: 1;" xml:space="preserve" class="mr-2 flow-icon">
+                <g>
+                  <path class="st0" d="M442.539,73.946c-44.84-37.927-108.949-60.084-187.344-60.066c-74.388,0-137.905,20.981-183.328,58.411
+                    c-22.702,18.686-40.758,41.492-53.06,67.428C6.489,165.648-0.019,194.641,0,225.422c-0.019,37.214,7.768,71.586,23.511,101.577
+                    c14.99,28.664,37.297,53.04,65.699,72.103c-6.715,28.269-16.157,68.67-16.157,68.689c-0.432,1.815-0.658,3.706-0.639,5.624
+                    c-0.018,7.59,3.518,14.897,9.667,19.608l0.038,0.028v0.01c4.402,3.348,9.705,5.06,15.01,5.06c3.988,0,8.031-0.969,11.68-2.934
+                    l0.358-0.188l0.357-0.216c0.019-0.009,5.079-3.01,12.866-7.618c11.661-6.903,29.435-17.407,45.291-26.745
+                    c7.919-4.665,15.367-9.038,21.31-12.508c5.924-3.46,10.476-6.103,12.17-7.034l0.075-0.047l0.112-0.065
+                    c22.1-12.527,39.705-14.634,53.849-14.709c58.702-0.085,121.212-11.464,171.13-42.62c24.902-15.602,46.57-36.413,61.806-63.056
+                    c15.272-26.624,23.886-58.853,23.868-96.16C512.112,165.545,487.416,111.78,442.539,73.946z M454.709,301.24
+                    c-8.822,15.376-20.37,28.316-34.232,39.282c-20.784,16.429-46.871,28.288-75.479,35.934c-28.598,7.664-59.652,11.088-89.802,11.078
+                    c-18.508-0.075-44.369,3.414-72.752,19.684v-0.01c-3.141,1.749-10.137,5.822-19.354,11.219
+                    c-13.222,7.759-30.62,18.019-45.14,26.614c3.536-15.094,7.656-32.576,10.721-45.413v-0.019c0.508-2.144,0.884-4.468,0.884-7.11
+                    c0.038-3.724-0.922-8.266-3.065-12.046c-1.6-2.831-3.65-5.06-5.436-6.583c-2.746-2.285-4.796-3.273-5.944-3.903l-1.166-0.592
+                    l-0.132-0.075c-25.147-16.204-43.655-36.329-56.18-60.188c-12.527-23.897-19.11-51.781-19.11-83.69
+                    c0-25.401,5.285-48.526,15.084-69.187c14.708-30.94,39.667-56.605,73.786-74.896c34.082-18.254,77.398-28.937,127.805-28.937
+                    c71.284,0.019,125.933,20.031,162.46,50.952c36.47,31.025,55.692,72.799,55.824,120.864
+                    C473.442,255.723,466.407,280.729,454.709,301.24z"></path>
+                  <path class="st0" d="M135.055,197.171c-16.278,0-29.472,13.204-29.472,29.483c0,16.278,13.194,29.473,29.472,29.473
+                    c16.288,0,29.482-13.194,29.482-29.473C164.538,210.375,151.344,197.171,135.055,197.171z"></path>
+                  <path class="st0" d="M250.024,197.171c-16.28,0-29.474,13.204-29.474,29.483c0,16.278,13.194,29.473,29.474,29.473
+                    c16.288,0,29.482-13.194,29.482-29.473C279.506,210.375,266.312,197.171,250.024,197.171z"></path>
+                  <path class="st0" d="M365,197.171c-16.278,0-29.482,13.204-29.482,29.483c0,16.278,13.204,29.473,29.482,29.473
+                    c16.288,0,29.484-13.194,29.484-29.473C394.484,210.375,381.288,197.171,365,197.171z"></path>
+                </g>
+              </svg>
+              <p class="virtual-pc-cta-sentence mb-0">お問い合わせ</p>
+            </div>
+          </button>
+          <a href="https://page.line.me/475zqfzt?openQrModal=true" class="btn virtual-pc-cta d-block nowrap fixed-line">
+            <div class="d-flex align-middle virtual-pc-cta-contents align-items-center">
+              <img src="/img/LINE_Brand_icon.png" alt="LINEのアイコン" class="line-logo img-fluid mr-2">
+              <p class="virtual-pc-cta-sentence mb-0">LINEでお問い合わせ</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="
-        fixed-bottom
-        mb-0
-        d-flex d-sm-none
-        mobile-footer mobile-footer-special
-      ">
-        <div>
-            <a href="tel:03-6885-6140" class="btnm-0 w-100 px-0 text-white nowrap px-0 py-3 mv-cta" onclick="ga('send', 'event', 'call', 1);">
-                <div class="mv-cta-contents mx-auto d-flex align-items-center">
-                    <img src="/img/tel.svg" alt="電話" width="20px" height="20px" class="d-block mr-2">
-                    <p class="mt-1 mb-0">
-                        電話で相談をする
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div>
-            <button type="button" class="btn m-0 w-100 nowrap text-white px-0 py-3 mv-cta" onclick="countClickByGa();" data-toggle="modal" data-target="#inquiryFormModal">
-                <div class="mv-cta-contents mx-auto d-flex align-items-center">
-                    <img
-                      src="/img/contact.svg"
-                      alt="お問い合わせ"
-                      width="20px"
-                      height="20px"
-                      class="d-block mr-2"
-                      id="toSpInquiryFormModal"
-                    >
-                    <p class="mt-1 mb-0">
-                      無料で相談してみる
-                    </p>
-                </div>
-            </button>
-        </div>
+    <div 
+      class="fixed-bottom mb-0 d-flex d-lg-none mobile-footer mobile-footer-special"
+    >
+      <div>
+        <button type="button" class="btn m-0 w-100 nowrap text-white px-0 mv-cta d-flex align-items-center" onclick="countClickByGa();"
+          data-toggle="modal" data-target="#inquiryFormModal">
+          <div class="mv-cta-contents mx-auto d-flex align-items-center">
+            <img src="/img/contact.svg" alt="お問い合わせ" width="25px" height="25px" class="d-block mr-2"
+              id="toSpInquiryFormModal">
+            <p class="m-0 d-flex align-igems-center">
+              無料で相談してみる
+            </p>
+          </div>
+        </button>
+      </div>
+      <div>
+        <a href="https://page.line.me/475zqfzt?openQrModal=true" class="btn m-0 w-100 px-0 text-white nowrap px-0 mv-cta fixed-line">
+          <div class="mv-cta-contents mx-auto d-flex align-items-center">
+            <img src="/img/LINE_Brand_icon.png" alt="LINEのアイコン" class="d-block line-logo img-fluid mr-2">
+            <p class="m-0 d-flex align-igems-center">
+              LINEでお問い合わせ
+            </p>
+          </div>
+        </a>
+      </div>
     </div>
 
     <!-- バーチャルオフィスとは -->
@@ -912,109 +946,131 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
               <a itemprop="item" href="/virtual_office/" class="text-muted">
                 <span itemprop="name" class="text-white">バーチャルオフィスTOP</span>
               </a>
-                            <meta itemprop="position" content="1">
-                            </li>
+              <meta itemprop="position" content="1">
+            </li>
 
-                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-last">
-                                <a href="/virtual_office/faq/" itemprop="item" class="d-inline-block mb-0 disabled" tabindex="-1">
-                                    <span itemprop="name" class="text-white">FAQ</span>
-                                </a>
-                                <meta itemprop="position" content="3">
-                            </li>
-                            </ol>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-last">
+              <a href="/virtual_office/faq/" itemprop="item" class="d-inline-block mb-0 disabled" tabindex="-1">
+                <span itemprop="name" class="text-white">FAQ</span>
+              </a>
+              <meta itemprop="position" content="3">
+            </li>
+          </ol>
+        </div>
+        <div class="d-md-flex justify-content-between">
+            <div class="d-flex d-md-block footer-left">
+                <div class="mr-md-3 mr-lg-0">
+                    <img src="/img/harbors_logo_w.svg" alt="HarborS 表参道のロゴ" class="img-fluid">
+                    <p class="my-4 ja">ハーバーズ表参道</p>
+                    <a href="https://anti-pattern.co.jp/" class="d-none d-md-inline-block copy en">&copy; anti-pattern.inc</a>
                 </div>
-                <div class="d-md-flex justify-content-between">
-                    <div class="d-flex d-md-block footer-left">
-                        <div class="mr-md-3 mr-lg-0">
-                            <img src="/img/harbors_logo_w.svg" alt="HarborS 表参道のロゴ" class="img-fluid">
-                            <p class="my-4 ja">ハーバーズ表参道</p>
-                            <a href="https://anti-pattern.co.jp/" class="d-none d-md-inline-block copy en">&copy; anti-pattern.inc</a>
-                        </div>
-                        <div class="d-block d-md-none page-top-sp en">
-                            <span>Page top</span>
-                            <a href="#top"><img src="/img/top-icon.svg" alt="ページトップボタン"></a>
-                        </div>
-                    </div>
-                    <div class="footer-right">
-                        <div class="d-none d-md-block page-top en">
-                            <span>Page top</span>
-                            <a href="#top"><img src="/img/top-icon.svg" alt="ページトップボタン"></a>
-                        </div>
-                        <div class="footer-row-top ja">
-                            <div class="d-md-flex">
-                                <p class="footer-right-title en">Service</p>
-                                <a href="/virtual_office/" class="">
-                  バーチャルオフィス
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
-                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
-                  </svg>
-                </a>
-                                <br class="d-block d-md-none">
-                                <a href="https://sky-terrace.anti-pattern.co.jp/" target="_blank" class="">
-                  スカイテラス表参道
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon d-inline d-md-none">
-                    <g id="link-icon" transform="translate(-1154 -5516)">
-                      <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
-                        <rect width="10" height="11.667" stroke="none"/>
-                        <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-                      </g>
-                      <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
-                        <rect width="10" height="11.667" stroke="none"/>
-                        <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-                                <br class="d-block d-md-none">
-                                <a href="/rooms/" class="">
-                  会議室
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
-                    <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
-                  </svg>
-                </a>
-                            </div>
-                        </div>
-                        <div class="footer-row-bottom ja">
-                            <div class="d-md-flex">
-                                <p class="footer-right-subtitle">メニュー</p>
-                                <a href="https://anti-pattern.co.jp/" target="_blank"><span>運営会社</span></a>
-                                <a href="/contacts/"><span>お問い合わせ</span></a>
-                                <a href="https://anti-pattern.co.jp/legal/privacy/" target="_blank"><span>プライバシーポリシー</span></a>
-                            </div>
-                            <div class="d-md-flex">
-                                <p class="footer-right-subtitle">利用規約</p>
-                                <a href="/terms/harbors/" class=""><span>コワーキングスペース</span></a>
-                                <a href="/terms/virtual_office/" class=""><span>バーチャルオフィス</span></a>
-                                <br class="d-block d-md-none">
-                                <a href="/terms/rooms/" class=""><span>ミーティングルーム</span></a>
-                                <a href="/terms/posse/" class=""><span>POSSE</span></a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="d-block d-md-none page-top-sp en">
+                    <span>Page top</span>
+                    <a href="#top"><img src="/img/top-icon.svg" alt="ページトップボタン"></a>
                 </div>
-                <p class="d-block d-md-none text-center copy-sp en">
-                    <a href="https://anti-pattern.co.jp/">&copy; anti-pattern.inc</a>
-                </p>
             </div>
-            </footer>
+            <div class="footer-right">
+                <div class="d-none d-md-block page-top en">
+                    <span>Page top</span>
+                    <a href="#top"><img src="/img/top-icon.svg" alt="ページトップボタン"></a>
+                </div>
+                <div class="footer-row-top ja">
+                    <div class="d-md-flex">
+                        <p class="footer-right-title en">Service</p>
+                        <a href="/virtual_office/" class="">
+          バーチャルオフィス
+          <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+            <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+          </svg>
+        </a>
+                        <br class="d-block d-md-none">
+                        <a href="https://sky-terrace.anti-pattern.co.jp/" target="_blank" class="">
+          スカイテラス表参道
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13.667" viewBox="0 0 12 13.667" class="link-icon d-inline d-md-none">
+            <g id="link-icon" transform="translate(-1154 -5516)">
+              <g id="長方形_33" data-name="長方形 33" transform="translate(1154 5516)" fill="#fff" stroke="#666" stroke-width="1">
+                <rect width="10" height="11.667" stroke="none"/>
+                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+              </g>
+              <g id="長方形_34" data-name="長方形 34" transform="translate(1156 5518)" fill="#fff" stroke="#666" stroke-width="1">
+                <rect width="10" height="11.667" stroke="none"/>
+                <rect x="0.5" y="0.5" width="9" height="10.667" fill="none"/>
+              </g>
+            </g>
+          </svg>
+        </a>
+                        <br class="d-block d-md-none">
+                        <a href="/rooms/" class="">
+          会議室
+          <svg xmlns="http://www.w3.org/2000/svg" width="10.607" height="10.606" viewBox="0 0 10.607 10.606" class="d-inline d-md-none">
+            <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke="#FFF" stroke-width="1"/>
+          </svg>
+        </a>
+                    </div>
+                </div>
+                <div class="footer-row-bottom ja">
+                    <div class="d-md-flex">
+                        <p class="footer-right-subtitle">メニュー</p>
+                        <a href="https://anti-pattern.co.jp/" target="_blank"><span>運営会社</span></a>
+                        <a href="/contacts/"><span>お問い合わせ</span></a>
+                        <a href="https://anti-pattern.co.jp/legal/privacy/" target="_blank"><span>プライバシーポリシー</span></a>
+                    </div>
+                    <div class="d-md-flex">
+                        <p class="footer-right-subtitle">利用規約</p>
+                        <a href="/terms/harbors/" class=""><span>コワーキングスペース</span></a>
+                        <a href="/terms/virtual_office/" class=""><span>バーチャルオフィス</span></a>
+                        <br class="d-block d-md-none">
+                        <a href="/terms/rooms/" class=""><span>ミーティングルーム</span></a>
+                        <a href="/terms/posse/" class=""><span>POSSE</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="d-block d-md-none text-center copy-sp en">
+            <a href="https://anti-pattern.co.jp/">&copy; anti-pattern.inc</a>
+        </p>
+      </div>
+    </footer>
 
-            <!-- Modal -->
-            <div class="modal fade" id="inquiryFormModal" tabindex="-1" role="dialog" aria-labelledby="inquiryFormModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-container" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="inquiryFormModalTitle">
-                                <nobr>バーチャルオフィスに関する<wbr>お問い合わせ</nobr>
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <!-- Modal -->
+    <div
+      class="modal fade text-dark"
+      id="inquiryFormModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="inquiryFormModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-container" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="inquiryFormModalTitle">
+              <nobr>バーチャルオフィスに関する<wbr>お問い合わせ</nobr>
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
-                        </div>
-                        <div class="modal-body">
-                            <form id="inquiryForm">
-                                <div class="form-group">
-                                    <label for="">お問い合わせ目的</label
-                ><span class="text-danger">*</span>
+          </div>
+          <div class="modal-body">
+            <form id="inquiryForm">
+              <div class="pb-4 mb-3 border-bottom">
+                <p class="text-center mb-2">LINE@でのお問い合わせも可能です</p>
+                <a href="https://page.line.me/475zqfzt?openQrModal=true" class="d-block btn m-0 px-2 py-1 text-white nowrap form-line mx-auto">
+                  <div class="mv-cta-contents mx-auto d-flex align-items-center my-0">
+                    <img src="/img/LINE_Brand_icon.png" alt="LINEのアイコン" class="d-block line-logo img-fluid mr-2">
+                    <p class="m-0 d-flex align-igems-center">
+                      LINEでお問い合わせ
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="form-group mb-4">
+                <label for="">お問い合わせ目的</label><span class="text-danger">*</span>
                 <div>
                   <div class="row">
                     <div class="col-sm-6">
@@ -1022,44 +1078,65 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                         <input type="radio" id="contact_type1" name="contact_type" value="1" required>
                         オンライン説明会を予約したい
                       </label>
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="contact_type2" class="contact-type-label">
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="contact_type2" class="contact-type-label">
                         <input type="radio" id="contact_type2" name="contact_type" value="2">
                         現地の見学説明会を予約したい
                       </label>
-                                </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <label for="contact_type3" class="contact-type-label mb-sm-0">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label for="contact_type3" class="contact-type-label mb-sm-0">
                         <input type="radio" id="contact_type3" name="contact_type" value="3">
                         資料を送付してほしい
                       </label>
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="contact_type4" class="contact-type-label mb-sm-0">
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="contact_type4" class="contact-type-label mb-sm-0">
                         <input type="radio" id="contact_type4" name="contact_type" value="4">
                         その他お問い合わせ
                       </label>
-                            </div>
-                        </div>
                     </div>
+                  </div>
                 </div>
-                <div class="form-group" id="form_preferred_visit_date" style="display: none">
-                    <label for="preferred_visit_date">説明会ご希望日（任意）</label>
-                    <div class="input-group date" id="preferred_visit_date" data-target-input="nearest">
-                        <input type="text" name="preferred_visit_date" class="form-control datetimepicker-input" data-target="#preferred_visit_date">
-                        <div class="input-group-append" data-target="#preferred_visit_date" data-toggle="datetimepicker">
-                            <div class="input-group-text">
-                                <img src="/img/calendar-solid.svg" alt="カレンダーのアイコン" style="width: 14px;">
-                            </div>
-                        </div>
+              </div>
+              <div
+                class="form-group mb-4"
+                id="form_preferred_visit_date"
+                style="display: none"
+              >
+                <label for="preferred_visit_date">説明会ご希望日（任意）</label>
+                <div
+                  class="input-group date"
+                  id="preferred_visit_date"
+                  data-target-input="nearest"
+                >
+                  <input
+                    type="text"
+                    name="preferred_visit_date"
+                    class="form-control datetimepicker-input"
+                    data-target="#preferred_visit_date"
+                  >
+                  <div
+                    class="input-group-append"
+                    data-target="#preferred_visit_date"
+                    data-toggle="datetimepicker"
+                  >
+                    <div class="input-group-text">
+                      <img src="/img/calendar-solid.svg" alt="カレンダーのアイコン" style="width: 14px;">
                     </div>
+                  </div>
                 </div>
-                <div class="form-group" id="form_preferred_visit_time" style="display: none">
-                    <label for="preferred_visit_time">説明会開始時刻（任意）</label>
-                    <select class="form-control" name="preferred_visit_time">
+              </div>
+              <div
+                class="form-group mb-4"
+                id="form_preferred_visit_time"
+                style="display: none"
+              >
+                <label for="preferred_visit_time">説明会開始時刻（任意）</label>
+                <select class="form-control" name="preferred_visit_time">
                   <option></option>
                   <option value="11:00">11:00~12:00</option>
                   <option value="12:00">12:00~13:00</option>
@@ -1071,16 +1148,23 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                   <option value="18:00">18:00~19:00</option>
                   <option value="19:00">19:00~20:00</option>
                 </select>
-                    <div class="preferred_visit_note">
-                        <p class="small">※説明会は1時間程度になります</p>
-                    </div>
+                <div class="preferred_visit_note">
+                  <p class="small">※説明会は1時間程度になります</p>
                 </div>
-                <div class="form-group">
-                    <label for="">お名前</label><span class="text-danger">*</span>
-                    <input type="text" class="form-control" name="name" aria-describedby="" placeholder="" required>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">メールアドレス</label
+              </div>
+              <div class="form-group mb-4">
+                <label for="">お名前</label><span class="text-danger">*</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  aria-describedby=""
+                  placeholder="例) 港区 太郎"
+                  required
+                >
+              </div>
+              <div class="form-group mb-4">
+                <label for="exampleInputEmail1">メールアドレス</label
                 ><span class="text-danger">*</span>
                 <input
                   type="email"
@@ -1088,29 +1172,53 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                   name="mail"
                   id=""
                   aria-describedby=""
-                  placeholder=""
+                  placeholder="例) aaa@bbb.com"
                   required
                 >
               </div>
-              <div class="form-group">
+              <div class="form-group mb-4">
                 <label for="">電話番号</label><span class="text-danger">*</span>
-                    <input type="tel" class="form-control" name="tel" aria-describedby="" placeholder="" required>
-                </div>
-                <div class="form-group">
-                    <label for="">備考・要望など</label><span class="text-danger" id="remarks_required" style="display: none;">*</span>
-                    <textarea class="form-control" name="remarks" id="" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn py-2 btn-submit mb-3" id="send_button">
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="tel"
+                  aria-describedby=""
+                  placeholder="例) 050-1234-5678"
+                  required
+                >
+              </div>
+              <div class="form-group mb-4">
+                <label for="">備考・要望など</label><span class="text-danger" id="remarks_required" style="display: none;">*</span>
+                <textarea
+                  class="form-control"
+                  name="remarks"
+                  id=""
+                  rows="4"
+                  placeholder="ご希望・ご質問などございましたら、こちらにご記入ください"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn py-2 btn-submit mb-3 font-weight-bold"
+                id="send_button"
+              >
                 送信する
               </button>
-                <div id="errorMessage" style="display: none">
-                    <p style="color: red" class="m-0">
-                        予期せぬエラーが発生しました。<br>大変申し訳ございませんが、別途<a style="color: red; text-decoration-line: underline" href="/contacts/">お問い合わせフォーム</a
+              <div id="errorMessage" style="display: none;">
+                <p style="color: red" class="m-0">
+                  予期せぬエラーが発生しました。<br>大変申し訳ございませんが、別途<a
+                    style="color: red; text-decoration-line: underline"
+                    href="/contacts/"
+                    >お問い合わせフォーム</a
                   >か<a
                     href="tel:0368856140"
                     style="color: red; text-decoration-line: underline"
                     >お電話(03-6885-6140)</a
-                  >へお問い合わせくださいませ。
+                  >または<a
+                    href="mailto:contact@harbors.sh"
+                    style="color: red; text-decoration-line: underline"
+                  >メール(contact@harbors.sh)</a
+                  >でお問い合わせくださいませ。
                 </p>
               </div>
               <div id="reservedErrorMessage" style="display: none">
@@ -1145,21 +1253,23 @@ In your html page, add the snippet and call gtag_report_conversion_cowork when s
                   alt="友だち追加"
                   height="36"
                   border="0"
+                  loading="lazy"
               ></a>
-                </div>
             </div>
+          </div>
         </div>
-        </div>
-        </div>
-        <!-- javascript はここから -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/ja.js" type="text/javascript"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
-        <script src="/js/virtual_form.js"></script>
-        <script src="/js/main.js"></script>
+      </div>
+    </div>
+
+    <!-- javascript はここから -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/ja.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="/js/virtual_form.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
