@@ -3016,7 +3016,7 @@ FLOW
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-    padding: 15px 70px;
+    padding: 15px;
     margin: 5px;
     width: 340px;
     box-shadow: 0px 2px 5px rgb(17 14 9);
@@ -3548,6 +3548,137 @@ input[name="contact_type"] {
 @media screen and (max-width: 575.98px) {
     .form-line {
         width: 70%;
+    }
+}
+
+/*吹き出し*/
+.balloon_l, .balloon_r {
+    margin: 30px 0;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.balloon_r {
+    justify-content:flex-end;
+}
+
+.faceicon {
+    background: #fff;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    font-size: 52px;
+    text-align: center;
+    line-height: 75px;
+    align-items: center;
+    position: relative;
+}
+
+.balloon_l .faceicon {
+    margin-right:25px;
+}
+
+.balloon_r .faceicon {
+    margin-left:25px;
+    order:2;
+}
+
+.faceicon svg {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+.balloon_l .faceicon svg {
+    width: 45px;
+    height: 45px;
+}
+
+.balloon_r .faceicon svg {
+    top: 45%;
+}
+
+.says {
+    max-width:450px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 17px 13px 15px 18px;
+    border-radius: 12px;
+    box-sizing:border-box;
+    margin: 20px 0 0;
+    line-height:1.5;
+    font-size: 16px;
+}
+
+.balloon_l .says {
+    background: #8DE055;
+}
+
+.balloon_r .says {
+    background: #fff;
+}
+
+.says p {
+    margin:8px 0 0; 
+}
+
+.says p:first-child {
+    margin-top:0;
+}
+
+.says:after {
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;
+    top: 10px;
+}
+.balloon_l .says:after {
+    left: -26px;
+    border-right: 30px solid #8DE055;
+    transform: rotate(30deg);
+}
+.balloon_r .says:after {
+    right: -26px;
+    border-left: 30px solid #fff;
+    transform: rotate(-30deg);
+}
+
+.contact-heading {
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bold;
+    color: #ee8585;
+}
+
+@media screen and (max-width: 767.8px) {
+    .contact-heading {
+        font-size: 0.9rem;
+    }
+
+    .says {
+        font-size: 14px;
+        max-width: 400px;
+        margin-top: 10px;
+    }
+
+    .faceicon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .balloon_l .faceicon svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .says {
+        max-width: 210px;
     }
 }
 
