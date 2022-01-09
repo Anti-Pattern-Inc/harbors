@@ -17,6 +17,7 @@ TOPページ、コロナ対策の注意喚起部分の設定
     .alert-danger {
         font-size: 12px;
     }
+
     .coworking-top .top-text h2 {
         font-size: 24px;
     }
@@ -84,6 +85,7 @@ h6 {
 }
 
 @media screen and (max-width: 768px) {
+
     h2,
     h3,
     h4 {
@@ -215,6 +217,7 @@ header.container-fluid {
     .breadcrumb li a span {
         font-size: 12px;
     }
+
     .virtual-footer {
         padding: 20px 0 40px;
     }
@@ -410,10 +413,12 @@ a.disabled {
         display: none;
         opacity: 0;
     }
+
     1% {
         display: block;
         opacity: 0;
     }
+
     100% {
         display: block;
         opacity: 1;
@@ -426,12 +431,15 @@ a.disabled {
         margin: 8px auto 0;
         text-align: center;
     }
+
     .header-lower-right {
         font-size: 14px;
     }
+
     .triangle-1::before {
         right: 100px;
     }
+
     .triangle-2::before {
         right: 220px;
     }
@@ -441,6 +449,7 @@ a.disabled {
     .nav-menu ul>li {
         margin-left: 6px;
     }
+
     .h-tit {
         color: #333;
     }
@@ -451,19 +460,24 @@ a.disabled {
         padding: 15px 0;
         color: #fff;
     }
+
     #header .nav-menu a {
         color: #fff;
     }
+
     #header.white-bg {
         padding: 20px 0 10px;
     }
+
     #header.white-bg .nav-menu a {
         color: #FFF;
     }
+
     .header-left span {
         display: inline-block;
         margin-left: 16px;
     }
+
     .nav-menu {
         display: none;
         height: 100%;
@@ -477,13 +491,16 @@ a.disabled {
         display: flex;
         flex-direction: column;
     }
+
     .nav-menu .link-icon g {
         fill: #000;
         stroke: #FFF;
     }
+
     .nav-menu .arrow path {
         stroke: #FFF;
     }
+
     .nav-toggle {
         display: inline-block;
         margin-top: 6px;
@@ -495,6 +512,7 @@ a.disabled {
         z-index: 10;
         cursor: pointer;
     }
+
     .nav-toggle span {
         position: absolute;
         left: 13px;
@@ -502,65 +520,80 @@ a.disabled {
         background-color: #000;
         border-radius: 4px;
     }
+
     .nav-toggle span:nth-of-type(1) {
         top: 18px;
         width: 24px;
     }
+
     .nav-toggle span:nth-of-type(2) {
         top: 25px;
         width: 24px;
     }
+
     .nav-toggle span:nth-of-type(3) {
         top: 32px;
         width: 24px;
     }
+
     .nav-toggle.cross span:nth-of-type(1) {
         transform: translate(0, 7px) rotate(45deg);
         transition: transform .3s;
     }
+
     .nav-toggle.cross span:nth-of-type(2) {
         opacity: 0;
         transition: opacity .3s;
     }
+
     .nav-toggle.cross span:nth-of-type(3) {
         width: 24px;
         transform: translate(0, -7px) rotate(-45deg);
         transition: transform .3s;
     }
+
     .header-upper-right {
         order: 2;
         width: 320px;
         margin: 0 auto;
     }
+
     .header-lower-right {
         order: 1;
         width: 300px;
         margin: 0 auto;
         font-size: 16px;
     }
+
     .nav-menu ul>p {
         font-size: 14px;
         font-weight: 600;
         margin-bottom: 25px;
     }
+
     .nav-menu ul>li {
         margin-left: 0;
         margin-bottom: 25px;
     }
+
     .header-right a {
         font-size: 16px;
         padding: 0;
     }
+
     .speech-bubble.hovered {
         animation: none;
     }
+
     .header-disabled::before {
         content: none;
     }
+
     .header-disabled.hovered::before {
         display: none;
         opacity: 1;
     }
+
     .speech-bubble {
         display: block;
         position: static;
@@ -568,13 +601,16 @@ a.disabled {
         background: none;
         padding: 0;
     }
+
     .speech-bubble .radius {
         width: 100%;
         margin: 10px 0;
     }
+
     .speech-bubble>div>div {
         width: 48%;
     }
+
     .speech-bubble a span {
         display: block;
         color: #FFF;
@@ -584,10 +620,12 @@ a.disabled {
         text-align: center;
         font-weight: 300;
     }
+
     .header-disabled:hover+.speech-bubble,
     .speech-bubble:hover {
         animation: none;
     }
+
     .nav-footer {
         display: block;
         max-width: 320px;
@@ -595,34 +633,42 @@ a.disabled {
         order: 3;
         z-index: 10;
     }
+
     .nav-footer-container {
         padding: 35px 10px;
         margin: 35px 0;
         border-top: 1px #333 solid;
         border-bottom: 1px #333 solid;
     }
+
     .nav-footer .small>a {
         font-size: 12px;
         padding: 0 6px 0 5px;
         border-right: 1px #FFF solid;
     }
+
     .nav-footer .small>a:last-child {
         border: none;
     }
+
     .nav-footer-container>p:nth-child(odd) {
         font-size: 12px;
         font-weight: 600;
     }
+
     .nav-footer-container>p:nth-child(even) {
         font-size: 12px;
         font-weight: 300;
     }
+
     .nav-hover:hover {
         background: linear-gradient(#fff, #fff) right bottom / 0 2px no-repeat;
     }
+
     .header-logo {
         width: 80px;
     }
+
     .speech-bubble .radius {
         background-color: #F5F5F8;
     }
@@ -888,14 +934,17 @@ footer a:hover {
         top: 255px;
         right: 300px;
     }
+
     .triangle-4::before {
         top: 255px;
         right: 200px;
     }
+
     .triangle-5::before {
         top: 255px;
         right: 230px;
     }
+
     .triangle-6::before {
         top: 255px;
         right: 95px;
@@ -906,42 +955,54 @@ footer a:hover {
     .footer-left {
         width: 19%;
     }
+
     .footer-right {
         width: 81%;
     }
+
     .footer-row-top {
         padding: 40px 10px;
     }
+
     .footer-row-bottom {
         padding: 35px 10px;
     }
+
     .footer-right-title {
         width: 100px;
     }
+
     .footer-row-top a {
         margin-right: 8px;
     }
+
     .footer-right-subtitle {
         width: 75px;
     }
+
     .footer-row-bottom a {
         padding: 0 8px;
     }
+
     .footer-speech-bubble {
         width: auto;
     }
+
     .triangle-3::before {
         top: 475px;
         right: 300px;
     }
+
     .triangle-4::before {
         top: 280px;
         right: 170px;
     }
+
     .triangle-5::before {
         top: 475px;
         right: 150px;
     }
+
     .triangle-6::before {
         top: 255px;
         right: 45px;
@@ -953,14 +1014,17 @@ footer a:hover {
         top: 475px;
         right: 220px;
     }
+
     .triangle-4::before {
         top: 280px;
         right: 120px;
     }
+
     .triangle-5::before {
         top: 475px;
         right: 170px;
     }
+
     .triangle-6::before {
         top: 255px;
         right: 45px;
@@ -971,58 +1035,75 @@ footer a:hover {
     footer {
         padding-bottom: 40px;
     }
+
     .footer-left,
     .footer-right {
         width: 100%;
     }
+
     .copy-sp {
         margin-top: 60px;
         font-size: 12px;
     }
+
     .copy-sp a {
         color: #666;
     }
+
     .footer-left>div {
         width: 50%;
     }
+
     .footer-left>div img {
         margin: 0;
     }
+
     .page-top-sp {
         text-align: right;
     }
+
     .page-top-sp a {
         display: inline-block;
     }
+
     .page-top-sp img {
         width: 34px;
         height: 34px;
     }
+
     .footer-row-top {
         padding: 20px 10px;
     }
+
     .footer-row-top a {
         margin-right: 22px;
     }
+
     .footer-row-bottom {
         padding: 20px 10px;
     }
+
     .footer-right-title,
     .footer-right-subtitle {
         margin-bottom: 10px;
     }
+
     .footer-row-bottom>div:first-child {
         margin-bottom: 20px;
     }
+
     .footer-row-top>div:first-child {
         margin-bottom: 20px;
     }
+
     .footer-row-bottom a>span {
         padding: 0;
     }
+
     .footer-disabled {
         margin-top: 10px;
     }
+
     .footer-speech-bubble {
         display: block;
         opacity: 1;
@@ -1032,45 +1113,54 @@ footer a:hover {
         background: none;
         padding: 0;
     }
+
     .footer-speech-bubble>div>div {
         width: 50%;
     }
+
     .footer-speech-bubble .radius {
         width: 100%;
         height: auto;
         background-color: none;
         margin-right: 0;
     }
+
     .footer-disabled::before {
         content: none;
         animation: none;
     }
+
     .footer-speech-bubble a {
         display: inline-block;
         margin-right: 0;
         padding: 8px;
         text-align: center;
     }
+
     .footer-speech-bubble a span {
         padding: 0;
         background: none;
         font-size: 12px;
         color: #FFF;
     }
+
     .footer-disabled.hovered::before {
         display: none;
         opacity: 0;
         animation: none;
     }
+
     .footer-speech-bubble.hovered {
         display: block;
         opacity: 1;
         animation: none;
     }
+
     .footer-speech-bubble .link-icon g {
         fill: #000;
         stroke: #FFF;
     }
+
     .footer-speech-bubble.hovered::before {
         display: none;
     }
@@ -1223,6 +1313,7 @@ small-container
 }
 
 @media screen and (max-width: 575.98px) {
+
     .flow-button h2,
     .plan-button h2 {
         font-size: 1.5em;
@@ -1275,13 +1366,16 @@ small-container
         width: 100%;
         height: auto;
     }
+
     .service-img {
         width: 40%;
         height: 180px;
     }
+
     .service-text {
         width: 60%;
     }
+
     .services-container>div:nth-child(even) .service-card {
         flex-direction: row-reverse;
     }
@@ -1474,6 +1568,7 @@ small-container
     .link-button {
         width: 80%;
     }
+
     .link-button-text {
         font-size: 12px;
     }
@@ -1489,6 +1584,7 @@ small-container
     .link-button-img {
         width: 40%;
     }
+
     .link-button-text {
         width: 60%;
     }
@@ -1542,6 +1638,7 @@ small-container
     .br-sp {
         display: none;
     }
+
     .h2_title small {
         font-size: 22px;
     }
@@ -1558,9 +1655,11 @@ features_of_harbors
     .iframe-responsive iframe {
         height: 250px;
     }
+
     .title_responsive {
         font-size: 26px;
     }
+
     .title_responsive small {
         font-size: 20px;
     }
@@ -1570,6 +1669,7 @@ features_of_harbors
     .card-img {
         width: 50%;
     }
+
     .contents-main .card-img {
         width: 450px;
     }
@@ -1764,6 +1864,7 @@ table.plan-list td {
 }
 
 @media screen and (max-width: 768px) {
+
     .table-scroll table th,
     .table-scroll table td {
         font-size: 14px;
@@ -1893,15 +1994,18 @@ h2.top {
 }
 
 @media screen and (max-width: 1224px) {
+
     .rooms-main .container,
     .rooms-footer .container {
         padding: 0 10px;
     }
+
     .rooms-title {
         margin: 18px 0;
         font-size: 34px;
         line-height: 50px;
     }
+
     .rooms-description {
         font-size: 12px;
         line-height: 20px;
@@ -1912,18 +2016,22 @@ h2.top {
     .rooms-main {
         padding-top: 100px;
     }
+
     .rooms-main .container,
     .rooms-footer .container {
         max-width: 354px;
     }
+
     .rooms-title {
         margin: 20px 0;
         font-size: 32px;
         line-height: 54px;
     }
+
     .rooms-description {
         margin-bottom: 40px;
     }
+
     .rooms-list-center {
         border: none;
     }
@@ -1933,6 +2041,7 @@ h2.top {
     .rooms-header .h-tit {
         margin: .5rem auto .25rem;
     }
+
     .rooms-title {
         font-size: 28px;
         line-height: 50px;
@@ -1980,15 +2089,19 @@ g-contents
     .h-tit {
         font-size: 10px;
     }
+
     .contents-title-2 {
         font-size: 1.5rem;
     }
+
     .contents-title-3 {
         font-size: 1.5rem;
     }
+
     .contents-title-4 {
         font-size: 1.25rem;
     }
+
     .contents-title-5 {
         font-size: 1.1rem;
     }
@@ -1998,15 +2111,19 @@ g-contents
     .h-tit {
         margin: .5rem auto .25rem;
     }
+
     .contents-title-2 {
         font-size: 1.5rem;
     }
+
     .contents-title-3 {
         font-size: 1.2rem;
     }
+
     .contents-title-4 {
         font-size: 1.25rem;
     }
+
     .contents-title-5 {
         font-size: 1.1rem;
     }
@@ -2025,11 +2142,13 @@ g-contents
 }
 
 @media screen and (max-width: 768px) {
+
     .contents-main h2,
     .contents-main h3,
     .contents-main h4 {
         font-size: 16px;
     }
+
     .contents-main .card-text {
         font-size: 14px;
     }
@@ -2054,6 +2173,7 @@ g-contents
     .monthly-fee {
         width: 100%;
     }
+
     .fv {
         margin: 0%;
         font-size: 12px;
@@ -2142,23 +2262,29 @@ g-contents
         margin-top: 0;
         width: 50%;
     }
+
     .first-view-title {
         margin: 18px 0;
         font-size: 30px;
         line-height: 50px;
     }
+
     .first-view-description {
         font-size: 12px;
     }
+
     .first-view-right {
         width: 46%;
     }
+
     .first-view-bg::after {
         height: 274px;
     }
+
     .first-view-container {
         padding-left: 20px;
     }
+
     .virtual-top-lead {
         font-size: 14px;
         line-height: 25px;
@@ -2170,21 +2296,26 @@ g-contents
         max-width: 100%;
         padding-left: 0%;
     }
+
     .first-view-left {
         width: 100%;
         max-width: 354px;
     }
+
     .first-view-title {
         margin: 20px 0;
         font-size: 28px;
         line-height: 40px;
     }
+
     .first-view-description {
         margin-bottom: 30px;
     }
+
     .first-view-right {
         width: 100%;
     }
+
     .virtual-top-lead {
         margin-bottom: 40px;
     }
@@ -2194,9 +2325,11 @@ g-contents
     .first-view {
         padding-top: 30px;
     }
+
     .first-view-left {
         padding: 0 10px 0 10px;
     }
+
     .first-view-title {
         font-size: 26px;
     }
@@ -2423,12 +2556,15 @@ g-contents
     .l-container .l-heading-secondary {
         font-size: 1.2rem !important;
     }
+
     .row .col-lg-12 h2 {
         font-size: 1.3rem;
     }
+
     .c-linkblock h3 {
         font-size: 1.2rem !important;
     }
+
     .c-nap h3 {
         font-size: 1.2rem !important;
     }
@@ -2498,6 +2634,7 @@ g-contents
         display: block;
         width: auto;
     }
+
     .c-table td {
         display: block;
     }
@@ -2555,19 +2692,24 @@ g-contents
     .lead {
         font-size: 1rem;
     }
+
     .coworking-top .top-text {
         top: 50%;
         transform: translateY(-70%);
     }
+
     .coworking-top {
         height: 650px;
     }
+
     .virtual-top .display-3 {
         font-size: 2rem;
     }
+
     .coworking-main.display-3 {
         font-size: 2rem;
     }
+
     .monthly-fee .display-3 {
         font-size: 4rem;
     }
@@ -2584,18 +2726,23 @@ g-contents
     .top-image {
         height: 700px;
     }
+
     .display-3 {
         font-size: 2rem;
     }
+
     .monthly-fee .display-3 {
         font-size: 2.5rem;
     }
+
     h1.display-4 {
         font-size: 3rem;
     }
+
     .coworking-top .top-text {
         top: 55%;
     }
+
     .stitch img {
         width: 100%;
     }
@@ -2764,20 +2911,24 @@ g-contents
     .space-intro {
         margin-bottom: 20px;
     }
+
     .space-intro-left,
     .space-intro-right {
         width: 100%;
         text-align: center;
     }
+
     .space-intro h3 {
         font-size: 20px;
         margin-bottom: 30px;
         text-align: left;
     }
+
     .space-intro-right img {
         position: static;
         margin-top: 40px;
     }
+
     .space-intro-left::after {
         padding: 0 28px 2px;
         font-size: 28px;
@@ -2786,6 +2937,7 @@ g-contents
         left: 0;
         bottom: -15px;
     }
+
     .space-intro-right::after {
         font-size: 28px;
         padding: 0 28px 2px;
@@ -2860,21 +3012,26 @@ form span.bg-danger {
 }
 
 @media screen and (max-width: 987px) {
+
     /* .virtual-fv-cv-btn>.top-button {
         width: 95%;
     } */
     .virtual-form-btn .top-button {
         font-size: 16px;
     }
+
     .virtual-fv-cv-btn>.top-button {
         font-size: 14px;
     }
+
     .virtual-form-btn .top-button {
         width: 340px;
     }
+
     .virtual-fv-cv-btn .top-button::after {
         right: 12px;
     }
+
     .virtual-fv-cv-btn:hover .top-button:hover::after {
         right: 8px;
     }
@@ -2926,6 +3083,7 @@ form span.bg-danger {
     .c-lineblock h2 {
         font-size: 20px;
     }
+
     .c-pagelink img {
         width: 80px;
         height: 60px;
@@ -2962,6 +3120,7 @@ form span.bg-danger {
     .contact-form {
         width: 350px;
     }
+
     .contact-form input,
     .contact-form textarea {
         width: 100%;
@@ -3055,12 +3214,15 @@ FLOW
     .flow-container {
         padding: 0 10px;
     }
+
     .flow-title {
         font-size: 16px;
     }
+
     .flow-description {
         font-size: 14px;
     }
+
     .flow-cta {
         font-size: 18px;
         width: 100%;
@@ -3243,19 +3405,24 @@ REASONS
         width: 100%;
         margin-bottom: 50px;
     }
+
     .reason-row {
         margin: 0;
     }
+
     .reason>img {
         border-radius: 10px;
     }
+
     .reason-description {
         margin-bottom: 20px;
     }
+
     .reason-link {
         position: static;
         text-align: right;
     }
+
     .reason-title {
         font-size: 20px;
         line-height: 1.3;
@@ -3272,6 +3439,7 @@ REASONS
     .virtual-top section {
         padding: 40px 0;
     }
+
     .coworking-main section {
         padding: 40px 0;
     }
@@ -3360,18 +3528,22 @@ FAQ (VOTOP)
     .question-box {
         align-items: flex-start;
     }
+
     .top-faq h3 {
         font-size: 1.0rem;
         line-height: 1.5;
     }
+
     .question-box p,
     .capital-a {
         font-size: 20px;
         line-height: 20px;
     }
+
     .virtual-top {
         padding-top: 95px;
     }
+
     .coworking-main {
         padding-top: 95px;
     }
@@ -3381,23 +3553,29 @@ FAQ (VOTOP)
     .question-box h3 {
         font-size: 14px;
     }
+
     .answer-text {
         font-size: 14px;
     }
+
     .question-box p,
     .capital-a {
         font-size: 16px;
         line-height: 1.3;
     }
+
     .virtual-faq-question {
         font-size: 14px;
     }
+
     .virtual-faq-answer {
         font-size: 14px;
     }
+
     .virtual-faq-question::before {
         font-size: 18px;
     }
+
     .virtual-faq-answer::before {
         font-size: 18px;
     }
@@ -3434,6 +3612,7 @@ input[name="contact_type"] {
         padding: 15px;
         margin: 0;
     }
+
     #reservedErrorMessage p {
         font-size: 14px;
     }
@@ -3478,6 +3657,7 @@ input[name="contact_type"] {
     .virtual-columns-title {
         font-size: 16px;
     }
+
     .virtual-columns {
         font-size: 12px;
     }
@@ -3551,15 +3731,15 @@ input[name="contact_type"] {
     }
 }
 
-/*吹き出し*/
+/* LINE@セクション */
 .balloon_l, .balloon_r {
     margin: 30px 0;
-    display:flex;
+    display: flex;
     justify-content: flex-start;
 }
 
 .balloon_r {
-    justify-content:flex-end;
+    justify-content: flex-end;
 }
 
 .faceicon {
@@ -3575,12 +3755,12 @@ input[name="contact_type"] {
 }
 
 .balloon_l .faceicon {
-    margin-right:25px;
+    margin-right: 25px;
 }
 
 .balloon_r .faceicon {
-    margin-left:25px;
-    order:2;
+    margin-left: 25px;
+    order: 2;
 }
 
 .faceicon svg {
@@ -3602,15 +3782,15 @@ input[name="contact_type"] {
 }
 
 .says {
-    max-width:450px;
+    max-width: 450px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
     padding: 17px 13px 15px 18px;
     border-radius: 12px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     margin: 20px 0 0;
-    line-height:1.5;
+    line-height: 1.5;
     font-size: 16px;
 }
 
@@ -3623,11 +3803,11 @@ input[name="contact_type"] {
 }
 
 .says p {
-    margin:8px 0 0; 
+    margin: 8px 0 0;
 }
 
 .says p:first-child {
-    margin-top:0;
+    margin-top: 0;
 }
 
 .says:after {
@@ -3636,11 +3816,13 @@ input[name="contact_type"] {
     border: 10px solid transparent;
     top: 10px;
 }
+
 .balloon_l .says:after {
     left: -26px;
     border-right: 30px solid #8DE055;
     transform: rotate(30deg);
 }
+
 .balloon_r .says:after {
     right: -26px;
     border-left: 30px solid #fff;
@@ -3682,4 +3864,5 @@ input[name="contact_type"] {
     }
 }
 
+/* LINE@セクション */
 /* END */
