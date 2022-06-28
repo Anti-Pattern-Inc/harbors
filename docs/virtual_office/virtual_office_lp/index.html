@@ -1707,27 +1707,11 @@
         $("#site_tour").click(function () {
           $('[name="contact_type"]').val("2");
           $("#form_preferred_visit_date").show();
-          if (
-            $('[name="preferred_visit_time"]').children('option[value="20:00"]')
-              .length == 1
-          ) {
-            $('[name="preferred_visit_time"]')
-              .children('option[value="20:00"]')
-              .remove();
-          }
         });
 
         $("#online_information_session").click(function () {
           $('[name="contact_type"]').val("1");
           $("#form_preferred_visit_date").show();     
-          if (
-            $('[name="preferred_visit_time"]').children('option[value="20:00"]')
-              .length == 0
-          ) {
-            $('[name="preferred_visit_time"]').append(
-              '<option value="20:00">20:00~21:00</option>'
-            );
-          }
         });
         $("#toPcInquiryFormModal, #toSpInquiryFormModal").click(function () {
           $('[name="contact_type"]').val("");

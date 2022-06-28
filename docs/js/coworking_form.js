@@ -6,27 +6,6 @@ $(function () {
       $("#form_preferred_visit_time").show();
       $('[name="preferred_visit_date"]').attr("required", "true");
       $('[name="preferred_visit_time"]').attr("required", "true");
-      if (contactType == "1") {
-        if (
-          $('[name="preferred_visit_time"]').children(
-            'option[value="20:00"]'
-          ).length == 0
-        ) {
-          $('[name="preferred_visit_time"]').append(
-            '<option value="20:00">20:00~21:00</option>'
-          );
-        }
-      } else {
-        if (
-          $('[name="preferred_visit_time"]').children(
-            'option[value="20:00"]'
-          ).length == 1
-        ) {
-          $('[name="preferred_visit_time"]')
-            .children('option[value="20:00"]')
-            .remove();
-        }
-      }
     } else {
       $("#form_preferred_visit_date").hide();
       $("#form_preferred_visit_time").hide();
