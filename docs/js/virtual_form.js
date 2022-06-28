@@ -33,27 +33,6 @@ $(function () {
         $('[name="remarks"]').removeAttr("required");
         $('#remarks_required').hide();
         $("#form_preferred_visit_date").show();
-        if (contactType == "1") {
-          if (
-            $('[name="preferred_visit_time"]').children(
-              'option[value="20:00"]'
-            ).length == 0
-          ) {
-            $('[name="preferred_visit_time"]').append(
-              '<option value="20:00">20:00~21:00</option>'
-            );
-          }
-        } else {
-          if (
-            $('[name="preferred_visit_time"]').children(
-              'option[value="20:00"]'
-            ).length == 1
-          ) {
-            $('[name="preferred_visit_time"]')
-              .children('option[value="20:00"]')
-              .remove();
-          }
-        }
       } else {
         if (contactType == "4") {
           $("#form_preferred_visit_date").hide();
@@ -69,38 +48,6 @@ $(function () {
       }
     })
   });
-
-  // $('[name="contact_type"]').change('input',function () {
-  //   // console.log('input changed!');
-  //   var contactType = $('[name="contact_type"]').val();
-  //   if (contactType == "1" || contactType == "2") {
-  //     $("#form_preferred_visit_date").show();
-  //     if (contactType == "1") {
-  //       if (
-  //         $('[name="preferred_visit_time"]').children(
-  //           'option[value="20:00"]'
-  //         ).length == 0
-  //       ) {
-  //         $('[name="preferred_visit_time"]').append(
-  //           '<option value="20:00">20:00~21:00</option>'
-  //         );
-  //       }
-  //     } else {
-  //       if (
-  //         $('[name="preferred_visit_time"]').children(
-  //           'option[value="20:00"]'
-  //         ).length == 1
-  //       ) {
-  //         $('[name="preferred_visit_time"]')
-  //           .children('option[value="20:00"]')
-  //           .remove();
-  //       }
-  //     }
-  //   } else {
-  //     $("#form_preferred_visit_date").hide();
-  //     $("#form_preferred_visit_time").hide();
-  //   }
-  // });
 
   $('#preferred_visit_date').on("change.datetimepicker", function (e) {
     var preferred_visit_date_value = $('input[name=preferred_visit_date]').val();
