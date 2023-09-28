@@ -8,12 +8,12 @@ $(function () {
       let speechBubble = $(this).next();
       $(this).addClass('hovered');
       speechBubble.addClass('hovered');
-      let transparentAreaWidth = speechBubble.outerWidth();
+      let transparentAreaWidth = $(this).outerWidth();
       let transparentAreaHeight = 35;
       $(this).before('<div class="transparent-area hovered"></div>');
       $('.transparent-area').offset({
-        top: speechBubble.offset().top - 35,
-        left: speechBubble.offset().left
+        top: $(this).offset().top + $(this).outerHeight(),
+        left: $(this).offset().left,
       })
       $('.transparent-area').width(transparentAreaWidth);
       $('.transparent-area').height(transparentAreaHeight);
@@ -43,12 +43,12 @@ $(function () {
       let speechBubble = $(this).next();
       $(this).addClass('hovered');
       speechBubble.addClass('hovered');
-      let transparentAreaWidth = speechBubble.outerWidth();
+      let transparentAreaWidth = $(this).outerWidth();
       let transparentAreaHeight = 42;
       $(this).before('<div class="transparent-area hovered"></div>');
       $('.transparent-area').offset({
-        top: speechBubble.offset().top + speechBubble.outerHeight(),
-        left: speechBubble.offset().left
+        top: $(this).offset().top - transparentAreaHeight,
+        left: $(this).offset().left
       })
       $('.transparent-area').width(transparentAreaWidth);
       $('.transparent-area').height(transparentAreaHeight);
